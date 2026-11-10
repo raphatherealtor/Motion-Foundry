@@ -31,3 +31,11 @@ Exact BigInt arithmetic validates and normalizes all project/document, keyframe,
 Product projectedCorners and objectBounds supply word geometry through a camera push. Evidence includes perword boxes, inherited/material/atmosphere opacity, raw-product-PNG frames and a contact sheet with exact cell mapping. The unchanged M0 EvidenceManifest validates under Ajv. The M1 verifier checks coverage, coordinate system, hashes, copied harness, source/config identity and path confinement. Two evidence tests passed, including unsplit words, unavailable projections, parent opacity, bad decode, camera/seek consistency and tampering. Evidence: runs/m1-resume/evidence-final.log, evidence-proof.json.
 
 Raphael's resume instruction retires131: all active browser entry points now select153, no fallback. This supersedes earlier historical notes about retaining131 as M0's pin. Recipe compilation will require actual single-word objects and treat unsupported word evidence as a failure, never a skip.
+
+Fresh Kimi canary on153: PASS / VERIFIED_ATTACHMENT, Kimi2.5.2 managed subscription, noAPIkey, no tools. Proof: runs/m1-resume/canary-fresh/. All46 unchanged M0 tests passed with153 as the default pin, without a migration loader (m0-153-only.log).
+
+## Recipe compiler — TESTED
+
+Three versioned manifests and recipe schema are present. Deterministic descriptions compile via product constructors, validateMotionOps, applyMotionTransaction and parseProject; the renderer implementation remains the product's. All text becomes measured single-word child objects with stable IDs, opacity fade and10px rise. Unsplit/segmented text is rejected, never skipped. Synthetic value counters are successive whole-number word objects; their holds remain locked. Caption/source/lower-third text is locked by fixture script hash.
+
+All three recipes compiled and rendered through preview/export/worker/golden environment with zero-tolerance parity on frames0–4. Three contract/compiler unit tests passed. Evidence: recipe-proof.json/log and recipe-tests.log under runs/m1-resume. Full-frame validation and five-stage parity remain pending the validator milestone; no recipe is yet claimed LIVE-VERIFIED. Specialty fonts explicitly fall back to registered IBM Plex Sans and are recorded in compile metadata.

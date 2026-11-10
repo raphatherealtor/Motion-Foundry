@@ -1,0 +1,128 @@
+{
+  "type": "object",
+  "properties": {
+    "schema": {
+      "const": "foundry.recipe/0.1"
+    },
+    "id": {
+      "type": "string"
+    },
+    "family": {
+      "type": "string"
+    },
+    "version": {
+      "const": "0.1.0"
+    },
+    "status": {
+      "enum": [
+        "SPECIFIED",
+        "TESTED",
+        "LIVE-VERIFIED"
+      ]
+    },
+    "fonts": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "params": {
+      "type": "object",
+      "properties": {
+        "$ref": {
+          "const": "params.schema.json"
+        }
+      },
+      "required": [
+        "$ref"
+      ],
+      "additionalProperties": false
+    },
+    "text_reveal": {
+      "type": "object",
+      "properties": {
+        "mode": {
+          "const": "whole_word_fade_rise"
+        },
+        "rise_px": {
+          "const": [
+            8,
+            12
+          ]
+        },
+        "split": {
+          "const": "word"
+        },
+        "forbidden": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "required": [
+        "mode",
+        "rise_px",
+        "split",
+        "forbidden"
+      ],
+      "additionalProperties": false
+    },
+    "validators": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "max_status": {
+            "const": "WARN"
+          }
+        },
+        "required": [
+          "id"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "allowed_ops": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "op": {
+            "const": "set"
+          },
+          "target": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "op",
+          "target"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "protected": {
+      "const": "from ms_scene.protected"
+    }
+  },
+  "required": [
+    "schema",
+    "id",
+    "family",
+    "version",
+    "status",
+    "fonts",
+    "params",
+    "text_reveal",
+    "validators",
+    "allowed_ops",
+    "protected"
+  ],
+  "additionalProperties": false,
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "foundry.recipe/0.1"
+}

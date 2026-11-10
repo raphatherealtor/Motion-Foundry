@@ -1,3 +1,4 @@
+import {compileSource} from './compile-source.js';
 import {assetsSource} from './assets-source.js';
 import {boxesSource} from './boxes-source.js';
 // Import the product harness and canonical constructors; no renderer implementation is copied.
@@ -8,8 +9,9 @@ import {createMotionDocument,DEFAULT_MOTION_TRANSFORM} from '@/motion/engine/mot
 import {createObject} from '@/motion/host/operations';
 ${assetsSource}
 ${boxesSource}
+${compileSource}
 window.foundryMS={
- boxes:wordBoxes,prepare:strictPrepare,
+ compile:compileDescriptor,boxes:wordBoxes,prepare:strictPrepare,
  parse: input=>parseProject(structuredClone(input)),
  synthetic: (cameraPush=false)=>{
   const d=createMotionDocument('Foundry synthetic',{value:180,timescale:30},30,1080,1920);

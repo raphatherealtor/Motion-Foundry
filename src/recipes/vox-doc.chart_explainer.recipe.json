@@ -1,0 +1,109 @@
+{
+  "schema": "foundry.recipe/0.1",
+  "id": "vox-doc.chart_explainer",
+  "family": "vox-documentary",
+  "version": "0.1.0",
+  "status": "SPECIFIED",
+  "fonts": [
+    "IBM Plex Sans:400",
+    "IBM Plex Sans:600"
+  ],
+  "params": {
+    "$ref": "params.schema.json"
+  },
+  "text_reveal": {
+    "mode": "whole_word_fade_rise",
+    "rise_px": [
+      8,
+      12
+    ],
+    "split": "word",
+    "forbidden": [
+      "wipe",
+      "clip_reveal",
+      "per_char",
+      "typewriter",
+      "char-pop",
+      "projector-sweep",
+      "pen_stroke"
+    ]
+  },
+  "validators": [
+    {
+      "id": "safe_area.v1"
+    },
+    {
+      "id": "required_content.v1"
+    },
+    {
+      "id": "word_reveal.v1"
+    },
+    {
+      "id": "occlusion_preserved.v1"
+    },
+    {
+      "id": "tear_seed_unique.v1"
+    },
+    {
+      "id": "anchor_timing.v1"
+    },
+    {
+      "id": "render_parity.v1"
+    },
+    {
+      "id": "flash_luma.heuristic",
+      "max_status": "WARN"
+    },
+    {
+      "id": "blank_frame.heuristic",
+      "max_status": "WARN"
+    },
+    {
+      "id": "collision.heuristic",
+      "max_status": "WARN"
+    }
+  ],
+  "allowed_ops": [
+    {
+      "op": "set",
+      "target": "objects.*.transform.x"
+    },
+    {
+      "op": "set",
+      "target": "objects.*.transform.y"
+    },
+    {
+      "op": "set",
+      "target": "objects.*.transform.scale"
+    },
+    {
+      "op": "set",
+      "target": "objects.*.transform.rotation"
+    },
+    {
+      "op": "set",
+      "target": "objects.*.transform.z"
+    },
+    {
+      "op": "set",
+      "target": "objects.*.text.fontSize"
+    },
+    {
+      "op": "set",
+      "target": "objects.*.text.lineHeight"
+    },
+    {
+      "op": "set",
+      "target": "objects.*.layout.align"
+    },
+    {
+      "op": "set",
+      "target": "objects.*.surface.shadowOpacity"
+    },
+    {
+      "op": "set",
+      "target": "objects.*.surface.shadowSoftness"
+    }
+  ],
+  "protected": "from ms_scene.protected"
+}
