@@ -1,0 +1,10 @@
+export const statuses = ['PASS','FAIL','WARN','UNKNOWN','NOT_RUN','UNSUPPORTED','ERROR','BLOCKED','UNREVIEWED'] as const;
+export type Status = typeof statuses[number];
+export interface Range {start:number;end:number}
+export interface Operation {op:'set';target:string;value:number|string|boolean}
+export interface RepairProposal {schema:'foundry.repair_proposal/0.1';base_revision_id:string;base_render_id:string;rationale:string;ops:Operation[]}
+export interface ValidationResult {schema:'foundry.validation/0.1';render_id:string;validator:string;kind:'hard_geometry'|'hard_contract'|'heuristic';status:Status;params:Record<string,unknown>;violations:Record<string,unknown>[];reason_code?:string}
+export interface PerceptualFinding {schema:'foundry.finding/0.1';render_id:string;source:string;kind:'ai_perceptual';confidence:number;frames:number[];objects:string[];evidence_refs:string[];note:string}
+export interface ReviewRequest {schema:'foundry.review_request/0.1';run_id:string;base_revision_id:string;base_render_id:string;attachments:{path:string;sha256:string}[];failures:string[];window:Range;allowed_ops:string;budget:{attempt:number;max:number}}
+export interface EvidenceManifest {schema:'foundry.evidence/0.1';render_id:string;attempt_id:string;revision_id:string;candidate_id:string|null;hashes:Record<string,string>;logical:{w:number;h:number};output:{w:number;h:number};transform:{scale_x:number;scale_y:number;offset_x:number;offset_y:number};fps:{num:number;den:number};range:Range;timebase:'frame';frames:{i:number;label:string;path:string;sha256:string}[];contact_sheet:{path:string;sha256:string;cells:{cell:number;frame:number}[];stride:number};object_boxes:{path:string;sha256:string};audio:null;created_at:string}
+export interface RunResult {schema:'foundry.run_result/0.1';run_id:string;status:Status;closed_loop:'LIVE'|'MOCK'|'BLOCKED'|'UNREVIEWED';reviewer:{adapter:string;vision_transport:string;mock:boolean};attempts:Record<string,unknown>[];last_passing:string|null;budgets_used:{renders:number;wall_s:number};manifest_sha256?:string;reason_code?:string}

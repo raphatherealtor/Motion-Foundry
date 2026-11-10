@@ -1,0 +1,58 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "foundry.validation/0.1",
+  "type": "object",
+  "properties": {
+    "schema": {
+      "const": "foundry.validation/0.1"
+    },
+    "render_id": {
+      "type": "string"
+    },
+    "validator": {
+      "type": "string"
+    },
+    "kind": {
+      "enum": [
+        "hard_geometry",
+        "hard_contract",
+        "heuristic"
+      ]
+    },
+    "status": {
+      "enum": [
+        "PASS",
+        "FAIL",
+        "WARN",
+        "UNKNOWN",
+        "NOT_RUN",
+        "UNSUPPORTED",
+        "ERROR",
+        "BLOCKED",
+        "UNREVIEWED"
+      ]
+    },
+    "params": {
+      "type": "object"
+    },
+    "violations": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "reason_code": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "schema",
+    "render_id",
+    "validator",
+    "kind",
+    "status",
+    "params",
+    "violations"
+  ],
+  "additionalProperties": false
+}

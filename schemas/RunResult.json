@@ -1,0 +1,101 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "foundry.run_result/0.1",
+  "type": "object",
+  "properties": {
+    "schema": {
+      "const": "foundry.run_result/0.1"
+    },
+    "run_id": {
+      "type": "string"
+    },
+    "status": {
+      "enum": [
+        "PASS",
+        "FAIL",
+        "WARN",
+        "UNKNOWN",
+        "NOT_RUN",
+        "UNSUPPORTED",
+        "ERROR",
+        "BLOCKED",
+        "UNREVIEWED"
+      ]
+    },
+    "closed_loop": {
+      "enum": [
+        "LIVE",
+        "MOCK",
+        "BLOCKED",
+        "UNREVIEWED"
+      ]
+    },
+    "reviewer": {
+      "type": "object",
+      "properties": {
+        "adapter": {
+          "type": "string"
+        },
+        "vision_transport": {
+          "type": "string"
+        },
+        "mock": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "adapter",
+        "vision_transport",
+        "mock"
+      ],
+      "additionalProperties": false
+    },
+    "attempts": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "last_passing": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "budgets_used": {
+      "type": "object",
+      "properties": {
+        "renders": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "wall_s": {
+          "type": "number",
+          "minimum": 0
+        }
+      },
+      "required": [
+        "renders",
+        "wall_s"
+      ],
+      "additionalProperties": false
+    },
+    "manifest_sha256": {
+      "type": "string"
+    },
+    "reason_code": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "schema",
+    "run_id",
+    "status",
+    "closed_loop",
+    "reviewer",
+    "attempts",
+    "last_passing",
+    "budgets_used"
+  ],
+  "additionalProperties": false
+}

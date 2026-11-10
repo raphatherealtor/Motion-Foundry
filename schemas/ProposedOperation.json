@@ -1,0 +1,32 @@
+{
+  "type": "object",
+  "properties": {
+    "op": {
+      "const": "set"
+    },
+    "target": {
+      "type": "string",
+      "pattern": "^objects\\.[A-Za-z0-9_-]+\\.(style|layout|timing)\\.[A-Za-z]+$"
+    },
+    "value": {
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "string"
+        },
+        {
+          "type": "boolean"
+        }
+      ]
+    }
+  },
+  "required": [
+    "op",
+    "target",
+    "value"
+  ],
+  "additionalProperties": false,
+  "$id": "urn:foundry:operation:0.1"
+}

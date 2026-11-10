@@ -1,0 +1,262 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "foundry.evidence/0.1",
+  "type": "object",
+  "properties": {
+    "schema": {
+      "const": "foundry.evidence/0.1"
+    },
+    "render_id": {
+      "type": "string"
+    },
+    "attempt_id": {
+      "type": "string"
+    },
+    "revision_id": {
+      "type": "string"
+    },
+    "candidate_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "hashes": {
+      "type": "object",
+      "properties": {
+        "schema": {
+          "type": "string"
+        },
+        "source": {
+          "type": "string"
+        },
+        "assets": {
+          "type": "string"
+        },
+        "renderer_config": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "schema",
+        "source",
+        "assets",
+        "renderer_config"
+      ],
+      "additionalProperties": false
+    },
+    "logical": {
+      "type": "object",
+      "properties": {
+        "w": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "h": {
+          "type": "integer",
+          "minimum": 1
+        }
+      },
+      "required": [
+        "w",
+        "h"
+      ],
+      "additionalProperties": false
+    },
+    "output": {
+      "type": "object",
+      "properties": {
+        "w": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "h": {
+          "type": "integer",
+          "minimum": 1
+        }
+      },
+      "required": [
+        "w",
+        "h"
+      ],
+      "additionalProperties": false
+    },
+    "transform": {
+      "type": "object",
+      "properties": {
+        "scale_x": {
+          "type": "number"
+        },
+        "scale_y": {
+          "type": "number"
+        },
+        "offset_x": {
+          "type": "number"
+        },
+        "offset_y": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "scale_x",
+        "scale_y",
+        "offset_x",
+        "offset_y"
+      ],
+      "additionalProperties": false
+    },
+    "fps": {
+      "type": "object",
+      "properties": {
+        "num": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "den": {
+          "type": "integer",
+          "minimum": 1
+        }
+      },
+      "required": [
+        "num",
+        "den"
+      ],
+      "additionalProperties": false
+    },
+    "range": {
+      "type": "object",
+      "properties": {
+        "start": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "end": {
+          "type": "integer",
+          "minimum": 0
+        }
+      },
+      "required": [
+        "start",
+        "end"
+      ],
+      "additionalProperties": false
+    },
+    "timebase": {
+      "const": "frame"
+    },
+    "frames": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "i": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "label": {
+            "type": "string"
+          },
+          "path": {
+            "type": "string"
+          },
+          "sha256": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "i",
+          "label",
+          "path",
+          "sha256"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "contact_sheet": {
+      "type": "object",
+      "properties": {
+        "path": {
+          "type": "string"
+        },
+        "sha256": {
+          "type": "string"
+        },
+        "cells": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "cell": {
+                "type": "integer",
+                "minimum": 0
+              },
+              "frame": {
+                "type": "integer",
+                "minimum": 0
+              }
+            },
+            "required": [
+              "cell",
+              "frame"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "stride": {
+          "type": "integer",
+          "minimum": 1
+        }
+      },
+      "required": [
+        "path",
+        "sha256",
+        "cells",
+        "stride"
+      ],
+      "additionalProperties": false
+    },
+    "object_boxes": {
+      "type": "object",
+      "properties": {
+        "path": {
+          "type": "string"
+        },
+        "sha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        }
+      },
+      "required": [
+        "path",
+        "sha256"
+      ],
+      "additionalProperties": false
+    },
+    "audio": {
+      "type": "null"
+    },
+    "created_at": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "schema",
+    "render_id",
+    "attempt_id",
+    "revision_id",
+    "candidate_id",
+    "hashes",
+    "logical",
+    "output",
+    "transform",
+    "fps",
+    "range",
+    "timebase",
+    "frames",
+    "contact_sheet",
+    "object_boxes",
+    "audio",
+    "created_at"
+  ],
+  "additionalProperties": false
+}
