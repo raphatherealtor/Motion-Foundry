@@ -3,12 +3,13 @@ import {mkdirSync,readFileSync,writeFileSync,readdirSync,existsSync} from 'node:
 import {resolve} from 'node:path';
 import {spawnSync} from 'node:child_process';
 import {randomUUID} from 'node:crypto';
-import {Scene,html,assets} from './scene.js';
+import {Scene,html,assets,root} from './scene.js';
 import {hash,sha256,canonical} from './hash.js';
 import {read,write,fileHash,fail} from './io.js';
 import {schemas} from './schemas.js';
 import {EvidenceManifest} from './contracts.js';
-export const config={viewport:{width:1080,height:1920},deviceScaleFactor:0.5,args:['--no-sandbox','--disable-gpu','--font-render-hinting=none'],stride:15,render_timeout_s:120,asset_ready_timeout_s:20,max_output_mb:500};
+const knobs=read(resolve(root,'config/foundry.config.json'));
+export const config={viewport:{width:1080,height:1920},deviceScaleFactor:0.5,args:['--no-sandbox','--disable-gpu','--font-render-hinting=none'],stride:knobs.contact_sheet_stride,render_timeout_s:knobs.render_timeout_s,asset_ready_timeout_s:knobs.asset_ready_timeout_s,max_output_mb:knobs.max_output_mb};
 export interface Word {object:string;word:string;text:string;bbox:number[];opacity:number;displayed:boolean;visible:boolean;fontSize:number}
 export interface Boxes {frame:number;words:Word[];objects:Word[]}
 export async function boxes(page:Page,frame:number):Promise<Boxes>{return page.evaluate((frame)=>{

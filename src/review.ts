@@ -15,3 +15,12 @@ export function probe(out:string,commands=['kimi','gemini','vibe','codex','claud
  });
  write(resolve(out,'capabilities.json'),{schema:'foundry.capabilities/0.1',allow_spend:false,providers,perceptual_review:'BLOCKED',closed_loop:'UNREVIEWED',reason_code:providers.some(p=>p.installed)?'SPEND_RISK':'NO_VISION_TRANSPORT',spend_incurred:0});return providers;
 }
+export async function failingWindowSheet(dir:string,window:{start:number;end:number},out:string){
+ const {chromium}=await import('playwright');const {readFileSync,mkdirSync}=await import('node:fs');const {dirname}=await import('node:path');
+ const browser=await chromium.launch({executablePath:'/usr/local/bin/chromium',args:['--no-sandbox']});
+ try{const frames=Array.from({length:window.end-window.start},(_,i)=>i+window.start);
+ const page=await browser.newPage({viewport:{width:640,height:Math.ceil(frames.length/8)*165},deviceScaleFactor:1});await page.route('**/*',r=>r.abort());
+ await page.setContent('<style>body{margin:0;display:grid;grid-template-columns:repeat(8,80px);background:white}div{height:165px;font:11px monospace}img{width:80px;height:142px}</style>'+frames.map(i=>`<div>f${i}<img src="data:image/png;base64,${readFileSync(resolve(dir,'frames/f'+String(i).padStart(4,'0')+'.png')).toString('base64')}"></div>`).join(''));
+ await page.waitForFunction('[...document.images].every(i=>i.complete)');mkdirSync(dirname(out),{recursive:true});await page.screenshot({path:out});return frames;
+ }finally{await browser.close()}
+}

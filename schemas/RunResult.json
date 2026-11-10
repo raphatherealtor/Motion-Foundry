@@ -83,6 +83,21 @@
     "manifest_sha256": {
       "type": "string"
     },
+    "base_dir": {
+      "type": "string"
+    },
+    "final_dir": {
+      "type": "string"
+    },
+    "decision_log_sha256": {
+      "type": "string"
+    },
+    "validation_index_sha256": {
+      "type": "string"
+    },
+    "baseline_manifest_sha256": {
+      "type": "string"
+    },
     "reason_code": {
       "type": "string"
     }

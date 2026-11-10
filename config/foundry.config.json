@@ -1,0 +1,14 @@
+{
+  "max_attempts": 3,
+  "max_renders_per_run": 5,
+  "render_timeout_s": 120,
+  "asset_ready_timeout_s": 20,
+  "reviewer_timeout_s": 180,
+  "run_wall_clock_s": 900,
+  "max_output_mb": 500,
+  "contact_sheet_stride": 15,
+  "review_window_pad_frames": 15,
+  "review_scale": 0.5,
+  "allow_spend": false,
+  "visibility_opacity_threshold": 0.02
+}
