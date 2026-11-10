@@ -1,4 +1,4 @@
-export interface RecipeBlock {id:string;recipe:string;params:{headline:string;caption:string;source?:string;lower_third?:string;values?:number[];labels?:string[]}}
+export interface RecipeBlock {id:string;recipe:string;params:{headline:string;caption:string;source?:string;lower_third?:string;values?:number[];labels?:string[];stagger_frames?:number}}
 export interface MotionScene {schema:'foundry.ms_scene/0.1';seed:number;frames:number;blocks:RecipeBlock[];text_lock:{path:string;sha256:string};protected:string[];timestamps?:{object:string;frame:number;word_frame:number}[];defects?:('headline_overflow'|'label_clip')[]}
 export interface Descriptor {id:string;frames:number;objects:any[];cameras:any[];materials:any[];words:{id:string;text:string;start:number;end:number;rise:number}[];edges:{id:string;seed:string;path:string}[];anchors:{object:string;frame:number;word_frame:number}[];fonts:{requested:string;actual:string}[]}
 export const recipeIds=['vox-doc.chart_explainer','paper-collage.build_tear','editorial.cutout_pop'] as const;

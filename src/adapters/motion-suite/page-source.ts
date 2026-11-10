@@ -11,7 +11,7 @@ ${assetsSource}
 ${boxesSource}
 ${compileSource}
 window.foundryMS={
- compile:compileDescriptor,boxes:wordBoxes,prepare:strictPrepare,
+ apply:applyCanonical,compile:compileDescriptor,boxes:wordBoxes,prepare:strictPrepare,
  parse: input=>parseProject(structuredClone(input)),
  synthetic: (cameraPush=false)=>{
   const d=createMotionDocument('Foundry synthetic',{value:180,timescale:30},30,1080,1920);

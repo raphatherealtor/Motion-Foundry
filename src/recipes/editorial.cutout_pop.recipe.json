@@ -3,7 +3,7 @@
   "id": "editorial.cutout_pop",
   "family": "magazine-editorial",
   "version": "0.1.0",
-  "status": "SPECIFIED",
+  "status": "TESTED",
   "fonts": [
     "IBM Plex Sans:400",
     "IBM Plex Sans:600"
@@ -55,11 +55,15 @@
       "max_status": "WARN"
     },
     {
-      "id": "blank_frame.heuristic",
+      "id": "blank_frames.v1",
       "max_status": "WARN"
     },
     {
       "id": "collision.heuristic",
+      "max_status": "WARN"
+    },
+    {
+      "id": "visibility_flash.v1",
       "max_status": "WARN"
     }
   ],
@@ -103,6 +107,30 @@
     {
       "op": "set",
       "target": "objects.*.surface.shadowSoftness"
+    },
+    {
+      "op": "shift_keyframes",
+      "target": "objects.*.entrance"
+    },
+    {
+      "op": "set_easing",
+      "target": "objects.*.easing"
+    },
+    {
+      "op": "set_stagger",
+      "target": "blocks.*.stagger"
+    },
+    {
+      "op": "apply_recipe",
+      "target": "blocks.*"
+    },
+    {
+      "op": "set",
+      "target": "lighting.exposureEV"
+    },
+    {
+      "op": "set",
+      "target": "lighting.vignette"
     }
   ],
   "protected": "from ms_scene.protected"

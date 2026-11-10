@@ -15,16 +15,16 @@ export function assertManifest(manifest:unknown):asserts manifest is EvidenceMan
  if(!validateManifest(manifest))throw new Error('TYPE_INVALID: EvidenceManifest '+JSON.stringify(validateManifest.errors));
 }
 interface EvidenceInput {
- project:any;config:any;render_id:string;revision_id:string;attempt_id:string;range:Range;
+ intent?:unknown;candidate_id?:string|null;project:any;config:any;render_id:string;revision_id:string;attempt_id:string;range:Range;
  frames:{i:number;path:string;sha256:string}[];rows:MotionSuiteBoxes[];
  sheet:EvidenceManifest['contact_sheet'];harnessDir:string;
 }
 export function emitEvidence(dir:string,data:EvidenceInput):EvidenceManifest {
  const {project,config}=data,doc=project.motionDocuments[project.activeDocumentId];
  writeFileSync(resolve(dir,'boxes.jsonl'),data.rows.map(canonical).join('\n')+'\n');
- writeFileSync(resolve(dir,'intent.json'),'null\n');
+ writeFileSync(resolve(dir,'intent.json'),canonical(data.intent??null)+'\n');
  cpSync(data.harnessDir,resolve(dir,'harness'),{recursive:true,errorOnExist:true});
- const manifest:EvidenceManifest={schema:'foundry.evidence/0.1',render_id:data.render_id,attempt_id:data.attempt_id,revision_id:data.revision_id,candidate_id:null,hashes:{schema:hash(schemas),source:data.revision_id,assets:hash(project.assets),renderer_config:hash(config)},logical:{w:doc.width,h:doc.height},output:{w:doc.width,h:doc.height},transform:{scale_x:1,scale_y:1,offset_x:0,offset_y:0},fps:{num:30,den:1},range:data.range,timebase:'frame',frames:data.frames.map(f=>({i:f.i,label:'f'+String(f.i).padStart(4,'0'),path:f.path,sha256:f.sha256})),contact_sheet:data.sheet,object_boxes:{path:'boxes.jsonl',sha256:fileHash(resolve(dir,'boxes.jsonl'))},audio:null,created_at:new Date().toISOString()};
+ const manifest:EvidenceManifest={schema:'foundry.evidence/0.1',render_id:data.render_id,attempt_id:data.attempt_id,revision_id:data.revision_id,candidate_id:data.candidate_id??null,hashes:{schema:hash(schemas),source:data.revision_id,assets:hash(project.assets),renderer_config:hash(config)},logical:{w:doc.width,h:doc.height},output:{w:doc.width,h:doc.height},transform:{scale_x:1,scale_y:1,offset_x:0,offset_y:0},fps:{num:30,den:1},range:data.range,timebase:'frame',frames:data.frames.map(f=>({i:f.i,label:'f'+String(f.i).padStart(4,'0'),path:f.path,sha256:f.sha256})),contact_sheet:data.sheet,object_boxes:{path:'boxes.jsonl',sha256:fileHash(resolve(dir,'boxes.jsonl'))},audio:null,created_at:new Date().toISOString()};
  assertManifest(manifest);writeFileSync(resolve(dir,'manifest.json'),canonical(manifest)+'\n');return manifest;
 }
 function checkedPath(dir:string,path:string){
@@ -41,6 +41,8 @@ export function verifyEvidence(dir:string):EvidenceManifest {
  if(manifest.hashes.schema!==hash(schemas))mismatch('schemas');
  if(manifest.hashes.renderer_config!==hash(config))mismatch('renderer configuration');
  if(config.harness_hash!==bundleHash(resolve(dir,'harness')))mismatch('harness bundle');
+ if(config.adapter_hash&&config.adapter_hash!==bundleHash(resolve(dir,'adapter')))mismatch('adapter bundle');
+ if(config.policy_hash&&config.policy_hash!==hash(read(resolve(dir,'policy.json'))))mismatch('policy snapshot');
  if(renderId(revision,config,manifest.range)!==manifest.render_id)mismatch('render identity');
  if(manifest.range.end<=manifest.range.start||manifest.frames.length!==manifest.range.end-manifest.range.start)mismatch('frame coverage');
  for(const [i,f] of manifest.frames.entries())if(f.i!==manifest.range.start+i)mismatch('frame order');

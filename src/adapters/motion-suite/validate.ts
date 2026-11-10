@@ -30,6 +30,9 @@ export function validateM1(scene:MotionScene,c:Compiled,dir:string,base:Compiled
  results.push(result('word_reveal.v1',revealViolations(c,currentRows)),result('occlusion_preserved.v1',protectedViolations(scene,c,base)),result('tear_seed_unique.v1',tearViolations(c)));
  const anchor=result('anchor_timing.v1',anchorViolations(c),'OUT_OF_BOUNDS');anchor.params={target_early_s:.2,max_early_s:.5};if(!c.meta.anchors.length)anchor.status='NOT_RUN';results.push(anchor);
  const parity=read(resolve(dir,'parity.json'));const p=result('render_parity.v1',parity.status==='PASS'?[]:[{detail:'Product mode parity did not pass'}],'NONDETERMINISTIC');p.status=parity.status;p.params={report_sha256:fileHash(resolve(dir,'parity.json')),studio:'NOT_RUN'};results.push(p);
+ const samples=read(resolve(dir,'frames.json')),luma= samples.every((f:any)=>typeof f.mean_luma==='number'),jumps:Record<string,unknown>[]=[];
+ if(luma)for(let i=1;i<samples.length;i++){const delta=Math.abs(samples[i].mean_luma-samples[i-1].mean_luma);if(delta>.35)jumps.push({frame:samples[i].i,delta});}
+ results.push({schema:'foundry.validation/0.1',render_id,validator:'flash_luma.heuristic',kind:'heuristic',status:luma?jumps.length?'WARN':'PASS':'NOT_RUN',params:{max_status:'WARN',threshold:.35,sample_stride_px:16},violations:jumps});
  const collisions:Record<string,unknown>[]=[];
  for(const r of currentRows)for(let i=0;i<r.words.length;i++)for(let j=i+1;j<r.words.length;j++){const a=r.words[i],b=r.words[j];if(a.visible&&b.visible&&a.opacity>=.999&&b.opacity>=.999&&Math.min(a.bbox[2],b.bbox[2])>Math.max(a.bbox[0],b.bbox[0])&&Math.min(a.bbox[3],b.bbox[3])>Math.max(a.bbox[1],b.bbox[1]))collisions.push({frame:r.frame,objects:[a.object,b.object]});}
  results.push({schema:'foundry.validation/0.1',render_id,validator:'collision.heuristic',kind:'heuristic',status:collisions.length?'WARN':'NOT_RUN',params:{max_status:'WARN'},violations:collisions});

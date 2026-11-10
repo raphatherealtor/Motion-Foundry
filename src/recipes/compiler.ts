@@ -14,6 +14,7 @@ export function describe(scene:MotionScene):Descriptor {
   d.objects.push(wordGroup(b.id+'_lower',b.params.lower_third||'Motion Foundry',0,630,42,66));
   if(b.recipe==='vox-doc.chart_explainer')chart(d,b,scene);
   else collage(d,b,scene,b.recipe==='editorial.cutout_pop');
+  for(const o of d.objects)if(o.kind==='word_group'&&o.id.startsWith(b.id+'_'))o.stagger=b.params.stagger_frames??6;
  }
  d.anchors=scene.timestamps||[];
  return d;

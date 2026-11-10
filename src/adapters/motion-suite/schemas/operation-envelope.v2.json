@@ -1,0 +1,42 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "urn:foundry:operation:0.2",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "op",
+    "target",
+    "value"
+  ],
+  "properties": {
+    "op": {
+      "enum": [
+        "set",
+        "shift_keyframes",
+        "set_stagger",
+        "set_easing",
+        "apply_recipe"
+      ]
+    },
+    "target": {
+      "type": "string",
+      "maxLength": 180
+    },
+    "value": {
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "string"
+        },
+        {
+          "type": "boolean"
+        },
+        {
+          "type": "object"
+        }
+      ]
+    }
+  }
+}

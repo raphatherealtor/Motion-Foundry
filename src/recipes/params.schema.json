@@ -45,6 +45,11 @@
         "pattern": "^\\S+$",
         "maxLength": 12
       }
+    },
+    "stagger_frames": {
+      "type": "integer",
+      "minimum": 5,
+      "maximum": 10
     }
   }
 }

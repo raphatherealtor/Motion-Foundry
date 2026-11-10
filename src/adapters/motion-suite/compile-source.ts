@@ -3,6 +3,11 @@ import {applyMotionTransaction} from '@/motion/engine/motion-document';
 import {makeOp} from '@/motion/host/operations';
 import {validateMotionOps} from '@/motion/host/validation';
 import {layoutSegments} from '@/motion/spatial/typography';
+function applyCanonical(input,ops){
+ const project=structuredClone(input);
+ if(ops.length){validateMotionOps(project,ops);for(const id of new Set(ops.map(o=>o.documentId)))project.motionDocuments[id]=applyMotionTransaction(project.motionDocuments[id],{ops:ops.filter(o=>o.documentId===id),description:'Foundry candidate repair'});}
+ return JSON.parse(JSON.stringify(parseProject(project)));
+}
 async function compileDescriptor(desc){
  await window.golden.ready;await document.fonts.ready;
  const doc=createMotionDocument(desc.id,{value:desc.frames,timescale:30},30,1080,1920);doc.id=desc.id;doc.createdAt=0;doc.updatedAt=0;

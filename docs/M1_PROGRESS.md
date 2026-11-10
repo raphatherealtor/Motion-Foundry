@@ -45,3 +45,13 @@ All three recipes compiled and rendered through preview/export/worker/golden env
 Four new validator tests passed positive/negative reveal, covered-object integrity, tear seed/path uniqueness and actual-keyframe narration timing. M1 reuses unchanged M0 safe-area, minimum-font, fixture-only required-duration and visibility checks through a word-scene view. Unsupported word rows now make hard checks FAIL; they cannot be skipped. Heuristics remain advisory.
 
 The positive Vox recipe passed all hard validators across180frames, including required holds and exact preview/export/worker parity at five motion stages. Paper/editorial full-frame checks are still running. Evidence: runs/m1-resume/validator-tests.log and validation-proof.json. The original M0 required-content count invariant remains explicitly fixture-only; it is not a universal artistic law.
+
+Full-frame recipe follow-up: all three positive fixtures passed every hard check across180frames each (540frames), with preview/export/worker and golden-environment parity. All word rows were supported; no unsplit text was skipped. Manifests are now TESTED. Fresh default153 M0 repeats again passed5/5 with the same pixel/box/sheet hash.
+
+## Milestone 6 — TESTED
+
+New operation-envelope/proposal/review schemas and repair allowlist v2 live under the Motion Suite adapter. M0 v1 schemas, allowlist, validators and tests remain unchanged. Fifteen gate/bounds tests and one product lowering/rebuild integration test passed. A candidate evidence test also passed, binding scene+ordered repairs, candidate ID, copied adapter code and policy snapshot into immutable evidence.
+
+Typed set/shift/easing/stagger/registered-recipe operations lower through validateMotionOps, applyMotionTransaction on a copied project, then parseProject. Recipe rebuilds replay prior native repairs. Protected ancestors and all owners of protected masks/assets are forbidden. Shadow softness is0–1; bezier without handles, unconsumed letter spacing, native wrap/maxWidth and unmapped camera values are omitted. Stagger seconds require exact integer-frame conversion (.2→6,.3→9; .15→TYPE_INVALID).
+
+Pixel-luma jumps are advisory WARN at most. They never override the hard core. Evidence: lowering-tests.log, candidate-test.log and schemas/ under the adapter.

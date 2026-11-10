@@ -92,7 +92,13 @@
         "type": "object",
         "properties": {
           "op": {
-            "const": "set"
+            "enum": [
+              "set",
+              "shift_keyframes",
+              "set_easing",
+              "set_stagger",
+              "apply_recipe"
+            ]
           },
           "target": {
             "type": "string"
