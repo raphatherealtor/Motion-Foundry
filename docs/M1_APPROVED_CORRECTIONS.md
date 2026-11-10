@@ -33,3 +33,5 @@ Evidence: product src/motion/host/validation.ts:8–52 and Foundry src/gate.ts:7
 | apply_recipe | registered recipe and valid params | no native op; compile candidate scene, existing assets only |
 
 The new allowlist ID is repair-allowlist.motion-suite.v2. Proposal schema foundry.repair_proposal/0.2 uses operation-envelope v2; reviews use foundry.review_request/0.2. No M1 payload is passed to M0's v1 schema. Status and reason-code vocabulary remains M0's.
+
+Further rendering difference: product paintText (src/motion/render/drawDocument.ts:118–130) does not apply letterSpacing to Canvas2D; validation accepts the stored property. The adapter must not claim that changing it repairs glyph spacing in this renderer. Native object coordinates are centered about the composition, as shown by spatialProjection.ts:59; the existing canvas-range repair bound is intentionally narrower than the finite native coordinate domain. No absolute-screen mapping is inferred for parented objects.
