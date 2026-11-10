@@ -3,14 +3,15 @@ import {createInterface} from 'node:readline';
 import {mkdirSync,readFileSync} from 'node:fs';
 import {resolve} from 'node:path';
 import {root} from './scene.js';
+import {isolateReviewer,reviewerBinding} from './kimi-policy.js';
 import {kimiAuth,kimiEnvironment,kimiModel} from './kimi-auth.js';
 import {sha256} from './hash.js';
 import {fileHash,write} from './io.js';
 export async function kimiImagePrompt(text:string,images:string[],out:string,timeoutMs=180000){
  if(process.env.FOUNDRY_VISION==='off')throw new Error('NO_VISION_TRANSPORT');
  const auth=kimiAuth(),profile=resolve(root,'config/kimi-reviewer.md');mkdirSync(out,{recursive:true});
- const cwd=resolve(out,'workspace');mkdirSync(cwd,{recursive:true});
- const argv=['--model',kimiModel,'--agent-file',profile,'acp'];
+ const cwd=resolve(out,'workspace'),effectiveProfile=isolateReviewer(cwd,profile);
+ const argv=['acp'];let binding:ReturnType<typeof reviewerBinding>|null=null;
  const child=spawn('kimi',argv,{cwd,env:kimiEnvironment(),stdio:['pipe','pipe','pipe']});
  const pending=new Map<number,{resolve:(v:any)=>void;reject:(e:Error)=>void}>();let sequence=0,answer='',usedTool=false,outputBytes=0;
  const audit:any[]=[];let closed=false;
@@ -39,11 +40,16 @@ export async function kimiImagePrompt(text:string,images:string[],out:string,tim
  await call('authenticate',{methodId:'login'});
  const session=await call('session/new',{cwd,mcpServers:[]});
  const selected=session.configOptions?.find((c:any)=>c.id==='model')?.currentValue;
- audit.push({session:session.sessionId,model:selected});if(selected&&selected!==kimiModel)throw new Error('SPEND_RISK');
+ audit.push({session:session.sessionId,model:selected});if(selected!==kimiModel)throw new Error('SPEND_RISK');
+ const thinking=session.configOptions?.find((c:any)=>c.id==='thinking');
+ if(!thinking?.options.some((c:any)=>c.value==='low'))throw new Error('FORBIDDEN_OP');
+ await call('session/set_config_option',{sessionId:session.sessionId,configId:'thinking',value:'low'});
+ audit.push({thinking_effort:'low',policy:'project-scoped default-agent override; tools disabled'});
  const prompt=[{type:'text',text},...images.map(path=>({type:'image',mimeType:'image/png',data:readFileSync(path).toString('base64')}))];
  audit.push({attachments:images.map(path=>({sha256:fileHash(path),mimeType:'image/png'})),text_characters:text.length,text_sha256:sha256(text),tool_policy:'none'});
  const end=await call('session/prompt',{sessionId:session.sessionId,prompt});
  if(usedTool||end.stopReason!=='end_turn'||!answer.trim())throw new Error('INVALID_REVIEW');
+ binding=reviewerBinding(session.sessionId);
  write(resolve(out,'response.json'),{text:answer,stop_reason:end.stopReason});return {answer,auth,session_id:session.sessionId};
- }finally{clearTimeout(timer);lines.close();child.kill();write(resolve(out,'transport-evidence.json'),{schema:'foundry.cli_transport/0.1',command:'kimi',argv,auth,profile_sha256:fileHash(profile),audit,used_tool:usedTool})}
+ }finally{clearTimeout(timer);lines.close();child.kill();write(resolve(out,'transport-evidence.json'),{schema:'foundry.cli_transport/0.1',command:'kimi',argv,auth,profile_sha256:fileHash(profile),effective_profile_path:effectiveProfile,effective_profile_sha256:fileHash(effectiveProfile),binding,audit,used_tool:usedTool})}
 }

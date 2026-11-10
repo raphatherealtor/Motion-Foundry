@@ -13,6 +13,7 @@ export function verifyLive(log:any){
  const e=d.review_evidence;if(!e)fail('FORBIDDEN_OP');
  for(const name of ['transport','response','prompt','request'])if(fileHash(e[name+'_path'])!==e[name+'_sha256'])fail('EVIDENCE_HASH_MISMATCH');
  const transport=read(e.transport_path),response=read(e.response_path),request=read(e.request_path),prompt=read(e.prompt_path);
+ if(!transport.binding||transport.binding.active_tools?.length!==0||transport.binding.tool_schema_count!==0||!transport.binding.custom_prompt||transport.binding.thinking_effort!=='low'||transport.effective_profile_sha256!==receipt.effective_profile_sha256||fileHash(transport.effective_profile_path)!==receipt.effective_profile_sha256)fail('FORBIDDEN_OP');
  if(transport.used_tool||transport.profile_sha256!==receipt.profile_sha256||response.stop_reason!=='end_turn'||canonical(transport.auth)!==canonical(receipt.auth))fail('FORBIDDEN_OP');
  if(canonical(JSON.parse(response.text.trim()))!==canonical(d.reviewer_proposal)||canonical(read(resolve(dirname(e.request_path),'proposal.json')))!==canonical(d.reviewer_proposal))fail('EVIDENCE_HASH_MISMATCH');
  const attachments=transport.audit.flatMap((v:any)=>v.attachments||[]),textHash=transport.audit.find((v:any)=>v.text_sha256)?.text_sha256;

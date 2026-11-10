@@ -26,11 +26,12 @@ function proofFixture(){
  const auth={auth_mode:'subscription' as const,may_incur_spend:false,provider:'managed:kimi-code',endpoint:'https://api.kimi.ai/coding/v1',model:'kimi-code/kimi-for-coding',version:'UNIT-MOCK',oauth:true,api_key:false,spend_basis:'unit fixture only',executable_sha256:'unit'};
  const token='UNIT-TEST-ONLY',save=(p:string,v:any)=>writeFileSync(dir+'/'+p,JSON.stringify(v));writeFileSync(dir+'/canary.png','unit-image-bytes');
  save('expected.json',{sha256:sha256(token)});save('prompt.json',{text:'Read the attached image.'});save('canary-result.json',{status:'PASS',cli_image_transport:'VERIFIED_ATTACHMENT',auth});save('call/response.json',{text:token});
- save('call/transport-evidence.json',{used_tool:false,profile_sha256:fileHash(root+'/config/kimi-reviewer.md'),audit:[{method:'session/prompt'},{attachments:[{sha256:fileHash(dir+'/canary.png')}]}]});
+ mkdirSync(dir+'/call/workspace/.kimi-code/agents',{recursive:true});const ep=dir+'/call/workspace/.kimi-code/agents/agent.md';writeFileSync(ep,readFileSync(root+'/config/kimi-reviewer.md','utf8').replace('name: foundry-reviewer','name: agent\noverride: true'));
+ save('call/transport-evidence.json',{used_tool:false,effective_profile_path:ep,effective_profile_sha256:fileHash(ep),binding:{active_tools:[],tool_schema_count:0,thinking_effort:'low',custom_prompt:true},profile_sha256:fileHash(root+'/config/kimi-reviewer.md'),audit:[{method:'session/prompt'},{attachments:[{sha256:fileHash(dir+'/canary.png')}]}]});
  return {dir,auth,save};
 }
 test('canary proof rejects changed pixels, guessed/changed answers, tool use and model swaps',()=>{
- const ok=proofFixture();assert.equal(checkCanary(ok.dir,ok.auth).length,6);
+ const ok=proofFixture();assert.equal(checkCanary(ok.dir,ok.auth).length,7);
  for(const name of ['image','answer','tool','model','leak']){
  const f=proofFixture();
  if(name==='image')writeFileSync(f.dir+'/canary.png','changed');
@@ -42,3 +43,9 @@ test('canary proof rejects changed pixels, guessed/changed answers, tool use and
  }
 });
 test('disabled vision blocks even a previously correct canary',()=>{const f=proofFixture();process.env.FOUNDRY_VISION='off';try{assert.throws(()=>checkCanary(f.dir,f.auth),/NO_VISION_TRANSPORT/)}finally{delete process.env.FOUNDRY_VISION}});
+test('native audit uses actual request settings and rejects an enabled toolset',async()=>{
+ const {bindingFromRows}=await import('../src/kimi-policy.js');
+ const rows=[{type:'profile.bind',profileName:'agent',thinkingEffort:'max',activeToolNames:[],systemPrompt:'You inspect only supplied text and attached image pixels.'},{type:'llm.tools_snapshot',hash:'empty',tools:[]},{type:'llm.request',thinkingEffort:'low',modelAlias:'kimi-code/kimi-for-coding',toolsHash:'empty'}];
+ assert.equal(bindingFromRows(rows).thinking_effort,'low');
+ const unsafe=structuredClone(rows);unsafe[0].activeToolNames=['Bash'] as never[];assert.throws(()=>bindingFromRows(unsafe),/FORBIDDEN_OP/);
+});
