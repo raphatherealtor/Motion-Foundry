@@ -9,7 +9,7 @@ import {read,write,fileHash,fail} from './io.js';
 import {schemas} from './schemas.js';
 import {EvidenceManifest} from './contracts.js';
 const knobs=read(resolve(root,'config/foundry.config.json'));
-export const config={viewport:{width:1080,height:1920},deviceScaleFactor:knobs.review_scale,args:['--no-sandbox','--disable-gpu','--font-render-hinting=none'],stride:knobs.contact_sheet_stride,render_timeout_s:knobs.render_timeout_s,asset_ready_timeout_s:knobs.asset_ready_timeout_s,max_output_mb:knobs.max_output_mb,visibility_opacity_threshold:knobs.visibility_opacity_threshold};
+export const config={viewport:{width:1080,height:1920},deviceScaleFactor:knobs.review_scale,args:['--no-sandbox','--disable-gpu','--font-render-hinting=none','--run-all-compositor-stages-before-draw','--disable-new-content-rendering-timeout','--disable-threaded-animation','--disable-threaded-scrolling','--disable-checker-imaging','--disable-image-animation-resync','--disable-partial-raster','--disable-skia-runtime-opts','--force-color-profile=srgb'],stride:knobs.contact_sheet_stride,render_timeout_s:knobs.render_timeout_s,asset_ready_timeout_s:knobs.asset_ready_timeout_s,max_output_mb:knobs.max_output_mb,visibility_opacity_threshold:knobs.visibility_opacity_threshold};
 export interface Word {object:string;word:string;text:string;bbox:number[];opacity:number;displayed:boolean;visible:boolean;fontSize:number}
 export interface Boxes {frame:number;words:Word[];objects:Word[]}
 export async function boxes(page:Page,frame:number):Promise<Boxes>{return page.evaluate(({frame,threshold})=>{
@@ -52,8 +52,8 @@ export async function render(scene:Scene,out:string,noCache=false,candidate_id:s
  const cells=frames.filter(f=>f.i%config.stride===0).map((f,cell)=>({cell,frame:f.i}));
  const sheet=await browser.newPage({viewport:{width:600,height:Math.ceil(cells.length/6)*200},deviceScaleFactor:1});
  await sheet.route('**/*',r=>r.abort());
- await sheet.setContent('<style>*{box-sizing:border-box}body{margin:0;display:grid;grid-template-columns:repeat(6,100px);background:#fff}div{height:200px;font:12px monospace}img{width:100px;height:178px}</style>'+cells.map(c=>`<div>cell ${c.cell}: f${c.frame}<img src="data:image/png;base64,${readFileSync(resolve(dir,frames[c.frame].path)).toString('base64')}"></div>`).join(''));
- await sheet.waitForFunction('[...document.images].every(i=>i.complete)');
+ await sheet.setContent('<style>@font-face{font-family:Fixture;src:url(data:font/woff2;base64,'+assets().font+')}*{box-sizing:border-box}body{margin:0;display:grid;grid-template-columns:repeat(6,100px);background:#fff}div{height:200px;font:12px Fixture}img{width:100px;height:178px}</style>'+cells.map(c=>`<div>cell ${c.cell}: f${c.frame}<img src="data:image/png;base64,${readFileSync(resolve(dir,frames[c.frame].path)).toString('base64')}"></div>`).join(''));
+ await sheet.waitForFunction('document.fonts.status==="loaded" && [...document.images].every(i=>i.complete)');
  await sheet.screenshot({path:resolve(dir,'contact_sheet.png')});
  const manifest:EvidenceManifest={schema:'foundry.evidence/0.1',render_id,attempt_id,revision_id,candidate_id,hashes:{schema:hash(schemas),source:revision_id,assets:hash(assets()),renderer_config:hash(renderer_config)},logical:{w:1080,h:1920},output:{w:1080*config.deviceScaleFactor,h:1920*config.deviceScaleFactor},transform:{scale_x:config.deviceScaleFactor,scale_y:config.deviceScaleFactor,offset_x:0,offset_y:0},fps:scene.fps,range:{start:0,end:270},timebase:'frame',frames,contact_sheet:{path:'contact_sheet.png',sha256:fileHash(resolve(dir,'contact_sheet.png')),cells,stride:config.stride},object_boxes:{path:'boxes.jsonl',sha256:fileHash(resolve(dir,'boxes.jsonl'))},audio:null,created_at:new Date().toISOString()};
  write(resolve(dir,'scene.json'),scene);write(resolve(dir,'renderer-config.json'),renderer_config);write(resolve(dir,'manifest.json'),manifest);return dir;

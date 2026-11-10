@@ -16,6 +16,7 @@ export function html(s:Scene) {
  let seed=scene.seed>>>0;
  const rng=()=>{seed+=0x6D2B79F5;let t=seed;t=Math.imul(t^(t>>>15),t|1);t^=t+Math.imul(t^(t>>>7),t|61);return ((t^(t>>>14))>>>0)/4294967296};
  window.foundry={frame:0,time:0,rng};
+ gsap.defaults({force3D:false,lazy:false});
  const tl=gsap.timeline({paused:true});gsap.ticker.sleep();gsap.set('#shape1',{y:Math.floor(rng()*30)});gsap.set('#shape2',{y:-Math.floor(rng()*30)});
  for(const [id,o] of Object.entries(scene.objects)){
   const el=document.createElement('div');el.id=id;

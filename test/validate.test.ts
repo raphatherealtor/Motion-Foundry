@@ -44,3 +44,6 @@ test('offscreen words cannot satisfy required content; ordinary flashes only WAR
  const gap=[row(word,0),{frame:1,words:[],objects:[]},row(word,2)];
  const results=check(one,gap);assert.equal(results[3].status,'PASS');assert.equal(results[5].status,'WARN');
 });
+test('absent or incomplete validation never counts as PASS',async()=>{
+ const {passing}=await import('../src/validate.js');assert.equal(passing([]),false);assert.equal(passing(check(scene,[]).slice(0,1)),false);
+});

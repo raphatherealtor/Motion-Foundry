@@ -4,6 +4,7 @@ import {readFileSync,mkdtempSync} from 'node:fs';
 import {tmpdir} from 'node:os';
 import {render,verifyHashes,renderIdentity} from '../src/render.js';
 import {root,Scene} from '../src/scene.js';
+import {canonical} from '../src/hash.js';
 import {write} from '../src/io.js';
 test('repeat no-cache rendering, immutable attempts, cache and seek determinism', {timeout:240000},async()=>{
  const scene=JSON.parse(readFileSync(root+'/fixtures/m0-overflow/scene.json','utf8')) as Scene;
@@ -15,6 +16,7 @@ test('repeat no-cache rendering, immutable attempts, cache and seek determinism'
  assert.equal(ma.render_id,renderIdentity(scene,cfg));
  assert.notEqual(ma.render_id,renderIdentity({...scene,seed:scene.seed+1},cfg));
  assert.notEqual(ma.render_id,renderIdentity(scene,{...cfg,stride:10}));
+ const identical=canonical(ma.frames)===canonical(mb.frames)&&canonical(ma.object_boxes)===canonical(mb.object_boxes)&&canonical(ma.contact_sheet)===canonical(mb.contact_sheet);
+ write(root+'/runs/determinism-'+Date.now()+'.json',{status:identical?'PASS':'BLOCKED',reason_code:identical?null:'NONDETERMINISTIC',a,b,c,frames:270,seek_order:[200,10,200,135],render_id:ma.render_id});
  assert.deepEqual(ma.frames,mb.frames);assert.deepEqual(ma.object_boxes,mb.object_boxes);assert.deepEqual(ma.contact_sheet,mb.contact_sheet);
- write(root+'/runs/determinism-'+Date.now()+'.json',{status:'PASS',a,b,c,frames:270,seek_order:[200,10,200,135],render_id:ma.render_id});
 });

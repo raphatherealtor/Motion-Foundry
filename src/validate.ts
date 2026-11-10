@@ -47,6 +47,6 @@ export function validateRender(dir:string,baselineDir=dir,persist=true){
  if(persist){const files=results.map(v=>{const path=`validation/${v.validator}.json`;write(resolve(dir,path),v);return {path,sha256:fileHash(resolve(dir,path))}});write(resolve(dir,'validation-index.json'),{schema:'foundry.validation_index/0.1',files});}
  return results;
 }
-export const passing=(results:ValidationResult[])=>results.filter(r=>r.kind!=='heuristic').every(r=>r.status==='PASS');
+export const passing=(results:ValidationResult[])=>['safe_area.v1','min_font_size.v1','required_content.v1','scene_visibility_contract.v1'].every(id=>results.filter(r=>r.validator===id&&r.kind!=='heuristic').length===1&&results.find(r=>r.validator===id)?.status==='PASS');
 export const quantize=(start:number,end:number,num=30,den=1)=>({start:Math.floor(start*num/den),end:Math.ceil(end*num/den),rounding:{start:'floor',end:'ceil'}});
 export const logicalPoint=(x:number,y:number,t:{scale_x:number;scale_y:number;offset_x:number;offset_y:number})=>[(x-t.offset_x)/t.scale_x,(y-t.offset_y)/t.scale_y];
