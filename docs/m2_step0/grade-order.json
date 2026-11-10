@@ -1,0 +1,32 @@
+{
+  "node": "v22.14.0",
+  "typescript": "5.7.2",
+  "status": "BLOCKED",
+  "detail": "GRADE_ORDER_MISMATCH",
+  "method": "Actual product modules transpiled in memory; no source edits",
+  "ms_sha": "db36db39821f46ec4b7057bb431ffb9e82473c33",
+  "radiance": 1,
+  "vignette_multiplier": 0.5,
+  "mode": "reinhard",
+  "legacy_order": "temperature -> vignette -> toneMap -> encode",
+  "spec_6_2_order": "temperature -> toneMap -> vignette -> encode",
+  "actual_rgba": [
+    156,
+    156,
+    156,
+    255,
+    156,
+    156,
+    156,
+    255,
+    156,
+    156,
+    156,
+    255,
+    156,
+    156,
+    156,
+    255
+  ],
+  "spec_order_rgb_byte": 137
+}

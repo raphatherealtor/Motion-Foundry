@@ -1,0 +1,18 @@
+{
+  "status": "BLOCKED",
+  "detail": "GRADE_ORDER_MISMATCH",
+  "ms_checkout": "/root/projects/motion-suite-m2",
+  "ms_sha": "db36db39821f46ec4b7057bb431ffb9e82473c33",
+  "heads": {
+    "main": "db36db39821f46ec4b7057bb431ffb9e82473c33",
+    "claude/e3-highlight-render": "de612e423bfe8aff37bd5dc29117cab72418da05"
+  },
+  "e3_merged": true,
+  "git_status": "",
+  "tracked_files": 634,
+  "product_branch_created": false,
+  "foundry_base": "b52aebd",
+  "implementation_authorized": false,
+  "implementation_detail": "AWAITING_AUTHORIZATION",
+  "attachment_sha256": "9cc6d1144db83544581855754929350a0c356beb225024697c9c33f668716a57"
+}

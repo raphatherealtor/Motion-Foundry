@@ -1,0 +1,12 @@
+{
+  "status": "NOT_RUN",
+  "mode": "preview",
+  "detail": "Stopped on prior semantic gate: grade order differs between product and M2 section6.2",
+  "ms_sha": "db36db39821f46ec4b7057bb431ffb9e82473c33",
+  "requested_backend": "webgl2",
+  "renderer": null,
+  "extensions": null,
+  "float_targets": null,
+  "flags_tested": [],
+  "fresh_launch_repeats": 0
+}
