@@ -1,6 +1,6 @@
 # Motion Foundry Core M0
 
-Current M0 acceptance: **BLOCKED / NONDETERMINISTIC**. Kimi OAuth, image transport, and one live geometry repair are verified; see [the current report](M0_KIMI_REPORT.md).
+Current capture validation: **PASS** after five uncached repeat-render pairs; the full suite passes **46/46**. See [the capture-race report](CAPTURE_RACE_REPORT.md). The prior Kimi live geometry repair remains independently verified; its historical connection report is [here](M0_KIMI_REPORT.md).
 
 Standalone TypeScript/Node core. Read docs/amendments.md alongside the original handoff; the amendments take precedence. No existing application is modified.
 
