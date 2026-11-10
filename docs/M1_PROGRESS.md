@@ -39,3 +39,9 @@ Fresh Kimi canary on153: PASS / VERIFIED_ATTACHMENT, Kimi2.5.2 managed subscript
 Three versioned manifests and recipe schema are present. Deterministic descriptions compile via product constructors, validateMotionOps, applyMotionTransaction and parseProject; the renderer implementation remains the product's. All text becomes measured single-word child objects with stable IDs, opacity fade and10px rise. Unsplit/segmented text is rejected, never skipped. Synthetic value counters are successive whole-number word objects; their holds remain locked. Caption/source/lower-third text is locked by fixture script hash.
 
 All three recipes compiled and rendered through preview/export/worker/golden environment with zero-tolerance parity on frames0–4. Three contract/compiler unit tests passed. Evidence: recipe-proof.json/log and recipe-tests.log under runs/m1-resume. Full-frame validation and five-stage parity remain pending the validator milestone; no recipe is yet claimed LIVE-VERIFIED. Specialty fonts explicitly fall back to registered IBM Plex Sans and are recorded in compile metadata.
+
+## Milestone 5 hard checks — TESTED on Vox
+
+Four new validator tests passed positive/negative reveal, covered-object integrity, tear seed/path uniqueness and actual-keyframe narration timing. M1 reuses unchanged M0 safe-area, minimum-font, fixture-only required-duration and visibility checks through a word-scene view. Unsupported word rows now make hard checks FAIL; they cannot be skipped. Heuristics remain advisory.
+
+The positive Vox recipe passed all hard validators across180frames, including required holds and exact preview/export/worker parity at five motion stages. Paper/editorial full-frame checks are still running. Evidence: runs/m1-resume/validator-tests.log and validation-proof.json. The original M0 required-content count invariant remains explicitly fixture-only; it is not a universal artistic law.
