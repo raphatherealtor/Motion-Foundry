@@ -1,0 +1,69 @@
+{
+  "status": "PASS",
+  "milestone": "M1",
+  "runtime_code_milestone": "f6db508",
+  "browser": "153.0.8010.12",
+  "ms_sha": "25cb5454d1f14f889d36c79dec3965a95f7b2c99",
+  "closed_loop": "LIVE",
+  "attempts": 1,
+  "renders": 2,
+  "regressions": 0,
+  "tests": {
+    "full_pass": 86,
+    "unchanged_m0": 46,
+    "m1": 40,
+    "post_logging_fix_targeted_pass": 6
+  },
+  "render_id": "c71c217f782e4e9e87bfc41796c91e5f7c614f29f55d72e0f466f24de138286a",
+  "live_revision_id": "72dfc81b640d1580714772a98a30c671c38f82f97dff8a2b1b6487d51bbdc825",
+  "artifacts": {
+    "runs/m1-live/run-result.json": {
+      "path": "runs/m1-live/run-result.json",
+      "sha256": "ec864b7d01465a6bcb0a2dfa5f9e6cfa6016fd50dbd1b4a7c0c15b2da90f86ae"
+    },
+    "runs/m1-live/decision-log.json": {
+      "path": "runs/m1-live/decision-log.json",
+      "sha256": "0d00856cdc46f17e646fde3b60873fe0fc4b0499ac9bcf6f2c75522c3f88a890"
+    },
+    "runs/m1-live/verification.json": {
+      "path": "runs/m1-live/verification.json",
+      "sha256": "d97e3c9b26058ee01c7f03dfb3eb0be56b9d64e2a632ac8f8c74afec262f5fcd"
+    },
+    "/root/projects/motion-foundry/runs/m1-live/renders/c71c217f782e4e9e87bfc41796c91e5f7c614f29f55d72e0f466f24de138286a/89b3e03f-8dd7-4cd3-b731-ee3fdcb8d927/manifest.json": {
+      "path": "/root/projects/motion-foundry/runs/m1-live/renders/c71c217f782e4e9e87bfc41796c91e5f7c614f29f55d72e0f466f24de138286a/89b3e03f-8dd7-4cd3-b731-ee3fdcb8d927/manifest.json",
+      "sha256": "2a7813a27e5b067ddab3209695187fa0e996e6c035d2251d8a8d076daaa6e514"
+    },
+    "/root/projects/motion-foundry/runs/m1-live/renders/c71c217f782e4e9e87bfc41796c91e5f7c614f29f55d72e0f466f24de138286a/89b3e03f-8dd7-4cd3-b731-ee3fdcb8d927/contact_sheet.png": {
+      "path": "/root/projects/motion-foundry/runs/m1-live/renders/c71c217f782e4e9e87bfc41796c91e5f7c614f29f55d72e0f466f24de138286a/89b3e03f-8dd7-4cd3-b731-ee3fdcb8d927/contact_sheet.png",
+      "sha256": "1c6f107795497ae92d761bbbf65e895b47a8d9c0c6a018a65653e7241f427a1f"
+    },
+    "runs/m1-determinism/repeats.json": {
+      "path": "runs/m1-determinism/repeats.json",
+      "sha256": "d3c8a8e13baee6911859fe15515e60510888cc44596092b2cc5cac081a9094bf"
+    },
+    "runs/m1-resume/boundary-final.json": {
+      "path": "runs/m1-resume/boundary-final.json",
+      "sha256": "608c25697e17a69856a9c659ae0c93542af9a641f41c4ff39a680666ed2a582a"
+    }
+  },
+  "determinism": {
+    "uncached_runs": 5,
+    "total_frames": 900,
+    "hash": "713dd63be428706a6965b1db01f60665dcf92138aa3aa00687b05823c8d4ec57",
+    "seek_order": [
+      120,
+      10,
+      120,
+      75
+    ]
+  },
+  "recipes": {
+    "paper-collage.build_tear": "TESTED",
+    "vox-doc.chart_explainer": "LIVE-VERIFIED",
+    "editorial.cutout_pop": "TESTED"
+  },
+  "optional_comparison": "NOT_RUN",
+  "studio": "NOT_RUN",
+  "audio": "NOT_RUN",
+  "paid_api_fallback": false
+}

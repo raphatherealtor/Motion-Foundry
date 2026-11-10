@@ -61,3 +61,5 @@ Pixel-luma jumps are advisory WARN at most. They never override the hard core. E
 Seeded Vox mock loop: PASS / MOCK, one typed repair attempt, two renders, no regressions. Base safe-area and required-content checks failed; repaired frames passed all hard checks. Separate CLI `foundry verify` passed. A stronger forged-LIVE test changed all reviewer labels and was rejected for missing actual live provenance; the original mock result was restored exactly. Three additional loop-safety tests passed (disabled vision, mock/live confusion, budget/spend and oscillation).
 
 Artifacts: runs/m1-mock/run-result.json, decision-log.json, verification.json; negative proof under runs/m1-resume/mock-negative-proof.json. New CLI command: `foundry motion-suite-loop <ms_scene> --out <fresh_dir> --mock` or `--canary <proof_dir>`. The same `foundry verify <run_dir>` dispatches to the independent M1 verifier. Renderer deadlines close their own browser; measured full-scene/render-plus-review forecasts may raise the recorded wall cap from900 to1800, never above1800.
+
+Final live proof, five-repeat hashes and boundary audit: see [M1_REPORT.md](M1_REPORT.md).

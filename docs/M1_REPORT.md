@@ -1,6 +1,6 @@
 # Motion Foundry M1 report
 
-Live proof: **PASS / LIVE**, independently verified. Final five-run determinism is in progress; M1 acceptance is not yet claimed.
+**M1 verification PASS.** The Vox live loop passed independent verification, and5/5 uncached renders of its accepted candidate matched exactly.
 
 ## Corrections and boundary
 
@@ -39,3 +39,17 @@ Candidate: `runs/m1-live/candidates/c_01/candidate.json`. Verification log: `run
 Vox chart explainer: LIVE-VERIFIED. Paper build/tear and editorial cutout-pop: TESTED. Their specialty-font requests explicitly fall back to registered IBM Plex Sans400/600. Only synthetic fixture shapes are used. The required-content frame-count invariant remains fixture-only, not a universal artistic rule. Heuristics cannot hard-fail a scene; explicit contracts and geometry retain deterministic authority.
 
 Optional Gemini/agy comparison: NOT_RUN; no second-reviewer capability or transport claim is made. No additional spend or paid fallback was used.
+
+## Final determinism and audit
+
+Five fresh-browser uncached renders captured900frames in total. All five matched the accepted live candidate's frame, word-box and contact-sheet digest:
+
+`713dd63be428706a6965b1db01f60665dcf92138aa3aa00687b05823c8d4ec57`
+
+Each repeat also passed preview/export/worker/golden-environment parity and out-of-order seeks120,10,120,75. Full evidence: [five-run record](../runs/m1-determinism/repeats.json) (PASS, complete:true). Two independent jobs ran concurrently; no rendering cache or source changes were used during capture.
+
+Boundary audit: all587 tracked Motion Suite files retain their Step0 SHA256 values, its git status is clean, and frozen M0 files are unchanged. `runs/m1-resume/boundary-final.json` records the result.
+
+A metadata-only follow-up makes new runs record the already-enforced frame-scaled render deadline explicitly (960seconds for180frames, bounded by remaining wall time). The immutable live run retains its inherited120-second M0 base value; its actual archived adapter enforced the scaled deadline. No effective limit was relaxed, no live candidate/evidence was edited, and the three safety tests were rerun successfully. The full86-test suite passed before this logging correction.
+
+Machine-readable committed evidence index: [m1-evidence-summary.json](m1-evidence-summary.json). Final independent verification was rerun successfully after the logging correction; six targeted recipe/safety tests passed.
