@@ -4,7 +4,7 @@ import {readFileSync,mkdtempSync} from 'node:fs';
 import {resolve} from 'node:path';
 import {root} from '../src/scene.js';
 import {motionLoop} from '../src/adapters/motion-suite/loop.js';
-import {checkBudget} from '../src/adapters/motion-suite/budget.js';
+import {checkBudget,scaledRenderTimeout} from '../src/adapters/motion-suite/budget.js';
 import {checkHistory,remember} from '../src/adapters/motion-suite/history.js';
 import {projectHash} from '../src/adapters/motion-suite/materialize.js';
 const scene=JSON.parse(readFileSync(resolve(root,'fixtures/m1/vox-doc.chart_explainer/ms_scene.json'),'utf8'));
@@ -15,6 +15,7 @@ test('disabled vision and mock/live confusion stop before rendering',async()=>{
  const r=await motionLoop(scene,dir(),true,'unused');assert.equal(r.status,'ERROR');assert.equal(r.reason_code,'FORBIDDEN_OP');assert.equal(r.budgets_used.renders,0);
 });
 test('budgets cap attempts, renders, time and spend',()=>{
+ assert.equal(scaledRenderTimeout(180,120),960);assert.throws(()=>scaledRenderTimeout(1.5,120),/TYPE_INVALID/);
  const limits={max_attempts:3,max_renders_per_run:5,run_wall_clock_s:900,reviewer_timeout_s:180,max_output_mb:500,allow_spend:false},used={renders:5,wall_s:1,bytes:0};
  assert.doesNotThrow(()=>checkBudget(limits,used));assert.throws(()=>checkBudget(limits,used,true),/BUDGET_EXHAUSTED/);assert.throws(()=>checkBudget(limits,{...used,wall_s:901}),/BUDGET_EXHAUSTED/);assert.throws(()=>checkBudget({...limits,allow_spend:true},used),/SPEND_RISK/);assert.throws(()=>checkBudget({...limits,max_attempts:4},used),/BUDGET_EXHAUSTED/);
 });

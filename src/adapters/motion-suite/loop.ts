@@ -1,4 +1,4 @@
-import {checkBudget} from './budget.js';
+import {checkBudget,scaledRenderTimeout} from './budget.js';
 import {existsSync,mkdirSync,readdirSync,statSync} from 'node:fs';
 import {resolve} from 'node:path';
 import {randomUUID} from 'node:crypto';
@@ -20,6 +20,7 @@ export async function motionLoop(scene:MotionScene,out:string,mock=false,canaryD
  mkdirSync(out,{recursive:true});if(existsSync(resolve(out,'run-result.json')))throw new Error('FORBIDDEN_OP: run directory already finalized');
  const started=Date.now(),run_id=randomUUID(),renderer=new MotionSuiteRenderer(options(out));
  const limits={...read(resolve(root,'config/foundry.config.json'))},events:any[]=[],decisions:any[]=[],attempts:any[]=[];
+ limits.render_timeout_s=scaledRenderTimeout(scene.frames,limits.render_timeout_s);
  let renders=0,current:Candidate={scene:structuredClone(scene),ops:[]},currentDir='',baseDir='',last_passing:string|null=null,liveCalled=false;
  let proof:ReturnType<typeof verifiedCanary>|undefined;
  const checkpoint=(state:string,data:any={})=>{const e={state,...structuredClone(data)};events.push(e);write(resolve(out,'checkpoints/'+String(events.length).padStart(3,'0')+'.json'),e);};
@@ -34,7 +35,7 @@ export async function motionLoop(scene:MotionScene,out:string,mock=false,canaryD
   write(resolve(out,'run-result.json'),r);return r;
  };
  const render=async(c:any,candidate:Candidate,candidate_id:string|null)=>{
-  budget();renders++;const timeout_s=Math.min(960,limits.run_wall_clock_s-(Date.now()-started)/1000);
+  budget();renders++;const timeout_s=Math.min(limits.render_timeout_s,limits.run_wall_clock_s-(Date.now()-started)/1000);
   return renderer.render(c.project,{start:0,end:scene.frames},{intent:candidate,candidate_id,timeout_s});
  };
  checkpoint('INIT',{limits});write(resolve(out,'ms_scene.json'),scene);write(resolve(out,'base-candidate.json'),current);
