@@ -24,7 +24,7 @@ export function validate(scene:Scene,rows:Boxes[],original:Scene,baseline:Boxes[
  const actual=rows.filter(r=>r.words.some(w=>w.word===word&&w.text===text&&full(w)&&inside(w))).length;
  if(scene.objects[id]?.text!==o.text||actual<required)content.push({object:id,word,text,required_frames:required,actual_frames:actual});
  });
- const explicit:Record<string,unknown>[]=[],warnings:Record<string,unknown>[]=[];
+ const explicit:Record<string,unknown>[]=[],warnings:Record<string,unknown>[]=[],flashes:Record<string,unknown>[]=[];
  const visibleItems=(r:Boxes)=>[...r.words.filter(w=>w.visible),...r.objects.filter(w=>w.visible&&!scene.objects[w.object])];
  const present=(r:Boxes,id:string)=>r.words.some(w=>w.object===id&&w.visible);
  for(let i=0;i<rows.length;i++){
@@ -34,10 +34,12 @@ export function validate(scene:Scene,rows:Boxes[],original:Scene,baseline:Boxes[
  const [x0,y0,x1,y1]=c.region;
  if(r.frame>=c.range[0]&&r.frame<c.range[1]&&!visibleItems(r).some(w=>w.bbox[0]<x1&&w.bbox[2]>x0&&w.bbox[1]<y1&&w.bbox[3]>y0))explicit.push({contract:c.id,frame:r.frame,region:c.region,reason:'REQUIRED_REGION_BLANK'});
  }
+ if(i>0&&i+1<rows.length&&!scene.annotations.some(a=>a.type==='intentional_flash'&&r.frame>=a.range[0]&&r.frame<a.range[1]))for(const id of Object.keys(scene.objects)){if(present(rows[i-1],id)===present(rows[i+1],id)&&present(r,id)!==present(rows[i-1],id))flashes.push({object:id,frame:r.frame,note:'Potential one-frame visibility flash; heuristic only.'})}
  if(i>0&&i+1<rows.length)for(const id of scene.contracts.forbid_one_frame_discontinuity)if(present(rows[i-1],id)&&!present(r,id)&&present(rows[i+1],id))explicit.push({object:id,frame:r.frame,reason:'FORBIDDEN_ONE_FRAME_DISCONTINUITY'});
  }
+ const flash=result('visibility_flash.v1','heuristic',{},flashes);flash.status=flashes.length?'WARN':'NOT_RUN';
  const heuristic=result('blank_frames.v1','heuristic',{},warnings);heuristic.status=warnings.length?'WARN':'NOT_RUN';
- return [result('safe_area.v1','hard_geometry',{safe},geometry),result('min_font_size.v1','hard_geometry',{minimum:40},minimum),result('required_content.v1','hard_contract',{fixture_only:true,baseline:'original fully visible frame counts; safe-area constraint applies to candidates'},content),result('scene_visibility_contract.v1','hard_contract',{},explicit),heuristic];
+ return [result('safe_area.v1','hard_geometry',{safe},geometry),result('min_font_size.v1','hard_geometry',{minimum:40},minimum),result('required_content.v1','hard_contract',{fixture_only:true,baseline:'original fully visible frame counts; safe-area constraint applies to candidates'},content),result('scene_visibility_contract.v1','hard_contract',{},explicit),heuristic,flash];
 }
 export function validateRender(dir:string,baselineDir=dir,persist=true){
  const manifest=verifyHashes(dir);verifyHashes(baselineDir);

@@ -98,6 +98,9 @@
     "baseline_manifest_sha256": {
       "type": "string"
     },
+    "baseline_validation_index_sha256": {
+      "type": "string"
+    },
     "reason_code": {
       "type": "string"
     }

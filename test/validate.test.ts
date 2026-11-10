@@ -36,3 +36,11 @@ test('half-open quantization and coordinate roundtrip',()=>{
  assert.equal(quantize(0,9).end,270);
  assert.deepEqual(logicalPoint(55,95,{scale_x:0.5,scale_y:0.5,offset_x:5,offset_y:-5}),[100,200]);
 });
+test('offscreen words cannot satisfy required content; ordinary flashes only WARN',()=>{
+ const one=structuredClone(scene);one.objects.title_text.text='MOTION';
+ const base=[row({...word,bbox:[100,880,300,960]})];
+ const off=[row({...word,bbox:[1080,880,1300,960],visible:false})];
+ assert.equal(validate(one,off,one,base,'r')[2].status,'FAIL');
+ const gap=[row(word,0),{frame:1,words:[],objects:[]},row(word,2)];
+ const results=check(one,gap);assert.equal(results[3].status,'PASS');assert.equal(results[5].status,'WARN');
+});

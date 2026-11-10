@@ -1,6 +1,6 @@
 import {resolve} from 'node:path';
 import {randomUUID} from 'node:crypto';
-import {mkdirSync} from 'node:fs';
+import {mkdirSync,readdirSync,statSync} from 'node:fs';
 import {Scene,root} from './scene.js';
 import {RepairProposal,RunResult} from './contracts.js';
 import {hash} from './hash.js';
@@ -15,16 +15,17 @@ export async function repairLoop(original:Scene,out:string,mock=false,maxAttempt
  const events:Record<string,unknown>[]=[],decisions:Record<string,unknown>[]=[],attempts:Record<string,unknown>[]=[];
  let renders=0,last_passing:string|null=null,seq=0,dir='',baseDir='';
  const checkpoint=(state:string,data:Record<string,unknown>={})=>{const e={state,...data};events.push(e);write(resolve(out,`checkpoints/${String(seq++).padStart(3,'0')}.json`),e)};
- const budget=()=>{if(Date.now()-started>budgets.run_wall_clock_s*1000||renders>=budgets.max_renders_per_run)throw new Error('BUDGET_EXHAUSTED')};
+ const bytes=(p:string):number=>readdirSync(p).reduce((n,name)=>{const path=resolve(p,name),s=statSync(path);return n+(s.isDirectory()?bytes(path):s.size)},0);
+ const budget=()=>{if(budgets.allow_spend!==false)throw new Error('SPEND_RISK');if(bytes(out)>=budgets.max_output_mb*1024*1024)throw new Error('BUDGET_EXHAUSTED');if(Date.now()-started>budgets.run_wall_clock_s*1000||renders>=budgets.max_renders_per_run)throw new Error('BUDGET_EXHAUSTED')};
  const finish=(status:RunResult['status'],closed_loop:RunResult['closed_loop'],reason_code?:string)=>{
  const result:RunResult={schema:'foundry.run_result/0.1',run_id,status,closed_loop,reviewer:{adapter:mock?'mock':'none',vision_transport:'UNVERIFIED',mock},attempts,last_passing,budgets_used:{renders,wall_s:(Date.now()-started)/1000},...(reason_code?{reason_code}:{}),...(dir?{manifest_sha256:fileHash(resolve(dir,'manifest.json'))}:{})};
  write(resolve(out,'decision-log.json'),{schema:'foundry.decision_log/0.1',decisions,events});
- Object.assign(result,{base_dir:baseDir,final_dir:dir,decision_log_sha256:fileHash(resolve(out,'decision-log.json')),...(baseDir?{baseline_manifest_sha256:fileHash(resolve(baseDir,'manifest.json'))}:{}),...(dir?{validation_index_sha256:fileHash(resolve(dir,'validation-index.json'))}:{})});
+ Object.assign(result,{base_dir:baseDir,final_dir:dir,decision_log_sha256:fileHash(resolve(out,'decision-log.json')),...(baseDir?{baseline_manifest_sha256:fileHash(resolve(baseDir,'manifest.json')),baseline_validation_index_sha256:fileHash(resolve(baseDir,'validation-index.json'))}:{}),...(dir?{validation_index_sha256:fileHash(resolve(dir,'validation-index.json'))}:{})});
  write(resolve(out,'run-result.json'),result);return result;
  };
  checkpoint('INIT');
  try{
- if(!Number.isInteger(maxAttempts)||maxAttempts<1||maxAttempts>3)throw new Error('BUDGET_EXHAUSTED');
+ if(!Number.isInteger(maxAttempts)||maxAttempts<1||maxAttempts>Math.min(3,budgets.max_attempts))throw new Error('BUDGET_EXHAUSTED');
  budget();renders++;baseDir=dir=await render(original,out);checkpoint('RENDERED',{dir});
  let current=original,results=validateRender(dir);checkpoint('VALIDATED',{results});
  const baseFailure=results.filter(r=>r.status==='FAIL');
@@ -48,7 +49,7 @@ export async function repairLoop(original:Scene,out:string,mock=false,maxAttempt
  write(resolve(reviewDir,'proposal.json'),proposal);checkpoint('PROPOSED',{proposal});
  const decision:Record<string,unknown>={base_failure:failures,reviewer_proposal:proposal,gate_decision:null,candidate_revision:null,new_validation_result:null};decisions.push(decision);
  let candidate:Scene;
- try{candidate=gate(current,base.render_id,proposal,history);decision.gate_decision={status:'PASS'};checkpoint('GATED',{status:'PASS'})}catch(e){decision.gate_decision={status:'ERROR',reason_code:(e as Error).message};throw e}
+ try{candidate=gate(current,base.render_id,proposal,history);decision.gate_decision={status:'PASS'};checkpoint('GATED',{status:'PASS'})}catch(e){decision.gate_decision={status:'ERROR',reason_code:(e as Error).message};checkpoint('GATED',decision.gate_decision as Record<string,unknown>);throw e}
  const candidate_id=`c_${String(n).padStart(2,'0')}`,candidatePath=resolve(out,'candidates',candidate_id,'scene.json');
  write(candidatePath,candidate);decision.candidate_revision={candidate_id,revision_id:hash(candidate),parent_revision_id:hash(current),path:candidatePath};checkpoint('CANDIDATE_APPLIED',{candidate_id});
  remember(current,candidate,proposal,history);budget();renders++;dir=await render(candidate,out,false,candidate_id);checkpoint('RERENDERED',{dir});
@@ -60,5 +61,5 @@ export async function repairLoop(original:Scene,out:string,mock=false,maxAttempt
  current=candidate;results=next;checkpoint('REVIEW');
  }
  checkpoint('STOP',{reason_code:'BUDGET_EXHAUSTED'});return finish('BLOCKED',mock?'MOCK':'UNREVIEWED','BUDGET_EXHAUSTED');
- }catch(e){const reason_code=(e as Error).message.split(':')[0];checkpoint('STOP',{reason_code});return finish(['OSCILLATION','BUDGET_EXHAUSTED','NONDETERMINISTIC'].includes(reason_code)?'BLOCKED':'ERROR',mock?'MOCK':'UNREVIEWED',reason_code)}
+ }catch(e){const reason_code=(e as Error).message.split(':')[0];checkpoint('STOP',{reason_code});return finish(['OSCILLATION','BUDGET_EXHAUSTED','NONDETERMINISTIC','SPEND_RISK'].includes(reason_code)?'BLOCKED':'ERROR',mock?'MOCK':'UNREVIEWED',reason_code)}
 }
