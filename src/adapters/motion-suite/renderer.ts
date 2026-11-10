@@ -30,11 +30,12 @@ export class MotionSuiteRenderer implements RendererAdapter {
   const bundle=await this.prepare(),s=await new RenderSession().open(this.options,bundle.outDir,foundryArgs);
   try{return await s.page.evaluate(cameraPush=>(window as any).foundryMS.synthetic(cameraPush),cameraPush);}finally{await s.close();}
  }
- async render(snapshot:unknown,range:Range,context:{intent?:unknown;candidate_id?:string|null}={}){
+ async render(snapshot:unknown,range:Range,context:{intent?:unknown;candidate_id?:string|null;timeout_s?:number}={}){
   const timed=normalizeProjectTiming(snapshot);
   assertFrameRange(range,compositionFrames(timed));
   const bundle=await this.prepare(),s=await new RenderSession().open(this.options,bundle.outDir,foundryArgs);
-  let g:RenderSession|undefined;
+  let g:RenderSession|undefined,timedOut=false;
+  const timer=setTimeout(()=>{timedOut=true;void s.close();void g?.close();},(context.timeout_s??960)*1000);
   try{
    const project=await s.page.evaluate(p=>(window as any).foundryMS.parse(p),timed);
    const doc=project.motionDocuments[project.activeDocumentId];
@@ -61,6 +62,6 @@ export class MotionSuiteRenderer implements RendererAdapter {
    const sheet=await contactSheet(s.page,dir,frames,{width:doc.width,height:doc.height},PNG,config.evidence.stride);
    const manifest=emitEvidence(dir,{project,config,render_id,revision_id,attempt_id,range,frames,rows,sheet,intent,candidate_id:context.candidate_id,harnessDir:bundle.outDir});verifyEvidence(dir);
    return {dir,render_id,revision_id,frames,parity,manifest};
-  }finally{await g?.close();await s.close();}
+  }catch(e){if(timedOut)throw new Error('BUDGET_EXHAUSTED: render timeout');throw e;}finally{clearTimeout(timer);await g?.close();await s.close();}
  }
 }

@@ -55,3 +55,9 @@ New operation-envelope/proposal/review schemas and repair allowlist v2 live unde
 Typed set/shift/easing/stagger/registered-recipe operations lower through validateMotionOps, applyMotionTransaction on a copied project, then parseProject. Recipe rebuilds replay prior native repairs. Protected ancestors and all owners of protected masks/assets are forbidden. Shadow softness is0–1; bezier without handles, unconsumed letter spacing, native wrap/maxWidth and unmapped camera values are omitted. Stagger seconds require exact integer-frame conversion (.2→6,.3→9; .15→TYPE_INVALID).
 
 Pixel-luma jumps are advisory WARN at most. They never override the hard core. Evidence: lowering-tests.log, candidate-test.log and schemas/ under the adapter.
+
+## Milestone 7 — TESTED
+
+Seeded Vox mock loop: PASS / MOCK, one typed repair attempt, two renders, no regressions. Base safe-area and required-content checks failed; repaired frames passed all hard checks. Separate CLI `foundry verify` passed. A stronger forged-LIVE test changed all reviewer labels and was rejected for missing actual live provenance; the original mock result was restored exactly. Three additional loop-safety tests passed (disabled vision, mock/live confusion, budget/spend and oscillation).
+
+Artifacts: runs/m1-mock/run-result.json, decision-log.json, verification.json; negative proof under runs/m1-resume/mock-negative-proof.json. New CLI command: `foundry motion-suite-loop <ms_scene> --out <fresh_dir> --mock` or `--canary <proof_dir>`. The same `foundry verify <run_dir>` dispatches to the independent M1 verifier. Renderer deadlines close their own browser; measured full-scene/render-plus-review forecasts may raise the recorded wall cap from900 to1800, never above1800.

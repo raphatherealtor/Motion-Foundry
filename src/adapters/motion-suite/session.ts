@@ -29,5 +29,5 @@ export class RenderSession {
  }
  async boxes(project:unknown,frame:number):Promise<MotionSuiteBoxes>{return this.page.evaluate(({project,frame})=>(window as any).foundryMS.boxes(project,frame),{project,frame});}
  version(){return this.browser!.version();}
- async close(){await this.browser?.close();await this.server?.close();}
+ async close(){const browser=this.browser,server=this.server;this.browser=undefined;this.server=undefined;await browser?.close();await server?.close();}
 }
