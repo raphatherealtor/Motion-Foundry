@@ -8,7 +8,7 @@ const files=['canary.png','expected.json','prompt.json','canary-result.json','ca
 export function checkCanary(dir:string,auth:ReturnType<typeof kimiAuth>){
  if(process.env.FOUNDRY_VISION==='off')fail('NO_VISION_TRANSPORT');
  const result=read(resolve(dir,'canary-result.json')),expected=read(resolve(dir,'expected.json')),response=read(resolve(dir,'call/response.json')).text.trim(),prompt=read(resolve(dir,'prompt.json')).text,transport=read(resolve(dir,'call/transport-evidence.json'));
- if(result.status!=='PASS'||result.cli_image_transport!=='VERIFIED_ATTACHMENT'||sha256(response)!==expected.sha256||prompt.includes(response)||transport.used_tool||transport.profile_sha256!==fileHash(resolve(root,'config/kimi-reviewer.md')))fail('NO_VISION_TRANSPORT');
+ if(result.auth.auth_mode!=='subscription'||result.auth.may_incur_spend!==false||result.status!=='PASS'||result.cli_image_transport!=='VERIFIED_ATTACHMENT'||sha256(response)!==expected.sha256||prompt.includes(response)||transport.used_tool||transport.profile_sha256!==fileHash(resolve(root,'config/kimi-reviewer.md')))fail('NO_VISION_TRANSPORT');
  for(const k of ['version','model','provider','endpoint'])if(result.auth[k]!==auth[k as keyof typeof auth])fail('NO_VISION_TRANSPORT');
  const attachment=transport.audit.flatMap((v:any)=>v.attachments||[]);
  if(attachment.length!==1||attachment[0].sha256!==fileHash(resolve(dir,'canary.png'))||!transport.audit.some((v:any)=>v.method==='session/prompt'))fail('EVIDENCE_HASH_MISMATCH');

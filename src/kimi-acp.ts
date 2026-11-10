@@ -4,6 +4,7 @@ import {mkdirSync,readFileSync} from 'node:fs';
 import {resolve} from 'node:path';
 import {root} from './scene.js';
 import {kimiAuth,kimiEnvironment,kimiModel} from './kimi-auth.js';
+import {sha256} from './hash.js';
 import {fileHash,write} from './io.js';
 export async function kimiImagePrompt(text:string,images:string[],out:string,timeoutMs=180000){
  if(process.env.FOUNDRY_VISION==='off')throw new Error('NO_VISION_TRANSPORT');
@@ -40,7 +41,7 @@ export async function kimiImagePrompt(text:string,images:string[],out:string,tim
  const selected=session.configOptions?.find((c:any)=>c.id==='model')?.currentValue;
  audit.push({session:session.sessionId,model:selected});if(selected&&selected!==kimiModel)throw new Error('SPEND_RISK');
  const prompt=[{type:'text',text},...images.map(path=>({type:'image',mimeType:'image/png',data:readFileSync(path).toString('base64')}))];
- audit.push({attachments:images.map(path=>({sha256:fileHash(path),mimeType:'image/png'})),text_characters:text.length,tool_policy:'none'});
+ audit.push({attachments:images.map(path=>({sha256:fileHash(path),mimeType:'image/png'})),text_characters:text.length,text_sha256:sha256(text),tool_policy:'none'});
  const end=await call('session/prompt',{sessionId:session.sessionId,prompt});
  if(usedTool||end.stopReason!=='end_turn'||!answer.trim())throw new Error('INVALID_REVIEW');
  write(resolve(out,'response.json'),{text:answer,stop_reason:end.stopReason});return {answer,auth,session_id:session.sessionId};

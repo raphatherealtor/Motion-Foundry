@@ -3,6 +3,7 @@ import {read,fileHash,fail} from './io.js';
 import {verifyHashes} from './render.js';
 import {validateRender,passing} from './validate.js';
 import {canonical,hash} from './hash.js';
+import {verifyLive} from './kimi-verify.js';
 import {RunResult} from './contracts.js';
 export function verifyRun(out:string){
  const r=read<RunResult>(resolve(out,'run-result.json'));
@@ -18,5 +19,6 @@ export function verifyRun(out:string){
  const actual=validateRender(r.final_dir,r.base_dir,false);
  for(const v of actual)if(canonical(read(resolve(r.final_dir,`validation/${v.validator}.json`)))!==canonical(v))fail('EVIDENCE_HASH_MISMATCH');
  if(r.closed_loop==='LIVE'&&(r.reviewer.mock||r.reviewer.vision_transport!=='VERIFIED_ATTACHMENT'))fail('FORBIDDEN_OP');
+ if(r.closed_loop==='LIVE')verifyLive(log);
  return {status:passing(actual)?'PASS':'FAIL',closed_loop:r.closed_loop,render_id:verifyHashes(r.final_dir).render_id,validation:actual.map(v=>({validator:v.validator,status:v.status})),audio:'NOT_RUN'};
 }
