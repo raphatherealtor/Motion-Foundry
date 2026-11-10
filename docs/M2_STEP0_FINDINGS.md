@@ -1,62 +1,41 @@
-# M2 Step 0 findings — BLOCKED
+# M2 Step 0 findings
 
-No M2 renderer implementation has started. GPU probes and test suites are NOT_RUN because the semantic stop rule fired first. This is not a GPU capability failure.
+All source observations below refer to Motion Suite **db36db39821f46ec4b7057bb431ffb9e82473c33**, detached and clean in `/root/projects/motion-suite-m2`. E3 de612e423bfe8aff37bd5dc29117cab72418da05 is merged. [Base evidence](m2_step0/inspection.json).
 
-## Corrections first
+Raphael approved preserving temperature → vignette → tone map and reserving M2 v3 allowlist files/ID. [Approved amendment](M2_APPROVED_CORRECTIONS.md). The earlier blocked grade discriminator remains historical evidence, not an unresolved decision. Frozen M0/M1 files remain unchanged.
 
-**CORRECTED — grade order changes semantics.** Current product `finishFrame` applies temperature and vignette before tone mapping, then sRGB encoding. M2 §6.2 specifies temperature → tone map → vignette. M2 §4's architecture diagram instead places vignette before tone mapping, matching the product. Those two sections disagree.
+## Source facts
 
-All product evidence below is pinned at **db36db39821f46ec4b7057bb431ffb9e82473c33**, current main at inspection, in `/root/projects/motion-suite-m2`.
+**CONFIRMED — legacy Canvas2D.** `src/motion/components/CanvasPreview.tsx:96` obtains a default 2D context. `src/motion/render/drawDocument.ts:266–317` composites projected layers. All render/export context creation and composite/filter/shadow assignments are listed with source lines in [source-inventory.json](m2_step0/source-inventory.json). No explicit wide-gamut/float Canvas context is requested. Byte pixels are `Uint8ClampedArray` from ImageData. Runtime Canvas attributes are in [runtime-audit.json](m2_step0/runtime-audit.json).
 
-OBSERVED source:
-- `src/motion/render/frameGrade.ts:47–55`: `encodeSrgbByte(toneMap(mode, data[i+c] * gains[c] * v))`.
-- `src/motion/render/drawDocument.ts:266` selects the linear grade path; `:382` obtains lit radiance; `:395` calls `finishFrame`.
-- `src/motion/render/linearLight.ts:50` applies exposure to layer radiance before final grade.
-- `src/motion/render/lighting.ts:276–282`: Reinhard is `value/(1+value)`; ACES and clamp are also explicit.
+**CONFIRMED — two lit paths, not universal float.** `drawDocument.ts:300–317` shades isolated byte surfaces; `:358–395` uses the opt-in frame-grade float compositor. `frameGrade.ts:5` enables it for nonzero vignette or temperature. `linearLight.ts:17–54` decodes byte input and keeps Float32 radiance; JS intermediates and explicit Float64 scratch arrays are double precision. `linearProjection.ts:6–48` samples premultiplied radiance and composites Float32 output.
 
-These grade files are unchanged from the M1 product pin25cb5454. This is a brief/product mismatch, not a newly introduced product regression.
+The light job (`lightPass.ts:60`, `lightJob.ts:10–25`) carries evaluated lights, world matrix, local bounds, camera, lightmap resolution, two-sided state, diffuse/emissive/exposure/tone map, surface effects and keyed highlight. Gobo/influence masks and cast shadows enter through `goboMaps.ts` and `castShadow.ts`. `linearLight.ts:50` applies exposure before final frame grade. Surface highlight key selection is in `lightJob.ts:27–32`.
 
-OBSERVED runtime discriminator: `node docs/m2_step0/grade-probe.cjs` transpiles the actual pure product modules in memory, with no edits or product dependency installation. For linear radiance1, neutral temperature, Reinhard and a0.5 corner vignette, the product emits RGB **156**, whereas the §6.2 order emits **137**. All four2×2 test pixels agree. This is source-function execution, not a rendered scene or a GPU test. Raw output: [grade-order.json](m2_step0/grade-order.json).
+`lighting.ts:267–282` uses a 256-entry Float32 sRGB decode LUT and a 65536-entry byte encode LUT. Reinhard is x/(1+x); ACES is the clamped (x(2.51x+.03))/(x(2.43x+.59)+.14); clamp is identity inside 0–1. `frameGrade.ts:47–57` applies temperature, vignette, tone map, then sRGB; alpha is unchanged except byte rounding. Depth contrast is display-referred (`drawDocument.ts:384–388`). The [grade discriminator](m2_step0/grade-order.json) proves why preserving order matters.
 
-**CORRECTED — M2 repair ID collides with frozen M1.** M2 §2 freezes v1/v2 and permits only new v3 files, but §10.2 calls the new allowlist `repair-allowlist.motion-suite.v2` and describes v1 as its predecessor. That ID already exists in M1 at `src/adapters/motion-suite/schemas/repair-allowlist.v2.json:2`. Proposed clarification: preserve it and use a new `.v3` ID/file for M2. No schema or allowlist was changed.
+**CONFIRMED — projection differs by path.** `projectedPlane.ts:16–67` uses affine transforms for flat planes; tilted planes use a 10×10 grid of two affine-clipped triangles per cell, an approximation rather than perspective-correct texture interpolation. `linearProjection.ts:30–43` inverse-projects each pixel and bilinearly samples float color, while Canvas still supplies triangle silhouette coverage. This distinction must inform M2.1 parity calibration.
 
-**CONFIRMED — evidence0.1 cannot accept extras.** `schemas/EvidenceManifest.json:261` has `additionalProperties:false`. Follow M2 §10.1's already-declared alternative: a new evidence0.2 file; never add `extras` to frozen0.1.
+**CONFIRMED — blends and masks.** `motion/engine/motion-document.ts:18` supports normal, multiply, screen, overlay, darken, lighten, color-dodge, color-burn, hard-light, soft-light, difference, exclusion and add. `drawDocument.ts:18–35` maps these to Canvas composites (add→lighter); `linearComposite.ts:5–35` supplies the float formulas. They are separate parity oracles, not interchangeable color-space assumptions.
 
-## Base and authorization
+Masks are rectangle/ellipse/path with feather, invert, rotation and opacity (`motion/engine/motion-document.ts:59–71`). `layerMask.ts:6–27,45–91`: feather uses CSS Gaussian blur with sigma=feather/2.56 times transform scale; invert is 1−coverage; strength is 1−opacity(1−coverage). Rectangle/ellipse masks union by saturating sum; path masks intersect multiplicatively. Plain masks retain hard clipping. **NOT_FOUND:** track-matte fields/types (alpha, alpha-inverted, luma, luma-inverted) in the selected Motion document model/render code. Do not pretend those are existing product semantics; future settings stay out-of-band and no document migration is authorized.
 
-OBSERVED: remote main advanced from M1's25cb5454 to db36db3. E3 remains de612e423bfe8aff37bd5dc29117cab72418da05 and is an ancestor of main (`git merge-base --is-ancestor`, exit0). The new checkout is detached at the selected SHA and clean;634 tracked files are present. Commands: read-only SSH `git ls-remote origin refs/heads/main refs/heads/claude/e3-highlight-render`, clone, detached checkout and ancestry/status checks. Details: [inspection.json](m2_step0/inspection.json).
+**CORRECTED — continuous input, explicit discontinuities.** `spatialProjection.ts:25–26` passes seconds through effect/document evaluation. The runtime probe evaluates `buildSpatialFrame` at 1/60, 1/30, then 1/60 seconds: x is 1.6666666666666667, 3.3333333333333335, then exactly the first value. No frame snapping in that probe. This is not universal continuity: hold keys (`motion/engine/motion-document.ts:1144`), mask inversion (:1100), behavior activation boundaries (:1208), periodic beat/progress resets (`signal-resources.ts:21–27,49`), and frame-rounded Holo optical paint (`drawDocument.ts:275,339,375`) are discontinuous. Signal currentValue overrides must be frozen. Pure analytic behaviors (:1197–1315) do not integrate state frame by frame; no particle/physics integrator was found in this path. Diagnostic evaluationTimeMs is wall-clock metadata, not pixel state. M2.3 must reject or separately resolve these stepped systems; this gates blur eligibility, not M2.1.
 
-Foundry branch `m2-gpu-renderer` was cut directly from b52aebd. Its M0/M1 source, tests, allowlists and schemas remain unchanged. Only handoff/reference documents and this read-only probe/report were added.
+**CORRECTED — actual hosts.** Preview is main-thread HTMLCanvas (`components/CanvasPreview.tsx:96–127`). Export is HTMLCanvas (`export/pipeline.ts:31–35`). Existing worker mode is byte-buffer shading in a dedicated worker (`render/lightWorker.ts:1–17`), not an OffscreenCanvas renderer. Grade-enabled float frames stay inline (`drawDocument.ts:328`). Step 0's OffscreenCanvas worker is a prospective GPU-host capability probe, not a claim about the current product worker. Golden modes preview/export/worker/draft/defaults and arbitrary-project render are in `tests/golden/page/main.ts:61–88,136`.
 
-The M2 handoff authorizes Step0 only. Raphael's earlier M1 additive-file permission does not cover M2 renderer edits. No foundry/m2-renderer development branch was created, no product file was edited, and nothing was pushed or merged. M2.1+ remains BLOCKED with detail `AWAITING_AUTHORIZATION` even after the semantic correction is resolved.
+**CORRECTED — video encoder changed, evidence unchanged.** `export/pipeline.ts:95–112,143` now uses WebCodecs/mediabunny with explicit frame/fps timestamps, not MediaRecorder wall-clock recording. Do not carry the old video-timing claim forward. Finished raw canvas hooks precede GIF palette quantization (:106–112); raw-frame evidence semantics are preserved. Encoded video remains excluded from Foundry evidence, so this does not require a renderer-semantics workaround.
 
-## Stop rule and proposed correction
+**CONFIRMED — asset decode is browser managed.** `images.ts:5–10` uses cached `Image` with async decoding; no custom ICC transform or explicit premultiply policy there. `htmlExport.ts` also has image/decode sites (inventory). Foundry probes explicitly await font/image decode and upload Canvas pixels with UNPACK_PREMULTIPLY_ALPHA_WEBGL=false. Browser ICC defaults are not a validated wide-gamut contract; no ICC corpus was tested. GPU alpha/color behavior still needs M2.1 oracles.
 
-The handoff explicitly says in §6.2: **“If the orders differ, that is a semantic mismatch, so stop and report.”** Section14 repeats the semantic-mismatch stop rule. [Original M2 spec](m2-handoff/MOTION_FOUNDRY_M2_SPEC.md).
+## Measurements and gate evidence
 
-Recommended decision for Raphael:
-1. Confirm that the actual legacy grade semantics are authoritative. Amend §6.2's final-grade order to temperature → vignette → tone map, consistent with §4 and product `finishFrame`. Do not reorder the product or its existing goldens. Per-layer exposure placement remains as observed and must be included in the remaining audit.
-2. Reserve a new M2 `.v3` allowlist ID/file, leaving M1's `.v2` untouched.
+Chromium **153.0.8010.12**, Playwright **1.63.0**, Node **22.14.0**. Both headless-shell and full Chrome new-headless were installed under Foundry tooling only. The retired 131 binary was never selected. [Capability sweeps](m2_step0/capability-sweep.json) and [new-headless comparison](m2_step0/capability-sweep.new-headless.json) record all three hosts, all three proposed flag variants plus baseline, with/without --disable-gpu. Every combination exposed SwiftShader, complete 16F/32F targets, fp32 fragment precision, working float/byte readback and context loss/restoration/reinitialization. Disabling GPU did not prevent software WebGL in this build.
 
-These are proposed brief corrections only. They have not been applied to the attached spec or product. After confirmation, resume the remaining read-only Step0 checks. Request product-edit authorization only after a complete edit-path inventory and GPU gate are reviewable.
+Selected probe flags are frozen in [probe-config.mjs](m2_step0/probe-config.mjs): all M1 flags, including single raster thread and PaintHolding pin, plus --use-gl=angle --use-angle=swiftshader. This is a diagnostic pin, not an implemented product selector or render_id schema.
 
-## Check coverage at stop
+[Runtime measurement](m2_step0/runtime-audit.json) replaces the unverified 3–6 seconds/frame claim for the named synthetic lit-point-move fixture only: 1080×1920, vignette enabled to exercise CPU float, forced full readback, one cold frame and three warm samples. Values are raw in the artifact; this is not a performance promise for other scenes.
 
-| Step0 item | Evidence/status |
-|---|---|
-| Base/heads/E3 ancestry | OBSERVED, confirmed at db36db3 |
-| Graded draw and light exposure path | OBSERVED, cited above; complete Canvas context/state inventory pending |
-| Precision/tone-map code | OBSERVED Float32 frame buffers, float64 JS arithmetic and explicit maps; no lit-frame performance measurement |
-| Projection/blends/mattes/masks | NOT_RUN at this base; prior M1 facts are not relabeled as new observations |
-| Continuous-time evaluation | NOT_RUN; no motion-blur eligibility claim |
-| Host/mode and asset-decode audit | NOT_RUN at this base |
-| GPU flags/caps/shader suite | NOT_RUN in every host; no tested flag set or renderer string |
-| Five fresh launches/cross-host parity | NOT_RUN; zero GPU launches |
-| Real GPU | NOT_RUN; no availability claim |
-| Foundry86 / product Vitest / legacy goldens | NOT_RUN during M2.0; stopped on the earlier semantic gate. M1's86/86 remains historical evidence at b52aebd |
+[GPU repeat results](m2_step0/shader-repeats.json) bind full-resolution float and sRGB+dither byte hashes. The suite includes half-ULP gradient, integer PCG noise, transcendental diagnostic, bilinear float sampling with four custom box mips, 16-pass additive blend, encoding/dither, and IBM Plex Canvas text plus decoded fixture PNG upload. Each host uses five fresh browser launches. No GPU/Canvas fallback is used. Real-GPU comparison: **NOT_RUN**, no physical GPU host supplied.
 
-Machine-readable unrun records are `m2_step0/gpu_caps.preview.json`, `.export.json`, `.worker.json`. Missing measurements are not represented as a GPU failure or an8-bit/Canvas fallback.
-
-## Provisional product paths
-
-Observed relevant existing paths are `src/motion/render/frameGrade.ts`, `lighting.ts`, `linearLight.ts` and `drawDocument.ts`. These are not an authorized edit list: export/worker/selector paths and schema implications still need the interrupted audit. No MotionDocument migration, selector, GPU backend, v3 schema or shader has been implemented.
+[Foundry tests](m2_step0/foundry-tests.log): 86/86. [Product Vitest](m2_step0/product-vitest.log): 709/709 across 44 files. [Legacy goldens](m2_step0/product-golden.log): 52 frames, zero failures; 47 existing frames retain explicit-OFF/default and baseline identity. No baseline regeneration. See [M2.0 report](M2_0_REPORT.md) for the final gate and authorization boundary.

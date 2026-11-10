@@ -1,0 +1,245 @@
+
+> cutlab-motion-lovable@0.1.0 test
+> vitest run
+
+
+ RUN  v3.2.7 /root/projects/motion-suite-m2
+
+stderr | src/motion/__tests__/spatialAxis.test.js > canonical spatial state, evaluation and history > ops validate, apply, survive save/reopen and clean up dependents
+Error: Not implemented: HTMLCanvasElement.prototype.getContext (without installing the canvas npm package)
+    at module.exports (/root/projects/motion-suite-m2/node_modules/jsdom/lib/jsdom/browser/not-implemented.js:9:17)
+    at HTMLCanvasElementImpl.getContext (/root/projects/motion-suite-m2/node_modules/jsdom/lib/jsdom/living/nodes/HTMLCanvasElement-impl.js:42:5)
+    at HTMLCanvasElement.getContext (/root/projects/motion-suite-m2/node_modules/jsdom/lib/jsdom/living/generated/HTMLCanvasElement.js:131:58)
+    at measureContext (/root/projects/motion-suite-m2/src/motion/spatial/typography.ts:16:79)
+    at textWidth (/root/projects/motion-suite-m2/src/motion/spatial/typography.ts:20:15)
+    at /root/projects/motion-suite-m2/src/motion/spatial/typography.ts:41:23
+    at Array.forEach (<anonymous>)
+    at layoutSegments (/root/projects/motion-suite-m2/src/motion/spatial/typography.ts:40:9)
+    at splitTextOps (/root/projects/motion-suite-m2/src/motion/spatial/typography.ts:66:18)
+    at /root/projects/motion-suite-m2/src/motion/__tests__/spatialAxis.test.js:185:31 [90mundefined[39m
+
+stderr | src/motion/__tests__/kinetic.test.js > Kinetic typography compiles to canonical layers and keyframes > word and character layouts measure lines and respect alignment
+Error: Not implemented: HTMLCanvasElement.prototype.getContext (without installing the canvas npm package)
+    at module.exports (/root/projects/motion-suite-m2/node_modules/jsdom/lib/jsdom/browser/not-implemented.js:9:17)
+    at HTMLCanvasElementImpl.getContext (/root/projects/motion-suite-m2/node_modules/jsdom/lib/jsdom/living/nodes/HTMLCanvasElement-impl.js:42:5)
+    at HTMLCanvasElement.getContext (/root/projects/motion-suite-m2/node_modules/jsdom/lib/jsdom/living/generated/HTMLCanvasElement.js:131:58)
+    at measureContext (/root/projects/motion-suite-m2/src/motion/spatial/typography.ts:16:79)
+    at textWidth (/root/projects/motion-suite-m2/src/motion/spatial/typography.ts:20:15)
+    at /root/projects/motion-suite-m2/src/motion/spatial/typography.ts:41:23
+    at Array.forEach (<anonymous>)
+    at layoutSegments (/root/projects/motion-suite-m2/src/motion/spatial/typography.ts:40:9)
+    at /root/projects/motion-suite-m2/src/motion/__tests__/kinetic.test.js:196:26
+    at file:///root/projects/motion-suite-m2/node_modules/@vitest/runner/dist/chunk-hooks.js:155:11 [90mundefined[39m
+
+ ✓ src/motion/__tests__/kinetic.test.js (29 tests) 714ms
+ ✓ src/motion/__tests__/spatialAxis.test.js (24 tests) 615ms
+   ✓ bake, subject detection and assistant commands > baking turns the derived path into keyframes and switches the rig off  400ms
+stderr | src/motion/__tests__/lights.test.js > persistence, migration and forward compatibility > every golden legacy scene validates, round-trips and stays lighting-free
+Error: Not implemented: HTMLCanvasElement.prototype.getContext (without installing the canvas npm package)
+    at module.exports (/root/projects/motion-suite-m2/node_modules/jsdom/lib/jsdom/browser/not-implemented.js:9:17)
+    at HTMLCanvasElementImpl.getContext (/root/projects/motion-suite-m2/node_modules/jsdom/lib/jsdom/living/nodes/HTMLCanvasElement-impl.js:42:5)
+    at HTMLCanvasElement.getContext (/root/projects/motion-suite-m2/node_modules/jsdom/lib/jsdom/living/generated/HTMLCanvasElement.js:131:58)
+    at measureContext (/root/projects/motion-suite-m2/src/motion/spatial/typography.ts:16:79)
+    at textWidth (/root/projects/motion-suite-m2/src/motion/spatial/typography.ts:20:15)
+    at /root/projects/motion-suite-m2/src/motion/spatial/typography.ts:41:23
+    at Array.forEach (<anonymous>)
+    at layoutSegments (/root/projects/motion-suite-m2/src/motion/spatial/typography.ts:40:9)
+    at splitTextOps (/root/projects/motion-suite-m2/src/motion/spatial/typography.ts:66:18)
+    at lowerPlan (/root/projects/motion-suite-m2/src/motion/grammar/lowerPlan.ts:64:22) [90mundefined[39m
+
+ ✓ src/motion/__tests__/lights.test.js (80 tests) 255ms
+ ✓ src/motion/__tests__/spatial.test.js (35 tests) 130ms
+ ✓ src/motion/__tests__/goboMask.test.js (36 tests) 1025ms
+   ✓ light contribution = base x cone x gobo > lightmap: a white gobo reproduces the ungobo'd lightmap exactly; a black one is all zeros; spot clipping is preserved  436ms
+stderr | src/motion/__tests__/moves.test.js > motion_check > text crossing the safe area during a move is reported with its time range
+Error: Not implemented: HTMLCanvasElement.prototype.getContext (without installing the canvas npm package)
+    at module.exports (/root/projects/motion-suite-m2/node_modules/jsdom/lib/jsdom/browser/not-implemented.js:9:17)
+    at HTMLCanvasElementImpl.getContext (/root/projects/motion-suite-m2/node_modules/jsdom/lib/jsdom/living/nodes/HTMLCanvasElement-impl.js:42:5)
+    at HTMLCanvasElement.getContext (/root/projects/motion-suite-m2/node_modules/jsdom/lib/jsdom/living/generated/HTMLCanvasElement.js:131:58)
+    at measureContext (/root/projects/motion-suite-m2/src/motion/moves/checks.ts:24:115)
+    at runGeometryChecks (/root/projects/motion-suite-m2/src/motion/moves/checks.ts:35:15)
+    at checkCommand (/root/projects/motion-suite-m2/src/motion/control/moves.ts:50:10)
+    at executeTool (/root/projects/motion-suite-m2/src/motion/control/execute.ts:62:31)
+    at /root/projects/motion-suite-m2/src/motion/__tests__/moves.test.js:169:32
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at file:///root/projects/motion-suite-m2/node_modules/@vitest/runner/dist/chunk-hooks.js:752:20 [90mundefined[39m
+
+ ✓ src/motion/__tests__/moves.test.js (20 tests) 2315ms
+   ✓ doc.spine_track > one camera path: holds on each node, follows the spine tip between them; one undo step; exact undo/redo  676ms
+ ✓ src/motion/__tests__/lightingUi.test.js (35 tests) 109ms
+ ✓ src/motion/__tests__/surfaceFx.test.js (39 tests) 936ms
+stderr | src/motion/__tests__/controlDeck.test.js > feel, chains, beats, removal and recording > two edits in one sentence stay one undoable plan
+Error: Not implemented: HTMLCanvasElement.prototype.getContext (without installing the canvas npm package)
+    at module.exports (/root/projects/motion-suite-m2/node_modules/jsdom/lib/jsdom/browser/not-implemented.js:9:17)
+    at HTMLCanvasElementImpl.getContext (/root/projects/motion-suite-m2/node_modules/jsdom/lib/jsdom/living/nodes/HTMLCanvasElement-impl.js:42:5)
+    at HTMLCanvasElement.getContext (/root/projects/motion-suite-m2/node_modules/jsdom/lib/jsdom/living/generated/HTMLCanvasElement.js:131:58)
+    at measureContext (/root/projects/motion-suite-m2/src/motion/spatial/typography.ts:16:79)
+    at textWidth (/root/projects/motion-suite-m2/src/motion/spatial/typography.ts:20:15)
+    at /root/projects/motion-suite-m2/src/motion/spatial/typography.ts:41:23
+    at Array.forEach (<anonymous>)
+    at layoutSegments (/root/projects/motion-suite-m2/src/motion/spatial/typography.ts:40:9)
+    at splitTextOps (/root/projects/motion-suite-m2/src/motion/spatial/typography.ts:66:18)
+    at textRecipeOps (/root/projects/motion-suite-m2/src/motion/spatial/typography.ts:144:41) [90mundefined[39m
+
+ ✓ src/motion/__tests__/controlDeck.test.js (18 tests) 149ms
+stderr | src/motion/__tests__/hardening.test.js > 2.5D camera system hardening > parallax, depth of field, rack focus, rigs, depth text and an HTML layer coexist in one scene
+Error: Not implemented: HTMLCanvasElement.prototype.getContext (without installing the canvas npm package)
+    at module.exports (/root/projects/motion-suite-m2/node_modules/jsdom/lib/jsdom/browser/not-implemented.js:9:17)
+    at HTMLCanvasElementImpl.getContext (/root/projects/motion-suite-m2/node_modules/jsdom/lib/jsdom/living/nodes/HTMLCanvasElement-impl.js:42:5)
+    at HTMLCanvasElement.getContext (/root/projects/motion-suite-m2/node_modules/jsdom/lib/jsdom/living/generated/HTMLCanvasElement.js:131:58)
+    at measureContext (/root/projects/motion-suite-m2/src/motion/spatial/typography.ts:16:79)
+    at textWidth (/root/projects/motion-suite-m2/src/motion/spatial/typography.ts:20:15)
+    at /root/projects/motion-suite-m2/src/motion/spatial/typography.ts:41:23
+    at Array.forEach (<anonymous>)
+    at layoutSegments (/root/projects/motion-suite-m2/src/motion/spatial/typography.ts:40:9)
+    at splitTextOps (/root/projects/motion-suite-m2/src/motion/spatial/typography.ts:66:18)
+    at /root/projects/motion-suite-m2/src/motion/__tests__/hardening.test.js:54:32 [90mundefined[39m
+
+ ✓ src/motion/__tests__/hardening.test.js (9 tests) 224ms
+stderr | src/motion/__tests__/coherence.test.js > Canonical timeline stress-hardening > duplicate copies the whole subtree with fresh ids, and reparenting keeps the layer where it looks
+Error: Not implemented: HTMLCanvasElement.prototype.getContext (without installing the canvas npm package)
+    at module.exports (/root/projects/motion-suite-m2/node_modules/jsdom/lib/jsdom/browser/not-implemented.js:9:17)
+    at HTMLCanvasElementImpl.getContext (/root/projects/motion-suite-m2/node_modules/jsdom/lib/jsdom/living/nodes/HTMLCanvasElement-impl.js:42:5)
+    at HTMLCanvasElement.getContext (/root/projects/motion-suite-m2/node_modules/jsdom/lib/jsdom/living/generated/HTMLCanvasElement.js:131:58)
+    at measureContext (/root/projects/motion-suite-m2/src/motion/spatial/typography.ts:16:79)
+    at textWidth (/root/projects/motion-suite-m2/src/motion/spatial/typography.ts:20:15)
+    at /root/projects/motion-suite-m2/src/motion/spatial/typography.ts:41:23
+    at Array.forEach (<anonymous>)
+    at layoutSegments (/root/projects/motion-suite-m2/src/motion/spatial/typography.ts:40:9)
+    at splitTextOps (/root/projects/motion-suite-m2/src/motion/spatial/typography.ts:66:18)
+    at /root/projects/motion-suite-m2/src/motion/__tests__/coherence.test.js:90:32 [90mundefined[39m
+
+ ✓ src/motion/__tests__/coherence.test.js (11 tests) 461ms
+ ✓ src/motion/__tests__/lighting.test.js (36 tests) 1254ms
+   ✓ lightmap > an ambient light fills every cell with intensity x colour  817ms
+stderr | src/motion/__tests__/documentary.test.js > document push: preview is inert; projection centres the phrase; exact return and one-step undo/redo
+Error: Not implemented: HTMLCanvasElement.prototype.getContext (without installing the canvas npm package)
+    at module.exports (/root/projects/motion-suite-m2/node_modules/jsdom/lib/jsdom/browser/not-implemented.js:9:17)
+    at HTMLCanvasElementImpl.getContext (/root/projects/motion-suite-m2/node_modules/jsdom/lib/jsdom/living/nodes/HTMLCanvasElement-impl.js:42:5)
+    at HTMLCanvasElement.getContext (/root/projects/motion-suite-m2/node_modules/jsdom/lib/jsdom/living/generated/HTMLCanvasElement.js:131:58)
+    at measureContext (/root/projects/motion-suite-m2/src/motion/moves/checks.ts:24:115)
+    at runGeometryChecks (/root/projects/motion-suite-m2/src/motion/moves/checks.ts:35:15)
+    at checkDocumentZoom (/root/projects/motion-suite-m2/src/motion/moves/documentaryChecks.ts:26:18)
+    at compileDocumentZoom (/root/projects/motion-suite-m2/src/motion/moves/documentary.ts:125:18)
+    at /root/projects/motion-suite-m2/src/motion/control/moves.ts:31:105
+    at withAnchorResolver (/root/projects/motion-suite-m2/src/motion/moves/timing.ts:60:16)
+    at moveCommand (/root/projects/motion-suite-m2/src/motion/control/moves.ts:31:22) [90mundefined[39m
+
+ ✓ src/motion/__tests__/html.test.js (10 tests) 206ms
+ ✓ src/motion/__tests__/documentary.test.js (10 tests) 959ms
+   ✓ document push: preview is inert; projection centres the phrase; exact return and one-step undo/redo  321ms
+ ✓ src/motion/__tests__/assistant.test.js (21 tests) 92ms
+stderr | src/motion/__tests__/narration.test.js > motion_narration + anchored moves > unresolvable anchors are reported with a code, used with "at", refused without it
+Error: Not implemented: HTMLCanvasElement.prototype.getContext (without installing the canvas npm package)
+    at module.exports (/root/projects/motion-suite-m2/node_modules/jsdom/lib/jsdom/browser/not-implemented.js:9:17)
+    at HTMLCanvasElementImpl.getContext (/root/projects/motion-suite-m2/node_modules/jsdom/lib/jsdom/living/nodes/HTMLCanvasElement-impl.js:42:5)
+    at HTMLCanvasElement.getContext (/root/projects/motion-suite-m2/node_modules/jsdom/lib/jsdom/living/generated/HTMLCanvasElement.js:131:58)
+    at measureContext (/root/projects/motion-suite-m2/src/motion/moves/checks.ts:24:115)
+    at runGeometryChecks (/root/projects/motion-suite-m2/src/motion/moves/checks.ts:35:15)
+    at compileSpineTrack (/root/projects/motion-suite-m2/src/motion/moves/doc.ts:226:17)
+    at /root/projects/motion-suite-m2/src/motion/control/moves.ts:31:105
+    at withAnchorResolver (/root/projects/motion-suite-m2/src/motion/moves/timing.ts:60:16)
+    at moveCommand (/root/projects/motion-suite-m2/src/motion/control/moves.ts:31:22)
+    at executeTool (/root/projects/motion-suite-m2/src/motion/control/execute.ts:61:30) [90mundefined[39m
+
+ ✓ src/motion/__tests__/holo.test.js (11 tests) 205ms
+ ✓ src/motion/__tests__/narration.test.js (8 tests) 808ms
+stderr | src/motion/__tests__/recipes.test.js > portable motion recipes > a text look recipe resolves to ordinary editable child layers
+Error: Not implemented: HTMLCanvasElement.prototype.getContext (without installing the canvas npm package)
+    at module.exports (/root/projects/motion-suite-m2/node_modules/jsdom/lib/jsdom/browser/not-implemented.js:9:17)
+    at HTMLCanvasElementImpl.getContext (/root/projects/motion-suite-m2/node_modules/jsdom/lib/jsdom/living/nodes/HTMLCanvasElement-impl.js:42:5)
+    at HTMLCanvasElement.getContext (/root/projects/motion-suite-m2/node_modules/jsdom/lib/jsdom/living/generated/HTMLCanvasElement.js:131:58)
+    at measureContext (/root/projects/motion-suite-m2/src/motion/spatial/typography.ts:16:79)
+    at textWidth (/root/projects/motion-suite-m2/src/motion/spatial/typography.ts:20:15)
+    at /root/projects/motion-suite-m2/src/motion/spatial/typography.ts:41:23
+    at Array.forEach (<anonymous>)
+    at layoutSegments (/root/projects/motion-suite-m2/src/motion/spatial/typography.ts:40:9)
+    at splitTextOps (/root/projects/motion-suite-m2/src/motion/spatial/typography.ts:66:18)
+    at textPresetOps (/root/projects/motion-suite-m2/src/motion/host/textPresets.ts:39:19) [90mundefined[39m
+
+ ✓ src/motion/__tests__/recipes.test.js (16 tests) 96ms
+ ✓ src/motion/__tests__/lightFrameContract.test.js (28 tests) 46ms
+stderr | src/motion/__tests__/intent.test.js > the normalized semantic intent seam > all three sources produce the same canonical plan and the same canonical execution path
+Error: Not implemented: HTMLCanvasElement.prototype.getContext (without installing the canvas npm package)
+    at module.exports (/root/projects/motion-suite-m2/node_modules/jsdom/lib/jsdom/browser/not-implemented.js:9:17)
+    at HTMLCanvasElementImpl.getContext (/root/projects/motion-suite-m2/node_modules/jsdom/lib/jsdom/living/nodes/HTMLCanvasElement-impl.js:42:5)
+    at HTMLCanvasElement.getContext (/root/projects/motion-suite-m2/node_modules/jsdom/lib/jsdom/living/generated/HTMLCanvasElement.js:131:58)
+    at measureContext (/root/projects/motion-suite-m2/src/motion/spatial/typography.ts:16:79)
+    at textWidth (/root/projects/motion-suite-m2/src/motion/spatial/typography.ts:20:15)
+    at /root/projects/motion-suite-m2/src/motion/spatial/typography.ts:41:23
+    at Array.forEach (<anonymous>)
+    at layoutSegments (/root/projects/motion-suite-m2/src/motion/spatial/typography.ts:40:9)
+    at splitTextOps (/root/projects/motion-suite-m2/src/motion/spatial/typography.ts:66:18)
+    at lowerPlan (/root/projects/motion-suite-m2/src/motion/grammar/lowerPlan.ts:64:22) [90mundefined[39m
+
+ ✓ src/motion/__tests__/intent.test.js (11 tests) 93ms
+ ✓ src/motion/__tests__/spotLight.test.js (20 tests) 523ms
+   ✓ coneFactor (pure angular weight) > monotonic non-increasing in angle, bounded in [0, 1], and C1 at both ends of the band (no visible edge kink)  302ms
+ ✓ src/motion/__tests__/lightCapabilities.test.js (14 tests) 76ms
+stderr | src/motion/__tests__/agentTools.test.js > agent tools: motion_render protocol > rendering never changes the project revision
+Error: Not implemented: HTMLCanvasElement.prototype.getContext (without installing the canvas npm package)
+    at module.exports (/root/projects/motion-suite-m2/node_modules/jsdom/lib/jsdom/browser/not-implemented.js:9:17)
+    at HTMLCanvasElementImpl.getContext (/root/projects/motion-suite-m2/node_modules/jsdom/lib/jsdom/living/nodes/HTMLCanvasElement-impl.js:42:5)
+    at HTMLCanvasElement.getContext (/root/projects/motion-suite-m2/node_modules/jsdom/lib/jsdom/living/generated/HTMLCanvasElement.js:131:58)
+    at context2d (/root/projects/motion-suite-m2/src/motion/export/pipeline.ts:34:32)
+    at exportComposition (/root/projects/motion-suite-m2/src/motion/export/pipeline.ts:91:17)
+    at renderCommand (/root/projects/motion-suite-m2/src/motion/control/render.ts:77:12)
+    at executeTool (/root/projects/motion-suite-m2/src/motion/control/execute.ts:58:90)
+    at read (/root/projects/motion-suite-m2/src/motion/__tests__/agentTools.test.js:17:67)
+    at /root/projects/motion-suite-m2/src/motion/__tests__/agentTools.test.js:125:11
+    at file:///root/projects/motion-suite-m2/node_modules/@vitest/runner/dist/chunk-hooks.js:155:11 [90mundefined[39m
+Error: Not implemented: HTMLCanvasElement.prototype.getContext (without installing the canvas npm package)
+    at module.exports (/root/projects/motion-suite-m2/node_modules/jsdom/lib/jsdom/browser/not-implemented.js:9:17)
+    at HTMLCanvasElementImpl.getContext (/root/projects/motion-suite-m2/node_modules/jsdom/lib/jsdom/living/nodes/HTMLCanvasElement-impl.js:42:5)
+    at HTMLCanvasElement.getContext (/root/projects/motion-suite-m2/node_modules/jsdom/lib/jsdom/living/generated/HTMLCanvasElement.js:131:58)
+    at context2d (/root/projects/motion-suite-m2/src/motion/export/pipeline.ts:34:32)
+    at exportComposition (/root/projects/motion-suite-m2/src/motion/export/pipeline.ts:92:18)
+    at renderCommand (/root/projects/motion-suite-m2/src/motion/control/render.ts:77:12)
+    at executeTool (/root/projects/motion-suite-m2/src/motion/control/execute.ts:58:90)
+    at read (/root/projects/motion-suite-m2/src/motion/__tests__/agentTools.test.js:17:67)
+    at /root/projects/motion-suite-m2/src/motion/__tests__/agentTools.test.js:125:11
+    at file:///root/projects/motion-suite-m2/node_modules/@vitest/runner/dist/chunk-hooks.js:155:11 [90mundefined[39m
+
+ ✓ src/motion/__tests__/agentTools.test.js (10 tests) 178ms
+ ✓ src/motion/__tests__/highlightRender.test.js (8 tests) 3206ms
+   ✓ E3 highlight in the real pixel pass > swapping the key light to the other side flips the highlight (and the shadow)  478ms
+   ✓ E3 highlight in the real pixel pass > higher gloss gives a tighter lobe; it is not multiplied by albedo (a black layer still shows it)  333ms
+   ✓ E3 dome grid on a large layer (interpolated from a coarse grid) > a 1200 px disc (dome grid step 4) still puts the highlight at the closed form within one grid step  1606ms
+ ✓ src/motion/__tests__/flatPathIsolation.test.js (8 tests) 75ms
+ ✓ src/motion/__tests__/importBoundary.test.js (4 tests) 158ms
+ ✓ src/motion/__tests__/dimensionalComposition.test.js (13 tests) 231ms
+ ✓ src/__tests__/core2.test.js (10 tests) 41ms
+stderr | src/motion/__tests__/depth.test.js > depth that reads, narration, defaults and long chains > three and four edits in one breath stay one plan and one undo
+Error: Not implemented: HTMLCanvasElement.prototype.getContext (without installing the canvas npm package)
+    at module.exports (/root/projects/motion-suite-m2/node_modules/jsdom/lib/jsdom/browser/not-implemented.js:9:17)
+    at HTMLCanvasElementImpl.getContext (/root/projects/motion-suite-m2/node_modules/jsdom/lib/jsdom/living/nodes/HTMLCanvasElement-impl.js:42:5)
+    at HTMLCanvasElement.getContext (/root/projects/motion-suite-m2/node_modules/jsdom/lib/jsdom/living/generated/HTMLCanvasElement.js:131:58)
+    at measureContext (/root/projects/motion-suite-m2/src/motion/spatial/typography.ts:16:79)
+    at textWidth (/root/projects/motion-suite-m2/src/motion/spatial/typography.ts:20:15)
+    at /root/projects/motion-suite-m2/src/motion/spatial/typography.ts:41:23
+    at Array.forEach (<anonymous>)
+    at layoutSegments (/root/projects/motion-suite-m2/src/motion/spatial/typography.ts:40:9)
+    at splitTextOps (/root/projects/motion-suite-m2/src/motion/spatial/typography.ts:66:18)
+    at lowerPlan (/root/projects/motion-suite-m2/src/motion/grammar/lowerPlan.ts:64:22) [90mundefined[39m
+
+ ✓ src/motion/__tests__/depth.test.js (6 tests) 95ms
+ ✓ src/motion/__tests__/effectAnimation.test.js (28 tests) 132ms
+ ✓ src/__tests__/core.test.js (14 tests) 63ms
+ ✓ src/motion/__tests__/motion-host-engine.test.js (7 tests) 37ms
+ ✓ src/motion/__tests__/highlightContract.test.js (11 tests) 484ms
+ ✓ src/motion/__tests__/grade.test.js (12 tests) 460ms
+ ✓ src/motion/__tests__/castShadow.test.js (8 tests) 43ms
+ ✓ src/motion/__tests__/lightLane.test.js (10 tests) 482ms
+ ✓ src/engine/speech.test.ts (4 tests) 22ms
+ ✓ src/motion/__tests__/adaptiveQuality.test.js (9 tests) 14ms
+ ✓ src/motion/__tests__/lightingEffectsUi.test.tsx (3 tests) 338ms
+ ✓ src/motion/__tests__/capabilityManifest.test.js (4 tests) 13ms
+ ✓ src/motion/__tests__/layerMask.test.js (5 tests) 7ms
+ ✓ tests/golden/compare.test.ts (7 tests) 16ms
+ ✓ src/motion/__tests__/repoFacts.test.js (3 tests) 6ms
+ ✓ src/motion/__tests__/tool-dispatcher.test.js (4 tests) 15ms
+
+ Test Files  44 passed (44)
+      Tests  709 passed (709)
+   Start at  18:50:11
+   Duration  60.15s (transform 9.36s, setup 1.54s, collect 48.85s, tests 17.41s, environment 77.98s, prepare 12.78s)

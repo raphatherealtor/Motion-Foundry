@@ -1,0 +1,3 @@
+export const shell='/root/projects/motion-foundry/tooling/m1-browser/browsers/chromium_headless_shell-1243/chrome-headless-shell-linux64/chrome-headless-shell';
+export const legacy=['--force-color-profile=srgb','--disable-gpu','--disable-gpu-compositing','--disable-accelerated-2d-canvas','--disable-lcd-text','--font-render-hinting=none','--disable-font-subpixel-positioning','--disable-skia-runtime-opts','--hide-scrollbars','--mute-audio','--disable-background-timer-throttling','--disable-renderer-backgrounding','--num-raster-threads=1','--disable-features=PaintHolding'];
+export const candidates=[[],['--use-gl=angle','--use-angle=swiftshader'],['--use-gl=angle','--use-angle=swiftshader-webgl','--enable-unsafe-swiftshader'],['--enable-unsafe-swiftshader']];

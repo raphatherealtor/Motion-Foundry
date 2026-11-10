@@ -1,0 +1,319 @@
+{
+  "canvas_state": [
+    {
+      "file": "src/motion/render/layerMask.ts",
+      "line": 33,
+      "source": "if (!s) { const canvas = document.createElement('canvas'); s = { canvas, ctx: canvas.getContext('2d')! }; pool.set(key, s); }"
+    },
+    {
+      "file": "src/motion/render/layerMask.ts",
+      "line": 36,
+      "source": "s.ctx.setTransform(1, 0, 0, 1, 0, 0); s.ctx.globalAlpha = 1; s.ctx.globalCompositeOperation = 'source-over'; s.ctx.filter = 'none';"
+    },
+    {
+      "file": "src/motion/render/layerMask.ts",
+      "line": 45,
+      "source": "g.filter = sigmaPx > 0.01 ? `blur(${sigmaPx.toFixed(3)}px)` : 'none';"
+    },
+    {
+      "file": "src/motion/render/layerMask.ts",
+      "line": 50,
+      "source": "g.filter = 'none';"
+    },
+    {
+      "file": "src/motion/render/layerMask.ts",
+      "line": 64,
+      "source": "if (mask.invert) { one.ctx.globalCompositeOperation = 'destination-out'; one.ctx.drawImage(shape.canvas, 0, 0); }"
+    },
+    {
+      "file": "src/motion/render/layerMask.ts",
+      "line": 65,
+      "source": "else { one.ctx.globalCompositeOperation = 'source-in'; one.ctx.drawImage(shape.canvas, 0, 0); }"
+    },
+    {
+      "file": "src/motion/render/layerMask.ts",
+      "line": 66,
+      "source": "one.ctx.globalCompositeOperation = 'source-over';"
+    },
+    {
+      "file": "src/motion/render/layerMask.ts",
+      "line": 71,
+      "source": "strengthened.ctx.globalCompositeOperation = 'lighter'; strengthened.ctx.globalAlpha = mask.opacity; strengthened.ctx.drawImage(one.canvas, 0, 0);"
+    },
+    {
+      "file": "src/motion/render/layerMask.ts",
+      "line": 72,
+      "source": "strengthened.ctx.globalAlpha = 1; strengthened.ctx.globalCompositeOperation = 'source-over';"
+    },
+    {
+      "file": "src/motion/render/layerMask.ts",
+      "line": 74,
+      "source": "if (mask.shape === 'path') { out.ctx.globalCompositeOperation = 'destination-in'; out.ctx.drawImage(strengthened.canvas, 0, 0); out.ctx.globalCompositeOperation = 'source-over'; haveOut = true; }"
+    },
+    {
+      "file": "src/motion/render/layerMask.ts",
+      "line": 75,
+      "source": "else { union.ctx.globalCompositeOperation = 'lighter'; union.ctx.drawImage(strengthened.canvas, 0, 0); union.ctx.globalCompositeOperation = 'source-over'; haveUnion = true; }"
+    },
+    {
+      "file": "src/motion/render/layerMask.ts",
+      "line": 77,
+      "source": "if (haveUnion) { out.ctx.globalCompositeOperation = 'destination-in'; out.ctx.drawImage(union.canvas, 0, 0); out.ctx.globalCompositeOperation = 'source-over'; }"
+    },
+    {
+      "file": "src/motion/render/layerMask.ts",
+      "line": 91,
+      "source": "content.ctx.globalCompositeOperation = 'destination-in'; content.ctx.drawImage(coverage, 0, 0); content.ctx.globalCompositeOperation = 'source-over';"
+    },
+    {
+      "file": "src/motion/render/goboMaps.ts",
+      "line": 35,
+      "source": "const ctx = canvas.getContext('2d', { willReadFrequently: true });"
+    },
+    {
+      "file": "src/motion/render/linearProjection.ts",
+      "line": 23,
+      "source": "texture.getContext('2d')!.putImageData(image, 0, 0);"
+    },
+    {
+      "file": "src/motion/render/linearProjection.ts",
+      "line": 25,
+      "source": "const ctx = canvas.getContext('2d', { willReadFrequently: true })!;"
+    },
+    {
+      "file": "src/motion/render/castShadow.ts",
+      "line": 37,
+      "source": "texture.getContext('2d')!.putImageData(source, 0, 0);"
+    },
+    {
+      "file": "src/motion/render/castShadow.ts",
+      "line": 39,
+      "source": "const ctx = canvas.getContext('2d', { willReadFrequently: true })!;"
+    },
+    {
+      "file": "src/motion/render/castShadow.ts",
+      "line": 49,
+      "source": "const target = full.getContext('2d', { willReadFrequently: true })!; target.drawImage(canvas, 0, 0, full.width, full.height);"
+    },
+    {
+      "file": "src/motion/render/projectedPlane.ts",
+      "line": 27,
+      "source": "const source=(readback?canvas.getContext('2d',{willReadFrequently:true}):canvas.getContext('2d'))!;source.setTransform(1,0,0,1,0,0);source.clearRect(0,0,w,h);source.save();source.scale(raster,raster);source.translate(-bounds.x,-bounds.y);paint(source);source.restore();"
+    },
+    {
+      "file": "src/motion/render/drawDocument.ts",
+      "line": 101,
+      "source": "case 'projector':{const grad=ctx.createLinearGradient(-half,-height/2,half,height/2);grad.addColorStop(0,color);grad.addColorStop(.55,mat.neonColor??'#ffffff');grad.addColorStop(1,color);ctx.shadowColor=mat.neonColor??color;ctx.shadowBlur=mat.neonBlur??26;return grad;}"
+    },
+    {
+      "file": "src/motion/render/drawDocument.ts",
+      "line": 102,
+      "source": "case 'glass':{ctx.globalAlpha=ctx.globalAlpha*(mat.glassOpacity??.55);ctx.shadowColor='rgba(255,255,255,.55)';ctx.shadowBlur=mat.glassBlur??14;return color;}"
+    },
+    {
+      "file": "src/motion/render/drawDocument.ts",
+      "line": 103,
+      "source": "case 'shadow':{ctx.shadowColor=mat.shadowColor??'rgba(0,0,0,.65)';ctx.shadowBlur=mat.shadowBlur??18;ctx.shadowOffsetX=mat.shadowOffsetX??0;ctx.shadowOffsetY=mat.shadowOffsetY??10;return color;}"
+    },
+    {
+      "file": "src/motion/render/drawDocument.ts",
+      "line": 104,
+      "source": "case 'neon':{const glow=mat.neonColor??color;ctx.shadowColor=glow;ctx.shadowBlur=mat.neonBlur??20;return glow;}"
+    },
+    {
+      "file": "src/motion/render/drawDocument.ts",
+      "line": 172,
+      "source": "ctx.shadowColor = mat.neonColor;"
+    },
+    {
+      "file": "src/motion/render/drawDocument.ts",
+      "line": 173,
+      "source": "ctx.shadowBlur = mat.neonBlur ?? 20;"
+    },
+    {
+      "file": "src/motion/render/drawDocument.ts",
+      "line": 227,
+      "source": "ctx.save(); ctx.globalCompositeOperation = 'lighter'; ctx.globalAlpha = 0.34 * optical.glow;"
+    },
+    {
+      "file": "src/motion/render/drawDocument.ts",
+      "line": 228,
+      "source": "ctx.filter = `blur(${(2 + optical.glow * 10).toFixed(1)}px)`; paint(ctx); ctx.restore();"
+    },
+    {
+      "file": "src/motion/render/drawDocument.ts",
+      "line": 232,
+      "source": "ctx.save(); ctx.globalCompositeOperation = 'lighter'; ctx.globalAlpha = 0.45;"
+    },
+    {
+      "file": "src/motion/render/drawDocument.ts",
+      "line": 233,
+      "source": "ctx.filter = `hue-rotate(${hue}deg) saturate(2.4)`; ctx.translate(dx, 0); paint(ctx); ctx.restore();"
+    },
+    {
+      "file": "src/motion/render/drawDocument.ts",
+      "line": 249,
+      "source": "ctx.save(); ctx.globalCompositeOperation = 'destination-out'; ctx.fillStyle = `rgba(0,0,0,${(0.1 + optical.scan * 0.3).toFixed(3)})`;"
+    },
+    {
+      "file": "src/motion/render/drawDocument.ts",
+      "line": 282,
+      "source": "ctx.globalCompositeOperation=blendModeToComposite(object.blendMode);"
+    },
+    {
+      "file": "src/motion/render/drawDocument.ts",
+      "line": 283,
+      "source": "if(air.softness>.35){ctx.filter=`blur(${air.softness.toFixed(2)}px)`;blurred++;}"
+    },
+    {
+      "file": "src/motion/render/drawDocument.ts",
+      "line": 297,
+      "source": "const merged=document.createElement('canvas');merged.width=doc.width;merged.height=doc.height;merged.getContext('2d')!.putImageData(image,0,0);"
+    },
+    {
+      "file": "src/motion/render/drawDocument.ts",
+      "line": 298,
+      "source": "ctx.save();ctx.globalAlpha=1;ctx.globalCompositeOperation='copy';ctx.filter='none';ctx.drawImage(merged,0,0);ctx.restore();"
+    },
+    {
+      "file": "src/motion/export/pipeline.ts",
+      "line": 34,
+      "source": "return { canvas, ctx: canvas.getContext('2d', { willReadFrequently: true })! };"
+    },
+    {
+      "file": "src/motion/export/pipeline.ts",
+      "line": 71,
+      "source": "ctx.globalCompositeOperation = blendModeToComposite(object.blendMode);"
+    },
+    {
+      "file": "src/motion/export/pipeline.ts",
+      "line": 72,
+      "source": "if (slice.html.blur > 0.35) ctx.filter = `blur(${slice.html.blur.toFixed(2)}px)`;"
+    },
+    {
+      "file": "src/motion/components/CanvasPreview.tsx",
+      "line": 96,
+      "source": "const ctx=canvases.current[index]?.getContext('2d');if(!ctx)return;"
+    },
+    {
+      "file": "src/motion/components/CanvasPreview.tsx",
+      "line": 125,
+      "source": "const started=performance.now();const ctx=canvases.current[0]?.getContext('2d');"
+    },
+    {
+      "file": "src/motion/components/CanvasPreview.tsx",
+      "line": 139,
+      "source": "const candidateCorners=plane&&object?projectedCorners(scene,plane,objectBounds(object,s.project,canvas.current?.getContext('2d'))):[];"
+    },
+    {
+      "file": "src/motion/components/CanvasPreview.tsx",
+      "line": 205,
+      "source": "const plane=scene.byId.get(o.id)!,bounds=objectBounds(o,s.project,canvas.current?.getContext('2d'));"
+    },
+    {
+      "file": "src/motion/components/CanvasPreview.tsx",
+      "line": 214,
+      "source": "const plane=scene.byId.get(o.id)!,bounds=objectBounds(o,s.project,canvas.current?.getContext('2d'));"
+    },
+    {
+      "file": "src/motion/components/CanvasPreview.tsx",
+      "line": 293,
+      "source": "const points = projectedCorners(scene, plane, objectBounds(object, s.project, canvas.current?.getContext('2d')));"
+    }
+  ],
+  "asset_decode": [
+    {
+      "file": "src/motion/render/goboMaps.ts",
+      "line": 5,
+      "source": "* Weight = round(luma x alpha / 255) per texel: luma is Rec.709 on the un-premultiplied sRGB BYTES (no gamma decode, so a 50% grey"
+    },
+    {
+      "file": "src/motion/render/goboMaps.ts",
+      "line": 18,
+      "source": "/** Pure: RGBA bytes (un-premultiplied, as from getImageData) -> weight map. Exported for tests. */"
+    },
+    {
+      "file": "src/motion/render/lighting.ts",
+      "line": 290,
+      "source": "* Lights an RGBA surface in place (un-premultiplied bytes, as returned by getImageData). For each pixel:"
+    },
+    {
+      "file": "src/motion/render/lightJob.ts",
+      "line": 41,
+      "source": "/** Builds the layer's lightmap and shades `data` (un-premultiplied RGBA, as from getImageData) in place. */"
+    },
+    {
+      "file": "src/motion/render/frameGrade.ts",
+      "line": 47,
+      "source": "/** Unpremultiplied float RGBA -> temperature -> vignette -> tone map -> sRGB. Alpha is unchanged. */"
+    },
+    {
+      "file": "src/motion/render/images.ts",
+      "line": 7,
+      "source": "const image = new Image(); image.decoding = 'async';"
+    },
+    {
+      "file": "src/motion/render/linearComposite.ts",
+      "line": 1,
+      "source": "/** Linear-light source-over and the existing separable blend modes. RGB is unpremultiplied, alpha 0..1. */"
+    },
+    {
+      "file": "src/motion/render/drawDocument.ts",
+      "line": 345,
+      "source": "jobs.push(lane.shade(job, captured.data.buffer as ArrayBuffer).then((buffer) => [object.id, new ImageData(new Uint8ClampedArray(buffer), captured.width, captured.height)] as [string, ImageData]));"
+    },
+    {
+      "file": "src/motion/render/drawDocument.ts",
+      "line": 395,
+      "source": "ctx.putImageData(new ImageData(finishFrame(pixels,doc.width,doc.height,doc),doc.width,doc.height),0,0);"
+    },
+    {
+      "file": "src/motion/export/htmlCapture.ts",
+      "line": 17,
+      "source": "const image = new Image();"
+    }
+  ],
+  "stepping": [
+    {
+      "file": "src/motion/render/drawDocument.ts",
+      "line": 287,
+      "source": "const frameNumber=Math.round(frame.evaluated.localTimeSecs*doc.fps);"
+    },
+    {
+      "file": "src/motion/render/drawDocument.ts",
+      "line": 339,
+      "source": "const frameNumber = Math.round(frame.evaluated.localTimeSecs * doc.fps);"
+    },
+    {
+      "file": "src/motion/render/drawDocument.ts",
+      "line": 375,
+      "source": "const base=optical?(c:CanvasRenderingContext2D)=>paintHolo(c,optical,bounds,Math.round(frame.evaluated.localTimeSecs*doc.fps),paint):paint;"
+    },
+    {
+      "file": "src/motion/export/pipeline.ts",
+      "line": 22,
+      "source": "const total = Math.max(1, Math.round(doc.duration.value / doc.duration.timescale * doc.fps));"
+    },
+    {
+      "file": "src/motion/export/pipeline.ts",
+      "line": 23,
+      "source": "const fps = Math.max(1, Math.min(60, Math.round(options.fps ?? doc.fps)));"
+    },
+    {
+      "file": "src/motion/export/pipeline.ts",
+      "line": 112,
+      "source": "gif.writeFrame(applyPalette(data, palette, gifFormat), width, height, { palette, delay: Math.round(1000 / fps), transparent: options.transparent, transparentIndex: options.transparent ? palette.length - 1 : 0 });"
+    },
+    {
+      "file": "src/motion/export/pipeline.ts",
+      "line": 147,
+      "source": "const bitrate = Math.max(500_000, Math.round(pixels * fps * 0.15));"
+    },
+    {
+      "file": "src/motion/export/pipeline.ts",
+      "line": 181,
+      "source": "const total = Math.max(1, Math.round(doc.duration.value / doc.duration.timescale * doc.fps));"
+    }
+  ],
+  "sha": "db36db39821f46ec4b7057bb431ffb9e82473c33"
+}

@@ -1,0 +1,4097 @@
+[
+  {
+    "mode": "preview",
+    "repeat": 0,
+    "version": "153.0.8010.12",
+    "rows": [
+      {
+        "test": "a",
+        "format": "RGBA16F",
+        "floatHash": "8036b098fb1fc9032a45c8bc9c65d04344ae250f43b720e25177523979d2885c",
+        "byteHash": "5d280bf9d0e29a7cb2772a2c9a0d5c33342544807463640a0f866735c9094f1c",
+        "ms": 518,
+        "floatSample": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "byteSample": [
+          0,
+          0,
+          0,
+          255
+        ]
+      },
+      {
+        "test": "b",
+        "format": "RGBA16F",
+        "floatHash": "211c1721bb33935ecbf217fad4c244ba4d26c2bd46f5398045a1c6344ed83fb4",
+        "byteHash": "de99be95a5962c0afafa49552bf4f48969d2e7ca1f49c9976f464a4fc9a9563a",
+        "ms": 434.40000009536743,
+        "floatSample": [
+          0.18701171875,
+          0.9150390625,
+          0.798828125,
+          1
+        ],
+        "byteSample": [
+          119,
+          245,
+          231,
+          255
+        ]
+      },
+      {
+        "test": "c",
+        "format": "RGBA16F",
+        "floatHash": "6690b609d84076a957ae17c03a001cc69e261576982eb20439cb45438b743be3",
+        "byteHash": "c3c139d69a098df61eacd90133075f5e6a43286cca7114540ed3a5060941130e",
+        "ms": 438.19999980926514,
+        "floatSample": [
+          1.7881393432617188e-7,
+          0.2003173828125,
+          -0.63330078125,
+          1
+        ],
+        "byteSample": [
+          0,
+          123,
+          0,
+          255
+        ]
+      },
+      {
+        "test": "d",
+        "format": "RGBA16F",
+        "floatHash": "4a7176a35fc3f863750d5959c6b21a6028f4fc2f050e802e5febb772a4adc334",
+        "byteHash": "aaa8e8b0d5fc8852a9a5d2e4275898e0203b2b076e66446606ecbefb5ffc1e64",
+        "ms": 618.4000000953674,
+        "floatSample": [
+          0.49072265625,
+          0.499267578125,
+          0.50537109375,
+          1
+        ],
+        "byteSample": [
+          186,
+          187,
+          188,
+          255
+        ]
+      },
+      {
+        "test": "e",
+        "format": "RGBA16F",
+        "floatHash": "fa7ee1e7f02857dfd6bf0c700e2547b7a1123b5d3265b566d76d3614b7a4c3b8",
+        "byteHash": "a17667b0c3c5e417d998dd69b7324910cdddc7b0000b0e6fd9a08d1a90863584",
+        "ms": 841.4000000953674,
+        "floatSample": [
+          0.049652099609375,
+          0.10064697265625,
+          0.2032470703125,
+          1
+        ],
+        "byteSample": [
+          63,
+          89,
+          124,
+          255
+        ]
+      },
+      {
+        "test": "f",
+        "format": "RGBA16F",
+        "floatHash": "939d16b694331e988c041b1b41985036e3712d56b6fd525f086031caca5e089a",
+        "byteHash": "046e2a0e5bcd7d84da04bdf035723c7a62d3aca287458a2d831dec1569aed336",
+        "ms": 417.80000019073486,
+        "floatSample": [
+          0.0004630088806152344,
+          2.384185791015625e-7,
+          0.99951171875,
+          1
+        ],
+        "byteSample": [
+          1,
+          0,
+          255,
+          255
+        ]
+      },
+      {
+        "test": "g",
+        "format": "RGBA16F",
+        "floatHash": "0031190a8729a5a0ae69acc1fff6da193f94641a6c9feaa880b243886e1db4b8",
+        "byteHash": "542fdc6e58c86e136645ef85fe0c2796c7a5e00b23064843b5d0bc4b435a69b7",
+        "ms": 479.80000019073486,
+        "floatSample": [
+          0.83544921875,
+          0.67431640625,
+          0.450927734375,
+          1
+        ],
+        "byteSample": [
+          235,
+          214,
+          179,
+          255
+        ]
+      },
+      {
+        "test": "a",
+        "format": "RGBA32F",
+        "floatHash": "8036b098fb1fc9032a45c8bc9c65d04344ae250f43b720e25177523979d2885c",
+        "byteHash": "5d280bf9d0e29a7cb2772a2c9a0d5c33342544807463640a0f866735c9094f1c",
+        "ms": 404.09999990463257,
+        "floatSample": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "byteSample": [
+          0,
+          0,
+          0,
+          255
+        ]
+      },
+      {
+        "test": "b",
+        "format": "RGBA32F",
+        "floatHash": "ae93fa626e44722044c7f3bb884b5c28b30c65630429db23f70388b5036d91c6",
+        "byteHash": "e358fb019bf85fc0003ed79213afe381065b7cfc9e89d4234c6cd81a8cb24165",
+        "ms": 398.90000009536743,
+        "floatSample": [
+          0.18704509735107422,
+          0.9149919748306274,
+          0.798962414264679,
+          1
+        ],
+        "byteSample": [
+          119,
+          245,
+          231,
+          255
+        ]
+      },
+      {
+        "test": "c",
+        "format": "RGBA32F",
+        "floatHash": "079e51113578450d0695caf1cbeb4b1ecf15d1ce716db6dbb05ef59d75f8cc8d",
+        "byteHash": "9efd5a175bbe34a4f963b65cb6c3e90b7879ca96be77d6b783d035e39765086f",
+        "ms": 376.8999996185303,
+        "floatSample": [
+          1.572387304804579e-7,
+          0.20029281079769135,
+          -0.6334584951400757,
+          1
+        ],
+        "byteSample": [
+          0,
+          123,
+          0,
+          255
+        ]
+      },
+      {
+        "test": "d",
+        "format": "RGBA32F",
+        "floatHash": "81c86d36113d7dd28aa8fab30e72612c76455cc21208656285913050d22ba1e6",
+        "byteHash": "596e753789059a9f8741c053887a4fac199de4d7e467bf5766199bdbf9cfcd4d",
+        "ms": 559.5999999046326,
+        "floatSample": [
+          0.49072265625,
+          0.499267578125,
+          0.50537109375,
+          1
+        ],
+        "byteSample": [
+          186,
+          187,
+          188,
+          255
+        ]
+      },
+      {
+        "test": "e",
+        "format": "RGBA32F",
+        "floatHash": "2b99567982562e869cad1a4011640470138440d3d772a1686166099084d9d940",
+        "byteHash": "a226b15d5a50d9035ed0a652836ffa03c2386bce508bc08e9dc96e5a9861d667",
+        "ms": 444.90000009536743,
+        "floatSample": [
+          0.04960000142455101,
+          0.10080000758171082,
+          0.20320004224777222,
+          1
+        ],
+        "byteSample": [
+          63,
+          89,
+          124,
+          255
+        ]
+      },
+      {
+        "test": "f",
+        "format": "RGBA32F",
+        "floatHash": "68badc23d902995931ff09fdf23137928e8ecbb1b82a215625dc507dfa7209c3",
+        "byteHash": "b8cff88cdcc56f5d91232c4476d33a2bfa61271d7d058e8bc84fb0c4af25346d",
+        "ms": 379.7999997138977,
+        "floatSample": [
+          0.00046296295477077365,
+          2.1433469044040976e-7,
+          0.9995370507240295,
+          1
+        ],
+        "byteSample": [
+          1,
+          0,
+          255,
+          255
+        ]
+      },
+      {
+        "test": "g",
+        "format": "RGBA32F",
+        "floatHash": "6f3cc1edffddde69a9725da0496bcc544819e122d6664da69327c0f10b4e56ae",
+        "byteHash": "f4d428b4c9b910db091dce7a4c95d1bca329f6b4a8cb87d45fce329927a7ef4a",
+        "ms": 402.90000009536743,
+        "floatSample": [
+          0.8352941870689392,
+          0.6745098233222961,
+          0.45098042488098145,
+          1
+        ],
+        "byteSample": [
+          235,
+          214,
+          179,
+          255
+        ]
+      }
+    ]
+  },
+  {
+    "mode": "preview",
+    "repeat": 1,
+    "version": "153.0.8010.12",
+    "rows": [
+      {
+        "test": "a",
+        "format": "RGBA16F",
+        "floatHash": "8036b098fb1fc9032a45c8bc9c65d04344ae250f43b720e25177523979d2885c",
+        "byteHash": "5d280bf9d0e29a7cb2772a2c9a0d5c33342544807463640a0f866735c9094f1c",
+        "ms": 462.3999996185303,
+        "floatSample": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "byteSample": [
+          0,
+          0,
+          0,
+          255
+        ]
+      },
+      {
+        "test": "b",
+        "format": "RGBA16F",
+        "floatHash": "211c1721bb33935ecbf217fad4c244ba4d26c2bd46f5398045a1c6344ed83fb4",
+        "byteHash": "de99be95a5962c0afafa49552bf4f48969d2e7ca1f49c9976f464a4fc9a9563a",
+        "ms": 448.19999980926514,
+        "floatSample": [
+          0.18701171875,
+          0.9150390625,
+          0.798828125,
+          1
+        ],
+        "byteSample": [
+          119,
+          245,
+          231,
+          255
+        ]
+      },
+      {
+        "test": "c",
+        "format": "RGBA16F",
+        "floatHash": "6690b609d84076a957ae17c03a001cc69e261576982eb20439cb45438b743be3",
+        "byteHash": "c3c139d69a098df61eacd90133075f5e6a43286cca7114540ed3a5060941130e",
+        "ms": 432,
+        "floatSample": [
+          1.7881393432617188e-7,
+          0.2003173828125,
+          -0.63330078125,
+          1
+        ],
+        "byteSample": [
+          0,
+          123,
+          0,
+          255
+        ]
+      },
+      {
+        "test": "d",
+        "format": "RGBA16F",
+        "floatHash": "4a7176a35fc3f863750d5959c6b21a6028f4fc2f050e802e5febb772a4adc334",
+        "byteHash": "aaa8e8b0d5fc8852a9a5d2e4275898e0203b2b076e66446606ecbefb5ffc1e64",
+        "ms": 653,
+        "floatSample": [
+          0.49072265625,
+          0.499267578125,
+          0.50537109375,
+          1
+        ],
+        "byteSample": [
+          186,
+          187,
+          188,
+          255
+        ]
+      },
+      {
+        "test": "e",
+        "format": "RGBA16F",
+        "floatHash": "fa7ee1e7f02857dfd6bf0c700e2547b7a1123b5d3265b566d76d3614b7a4c3b8",
+        "byteHash": "a17667b0c3c5e417d998dd69b7324910cdddc7b0000b0e6fd9a08d1a90863584",
+        "ms": 983.2999997138977,
+        "floatSample": [
+          0.049652099609375,
+          0.10064697265625,
+          0.2032470703125,
+          1
+        ],
+        "byteSample": [
+          63,
+          89,
+          124,
+          255
+        ]
+      },
+      {
+        "test": "f",
+        "format": "RGBA16F",
+        "floatHash": "939d16b694331e988c041b1b41985036e3712d56b6fd525f086031caca5e089a",
+        "byteHash": "046e2a0e5bcd7d84da04bdf035723c7a62d3aca287458a2d831dec1569aed336",
+        "ms": 413,
+        "floatSample": [
+          0.0004630088806152344,
+          2.384185791015625e-7,
+          0.99951171875,
+          1
+        ],
+        "byteSample": [
+          1,
+          0,
+          255,
+          255
+        ]
+      },
+      {
+        "test": "g",
+        "format": "RGBA16F",
+        "floatHash": "0031190a8729a5a0ae69acc1fff6da193f94641a6c9feaa880b243886e1db4b8",
+        "byteHash": "542fdc6e58c86e136645ef85fe0c2796c7a5e00b23064843b5d0bc4b435a69b7",
+        "ms": 468.59999990463257,
+        "floatSample": [
+          0.83544921875,
+          0.67431640625,
+          0.450927734375,
+          1
+        ],
+        "byteSample": [
+          235,
+          214,
+          179,
+          255
+        ]
+      },
+      {
+        "test": "a",
+        "format": "RGBA32F",
+        "floatHash": "8036b098fb1fc9032a45c8bc9c65d04344ae250f43b720e25177523979d2885c",
+        "byteHash": "5d280bf9d0e29a7cb2772a2c9a0d5c33342544807463640a0f866735c9094f1c",
+        "ms": 465.80000019073486,
+        "floatSample": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "byteSample": [
+          0,
+          0,
+          0,
+          255
+        ]
+      },
+      {
+        "test": "b",
+        "format": "RGBA32F",
+        "floatHash": "ae93fa626e44722044c7f3bb884b5c28b30c65630429db23f70388b5036d91c6",
+        "byteHash": "e358fb019bf85fc0003ed79213afe381065b7cfc9e89d4234c6cd81a8cb24165",
+        "ms": 417.5,
+        "floatSample": [
+          0.18704509735107422,
+          0.9149919748306274,
+          0.798962414264679,
+          1
+        ],
+        "byteSample": [
+          119,
+          245,
+          231,
+          255
+        ]
+      },
+      {
+        "test": "c",
+        "format": "RGBA32F",
+        "floatHash": "079e51113578450d0695caf1cbeb4b1ecf15d1ce716db6dbb05ef59d75f8cc8d",
+        "byteHash": "9efd5a175bbe34a4f963b65cb6c3e90b7879ca96be77d6b783d035e39765086f",
+        "ms": 464.59999990463257,
+        "floatSample": [
+          1.572387304804579e-7,
+          0.20029281079769135,
+          -0.6334584951400757,
+          1
+        ],
+        "byteSample": [
+          0,
+          123,
+          0,
+          255
+        ]
+      },
+      {
+        "test": "d",
+        "format": "RGBA32F",
+        "floatHash": "81c86d36113d7dd28aa8fab30e72612c76455cc21208656285913050d22ba1e6",
+        "byteHash": "596e753789059a9f8741c053887a4fac199de4d7e467bf5766199bdbf9cfcd4d",
+        "ms": 641,
+        "floatSample": [
+          0.49072265625,
+          0.499267578125,
+          0.50537109375,
+          1
+        ],
+        "byteSample": [
+          186,
+          187,
+          188,
+          255
+        ]
+      },
+      {
+        "test": "e",
+        "format": "RGBA32F",
+        "floatHash": "2b99567982562e869cad1a4011640470138440d3d772a1686166099084d9d940",
+        "byteHash": "a226b15d5a50d9035ed0a652836ffa03c2386bce508bc08e9dc96e5a9861d667",
+        "ms": 487,
+        "floatSample": [
+          0.04960000142455101,
+          0.10080000758171082,
+          0.20320004224777222,
+          1
+        ],
+        "byteSample": [
+          63,
+          89,
+          124,
+          255
+        ]
+      },
+      {
+        "test": "f",
+        "format": "RGBA32F",
+        "floatHash": "68badc23d902995931ff09fdf23137928e8ecbb1b82a215625dc507dfa7209c3",
+        "byteHash": "b8cff88cdcc56f5d91232c4476d33a2bfa61271d7d058e8bc84fb0c4af25346d",
+        "ms": 407.5,
+        "floatSample": [
+          0.00046296295477077365,
+          2.1433469044040976e-7,
+          0.9995370507240295,
+          1
+        ],
+        "byteSample": [
+          1,
+          0,
+          255,
+          255
+        ]
+      },
+      {
+        "test": "g",
+        "format": "RGBA32F",
+        "floatHash": "6f3cc1edffddde69a9725da0496bcc544819e122d6664da69327c0f10b4e56ae",
+        "byteHash": "f4d428b4c9b910db091dce7a4c95d1bca329f6b4a8cb87d45fce329927a7ef4a",
+        "ms": 451.7000002861023,
+        "floatSample": [
+          0.8352941870689392,
+          0.6745098233222961,
+          0.45098042488098145,
+          1
+        ],
+        "byteSample": [
+          235,
+          214,
+          179,
+          255
+        ]
+      }
+    ]
+  },
+  {
+    "mode": "preview",
+    "repeat": 2,
+    "version": "153.0.8010.12",
+    "rows": [
+      {
+        "test": "a",
+        "format": "RGBA16F",
+        "floatHash": "8036b098fb1fc9032a45c8bc9c65d04344ae250f43b720e25177523979d2885c",
+        "byteHash": "5d280bf9d0e29a7cb2772a2c9a0d5c33342544807463640a0f866735c9094f1c",
+        "ms": 459,
+        "floatSample": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "byteSample": [
+          0,
+          0,
+          0,
+          255
+        ]
+      },
+      {
+        "test": "b",
+        "format": "RGBA16F",
+        "floatHash": "211c1721bb33935ecbf217fad4c244ba4d26c2bd46f5398045a1c6344ed83fb4",
+        "byteHash": "de99be95a5962c0afafa49552bf4f48969d2e7ca1f49c9976f464a4fc9a9563a",
+        "ms": 433.90000009536743,
+        "floatSample": [
+          0.18701171875,
+          0.9150390625,
+          0.798828125,
+          1
+        ],
+        "byteSample": [
+          119,
+          245,
+          231,
+          255
+        ]
+      },
+      {
+        "test": "c",
+        "format": "RGBA16F",
+        "floatHash": "6690b609d84076a957ae17c03a001cc69e261576982eb20439cb45438b743be3",
+        "byteHash": "c3c139d69a098df61eacd90133075f5e6a43286cca7114540ed3a5060941130e",
+        "ms": 413.80000019073486,
+        "floatSample": [
+          1.7881393432617188e-7,
+          0.2003173828125,
+          -0.63330078125,
+          1
+        ],
+        "byteSample": [
+          0,
+          123,
+          0,
+          255
+        ]
+      },
+      {
+        "test": "d",
+        "format": "RGBA16F",
+        "floatHash": "4a7176a35fc3f863750d5959c6b21a6028f4fc2f050e802e5febb772a4adc334",
+        "byteHash": "aaa8e8b0d5fc8852a9a5d2e4275898e0203b2b076e66446606ecbefb5ffc1e64",
+        "ms": 799.1999998092651,
+        "floatSample": [
+          0.49072265625,
+          0.499267578125,
+          0.50537109375,
+          1
+        ],
+        "byteSample": [
+          186,
+          187,
+          188,
+          255
+        ]
+      },
+      {
+        "test": "e",
+        "format": "RGBA16F",
+        "floatHash": "fa7ee1e7f02857dfd6bf0c700e2547b7a1123b5d3265b566d76d3614b7a4c3b8",
+        "byteHash": "a17667b0c3c5e417d998dd69b7324910cdddc7b0000b0e6fd9a08d1a90863584",
+        "ms": 1117.2000002861023,
+        "floatSample": [
+          0.049652099609375,
+          0.10064697265625,
+          0.2032470703125,
+          1
+        ],
+        "byteSample": [
+          63,
+          89,
+          124,
+          255
+        ]
+      },
+      {
+        "test": "f",
+        "format": "RGBA16F",
+        "floatHash": "939d16b694331e988c041b1b41985036e3712d56b6fd525f086031caca5e089a",
+        "byteHash": "046e2a0e5bcd7d84da04bdf035723c7a62d3aca287458a2d831dec1569aed336",
+        "ms": 478.40000009536743,
+        "floatSample": [
+          0.0004630088806152344,
+          2.384185791015625e-7,
+          0.99951171875,
+          1
+        ],
+        "byteSample": [
+          1,
+          0,
+          255,
+          255
+        ]
+      },
+      {
+        "test": "g",
+        "format": "RGBA16F",
+        "floatHash": "0031190a8729a5a0ae69acc1fff6da193f94641a6c9feaa880b243886e1db4b8",
+        "byteHash": "542fdc6e58c86e136645ef85fe0c2796c7a5e00b23064843b5d0bc4b435a69b7",
+        "ms": 566.1999998092651,
+        "floatSample": [
+          0.83544921875,
+          0.67431640625,
+          0.450927734375,
+          1
+        ],
+        "byteSample": [
+          235,
+          214,
+          179,
+          255
+        ]
+      },
+      {
+        "test": "a",
+        "format": "RGBA32F",
+        "floatHash": "8036b098fb1fc9032a45c8bc9c65d04344ae250f43b720e25177523979d2885c",
+        "byteHash": "5d280bf9d0e29a7cb2772a2c9a0d5c33342544807463640a0f866735c9094f1c",
+        "ms": 400.19999980926514,
+        "floatSample": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "byteSample": [
+          0,
+          0,
+          0,
+          255
+        ]
+      },
+      {
+        "test": "b",
+        "format": "RGBA32F",
+        "floatHash": "ae93fa626e44722044c7f3bb884b5c28b30c65630429db23f70388b5036d91c6",
+        "byteHash": "e358fb019bf85fc0003ed79213afe381065b7cfc9e89d4234c6cd81a8cb24165",
+        "ms": 391.69999980926514,
+        "floatSample": [
+          0.18704509735107422,
+          0.9149919748306274,
+          0.798962414264679,
+          1
+        ],
+        "byteSample": [
+          119,
+          245,
+          231,
+          255
+        ]
+      },
+      {
+        "test": "c",
+        "format": "RGBA32F",
+        "floatHash": "079e51113578450d0695caf1cbeb4b1ecf15d1ce716db6dbb05ef59d75f8cc8d",
+        "byteHash": "9efd5a175bbe34a4f963b65cb6c3e90b7879ca96be77d6b783d035e39765086f",
+        "ms": 382.59999990463257,
+        "floatSample": [
+          1.572387304804579e-7,
+          0.20029281079769135,
+          -0.6334584951400757,
+          1
+        ],
+        "byteSample": [
+          0,
+          123,
+          0,
+          255
+        ]
+      },
+      {
+        "test": "d",
+        "format": "RGBA32F",
+        "floatHash": "81c86d36113d7dd28aa8fab30e72612c76455cc21208656285913050d22ba1e6",
+        "byteHash": "596e753789059a9f8741c053887a4fac199de4d7e467bf5766199bdbf9cfcd4d",
+        "ms": 746.5999999046326,
+        "floatSample": [
+          0.49072265625,
+          0.499267578125,
+          0.50537109375,
+          1
+        ],
+        "byteSample": [
+          186,
+          187,
+          188,
+          255
+        ]
+      },
+      {
+        "test": "e",
+        "format": "RGBA32F",
+        "floatHash": "2b99567982562e869cad1a4011640470138440d3d772a1686166099084d9d940",
+        "byteHash": "a226b15d5a50d9035ed0a652836ffa03c2386bce508bc08e9dc96e5a9861d667",
+        "ms": 558.8000001907349,
+        "floatSample": [
+          0.04960000142455101,
+          0.10080000758171082,
+          0.20320004224777222,
+          1
+        ],
+        "byteSample": [
+          63,
+          89,
+          124,
+          255
+        ]
+      },
+      {
+        "test": "f",
+        "format": "RGBA32F",
+        "floatHash": "68badc23d902995931ff09fdf23137928e8ecbb1b82a215625dc507dfa7209c3",
+        "byteHash": "b8cff88cdcc56f5d91232c4476d33a2bfa61271d7d058e8bc84fb0c4af25346d",
+        "ms": 390.5,
+        "floatSample": [
+          0.00046296295477077365,
+          2.1433469044040976e-7,
+          0.9995370507240295,
+          1
+        ],
+        "byteSample": [
+          1,
+          0,
+          255,
+          255
+        ]
+      },
+      {
+        "test": "g",
+        "format": "RGBA32F",
+        "floatHash": "6f3cc1edffddde69a9725da0496bcc544819e122d6664da69327c0f10b4e56ae",
+        "byteHash": "f4d428b4c9b910db091dce7a4c95d1bca329f6b4a8cb87d45fce329927a7ef4a",
+        "ms": 426.5,
+        "floatSample": [
+          0.8352941870689392,
+          0.6745098233222961,
+          0.45098042488098145,
+          1
+        ],
+        "byteSample": [
+          235,
+          214,
+          179,
+          255
+        ]
+      }
+    ]
+  },
+  {
+    "mode": "preview",
+    "repeat": 3,
+    "version": "153.0.8010.12",
+    "rows": [
+      {
+        "test": "a",
+        "format": "RGBA16F",
+        "floatHash": "8036b098fb1fc9032a45c8bc9c65d04344ae250f43b720e25177523979d2885c",
+        "byteHash": "5d280bf9d0e29a7cb2772a2c9a0d5c33342544807463640a0f866735c9094f1c",
+        "ms": 620.0999999046326,
+        "floatSample": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "byteSample": [
+          0,
+          0,
+          0,
+          255
+        ]
+      },
+      {
+        "test": "b",
+        "format": "RGBA16F",
+        "floatHash": "211c1721bb33935ecbf217fad4c244ba4d26c2bd46f5398045a1c6344ed83fb4",
+        "byteHash": "de99be95a5962c0afafa49552bf4f48969d2e7ca1f49c9976f464a4fc9a9563a",
+        "ms": 517.7000002861023,
+        "floatSample": [
+          0.18701171875,
+          0.9150390625,
+          0.798828125,
+          1
+        ],
+        "byteSample": [
+          119,
+          245,
+          231,
+          255
+        ]
+      },
+      {
+        "test": "c",
+        "format": "RGBA16F",
+        "floatHash": "6690b609d84076a957ae17c03a001cc69e261576982eb20439cb45438b743be3",
+        "byteHash": "c3c139d69a098df61eacd90133075f5e6a43286cca7114540ed3a5060941130e",
+        "ms": 545.7999997138977,
+        "floatSample": [
+          1.7881393432617188e-7,
+          0.2003173828125,
+          -0.63330078125,
+          1
+        ],
+        "byteSample": [
+          0,
+          123,
+          0,
+          255
+        ]
+      },
+      {
+        "test": "d",
+        "format": "RGBA16F",
+        "floatHash": "4a7176a35fc3f863750d5959c6b21a6028f4fc2f050e802e5febb772a4adc334",
+        "byteHash": "aaa8e8b0d5fc8852a9a5d2e4275898e0203b2b076e66446606ecbefb5ffc1e64",
+        "ms": 839.7000002861023,
+        "floatSample": [
+          0.49072265625,
+          0.499267578125,
+          0.50537109375,
+          1
+        ],
+        "byteSample": [
+          186,
+          187,
+          188,
+          255
+        ]
+      },
+      {
+        "test": "e",
+        "format": "RGBA16F",
+        "floatHash": "fa7ee1e7f02857dfd6bf0c700e2547b7a1123b5d3265b566d76d3614b7a4c3b8",
+        "byteHash": "a17667b0c3c5e417d998dd69b7324910cdddc7b0000b0e6fd9a08d1a90863584",
+        "ms": 925.0999999046326,
+        "floatSample": [
+          0.049652099609375,
+          0.10064697265625,
+          0.2032470703125,
+          1
+        ],
+        "byteSample": [
+          63,
+          89,
+          124,
+          255
+        ]
+      },
+      {
+        "test": "f",
+        "format": "RGBA16F",
+        "floatHash": "939d16b694331e988c041b1b41985036e3712d56b6fd525f086031caca5e089a",
+        "byteHash": "046e2a0e5bcd7d84da04bdf035723c7a62d3aca287458a2d831dec1569aed336",
+        "ms": 491.6000003814697,
+        "floatSample": [
+          0.0004630088806152344,
+          2.384185791015625e-7,
+          0.99951171875,
+          1
+        ],
+        "byteSample": [
+          1,
+          0,
+          255,
+          255
+        ]
+      },
+      {
+        "test": "g",
+        "format": "RGBA16F",
+        "floatHash": "0031190a8729a5a0ae69acc1fff6da193f94641a6c9feaa880b243886e1db4b8",
+        "byteHash": "542fdc6e58c86e136645ef85fe0c2796c7a5e00b23064843b5d0bc4b435a69b7",
+        "ms": 466.59999990463257,
+        "floatSample": [
+          0.83544921875,
+          0.67431640625,
+          0.450927734375,
+          1
+        ],
+        "byteSample": [
+          235,
+          214,
+          179,
+          255
+        ]
+      },
+      {
+        "test": "a",
+        "format": "RGBA32F",
+        "floatHash": "8036b098fb1fc9032a45c8bc9c65d04344ae250f43b720e25177523979d2885c",
+        "byteHash": "5d280bf9d0e29a7cb2772a2c9a0d5c33342544807463640a0f866735c9094f1c",
+        "ms": 398.40000009536743,
+        "floatSample": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "byteSample": [
+          0,
+          0,
+          0,
+          255
+        ]
+      },
+      {
+        "test": "b",
+        "format": "RGBA32F",
+        "floatHash": "ae93fa626e44722044c7f3bb884b5c28b30c65630429db23f70388b5036d91c6",
+        "byteHash": "e358fb019bf85fc0003ed79213afe381065b7cfc9e89d4234c6cd81a8cb24165",
+        "ms": 423.90000009536743,
+        "floatSample": [
+          0.18704509735107422,
+          0.9149919748306274,
+          0.798962414264679,
+          1
+        ],
+        "byteSample": [
+          119,
+          245,
+          231,
+          255
+        ]
+      },
+      {
+        "test": "c",
+        "format": "RGBA32F",
+        "floatHash": "079e51113578450d0695caf1cbeb4b1ecf15d1ce716db6dbb05ef59d75f8cc8d",
+        "byteHash": "9efd5a175bbe34a4f963b65cb6c3e90b7879ca96be77d6b783d035e39765086f",
+        "ms": 395.5,
+        "floatSample": [
+          1.572387304804579e-7,
+          0.20029281079769135,
+          -0.6334584951400757,
+          1
+        ],
+        "byteSample": [
+          0,
+          123,
+          0,
+          255
+        ]
+      },
+      {
+        "test": "d",
+        "format": "RGBA32F",
+        "floatHash": "81c86d36113d7dd28aa8fab30e72612c76455cc21208656285913050d22ba1e6",
+        "byteHash": "596e753789059a9f8741c053887a4fac199de4d7e467bf5766199bdbf9cfcd4d",
+        "ms": 624.3000001907349,
+        "floatSample": [
+          0.49072265625,
+          0.499267578125,
+          0.50537109375,
+          1
+        ],
+        "byteSample": [
+          186,
+          187,
+          188,
+          255
+        ]
+      },
+      {
+        "test": "e",
+        "format": "RGBA32F",
+        "floatHash": "2b99567982562e869cad1a4011640470138440d3d772a1686166099084d9d940",
+        "byteHash": "a226b15d5a50d9035ed0a652836ffa03c2386bce508bc08e9dc96e5a9861d667",
+        "ms": 486,
+        "floatSample": [
+          0.04960000142455101,
+          0.10080000758171082,
+          0.20320004224777222,
+          1
+        ],
+        "byteSample": [
+          63,
+          89,
+          124,
+          255
+        ]
+      },
+      {
+        "test": "f",
+        "format": "RGBA32F",
+        "floatHash": "68badc23d902995931ff09fdf23137928e8ecbb1b82a215625dc507dfa7209c3",
+        "byteHash": "b8cff88cdcc56f5d91232c4476d33a2bfa61271d7d058e8bc84fb0c4af25346d",
+        "ms": 478,
+        "floatSample": [
+          0.00046296295477077365,
+          2.1433469044040976e-7,
+          0.9995370507240295,
+          1
+        ],
+        "byteSample": [
+          1,
+          0,
+          255,
+          255
+        ]
+      },
+      {
+        "test": "g",
+        "format": "RGBA32F",
+        "floatHash": "6f3cc1edffddde69a9725da0496bcc544819e122d6664da69327c0f10b4e56ae",
+        "byteHash": "f4d428b4c9b910db091dce7a4c95d1bca329f6b4a8cb87d45fce329927a7ef4a",
+        "ms": 393,
+        "floatSample": [
+          0.8352941870689392,
+          0.6745098233222961,
+          0.45098042488098145,
+          1
+        ],
+        "byteSample": [
+          235,
+          214,
+          179,
+          255
+        ]
+      }
+    ]
+  },
+  {
+    "mode": "preview",
+    "repeat": 4,
+    "version": "153.0.8010.12",
+    "rows": [
+      {
+        "test": "a",
+        "format": "RGBA16F",
+        "floatHash": "8036b098fb1fc9032a45c8bc9c65d04344ae250f43b720e25177523979d2885c",
+        "byteHash": "5d280bf9d0e29a7cb2772a2c9a0d5c33342544807463640a0f866735c9094f1c",
+        "ms": 517.4000000953674,
+        "floatSample": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "byteSample": [
+          0,
+          0,
+          0,
+          255
+        ]
+      },
+      {
+        "test": "b",
+        "format": "RGBA16F",
+        "floatHash": "211c1721bb33935ecbf217fad4c244ba4d26c2bd46f5398045a1c6344ed83fb4",
+        "byteHash": "de99be95a5962c0afafa49552bf4f48969d2e7ca1f49c9976f464a4fc9a9563a",
+        "ms": 520,
+        "floatSample": [
+          0.18701171875,
+          0.9150390625,
+          0.798828125,
+          1
+        ],
+        "byteSample": [
+          119,
+          245,
+          231,
+          255
+        ]
+      },
+      {
+        "test": "c",
+        "format": "RGBA16F",
+        "floatHash": "6690b609d84076a957ae17c03a001cc69e261576982eb20439cb45438b743be3",
+        "byteHash": "c3c139d69a098df61eacd90133075f5e6a43286cca7114540ed3a5060941130e",
+        "ms": 469.09999990463257,
+        "floatSample": [
+          1.7881393432617188e-7,
+          0.2003173828125,
+          -0.63330078125,
+          1
+        ],
+        "byteSample": [
+          0,
+          123,
+          0,
+          255
+        ]
+      },
+      {
+        "test": "d",
+        "format": "RGBA16F",
+        "floatHash": "4a7176a35fc3f863750d5959c6b21a6028f4fc2f050e802e5febb772a4adc334",
+        "byteHash": "aaa8e8b0d5fc8852a9a5d2e4275898e0203b2b076e66446606ecbefb5ffc1e64",
+        "ms": 785.7000002861023,
+        "floatSample": [
+          0.49072265625,
+          0.499267578125,
+          0.50537109375,
+          1
+        ],
+        "byteSample": [
+          186,
+          187,
+          188,
+          255
+        ]
+      },
+      {
+        "test": "e",
+        "format": "RGBA16F",
+        "floatHash": "fa7ee1e7f02857dfd6bf0c700e2547b7a1123b5d3265b566d76d3614b7a4c3b8",
+        "byteHash": "a17667b0c3c5e417d998dd69b7324910cdddc7b0000b0e6fd9a08d1a90863584",
+        "ms": 987.0999999046326,
+        "floatSample": [
+          0.049652099609375,
+          0.10064697265625,
+          0.2032470703125,
+          1
+        ],
+        "byteSample": [
+          63,
+          89,
+          124,
+          255
+        ]
+      },
+      {
+        "test": "f",
+        "format": "RGBA16F",
+        "floatHash": "939d16b694331e988c041b1b41985036e3712d56b6fd525f086031caca5e089a",
+        "byteHash": "046e2a0e5bcd7d84da04bdf035723c7a62d3aca287458a2d831dec1569aed336",
+        "ms": 431.19999980926514,
+        "floatSample": [
+          0.0004630088806152344,
+          2.384185791015625e-7,
+          0.99951171875,
+          1
+        ],
+        "byteSample": [
+          1,
+          0,
+          255,
+          255
+        ]
+      },
+      {
+        "test": "g",
+        "format": "RGBA16F",
+        "floatHash": "0031190a8729a5a0ae69acc1fff6da193f94641a6c9feaa880b243886e1db4b8",
+        "byteHash": "542fdc6e58c86e136645ef85fe0c2796c7a5e00b23064843b5d0bc4b435a69b7",
+        "ms": 493.80000019073486,
+        "floatSample": [
+          0.83544921875,
+          0.67431640625,
+          0.450927734375,
+          1
+        ],
+        "byteSample": [
+          235,
+          214,
+          179,
+          255
+        ]
+      },
+      {
+        "test": "a",
+        "format": "RGBA32F",
+        "floatHash": "8036b098fb1fc9032a45c8bc9c65d04344ae250f43b720e25177523979d2885c",
+        "byteHash": "5d280bf9d0e29a7cb2772a2c9a0d5c33342544807463640a0f866735c9094f1c",
+        "ms": 408.69999980926514,
+        "floatSample": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "byteSample": [
+          0,
+          0,
+          0,
+          255
+        ]
+      },
+      {
+        "test": "b",
+        "format": "RGBA32F",
+        "floatHash": "ae93fa626e44722044c7f3bb884b5c28b30c65630429db23f70388b5036d91c6",
+        "byteHash": "e358fb019bf85fc0003ed79213afe381065b7cfc9e89d4234c6cd81a8cb24165",
+        "ms": 425.90000009536743,
+        "floatSample": [
+          0.18704509735107422,
+          0.9149919748306274,
+          0.798962414264679,
+          1
+        ],
+        "byteSample": [
+          119,
+          245,
+          231,
+          255
+        ]
+      },
+      {
+        "test": "c",
+        "format": "RGBA32F",
+        "floatHash": "079e51113578450d0695caf1cbeb4b1ecf15d1ce716db6dbb05ef59d75f8cc8d",
+        "byteHash": "9efd5a175bbe34a4f963b65cb6c3e90b7879ca96be77d6b783d035e39765086f",
+        "ms": 394.09999990463257,
+        "floatSample": [
+          1.572387304804579e-7,
+          0.20029281079769135,
+          -0.6334584951400757,
+          1
+        ],
+        "byteSample": [
+          0,
+          123,
+          0,
+          255
+        ]
+      },
+      {
+        "test": "d",
+        "format": "RGBA32F",
+        "floatHash": "81c86d36113d7dd28aa8fab30e72612c76455cc21208656285913050d22ba1e6",
+        "byteHash": "596e753789059a9f8741c053887a4fac199de4d7e467bf5766199bdbf9cfcd4d",
+        "ms": 646.0999999046326,
+        "floatSample": [
+          0.49072265625,
+          0.499267578125,
+          0.50537109375,
+          1
+        ],
+        "byteSample": [
+          186,
+          187,
+          188,
+          255
+        ]
+      },
+      {
+        "test": "e",
+        "format": "RGBA32F",
+        "floatHash": "2b99567982562e869cad1a4011640470138440d3d772a1686166099084d9d940",
+        "byteHash": "a226b15d5a50d9035ed0a652836ffa03c2386bce508bc08e9dc96e5a9861d667",
+        "ms": 691.9000000953674,
+        "floatSample": [
+          0.04960000142455101,
+          0.10080000758171082,
+          0.20320004224777222,
+          1
+        ],
+        "byteSample": [
+          63,
+          89,
+          124,
+          255
+        ]
+      },
+      {
+        "test": "f",
+        "format": "RGBA32F",
+        "floatHash": "68badc23d902995931ff09fdf23137928e8ecbb1b82a215625dc507dfa7209c3",
+        "byteHash": "b8cff88cdcc56f5d91232c4476d33a2bfa61271d7d058e8bc84fb0c4af25346d",
+        "ms": 382.09999990463257,
+        "floatSample": [
+          0.00046296295477077365,
+          2.1433469044040976e-7,
+          0.9995370507240295,
+          1
+        ],
+        "byteSample": [
+          1,
+          0,
+          255,
+          255
+        ]
+      },
+      {
+        "test": "g",
+        "format": "RGBA32F",
+        "floatHash": "6f3cc1edffddde69a9725da0496bcc544819e122d6664da69327c0f10b4e56ae",
+        "byteHash": "f4d428b4c9b910db091dce7a4c95d1bca329f6b4a8cb87d45fce329927a7ef4a",
+        "ms": 389.7000002861023,
+        "floatSample": [
+          0.8352941870689392,
+          0.6745098233222961,
+          0.45098042488098145,
+          1
+        ],
+        "byteSample": [
+          235,
+          214,
+          179,
+          255
+        ]
+      }
+    ]
+  },
+  {
+    "mode": "export",
+    "repeat": 0,
+    "version": "153.0.8010.12",
+    "rows": [
+      {
+        "test": "a",
+        "format": "RGBA16F",
+        "floatHash": "8036b098fb1fc9032a45c8bc9c65d04344ae250f43b720e25177523979d2885c",
+        "byteHash": "5d280bf9d0e29a7cb2772a2c9a0d5c33342544807463640a0f866735c9094f1c",
+        "ms": 475.7000002861023,
+        "floatSample": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "byteSample": [
+          0,
+          0,
+          0,
+          255
+        ]
+      },
+      {
+        "test": "b",
+        "format": "RGBA16F",
+        "floatHash": "211c1721bb33935ecbf217fad4c244ba4d26c2bd46f5398045a1c6344ed83fb4",
+        "byteHash": "de99be95a5962c0afafa49552bf4f48969d2e7ca1f49c9976f464a4fc9a9563a",
+        "ms": 463,
+        "floatSample": [
+          0.18701171875,
+          0.9150390625,
+          0.798828125,
+          1
+        ],
+        "byteSample": [
+          119,
+          245,
+          231,
+          255
+        ]
+      },
+      {
+        "test": "c",
+        "format": "RGBA16F",
+        "floatHash": "6690b609d84076a957ae17c03a001cc69e261576982eb20439cb45438b743be3",
+        "byteHash": "c3c139d69a098df61eacd90133075f5e6a43286cca7114540ed3a5060941130e",
+        "ms": 471.80000019073486,
+        "floatSample": [
+          1.7881393432617188e-7,
+          0.2003173828125,
+          -0.63330078125,
+          1
+        ],
+        "byteSample": [
+          0,
+          123,
+          0,
+          255
+        ]
+      },
+      {
+        "test": "d",
+        "format": "RGBA16F",
+        "floatHash": "4a7176a35fc3f863750d5959c6b21a6028f4fc2f050e802e5febb772a4adc334",
+        "byteHash": "aaa8e8b0d5fc8852a9a5d2e4275898e0203b2b076e66446606ecbefb5ffc1e64",
+        "ms": 816.6000003814697,
+        "floatSample": [
+          0.49072265625,
+          0.499267578125,
+          0.50537109375,
+          1
+        ],
+        "byteSample": [
+          186,
+          187,
+          188,
+          255
+        ]
+      },
+      {
+        "test": "e",
+        "format": "RGBA16F",
+        "floatHash": "fa7ee1e7f02857dfd6bf0c700e2547b7a1123b5d3265b566d76d3614b7a4c3b8",
+        "byteHash": "a17667b0c3c5e417d998dd69b7324910cdddc7b0000b0e6fd9a08d1a90863584",
+        "ms": 1243.3999996185303,
+        "floatSample": [
+          0.049652099609375,
+          0.10064697265625,
+          0.2032470703125,
+          1
+        ],
+        "byteSample": [
+          63,
+          89,
+          124,
+          255
+        ]
+      },
+      {
+        "test": "f",
+        "format": "RGBA16F",
+        "floatHash": "939d16b694331e988c041b1b41985036e3712d56b6fd525f086031caca5e089a",
+        "byteHash": "046e2a0e5bcd7d84da04bdf035723c7a62d3aca287458a2d831dec1569aed336",
+        "ms": 425.6000003814697,
+        "floatSample": [
+          0.0004630088806152344,
+          2.384185791015625e-7,
+          0.99951171875,
+          1
+        ],
+        "byteSample": [
+          1,
+          0,
+          255,
+          255
+        ]
+      },
+      {
+        "test": "g",
+        "format": "RGBA16F",
+        "floatHash": "0031190a8729a5a0ae69acc1fff6da193f94641a6c9feaa880b243886e1db4b8",
+        "byteHash": "542fdc6e58c86e136645ef85fe0c2796c7a5e00b23064843b5d0bc4b435a69b7",
+        "ms": 420.59999990463257,
+        "floatSample": [
+          0.83544921875,
+          0.67431640625,
+          0.450927734375,
+          1
+        ],
+        "byteSample": [
+          235,
+          214,
+          179,
+          255
+        ]
+      },
+      {
+        "test": "a",
+        "format": "RGBA32F",
+        "floatHash": "8036b098fb1fc9032a45c8bc9c65d04344ae250f43b720e25177523979d2885c",
+        "byteHash": "5d280bf9d0e29a7cb2772a2c9a0d5c33342544807463640a0f866735c9094f1c",
+        "ms": 375.80000019073486,
+        "floatSample": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "byteSample": [
+          0,
+          0,
+          0,
+          255
+        ]
+      },
+      {
+        "test": "b",
+        "format": "RGBA32F",
+        "floatHash": "ae93fa626e44722044c7f3bb884b5c28b30c65630429db23f70388b5036d91c6",
+        "byteHash": "e358fb019bf85fc0003ed79213afe381065b7cfc9e89d4234c6cd81a8cb24165",
+        "ms": 393.59999990463257,
+        "floatSample": [
+          0.18704509735107422,
+          0.9149919748306274,
+          0.798962414264679,
+          1
+        ],
+        "byteSample": [
+          119,
+          245,
+          231,
+          255
+        ]
+      },
+      {
+        "test": "c",
+        "format": "RGBA32F",
+        "floatHash": "079e51113578450d0695caf1cbeb4b1ecf15d1ce716db6dbb05ef59d75f8cc8d",
+        "byteHash": "9efd5a175bbe34a4f963b65cb6c3e90b7879ca96be77d6b783d035e39765086f",
+        "ms": 390.69999980926514,
+        "floatSample": [
+          1.572387304804579e-7,
+          0.20029281079769135,
+          -0.6334584951400757,
+          1
+        ],
+        "byteSample": [
+          0,
+          123,
+          0,
+          255
+        ]
+      },
+      {
+        "test": "d",
+        "format": "RGBA32F",
+        "floatHash": "81c86d36113d7dd28aa8fab30e72612c76455cc21208656285913050d22ba1e6",
+        "byteHash": "596e753789059a9f8741c053887a4fac199de4d7e467bf5766199bdbf9cfcd4d",
+        "ms": 582,
+        "floatSample": [
+          0.49072265625,
+          0.499267578125,
+          0.50537109375,
+          1
+        ],
+        "byteSample": [
+          186,
+          187,
+          188,
+          255
+        ]
+      },
+      {
+        "test": "e",
+        "format": "RGBA32F",
+        "floatHash": "2b99567982562e869cad1a4011640470138440d3d772a1686166099084d9d940",
+        "byteHash": "a226b15d5a50d9035ed0a652836ffa03c2386bce508bc08e9dc96e5a9861d667",
+        "ms": 465.5,
+        "floatSample": [
+          0.04960000142455101,
+          0.10080000758171082,
+          0.20320004224777222,
+          1
+        ],
+        "byteSample": [
+          63,
+          89,
+          124,
+          255
+        ]
+      },
+      {
+        "test": "f",
+        "format": "RGBA32F",
+        "floatHash": "68badc23d902995931ff09fdf23137928e8ecbb1b82a215625dc507dfa7209c3",
+        "byteHash": "b8cff88cdcc56f5d91232c4476d33a2bfa61271d7d058e8bc84fb0c4af25346d",
+        "ms": 378.5,
+        "floatSample": [
+          0.00046296295477077365,
+          2.1433469044040976e-7,
+          0.9995370507240295,
+          1
+        ],
+        "byteSample": [
+          1,
+          0,
+          255,
+          255
+        ]
+      },
+      {
+        "test": "g",
+        "format": "RGBA32F",
+        "floatHash": "6f3cc1edffddde69a9725da0496bcc544819e122d6664da69327c0f10b4e56ae",
+        "byteHash": "f4d428b4c9b910db091dce7a4c95d1bca329f6b4a8cb87d45fce329927a7ef4a",
+        "ms": 405.69999980926514,
+        "floatSample": [
+          0.8352941870689392,
+          0.6745098233222961,
+          0.45098042488098145,
+          1
+        ],
+        "byteSample": [
+          235,
+          214,
+          179,
+          255
+        ]
+      }
+    ]
+  },
+  {
+    "mode": "export",
+    "repeat": 1,
+    "version": "153.0.8010.12",
+    "rows": [
+      {
+        "test": "a",
+        "format": "RGBA16F",
+        "floatHash": "8036b098fb1fc9032a45c8bc9c65d04344ae250f43b720e25177523979d2885c",
+        "byteHash": "5d280bf9d0e29a7cb2772a2c9a0d5c33342544807463640a0f866735c9094f1c",
+        "ms": 482.19999980926514,
+        "floatSample": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "byteSample": [
+          0,
+          0,
+          0,
+          255
+        ]
+      },
+      {
+        "test": "b",
+        "format": "RGBA16F",
+        "floatHash": "211c1721bb33935ecbf217fad4c244ba4d26c2bd46f5398045a1c6344ed83fb4",
+        "byteHash": "de99be95a5962c0afafa49552bf4f48969d2e7ca1f49c9976f464a4fc9a9563a",
+        "ms": 444.80000019073486,
+        "floatSample": [
+          0.18701171875,
+          0.9150390625,
+          0.798828125,
+          1
+        ],
+        "byteSample": [
+          119,
+          245,
+          231,
+          255
+        ]
+      },
+      {
+        "test": "c",
+        "format": "RGBA16F",
+        "floatHash": "6690b609d84076a957ae17c03a001cc69e261576982eb20439cb45438b743be3",
+        "byteHash": "c3c139d69a098df61eacd90133075f5e6a43286cca7114540ed3a5060941130e",
+        "ms": 454.40000009536743,
+        "floatSample": [
+          1.7881393432617188e-7,
+          0.2003173828125,
+          -0.63330078125,
+          1
+        ],
+        "byteSample": [
+          0,
+          123,
+          0,
+          255
+        ]
+      },
+      {
+        "test": "d",
+        "format": "RGBA16F",
+        "floatHash": "4a7176a35fc3f863750d5959c6b21a6028f4fc2f050e802e5febb772a4adc334",
+        "byteHash": "aaa8e8b0d5fc8852a9a5d2e4275898e0203b2b076e66446606ecbefb5ffc1e64",
+        "ms": 657.2999997138977,
+        "floatSample": [
+          0.49072265625,
+          0.499267578125,
+          0.50537109375,
+          1
+        ],
+        "byteSample": [
+          186,
+          187,
+          188,
+          255
+        ]
+      },
+      {
+        "test": "e",
+        "format": "RGBA16F",
+        "floatHash": "fa7ee1e7f02857dfd6bf0c700e2547b7a1123b5d3265b566d76d3614b7a4c3b8",
+        "byteHash": "a17667b0c3c5e417d998dd69b7324910cdddc7b0000b0e6fd9a08d1a90863584",
+        "ms": 856,
+        "floatSample": [
+          0.049652099609375,
+          0.10064697265625,
+          0.2032470703125,
+          1
+        ],
+        "byteSample": [
+          63,
+          89,
+          124,
+          255
+        ]
+      },
+      {
+        "test": "f",
+        "format": "RGBA16F",
+        "floatHash": "939d16b694331e988c041b1b41985036e3712d56b6fd525f086031caca5e089a",
+        "byteHash": "046e2a0e5bcd7d84da04bdf035723c7a62d3aca287458a2d831dec1569aed336",
+        "ms": 564.5,
+        "floatSample": [
+          0.0004630088806152344,
+          2.384185791015625e-7,
+          0.99951171875,
+          1
+        ],
+        "byteSample": [
+          1,
+          0,
+          255,
+          255
+        ]
+      },
+      {
+        "test": "g",
+        "format": "RGBA16F",
+        "floatHash": "0031190a8729a5a0ae69acc1fff6da193f94641a6c9feaa880b243886e1db4b8",
+        "byteHash": "542fdc6e58c86e136645ef85fe0c2796c7a5e00b23064843b5d0bc4b435a69b7",
+        "ms": 530.3000001907349,
+        "floatSample": [
+          0.83544921875,
+          0.67431640625,
+          0.450927734375,
+          1
+        ],
+        "byteSample": [
+          235,
+          214,
+          179,
+          255
+        ]
+      },
+      {
+        "test": "a",
+        "format": "RGBA32F",
+        "floatHash": "8036b098fb1fc9032a45c8bc9c65d04344ae250f43b720e25177523979d2885c",
+        "byteHash": "5d280bf9d0e29a7cb2772a2c9a0d5c33342544807463640a0f866735c9094f1c",
+        "ms": 435.40000009536743,
+        "floatSample": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "byteSample": [
+          0,
+          0,
+          0,
+          255
+        ]
+      },
+      {
+        "test": "b",
+        "format": "RGBA32F",
+        "floatHash": "ae93fa626e44722044c7f3bb884b5c28b30c65630429db23f70388b5036d91c6",
+        "byteHash": "e358fb019bf85fc0003ed79213afe381065b7cfc9e89d4234c6cd81a8cb24165",
+        "ms": 413.59999990463257,
+        "floatSample": [
+          0.18704509735107422,
+          0.9149919748306274,
+          0.798962414264679,
+          1
+        ],
+        "byteSample": [
+          119,
+          245,
+          231,
+          255
+        ]
+      },
+      {
+        "test": "c",
+        "format": "RGBA32F",
+        "floatHash": "079e51113578450d0695caf1cbeb4b1ecf15d1ce716db6dbb05ef59d75f8cc8d",
+        "byteHash": "9efd5a175bbe34a4f963b65cb6c3e90b7879ca96be77d6b783d035e39765086f",
+        "ms": 377.8999996185303,
+        "floatSample": [
+          1.572387304804579e-7,
+          0.20029281079769135,
+          -0.6334584951400757,
+          1
+        ],
+        "byteSample": [
+          0,
+          123,
+          0,
+          255
+        ]
+      },
+      {
+        "test": "d",
+        "format": "RGBA32F",
+        "floatHash": "81c86d36113d7dd28aa8fab30e72612c76455cc21208656285913050d22ba1e6",
+        "byteHash": "596e753789059a9f8741c053887a4fac199de4d7e467bf5766199bdbf9cfcd4d",
+        "ms": 575.8000001907349,
+        "floatSample": [
+          0.49072265625,
+          0.499267578125,
+          0.50537109375,
+          1
+        ],
+        "byteSample": [
+          186,
+          187,
+          188,
+          255
+        ]
+      },
+      {
+        "test": "e",
+        "format": "RGBA32F",
+        "floatHash": "2b99567982562e869cad1a4011640470138440d3d772a1686166099084d9d940",
+        "byteHash": "a226b15d5a50d9035ed0a652836ffa03c2386bce508bc08e9dc96e5a9861d667",
+        "ms": 470.80000019073486,
+        "floatSample": [
+          0.04960000142455101,
+          0.10080000758171082,
+          0.20320004224777222,
+          1
+        ],
+        "byteSample": [
+          63,
+          89,
+          124,
+          255
+        ]
+      },
+      {
+        "test": "f",
+        "format": "RGBA32F",
+        "floatHash": "68badc23d902995931ff09fdf23137928e8ecbb1b82a215625dc507dfa7209c3",
+        "byteHash": "b8cff88cdcc56f5d91232c4476d33a2bfa61271d7d058e8bc84fb0c4af25346d",
+        "ms": 372.09999990463257,
+        "floatSample": [
+          0.00046296295477077365,
+          2.1433469044040976e-7,
+          0.9995370507240295,
+          1
+        ],
+        "byteSample": [
+          1,
+          0,
+          255,
+          255
+        ]
+      },
+      {
+        "test": "g",
+        "format": "RGBA32F",
+        "floatHash": "6f3cc1edffddde69a9725da0496bcc544819e122d6664da69327c0f10b4e56ae",
+        "byteHash": "f4d428b4c9b910db091dce7a4c95d1bca329f6b4a8cb87d45fce329927a7ef4a",
+        "ms": 382.59999990463257,
+        "floatSample": [
+          0.8352941870689392,
+          0.6745098233222961,
+          0.45098042488098145,
+          1
+        ],
+        "byteSample": [
+          235,
+          214,
+          179,
+          255
+        ]
+      }
+    ]
+  },
+  {
+    "mode": "export",
+    "repeat": 2,
+    "version": "153.0.8010.12",
+    "rows": [
+      {
+        "test": "a",
+        "format": "RGBA16F",
+        "floatHash": "8036b098fb1fc9032a45c8bc9c65d04344ae250f43b720e25177523979d2885c",
+        "byteHash": "5d280bf9d0e29a7cb2772a2c9a0d5c33342544807463640a0f866735c9094f1c",
+        "ms": 463.69999980926514,
+        "floatSample": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "byteSample": [
+          0,
+          0,
+          0,
+          255
+        ]
+      },
+      {
+        "test": "b",
+        "format": "RGBA16F",
+        "floatHash": "211c1721bb33935ecbf217fad4c244ba4d26c2bd46f5398045a1c6344ed83fb4",
+        "byteHash": "de99be95a5962c0afafa49552bf4f48969d2e7ca1f49c9976f464a4fc9a9563a",
+        "ms": 421.2999997138977,
+        "floatSample": [
+          0.18701171875,
+          0.9150390625,
+          0.798828125,
+          1
+        ],
+        "byteSample": [
+          119,
+          245,
+          231,
+          255
+        ]
+      },
+      {
+        "test": "c",
+        "format": "RGBA16F",
+        "floatHash": "6690b609d84076a957ae17c03a001cc69e261576982eb20439cb45438b743be3",
+        "byteHash": "c3c139d69a098df61eacd90133075f5e6a43286cca7114540ed3a5060941130e",
+        "ms": 531.5,
+        "floatSample": [
+          1.7881393432617188e-7,
+          0.2003173828125,
+          -0.63330078125,
+          1
+        ],
+        "byteSample": [
+          0,
+          123,
+          0,
+          255
+        ]
+      },
+      {
+        "test": "d",
+        "format": "RGBA16F",
+        "floatHash": "4a7176a35fc3f863750d5959c6b21a6028f4fc2f050e802e5febb772a4adc334",
+        "byteHash": "aaa8e8b0d5fc8852a9a5d2e4275898e0203b2b076e66446606ecbefb5ffc1e64",
+        "ms": 617,
+        "floatSample": [
+          0.49072265625,
+          0.499267578125,
+          0.50537109375,
+          1
+        ],
+        "byteSample": [
+          186,
+          187,
+          188,
+          255
+        ]
+      },
+      {
+        "test": "e",
+        "format": "RGBA16F",
+        "floatHash": "fa7ee1e7f02857dfd6bf0c700e2547b7a1123b5d3265b566d76d3614b7a4c3b8",
+        "byteHash": "a17667b0c3c5e417d998dd69b7324910cdddc7b0000b0e6fd9a08d1a90863584",
+        "ms": 846.9000000953674,
+        "floatSample": [
+          0.049652099609375,
+          0.10064697265625,
+          0.2032470703125,
+          1
+        ],
+        "byteSample": [
+          63,
+          89,
+          124,
+          255
+        ]
+      },
+      {
+        "test": "f",
+        "format": "RGBA16F",
+        "floatHash": "939d16b694331e988c041b1b41985036e3712d56b6fd525f086031caca5e089a",
+        "byteHash": "046e2a0e5bcd7d84da04bdf035723c7a62d3aca287458a2d831dec1569aed336",
+        "ms": 415.59999990463257,
+        "floatSample": [
+          0.0004630088806152344,
+          2.384185791015625e-7,
+          0.99951171875,
+          1
+        ],
+        "byteSample": [
+          1,
+          0,
+          255,
+          255
+        ]
+      },
+      {
+        "test": "g",
+        "format": "RGBA16F",
+        "floatHash": "0031190a8729a5a0ae69acc1fff6da193f94641a6c9feaa880b243886e1db4b8",
+        "byteHash": "542fdc6e58c86e136645ef85fe0c2796c7a5e00b23064843b5d0bc4b435a69b7",
+        "ms": 458.5,
+        "floatSample": [
+          0.83544921875,
+          0.67431640625,
+          0.450927734375,
+          1
+        ],
+        "byteSample": [
+          235,
+          214,
+          179,
+          255
+        ]
+      },
+      {
+        "test": "a",
+        "format": "RGBA32F",
+        "floatHash": "8036b098fb1fc9032a45c8bc9c65d04344ae250f43b720e25177523979d2885c",
+        "byteHash": "5d280bf9d0e29a7cb2772a2c9a0d5c33342544807463640a0f866735c9094f1c",
+        "ms": 374.2999997138977,
+        "floatSample": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "byteSample": [
+          0,
+          0,
+          0,
+          255
+        ]
+      },
+      {
+        "test": "b",
+        "format": "RGBA32F",
+        "floatHash": "ae93fa626e44722044c7f3bb884b5c28b30c65630429db23f70388b5036d91c6",
+        "byteHash": "e358fb019bf85fc0003ed79213afe381065b7cfc9e89d4234c6cd81a8cb24165",
+        "ms": 395.7000002861023,
+        "floatSample": [
+          0.18704509735107422,
+          0.9149919748306274,
+          0.798962414264679,
+          1
+        ],
+        "byteSample": [
+          119,
+          245,
+          231,
+          255
+        ]
+      },
+      {
+        "test": "c",
+        "format": "RGBA32F",
+        "floatHash": "079e51113578450d0695caf1cbeb4b1ecf15d1ce716db6dbb05ef59d75f8cc8d",
+        "byteHash": "9efd5a175bbe34a4f963b65cb6c3e90b7879ca96be77d6b783d035e39765086f",
+        "ms": 403.90000009536743,
+        "floatSample": [
+          1.572387304804579e-7,
+          0.20029281079769135,
+          -0.6334584951400757,
+          1
+        ],
+        "byteSample": [
+          0,
+          123,
+          0,
+          255
+        ]
+      },
+      {
+        "test": "d",
+        "format": "RGBA32F",
+        "floatHash": "81c86d36113d7dd28aa8fab30e72612c76455cc21208656285913050d22ba1e6",
+        "byteHash": "596e753789059a9f8741c053887a4fac199de4d7e467bf5766199bdbf9cfcd4d",
+        "ms": 568.3999996185303,
+        "floatSample": [
+          0.49072265625,
+          0.499267578125,
+          0.50537109375,
+          1
+        ],
+        "byteSample": [
+          186,
+          187,
+          188,
+          255
+        ]
+      },
+      {
+        "test": "e",
+        "format": "RGBA32F",
+        "floatHash": "2b99567982562e869cad1a4011640470138440d3d772a1686166099084d9d940",
+        "byteHash": "a226b15d5a50d9035ed0a652836ffa03c2386bce508bc08e9dc96e5a9861d667",
+        "ms": 457.5,
+        "floatSample": [
+          0.04960000142455101,
+          0.10080000758171082,
+          0.20320004224777222,
+          1
+        ],
+        "byteSample": [
+          63,
+          89,
+          124,
+          255
+        ]
+      },
+      {
+        "test": "f",
+        "format": "RGBA32F",
+        "floatHash": "68badc23d902995931ff09fdf23137928e8ecbb1b82a215625dc507dfa7209c3",
+        "byteHash": "b8cff88cdcc56f5d91232c4476d33a2bfa61271d7d058e8bc84fb0c4af25346d",
+        "ms": 380.7999997138977,
+        "floatSample": [
+          0.00046296295477077365,
+          2.1433469044040976e-7,
+          0.9995370507240295,
+          1
+        ],
+        "byteSample": [
+          1,
+          0,
+          255,
+          255
+        ]
+      },
+      {
+        "test": "g",
+        "format": "RGBA32F",
+        "floatHash": "6f3cc1edffddde69a9725da0496bcc544819e122d6664da69327c0f10b4e56ae",
+        "byteHash": "f4d428b4c9b910db091dce7a4c95d1bca329f6b4a8cb87d45fce329927a7ef4a",
+        "ms": 377.6000003814697,
+        "floatSample": [
+          0.8352941870689392,
+          0.6745098233222961,
+          0.45098042488098145,
+          1
+        ],
+        "byteSample": [
+          235,
+          214,
+          179,
+          255
+        ]
+      }
+    ]
+  },
+  {
+    "mode": "export",
+    "repeat": 3,
+    "version": "153.0.8010.12",
+    "rows": [
+      {
+        "test": "a",
+        "format": "RGBA16F",
+        "floatHash": "8036b098fb1fc9032a45c8bc9c65d04344ae250f43b720e25177523979d2885c",
+        "byteHash": "5d280bf9d0e29a7cb2772a2c9a0d5c33342544807463640a0f866735c9094f1c",
+        "ms": 473.2999997138977,
+        "floatSample": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "byteSample": [
+          0,
+          0,
+          0,
+          255
+        ]
+      },
+      {
+        "test": "b",
+        "format": "RGBA16F",
+        "floatHash": "211c1721bb33935ecbf217fad4c244ba4d26c2bd46f5398045a1c6344ed83fb4",
+        "byteHash": "de99be95a5962c0afafa49552bf4f48969d2e7ca1f49c9976f464a4fc9a9563a",
+        "ms": 421.69999980926514,
+        "floatSample": [
+          0.18701171875,
+          0.9150390625,
+          0.798828125,
+          1
+        ],
+        "byteSample": [
+          119,
+          245,
+          231,
+          255
+        ]
+      },
+      {
+        "test": "c",
+        "format": "RGBA16F",
+        "floatHash": "6690b609d84076a957ae17c03a001cc69e261576982eb20439cb45438b743be3",
+        "byteHash": "c3c139d69a098df61eacd90133075f5e6a43286cca7114540ed3a5060941130e",
+        "ms": 447.40000009536743,
+        "floatSample": [
+          1.7881393432617188e-7,
+          0.2003173828125,
+          -0.63330078125,
+          1
+        ],
+        "byteSample": [
+          0,
+          123,
+          0,
+          255
+        ]
+      },
+      {
+        "test": "d",
+        "format": "RGBA16F",
+        "floatHash": "4a7176a35fc3f863750d5959c6b21a6028f4fc2f050e802e5febb772a4adc334",
+        "byteHash": "aaa8e8b0d5fc8852a9a5d2e4275898e0203b2b076e66446606ecbefb5ffc1e64",
+        "ms": 733.5,
+        "floatSample": [
+          0.49072265625,
+          0.499267578125,
+          0.50537109375,
+          1
+        ],
+        "byteSample": [
+          186,
+          187,
+          188,
+          255
+        ]
+      },
+      {
+        "test": "e",
+        "format": "RGBA16F",
+        "floatHash": "fa7ee1e7f02857dfd6bf0c700e2547b7a1123b5d3265b566d76d3614b7a4c3b8",
+        "byteHash": "a17667b0c3c5e417d998dd69b7324910cdddc7b0000b0e6fd9a08d1a90863584",
+        "ms": 974.1000003814697,
+        "floatSample": [
+          0.049652099609375,
+          0.10064697265625,
+          0.2032470703125,
+          1
+        ],
+        "byteSample": [
+          63,
+          89,
+          124,
+          255
+        ]
+      },
+      {
+        "test": "f",
+        "format": "RGBA16F",
+        "floatHash": "939d16b694331e988c041b1b41985036e3712d56b6fd525f086031caca5e089a",
+        "byteHash": "046e2a0e5bcd7d84da04bdf035723c7a62d3aca287458a2d831dec1569aed336",
+        "ms": 439.19999980926514,
+        "floatSample": [
+          0.0004630088806152344,
+          2.384185791015625e-7,
+          0.99951171875,
+          1
+        ],
+        "byteSample": [
+          1,
+          0,
+          255,
+          255
+        ]
+      },
+      {
+        "test": "g",
+        "format": "RGBA16F",
+        "floatHash": "0031190a8729a5a0ae69acc1fff6da193f94641a6c9feaa880b243886e1db4b8",
+        "byteHash": "542fdc6e58c86e136645ef85fe0c2796c7a5e00b23064843b5d0bc4b435a69b7",
+        "ms": 499.90000009536743,
+        "floatSample": [
+          0.83544921875,
+          0.67431640625,
+          0.450927734375,
+          1
+        ],
+        "byteSample": [
+          235,
+          214,
+          179,
+          255
+        ]
+      },
+      {
+        "test": "a",
+        "format": "RGBA32F",
+        "floatHash": "8036b098fb1fc9032a45c8bc9c65d04344ae250f43b720e25177523979d2885c",
+        "byteHash": "5d280bf9d0e29a7cb2772a2c9a0d5c33342544807463640a0f866735c9094f1c",
+        "ms": 433,
+        "floatSample": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "byteSample": [
+          0,
+          0,
+          0,
+          255
+        ]
+      },
+      {
+        "test": "b",
+        "format": "RGBA32F",
+        "floatHash": "ae93fa626e44722044c7f3bb884b5c28b30c65630429db23f70388b5036d91c6",
+        "byteHash": "e358fb019bf85fc0003ed79213afe381065b7cfc9e89d4234c6cd81a8cb24165",
+        "ms": 408.5,
+        "floatSample": [
+          0.18704509735107422,
+          0.9149919748306274,
+          0.798962414264679,
+          1
+        ],
+        "byteSample": [
+          119,
+          245,
+          231,
+          255
+        ]
+      },
+      {
+        "test": "c",
+        "format": "RGBA32F",
+        "floatHash": "079e51113578450d0695caf1cbeb4b1ecf15d1ce716db6dbb05ef59d75f8cc8d",
+        "byteHash": "9efd5a175bbe34a4f963b65cb6c3e90b7879ca96be77d6b783d035e39765086f",
+        "ms": 453.59999990463257,
+        "floatSample": [
+          1.572387304804579e-7,
+          0.20029281079769135,
+          -0.6334584951400757,
+          1
+        ],
+        "byteSample": [
+          0,
+          123,
+          0,
+          255
+        ]
+      },
+      {
+        "test": "d",
+        "format": "RGBA32F",
+        "floatHash": "81c86d36113d7dd28aa8fab30e72612c76455cc21208656285913050d22ba1e6",
+        "byteHash": "596e753789059a9f8741c053887a4fac199de4d7e467bf5766199bdbf9cfcd4d",
+        "ms": 847.5,
+        "floatSample": [
+          0.49072265625,
+          0.499267578125,
+          0.50537109375,
+          1
+        ],
+        "byteSample": [
+          186,
+          187,
+          188,
+          255
+        ]
+      },
+      {
+        "test": "e",
+        "format": "RGBA32F",
+        "floatHash": "2b99567982562e869cad1a4011640470138440d3d772a1686166099084d9d940",
+        "byteHash": "a226b15d5a50d9035ed0a652836ffa03c2386bce508bc08e9dc96e5a9861d667",
+        "ms": 496,
+        "floatSample": [
+          0.04960000142455101,
+          0.10080000758171082,
+          0.20320004224777222,
+          1
+        ],
+        "byteSample": [
+          63,
+          89,
+          124,
+          255
+        ]
+      },
+      {
+        "test": "f",
+        "format": "RGBA32F",
+        "floatHash": "68badc23d902995931ff09fdf23137928e8ecbb1b82a215625dc507dfa7209c3",
+        "byteHash": "b8cff88cdcc56f5d91232c4476d33a2bfa61271d7d058e8bc84fb0c4af25346d",
+        "ms": 369.30000019073486,
+        "floatSample": [
+          0.00046296295477077365,
+          2.1433469044040976e-7,
+          0.9995370507240295,
+          1
+        ],
+        "byteSample": [
+          1,
+          0,
+          255,
+          255
+        ]
+      },
+      {
+        "test": "g",
+        "format": "RGBA32F",
+        "floatHash": "6f3cc1edffddde69a9725da0496bcc544819e122d6664da69327c0f10b4e56ae",
+        "byteHash": "f4d428b4c9b910db091dce7a4c95d1bca329f6b4a8cb87d45fce329927a7ef4a",
+        "ms": 397,
+        "floatSample": [
+          0.8352941870689392,
+          0.6745098233222961,
+          0.45098042488098145,
+          1
+        ],
+        "byteSample": [
+          235,
+          214,
+          179,
+          255
+        ]
+      }
+    ]
+  },
+  {
+    "mode": "export",
+    "repeat": 4,
+    "version": "153.0.8010.12",
+    "rows": [
+      {
+        "test": "a",
+        "format": "RGBA16F",
+        "floatHash": "8036b098fb1fc9032a45c8bc9c65d04344ae250f43b720e25177523979d2885c",
+        "byteHash": "5d280bf9d0e29a7cb2772a2c9a0d5c33342544807463640a0f866735c9094f1c",
+        "ms": 534.5999999046326,
+        "floatSample": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "byteSample": [
+          0,
+          0,
+          0,
+          255
+        ]
+      },
+      {
+        "test": "b",
+        "format": "RGBA16F",
+        "floatHash": "211c1721bb33935ecbf217fad4c244ba4d26c2bd46f5398045a1c6344ed83fb4",
+        "byteHash": "de99be95a5962c0afafa49552bf4f48969d2e7ca1f49c9976f464a4fc9a9563a",
+        "ms": 438.3999996185303,
+        "floatSample": [
+          0.18701171875,
+          0.9150390625,
+          0.798828125,
+          1
+        ],
+        "byteSample": [
+          119,
+          245,
+          231,
+          255
+        ]
+      },
+      {
+        "test": "c",
+        "format": "RGBA16F",
+        "floatHash": "6690b609d84076a957ae17c03a001cc69e261576982eb20439cb45438b743be3",
+        "byteHash": "c3c139d69a098df61eacd90133075f5e6a43286cca7114540ed3a5060941130e",
+        "ms": 432.7000002861023,
+        "floatSample": [
+          1.7881393432617188e-7,
+          0.2003173828125,
+          -0.63330078125,
+          1
+        ],
+        "byteSample": [
+          0,
+          123,
+          0,
+          255
+        ]
+      },
+      {
+        "test": "d",
+        "format": "RGBA16F",
+        "floatHash": "4a7176a35fc3f863750d5959c6b21a6028f4fc2f050e802e5febb772a4adc334",
+        "byteHash": "aaa8e8b0d5fc8852a9a5d2e4275898e0203b2b076e66446606ecbefb5ffc1e64",
+        "ms": 680.2999997138977,
+        "floatSample": [
+          0.49072265625,
+          0.499267578125,
+          0.50537109375,
+          1
+        ],
+        "byteSample": [
+          186,
+          187,
+          188,
+          255
+        ]
+      },
+      {
+        "test": "e",
+        "format": "RGBA16F",
+        "floatHash": "fa7ee1e7f02857dfd6bf0c700e2547b7a1123b5d3265b566d76d3614b7a4c3b8",
+        "byteHash": "a17667b0c3c5e417d998dd69b7324910cdddc7b0000b0e6fd9a08d1a90863584",
+        "ms": 876.5999999046326,
+        "floatSample": [
+          0.049652099609375,
+          0.10064697265625,
+          0.2032470703125,
+          1
+        ],
+        "byteSample": [
+          63,
+          89,
+          124,
+          255
+        ]
+      },
+      {
+        "test": "f",
+        "format": "RGBA16F",
+        "floatHash": "939d16b694331e988c041b1b41985036e3712d56b6fd525f086031caca5e089a",
+        "byteHash": "046e2a0e5bcd7d84da04bdf035723c7a62d3aca287458a2d831dec1569aed336",
+        "ms": 437.5,
+        "floatSample": [
+          0.0004630088806152344,
+          2.384185791015625e-7,
+          0.99951171875,
+          1
+        ],
+        "byteSample": [
+          1,
+          0,
+          255,
+          255
+        ]
+      },
+      {
+        "test": "g",
+        "format": "RGBA16F",
+        "floatHash": "0031190a8729a5a0ae69acc1fff6da193f94641a6c9feaa880b243886e1db4b8",
+        "byteHash": "542fdc6e58c86e136645ef85fe0c2796c7a5e00b23064843b5d0bc4b435a69b7",
+        "ms": 417.40000009536743,
+        "floatSample": [
+          0.83544921875,
+          0.67431640625,
+          0.450927734375,
+          1
+        ],
+        "byteSample": [
+          235,
+          214,
+          179,
+          255
+        ]
+      },
+      {
+        "test": "a",
+        "format": "RGBA32F",
+        "floatHash": "8036b098fb1fc9032a45c8bc9c65d04344ae250f43b720e25177523979d2885c",
+        "byteHash": "5d280bf9d0e29a7cb2772a2c9a0d5c33342544807463640a0f866735c9094f1c",
+        "ms": 407.80000019073486,
+        "floatSample": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "byteSample": [
+          0,
+          0,
+          0,
+          255
+        ]
+      },
+      {
+        "test": "b",
+        "format": "RGBA32F",
+        "floatHash": "ae93fa626e44722044c7f3bb884b5c28b30c65630429db23f70388b5036d91c6",
+        "byteHash": "e358fb019bf85fc0003ed79213afe381065b7cfc9e89d4234c6cd81a8cb24165",
+        "ms": 394.2999997138977,
+        "floatSample": [
+          0.18704509735107422,
+          0.9149919748306274,
+          0.798962414264679,
+          1
+        ],
+        "byteSample": [
+          119,
+          245,
+          231,
+          255
+        ]
+      },
+      {
+        "test": "c",
+        "format": "RGBA32F",
+        "floatHash": "079e51113578450d0695caf1cbeb4b1ecf15d1ce716db6dbb05ef59d75f8cc8d",
+        "byteHash": "9efd5a175bbe34a4f963b65cb6c3e90b7879ca96be77d6b783d035e39765086f",
+        "ms": 385,
+        "floatSample": [
+          1.572387304804579e-7,
+          0.20029281079769135,
+          -0.6334584951400757,
+          1
+        ],
+        "byteSample": [
+          0,
+          123,
+          0,
+          255
+        ]
+      },
+      {
+        "test": "d",
+        "format": "RGBA32F",
+        "floatHash": "81c86d36113d7dd28aa8fab30e72612c76455cc21208656285913050d22ba1e6",
+        "byteHash": "596e753789059a9f8741c053887a4fac199de4d7e467bf5766199bdbf9cfcd4d",
+        "ms": 599.3999996185303,
+        "floatSample": [
+          0.49072265625,
+          0.499267578125,
+          0.50537109375,
+          1
+        ],
+        "byteSample": [
+          186,
+          187,
+          188,
+          255
+        ]
+      },
+      {
+        "test": "e",
+        "format": "RGBA32F",
+        "floatHash": "2b99567982562e869cad1a4011640470138440d3d772a1686166099084d9d940",
+        "byteHash": "a226b15d5a50d9035ed0a652836ffa03c2386bce508bc08e9dc96e5a9861d667",
+        "ms": 469.5,
+        "floatSample": [
+          0.04960000142455101,
+          0.10080000758171082,
+          0.20320004224777222,
+          1
+        ],
+        "byteSample": [
+          63,
+          89,
+          124,
+          255
+        ]
+      },
+      {
+        "test": "f",
+        "format": "RGBA32F",
+        "floatHash": "68badc23d902995931ff09fdf23137928e8ecbb1b82a215625dc507dfa7209c3",
+        "byteHash": "b8cff88cdcc56f5d91232c4476d33a2bfa61271d7d058e8bc84fb0c4af25346d",
+        "ms": 386.69999980926514,
+        "floatSample": [
+          0.00046296295477077365,
+          2.1433469044040976e-7,
+          0.9995370507240295,
+          1
+        ],
+        "byteSample": [
+          1,
+          0,
+          255,
+          255
+        ]
+      },
+      {
+        "test": "g",
+        "format": "RGBA32F",
+        "floatHash": "6f3cc1edffddde69a9725da0496bcc544819e122d6664da69327c0f10b4e56ae",
+        "byteHash": "f4d428b4c9b910db091dce7a4c95d1bca329f6b4a8cb87d45fce329927a7ef4a",
+        "ms": 422.19999980926514,
+        "floatSample": [
+          0.8352941870689392,
+          0.6745098233222961,
+          0.45098042488098145,
+          1
+        ],
+        "byteSample": [
+          235,
+          214,
+          179,
+          255
+        ]
+      }
+    ]
+  },
+  {
+    "mode": "worker",
+    "repeat": 0,
+    "version": "153.0.8010.12",
+    "rows": [
+      {
+        "test": "a",
+        "format": "RGBA16F",
+        "floatHash": "8036b098fb1fc9032a45c8bc9c65d04344ae250f43b720e25177523979d2885c",
+        "byteHash": "5d280bf9d0e29a7cb2772a2c9a0d5c33342544807463640a0f866735c9094f1c",
+        "ms": 497.90000009536743,
+        "floatSample": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "byteSample": [
+          0,
+          0,
+          0,
+          255
+        ]
+      },
+      {
+        "test": "b",
+        "format": "RGBA16F",
+        "floatHash": "211c1721bb33935ecbf217fad4c244ba4d26c2bd46f5398045a1c6344ed83fb4",
+        "byteHash": "de99be95a5962c0afafa49552bf4f48969d2e7ca1f49c9976f464a4fc9a9563a",
+        "ms": 436.90000009536743,
+        "floatSample": [
+          0.18701171875,
+          0.9150390625,
+          0.798828125,
+          1
+        ],
+        "byteSample": [
+          119,
+          245,
+          231,
+          255
+        ]
+      },
+      {
+        "test": "c",
+        "format": "RGBA16F",
+        "floatHash": "6690b609d84076a957ae17c03a001cc69e261576982eb20439cb45438b743be3",
+        "byteHash": "c3c139d69a098df61eacd90133075f5e6a43286cca7114540ed3a5060941130e",
+        "ms": 459.09999990463257,
+        "floatSample": [
+          1.7881393432617188e-7,
+          0.2003173828125,
+          -0.63330078125,
+          1
+        ],
+        "byteSample": [
+          0,
+          123,
+          0,
+          255
+        ]
+      },
+      {
+        "test": "d",
+        "format": "RGBA16F",
+        "floatHash": "4a7176a35fc3f863750d5959c6b21a6028f4fc2f050e802e5febb772a4adc334",
+        "byteHash": "aaa8e8b0d5fc8852a9a5d2e4275898e0203b2b076e66446606ecbefb5ffc1e64",
+        "ms": 629.0999999046326,
+        "floatSample": [
+          0.49072265625,
+          0.499267578125,
+          0.50537109375,
+          1
+        ],
+        "byteSample": [
+          186,
+          187,
+          188,
+          255
+        ]
+      },
+      {
+        "test": "e",
+        "format": "RGBA16F",
+        "floatHash": "fa7ee1e7f02857dfd6bf0c700e2547b7a1123b5d3265b566d76d3614b7a4c3b8",
+        "byteHash": "a17667b0c3c5e417d998dd69b7324910cdddc7b0000b0e6fd9a08d1a90863584",
+        "ms": 892.8000001907349,
+        "floatSample": [
+          0.049652099609375,
+          0.10064697265625,
+          0.2032470703125,
+          1
+        ],
+        "byteSample": [
+          63,
+          89,
+          124,
+          255
+        ]
+      },
+      {
+        "test": "f",
+        "format": "RGBA16F",
+        "floatHash": "939d16b694331e988c041b1b41985036e3712d56b6fd525f086031caca5e089a",
+        "byteHash": "046e2a0e5bcd7d84da04bdf035723c7a62d3aca287458a2d831dec1569aed336",
+        "ms": 398.90000009536743,
+        "floatSample": [
+          0.0004630088806152344,
+          2.384185791015625e-7,
+          0.99951171875,
+          1
+        ],
+        "byteSample": [
+          1,
+          0,
+          255,
+          255
+        ]
+      },
+      {
+        "test": "g",
+        "format": "RGBA16F",
+        "floatHash": "0031190a8729a5a0ae69acc1fff6da193f94641a6c9feaa880b243886e1db4b8",
+        "byteHash": "542fdc6e58c86e136645ef85fe0c2796c7a5e00b23064843b5d0bc4b435a69b7",
+        "ms": 462.90000009536743,
+        "floatSample": [
+          0.83544921875,
+          0.67431640625,
+          0.450927734375,
+          1
+        ],
+        "byteSample": [
+          235,
+          214,
+          179,
+          255
+        ]
+      },
+      {
+        "test": "a",
+        "format": "RGBA32F",
+        "floatHash": "8036b098fb1fc9032a45c8bc9c65d04344ae250f43b720e25177523979d2885c",
+        "byteHash": "5d280bf9d0e29a7cb2772a2c9a0d5c33342544807463640a0f866735c9094f1c",
+        "ms": 409.40000009536743,
+        "floatSample": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "byteSample": [
+          0,
+          0,
+          0,
+          255
+        ]
+      },
+      {
+        "test": "b",
+        "format": "RGBA32F",
+        "floatHash": "ae93fa626e44722044c7f3bb884b5c28b30c65630429db23f70388b5036d91c6",
+        "byteHash": "e358fb019bf85fc0003ed79213afe381065b7cfc9e89d4234c6cd81a8cb24165",
+        "ms": 383,
+        "floatSample": [
+          0.18704509735107422,
+          0.9149919748306274,
+          0.798962414264679,
+          1
+        ],
+        "byteSample": [
+          119,
+          245,
+          231,
+          255
+        ]
+      },
+      {
+        "test": "c",
+        "format": "RGBA32F",
+        "floatHash": "079e51113578450d0695caf1cbeb4b1ecf15d1ce716db6dbb05ef59d75f8cc8d",
+        "byteHash": "9efd5a175bbe34a4f963b65cb6c3e90b7879ca96be77d6b783d035e39765086f",
+        "ms": 380.59999990463257,
+        "floatSample": [
+          1.572387304804579e-7,
+          0.20029281079769135,
+          -0.6334584951400757,
+          1
+        ],
+        "byteSample": [
+          0,
+          123,
+          0,
+          255
+        ]
+      },
+      {
+        "test": "d",
+        "format": "RGBA32F",
+        "floatHash": "81c86d36113d7dd28aa8fab30e72612c76455cc21208656285913050d22ba1e6",
+        "byteHash": "596e753789059a9f8741c053887a4fac199de4d7e467bf5766199bdbf9cfcd4d",
+        "ms": 570.2000002861023,
+        "floatSample": [
+          0.49072265625,
+          0.499267578125,
+          0.50537109375,
+          1
+        ],
+        "byteSample": [
+          186,
+          187,
+          188,
+          255
+        ]
+      },
+      {
+        "test": "e",
+        "format": "RGBA32F",
+        "floatHash": "2b99567982562e869cad1a4011640470138440d3d772a1686166099084d9d940",
+        "byteHash": "a226b15d5a50d9035ed0a652836ffa03c2386bce508bc08e9dc96e5a9861d667",
+        "ms": 475.40000009536743,
+        "floatSample": [
+          0.04960000142455101,
+          0.10080000758171082,
+          0.20320004224777222,
+          1
+        ],
+        "byteSample": [
+          63,
+          89,
+          124,
+          255
+        ]
+      },
+      {
+        "test": "f",
+        "format": "RGBA32F",
+        "floatHash": "68badc23d902995931ff09fdf23137928e8ecbb1b82a215625dc507dfa7209c3",
+        "byteHash": "b8cff88cdcc56f5d91232c4476d33a2bfa61271d7d058e8bc84fb0c4af25346d",
+        "ms": 393.7999997138977,
+        "floatSample": [
+          0.00046296295477077365,
+          2.1433469044040976e-7,
+          0.9995370507240295,
+          1
+        ],
+        "byteSample": [
+          1,
+          0,
+          255,
+          255
+        ]
+      },
+      {
+        "test": "g",
+        "format": "RGBA32F",
+        "floatHash": "6f3cc1edffddde69a9725da0496bcc544819e122d6664da69327c0f10b4e56ae",
+        "byteHash": "f4d428b4c9b910db091dce7a4c95d1bca329f6b4a8cb87d45fce329927a7ef4a",
+        "ms": 455.90000009536743,
+        "floatSample": [
+          0.8352941870689392,
+          0.6745098233222961,
+          0.45098042488098145,
+          1
+        ],
+        "byteSample": [
+          235,
+          214,
+          179,
+          255
+        ]
+      }
+    ]
+  },
+  {
+    "mode": "worker",
+    "repeat": 1,
+    "version": "153.0.8010.12",
+    "rows": [
+      {
+        "test": "a",
+        "format": "RGBA16F",
+        "floatHash": "8036b098fb1fc9032a45c8bc9c65d04344ae250f43b720e25177523979d2885c",
+        "byteHash": "5d280bf9d0e29a7cb2772a2c9a0d5c33342544807463640a0f866735c9094f1c",
+        "ms": 482.2999997138977,
+        "floatSample": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "byteSample": [
+          0,
+          0,
+          0,
+          255
+        ]
+      },
+      {
+        "test": "b",
+        "format": "RGBA16F",
+        "floatHash": "211c1721bb33935ecbf217fad4c244ba4d26c2bd46f5398045a1c6344ed83fb4",
+        "byteHash": "de99be95a5962c0afafa49552bf4f48969d2e7ca1f49c9976f464a4fc9a9563a",
+        "ms": 462,
+        "floatSample": [
+          0.18701171875,
+          0.9150390625,
+          0.798828125,
+          1
+        ],
+        "byteSample": [
+          119,
+          245,
+          231,
+          255
+        ]
+      },
+      {
+        "test": "c",
+        "format": "RGBA16F",
+        "floatHash": "6690b609d84076a957ae17c03a001cc69e261576982eb20439cb45438b743be3",
+        "byteHash": "c3c139d69a098df61eacd90133075f5e6a43286cca7114540ed3a5060941130e",
+        "ms": 446.59999990463257,
+        "floatSample": [
+          1.7881393432617188e-7,
+          0.2003173828125,
+          -0.63330078125,
+          1
+        ],
+        "byteSample": [
+          0,
+          123,
+          0,
+          255
+        ]
+      },
+      {
+        "test": "d",
+        "format": "RGBA16F",
+        "floatHash": "4a7176a35fc3f863750d5959c6b21a6028f4fc2f050e802e5febb772a4adc334",
+        "byteHash": "aaa8e8b0d5fc8852a9a5d2e4275898e0203b2b076e66446606ecbefb5ffc1e64",
+        "ms": 672.1999998092651,
+        "floatSample": [
+          0.49072265625,
+          0.499267578125,
+          0.50537109375,
+          1
+        ],
+        "byteSample": [
+          186,
+          187,
+          188,
+          255
+        ]
+      },
+      {
+        "test": "e",
+        "format": "RGBA16F",
+        "floatHash": "fa7ee1e7f02857dfd6bf0c700e2547b7a1123b5d3265b566d76d3614b7a4c3b8",
+        "byteHash": "a17667b0c3c5e417d998dd69b7324910cdddc7b0000b0e6fd9a08d1a90863584",
+        "ms": 876.7000002861023,
+        "floatSample": [
+          0.049652099609375,
+          0.10064697265625,
+          0.2032470703125,
+          1
+        ],
+        "byteSample": [
+          63,
+          89,
+          124,
+          255
+        ]
+      },
+      {
+        "test": "f",
+        "format": "RGBA16F",
+        "floatHash": "939d16b694331e988c041b1b41985036e3712d56b6fd525f086031caca5e089a",
+        "byteHash": "046e2a0e5bcd7d84da04bdf035723c7a62d3aca287458a2d831dec1569aed336",
+        "ms": 430,
+        "floatSample": [
+          0.0004630088806152344,
+          2.384185791015625e-7,
+          0.99951171875,
+          1
+        ],
+        "byteSample": [
+          1,
+          0,
+          255,
+          255
+        ]
+      },
+      {
+        "test": "g",
+        "format": "RGBA16F",
+        "floatHash": "0031190a8729a5a0ae69acc1fff6da193f94641a6c9feaa880b243886e1db4b8",
+        "byteHash": "542fdc6e58c86e136645ef85fe0c2796c7a5e00b23064843b5d0bc4b435a69b7",
+        "ms": 512,
+        "floatSample": [
+          0.83544921875,
+          0.67431640625,
+          0.450927734375,
+          1
+        ],
+        "byteSample": [
+          235,
+          214,
+          179,
+          255
+        ]
+      },
+      {
+        "test": "a",
+        "format": "RGBA32F",
+        "floatHash": "8036b098fb1fc9032a45c8bc9c65d04344ae250f43b720e25177523979d2885c",
+        "byteHash": "5d280bf9d0e29a7cb2772a2c9a0d5c33342544807463640a0f866735c9094f1c",
+        "ms": 407.30000019073486,
+        "floatSample": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "byteSample": [
+          0,
+          0,
+          0,
+          255
+        ]
+      },
+      {
+        "test": "b",
+        "format": "RGBA32F",
+        "floatHash": "ae93fa626e44722044c7f3bb884b5c28b30c65630429db23f70388b5036d91c6",
+        "byteHash": "e358fb019bf85fc0003ed79213afe381065b7cfc9e89d4234c6cd81a8cb24165",
+        "ms": 453.8999996185303,
+        "floatSample": [
+          0.18704509735107422,
+          0.9149919748306274,
+          0.798962414264679,
+          1
+        ],
+        "byteSample": [
+          119,
+          245,
+          231,
+          255
+        ]
+      },
+      {
+        "test": "c",
+        "format": "RGBA32F",
+        "floatHash": "079e51113578450d0695caf1cbeb4b1ecf15d1ce716db6dbb05ef59d75f8cc8d",
+        "byteHash": "9efd5a175bbe34a4f963b65cb6c3e90b7879ca96be77d6b783d035e39765086f",
+        "ms": 380.1000003814697,
+        "floatSample": [
+          1.572387304804579e-7,
+          0.20029281079769135,
+          -0.6334584951400757,
+          1
+        ],
+        "byteSample": [
+          0,
+          123,
+          0,
+          255
+        ]
+      },
+      {
+        "test": "d",
+        "format": "RGBA32F",
+        "floatHash": "81c86d36113d7dd28aa8fab30e72612c76455cc21208656285913050d22ba1e6",
+        "byteHash": "596e753789059a9f8741c053887a4fac199de4d7e467bf5766199bdbf9cfcd4d",
+        "ms": 609.3999996185303,
+        "floatSample": [
+          0.49072265625,
+          0.499267578125,
+          0.50537109375,
+          1
+        ],
+        "byteSample": [
+          186,
+          187,
+          188,
+          255
+        ]
+      },
+      {
+        "test": "e",
+        "format": "RGBA32F",
+        "floatHash": "2b99567982562e869cad1a4011640470138440d3d772a1686166099084d9d940",
+        "byteHash": "a226b15d5a50d9035ed0a652836ffa03c2386bce508bc08e9dc96e5a9861d667",
+        "ms": 489.19999980926514,
+        "floatSample": [
+          0.04960000142455101,
+          0.10080000758171082,
+          0.20320004224777222,
+          1
+        ],
+        "byteSample": [
+          63,
+          89,
+          124,
+          255
+        ]
+      },
+      {
+        "test": "f",
+        "format": "RGBA32F",
+        "floatHash": "68badc23d902995931ff09fdf23137928e8ecbb1b82a215625dc507dfa7209c3",
+        "byteHash": "b8cff88cdcc56f5d91232c4476d33a2bfa61271d7d058e8bc84fb0c4af25346d",
+        "ms": 404.5,
+        "floatSample": [
+          0.00046296295477077365,
+          2.1433469044040976e-7,
+          0.9995370507240295,
+          1
+        ],
+        "byteSample": [
+          1,
+          0,
+          255,
+          255
+        ]
+      },
+      {
+        "test": "g",
+        "format": "RGBA32F",
+        "floatHash": "6f3cc1edffddde69a9725da0496bcc544819e122d6664da69327c0f10b4e56ae",
+        "byteHash": "f4d428b4c9b910db091dce7a4c95d1bca329f6b4a8cb87d45fce329927a7ef4a",
+        "ms": 394.80000019073486,
+        "floatSample": [
+          0.8352941870689392,
+          0.6745098233222961,
+          0.45098042488098145,
+          1
+        ],
+        "byteSample": [
+          235,
+          214,
+          179,
+          255
+        ]
+      }
+    ]
+  },
+  {
+    "mode": "worker",
+    "repeat": 2,
+    "version": "153.0.8010.12",
+    "rows": [
+      {
+        "test": "a",
+        "format": "RGBA16F",
+        "floatHash": "8036b098fb1fc9032a45c8bc9c65d04344ae250f43b720e25177523979d2885c",
+        "byteHash": "5d280bf9d0e29a7cb2772a2c9a0d5c33342544807463640a0f866735c9094f1c",
+        "ms": 605.0999999046326,
+        "floatSample": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "byteSample": [
+          0,
+          0,
+          0,
+          255
+        ]
+      },
+      {
+        "test": "b",
+        "format": "RGBA16F",
+        "floatHash": "211c1721bb33935ecbf217fad4c244ba4d26c2bd46f5398045a1c6344ed83fb4",
+        "byteHash": "de99be95a5962c0afafa49552bf4f48969d2e7ca1f49c9976f464a4fc9a9563a",
+        "ms": 504.3999996185303,
+        "floatSample": [
+          0.18701171875,
+          0.9150390625,
+          0.798828125,
+          1
+        ],
+        "byteSample": [
+          119,
+          245,
+          231,
+          255
+        ]
+      },
+      {
+        "test": "c",
+        "format": "RGBA16F",
+        "floatHash": "6690b609d84076a957ae17c03a001cc69e261576982eb20439cb45438b743be3",
+        "byteHash": "c3c139d69a098df61eacd90133075f5e6a43286cca7114540ed3a5060941130e",
+        "ms": 475,
+        "floatSample": [
+          1.7881393432617188e-7,
+          0.2003173828125,
+          -0.63330078125,
+          1
+        ],
+        "byteSample": [
+          0,
+          123,
+          0,
+          255
+        ]
+      },
+      {
+        "test": "d",
+        "format": "RGBA16F",
+        "floatHash": "4a7176a35fc3f863750d5959c6b21a6028f4fc2f050e802e5febb772a4adc334",
+        "byteHash": "aaa8e8b0d5fc8852a9a5d2e4275898e0203b2b076e66446606ecbefb5ffc1e64",
+        "ms": 773,
+        "floatSample": [
+          0.49072265625,
+          0.499267578125,
+          0.50537109375,
+          1
+        ],
+        "byteSample": [
+          186,
+          187,
+          188,
+          255
+        ]
+      },
+      {
+        "test": "e",
+        "format": "RGBA16F",
+        "floatHash": "fa7ee1e7f02857dfd6bf0c700e2547b7a1123b5d3265b566d76d3614b7a4c3b8",
+        "byteHash": "a17667b0c3c5e417d998dd69b7324910cdddc7b0000b0e6fd9a08d1a90863584",
+        "ms": 924.1999998092651,
+        "floatSample": [
+          0.049652099609375,
+          0.10064697265625,
+          0.2032470703125,
+          1
+        ],
+        "byteSample": [
+          63,
+          89,
+          124,
+          255
+        ]
+      },
+      {
+        "test": "f",
+        "format": "RGBA16F",
+        "floatHash": "939d16b694331e988c041b1b41985036e3712d56b6fd525f086031caca5e089a",
+        "byteHash": "046e2a0e5bcd7d84da04bdf035723c7a62d3aca287458a2d831dec1569aed336",
+        "ms": 403.69999980926514,
+        "floatSample": [
+          0.0004630088806152344,
+          2.384185791015625e-7,
+          0.99951171875,
+          1
+        ],
+        "byteSample": [
+          1,
+          0,
+          255,
+          255
+        ]
+      },
+      {
+        "test": "g",
+        "format": "RGBA16F",
+        "floatHash": "0031190a8729a5a0ae69acc1fff6da193f94641a6c9feaa880b243886e1db4b8",
+        "byteHash": "542fdc6e58c86e136645ef85fe0c2796c7a5e00b23064843b5d0bc4b435a69b7",
+        "ms": 488.69999980926514,
+        "floatSample": [
+          0.83544921875,
+          0.67431640625,
+          0.450927734375,
+          1
+        ],
+        "byteSample": [
+          235,
+          214,
+          179,
+          255
+        ]
+      },
+      {
+        "test": "a",
+        "format": "RGBA32F",
+        "floatHash": "8036b098fb1fc9032a45c8bc9c65d04344ae250f43b720e25177523979d2885c",
+        "byteHash": "5d280bf9d0e29a7cb2772a2c9a0d5c33342544807463640a0f866735c9094f1c",
+        "ms": 368.40000009536743,
+        "floatSample": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "byteSample": [
+          0,
+          0,
+          0,
+          255
+        ]
+      },
+      {
+        "test": "b",
+        "format": "RGBA32F",
+        "floatHash": "ae93fa626e44722044c7f3bb884b5c28b30c65630429db23f70388b5036d91c6",
+        "byteHash": "e358fb019bf85fc0003ed79213afe381065b7cfc9e89d4234c6cd81a8cb24165",
+        "ms": 416.90000009536743,
+        "floatSample": [
+          0.18704509735107422,
+          0.9149919748306274,
+          0.798962414264679,
+          1
+        ],
+        "byteSample": [
+          119,
+          245,
+          231,
+          255
+        ]
+      },
+      {
+        "test": "c",
+        "format": "RGBA32F",
+        "floatHash": "079e51113578450d0695caf1cbeb4b1ecf15d1ce716db6dbb05ef59d75f8cc8d",
+        "byteHash": "9efd5a175bbe34a4f963b65cb6c3e90b7879ca96be77d6b783d035e39765086f",
+        "ms": 386.90000009536743,
+        "floatSample": [
+          1.572387304804579e-7,
+          0.20029281079769135,
+          -0.6334584951400757,
+          1
+        ],
+        "byteSample": [
+          0,
+          123,
+          0,
+          255
+        ]
+      },
+      {
+        "test": "d",
+        "format": "RGBA32F",
+        "floatHash": "81c86d36113d7dd28aa8fab30e72612c76455cc21208656285913050d22ba1e6",
+        "byteHash": "596e753789059a9f8741c053887a4fac199de4d7e467bf5766199bdbf9cfcd4d",
+        "ms": 615.1999998092651,
+        "floatSample": [
+          0.49072265625,
+          0.499267578125,
+          0.50537109375,
+          1
+        ],
+        "byteSample": [
+          186,
+          187,
+          188,
+          255
+        ]
+      },
+      {
+        "test": "e",
+        "format": "RGBA32F",
+        "floatHash": "2b99567982562e869cad1a4011640470138440d3d772a1686166099084d9d940",
+        "byteHash": "a226b15d5a50d9035ed0a652836ffa03c2386bce508bc08e9dc96e5a9861d667",
+        "ms": 529.7000002861023,
+        "floatSample": [
+          0.04960000142455101,
+          0.10080000758171082,
+          0.20320004224777222,
+          1
+        ],
+        "byteSample": [
+          63,
+          89,
+          124,
+          255
+        ]
+      },
+      {
+        "test": "f",
+        "format": "RGBA32F",
+        "floatHash": "68badc23d902995931ff09fdf23137928e8ecbb1b82a215625dc507dfa7209c3",
+        "byteHash": "b8cff88cdcc56f5d91232c4476d33a2bfa61271d7d058e8bc84fb0c4af25346d",
+        "ms": 369.2999997138977,
+        "floatSample": [
+          0.00046296295477077365,
+          2.1433469044040976e-7,
+          0.9995370507240295,
+          1
+        ],
+        "byteSample": [
+          1,
+          0,
+          255,
+          255
+        ]
+      },
+      {
+        "test": "g",
+        "format": "RGBA32F",
+        "floatHash": "6f3cc1edffddde69a9725da0496bcc544819e122d6664da69327c0f10b4e56ae",
+        "byteHash": "f4d428b4c9b910db091dce7a4c95d1bca329f6b4a8cb87d45fce329927a7ef4a",
+        "ms": 393,
+        "floatSample": [
+          0.8352941870689392,
+          0.6745098233222961,
+          0.45098042488098145,
+          1
+        ],
+        "byteSample": [
+          235,
+          214,
+          179,
+          255
+        ]
+      }
+    ]
+  },
+  {
+    "mode": "worker",
+    "repeat": 3,
+    "version": "153.0.8010.12",
+    "rows": [
+      {
+        "test": "a",
+        "format": "RGBA16F",
+        "floatHash": "8036b098fb1fc9032a45c8bc9c65d04344ae250f43b720e25177523979d2885c",
+        "byteHash": "5d280bf9d0e29a7cb2772a2c9a0d5c33342544807463640a0f866735c9094f1c",
+        "ms": 489.7999997138977,
+        "floatSample": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "byteSample": [
+          0,
+          0,
+          0,
+          255
+        ]
+      },
+      {
+        "test": "b",
+        "format": "RGBA16F",
+        "floatHash": "211c1721bb33935ecbf217fad4c244ba4d26c2bd46f5398045a1c6344ed83fb4",
+        "byteHash": "de99be95a5962c0afafa49552bf4f48969d2e7ca1f49c9976f464a4fc9a9563a",
+        "ms": 490.19999980926514,
+        "floatSample": [
+          0.18701171875,
+          0.9150390625,
+          0.798828125,
+          1
+        ],
+        "byteSample": [
+          119,
+          245,
+          231,
+          255
+        ]
+      },
+      {
+        "test": "c",
+        "format": "RGBA16F",
+        "floatHash": "6690b609d84076a957ae17c03a001cc69e261576982eb20439cb45438b743be3",
+        "byteHash": "c3c139d69a098df61eacd90133075f5e6a43286cca7114540ed3a5060941130e",
+        "ms": 481.2000002861023,
+        "floatSample": [
+          1.7881393432617188e-7,
+          0.2003173828125,
+          -0.63330078125,
+          1
+        ],
+        "byteSample": [
+          0,
+          123,
+          0,
+          255
+        ]
+      },
+      {
+        "test": "d",
+        "format": "RGBA16F",
+        "floatHash": "4a7176a35fc3f863750d5959c6b21a6028f4fc2f050e802e5febb772a4adc334",
+        "byteHash": "aaa8e8b0d5fc8852a9a5d2e4275898e0203b2b076e66446606ecbefb5ffc1e64",
+        "ms": 649.4000000953674,
+        "floatSample": [
+          0.49072265625,
+          0.499267578125,
+          0.50537109375,
+          1
+        ],
+        "byteSample": [
+          186,
+          187,
+          188,
+          255
+        ]
+      },
+      {
+        "test": "e",
+        "format": "RGBA16F",
+        "floatHash": "fa7ee1e7f02857dfd6bf0c700e2547b7a1123b5d3265b566d76d3614b7a4c3b8",
+        "byteHash": "a17667b0c3c5e417d998dd69b7324910cdddc7b0000b0e6fd9a08d1a90863584",
+        "ms": 845.2999997138977,
+        "floatSample": [
+          0.049652099609375,
+          0.10064697265625,
+          0.2032470703125,
+          1
+        ],
+        "byteSample": [
+          63,
+          89,
+          124,
+          255
+        ]
+      },
+      {
+        "test": "f",
+        "format": "RGBA16F",
+        "floatHash": "939d16b694331e988c041b1b41985036e3712d56b6fd525f086031caca5e089a",
+        "byteHash": "046e2a0e5bcd7d84da04bdf035723c7a62d3aca287458a2d831dec1569aed336",
+        "ms": 446.69999980926514,
+        "floatSample": [
+          0.0004630088806152344,
+          2.384185791015625e-7,
+          0.99951171875,
+          1
+        ],
+        "byteSample": [
+          1,
+          0,
+          255,
+          255
+        ]
+      },
+      {
+        "test": "g",
+        "format": "RGBA16F",
+        "floatHash": "0031190a8729a5a0ae69acc1fff6da193f94641a6c9feaa880b243886e1db4b8",
+        "byteHash": "542fdc6e58c86e136645ef85fe0c2796c7a5e00b23064843b5d0bc4b435a69b7",
+        "ms": 471.90000009536743,
+        "floatSample": [
+          0.83544921875,
+          0.67431640625,
+          0.450927734375,
+          1
+        ],
+        "byteSample": [
+          235,
+          214,
+          179,
+          255
+        ]
+      },
+      {
+        "test": "a",
+        "format": "RGBA32F",
+        "floatHash": "8036b098fb1fc9032a45c8bc9c65d04344ae250f43b720e25177523979d2885c",
+        "byteHash": "5d280bf9d0e29a7cb2772a2c9a0d5c33342544807463640a0f866735c9094f1c",
+        "ms": 397.09999990463257,
+        "floatSample": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "byteSample": [
+          0,
+          0,
+          0,
+          255
+        ]
+      },
+      {
+        "test": "b",
+        "format": "RGBA32F",
+        "floatHash": "ae93fa626e44722044c7f3bb884b5c28b30c65630429db23f70388b5036d91c6",
+        "byteHash": "e358fb019bf85fc0003ed79213afe381065b7cfc9e89d4234c6cd81a8cb24165",
+        "ms": 379.69999980926514,
+        "floatSample": [
+          0.18704509735107422,
+          0.9149919748306274,
+          0.798962414264679,
+          1
+        ],
+        "byteSample": [
+          119,
+          245,
+          231,
+          255
+        ]
+      },
+      {
+        "test": "c",
+        "format": "RGBA32F",
+        "floatHash": "079e51113578450d0695caf1cbeb4b1ecf15d1ce716db6dbb05ef59d75f8cc8d",
+        "byteHash": "9efd5a175bbe34a4f963b65cb6c3e90b7879ca96be77d6b783d035e39765086f",
+        "ms": 379.90000009536743,
+        "floatSample": [
+          1.572387304804579e-7,
+          0.20029281079769135,
+          -0.6334584951400757,
+          1
+        ],
+        "byteSample": [
+          0,
+          123,
+          0,
+          255
+        ]
+      },
+      {
+        "test": "d",
+        "format": "RGBA32F",
+        "floatHash": "81c86d36113d7dd28aa8fab30e72612c76455cc21208656285913050d22ba1e6",
+        "byteHash": "596e753789059a9f8741c053887a4fac199de4d7e467bf5766199bdbf9cfcd4d",
+        "ms": 567.7999997138977,
+        "floatSample": [
+          0.49072265625,
+          0.499267578125,
+          0.50537109375,
+          1
+        ],
+        "byteSample": [
+          186,
+          187,
+          188,
+          255
+        ]
+      },
+      {
+        "test": "e",
+        "format": "RGBA32F",
+        "floatHash": "2b99567982562e869cad1a4011640470138440d3d772a1686166099084d9d940",
+        "byteHash": "a226b15d5a50d9035ed0a652836ffa03c2386bce508bc08e9dc96e5a9861d667",
+        "ms": 519.6000003814697,
+        "floatSample": [
+          0.04960000142455101,
+          0.10080000758171082,
+          0.20320004224777222,
+          1
+        ],
+        "byteSample": [
+          63,
+          89,
+          124,
+          255
+        ]
+      },
+      {
+        "test": "f",
+        "format": "RGBA32F",
+        "floatHash": "68badc23d902995931ff09fdf23137928e8ecbb1b82a215625dc507dfa7209c3",
+        "byteHash": "b8cff88cdcc56f5d91232c4476d33a2bfa61271d7d058e8bc84fb0c4af25346d",
+        "ms": 389.59999990463257,
+        "floatSample": [
+          0.00046296295477077365,
+          2.1433469044040976e-7,
+          0.9995370507240295,
+          1
+        ],
+        "byteSample": [
+          1,
+          0,
+          255,
+          255
+        ]
+      },
+      {
+        "test": "g",
+        "format": "RGBA32F",
+        "floatHash": "6f3cc1edffddde69a9725da0496bcc544819e122d6664da69327c0f10b4e56ae",
+        "byteHash": "f4d428b4c9b910db091dce7a4c95d1bca329f6b4a8cb87d45fce329927a7ef4a",
+        "ms": 395,
+        "floatSample": [
+          0.8352941870689392,
+          0.6745098233222961,
+          0.45098042488098145,
+          1
+        ],
+        "byteSample": [
+          235,
+          214,
+          179,
+          255
+        ]
+      }
+    ]
+  },
+  {
+    "mode": "worker",
+    "repeat": 4,
+    "version": "153.0.8010.12",
+    "rows": [
+      {
+        "test": "a",
+        "format": "RGBA16F",
+        "floatHash": "8036b098fb1fc9032a45c8bc9c65d04344ae250f43b720e25177523979d2885c",
+        "byteHash": "5d280bf9d0e29a7cb2772a2c9a0d5c33342544807463640a0f866735c9094f1c",
+        "ms": 457.30000019073486,
+        "floatSample": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "byteSample": [
+          0,
+          0,
+          0,
+          255
+        ]
+      },
+      {
+        "test": "b",
+        "format": "RGBA16F",
+        "floatHash": "211c1721bb33935ecbf217fad4c244ba4d26c2bd46f5398045a1c6344ed83fb4",
+        "byteHash": "de99be95a5962c0afafa49552bf4f48969d2e7ca1f49c9976f464a4fc9a9563a",
+        "ms": 494.2000002861023,
+        "floatSample": [
+          0.18701171875,
+          0.9150390625,
+          0.798828125,
+          1
+        ],
+        "byteSample": [
+          119,
+          245,
+          231,
+          255
+        ]
+      },
+      {
+        "test": "c",
+        "format": "RGBA16F",
+        "floatHash": "6690b609d84076a957ae17c03a001cc69e261576982eb20439cb45438b743be3",
+        "byteHash": "c3c139d69a098df61eacd90133075f5e6a43286cca7114540ed3a5060941130e",
+        "ms": 451.90000009536743,
+        "floatSample": [
+          1.7881393432617188e-7,
+          0.2003173828125,
+          -0.63330078125,
+          1
+        ],
+        "byteSample": [
+          0,
+          123,
+          0,
+          255
+        ]
+      },
+      {
+        "test": "d",
+        "format": "RGBA16F",
+        "floatHash": "4a7176a35fc3f863750d5959c6b21a6028f4fc2f050e802e5febb772a4adc334",
+        "byteHash": "aaa8e8b0d5fc8852a9a5d2e4275898e0203b2b076e66446606ecbefb5ffc1e64",
+        "ms": 624.2999997138977,
+        "floatSample": [
+          0.49072265625,
+          0.499267578125,
+          0.50537109375,
+          1
+        ],
+        "byteSample": [
+          186,
+          187,
+          188,
+          255
+        ]
+      },
+      {
+        "test": "e",
+        "format": "RGBA16F",
+        "floatHash": "fa7ee1e7f02857dfd6bf0c700e2547b7a1123b5d3265b566d76d3614b7a4c3b8",
+        "byteHash": "a17667b0c3c5e417d998dd69b7324910cdddc7b0000b0e6fd9a08d1a90863584",
+        "ms": 828.2999997138977,
+        "floatSample": [
+          0.049652099609375,
+          0.10064697265625,
+          0.2032470703125,
+          1
+        ],
+        "byteSample": [
+          63,
+          89,
+          124,
+          255
+        ]
+      },
+      {
+        "test": "f",
+        "format": "RGBA16F",
+        "floatHash": "939d16b694331e988c041b1b41985036e3712d56b6fd525f086031caca5e089a",
+        "byteHash": "046e2a0e5bcd7d84da04bdf035723c7a62d3aca287458a2d831dec1569aed336",
+        "ms": 402.2000002861023,
+        "floatSample": [
+          0.0004630088806152344,
+          2.384185791015625e-7,
+          0.99951171875,
+          1
+        ],
+        "byteSample": [
+          1,
+          0,
+          255,
+          255
+        ]
+      },
+      {
+        "test": "g",
+        "format": "RGBA16F",
+        "floatHash": "0031190a8729a5a0ae69acc1fff6da193f94641a6c9feaa880b243886e1db4b8",
+        "byteHash": "542fdc6e58c86e136645ef85fe0c2796c7a5e00b23064843b5d0bc4b435a69b7",
+        "ms": 450.09999990463257,
+        "floatSample": [
+          0.83544921875,
+          0.67431640625,
+          0.450927734375,
+          1
+        ],
+        "byteSample": [
+          235,
+          214,
+          179,
+          255
+        ]
+      },
+      {
+        "test": "a",
+        "format": "RGBA32F",
+        "floatHash": "8036b098fb1fc9032a45c8bc9c65d04344ae250f43b720e25177523979d2885c",
+        "byteHash": "5d280bf9d0e29a7cb2772a2c9a0d5c33342544807463640a0f866735c9094f1c",
+        "ms": 455.09999990463257,
+        "floatSample": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "byteSample": [
+          0,
+          0,
+          0,
+          255
+        ]
+      },
+      {
+        "test": "b",
+        "format": "RGBA32F",
+        "floatHash": "ae93fa626e44722044c7f3bb884b5c28b30c65630429db23f70388b5036d91c6",
+        "byteHash": "e358fb019bf85fc0003ed79213afe381065b7cfc9e89d4234c6cd81a8cb24165",
+        "ms": 372.2000002861023,
+        "floatSample": [
+          0.18704509735107422,
+          0.9149919748306274,
+          0.798962414264679,
+          1
+        ],
+        "byteSample": [
+          119,
+          245,
+          231,
+          255
+        ]
+      },
+      {
+        "test": "c",
+        "format": "RGBA32F",
+        "floatHash": "079e51113578450d0695caf1cbeb4b1ecf15d1ce716db6dbb05ef59d75f8cc8d",
+        "byteHash": "9efd5a175bbe34a4f963b65cb6c3e90b7879ca96be77d6b783d035e39765086f",
+        "ms": 384,
+        "floatSample": [
+          1.572387304804579e-7,
+          0.20029281079769135,
+          -0.6334584951400757,
+          1
+        ],
+        "byteSample": [
+          0,
+          123,
+          0,
+          255
+        ]
+      },
+      {
+        "test": "d",
+        "format": "RGBA32F",
+        "floatHash": "81c86d36113d7dd28aa8fab30e72612c76455cc21208656285913050d22ba1e6",
+        "byteHash": "596e753789059a9f8741c053887a4fac199de4d7e467bf5766199bdbf9cfcd4d",
+        "ms": 538.6999998092651,
+        "floatSample": [
+          0.49072265625,
+          0.499267578125,
+          0.50537109375,
+          1
+        ],
+        "byteSample": [
+          186,
+          187,
+          188,
+          255
+        ]
+      },
+      {
+        "test": "e",
+        "format": "RGBA32F",
+        "floatHash": "2b99567982562e869cad1a4011640470138440d3d772a1686166099084d9d940",
+        "byteHash": "a226b15d5a50d9035ed0a652836ffa03c2386bce508bc08e9dc96e5a9861d667",
+        "ms": 486.5,
+        "floatSample": [
+          0.04960000142455101,
+          0.10080000758171082,
+          0.20320004224777222,
+          1
+        ],
+        "byteSample": [
+          63,
+          89,
+          124,
+          255
+        ]
+      },
+      {
+        "test": "f",
+        "format": "RGBA32F",
+        "floatHash": "68badc23d902995931ff09fdf23137928e8ecbb1b82a215625dc507dfa7209c3",
+        "byteHash": "b8cff88cdcc56f5d91232c4476d33a2bfa61271d7d058e8bc84fb0c4af25346d",
+        "ms": 393.09999990463257,
+        "floatSample": [
+          0.00046296295477077365,
+          2.1433469044040976e-7,
+          0.9995370507240295,
+          1
+        ],
+        "byteSample": [
+          1,
+          0,
+          255,
+          255
+        ]
+      },
+      {
+        "test": "g",
+        "format": "RGBA32F",
+        "floatHash": "6f3cc1edffddde69a9725da0496bcc544819e122d6664da69327c0f10b4e56ae",
+        "byteHash": "f4d428b4c9b910db091dce7a4c95d1bca329f6b4a8cb87d45fce329927a7ef4a",
+        "ms": 421.7000002861023,
+        "floatSample": [
+          0.8352941870689392,
+          0.6745098233222961,
+          0.45098042488098145,
+          1
+        ],
+        "byteSample": [
+          235,
+          214,
+          179,
+          255
+        ]
+      }
+    ]
+  }
+]

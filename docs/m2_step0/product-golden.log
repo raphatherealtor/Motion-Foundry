@@ -1,0 +1,71 @@
+
+> cutlab-motion-lovable@0.1.0 golden
+> tsx tests/golden/run.ts
+
+[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugins. Here is a breakdown:
+  - vite:css (44%)
+  - vite:worker-import-meta-url (27%)
+  - vite:asset (16%)
+  - vite:html-inline-proxy (6%)
+See https://rolldown.rs/reference/InputOptions.checks#plugintimings for more details.
+
+E4/E5 browser acceptance: {"directional-centroid-600-px":0.06851012986564638,"directional-centroid-800-px":0.2223835964877625,"point-centroid-600-px":0.12043576321570615,"point-centroid-800-px":0.4263573500171624,"neutral-clamp-max-lsb":0,"neutral-reinhard-max-lsb":0,"neutral-aces-max-lsb":0,"vignette-centre/corner":"pass","graded-html-order-and-export":"identical"}
+Chromium 153.0.8010.12 · key linux-x64-chromium153 · DPR 1 · en-US
+fonts: "IBM Plex Sans" 400 loaded, "IBM Plex Sans" 600 loaded
+
+scene                   frame repeat     preview==export                   baseline                          worker==inline  draft PSNR    stage alpha<255 px
+cast-shadow             0     identical  identical                         identical                         identical       25.8 dB       0
+cast-shadow             50    identical  identical                         identical                         identical       25.8 dB       0
+highlight               0     identical  identical                         identical                         identical       31.7 dB       0
+highlight               30    identical  identical                         identical                         identical       31.9 dB       0
+grade                   0     identical  identical                         identical                         identical       27.3 dB       0
+shapes-basic            0     identical  identical                         identical                         n/a             n/a           0
+text-materials          0     identical  identical                         identical                         n/a             n/a           0
+images-svg              0     identical  identical                         identical                         n/a             n/a           0
+masks-legacy            0     identical  identical                         identical                         n/a             n/a           0
+masks-soft              0     identical  identical                         identical                         n/a             n/a           0
+masks-soft              30    identical  identical                         identical                         n/a             n/a           0
+perspective-tilt        0     identical  identical                         identical                         n/a             n/a           0
+perspective-tilt        30    identical  identical                         identical                         n/a             n/a           0
+perspective-tilt        59    identical  identical                         identical                         n/a             n/a           0
+dof-depthcue            0     identical  identical                         identical                         n/a             n/a           0
+hierarchy-anim          0     identical  identical                         identical                         n/a             n/a           0
+hierarchy-anim          15    identical  identical                         identical                         n/a             n/a           0
+hierarchy-anim          45    identical  identical                         identical                         n/a             n/a           0
+holo-v3-investigation   0     identical  identical                         identical                         n/a             n/a           0
+holo-v3-investigation   7     identical  identical                         identical                         n/a             n/a           0
+holo-v3-investigation   21    identical  identical                         identical                         n/a             n/a           0
+holo-flat-opacity       0     identical  identical                         identical                         n/a             n/a           0
+holo-tilted-control     0     identical  identical                         identical                         n/a             n/a           0
+kinetic-halo            0     identical  identical                         identical                         n/a             n/a           0
+kinetic-halo            30    identical  identical                         identical                         n/a             n/a           0
+lit-point-move          0     identical  identical                         identical                         identical       31.8 dB       0
+lit-point-move          30    identical  identical                         identical                         identical       29.4 dB       0
+lit-point-move          59    identical  identical                         identical                         identical       28.9 dB       0
+lit-directional-tilt    0     identical  identical                         identical                         identical       32.4 dB       0
+lit-neutral             0     identical  identical                         identical                         identical       28.2 dB       0
+lit-ev-plus1            0     identical  identical                         identical                         identical       27.8 dB       0
+lit-ev-minus1           0     identical  identical                         identical                         identical       30.8 dB       0
+lit-reinhard            0     identical  identical                         identical                         identical       31.2 dB       0
+lit-aces                0     identical  identical                         identical                         identical       28.6 dB       0
+lit-spot-feathered      0     identical  identical                         identical                         identical       38.0 dB       0
+lit-spot-hard-aimed     0     identical  identical                         identical                         identical       34.0 dB       0
+lit-spot-animated       0     identical  identical                         identical                         identical       34.0 dB       0
+lit-spot-animated       59    identical  identical                         identical                         identical       37.7 dB       0
+lit-gobo-bars-hard      0     identical  identical                         identical                         identical       28.8 dB       0
+lit-gobo-soft           0     identical  identical                         identical                         identical       36.4 dB       0
+lit-gobo-animated       0     identical  identical                         identical                         identical       29.8 dB       0
+lit-gobo-animated       59    identical  identical                         identical                         identical       29.0 dB       0
+lit-gobo-point          0     identical  identical                         identical                         identical       36.4 dB       0
+lit-rim                 0     identical  identical                         identical                         identical       28.4 dB       0
+lit-wrap                0     identical  identical                         identical                         identical       31.2 dB       0
+lit-outline             0     identical  identical                         identical                         identical       25.8 dB       0
+lit-rim-wrap-outline    0     identical  identical                         identical                         identical       27.5 dB       0
+dimensional-composition 0     identical  identical                         identical                         identical       35.5 dB       0
+dimensional-composition 50    identical  identical                         identical                         identical       35.3 dB       0
+dimensional-composition 100   identical  identical                         identical                         identical       34.4 dB       0
+dimensional-composition 149   identical  identical                         identical                         identical       34.3 dB       0
+blend-modes             0     identical  identical                         identical                         n/a             n/a           0
+
+52 frames · 0 failed
+47 existing frames: explicit OFF defaults identical; committed baselines identical

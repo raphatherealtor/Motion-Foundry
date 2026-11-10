@@ -1,0 +1,55 @@
+{
+  "scene": "lit-point-move",
+  "size": [
+    1080,
+    1920
+  ],
+  "grade": {
+    "vignette": 0.15
+  },
+  "includesFullReadback": true,
+  "canvasAttributes": {
+    "alpha": true,
+    "colorSpace": "srgb",
+    "colorType": "unorm8",
+    "desynchronized": false,
+    "toneMapping": {
+      "mode": "standard"
+    },
+    "willReadFrequently": true
+  },
+  "coldMs": 1258.3000001907349,
+  "warmMs": [
+    1134.9000000953674,
+    1285.6999998092651,
+    1274.3000001907349
+  ],
+  "continuousProbe": {
+    "times": [
+      0.016666666666666666,
+      0.03333333333333333,
+      0.016666666666666666
+    ],
+    "x": [
+      1.6666666666666667,
+      3.3333333333333335,
+      1.6666666666666667
+    ],
+    "spatial": [
+      1.6666666666666667,
+      3.3333333333333335,
+      1.6666666666666667
+    ],
+    "expected": [
+      1.6666666666666667,
+      3.3333333333333335,
+      1.6666666666666667
+    ],
+    "hold": [
+      0,
+      0,
+      0
+    ]
+  },
+  "scope": "synthetic lit-point-move resized; not representative of every project"
+}

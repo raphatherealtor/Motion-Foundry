@@ -1,0 +1,156 @@
+{
+  "milestone": "M2.0",
+  "status": "PASS",
+  "implementationStatus": "BLOCKED",
+  "detail": "AWAITING_AUTHORIZATION",
+  "productSha": "db36db39821f46ec4b7057bb431ffb9e82473c33",
+  "productClean": true,
+  "frozenM0M1Unchanged": true,
+  "foundryTests": 86,
+  "productTests": 709,
+  "goldenFrames": 52,
+  "goldenFailures": 0,
+  "freshLaunchesPerHost": 5,
+  "hosts": 3,
+  "resolution": [
+    1080,
+    1920
+  ],
+  "shaderCasesPerLaunch": 14,
+  "hashPairs": {
+    "a/RGBA16F": {
+      "distinctHashPairs": 1,
+      "pairs": [
+        [
+          "8036b098fb1fc9032a45c8bc9c65d04344ae250f43b720e25177523979d2885c",
+          "5d280bf9d0e29a7cb2772a2c9a0d5c33342544807463640a0f866735c9094f1c"
+        ]
+      ]
+    },
+    "a/RGBA32F": {
+      "distinctHashPairs": 1,
+      "pairs": [
+        [
+          "8036b098fb1fc9032a45c8bc9c65d04344ae250f43b720e25177523979d2885c",
+          "5d280bf9d0e29a7cb2772a2c9a0d5c33342544807463640a0f866735c9094f1c"
+        ]
+      ]
+    },
+    "b/RGBA16F": {
+      "distinctHashPairs": 1,
+      "pairs": [
+        [
+          "211c1721bb33935ecbf217fad4c244ba4d26c2bd46f5398045a1c6344ed83fb4",
+          "de99be95a5962c0afafa49552bf4f48969d2e7ca1f49c9976f464a4fc9a9563a"
+        ]
+      ]
+    },
+    "b/RGBA32F": {
+      "distinctHashPairs": 1,
+      "pairs": [
+        [
+          "ae93fa626e44722044c7f3bb884b5c28b30c65630429db23f70388b5036d91c6",
+          "e358fb019bf85fc0003ed79213afe381065b7cfc9e89d4234c6cd81a8cb24165"
+        ]
+      ]
+    },
+    "c/RGBA16F": {
+      "distinctHashPairs": 1,
+      "pairs": [
+        [
+          "6690b609d84076a957ae17c03a001cc69e261576982eb20439cb45438b743be3",
+          "c3c139d69a098df61eacd90133075f5e6a43286cca7114540ed3a5060941130e"
+        ]
+      ]
+    },
+    "c/RGBA32F": {
+      "distinctHashPairs": 1,
+      "pairs": [
+        [
+          "079e51113578450d0695caf1cbeb4b1ecf15d1ce716db6dbb05ef59d75f8cc8d",
+          "9efd5a175bbe34a4f963b65cb6c3e90b7879ca96be77d6b783d035e39765086f"
+        ]
+      ]
+    },
+    "d/RGBA16F": {
+      "distinctHashPairs": 1,
+      "pairs": [
+        [
+          "4a7176a35fc3f863750d5959c6b21a6028f4fc2f050e802e5febb772a4adc334",
+          "aaa8e8b0d5fc8852a9a5d2e4275898e0203b2b076e66446606ecbefb5ffc1e64"
+        ]
+      ]
+    },
+    "d/RGBA32F": {
+      "distinctHashPairs": 1,
+      "pairs": [
+        [
+          "81c86d36113d7dd28aa8fab30e72612c76455cc21208656285913050d22ba1e6",
+          "596e753789059a9f8741c053887a4fac199de4d7e467bf5766199bdbf9cfcd4d"
+        ]
+      ]
+    },
+    "e/RGBA16F": {
+      "distinctHashPairs": 1,
+      "pairs": [
+        [
+          "fa7ee1e7f02857dfd6bf0c700e2547b7a1123b5d3265b566d76d3614b7a4c3b8",
+          "a17667b0c3c5e417d998dd69b7324910cdddc7b0000b0e6fd9a08d1a90863584"
+        ]
+      ]
+    },
+    "e/RGBA32F": {
+      "distinctHashPairs": 1,
+      "pairs": [
+        [
+          "2b99567982562e869cad1a4011640470138440d3d772a1686166099084d9d940",
+          "a226b15d5a50d9035ed0a652836ffa03c2386bce508bc08e9dc96e5a9861d667"
+        ]
+      ]
+    },
+    "f/RGBA16F": {
+      "distinctHashPairs": 1,
+      "pairs": [
+        [
+          "939d16b694331e988c041b1b41985036e3712d56b6fd525f086031caca5e089a",
+          "046e2a0e5bcd7d84da04bdf035723c7a62d3aca287458a2d831dec1569aed336"
+        ]
+      ]
+    },
+    "f/RGBA32F": {
+      "distinctHashPairs": 1,
+      "pairs": [
+        [
+          "68badc23d902995931ff09fdf23137928e8ecbb1b82a215625dc507dfa7209c3",
+          "b8cff88cdcc56f5d91232c4476d33a2bfa61271d7d058e8bc84fb0c4af25346d"
+        ]
+      ]
+    },
+    "g/RGBA16F": {
+      "distinctHashPairs": 1,
+      "pairs": [
+        [
+          "0031190a8729a5a0ae69acc1fff6da193f94641a6c9feaa880b243886e1db4b8",
+          "542fdc6e58c86e136645ef85fe0c2796c7a5e00b23064843b5d0bc4b435a69b7"
+        ]
+      ]
+    },
+    "g/RGBA32F": {
+      "distinctHashPairs": 1,
+      "pairs": [
+        [
+          "6f3cc1edffddde69a9725da0496bcc544819e122d6664da69327c0f10b4e56ae",
+          "f4d428b4c9b910db091dce7a4c95d1bca329f6b4a8cb87d45fce329927a7ef4a"
+        ]
+      ]
+    }
+  },
+  "probeConfigSha256": "0eefb3f6817d9b4d4223afacf0d155f1c868b959a842c204d05bd0ce4d2a7705",
+  "assets": {
+    "tests/golden/assets/checker.png": "462b8b4bd0cb3e058a8ec7bc0aedbfb5fff2952e77941fbbe5ebf17533e0aac0",
+    "node_modules/@fontsource/ibm-plex-sans/files/ibm-plex-sans-latin-400-normal.woff2": "3b646991d30055a93a4ecc499713d4347953a74a947ecab435ab72070cbdab0e"
+  },
+  "cpuLitColdMs": 1258.3000001907349,
+  "cpuLitWarmMedianMs": 1274.3000001907349,
+  "realGpu": "NOT_RUN"
+}
