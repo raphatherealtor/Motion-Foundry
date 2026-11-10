@@ -1,3 +1,4 @@
+import {browserExecutable} from './adapters/motion-suite/browser.js';
 import {chromium,Page} from 'playwright';
 import {mkdirSync,readFileSync,writeFileSync,readdirSync,existsSync} from 'node:fs';
 import {resolve} from 'node:path';
@@ -19,7 +20,7 @@ export async function boxes(page:Page,frame:number):Promise<Boxes>{return page.e
 export function verifyHashes(dir:string){const m=read<EvidenceManifest>(resolve(dir,'manifest.json'));for(const f of [...m.frames,m.contact_sheet,m.object_boxes])if(fileHash(resolve(dir,f.path))!==f.sha256)fail('EVIDENCE_HASH_MISMATCH');if(m.hashes.assets!==hash(assets())||m.hashes.source!==hash(read(resolve(dir,'scene.json')))||m.hashes.renderer_config!==hash(read(resolve(dir,'renderer-config.json')))||m.hashes.schema!==hash(schemas))fail('EVIDENCE_HASH_MISMATCH');return m}
 export const renderIdentity=(scene:Scene,renderer_config:unknown)=>hash({schema:hash(schemas),source:hash(scene),assets:hash(assets()),renderer_config,range:{start:0,end:scene.frames},output:{w:1080*config.deviceScaleFactor,h:1920*config.deviceScaleFactor}});
 export async function render(scene:Scene,out:string,noCache=false,candidate_id:string|null=null){
- const revision_id=hash(scene),browser=await chromium.launch({executablePath:'/usr/local/bin/chromium',args:config.args});
+ const revision_id=hash(scene),browser=await chromium.launch({executablePath:browserExecutable(),args:config.args});
  try{
  const renderer_config={...config,browser:browser.version(),node:process.version,adapter_hash:hash({render:fileHash(resolve(root,'dist/src/render.js')),scene:fileHash(resolve(root,'dist/src/scene.js'))}),ffmpeg:spawnSync('ffmpeg',['-version'],{encoding:'utf8'}).stdout?.split('\n')[0]||'NOT_INSTALLED',audio:'NOT_RUN'};
  const render_id=renderIdentity(scene,renderer_config);

@@ -25,3 +25,9 @@ Compatibility follow-up: the isolated unchanged131 repeat-render test passed (1/
 ## Milestone 2 — TESTED
 
 Exact BigInt arithmetic validates and normalizes all project/document, keyframe, camera, light, behavior and text-segment rational times on a copied project. Every document and project must use30fps; proposals changingFPS areFORBIDDEN_OP. Noninteger/unsafe frame results areTYPE_INVALID with NON_INTEGER_FRAME and the precise path. No rounding; half-open ranges enforced before product loading or browser launch. Seven new timing tests passed, including15000/30000→15 and1001/30000 rejection. Build passed. Evidence: runs/m1-resume/timing-tests.log.
+
+## Milestone 3 — TESTED
+
+Product projectedCorners and objectBounds supply word geometry through a camera push. Evidence includes perword boxes, inherited/material/atmosphere opacity, raw-product-PNG frames and a contact sheet with exact cell mapping. The unchanged M0 EvidenceManifest validates under Ajv. The M1 verifier checks coverage, coordinate system, hashes, copied harness, source/config identity and path confinement. Two evidence tests passed, including unsplit words, unavailable projections, parent opacity, bad decode, camera/seek consistency and tampering. Evidence: runs/m1-resume/evidence-final.log, evidence-proof.json.
+
+Raphael's resume instruction retires131: all active browser entry points now select153, no fallback. This supersedes earlier historical notes about retaining131 as M0's pin. Recipe compilation will require actual single-word objects and treat unsupported word evidence as a failure, never a skip.
