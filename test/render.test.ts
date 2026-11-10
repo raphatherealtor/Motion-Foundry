@@ -1,0 +1,16 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {readFileSync,mkdtempSync} from 'node:fs';
+import {tmpdir} from 'node:os';
+import {render,verifyHashes} from '../src/render.js';
+import {root,Scene} from '../src/scene.js';
+import {write} from '../src/io.js';
+test('repeat no-cache rendering, immutable attempts, cache and seek determinism', {timeout:240000},async()=>{
+ const scene=JSON.parse(readFileSync(root+'/fixtures/m0-overflow/scene.json','utf8')) as Scene;
+ const out=mkdtempSync(tmpdir()+'/foundry-');
+ const a=await render(scene,out,true),b=await render(scene,out,true),c=await render(scene,out);
+ const ma=verifyHashes(a),mb=verifyHashes(b),mc=verifyHashes(c);
+ assert.equal(ma.render_id,mb.render_id);assert.equal(ma.render_id,mc.render_id);assert.notEqual(ma.attempt_id,mb.attempt_id);assert.notEqual(mc.attempt_id,mb.attempt_id);
+ assert.deepEqual(ma.frames,mb.frames);assert.deepEqual(ma.object_boxes,mb.object_boxes);assert.deepEqual(ma.contact_sheet,mb.contact_sheet);
+ write(root+'/runs/determinism-'+Date.now()+'.json',{status:'PASS',a,b,c,frames:270,seek_order:[200,10,200,135],render_id:ma.render_id});
+});

@@ -4,7 +4,7 @@
   "private": true,
   "type": "module",
   "bin": {
-    "foundry": "dist/cli.js"
+    "foundry": "dist/src/cli.js"
   },
   "scripts": {
     "build": "tsc",
@@ -20,5 +20,8 @@
   "devDependencies": {
     "@types/node": "18.19.67",
     "typescript": "5.7.2"
+  },
+  "engines": {
+    "node": "22.14.0"
   }
 }
