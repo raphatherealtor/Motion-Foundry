@@ -21,3 +21,7 @@ Three new tests passed. Preview/export-GIF-prequant/worker/golden-environment ra
 The first unchanged M0 suite on legacy131 was45/46: repeat-render frame55 differed. This is retained as a capture-race finding; no tolerance or frozen implementation was changed. The failure is being rechecked separately from the successful153 five-repeat migration check.
 
 Compatibility follow-up: the isolated unchanged131 repeat-render test passed (1/1); the first failure remains recorded. All **46 unchanged M0 tests passed on M1's153 browser**, using the test-only browser-path loader. Evidence: runs/m1-resume/m0-tests-153.log and exit0; m0-131-render-retry.log and exit0. Renderer now has four new tests: three initial tests including browser integration passed; the added stable-mismatch/capture-race test and other two nonbrowser tests passed separately.
+
+## Milestone 2 — TESTED
+
+Exact BigInt arithmetic validates and normalizes all project/document, keyframe, camera, light, behavior and text-segment rational times on a copied project. Every document and project must use30fps; proposals changingFPS areFORBIDDEN_OP. Noninteger/unsafe frame results areTYPE_INVALID with NON_INTEGER_FRAME and the precise path. No rounding; half-open ranges enforced before product loading or browser launch. Seven new timing tests passed, including15000/30000→15 and1001/30000 rejection. Build passed. Evidence: runs/m1-resume/timing-tests.log.

@@ -11,6 +11,7 @@ import {foundryArgs,goldenArgs,browserContext} from './environment.js';
 import type {HarnessOptions} from './environment.js';
 import {RenderSession} from './session.js';
 import {measureParity,sampledFrames} from './parity.js';
+import {normalizeProjectTiming,compositionFrames,assertFrameRange} from './timing.js';
 export class MotionSuiteRenderer implements RendererAdapter {
  // Frozen M0 interface uses this literal; actual verification lives in parity artifacts.
  readonly status='UNVERIFIED' as const;
@@ -22,14 +23,12 @@ export class MotionSuiteRenderer implements RendererAdapter {
   try{return await s.page.evaluate(()=>(window as any).foundryMS.synthetic());}finally{await s.close();}
  }
  async render(snapshot:unknown,range:Range){
-  if(!Number.isSafeInteger(range.start)||!Number.isSafeInteger(range.end)||range.start<0||range.end<=range.start)throw new Error('TYPE_INVALID: NON_INTEGER_FRAME range');
+  const timed=normalizeProjectTiming(snapshot);
+  assertFrameRange(range,compositionFrames(timed));
   const bundle=await this.prepare(),s=await new RenderSession().open(this.options,bundle.outDir,foundryArgs);
   let g:RenderSession|undefined;
   try{
-   const project=await s.page.evaluate(p=>(window as any).foundryMS.parse(p),snapshot);
-   const doc=project.motionDocuments[project.activeDocumentId];
-   if(doc.fps!==30)throw new Error('TYPE_INVALID: fps must be 30/1');
-   if(range.end>doc.duration.value*30/doc.duration.timescale)throw new Error('OUT_OF_BOUNDS: frame range');
+   const project=await s.page.evaluate(p=>(window as any).foundryMS.parse(p),timed);
    const revision_id=revisionId(null,project),config={ms_sha:bundle.sha,harness_hash:bundle.bundle_hash,mode:'preview',browser:s.version(),browser_binary_sha256:sha256(readFileSync(this.options.browserPath)),flags:foundryArgs,golden_flags:goldenArgs,context:browserContext};
    const render_id=renderId(revision_id,config,range),dir=resolve(this.options.workDir,'renders',render_id,randomUUID());mkdirSync(resolve(dir,'frames'),{recursive:true});
    const {PNG}=createRequire(resolve(this.options.checkout,'package.json'))('pngjs');
