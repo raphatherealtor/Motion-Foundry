@@ -37,3 +37,13 @@ test('M1 product preview, export, worker and golden environment match at five mo
   writeFileSync(resolve(root,'runs/m1-resume/renderer-parity.json'),JSON.stringify({schema:'foundry.render_parity/0.1',render_id:renderId(revisionId(null,project),{ms_sha:bundle.sha,harness_hash:bundle.bundle_hash,mode:'preview',flags:foundryArgs,browser:a.version()},{start:0,end:180}),ms_sha:bundle.sha,frames,pairs,seek_order:[120,10,120,75],seek_status:'PASS'},null,2));
  }finally{await b?.close();await a.close();}
 });
+test('M1 parity distinguishes a stable mode mismatch from changing captures',async()=>{
+ const pixel=(n:number)=>({width:1,height:1,base64:Buffer.from([n,0,0,255]).toString('base64'),alphaBelow255:0});
+ for(const unstable of [false,true]){
+  const calls:Record<string,number>={};
+  const fake={async render(_project:unknown,_frame:number,mode:string){calls[mode]=(calls[mode]||0)+1;return pixel(mode==='preview'?0:unstable&&calls[mode]>1?0:1);}} as unknown as RenderSession;
+  const pairs=await measureParity({},[0],fake,fake);
+  assert.equal(pairs[0].status,unstable?'BLOCKED':'FAIL');
+  if(unstable)assert.equal(pairs[0].reason_code,'NONDETERMINISTIC');
+ }
+});
