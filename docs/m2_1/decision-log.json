@@ -1,0 +1,12 @@
+{
+  "base_failure": "Single-raster isolation changes overlapping primitive opacity",
+  "reviewer_proposal": "Preserve ordered paint operations and legacy isolation boundaries in compat mode",
+  "gate_decision": "BLOCKED under M2 section 5.2; correction unresolved",
+  "candidate_revision": null,
+  "new_validation_result": {
+    "source_discriminator": "REPRODUCED",
+    "fresh_launches": 5,
+    "gpu_parity": "NOT_RUN",
+    "product_clean": true
+  }
+}

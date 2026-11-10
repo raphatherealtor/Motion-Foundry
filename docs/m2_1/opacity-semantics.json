@@ -1,0 +1,556 @@
+{
+  "productSha": "db36db39821f46ec4b7057bb431ffb9e82473c33",
+  "kind": "source-path discriminator; not a GPU parity test",
+  "runs": [
+    {
+      "repeat": 0,
+      "browser": "153.0.8010.12",
+      "cases": [
+        {
+          "opacity": 1,
+          "stroke": 16,
+          "changedPixels": 0,
+          "totalPixels": 16384,
+          "maxDelta": 0,
+          "psnr": null,
+          "sample": {
+            "x": 18,
+            "y": 64,
+            "direct": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "isolated": [
+              0,
+              0,
+              255,
+              255
+            ]
+          },
+          "directHash": "d16be546eecf134075be43466faf1b0f76d86bf19d9f66ac1b4ca1bd716dcdc4",
+          "isolatedHash": "d16be546eecf134075be43466faf1b0f76d86bf19d9f66ac1b4ca1bd716dcdc4"
+        },
+        {
+          "opacity": 0.5,
+          "stroke": 0,
+          "changedPixels": 0,
+          "totalPixels": 16384,
+          "maxDelta": 0,
+          "psnr": null,
+          "sample": {
+            "x": 18,
+            "y": 64,
+            "direct": [
+              128,
+              0,
+              0,
+              255
+            ],
+            "isolated": [
+              128,
+              0,
+              0,
+              255
+            ]
+          },
+          "directHash": "4d1234bf5b5b3ee81cefb46091d38b374be1107b94e661c72a1a69b118d1cf3c",
+          "isolatedHash": "4d1234bf5b5b3ee81cefb46091d38b374be1107b94e661c72a1a69b118d1cf3c"
+        },
+        {
+          "opacity": 0.5,
+          "stroke": 16,
+          "changedPixels": 2304,
+          "totalPixels": 16384,
+          "maxDelta": 64,
+          "psnr": 26.547178687726607,
+          "sample": {
+            "x": 18,
+            "y": 64,
+            "direct": [
+              64,
+              0,
+              128,
+              255
+            ],
+            "isolated": [
+              0,
+              0,
+              128,
+              255
+            ]
+          },
+          "directHash": "31ec2258b3505535a23b79cb76adb8182d4d818dc245e60d39afd00b6ab72ce1",
+          "isolatedHash": "f8e8ab5160c95f92051b0950b2208b65217d9d2dd79c6e15b6c342f20462cf2a"
+        },
+        {
+          "opacity": 0.25,
+          "stroke": 16,
+          "changedPixels": 2304,
+          "totalPixels": 16384,
+          "maxDelta": 48,
+          "psnr": 29.045953419892605,
+          "sample": {
+            "x": 18,
+            "y": 64,
+            "direct": [
+              48,
+              0,
+              64,
+              255
+            ],
+            "isolated": [
+              0,
+              0,
+              64,
+              255
+            ]
+          },
+          "directHash": "7b0925b7c963e2719186ce654db258d9a20c5c453ac18ce4cd73686785036530",
+          "isolatedHash": "2f4da1dd07a04c2d9a95eea3646f6209884ad21150973357c92531175ac16079"
+        }
+      ]
+    },
+    {
+      "repeat": 1,
+      "browser": "153.0.8010.12",
+      "cases": [
+        {
+          "opacity": 1,
+          "stroke": 16,
+          "changedPixels": 0,
+          "totalPixels": 16384,
+          "maxDelta": 0,
+          "psnr": null,
+          "sample": {
+            "x": 18,
+            "y": 64,
+            "direct": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "isolated": [
+              0,
+              0,
+              255,
+              255
+            ]
+          },
+          "directHash": "d16be546eecf134075be43466faf1b0f76d86bf19d9f66ac1b4ca1bd716dcdc4",
+          "isolatedHash": "d16be546eecf134075be43466faf1b0f76d86bf19d9f66ac1b4ca1bd716dcdc4"
+        },
+        {
+          "opacity": 0.5,
+          "stroke": 0,
+          "changedPixels": 0,
+          "totalPixels": 16384,
+          "maxDelta": 0,
+          "psnr": null,
+          "sample": {
+            "x": 18,
+            "y": 64,
+            "direct": [
+              128,
+              0,
+              0,
+              255
+            ],
+            "isolated": [
+              128,
+              0,
+              0,
+              255
+            ]
+          },
+          "directHash": "4d1234bf5b5b3ee81cefb46091d38b374be1107b94e661c72a1a69b118d1cf3c",
+          "isolatedHash": "4d1234bf5b5b3ee81cefb46091d38b374be1107b94e661c72a1a69b118d1cf3c"
+        },
+        {
+          "opacity": 0.5,
+          "stroke": 16,
+          "changedPixels": 2304,
+          "totalPixels": 16384,
+          "maxDelta": 64,
+          "psnr": 26.547178687726607,
+          "sample": {
+            "x": 18,
+            "y": 64,
+            "direct": [
+              64,
+              0,
+              128,
+              255
+            ],
+            "isolated": [
+              0,
+              0,
+              128,
+              255
+            ]
+          },
+          "directHash": "31ec2258b3505535a23b79cb76adb8182d4d818dc245e60d39afd00b6ab72ce1",
+          "isolatedHash": "f8e8ab5160c95f92051b0950b2208b65217d9d2dd79c6e15b6c342f20462cf2a"
+        },
+        {
+          "opacity": 0.25,
+          "stroke": 16,
+          "changedPixels": 2304,
+          "totalPixels": 16384,
+          "maxDelta": 48,
+          "psnr": 29.045953419892605,
+          "sample": {
+            "x": 18,
+            "y": 64,
+            "direct": [
+              48,
+              0,
+              64,
+              255
+            ],
+            "isolated": [
+              0,
+              0,
+              64,
+              255
+            ]
+          },
+          "directHash": "7b0925b7c963e2719186ce654db258d9a20c5c453ac18ce4cd73686785036530",
+          "isolatedHash": "2f4da1dd07a04c2d9a95eea3646f6209884ad21150973357c92531175ac16079"
+        }
+      ]
+    },
+    {
+      "repeat": 2,
+      "browser": "153.0.8010.12",
+      "cases": [
+        {
+          "opacity": 1,
+          "stroke": 16,
+          "changedPixels": 0,
+          "totalPixels": 16384,
+          "maxDelta": 0,
+          "psnr": null,
+          "sample": {
+            "x": 18,
+            "y": 64,
+            "direct": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "isolated": [
+              0,
+              0,
+              255,
+              255
+            ]
+          },
+          "directHash": "d16be546eecf134075be43466faf1b0f76d86bf19d9f66ac1b4ca1bd716dcdc4",
+          "isolatedHash": "d16be546eecf134075be43466faf1b0f76d86bf19d9f66ac1b4ca1bd716dcdc4"
+        },
+        {
+          "opacity": 0.5,
+          "stroke": 0,
+          "changedPixels": 0,
+          "totalPixels": 16384,
+          "maxDelta": 0,
+          "psnr": null,
+          "sample": {
+            "x": 18,
+            "y": 64,
+            "direct": [
+              128,
+              0,
+              0,
+              255
+            ],
+            "isolated": [
+              128,
+              0,
+              0,
+              255
+            ]
+          },
+          "directHash": "4d1234bf5b5b3ee81cefb46091d38b374be1107b94e661c72a1a69b118d1cf3c",
+          "isolatedHash": "4d1234bf5b5b3ee81cefb46091d38b374be1107b94e661c72a1a69b118d1cf3c"
+        },
+        {
+          "opacity": 0.5,
+          "stroke": 16,
+          "changedPixels": 2304,
+          "totalPixels": 16384,
+          "maxDelta": 64,
+          "psnr": 26.547178687726607,
+          "sample": {
+            "x": 18,
+            "y": 64,
+            "direct": [
+              64,
+              0,
+              128,
+              255
+            ],
+            "isolated": [
+              0,
+              0,
+              128,
+              255
+            ]
+          },
+          "directHash": "31ec2258b3505535a23b79cb76adb8182d4d818dc245e60d39afd00b6ab72ce1",
+          "isolatedHash": "f8e8ab5160c95f92051b0950b2208b65217d9d2dd79c6e15b6c342f20462cf2a"
+        },
+        {
+          "opacity": 0.25,
+          "stroke": 16,
+          "changedPixels": 2304,
+          "totalPixels": 16384,
+          "maxDelta": 48,
+          "psnr": 29.045953419892605,
+          "sample": {
+            "x": 18,
+            "y": 64,
+            "direct": [
+              48,
+              0,
+              64,
+              255
+            ],
+            "isolated": [
+              0,
+              0,
+              64,
+              255
+            ]
+          },
+          "directHash": "7b0925b7c963e2719186ce654db258d9a20c5c453ac18ce4cd73686785036530",
+          "isolatedHash": "2f4da1dd07a04c2d9a95eea3646f6209884ad21150973357c92531175ac16079"
+        }
+      ]
+    },
+    {
+      "repeat": 3,
+      "browser": "153.0.8010.12",
+      "cases": [
+        {
+          "opacity": 1,
+          "stroke": 16,
+          "changedPixels": 0,
+          "totalPixels": 16384,
+          "maxDelta": 0,
+          "psnr": null,
+          "sample": {
+            "x": 18,
+            "y": 64,
+            "direct": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "isolated": [
+              0,
+              0,
+              255,
+              255
+            ]
+          },
+          "directHash": "d16be546eecf134075be43466faf1b0f76d86bf19d9f66ac1b4ca1bd716dcdc4",
+          "isolatedHash": "d16be546eecf134075be43466faf1b0f76d86bf19d9f66ac1b4ca1bd716dcdc4"
+        },
+        {
+          "opacity": 0.5,
+          "stroke": 0,
+          "changedPixels": 0,
+          "totalPixels": 16384,
+          "maxDelta": 0,
+          "psnr": null,
+          "sample": {
+            "x": 18,
+            "y": 64,
+            "direct": [
+              128,
+              0,
+              0,
+              255
+            ],
+            "isolated": [
+              128,
+              0,
+              0,
+              255
+            ]
+          },
+          "directHash": "4d1234bf5b5b3ee81cefb46091d38b374be1107b94e661c72a1a69b118d1cf3c",
+          "isolatedHash": "4d1234bf5b5b3ee81cefb46091d38b374be1107b94e661c72a1a69b118d1cf3c"
+        },
+        {
+          "opacity": 0.5,
+          "stroke": 16,
+          "changedPixels": 2304,
+          "totalPixels": 16384,
+          "maxDelta": 64,
+          "psnr": 26.547178687726607,
+          "sample": {
+            "x": 18,
+            "y": 64,
+            "direct": [
+              64,
+              0,
+              128,
+              255
+            ],
+            "isolated": [
+              0,
+              0,
+              128,
+              255
+            ]
+          },
+          "directHash": "31ec2258b3505535a23b79cb76adb8182d4d818dc245e60d39afd00b6ab72ce1",
+          "isolatedHash": "f8e8ab5160c95f92051b0950b2208b65217d9d2dd79c6e15b6c342f20462cf2a"
+        },
+        {
+          "opacity": 0.25,
+          "stroke": 16,
+          "changedPixels": 2304,
+          "totalPixels": 16384,
+          "maxDelta": 48,
+          "psnr": 29.045953419892605,
+          "sample": {
+            "x": 18,
+            "y": 64,
+            "direct": [
+              48,
+              0,
+              64,
+              255
+            ],
+            "isolated": [
+              0,
+              0,
+              64,
+              255
+            ]
+          },
+          "directHash": "7b0925b7c963e2719186ce654db258d9a20c5c453ac18ce4cd73686785036530",
+          "isolatedHash": "2f4da1dd07a04c2d9a95eea3646f6209884ad21150973357c92531175ac16079"
+        }
+      ]
+    },
+    {
+      "repeat": 4,
+      "browser": "153.0.8010.12",
+      "cases": [
+        {
+          "opacity": 1,
+          "stroke": 16,
+          "changedPixels": 0,
+          "totalPixels": 16384,
+          "maxDelta": 0,
+          "psnr": null,
+          "sample": {
+            "x": 18,
+            "y": 64,
+            "direct": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "isolated": [
+              0,
+              0,
+              255,
+              255
+            ]
+          },
+          "directHash": "d16be546eecf134075be43466faf1b0f76d86bf19d9f66ac1b4ca1bd716dcdc4",
+          "isolatedHash": "d16be546eecf134075be43466faf1b0f76d86bf19d9f66ac1b4ca1bd716dcdc4"
+        },
+        {
+          "opacity": 0.5,
+          "stroke": 0,
+          "changedPixels": 0,
+          "totalPixels": 16384,
+          "maxDelta": 0,
+          "psnr": null,
+          "sample": {
+            "x": 18,
+            "y": 64,
+            "direct": [
+              128,
+              0,
+              0,
+              255
+            ],
+            "isolated": [
+              128,
+              0,
+              0,
+              255
+            ]
+          },
+          "directHash": "4d1234bf5b5b3ee81cefb46091d38b374be1107b94e661c72a1a69b118d1cf3c",
+          "isolatedHash": "4d1234bf5b5b3ee81cefb46091d38b374be1107b94e661c72a1a69b118d1cf3c"
+        },
+        {
+          "opacity": 0.5,
+          "stroke": 16,
+          "changedPixels": 2304,
+          "totalPixels": 16384,
+          "maxDelta": 64,
+          "psnr": 26.547178687726607,
+          "sample": {
+            "x": 18,
+            "y": 64,
+            "direct": [
+              64,
+              0,
+              128,
+              255
+            ],
+            "isolated": [
+              0,
+              0,
+              128,
+              255
+            ]
+          },
+          "directHash": "31ec2258b3505535a23b79cb76adb8182d4d818dc245e60d39afd00b6ab72ce1",
+          "isolatedHash": "f8e8ab5160c95f92051b0950b2208b65217d9d2dd79c6e15b6c342f20462cf2a"
+        },
+        {
+          "opacity": 0.25,
+          "stroke": 16,
+          "changedPixels": 2304,
+          "totalPixels": 16384,
+          "maxDelta": 48,
+          "psnr": 29.045953419892605,
+          "sample": {
+            "x": 18,
+            "y": 64,
+            "direct": [
+              48,
+              0,
+              64,
+              255
+            ],
+            "isolated": [
+              0,
+              0,
+              64,
+              255
+            ]
+          },
+          "directHash": "7b0925b7c963e2719186ce654db258d9a20c5c453ac18ce4cd73686785036530",
+          "isolatedHash": "2f4da1dd07a04c2d9a95eea3646f6209884ad21150973357c92531175ac16079"
+        }
+      ]
+    }
+  ]
+}
