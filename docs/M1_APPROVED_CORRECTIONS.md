@@ -1,6 +1,6 @@
 # M1 approved corrections
 
-Raphael approved these corrections in this topic on 2026-11-10. They supersede the reference brief; reference handoff files remain historical copies. Step 0 semantic gate is cleared. Product base remains 25cb5454d1f14f889d36c79dec3965a95f7b2c99, Path A.
+Raphael approved these corrections in this topic on 2026-11-10. They supersede the reference brief; the M1 spec and kickoff now incorporate FPS, softness and v2-ID corrections; original ZIP remains the source reference. Step 0 semantic gate is cleared. Product base remains 25cb5454d1f14f889d36c79dec3965a95f7b2c99, Path A.
 
 - Product FPS changes preserve elapsed time. Foundry accepts only 30/1; proposed FPS changes are FORBIDDEN_OP. Exact rational boundary conversion uses integer arithmetic; noninteger frame results are TYPE_INVALID with detail.
 - Shadow softness is normalized 0–1. Out-of-bounds proposals yield OUT_OF_BOUNDS. Remaining differences are reported below without stopping.

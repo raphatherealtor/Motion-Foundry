@@ -21,7 +21,7 @@ You are implementing **Milestone M1** of Motion Foundry (M0 accepted at `ad063d3
 3. **Evidence.** Collect per-word projected bounds through camera moves into the M0 manifest.
 4. **Recipes.** Write the `foundry.recipe/0.1` manifests and a deterministic compiler for `vox-doc.chart_explainer` (the priority and the live proof), `paper-collage.build_tear`, and `editorial.cutout_pop`.
 5. **Validators.** Hard: `safe_area.v1`, `required_content.v1`, `word_reveal.v1`, `occlusion_preserved.v1`, `tear_seed_unique.v1`, `anchor_timing.v1`. Heuristics cap at WARN.
-6. **Repair lowering.** Lower `repair-allowlist.motion-suite.v1` to MotionOps on a candidate copy using the product's `applyMotionTransaction`, then re-check with `parseProject`.
+6. **Repair lowering.** Lower `repair-allowlist.motion-suite.v2` to MotionOps on a candidate copy using the product's `applyMotionTransaction`, then re-check with `parseProject`.
 7. **Mock loop**, then the **live Kimi loop** on the seeded vox scene. Re-run the canary first.
 8. **Optional M1b.** Compare Gemini via `agy` against Kimi (spec §12). Probe `agy` first. If it isn't `VERIFIED_ATTACHMENT`, report `BLOCKED`/`NO_VISION_TRANSPORT`.
 

@@ -1,5 +1,7 @@
 # Motion Foundry M1: Motion Suite adapter (handoff spec)
 
+**Approved corrections:** See ../M1_APPROVED_CORRECTIONS.md (Raphael, 2026-11-10), authoritative over historical inspection assumptions.
+
 **Status:** SPECIFIED ONLY. M0 is accepted (`motion-foundry` @ `ad063d3`, 46/46 tests, byte-identical renders with `--num-raster-threads=1`). Nothing in this M1 spec is implemented yet.
 
 **Evidence base:** everything said about Motion Suite comes from a read-only source inspection of `raphatherealtor/blank-canvas-starter` at branch `claude/e3-highlight-render`, commit `de612e423bfe8aff37bd5dc29117cab72418da05`. That inspection read code but ran no tests or goldens. Each such claim is tagged **[OBSERVED@de612e4]**. Claims tagged **[UNVERIFIED]** are reports or assumptions. Step 0 has to confirm or correct all of them before any build work starts.
@@ -43,7 +45,7 @@ Write `docs/M1_STEP0_FINDINGS.md` in `motion-foundry`. Mark each item **CONFIRME
 4. **Time [OBSERVED@de612e4].**
    - Keyframe `time` and behavior `startTime`/`duration` are rational `{value,timescale}` with integer `value`. Timescales seen: `doc.fps`, `30`, and `30000` (Studio).
    - `compositionFrames = round(duration.value/duration.timescale*fps)`.
-   - An fps change in `motion_composition` keeps frame indexes, so the wall-clock seconds shift.
+   - An fps change in `motion_composition` preserves elapsed time. Foundry pins 30/1 and forbids FPS edits (Raphael correction, 2026-11-10).
    - Studio uses three clocks that disagree on a sped-up or reversed clip: `render-plan.ts`, `studioTimeToMotionTime`, and `buildWorkspaceHandoff`.
 5. **Text [OBSERVED@de612e4].**
    - The kinetic-typography tool (`catalog.json` ~line 415) can split text into per-word child segments.
@@ -157,7 +159,7 @@ All of these are deterministic and run before any model call. Output is M0 `Vali
 
 ## 9. Repair: wider allowlist for Motion Suite
 
-Motion Suite may repair more aggressively than CutLab, using typed ops only. The allowlist **`repair-allowlist.motion-suite.v1`** is the intersection of a global bound table and the recipe's `allowed_ops`. The M0 allowlist is untouched.
+Motion Suite may repair more aggressively than CutLab, using typed ops only. The allowlist **`repair-allowlist.motion-suite.v2`** is the intersection of a global bound table and the recipe's `allowed_ops`. The M0 allowlist is untouched.
 
 | op | targets (examples) | type / bounds |
 |---|---|---|
@@ -168,7 +170,7 @@ Motion Suite may repair more aggressively than CutLab, using typed ops only. The
 | `set` | `text.fontSize` / `letterSpacing` / `lineHeight` | M0 bounds |
 | `set` | `layout.maxWidth`, `align`, `wrap` | M0 bounds |
 | `set` | `surface.shadowOpacity` | 0–1 |
-| `set` | `surface.shadowSoftness` | 0–40 |
+| `set` | `surface.shadowSoftness` | 0–1 |
 | `set` | `lighting.exposureEV` | −2–2 |
 | `set` | `lighting.vignette` | 0–1 |
 | `set` | `camera.keyframes[k].value` (push/drift) | ≤ 2.5× push |
@@ -177,7 +179,7 @@ Motion Suite may repair more aggressively than CutLab, using typed ops only. The
 | `set_easing` | keyframe easing | enum of easings confirmed in Step 0 |
 | `apply_recipe` | add or replace a recipe block | registered recipe id plus params that pass its schema; existing assets only |
 
-The `ProposedOperation` envelope is the M0 contract. `op` values beyond `set` are valid only under this allowlist id. Target paths are Foundry logical names; Step 0 maps each to the real Motion Suite field, and unmapped targets are dropped from the allowlist, not guessed.
+The M1 `ProposedOperation` envelope is a new versioned v2 contract; frozen M0 continues to use v1. `op` values beyond `set` are valid only under this allowlist id. Target paths are Foundry logical names; Step 0 maps each to the real Motion Suite field, and unmapped targets are dropped from the allowlist, not guessed.
 
 **Forbidden** (`ERROR`/`FORBIDDEN_OP` unless noted):
 - Text content edits, or anything that drops a required word (`REQUIRED_CONTENT_LOST`).
