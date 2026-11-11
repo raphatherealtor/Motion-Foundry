@@ -46,6 +46,8 @@ The requested matrix is sequential, using detached source snapshots and the same
 3. FM2.2 baseline42c476c:20 isolated M0 repeat tests.
 4. The same FM2.2 baseline:20 full-suite runs, recording M0 separately from unrelated failures.
 
+Completed comparison: M1b52aebd isolated **20/20 PASS**, no failures observed. This does not rule out a pre-existing intermittent race or identify FM2.2 as the cause. FM2.1 comparisons are running; later phases remain pending. Evidence: docs/fm2_2/capture-matrix/m1-isolated-results.json.
+
 Results are accumulated under runs/fm2-2/capture-matrix/. Initial missing-browser worktree setup failures were excluded and retained under capture-matrix-setup-invalid/. No capture or source change is part of these baseline comparisons. New Foundry color unit tests are CPU-only; standalone GPU stress probes are not implicitly part of npm test. Other GPU probes remain idle during isolated comparisons.
 
 Readiness inspection is queued after the matrix: replay every frame, triple-capture95/121, record font/image readiness, GSAP frame/state and computed transforms. Existing seek waits for two rAF callbacks; the affected differences lie on circle edges, not an image asset. A cause is not yet established. No frozen tolerance or baseline has changed. Root-cause fix, five uncached repeat tests and98/98 final suite remain mandatory.
