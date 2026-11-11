@@ -3,16 +3,16 @@
     "GRADE_ORDER_MISMATCH: spec 6.2 reversed existing vignette/tone-map order",
     "M2 allowlist ID collided with frozen M1 v2"
   ],
-  "reviewer_proposal": "Preserve actual legacy order and reserve M2 v3 files/ID",
+  "reviewer_proposal": "Preserve actual legacy order and reserve FM2 v3 files/ID",
   "gate_decision": {
     "reviewer": "Raphael",
     "decision": "APPROVED",
     "source": "[My decision] Approve both corrections",
     "product_edits_authorized": false
   },
-  "candidate_revision": "docs/M2_APPROVED_CORRECTIONS.md; read-only Step 0 probes and reports; no product revision",
+  "candidate_revision": "docs/FM2_APPROVED_CORRECTIONS.md; read-only Step 0 probes and reports; no product revision",
   "new_validation_result": {
-    "milestone": "M2.0",
+    "milestone": "FM2.0",
     "status": "PASS",
     "evidence": "validation.json",
     "next": "BLOCKED / AWAITING_AUTHORIZATION"
