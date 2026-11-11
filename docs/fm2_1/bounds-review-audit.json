@@ -1,0 +1,29 @@
+{
+  "status": "BLOCKED",
+  "detail": "AA_EDGE_COUNT_EXCEEDS_APPROVED_BOUND",
+  "launches": 5,
+  "positionAndDeltaPins": true,
+  "exactSuites": true,
+  "recipes": {
+    "paper-collage.build_tear": {
+      "edgePixels": 570,
+      "approvedEdgeMaximum": 568,
+      "interiorUnderClip": 7,
+      "approvedInteriorMaximum": 9,
+      "interiorOutsideClip": 0,
+      "changedChannels": 946,
+      "diff_sha256": "5a2713e6accda1b560bf1195442eaf3f29b578c8f33d3a28710b98dca8be4f79",
+      "delta_sha256": "94d911f599f31136dc8fe8f86e9a81de0eb412de6a9f5737f07b768ae6012c91"
+    },
+    "editorial.cutout_pop": {
+      "edgePixels": 570,
+      "approvedEdgeMaximum": 568,
+      "interiorUnderClip": 7,
+      "approvedInteriorMaximum": 9,
+      "interiorOutsideClip": 0,
+      "changedChannels": 955,
+      "diff_sha256": "e21c50775ca586164e0242d26b9650487159aa25173af58b3d821b48d8e7a95f",
+      "delta_sha256": "01fab7ca8c91082b39855016aa9cb08d38212a6de3e25098e62967bd8e7ba901"
+    }
+  }
+}

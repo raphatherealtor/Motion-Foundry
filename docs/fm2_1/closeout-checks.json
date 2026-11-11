@@ -1,0 +1,7 @@
+{
+  "parity": 1,
+  "type-check": 0,
+  "vitest": 0,
+  "golden": 0,
+  "foundry": 0
+}

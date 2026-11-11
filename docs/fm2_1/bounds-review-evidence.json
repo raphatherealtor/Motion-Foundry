@@ -1,0 +1,1945 @@
+{
+  "proofProjectSha256": "feb870ba43231362883fdb0872d685dcfd9dad343518b792a09dfecf4d95b6b7",
+  "launches": [
+    {
+      "repeat": 0,
+      "browser": "153.0.8010.12",
+      "recipes": {
+        "vox-doc.chart_explainer": {
+          "recipe": "vox-doc.chart_explainer",
+          "frame": 90,
+          "changedChannels": 0,
+          "changedPixels": 0,
+          "fraction": 0,
+          "maxDelta": 0,
+          "deltaGte2": 0,
+          "onAaEdge": 0,
+          "interiorUnderClip": 0,
+          "interiorOutsideClip": 0,
+          "interiorSamples": [],
+          "diff_sha256": "11283ef755895422e6f28b93f3d78cad7539891cf2893c9fdccefb923c5bf70b",
+          "delta_sha256": "0c3b31bf3c9f4adec11e2b736e84b254cf3c5b4a89b9bc96f72987c48d27c7fa",
+          "drawCalls": 78,
+          "highWaterBytes": 33177600
+        },
+        "paper-collage.build_tear": {
+          "recipe": "paper-collage.build_tear",
+          "frame": 90,
+          "changedChannels": 946,
+          "changedPixels": 577,
+          "fraction": 0.00011405285493827161,
+          "maxDelta": 1,
+          "deltaGte2": 0,
+          "onAaEdge": 570,
+          "interiorUnderClip": 7,
+          "interiorOutsideClip": 0,
+          "interiorSamples": [
+            {
+              "x": 585,
+              "y": 884,
+              "insideClip": true
+            },
+            {
+              "x": 511,
+              "y": 944,
+              "insideClip": true
+            },
+            {
+              "x": 505,
+              "y": 973,
+              "insideClip": true
+            },
+            {
+              "x": 574,
+              "y": 973,
+              "insideClip": true
+            },
+            {
+              "x": 580,
+              "y": 990,
+              "insideClip": true
+            },
+            {
+              "x": 488,
+              "y": 1021,
+              "insideClip": true
+            },
+            {
+              "x": 591,
+              "y": 1021,
+              "insideClip": true
+            }
+          ],
+          "diff_sha256": "5a2713e6accda1b560bf1195442eaf3f29b578c8f33d3a28710b98dca8be4f79",
+          "delta_sha256": "94d911f599f31136dc8fe8f86e9a81de0eb412de6a9f5737f07b768ae6012c91",
+          "drawCalls": 72,
+          "highWaterBytes": 33177600
+        },
+        "editorial.cutout_pop": {
+          "recipe": "editorial.cutout_pop",
+          "frame": 90,
+          "changedChannels": 955,
+          "changedPixels": 577,
+          "fraction": 0.00011513792438271605,
+          "maxDelta": 1,
+          "deltaGte2": 0,
+          "onAaEdge": 570,
+          "interiorUnderClip": 7,
+          "interiorOutsideClip": 0,
+          "interiorSamples": [
+            {
+              "x": 585,
+              "y": 884,
+              "insideClip": true
+            },
+            {
+              "x": 511,
+              "y": 944,
+              "insideClip": true
+            },
+            {
+              "x": 505,
+              "y": 973,
+              "insideClip": true
+            },
+            {
+              "x": 574,
+              "y": 973,
+              "insideClip": true
+            },
+            {
+              "x": 580,
+              "y": 990,
+              "insideClip": true
+            },
+            {
+              "x": 488,
+              "y": 1021,
+              "insideClip": true
+            },
+            {
+              "x": 591,
+              "y": 1021,
+              "insideClip": true
+            }
+          ],
+          "diff_sha256": "e21c50775ca586164e0242d26b9650487159aa25173af58b3d821b48d8e7a95f",
+          "delta_sha256": "01fab7ca8c91082b39855016aa9cb08d38212a6de3e25098e62967bd8e7ba901",
+          "drawCalls": 96,
+          "highWaterBytes": 33177600
+        },
+        "m1-proof-recipe": {
+          "recipe": "m1-proof-recipe",
+          "frame": 90,
+          "changedChannels": 0,
+          "changedPixels": 0,
+          "fraction": 0,
+          "maxDelta": 0,
+          "deltaGte2": 0,
+          "onAaEdge": 0,
+          "interiorUnderClip": 0,
+          "interiorOutsideClip": 0,
+          "interiorSamples": [],
+          "diff_sha256": "11283ef755895422e6f28b93f3d78cad7539891cf2893c9fdccefb923c5bf70b",
+          "delta_sha256": "0c3b31bf3c9f4adec11e2b736e84b254cf3c5b4a89b9bc96f72987c48d27c7fa",
+          "drawCalls": 78,
+          "highWaterBytes": 33177600
+        }
+      },
+      "opacity": [
+        {
+          "opacity": 1,
+          "stroke": 16,
+          "expected": [
+            0,
+            0,
+            255,
+            255
+          ],
+          "legacyPixel": [
+            0,
+            0,
+            255,
+            255
+          ],
+          "gpuPixel": [
+            0,
+            0,
+            255,
+            255
+          ],
+          "changedChannels": 0,
+          "maxDelta": 0,
+          "hash": "d16be546eecf134075be43466faf1b0f76d86bf19d9f66ac1b4ca1bd716dcdc4",
+          "graph": [
+            {
+              "index": 0,
+              "call": "clearRect",
+              "opacity": 1,
+              "blend": "source-over",
+              "clear": true,
+              "shader": "compat.composite.v1"
+            },
+            {
+              "index": 1,
+              "call": "fillRect",
+              "opacity": 1,
+              "blend": "source-over",
+              "clear": false,
+              "shader": "compat.composite.v1"
+            },
+            {
+              "index": 2,
+              "call": "fill",
+              "opacity": 1,
+              "blend": "source-over",
+              "clear": false,
+              "shader": "compat.composite.v1"
+            },
+            {
+              "index": 3,
+              "call": "stroke",
+              "opacity": 1,
+              "blend": "source-over",
+              "clear": false,
+              "shader": "compat.composite.v1"
+            }
+          ],
+          "highWaterBytes": 262144
+        },
+        {
+          "opacity": 0.5,
+          "stroke": 0,
+          "expected": [
+            128,
+            0,
+            0,
+            255
+          ],
+          "legacyPixel": [
+            128,
+            0,
+            0,
+            255
+          ],
+          "gpuPixel": [
+            128,
+            0,
+            0,
+            255
+          ],
+          "changedChannels": 0,
+          "maxDelta": 0,
+          "hash": "4d1234bf5b5b3ee81cefb46091d38b374be1107b94e661c72a1a69b118d1cf3c",
+          "graph": [
+            {
+              "index": 0,
+              "call": "clearRect",
+              "opacity": 1,
+              "blend": "source-over",
+              "clear": true,
+              "shader": "compat.composite.v1"
+            },
+            {
+              "index": 1,
+              "call": "fillRect",
+              "opacity": 1,
+              "blend": "source-over",
+              "clear": false,
+              "shader": "compat.composite.v1"
+            },
+            {
+              "index": 2,
+              "call": "fill",
+              "opacity": 0.5,
+              "blend": "source-over",
+              "clear": false,
+              "shader": "compat.composite.v1"
+            },
+            {
+              "index": 3,
+              "call": "stroke",
+              "opacity": 0.5,
+              "blend": "source-over",
+              "clear": false,
+              "shader": "compat.composite.v1"
+            }
+          ],
+          "highWaterBytes": 262144
+        },
+        {
+          "opacity": 0.5,
+          "stroke": 16,
+          "expected": [
+            64,
+            0,
+            128,
+            255
+          ],
+          "legacyPixel": [
+            64,
+            0,
+            128,
+            255
+          ],
+          "gpuPixel": [
+            64,
+            0,
+            128,
+            255
+          ],
+          "changedChannels": 0,
+          "maxDelta": 0,
+          "hash": "31ec2258b3505535a23b79cb76adb8182d4d818dc245e60d39afd00b6ab72ce1",
+          "graph": [
+            {
+              "index": 0,
+              "call": "clearRect",
+              "opacity": 1,
+              "blend": "source-over",
+              "clear": true,
+              "shader": "compat.composite.v1"
+            },
+            {
+              "index": 1,
+              "call": "fillRect",
+              "opacity": 1,
+              "blend": "source-over",
+              "clear": false,
+              "shader": "compat.composite.v1"
+            },
+            {
+              "index": 2,
+              "call": "fill",
+              "opacity": 0.5,
+              "blend": "source-over",
+              "clear": false,
+              "shader": "compat.composite.v1"
+            },
+            {
+              "index": 3,
+              "call": "stroke",
+              "opacity": 0.5,
+              "blend": "source-over",
+              "clear": false,
+              "shader": "compat.composite.v1"
+            }
+          ],
+          "highWaterBytes": 262144
+        },
+        {
+          "opacity": 0.25,
+          "stroke": 16,
+          "expected": [
+            48,
+            0,
+            64,
+            255
+          ],
+          "legacyPixel": [
+            48,
+            0,
+            64,
+            255
+          ],
+          "gpuPixel": [
+            48,
+            0,
+            64,
+            255
+          ],
+          "changedChannels": 0,
+          "maxDelta": 0,
+          "hash": "7b0925b7c963e2719186ce654db258d9a20c5c453ac18ce4cd73686785036530",
+          "graph": [
+            {
+              "index": 0,
+              "call": "clearRect",
+              "opacity": 1,
+              "blend": "source-over",
+              "clear": true,
+              "shader": "compat.composite.v1"
+            },
+            {
+              "index": 1,
+              "call": "fillRect",
+              "opacity": 1,
+              "blend": "source-over",
+              "clear": false,
+              "shader": "compat.composite.v1"
+            },
+            {
+              "index": 2,
+              "call": "fill",
+              "opacity": 0.25,
+              "blend": "source-over",
+              "clear": false,
+              "shader": "compat.composite.v1"
+            },
+            {
+              "index": 3,
+              "call": "stroke",
+              "opacity": 0.25,
+              "blend": "source-over",
+              "clear": false,
+              "shader": "compat.composite.v1"
+            }
+          ],
+          "highWaterBytes": 262144
+        }
+      ]
+    },
+    {
+      "repeat": 1,
+      "browser": "153.0.8010.12",
+      "recipes": {
+        "vox-doc.chart_explainer": {
+          "recipe": "vox-doc.chart_explainer",
+          "frame": 90,
+          "changedChannels": 0,
+          "changedPixels": 0,
+          "fraction": 0,
+          "maxDelta": 0,
+          "deltaGte2": 0,
+          "onAaEdge": 0,
+          "interiorUnderClip": 0,
+          "interiorOutsideClip": 0,
+          "interiorSamples": [],
+          "diff_sha256": "11283ef755895422e6f28b93f3d78cad7539891cf2893c9fdccefb923c5bf70b",
+          "delta_sha256": "0c3b31bf3c9f4adec11e2b736e84b254cf3c5b4a89b9bc96f72987c48d27c7fa",
+          "drawCalls": 78,
+          "highWaterBytes": 33177600
+        },
+        "paper-collage.build_tear": {
+          "recipe": "paper-collage.build_tear",
+          "frame": 90,
+          "changedChannels": 946,
+          "changedPixels": 577,
+          "fraction": 0.00011405285493827161,
+          "maxDelta": 1,
+          "deltaGte2": 0,
+          "onAaEdge": 570,
+          "interiorUnderClip": 7,
+          "interiorOutsideClip": 0,
+          "interiorSamples": [
+            {
+              "x": 585,
+              "y": 884,
+              "insideClip": true
+            },
+            {
+              "x": 511,
+              "y": 944,
+              "insideClip": true
+            },
+            {
+              "x": 505,
+              "y": 973,
+              "insideClip": true
+            },
+            {
+              "x": 574,
+              "y": 973,
+              "insideClip": true
+            },
+            {
+              "x": 580,
+              "y": 990,
+              "insideClip": true
+            },
+            {
+              "x": 488,
+              "y": 1021,
+              "insideClip": true
+            },
+            {
+              "x": 591,
+              "y": 1021,
+              "insideClip": true
+            }
+          ],
+          "diff_sha256": "5a2713e6accda1b560bf1195442eaf3f29b578c8f33d3a28710b98dca8be4f79",
+          "delta_sha256": "94d911f599f31136dc8fe8f86e9a81de0eb412de6a9f5737f07b768ae6012c91",
+          "drawCalls": 72,
+          "highWaterBytes": 33177600
+        },
+        "editorial.cutout_pop": {
+          "recipe": "editorial.cutout_pop",
+          "frame": 90,
+          "changedChannels": 955,
+          "changedPixels": 577,
+          "fraction": 0.00011513792438271605,
+          "maxDelta": 1,
+          "deltaGte2": 0,
+          "onAaEdge": 570,
+          "interiorUnderClip": 7,
+          "interiorOutsideClip": 0,
+          "interiorSamples": [
+            {
+              "x": 585,
+              "y": 884,
+              "insideClip": true
+            },
+            {
+              "x": 511,
+              "y": 944,
+              "insideClip": true
+            },
+            {
+              "x": 505,
+              "y": 973,
+              "insideClip": true
+            },
+            {
+              "x": 574,
+              "y": 973,
+              "insideClip": true
+            },
+            {
+              "x": 580,
+              "y": 990,
+              "insideClip": true
+            },
+            {
+              "x": 488,
+              "y": 1021,
+              "insideClip": true
+            },
+            {
+              "x": 591,
+              "y": 1021,
+              "insideClip": true
+            }
+          ],
+          "diff_sha256": "e21c50775ca586164e0242d26b9650487159aa25173af58b3d821b48d8e7a95f",
+          "delta_sha256": "01fab7ca8c91082b39855016aa9cb08d38212a6de3e25098e62967bd8e7ba901",
+          "drawCalls": 96,
+          "highWaterBytes": 33177600
+        },
+        "m1-proof-recipe": {
+          "recipe": "m1-proof-recipe",
+          "frame": 90,
+          "changedChannels": 0,
+          "changedPixels": 0,
+          "fraction": 0,
+          "maxDelta": 0,
+          "deltaGte2": 0,
+          "onAaEdge": 0,
+          "interiorUnderClip": 0,
+          "interiorOutsideClip": 0,
+          "interiorSamples": [],
+          "diff_sha256": "11283ef755895422e6f28b93f3d78cad7539891cf2893c9fdccefb923c5bf70b",
+          "delta_sha256": "0c3b31bf3c9f4adec11e2b736e84b254cf3c5b4a89b9bc96f72987c48d27c7fa",
+          "drawCalls": 78,
+          "highWaterBytes": 33177600
+        }
+      },
+      "opacity": [
+        {
+          "opacity": 1,
+          "stroke": 16,
+          "expected": [
+            0,
+            0,
+            255,
+            255
+          ],
+          "legacyPixel": [
+            0,
+            0,
+            255,
+            255
+          ],
+          "gpuPixel": [
+            0,
+            0,
+            255,
+            255
+          ],
+          "changedChannels": 0,
+          "maxDelta": 0,
+          "hash": "d16be546eecf134075be43466faf1b0f76d86bf19d9f66ac1b4ca1bd716dcdc4",
+          "graph": [
+            {
+              "index": 0,
+              "call": "clearRect",
+              "opacity": 1,
+              "blend": "source-over",
+              "clear": true,
+              "shader": "compat.composite.v1"
+            },
+            {
+              "index": 1,
+              "call": "fillRect",
+              "opacity": 1,
+              "blend": "source-over",
+              "clear": false,
+              "shader": "compat.composite.v1"
+            },
+            {
+              "index": 2,
+              "call": "fill",
+              "opacity": 1,
+              "blend": "source-over",
+              "clear": false,
+              "shader": "compat.composite.v1"
+            },
+            {
+              "index": 3,
+              "call": "stroke",
+              "opacity": 1,
+              "blend": "source-over",
+              "clear": false,
+              "shader": "compat.composite.v1"
+            }
+          ],
+          "highWaterBytes": 262144
+        },
+        {
+          "opacity": 0.5,
+          "stroke": 0,
+          "expected": [
+            128,
+            0,
+            0,
+            255
+          ],
+          "legacyPixel": [
+            128,
+            0,
+            0,
+            255
+          ],
+          "gpuPixel": [
+            128,
+            0,
+            0,
+            255
+          ],
+          "changedChannels": 0,
+          "maxDelta": 0,
+          "hash": "4d1234bf5b5b3ee81cefb46091d38b374be1107b94e661c72a1a69b118d1cf3c",
+          "graph": [
+            {
+              "index": 0,
+              "call": "clearRect",
+              "opacity": 1,
+              "blend": "source-over",
+              "clear": true,
+              "shader": "compat.composite.v1"
+            },
+            {
+              "index": 1,
+              "call": "fillRect",
+              "opacity": 1,
+              "blend": "source-over",
+              "clear": false,
+              "shader": "compat.composite.v1"
+            },
+            {
+              "index": 2,
+              "call": "fill",
+              "opacity": 0.5,
+              "blend": "source-over",
+              "clear": false,
+              "shader": "compat.composite.v1"
+            },
+            {
+              "index": 3,
+              "call": "stroke",
+              "opacity": 0.5,
+              "blend": "source-over",
+              "clear": false,
+              "shader": "compat.composite.v1"
+            }
+          ],
+          "highWaterBytes": 262144
+        },
+        {
+          "opacity": 0.5,
+          "stroke": 16,
+          "expected": [
+            64,
+            0,
+            128,
+            255
+          ],
+          "legacyPixel": [
+            64,
+            0,
+            128,
+            255
+          ],
+          "gpuPixel": [
+            64,
+            0,
+            128,
+            255
+          ],
+          "changedChannels": 0,
+          "maxDelta": 0,
+          "hash": "31ec2258b3505535a23b79cb76adb8182d4d818dc245e60d39afd00b6ab72ce1",
+          "graph": [
+            {
+              "index": 0,
+              "call": "clearRect",
+              "opacity": 1,
+              "blend": "source-over",
+              "clear": true,
+              "shader": "compat.composite.v1"
+            },
+            {
+              "index": 1,
+              "call": "fillRect",
+              "opacity": 1,
+              "blend": "source-over",
+              "clear": false,
+              "shader": "compat.composite.v1"
+            },
+            {
+              "index": 2,
+              "call": "fill",
+              "opacity": 0.5,
+              "blend": "source-over",
+              "clear": false,
+              "shader": "compat.composite.v1"
+            },
+            {
+              "index": 3,
+              "call": "stroke",
+              "opacity": 0.5,
+              "blend": "source-over",
+              "clear": false,
+              "shader": "compat.composite.v1"
+            }
+          ],
+          "highWaterBytes": 262144
+        },
+        {
+          "opacity": 0.25,
+          "stroke": 16,
+          "expected": [
+            48,
+            0,
+            64,
+            255
+          ],
+          "legacyPixel": [
+            48,
+            0,
+            64,
+            255
+          ],
+          "gpuPixel": [
+            48,
+            0,
+            64,
+            255
+          ],
+          "changedChannels": 0,
+          "maxDelta": 0,
+          "hash": "7b0925b7c963e2719186ce654db258d9a20c5c453ac18ce4cd73686785036530",
+          "graph": [
+            {
+              "index": 0,
+              "call": "clearRect",
+              "opacity": 1,
+              "blend": "source-over",
+              "clear": true,
+              "shader": "compat.composite.v1"
+            },
+            {
+              "index": 1,
+              "call": "fillRect",
+              "opacity": 1,
+              "blend": "source-over",
+              "clear": false,
+              "shader": "compat.composite.v1"
+            },
+            {
+              "index": 2,
+              "call": "fill",
+              "opacity": 0.25,
+              "blend": "source-over",
+              "clear": false,
+              "shader": "compat.composite.v1"
+            },
+            {
+              "index": 3,
+              "call": "stroke",
+              "opacity": 0.25,
+              "blend": "source-over",
+              "clear": false,
+              "shader": "compat.composite.v1"
+            }
+          ],
+          "highWaterBytes": 262144
+        }
+      ]
+    },
+    {
+      "repeat": 2,
+      "browser": "153.0.8010.12",
+      "recipes": {
+        "vox-doc.chart_explainer": {
+          "recipe": "vox-doc.chart_explainer",
+          "frame": 90,
+          "changedChannels": 0,
+          "changedPixels": 0,
+          "fraction": 0,
+          "maxDelta": 0,
+          "deltaGte2": 0,
+          "onAaEdge": 0,
+          "interiorUnderClip": 0,
+          "interiorOutsideClip": 0,
+          "interiorSamples": [],
+          "diff_sha256": "11283ef755895422e6f28b93f3d78cad7539891cf2893c9fdccefb923c5bf70b",
+          "delta_sha256": "0c3b31bf3c9f4adec11e2b736e84b254cf3c5b4a89b9bc96f72987c48d27c7fa",
+          "drawCalls": 78,
+          "highWaterBytes": 33177600
+        },
+        "paper-collage.build_tear": {
+          "recipe": "paper-collage.build_tear",
+          "frame": 90,
+          "changedChannels": 946,
+          "changedPixels": 577,
+          "fraction": 0.00011405285493827161,
+          "maxDelta": 1,
+          "deltaGte2": 0,
+          "onAaEdge": 570,
+          "interiorUnderClip": 7,
+          "interiorOutsideClip": 0,
+          "interiorSamples": [
+            {
+              "x": 585,
+              "y": 884,
+              "insideClip": true
+            },
+            {
+              "x": 511,
+              "y": 944,
+              "insideClip": true
+            },
+            {
+              "x": 505,
+              "y": 973,
+              "insideClip": true
+            },
+            {
+              "x": 574,
+              "y": 973,
+              "insideClip": true
+            },
+            {
+              "x": 580,
+              "y": 990,
+              "insideClip": true
+            },
+            {
+              "x": 488,
+              "y": 1021,
+              "insideClip": true
+            },
+            {
+              "x": 591,
+              "y": 1021,
+              "insideClip": true
+            }
+          ],
+          "diff_sha256": "5a2713e6accda1b560bf1195442eaf3f29b578c8f33d3a28710b98dca8be4f79",
+          "delta_sha256": "94d911f599f31136dc8fe8f86e9a81de0eb412de6a9f5737f07b768ae6012c91",
+          "drawCalls": 72,
+          "highWaterBytes": 33177600
+        },
+        "editorial.cutout_pop": {
+          "recipe": "editorial.cutout_pop",
+          "frame": 90,
+          "changedChannels": 955,
+          "changedPixels": 577,
+          "fraction": 0.00011513792438271605,
+          "maxDelta": 1,
+          "deltaGte2": 0,
+          "onAaEdge": 570,
+          "interiorUnderClip": 7,
+          "interiorOutsideClip": 0,
+          "interiorSamples": [
+            {
+              "x": 585,
+              "y": 884,
+              "insideClip": true
+            },
+            {
+              "x": 511,
+              "y": 944,
+              "insideClip": true
+            },
+            {
+              "x": 505,
+              "y": 973,
+              "insideClip": true
+            },
+            {
+              "x": 574,
+              "y": 973,
+              "insideClip": true
+            },
+            {
+              "x": 580,
+              "y": 990,
+              "insideClip": true
+            },
+            {
+              "x": 488,
+              "y": 1021,
+              "insideClip": true
+            },
+            {
+              "x": 591,
+              "y": 1021,
+              "insideClip": true
+            }
+          ],
+          "diff_sha256": "e21c50775ca586164e0242d26b9650487159aa25173af58b3d821b48d8e7a95f",
+          "delta_sha256": "01fab7ca8c91082b39855016aa9cb08d38212a6de3e25098e62967bd8e7ba901",
+          "drawCalls": 96,
+          "highWaterBytes": 33177600
+        },
+        "m1-proof-recipe": {
+          "recipe": "m1-proof-recipe",
+          "frame": 90,
+          "changedChannels": 0,
+          "changedPixels": 0,
+          "fraction": 0,
+          "maxDelta": 0,
+          "deltaGte2": 0,
+          "onAaEdge": 0,
+          "interiorUnderClip": 0,
+          "interiorOutsideClip": 0,
+          "interiorSamples": [],
+          "diff_sha256": "11283ef755895422e6f28b93f3d78cad7539891cf2893c9fdccefb923c5bf70b",
+          "delta_sha256": "0c3b31bf3c9f4adec11e2b736e84b254cf3c5b4a89b9bc96f72987c48d27c7fa",
+          "drawCalls": 78,
+          "highWaterBytes": 33177600
+        }
+      },
+      "opacity": [
+        {
+          "opacity": 1,
+          "stroke": 16,
+          "expected": [
+            0,
+            0,
+            255,
+            255
+          ],
+          "legacyPixel": [
+            0,
+            0,
+            255,
+            255
+          ],
+          "gpuPixel": [
+            0,
+            0,
+            255,
+            255
+          ],
+          "changedChannels": 0,
+          "maxDelta": 0,
+          "hash": "d16be546eecf134075be43466faf1b0f76d86bf19d9f66ac1b4ca1bd716dcdc4",
+          "graph": [
+            {
+              "index": 0,
+              "call": "clearRect",
+              "opacity": 1,
+              "blend": "source-over",
+              "clear": true,
+              "shader": "compat.composite.v1"
+            },
+            {
+              "index": 1,
+              "call": "fillRect",
+              "opacity": 1,
+              "blend": "source-over",
+              "clear": false,
+              "shader": "compat.composite.v1"
+            },
+            {
+              "index": 2,
+              "call": "fill",
+              "opacity": 1,
+              "blend": "source-over",
+              "clear": false,
+              "shader": "compat.composite.v1"
+            },
+            {
+              "index": 3,
+              "call": "stroke",
+              "opacity": 1,
+              "blend": "source-over",
+              "clear": false,
+              "shader": "compat.composite.v1"
+            }
+          ],
+          "highWaterBytes": 262144
+        },
+        {
+          "opacity": 0.5,
+          "stroke": 0,
+          "expected": [
+            128,
+            0,
+            0,
+            255
+          ],
+          "legacyPixel": [
+            128,
+            0,
+            0,
+            255
+          ],
+          "gpuPixel": [
+            128,
+            0,
+            0,
+            255
+          ],
+          "changedChannels": 0,
+          "maxDelta": 0,
+          "hash": "4d1234bf5b5b3ee81cefb46091d38b374be1107b94e661c72a1a69b118d1cf3c",
+          "graph": [
+            {
+              "index": 0,
+              "call": "clearRect",
+              "opacity": 1,
+              "blend": "source-over",
+              "clear": true,
+              "shader": "compat.composite.v1"
+            },
+            {
+              "index": 1,
+              "call": "fillRect",
+              "opacity": 1,
+              "blend": "source-over",
+              "clear": false,
+              "shader": "compat.composite.v1"
+            },
+            {
+              "index": 2,
+              "call": "fill",
+              "opacity": 0.5,
+              "blend": "source-over",
+              "clear": false,
+              "shader": "compat.composite.v1"
+            },
+            {
+              "index": 3,
+              "call": "stroke",
+              "opacity": 0.5,
+              "blend": "source-over",
+              "clear": false,
+              "shader": "compat.composite.v1"
+            }
+          ],
+          "highWaterBytes": 262144
+        },
+        {
+          "opacity": 0.5,
+          "stroke": 16,
+          "expected": [
+            64,
+            0,
+            128,
+            255
+          ],
+          "legacyPixel": [
+            64,
+            0,
+            128,
+            255
+          ],
+          "gpuPixel": [
+            64,
+            0,
+            128,
+            255
+          ],
+          "changedChannels": 0,
+          "maxDelta": 0,
+          "hash": "31ec2258b3505535a23b79cb76adb8182d4d818dc245e60d39afd00b6ab72ce1",
+          "graph": [
+            {
+              "index": 0,
+              "call": "clearRect",
+              "opacity": 1,
+              "blend": "source-over",
+              "clear": true,
+              "shader": "compat.composite.v1"
+            },
+            {
+              "index": 1,
+              "call": "fillRect",
+              "opacity": 1,
+              "blend": "source-over",
+              "clear": false,
+              "shader": "compat.composite.v1"
+            },
+            {
+              "index": 2,
+              "call": "fill",
+              "opacity": 0.5,
+              "blend": "source-over",
+              "clear": false,
+              "shader": "compat.composite.v1"
+            },
+            {
+              "index": 3,
+              "call": "stroke",
+              "opacity": 0.5,
+              "blend": "source-over",
+              "clear": false,
+              "shader": "compat.composite.v1"
+            }
+          ],
+          "highWaterBytes": 262144
+        },
+        {
+          "opacity": 0.25,
+          "stroke": 16,
+          "expected": [
+            48,
+            0,
+            64,
+            255
+          ],
+          "legacyPixel": [
+            48,
+            0,
+            64,
+            255
+          ],
+          "gpuPixel": [
+            48,
+            0,
+            64,
+            255
+          ],
+          "changedChannels": 0,
+          "maxDelta": 0,
+          "hash": "7b0925b7c963e2719186ce654db258d9a20c5c453ac18ce4cd73686785036530",
+          "graph": [
+            {
+              "index": 0,
+              "call": "clearRect",
+              "opacity": 1,
+              "blend": "source-over",
+              "clear": true,
+              "shader": "compat.composite.v1"
+            },
+            {
+              "index": 1,
+              "call": "fillRect",
+              "opacity": 1,
+              "blend": "source-over",
+              "clear": false,
+              "shader": "compat.composite.v1"
+            },
+            {
+              "index": 2,
+              "call": "fill",
+              "opacity": 0.25,
+              "blend": "source-over",
+              "clear": false,
+              "shader": "compat.composite.v1"
+            },
+            {
+              "index": 3,
+              "call": "stroke",
+              "opacity": 0.25,
+              "blend": "source-over",
+              "clear": false,
+              "shader": "compat.composite.v1"
+            }
+          ],
+          "highWaterBytes": 262144
+        }
+      ]
+    },
+    {
+      "repeat": 3,
+      "browser": "153.0.8010.12",
+      "recipes": {
+        "vox-doc.chart_explainer": {
+          "recipe": "vox-doc.chart_explainer",
+          "frame": 90,
+          "changedChannels": 0,
+          "changedPixels": 0,
+          "fraction": 0,
+          "maxDelta": 0,
+          "deltaGte2": 0,
+          "onAaEdge": 0,
+          "interiorUnderClip": 0,
+          "interiorOutsideClip": 0,
+          "interiorSamples": [],
+          "diff_sha256": "11283ef755895422e6f28b93f3d78cad7539891cf2893c9fdccefb923c5bf70b",
+          "delta_sha256": "0c3b31bf3c9f4adec11e2b736e84b254cf3c5b4a89b9bc96f72987c48d27c7fa",
+          "drawCalls": 78,
+          "highWaterBytes": 33177600
+        },
+        "paper-collage.build_tear": {
+          "recipe": "paper-collage.build_tear",
+          "frame": 90,
+          "changedChannels": 946,
+          "changedPixels": 577,
+          "fraction": 0.00011405285493827161,
+          "maxDelta": 1,
+          "deltaGte2": 0,
+          "onAaEdge": 570,
+          "interiorUnderClip": 7,
+          "interiorOutsideClip": 0,
+          "interiorSamples": [
+            {
+              "x": 585,
+              "y": 884,
+              "insideClip": true
+            },
+            {
+              "x": 511,
+              "y": 944,
+              "insideClip": true
+            },
+            {
+              "x": 505,
+              "y": 973,
+              "insideClip": true
+            },
+            {
+              "x": 574,
+              "y": 973,
+              "insideClip": true
+            },
+            {
+              "x": 580,
+              "y": 990,
+              "insideClip": true
+            },
+            {
+              "x": 488,
+              "y": 1021,
+              "insideClip": true
+            },
+            {
+              "x": 591,
+              "y": 1021,
+              "insideClip": true
+            }
+          ],
+          "diff_sha256": "5a2713e6accda1b560bf1195442eaf3f29b578c8f33d3a28710b98dca8be4f79",
+          "delta_sha256": "94d911f599f31136dc8fe8f86e9a81de0eb412de6a9f5737f07b768ae6012c91",
+          "drawCalls": 72,
+          "highWaterBytes": 33177600
+        },
+        "editorial.cutout_pop": {
+          "recipe": "editorial.cutout_pop",
+          "frame": 90,
+          "changedChannels": 955,
+          "changedPixels": 577,
+          "fraction": 0.00011513792438271605,
+          "maxDelta": 1,
+          "deltaGte2": 0,
+          "onAaEdge": 570,
+          "interiorUnderClip": 7,
+          "interiorOutsideClip": 0,
+          "interiorSamples": [
+            {
+              "x": 585,
+              "y": 884,
+              "insideClip": true
+            },
+            {
+              "x": 511,
+              "y": 944,
+              "insideClip": true
+            },
+            {
+              "x": 505,
+              "y": 973,
+              "insideClip": true
+            },
+            {
+              "x": 574,
+              "y": 973,
+              "insideClip": true
+            },
+            {
+              "x": 580,
+              "y": 990,
+              "insideClip": true
+            },
+            {
+              "x": 488,
+              "y": 1021,
+              "insideClip": true
+            },
+            {
+              "x": 591,
+              "y": 1021,
+              "insideClip": true
+            }
+          ],
+          "diff_sha256": "e21c50775ca586164e0242d26b9650487159aa25173af58b3d821b48d8e7a95f",
+          "delta_sha256": "01fab7ca8c91082b39855016aa9cb08d38212a6de3e25098e62967bd8e7ba901",
+          "drawCalls": 96,
+          "highWaterBytes": 33177600
+        },
+        "m1-proof-recipe": {
+          "recipe": "m1-proof-recipe",
+          "frame": 90,
+          "changedChannels": 0,
+          "changedPixels": 0,
+          "fraction": 0,
+          "maxDelta": 0,
+          "deltaGte2": 0,
+          "onAaEdge": 0,
+          "interiorUnderClip": 0,
+          "interiorOutsideClip": 0,
+          "interiorSamples": [],
+          "diff_sha256": "11283ef755895422e6f28b93f3d78cad7539891cf2893c9fdccefb923c5bf70b",
+          "delta_sha256": "0c3b31bf3c9f4adec11e2b736e84b254cf3c5b4a89b9bc96f72987c48d27c7fa",
+          "drawCalls": 78,
+          "highWaterBytes": 33177600
+        }
+      },
+      "opacity": [
+        {
+          "opacity": 1,
+          "stroke": 16,
+          "expected": [
+            0,
+            0,
+            255,
+            255
+          ],
+          "legacyPixel": [
+            0,
+            0,
+            255,
+            255
+          ],
+          "gpuPixel": [
+            0,
+            0,
+            255,
+            255
+          ],
+          "changedChannels": 0,
+          "maxDelta": 0,
+          "hash": "d16be546eecf134075be43466faf1b0f76d86bf19d9f66ac1b4ca1bd716dcdc4",
+          "graph": [
+            {
+              "index": 0,
+              "call": "clearRect",
+              "opacity": 1,
+              "blend": "source-over",
+              "clear": true,
+              "shader": "compat.composite.v1"
+            },
+            {
+              "index": 1,
+              "call": "fillRect",
+              "opacity": 1,
+              "blend": "source-over",
+              "clear": false,
+              "shader": "compat.composite.v1"
+            },
+            {
+              "index": 2,
+              "call": "fill",
+              "opacity": 1,
+              "blend": "source-over",
+              "clear": false,
+              "shader": "compat.composite.v1"
+            },
+            {
+              "index": 3,
+              "call": "stroke",
+              "opacity": 1,
+              "blend": "source-over",
+              "clear": false,
+              "shader": "compat.composite.v1"
+            }
+          ],
+          "highWaterBytes": 262144
+        },
+        {
+          "opacity": 0.5,
+          "stroke": 0,
+          "expected": [
+            128,
+            0,
+            0,
+            255
+          ],
+          "legacyPixel": [
+            128,
+            0,
+            0,
+            255
+          ],
+          "gpuPixel": [
+            128,
+            0,
+            0,
+            255
+          ],
+          "changedChannels": 0,
+          "maxDelta": 0,
+          "hash": "4d1234bf5b5b3ee81cefb46091d38b374be1107b94e661c72a1a69b118d1cf3c",
+          "graph": [
+            {
+              "index": 0,
+              "call": "clearRect",
+              "opacity": 1,
+              "blend": "source-over",
+              "clear": true,
+              "shader": "compat.composite.v1"
+            },
+            {
+              "index": 1,
+              "call": "fillRect",
+              "opacity": 1,
+              "blend": "source-over",
+              "clear": false,
+              "shader": "compat.composite.v1"
+            },
+            {
+              "index": 2,
+              "call": "fill",
+              "opacity": 0.5,
+              "blend": "source-over",
+              "clear": false,
+              "shader": "compat.composite.v1"
+            },
+            {
+              "index": 3,
+              "call": "stroke",
+              "opacity": 0.5,
+              "blend": "source-over",
+              "clear": false,
+              "shader": "compat.composite.v1"
+            }
+          ],
+          "highWaterBytes": 262144
+        },
+        {
+          "opacity": 0.5,
+          "stroke": 16,
+          "expected": [
+            64,
+            0,
+            128,
+            255
+          ],
+          "legacyPixel": [
+            64,
+            0,
+            128,
+            255
+          ],
+          "gpuPixel": [
+            64,
+            0,
+            128,
+            255
+          ],
+          "changedChannels": 0,
+          "maxDelta": 0,
+          "hash": "31ec2258b3505535a23b79cb76adb8182d4d818dc245e60d39afd00b6ab72ce1",
+          "graph": [
+            {
+              "index": 0,
+              "call": "clearRect",
+              "opacity": 1,
+              "blend": "source-over",
+              "clear": true,
+              "shader": "compat.composite.v1"
+            },
+            {
+              "index": 1,
+              "call": "fillRect",
+              "opacity": 1,
+              "blend": "source-over",
+              "clear": false,
+              "shader": "compat.composite.v1"
+            },
+            {
+              "index": 2,
+              "call": "fill",
+              "opacity": 0.5,
+              "blend": "source-over",
+              "clear": false,
+              "shader": "compat.composite.v1"
+            },
+            {
+              "index": 3,
+              "call": "stroke",
+              "opacity": 0.5,
+              "blend": "source-over",
+              "clear": false,
+              "shader": "compat.composite.v1"
+            }
+          ],
+          "highWaterBytes": 262144
+        },
+        {
+          "opacity": 0.25,
+          "stroke": 16,
+          "expected": [
+            48,
+            0,
+            64,
+            255
+          ],
+          "legacyPixel": [
+            48,
+            0,
+            64,
+            255
+          ],
+          "gpuPixel": [
+            48,
+            0,
+            64,
+            255
+          ],
+          "changedChannels": 0,
+          "maxDelta": 0,
+          "hash": "7b0925b7c963e2719186ce654db258d9a20c5c453ac18ce4cd73686785036530",
+          "graph": [
+            {
+              "index": 0,
+              "call": "clearRect",
+              "opacity": 1,
+              "blend": "source-over",
+              "clear": true,
+              "shader": "compat.composite.v1"
+            },
+            {
+              "index": 1,
+              "call": "fillRect",
+              "opacity": 1,
+              "blend": "source-over",
+              "clear": false,
+              "shader": "compat.composite.v1"
+            },
+            {
+              "index": 2,
+              "call": "fill",
+              "opacity": 0.25,
+              "blend": "source-over",
+              "clear": false,
+              "shader": "compat.composite.v1"
+            },
+            {
+              "index": 3,
+              "call": "stroke",
+              "opacity": 0.25,
+              "blend": "source-over",
+              "clear": false,
+              "shader": "compat.composite.v1"
+            }
+          ],
+          "highWaterBytes": 262144
+        }
+      ]
+    },
+    {
+      "repeat": 4,
+      "browser": "153.0.8010.12",
+      "recipes": {
+        "vox-doc.chart_explainer": {
+          "recipe": "vox-doc.chart_explainer",
+          "frame": 90,
+          "changedChannels": 0,
+          "changedPixels": 0,
+          "fraction": 0,
+          "maxDelta": 0,
+          "deltaGte2": 0,
+          "onAaEdge": 0,
+          "interiorUnderClip": 0,
+          "interiorOutsideClip": 0,
+          "interiorSamples": [],
+          "diff_sha256": "11283ef755895422e6f28b93f3d78cad7539891cf2893c9fdccefb923c5bf70b",
+          "delta_sha256": "0c3b31bf3c9f4adec11e2b736e84b254cf3c5b4a89b9bc96f72987c48d27c7fa",
+          "drawCalls": 78,
+          "highWaterBytes": 33177600
+        },
+        "paper-collage.build_tear": {
+          "recipe": "paper-collage.build_tear",
+          "frame": 90,
+          "changedChannels": 946,
+          "changedPixels": 577,
+          "fraction": 0.00011405285493827161,
+          "maxDelta": 1,
+          "deltaGte2": 0,
+          "onAaEdge": 570,
+          "interiorUnderClip": 7,
+          "interiorOutsideClip": 0,
+          "interiorSamples": [
+            {
+              "x": 585,
+              "y": 884,
+              "insideClip": true
+            },
+            {
+              "x": 511,
+              "y": 944,
+              "insideClip": true
+            },
+            {
+              "x": 505,
+              "y": 973,
+              "insideClip": true
+            },
+            {
+              "x": 574,
+              "y": 973,
+              "insideClip": true
+            },
+            {
+              "x": 580,
+              "y": 990,
+              "insideClip": true
+            },
+            {
+              "x": 488,
+              "y": 1021,
+              "insideClip": true
+            },
+            {
+              "x": 591,
+              "y": 1021,
+              "insideClip": true
+            }
+          ],
+          "diff_sha256": "5a2713e6accda1b560bf1195442eaf3f29b578c8f33d3a28710b98dca8be4f79",
+          "delta_sha256": "94d911f599f31136dc8fe8f86e9a81de0eb412de6a9f5737f07b768ae6012c91",
+          "drawCalls": 72,
+          "highWaterBytes": 33177600
+        },
+        "editorial.cutout_pop": {
+          "recipe": "editorial.cutout_pop",
+          "frame": 90,
+          "changedChannels": 955,
+          "changedPixels": 577,
+          "fraction": 0.00011513792438271605,
+          "maxDelta": 1,
+          "deltaGte2": 0,
+          "onAaEdge": 570,
+          "interiorUnderClip": 7,
+          "interiorOutsideClip": 0,
+          "interiorSamples": [
+            {
+              "x": 585,
+              "y": 884,
+              "insideClip": true
+            },
+            {
+              "x": 511,
+              "y": 944,
+              "insideClip": true
+            },
+            {
+              "x": 505,
+              "y": 973,
+              "insideClip": true
+            },
+            {
+              "x": 574,
+              "y": 973,
+              "insideClip": true
+            },
+            {
+              "x": 580,
+              "y": 990,
+              "insideClip": true
+            },
+            {
+              "x": 488,
+              "y": 1021,
+              "insideClip": true
+            },
+            {
+              "x": 591,
+              "y": 1021,
+              "insideClip": true
+            }
+          ],
+          "diff_sha256": "e21c50775ca586164e0242d26b9650487159aa25173af58b3d821b48d8e7a95f",
+          "delta_sha256": "01fab7ca8c91082b39855016aa9cb08d38212a6de3e25098e62967bd8e7ba901",
+          "drawCalls": 96,
+          "highWaterBytes": 33177600
+        },
+        "m1-proof-recipe": {
+          "recipe": "m1-proof-recipe",
+          "frame": 90,
+          "changedChannels": 0,
+          "changedPixels": 0,
+          "fraction": 0,
+          "maxDelta": 0,
+          "deltaGte2": 0,
+          "onAaEdge": 0,
+          "interiorUnderClip": 0,
+          "interiorOutsideClip": 0,
+          "interiorSamples": [],
+          "diff_sha256": "11283ef755895422e6f28b93f3d78cad7539891cf2893c9fdccefb923c5bf70b",
+          "delta_sha256": "0c3b31bf3c9f4adec11e2b736e84b254cf3c5b4a89b9bc96f72987c48d27c7fa",
+          "drawCalls": 78,
+          "highWaterBytes": 33177600
+        }
+      },
+      "opacity": [
+        {
+          "opacity": 1,
+          "stroke": 16,
+          "expected": [
+            0,
+            0,
+            255,
+            255
+          ],
+          "legacyPixel": [
+            0,
+            0,
+            255,
+            255
+          ],
+          "gpuPixel": [
+            0,
+            0,
+            255,
+            255
+          ],
+          "changedChannels": 0,
+          "maxDelta": 0,
+          "hash": "d16be546eecf134075be43466faf1b0f76d86bf19d9f66ac1b4ca1bd716dcdc4",
+          "graph": [
+            {
+              "index": 0,
+              "call": "clearRect",
+              "opacity": 1,
+              "blend": "source-over",
+              "clear": true,
+              "shader": "compat.composite.v1"
+            },
+            {
+              "index": 1,
+              "call": "fillRect",
+              "opacity": 1,
+              "blend": "source-over",
+              "clear": false,
+              "shader": "compat.composite.v1"
+            },
+            {
+              "index": 2,
+              "call": "fill",
+              "opacity": 1,
+              "blend": "source-over",
+              "clear": false,
+              "shader": "compat.composite.v1"
+            },
+            {
+              "index": 3,
+              "call": "stroke",
+              "opacity": 1,
+              "blend": "source-over",
+              "clear": false,
+              "shader": "compat.composite.v1"
+            }
+          ],
+          "highWaterBytes": 262144
+        },
+        {
+          "opacity": 0.5,
+          "stroke": 0,
+          "expected": [
+            128,
+            0,
+            0,
+            255
+          ],
+          "legacyPixel": [
+            128,
+            0,
+            0,
+            255
+          ],
+          "gpuPixel": [
+            128,
+            0,
+            0,
+            255
+          ],
+          "changedChannels": 0,
+          "maxDelta": 0,
+          "hash": "4d1234bf5b5b3ee81cefb46091d38b374be1107b94e661c72a1a69b118d1cf3c",
+          "graph": [
+            {
+              "index": 0,
+              "call": "clearRect",
+              "opacity": 1,
+              "blend": "source-over",
+              "clear": true,
+              "shader": "compat.composite.v1"
+            },
+            {
+              "index": 1,
+              "call": "fillRect",
+              "opacity": 1,
+              "blend": "source-over",
+              "clear": false,
+              "shader": "compat.composite.v1"
+            },
+            {
+              "index": 2,
+              "call": "fill",
+              "opacity": 0.5,
+              "blend": "source-over",
+              "clear": false,
+              "shader": "compat.composite.v1"
+            },
+            {
+              "index": 3,
+              "call": "stroke",
+              "opacity": 0.5,
+              "blend": "source-over",
+              "clear": false,
+              "shader": "compat.composite.v1"
+            }
+          ],
+          "highWaterBytes": 262144
+        },
+        {
+          "opacity": 0.5,
+          "stroke": 16,
+          "expected": [
+            64,
+            0,
+            128,
+            255
+          ],
+          "legacyPixel": [
+            64,
+            0,
+            128,
+            255
+          ],
+          "gpuPixel": [
+            64,
+            0,
+            128,
+            255
+          ],
+          "changedChannels": 0,
+          "maxDelta": 0,
+          "hash": "31ec2258b3505535a23b79cb76adb8182d4d818dc245e60d39afd00b6ab72ce1",
+          "graph": [
+            {
+              "index": 0,
+              "call": "clearRect",
+              "opacity": 1,
+              "blend": "source-over",
+              "clear": true,
+              "shader": "compat.composite.v1"
+            },
+            {
+              "index": 1,
+              "call": "fillRect",
+              "opacity": 1,
+              "blend": "source-over",
+              "clear": false,
+              "shader": "compat.composite.v1"
+            },
+            {
+              "index": 2,
+              "call": "fill",
+              "opacity": 0.5,
+              "blend": "source-over",
+              "clear": false,
+              "shader": "compat.composite.v1"
+            },
+            {
+              "index": 3,
+              "call": "stroke",
+              "opacity": 0.5,
+              "blend": "source-over",
+              "clear": false,
+              "shader": "compat.composite.v1"
+            }
+          ],
+          "highWaterBytes": 262144
+        },
+        {
+          "opacity": 0.25,
+          "stroke": 16,
+          "expected": [
+            48,
+            0,
+            64,
+            255
+          ],
+          "legacyPixel": [
+            48,
+            0,
+            64,
+            255
+          ],
+          "gpuPixel": [
+            48,
+            0,
+            64,
+            255
+          ],
+          "changedChannels": 0,
+          "maxDelta": 0,
+          "hash": "7b0925b7c963e2719186ce654db258d9a20c5c453ac18ce4cd73686785036530",
+          "graph": [
+            {
+              "index": 0,
+              "call": "clearRect",
+              "opacity": 1,
+              "blend": "source-over",
+              "clear": true,
+              "shader": "compat.composite.v1"
+            },
+            {
+              "index": 1,
+              "call": "fillRect",
+              "opacity": 1,
+              "blend": "source-over",
+              "clear": false,
+              "shader": "compat.composite.v1"
+            },
+            {
+              "index": 2,
+              "call": "fill",
+              "opacity": 0.25,
+              "blend": "source-over",
+              "clear": false,
+              "shader": "compat.composite.v1"
+            },
+            {
+              "index": 3,
+              "call": "stroke",
+              "opacity": 0.25,
+              "blend": "source-over",
+              "clear": false,
+              "shader": "compat.composite.v1"
+            }
+          ],
+          "highWaterBytes": 262144
+        }
+      ]
+    }
+  ]
+}

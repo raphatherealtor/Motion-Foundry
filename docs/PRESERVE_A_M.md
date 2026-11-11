@@ -2,7 +2,7 @@
 
 These are the behaviors the FM2 GPU compat path must preserve from the pinned legacy renderer
 (blank-canvas-starter `db36db39821f46ec4b7057bb431ffb9e82473c33`). Each item names its source and the
-check that holds it. This file is the reference for every FM2 parity review.
+check that covers it. Requirements are not blanket claims that every future GPU integration has been tested. This file is the reference for FM2 parity review.
 
 **A. Draw order.** Every legacy Canvas destination call (fill, stroke, fillRect, strokeRect, fillText,
 strokeText, drawImage) executes as its own ordered GPU composite. Pass order is never derived from hash
@@ -13,7 +13,7 @@ during GPU blending. Overlapping fill+stroke at opacity 0.5 stays `[64,0,128]`. 
 `tests/golden-gpu/opacity.ts`; exact (zero tolerance).
 
 **C. Per-draw blend.** The original destination blend (`globalCompositeOperation`) is recorded per draw
-and performed by the GPU, including the full separable and non-separable set. — `shaders/registry.ts`
+and performed by the GPU, including the full separable and non-separable set. — `src/motion/render/gpu/shaders/registry.ts`
 (`compat.composite.v1`); oracle parity per recipe.
 
 **D. Legacy isolation boundaries only.** Offscreen surfaces exist exactly where legacy creates them:
@@ -42,10 +42,10 @@ spec §2; enforced by entry-point wiring, not by parity tests.
 
 **J. Timing and identity.** FPS stays 30/1 (fps edits are `FORBIDDEN_OP`); frames are integers with exact
 rational conversion; `shadowSoftness` runs 0–1; v1/v2 schemas unchanged; `graph_sha256` and render IDs are
-computed exactly as M0/M1 define. — kickoff "Reuse" list; Foundry suite.
+retained as requirements. This classification gate does not add new GPU graph-identity verification. — kickoff "Reuse" list; Foundry suite.
 
 **K. Preview/export/worker byte-identity.** The three modes are byte-identical under pinned SwiftShader,
-with 5 fresh-launch repeats identical on every recipe fixture. — spec §5.2 (M1 rule unchanged).
+with 5 fresh-launch repeats identical on every recipe fixture. — spec §5.2 (M1 rule unchanged). Historical M1 mode parity and FM2.0 host probes retain their scope; the current FM2.1 classification gate tests HTMLCanvas output and does not claim new product GPU mode wiring.
 
 **L. Goldens.** Existing product goldens and committed baselines are never edited or regenerated. A
 difference from a committed baseline is a recorded finding, never a silent update. — spec §2; golden run
@@ -54,7 +54,11 @@ difference from a committed baseline is a recorded finding, never a silent updat
 **M. Capture-side fidelity.** Each paint is rasterized with its original transform, clip, opacity,
 shadows and filter on an 8-bit scratch — the same quantization domain as legacy — and the deviation from
 legacy is confined to the AA/clip-mask quantization artifacts documented in `FM2_1_REPORT.md`
-(max Δ≤1, ≤0.02% of channels, deterministic). — `FM2_1_REPORT.md` known deviation; parity gate.
+(max Δ≤1, ≤0.02% of channels; per torn-paper recipe ≤568 reviewed capture-edge px and ≤9 interior-under-clip px; no interior diff outside a clip; fixed position and signed-delta hashes across five launches). — `FM2_1_REPORT.md` known deviation; parity gate.
 
 **Future nests.** New nested compositions will be isolated precomps (their own offscreen surface with a
 single destination draw). That is a forward policy for new documents; it changes nothing above.
+
+## Current closeout gate
+
+The 2026-11-11 independent geometry audit corrects the previous 568/9 labels to **570 AA-edge / 7 interior-under-clip**, with the same 577 pixels and identical position/delta maps. The approved 568-edge maximum is still enforced, so item M currently fails that bound. No unreviewed exception is accepted; FM2.1 is blocked and FM2.2 has not started. See FM2_1_REPORT.md.
