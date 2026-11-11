@@ -1,0 +1,699 @@
+{
+  "phase": "fm22-suite",
+  "revision": "42c476cd9d934e30d47393dcb3b2c9c6cb65c6d4",
+  "requested": 20,
+  "completed": 20,
+  "passed": 19,
+  "repeatTestFailures": 1,
+  "observedFailureRate": 0.05,
+  "harness": {
+    "dist/src/render.js": "9cac34ebcb14226e2da113369877e18be2a59bdb41bbb8f0ed284785ffdc3513",
+    "dist/src/scene.js": "d21048516f0b400e2a13d70624e640ddc036d61bbb567986e0b46b46bee90fe6",
+    "dist/test/render.test.js": "5147f46afd042ef50a4af6ae2b62626c965dfdc750abbafec0502240a6c6c018"
+  },
+  "log_sha256": {
+    "0.log": "9aeba9df23423dde36d85e504006de70e1b0eb044e452bcd62d35675597a41ff",
+    "1.log": "af01ad9cb2795f4edf9ce12815c196fa2b74d873d327d8bb1bde2f506db23ab5",
+    "10.log": "8a145233b7c30d9a6a3cbcce6413ef6901bfa9e379fc36f4e042a71e50dc7e4b",
+    "11.log": "b078286b9cf04dc764e81c2f266ab5a33a75f0a435df2f826601da1bf76be47f",
+    "12.log": "ae2ad364597e931aabe7e5eb7076380b67b5aedefafc5e5077cb27c9a830a3a8",
+    "13.log": "72e1aa4bf5fa651574f22313b08cfb7cff92efb499d3654dc01ebee1a2a0b186",
+    "14.log": "86c0d541c758a7ef2c032f7ec274c749388b6f47cf097d3065ec222db5835ea4",
+    "15.log": "6b80ca3c1cbe9ecab473cfb20b1b835e2e851863f88f2f0bf0e63628848623a2",
+    "16.log": "5558c7dcffe8f829c6651ef74aa8703ec8d78f71b38c393ccff8603d0f640032",
+    "17.log": "08f1b72c44e93390778a07a17150d469e402e92c14e480660eb21008b9a50a8d",
+    "18.log": "24bdeea7dd2179c4661c9d646bf41e425e0304e45584f86d8057840d942ecec2",
+    "19.log": "f1231d3ac2cd2cf5c7b3279445239eaa9590646f9d25a5b51cf555c85aa40e6e",
+    "2.log": "5356448a035da6646c7caf562e0e1f7495962a0a34394b6131b46fdb4e4d9d5e",
+    "3.log": "8412878e7fac69aa8222ba40c6733fafd200a1e1fe5f456c2998104cde26262d",
+    "4.log": "b7b4ee4b51ef0defe7c33e4d2876665aa53b55805b96dbd5c514ffad8693cc51",
+    "5.log": "05d060cefe9ecead15ce4ccf391052cd3c303031a6fc3ebbb48604588da35c5b",
+    "6.log": "70a82ea6a829e455d712dc89943957b6686b05cf52836c78214f95c2a76ed81a",
+    "7.log": "77fcbb8d82ee7d261deaae41c50dca1e4b3a3857fa6cc7842e134bbf27dd4180",
+    "8.log": "5c94c9989d739940553bf561f109c574db3d74b8307ca1afd0d87ec11f73df4d",
+    "9.log": "9f5714b150b56723be2e3414091258f0decb93d1ba3ff27a2bac0c8225bfa7f2"
+  },
+  "records": [
+    {
+      "revision": "fm22",
+      "sha": "42c476cd9d934e30d47393dcb3b2c9c6cb65c6d4",
+      "mode": "suite",
+      "index": 0,
+      "elapsedMs": 98552,
+      "harness": {
+        "dist/src/render.js": "9cac34ebcb14226e2da113369877e18be2a59bdb41bbb8f0ed284785ffdc3513",
+        "dist/src/scene.js": "d21048516f0b400e2a13d70624e640ddc036d61bbb567986e0b46b46bee90fe6",
+        "dist/test/render.test.js": "5147f46afd042ef50a4af6ae2b62626c965dfdc750abbafec0502240a6c6c018"
+      },
+      "exitCode": 0,
+      "signal": null,
+      "error": null,
+      "renderFailed": false,
+      "events": [
+        {
+          "a": "/tmp/foundry-38lEDr/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/ac42edee-a515-424a-adc6-26c5a8b7f769",
+          "b": "/tmp/foundry-38lEDr/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/75df98c3-9f2a-4b3f-812e-0d091a413417",
+          "c": "/tmp/foundry-38lEDr/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/08a66976-b2f2-4db9-a574-152077f084c9",
+          "frames": 270,
+          "reason_code": null,
+          "render_id": "bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee",
+          "seek_order": [
+            200,
+            10,
+            200,
+            135
+          ],
+          "status": "PASS"
+        }
+      ]
+    },
+    {
+      "revision": "fm22",
+      "sha": "42c476cd9d934e30d47393dcb3b2c9c6cb65c6d4",
+      "mode": "suite",
+      "index": 1,
+      "elapsedMs": 98141,
+      "harness": {
+        "dist/src/render.js": "9cac34ebcb14226e2da113369877e18be2a59bdb41bbb8f0ed284785ffdc3513",
+        "dist/src/scene.js": "d21048516f0b400e2a13d70624e640ddc036d61bbb567986e0b46b46bee90fe6",
+        "dist/test/render.test.js": "5147f46afd042ef50a4af6ae2b62626c965dfdc750abbafec0502240a6c6c018"
+      },
+      "exitCode": 0,
+      "signal": null,
+      "error": null,
+      "renderFailed": false,
+      "events": [
+        {
+          "a": "/tmp/foundry-xWv9vY/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/caf3acfb-3221-400c-aa97-5ea839621e69",
+          "b": "/tmp/foundry-xWv9vY/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/af6410b0-d1ae-4fe3-aeb3-2f51cd7a8519",
+          "c": "/tmp/foundry-xWv9vY/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/653e890f-d3fc-484e-95c6-1ef020808dfe",
+          "frames": 270,
+          "reason_code": null,
+          "render_id": "bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee",
+          "seek_order": [
+            200,
+            10,
+            200,
+            135
+          ],
+          "status": "PASS"
+        }
+      ]
+    },
+    {
+      "revision": "fm22",
+      "sha": "42c476cd9d934e30d47393dcb3b2c9c6cb65c6d4",
+      "mode": "suite",
+      "index": 2,
+      "elapsedMs": 95753,
+      "harness": {
+        "dist/src/render.js": "9cac34ebcb14226e2da113369877e18be2a59bdb41bbb8f0ed284785ffdc3513",
+        "dist/src/scene.js": "d21048516f0b400e2a13d70624e640ddc036d61bbb567986e0b46b46bee90fe6",
+        "dist/test/render.test.js": "5147f46afd042ef50a4af6ae2b62626c965dfdc750abbafec0502240a6c6c018"
+      },
+      "exitCode": 0,
+      "signal": null,
+      "error": null,
+      "renderFailed": false,
+      "events": [
+        {
+          "a": "/tmp/foundry-0TRsRm/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/7ad71bb4-a7e0-41a5-a013-b36b983f610c",
+          "b": "/tmp/foundry-0TRsRm/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/32abf450-7afc-4c74-9ae3-068fd7cb417e",
+          "c": "/tmp/foundry-0TRsRm/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/f27f23e8-bc07-41ce-9180-dd4392d1280f",
+          "frames": 270,
+          "reason_code": null,
+          "render_id": "bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee",
+          "seek_order": [
+            200,
+            10,
+            200,
+            135
+          ],
+          "status": "PASS"
+        }
+      ]
+    },
+    {
+      "revision": "fm22",
+      "sha": "42c476cd9d934e30d47393dcb3b2c9c6cb65c6d4",
+      "mode": "suite",
+      "index": 3,
+      "elapsedMs": 100904,
+      "harness": {
+        "dist/src/render.js": "9cac34ebcb14226e2da113369877e18be2a59bdb41bbb8f0ed284785ffdc3513",
+        "dist/src/scene.js": "d21048516f0b400e2a13d70624e640ddc036d61bbb567986e0b46b46bee90fe6",
+        "dist/test/render.test.js": "5147f46afd042ef50a4af6ae2b62626c965dfdc750abbafec0502240a6c6c018"
+      },
+      "exitCode": 0,
+      "signal": null,
+      "error": null,
+      "renderFailed": false,
+      "events": [
+        {
+          "a": "/tmp/foundry-7FgEo9/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/cacf183e-0063-46e1-8231-0298e60d7e6f",
+          "b": "/tmp/foundry-7FgEo9/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/c513baa7-b634-47fa-bf79-249c0f6c22e1",
+          "c": "/tmp/foundry-7FgEo9/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/6eacc3b1-80ba-4c0f-afa9-53e226879d7a",
+          "frames": 270,
+          "reason_code": null,
+          "render_id": "bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee",
+          "seek_order": [
+            200,
+            10,
+            200,
+            135
+          ],
+          "status": "PASS"
+        }
+      ]
+    },
+    {
+      "revision": "fm22",
+      "sha": "42c476cd9d934e30d47393dcb3b2c9c6cb65c6d4",
+      "mode": "suite",
+      "index": 4,
+      "elapsedMs": 98588,
+      "harness": {
+        "dist/src/render.js": "9cac34ebcb14226e2da113369877e18be2a59bdb41bbb8f0ed284785ffdc3513",
+        "dist/src/scene.js": "d21048516f0b400e2a13d70624e640ddc036d61bbb567986e0b46b46bee90fe6",
+        "dist/test/render.test.js": "5147f46afd042ef50a4af6ae2b62626c965dfdc750abbafec0502240a6c6c018"
+      },
+      "exitCode": 0,
+      "signal": null,
+      "error": null,
+      "renderFailed": false,
+      "events": [
+        {
+          "a": "/tmp/foundry-amDHGr/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/6aeaa079-7199-4b38-9f37-2a33fc8aaca0",
+          "b": "/tmp/foundry-amDHGr/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/ebaa0f02-c4ec-4099-ae33-dda9bd99ba82",
+          "c": "/tmp/foundry-amDHGr/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/ef7005b0-396e-47a2-9995-a4869a0b41ee",
+          "frames": 270,
+          "reason_code": null,
+          "render_id": "bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee",
+          "seek_order": [
+            200,
+            10,
+            200,
+            135
+          ],
+          "status": "PASS"
+        }
+      ]
+    },
+    {
+      "revision": "fm22",
+      "sha": "42c476cd9d934e30d47393dcb3b2c9c6cb65c6d4",
+      "mode": "suite",
+      "index": 5,
+      "elapsedMs": 99239,
+      "harness": {
+        "dist/src/render.js": "9cac34ebcb14226e2da113369877e18be2a59bdb41bbb8f0ed284785ffdc3513",
+        "dist/src/scene.js": "d21048516f0b400e2a13d70624e640ddc036d61bbb567986e0b46b46bee90fe6",
+        "dist/test/render.test.js": "5147f46afd042ef50a4af6ae2b62626c965dfdc750abbafec0502240a6c6c018"
+      },
+      "exitCode": 1,
+      "signal": null,
+      "error": null,
+      "renderFailed": true,
+      "events": [
+        {
+          "a": "/tmp/foundry-m7u5qB/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/9ff7feb7-2344-471c-a434-f60f29fc439c",
+          "b": "/tmp/foundry-m7u5qB/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/79b80fe3-4cca-49c1-8309-ce022ba4b3c0",
+          "c": "/tmp/foundry-m7u5qB/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/397f8fe7-3139-4521-a7e2-4d75fd9b4933",
+          "frames": 270,
+          "reason_code": "NONDETERMINISTIC",
+          "render_id": "bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee",
+          "seek_order": [
+            200,
+            10,
+            200,
+            135
+          ],
+          "status": "BLOCKED"
+        }
+      ]
+    },
+    {
+      "revision": "fm22",
+      "sha": "42c476cd9d934e30d47393dcb3b2c9c6cb65c6d4",
+      "mode": "suite",
+      "index": 6,
+      "elapsedMs": 95814,
+      "harness": {
+        "dist/src/render.js": "9cac34ebcb14226e2da113369877e18be2a59bdb41bbb8f0ed284785ffdc3513",
+        "dist/src/scene.js": "d21048516f0b400e2a13d70624e640ddc036d61bbb567986e0b46b46bee90fe6",
+        "dist/test/render.test.js": "5147f46afd042ef50a4af6ae2b62626c965dfdc750abbafec0502240a6c6c018"
+      },
+      "exitCode": 0,
+      "signal": null,
+      "error": null,
+      "renderFailed": false,
+      "events": [
+        {
+          "a": "/tmp/foundry-szZhAq/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/3fd6fb8c-845d-4eba-afff-d9668c60b576",
+          "b": "/tmp/foundry-szZhAq/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/12bc3b2f-90e5-4dc8-96d0-7f9b22719acd",
+          "c": "/tmp/foundry-szZhAq/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/fd56b81a-8c15-44b1-bb34-5459f1f3d030",
+          "frames": 270,
+          "reason_code": null,
+          "render_id": "bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee",
+          "seek_order": [
+            200,
+            10,
+            200,
+            135
+          ],
+          "status": "PASS"
+        }
+      ]
+    },
+    {
+      "revision": "fm22",
+      "sha": "42c476cd9d934e30d47393dcb3b2c9c6cb65c6d4",
+      "mode": "suite",
+      "index": 7,
+      "elapsedMs": 97328,
+      "harness": {
+        "dist/src/render.js": "9cac34ebcb14226e2da113369877e18be2a59bdb41bbb8f0ed284785ffdc3513",
+        "dist/src/scene.js": "d21048516f0b400e2a13d70624e640ddc036d61bbb567986e0b46b46bee90fe6",
+        "dist/test/render.test.js": "5147f46afd042ef50a4af6ae2b62626c965dfdc750abbafec0502240a6c6c018"
+      },
+      "exitCode": 0,
+      "signal": null,
+      "error": null,
+      "renderFailed": false,
+      "events": [
+        {
+          "a": "/tmp/foundry-47P6qt/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/3d0b85fe-0e0f-4a7b-bd05-cb6b437f0d10",
+          "b": "/tmp/foundry-47P6qt/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/d89f5456-4873-4e2b-bf60-1164b463a18b",
+          "c": "/tmp/foundry-47P6qt/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/0b67c8b7-b8c1-474f-a7dd-3aafdf32c8d8",
+          "frames": 270,
+          "reason_code": null,
+          "render_id": "bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee",
+          "seek_order": [
+            200,
+            10,
+            200,
+            135
+          ],
+          "status": "PASS"
+        }
+      ]
+    },
+    {
+      "revision": "fm22",
+      "sha": "42c476cd9d934e30d47393dcb3b2c9c6cb65c6d4",
+      "mode": "suite",
+      "index": 8,
+      "elapsedMs": 97431,
+      "harness": {
+        "dist/src/render.js": "9cac34ebcb14226e2da113369877e18be2a59bdb41bbb8f0ed284785ffdc3513",
+        "dist/src/scene.js": "d21048516f0b400e2a13d70624e640ddc036d61bbb567986e0b46b46bee90fe6",
+        "dist/test/render.test.js": "5147f46afd042ef50a4af6ae2b62626c965dfdc750abbafec0502240a6c6c018"
+      },
+      "exitCode": 0,
+      "signal": null,
+      "error": null,
+      "renderFailed": false,
+      "events": [
+        {
+          "a": "/tmp/foundry-JbPGhd/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/bc8cd29f-da09-415f-9333-a01e0f4700d3",
+          "b": "/tmp/foundry-JbPGhd/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/b8b625a7-a8a4-462d-a26d-9fe900b55ed3",
+          "c": "/tmp/foundry-JbPGhd/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/339df48f-4e15-4531-ae7b-5b4222e3c5ed",
+          "frames": 270,
+          "reason_code": null,
+          "render_id": "bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee",
+          "seek_order": [
+            200,
+            10,
+            200,
+            135
+          ],
+          "status": "PASS"
+        }
+      ]
+    },
+    {
+      "revision": "fm22",
+      "sha": "42c476cd9d934e30d47393dcb3b2c9c6cb65c6d4",
+      "mode": "suite",
+      "index": 9,
+      "elapsedMs": 99666,
+      "harness": {
+        "dist/src/render.js": "9cac34ebcb14226e2da113369877e18be2a59bdb41bbb8f0ed284785ffdc3513",
+        "dist/src/scene.js": "d21048516f0b400e2a13d70624e640ddc036d61bbb567986e0b46b46bee90fe6",
+        "dist/test/render.test.js": "5147f46afd042ef50a4af6ae2b62626c965dfdc750abbafec0502240a6c6c018"
+      },
+      "exitCode": 0,
+      "signal": null,
+      "error": null,
+      "renderFailed": false,
+      "events": [
+        {
+          "a": "/tmp/foundry-QWkGF5/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/e33f6c7b-9e99-4caa-a365-3a0296ed8546",
+          "b": "/tmp/foundry-QWkGF5/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/fde1c520-20c3-4247-b6e8-c1e8ab043abd",
+          "c": "/tmp/foundry-QWkGF5/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/77eab119-eaac-48ab-b32b-8cf0e7fb45d4",
+          "frames": 270,
+          "reason_code": null,
+          "render_id": "bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee",
+          "seek_order": [
+            200,
+            10,
+            200,
+            135
+          ],
+          "status": "PASS"
+        }
+      ]
+    },
+    {
+      "revision": "fm22",
+      "sha": "42c476cd9d934e30d47393dcb3b2c9c6cb65c6d4",
+      "mode": "suite",
+      "index": 10,
+      "elapsedMs": 98629,
+      "harness": {
+        "dist/src/render.js": "9cac34ebcb14226e2da113369877e18be2a59bdb41bbb8f0ed284785ffdc3513",
+        "dist/src/scene.js": "d21048516f0b400e2a13d70624e640ddc036d61bbb567986e0b46b46bee90fe6",
+        "dist/test/render.test.js": "5147f46afd042ef50a4af6ae2b62626c965dfdc750abbafec0502240a6c6c018"
+      },
+      "exitCode": 0,
+      "signal": null,
+      "error": null,
+      "renderFailed": false,
+      "events": [
+        {
+          "a": "/tmp/foundry-eZiIvf/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/e0caae46-f599-44e3-a763-c19f55cc7113",
+          "b": "/tmp/foundry-eZiIvf/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/3952e5d5-a263-4934-8d13-ac1f9460d508",
+          "c": "/tmp/foundry-eZiIvf/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/2a95af4f-44a9-4975-8cd6-f422368ee1a4",
+          "frames": 270,
+          "reason_code": null,
+          "render_id": "bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee",
+          "seek_order": [
+            200,
+            10,
+            200,
+            135
+          ],
+          "status": "PASS"
+        }
+      ]
+    },
+    {
+      "revision": "fm22",
+      "sha": "42c476cd9d934e30d47393dcb3b2c9c6cb65c6d4",
+      "mode": "suite",
+      "index": 11,
+      "elapsedMs": 96583,
+      "harness": {
+        "dist/src/render.js": "9cac34ebcb14226e2da113369877e18be2a59bdb41bbb8f0ed284785ffdc3513",
+        "dist/src/scene.js": "d21048516f0b400e2a13d70624e640ddc036d61bbb567986e0b46b46bee90fe6",
+        "dist/test/render.test.js": "5147f46afd042ef50a4af6ae2b62626c965dfdc750abbafec0502240a6c6c018"
+      },
+      "exitCode": 0,
+      "signal": null,
+      "error": null,
+      "renderFailed": false,
+      "events": [
+        {
+          "a": "/tmp/foundry-Vh5tBw/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/5250c538-5742-4cb6-a2c0-6606a5307531",
+          "b": "/tmp/foundry-Vh5tBw/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/863382fa-cfeb-47b6-a4d3-a0f95a70bd57",
+          "c": "/tmp/foundry-Vh5tBw/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/7e24b3dd-9928-4b1d-be6d-3e814fcf8de7",
+          "frames": 270,
+          "reason_code": null,
+          "render_id": "bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee",
+          "seek_order": [
+            200,
+            10,
+            200,
+            135
+          ],
+          "status": "PASS"
+        }
+      ]
+    },
+    {
+      "revision": "fm22",
+      "sha": "42c476cd9d934e30d47393dcb3b2c9c6cb65c6d4",
+      "mode": "suite",
+      "index": 12,
+      "elapsedMs": 95751,
+      "harness": {
+        "dist/src/render.js": "9cac34ebcb14226e2da113369877e18be2a59bdb41bbb8f0ed284785ffdc3513",
+        "dist/src/scene.js": "d21048516f0b400e2a13d70624e640ddc036d61bbb567986e0b46b46bee90fe6",
+        "dist/test/render.test.js": "5147f46afd042ef50a4af6ae2b62626c965dfdc750abbafec0502240a6c6c018"
+      },
+      "exitCode": 0,
+      "signal": null,
+      "error": null,
+      "renderFailed": false,
+      "events": [
+        {
+          "a": "/tmp/foundry-vvDCue/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/dfb2b816-942c-466b-85f9-19ac448ed40e",
+          "b": "/tmp/foundry-vvDCue/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/3e706326-2aef-4e01-8a60-a4a92609c6c5",
+          "c": "/tmp/foundry-vvDCue/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/e147adf5-4355-488a-a0c1-cad2a6a29296",
+          "frames": 270,
+          "reason_code": null,
+          "render_id": "bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee",
+          "seek_order": [
+            200,
+            10,
+            200,
+            135
+          ],
+          "status": "PASS"
+        }
+      ]
+    },
+    {
+      "revision": "fm22",
+      "sha": "42c476cd9d934e30d47393dcb3b2c9c6cb65c6d4",
+      "mode": "suite",
+      "index": 13,
+      "elapsedMs": 103404,
+      "harness": {
+        "dist/src/render.js": "9cac34ebcb14226e2da113369877e18be2a59bdb41bbb8f0ed284785ffdc3513",
+        "dist/src/scene.js": "d21048516f0b400e2a13d70624e640ddc036d61bbb567986e0b46b46bee90fe6",
+        "dist/test/render.test.js": "5147f46afd042ef50a4af6ae2b62626c965dfdc750abbafec0502240a6c6c018"
+      },
+      "exitCode": 0,
+      "signal": null,
+      "error": null,
+      "renderFailed": false,
+      "events": [
+        {
+          "a": "/tmp/foundry-XEwFHb/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/39b54b71-e35c-4fcc-a282-9d66bcea2d00",
+          "b": "/tmp/foundry-XEwFHb/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/8e7d5f9e-dcf9-45c5-a672-eec4683a597f",
+          "c": "/tmp/foundry-XEwFHb/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/c99dcff4-66f4-4cfd-978c-8c71d43b67b9",
+          "frames": 270,
+          "reason_code": null,
+          "render_id": "bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee",
+          "seek_order": [
+            200,
+            10,
+            200,
+            135
+          ],
+          "status": "PASS"
+        }
+      ]
+    },
+    {
+      "revision": "fm22",
+      "sha": "42c476cd9d934e30d47393dcb3b2c9c6cb65c6d4",
+      "mode": "suite",
+      "index": 14,
+      "elapsedMs": 99308,
+      "harness": {
+        "dist/src/render.js": "9cac34ebcb14226e2da113369877e18be2a59bdb41bbb8f0ed284785ffdc3513",
+        "dist/src/scene.js": "d21048516f0b400e2a13d70624e640ddc036d61bbb567986e0b46b46bee90fe6",
+        "dist/test/render.test.js": "5147f46afd042ef50a4af6ae2b62626c965dfdc750abbafec0502240a6c6c018"
+      },
+      "exitCode": 0,
+      "signal": null,
+      "error": null,
+      "renderFailed": false,
+      "events": [
+        {
+          "a": "/tmp/foundry-GaOcDh/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/6bd5aecb-487f-475e-a1ef-b6a27f0ad8c2",
+          "b": "/tmp/foundry-GaOcDh/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/573c395e-598c-42c8-b4bb-21fb87f63c7b",
+          "c": "/tmp/foundry-GaOcDh/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/41df5ca0-37bb-4abc-8376-9f1306efe009",
+          "frames": 270,
+          "reason_code": null,
+          "render_id": "bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee",
+          "seek_order": [
+            200,
+            10,
+            200,
+            135
+          ],
+          "status": "PASS"
+        }
+      ]
+    },
+    {
+      "revision": "fm22",
+      "sha": "42c476cd9d934e30d47393dcb3b2c9c6cb65c6d4",
+      "mode": "suite",
+      "index": 15,
+      "elapsedMs": 101021,
+      "harness": {
+        "dist/src/render.js": "9cac34ebcb14226e2da113369877e18be2a59bdb41bbb8f0ed284785ffdc3513",
+        "dist/src/scene.js": "d21048516f0b400e2a13d70624e640ddc036d61bbb567986e0b46b46bee90fe6",
+        "dist/test/render.test.js": "5147f46afd042ef50a4af6ae2b62626c965dfdc750abbafec0502240a6c6c018"
+      },
+      "exitCode": 0,
+      "signal": null,
+      "error": null,
+      "renderFailed": false,
+      "events": [
+        {
+          "a": "/tmp/foundry-wiIiTl/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/b09339b4-d62f-4e32-b059-6715c3493e3e",
+          "b": "/tmp/foundry-wiIiTl/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/2a900e3f-08d6-48ba-8bca-7b46db0ec922",
+          "c": "/tmp/foundry-wiIiTl/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/48176b54-4755-4ef0-958a-f0013a0da68f",
+          "frames": 270,
+          "reason_code": null,
+          "render_id": "bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee",
+          "seek_order": [
+            200,
+            10,
+            200,
+            135
+          ],
+          "status": "PASS"
+        }
+      ]
+    },
+    {
+      "revision": "fm22",
+      "sha": "42c476cd9d934e30d47393dcb3b2c9c6cb65c6d4",
+      "mode": "suite",
+      "index": 16,
+      "elapsedMs": 102571,
+      "harness": {
+        "dist/src/render.js": "9cac34ebcb14226e2da113369877e18be2a59bdb41bbb8f0ed284785ffdc3513",
+        "dist/src/scene.js": "d21048516f0b400e2a13d70624e640ddc036d61bbb567986e0b46b46bee90fe6",
+        "dist/test/render.test.js": "5147f46afd042ef50a4af6ae2b62626c965dfdc750abbafec0502240a6c6c018"
+      },
+      "exitCode": 0,
+      "signal": null,
+      "error": null,
+      "renderFailed": false,
+      "events": [
+        {
+          "a": "/tmp/foundry-4e2Gmw/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/391decdb-0167-4003-a1ff-6689d60e8313",
+          "b": "/tmp/foundry-4e2Gmw/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/701957e3-87c5-45a8-93e1-b93f0c573260",
+          "c": "/tmp/foundry-4e2Gmw/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/7533e58c-29f7-4f48-bb09-8b88b0e85ff0",
+          "frames": 270,
+          "reason_code": null,
+          "render_id": "bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee",
+          "seek_order": [
+            200,
+            10,
+            200,
+            135
+          ],
+          "status": "PASS"
+        }
+      ]
+    },
+    {
+      "revision": "fm22",
+      "sha": "42c476cd9d934e30d47393dcb3b2c9c6cb65c6d4",
+      "mode": "suite",
+      "index": 17,
+      "elapsedMs": 102870,
+      "harness": {
+        "dist/src/render.js": "9cac34ebcb14226e2da113369877e18be2a59bdb41bbb8f0ed284785ffdc3513",
+        "dist/src/scene.js": "d21048516f0b400e2a13d70624e640ddc036d61bbb567986e0b46b46bee90fe6",
+        "dist/test/render.test.js": "5147f46afd042ef50a4af6ae2b62626c965dfdc750abbafec0502240a6c6c018"
+      },
+      "exitCode": 0,
+      "signal": null,
+      "error": null,
+      "renderFailed": false,
+      "events": [
+        {
+          "a": "/tmp/foundry-NlU9ZO/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/b5441b44-8ec2-4cc8-b10c-a3ab1e5e1286",
+          "b": "/tmp/foundry-NlU9ZO/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/db848d99-91c0-4153-bad9-152cd2d962eb",
+          "c": "/tmp/foundry-NlU9ZO/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/4f25922d-14e9-4b24-8ac0-2cf707532d95",
+          "frames": 270,
+          "reason_code": null,
+          "render_id": "bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee",
+          "seek_order": [
+            200,
+            10,
+            200,
+            135
+          ],
+          "status": "PASS"
+        }
+      ]
+    },
+    {
+      "revision": "fm22",
+      "sha": "42c476cd9d934e30d47393dcb3b2c9c6cb65c6d4",
+      "mode": "suite",
+      "index": 18,
+      "elapsedMs": 99142,
+      "harness": {
+        "dist/src/render.js": "9cac34ebcb14226e2da113369877e18be2a59bdb41bbb8f0ed284785ffdc3513",
+        "dist/src/scene.js": "d21048516f0b400e2a13d70624e640ddc036d61bbb567986e0b46b46bee90fe6",
+        "dist/test/render.test.js": "5147f46afd042ef50a4af6ae2b62626c965dfdc750abbafec0502240a6c6c018"
+      },
+      "exitCode": 0,
+      "signal": null,
+      "error": null,
+      "renderFailed": false,
+      "events": [
+        {
+          "a": "/tmp/foundry-Fo2wfC/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/05dddb28-85c2-4cde-9a79-2e70df24742c",
+          "b": "/tmp/foundry-Fo2wfC/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/0d24d63c-6ca6-43b1-89bb-f7c7e88d08c3",
+          "c": "/tmp/foundry-Fo2wfC/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/e82c2166-0fc3-4580-9a9e-ab1563fb4233",
+          "frames": 270,
+          "reason_code": null,
+          "render_id": "bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee",
+          "seek_order": [
+            200,
+            10,
+            200,
+            135
+          ],
+          "status": "PASS"
+        }
+      ]
+    },
+    {
+      "revision": "fm22",
+      "sha": "42c476cd9d934e30d47393dcb3b2c9c6cb65c6d4",
+      "mode": "suite",
+      "index": 19,
+      "elapsedMs": 101170,
+      "harness": {
+        "dist/src/render.js": "9cac34ebcb14226e2da113369877e18be2a59bdb41bbb8f0ed284785ffdc3513",
+        "dist/src/scene.js": "d21048516f0b400e2a13d70624e640ddc036d61bbb567986e0b46b46bee90fe6",
+        "dist/test/render.test.js": "5147f46afd042ef50a4af6ae2b62626c965dfdc750abbafec0502240a6c6c018"
+      },
+      "exitCode": 0,
+      "signal": null,
+      "error": null,
+      "renderFailed": false,
+      "events": [
+        {
+          "a": "/tmp/foundry-IlGaf4/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/44152656-871b-448b-9053-9ae30f1fe5b4",
+          "b": "/tmp/foundry-IlGaf4/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/773ddb7a-5f5c-428c-a58b-7d25122fdb5d",
+          "c": "/tmp/foundry-IlGaf4/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/8e9b64df-5f90-434b-a0ee-a20ea6bcf074",
+          "frames": 270,
+          "reason_code": null,
+          "render_id": "bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee",
+          "seek_order": [
+            200,
+            10,
+            200,
+            135
+          ],
+          "status": "PASS"
+        }
+      ]
+    }
+  ],
+  "interpretation": "1/20 failures with full-suite concurrent test files versus0/60 isolated tests. Association observed; source audit identifies overlapping browser/raster CPU load as isolation target, not proof of a specific Chromium defect."
+}

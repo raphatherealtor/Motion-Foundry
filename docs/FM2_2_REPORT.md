@@ -48,7 +48,7 @@ The requested matrix is sequential, using detached source snapshots and the same
 3. FM2.2 baseline42c476c:20 isolated M0 repeat tests.
 4. The same FM2.2 baseline:20 full-suite runs, recording M0 separately from unrelated failures.
 
-Completed comparison: M1b52aebd isolated **20/20 PASS**, no failures observed. This does not rule out a pre-existing intermittent race or identify FM2.2 as the cause. FM2.1 8f64cb1 also completed **20/20 isolated PASS**, with no failures observed. FM2.2 isolated also passed20/20. Full-suite comparisons are underway; run6 reproduced a frame81 capture mismatch with the same harness. That frame differs in3 channels with maxΔ5; object-box hashes and source/config hashes match. Finish all20 before changing isolation. Evidence: docs/fm2_2/capture-matrix/{m1,fm21}-isolated-results.json.
+Completed comparison: M1b52aebd isolated **20/20 PASS**, no failures observed. This does not rule out a pre-existing intermittent race or identify FM2.2 as the cause. FM2.1 8f64cb1 also completed **20/20 isolated PASS**, with no failures observed. FM2.2 isolated also passed20/20. Full-suite baseline completed: **19/20 PASS;1/20 capture failure (5%)** at frame81 in run6, versus0/60 isolated failures. That frame differs in3 channels with maxΔ5; object-box hashes and source/config hashes match. The baseline is frozen; readiness inspection and serial-isolation validation follow. Evidence: docs/fm2_2/capture-matrix/{m1,fm21}-isolated-results.json.
 
 Results are accumulated under runs/fm2-2/capture-matrix/. Initial missing-browser worktree setup failures were excluded and retained under capture-matrix-setup-invalid/. No capture or source change is part of these baseline comparisons. New Foundry color unit tests are CPU-only; standalone GPU stress probes are not implicitly part of npm test. Other GPU probes remain idle during isolated comparisons.
 
@@ -82,18 +82,20 @@ This is distinct from Raphael's preserve list. Reference: COMPAT_INVARIANTS.md.
 
 ## Raphael's real preserve A–M check
 
-| Item | FM2.2 preservation and evidence scope |
+| Principle | Current preservation check |
 |---|---|
-| A — Directed temporal anchors | Existing integer-frame and rational-time semantics remain unchanged. Color frame indices do not retime scene anchors. |
-| B — Editable causality | Color settings remain explicit parameters; evidence images do not replace editable source projects. |
-| C — Gradient of agency | User-approved scope and review remain authoritative. A failed gate is reported, not silently weakened. |
-| D — Perceptual-evidence loop (advisory) | Histograms, clipping maps and banding evidence support review. Production visual analysis stays advisory; explicit lab contracts may hard-fail. |
-| E — Scoped AI authority | Frozen allowlists and edit boundaries remain enforced. No reviewer-generated project edits occur in this phase. |
-| F — Procedural deterministic motion | THREATENED: M0 uncached captures differ. Zero tolerance remains; isolated/history/load comparisons and a root-cause fix are required. |
-| G — Advanced temporal geometry | Existing temporal geometry is untouched; color tests do not establish new geometry capability. |
-| H — One lighting model | Existing product lighting/grade semantics remain authoritative; no replacement lighting model or lit-path integration is introduced here. |
-| I — Recipes as editable executable knowledge | Existing recipe manifests remain editable source, not flattened image substitutes. No frozen M1 recipe changes. |
-| J — Model neutrality | Color/capture validation is provider-independent. No new vendor-specific scene contract. |
-| K — External-agent operation | Existing CLI/API workflows remain available; no new integration or external messaging is introduced. |
-| L — One canonical scene/render state | Projects remain canonical input. The color backend consumes explicit textures/settings; later app integration must bind those settings into render identity. No second editable scene state is introduced. |
-| M — Preserved roadmap | FM2.3–FM2.6 scope remains deferred. FM2.2 cannot land until banding and capture determinism pass. |
+| A — Directed temporal anchors | Integer-frame/rational timing unchanged; no color-driven retiming. |
+| B — Editable causality | Explicit color settings and editable project source retained. |
+| C — Gradient of agency | User scope and gate decisions govern all changes. |
+| D — Perceptual-evidence loop (advisory) | Review evidence retained; production heuristics WARN, explicit lab contracts may FAIL. |
+| E — Scoped AI authority | Allowlists/edit boundaries retained; no reviewer project edits here. |
+| F — Procedural deterministic motion | THREATENED by suite-only capture mismatch; zero tolerance, isolation validation pending. |
+| G — Advanced temporal geometry | Untouched; no new geometry capability claimed. |
+| H — One lighting model | Product lighting/grade authoritative; no replacement lit model. |
+| I — Recipes as editable executable knowledge | Frozen M1 recipe source retained; no flattened substitutes. |
+| J — Model neutrality | Color/capture validation provider-independent. |
+| K — External-agent operation | Existing CLI/API operation preserved; no new integration. |
+| L — One canonical scene/render state | Project remains canonical; later app integration must bind color settings into render identity. |
+| M — Preserved roadmap | FM2.3–FM2.6 deferred; FM2.2 lands only after both gates pass. |
+
+Full scope and limitations: docs/PRESERVE_A_M.md. This is separate from the renderer checklist above.

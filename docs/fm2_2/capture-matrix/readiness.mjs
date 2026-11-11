@@ -9,8 +9,8 @@ for(let launch=0;launch<3;launch++){
  await page.setContent(html(scene),{waitUntil:'load'});await page.waitForFunction('window.__foundryReady===true && document.fonts.status==="loaded"');
  for(let frame=0;frame<270;frame++){
  await page.evaluate(i=>window.seekFrame(i),frame);const samples=[];
- for(let repeat=0;repeat<([95,121].includes(frame)?3:1);repeat++){
- if(![95,121].includes(frame)){await page.screenshot();continue;}
+ for(let repeat=0;repeat<([81,95,121].includes(frame)?3:1);repeat++){
+ if(![81,95,121].includes(frame)){await page.screenshot();continue;}
  // This diagnostic reads layout before capture; baseline matrix has no such instrumentation.
  const state=await page.evaluate(()=>({ready:window.__foundryReady,fontStatus:document.fonts.status,fonts:[...document.fonts].map(f=>({family:f.family,status:f.status})),images:[...document.images].map(i=>({complete:i.complete,width:i.naturalWidth,decoding:i.decoding})),clock:window.foundry,gsapFrame:gsap.ticker.frame,objects:['shape1','shape2'].map(id=>{const e=document.getElementById(id),s=getComputedStyle(e),r=e.getBoundingClientRect();return {id,transform:s.transform,opacity:s.opacity,bbox:[r.x,r.y,r.width,r.height]};})}));
  const png=await page.screenshot();const after=await page.evaluate(()=>({frame:window.foundry.frame,time:window.foundry.time,fontStatus:document.fonts.status,gsapFrame:gsap.ticker.frame}));
