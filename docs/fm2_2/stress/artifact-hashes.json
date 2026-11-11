@@ -1,0 +1,42 @@
+{
+  "linear.f32": {
+    "bytes": 33177600,
+    "sha256": "1df9e51203351936a4dc529779f0b874f9fa2ef6ee2724eda66d61af4f45a611"
+  },
+  "off.rgba": {
+    "bytes": 8294400,
+    "sha256": "f88fcb9da46e806f50932b722e874f2e1cfef18ed2f4e0e25cb92900d54ecf1e"
+  },
+  "off.png": {
+    "bytes": 181819,
+    "sha256": "2e327de114dc188ed7e46e1a3f99a1b7b8e7e4a4165503814dbbc46aa7de1cc2"
+  },
+  "static.rgba": {
+    "bytes": 8294400,
+    "sha256": "80420fbbf0dc636ad8dd5924764c41e65f6a369b7814b5dc73ef6ce9f4900093"
+  },
+  "static.png": {
+    "bytes": 1739756,
+    "sha256": "ce81cdf322e0958f0d8030fdb1c93a3d333af57ff44607cb66aaf5c0fb53031f"
+  },
+  "temporal.rgba": {
+    "bytes": 8294400,
+    "sha256": "dcb50ca565f2343c85b39dc1e4189c1212275dcdd0cb5237eccce69b23d711b3"
+  },
+  "temporal.png": {
+    "bytes": 1739872,
+    "sha256": "780816b033e4c0febee3ff70fde12f87c4b1a14cb4b9a10a9c133820caa17850"
+  },
+  "off-clipping.mask": {
+    "bytes": 2073600,
+    "sha256": "98e8f02f38ee74aa78d4453097e45834d1d4da28e149f8365a0398514b13011f"
+  },
+  "static-clipping.mask": {
+    "bytes": 2073600,
+    "sha256": "7d94cfa3f07aa262cc1f02fde8af2de12c4b9308e0426a05ca2520197a28f71b"
+  },
+  "temporal-clipping.mask": {
+    "bytes": 2073600,
+    "sha256": "80ae0426aa64c0be98119249699c16f7d3a8629968ea1c25f9c5ee131f9e969d"
+  }
+}

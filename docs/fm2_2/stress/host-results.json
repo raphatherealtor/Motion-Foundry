@@ -1,0 +1,2134 @@
+{
+  "runs": [
+    {
+      "repeat": 0,
+      "version": "153.0.8010.12",
+      "hosts": {
+        "html": {
+          "width": 1080,
+          "height": 1920,
+          "checker": {
+            "linearMean": 0.5,
+            "linearEncoded": 188,
+            "srgbEncoded": 128
+          },
+          "additive": {
+            "linear": [
+              1.5,
+              1.5,
+              1.5,
+              1
+            ],
+            "toneMapped": [
+              203,
+              203,
+              203,
+              255
+            ]
+          },
+          "exposure": [
+            {
+              "ev": -2,
+              "maxHalfUlp": 0
+            },
+            {
+              "ev": 2,
+              "maxHalfUlp": 0
+            }
+          ],
+          "temperatures": [
+            {
+              "temperature": -1,
+              "ratio": 0.7389858686616791
+            },
+            {
+              "temperature": -0.9,
+              "ratio": 0.7620253164556962
+            },
+            {
+              "temperature": -0.8,
+              "ratio": 0.7853470437017995
+            },
+            {
+              "temperature": -0.7,
+              "ratio": 0.8101045296167247
+            },
+            {
+              "temperature": -0.6,
+              "ratio": 0.8353982300884956
+            },
+            {
+              "temperature": -0.5,
+              "ratio": 0.8602875112309074
+            },
+            {
+              "temperature": -0.4,
+              "ratio": 0.8863013698630137
+            },
+            {
+              "temperature": -0.3,
+              "ratio": 0.9136490250696379
+            },
+            {
+              "temperature": -0.2,
+              "ratio": 0.9419263456090652
+            },
+            {
+              "temperature": -0.1,
+              "ratio": 0.9702495201535508
+            },
+            {
+              "temperature": 0,
+              "ratio": 1
+            },
+            {
+              "temperature": 0.1,
+              "ratio": 1.0303030303030303
+            },
+            {
+              "temperature": 0.2,
+              "ratio": 1.0616784630940344
+            },
+            {
+              "temperature": 0.3,
+              "ratio": 1.0936213991769548
+            },
+            {
+              "temperature": 0.4,
+              "ratio": 1.1272917757988477
+            },
+            {
+              "temperature": 0.5,
+              "ratio": 1.1616
+            },
+            {
+              "temperature": 0.6,
+              "ratio": 1.1978260869565218
+            },
+            {
+              "temperature": 0.7,
+              "ratio": 1.2347729789590254
+            },
+            {
+              "temperature": 0.8,
+              "ratio": 1.27313769751693
+            },
+            {
+              "temperature": 0.9,
+              "ratio": 1.3122484186313974
+            },
+            {
+              "temperature": 1,
+              "ratio": 1.352492668621701
+            }
+          ],
+          "clippingControl": {
+            "linear": [
+              -0.125,
+              0.25,
+              2,
+              1
+            ],
+            "output": [
+              0,
+              137,
+              255,
+              255
+            ]
+          },
+          "hashes": {
+            "linear": "1df9e51203351936a4dc529779f0b874f9fa2ef6ee2724eda66d61af4f45a611",
+            "off": "f88fcb9da46e806f50932b722e874f2e1cfef18ed2f4e0e25cb92900d54ecf1e",
+            "static": "80420fbbf0dc636ad8dd5924764c41e65f6a369b7814b5dc73ef6ce9f4900093",
+            "temporal": "dcb50ca565f2343c85b39dc1e4189c1212275dcdd0cb5237eccce69b23d711b3"
+          },
+          "highWaterBytes": 24889420
+        },
+        "offscreen": {
+          "width": 1080,
+          "height": 1920,
+          "checker": {
+            "linearMean": 0.5,
+            "linearEncoded": 188,
+            "srgbEncoded": 128
+          },
+          "additive": {
+            "linear": [
+              1.5,
+              1.5,
+              1.5,
+              1
+            ],
+            "toneMapped": [
+              203,
+              203,
+              203,
+              255
+            ]
+          },
+          "exposure": [
+            {
+              "ev": -2,
+              "maxHalfUlp": 0
+            },
+            {
+              "ev": 2,
+              "maxHalfUlp": 0
+            }
+          ],
+          "temperatures": [
+            {
+              "temperature": -1,
+              "ratio": 0.7389858686616791
+            },
+            {
+              "temperature": -0.9,
+              "ratio": 0.7620253164556962
+            },
+            {
+              "temperature": -0.8,
+              "ratio": 0.7853470437017995
+            },
+            {
+              "temperature": -0.7,
+              "ratio": 0.8101045296167247
+            },
+            {
+              "temperature": -0.6,
+              "ratio": 0.8353982300884956
+            },
+            {
+              "temperature": -0.5,
+              "ratio": 0.8602875112309074
+            },
+            {
+              "temperature": -0.4,
+              "ratio": 0.8863013698630137
+            },
+            {
+              "temperature": -0.3,
+              "ratio": 0.9136490250696379
+            },
+            {
+              "temperature": -0.2,
+              "ratio": 0.9419263456090652
+            },
+            {
+              "temperature": -0.1,
+              "ratio": 0.9702495201535508
+            },
+            {
+              "temperature": 0,
+              "ratio": 1
+            },
+            {
+              "temperature": 0.1,
+              "ratio": 1.0303030303030303
+            },
+            {
+              "temperature": 0.2,
+              "ratio": 1.0616784630940344
+            },
+            {
+              "temperature": 0.3,
+              "ratio": 1.0936213991769548
+            },
+            {
+              "temperature": 0.4,
+              "ratio": 1.1272917757988477
+            },
+            {
+              "temperature": 0.5,
+              "ratio": 1.1616
+            },
+            {
+              "temperature": 0.6,
+              "ratio": 1.1978260869565218
+            },
+            {
+              "temperature": 0.7,
+              "ratio": 1.2347729789590254
+            },
+            {
+              "temperature": 0.8,
+              "ratio": 1.27313769751693
+            },
+            {
+              "temperature": 0.9,
+              "ratio": 1.3122484186313974
+            },
+            {
+              "temperature": 1,
+              "ratio": 1.352492668621701
+            }
+          ],
+          "clippingControl": {
+            "linear": [
+              -0.125,
+              0.25,
+              2,
+              1
+            ],
+            "output": [
+              0,
+              137,
+              255,
+              255
+            ]
+          },
+          "hashes": {
+            "linear": "1df9e51203351936a4dc529779f0b874f9fa2ef6ee2724eda66d61af4f45a611",
+            "off": "f88fcb9da46e806f50932b722e874f2e1cfef18ed2f4e0e25cb92900d54ecf1e",
+            "static": "80420fbbf0dc636ad8dd5924764c41e65f6a369b7814b5dc73ef6ce9f4900093",
+            "temporal": "dcb50ca565f2343c85b39dc1e4189c1212275dcdd0cb5237eccce69b23d711b3"
+          },
+          "highWaterBytes": 24889420
+        },
+        "worker": {
+          "width": 1080,
+          "height": 1920,
+          "checker": {
+            "linearMean": 0.5,
+            "linearEncoded": 188,
+            "srgbEncoded": 128
+          },
+          "additive": {
+            "linear": [
+              1.5,
+              1.5,
+              1.5,
+              1
+            ],
+            "toneMapped": [
+              203,
+              203,
+              203,
+              255
+            ]
+          },
+          "exposure": [
+            {
+              "ev": -2,
+              "maxHalfUlp": 0
+            },
+            {
+              "ev": 2,
+              "maxHalfUlp": 0
+            }
+          ],
+          "temperatures": [
+            {
+              "temperature": -1,
+              "ratio": 0.7389858686616791
+            },
+            {
+              "temperature": -0.9,
+              "ratio": 0.7620253164556962
+            },
+            {
+              "temperature": -0.8,
+              "ratio": 0.7853470437017995
+            },
+            {
+              "temperature": -0.7,
+              "ratio": 0.8101045296167247
+            },
+            {
+              "temperature": -0.6,
+              "ratio": 0.8353982300884956
+            },
+            {
+              "temperature": -0.5,
+              "ratio": 0.8602875112309074
+            },
+            {
+              "temperature": -0.4,
+              "ratio": 0.8863013698630137
+            },
+            {
+              "temperature": -0.3,
+              "ratio": 0.9136490250696379
+            },
+            {
+              "temperature": -0.2,
+              "ratio": 0.9419263456090652
+            },
+            {
+              "temperature": -0.1,
+              "ratio": 0.9702495201535508
+            },
+            {
+              "temperature": 0,
+              "ratio": 1
+            },
+            {
+              "temperature": 0.1,
+              "ratio": 1.0303030303030303
+            },
+            {
+              "temperature": 0.2,
+              "ratio": 1.0616784630940344
+            },
+            {
+              "temperature": 0.3,
+              "ratio": 1.0936213991769548
+            },
+            {
+              "temperature": 0.4,
+              "ratio": 1.1272917757988477
+            },
+            {
+              "temperature": 0.5,
+              "ratio": 1.1616
+            },
+            {
+              "temperature": 0.6,
+              "ratio": 1.1978260869565218
+            },
+            {
+              "temperature": 0.7,
+              "ratio": 1.2347729789590254
+            },
+            {
+              "temperature": 0.8,
+              "ratio": 1.27313769751693
+            },
+            {
+              "temperature": 0.9,
+              "ratio": 1.3122484186313974
+            },
+            {
+              "temperature": 1,
+              "ratio": 1.352492668621701
+            }
+          ],
+          "clippingControl": {
+            "linear": [
+              -0.125,
+              0.25,
+              2,
+              1
+            ],
+            "output": [
+              0,
+              137,
+              255,
+              255
+            ]
+          },
+          "hashes": {
+            "linear": "1df9e51203351936a4dc529779f0b874f9fa2ef6ee2724eda66d61af4f45a611",
+            "off": "f88fcb9da46e806f50932b722e874f2e1cfef18ed2f4e0e25cb92900d54ecf1e",
+            "static": "80420fbbf0dc636ad8dd5924764c41e65f6a369b7814b5dc73ef6ce9f4900093",
+            "temporal": "dcb50ca565f2343c85b39dc1e4189c1212275dcdd0cb5237eccce69b23d711b3"
+          },
+          "highWaterBytes": 24889420
+        }
+      }
+    },
+    {
+      "repeat": 1,
+      "version": "153.0.8010.12",
+      "hosts": {
+        "html": {
+          "width": 1080,
+          "height": 1920,
+          "checker": {
+            "linearMean": 0.5,
+            "linearEncoded": 188,
+            "srgbEncoded": 128
+          },
+          "additive": {
+            "linear": [
+              1.5,
+              1.5,
+              1.5,
+              1
+            ],
+            "toneMapped": [
+              203,
+              203,
+              203,
+              255
+            ]
+          },
+          "exposure": [
+            {
+              "ev": -2,
+              "maxHalfUlp": 0
+            },
+            {
+              "ev": 2,
+              "maxHalfUlp": 0
+            }
+          ],
+          "temperatures": [
+            {
+              "temperature": -1,
+              "ratio": 0.7389858686616791
+            },
+            {
+              "temperature": -0.9,
+              "ratio": 0.7620253164556962
+            },
+            {
+              "temperature": -0.8,
+              "ratio": 0.7853470437017995
+            },
+            {
+              "temperature": -0.7,
+              "ratio": 0.8101045296167247
+            },
+            {
+              "temperature": -0.6,
+              "ratio": 0.8353982300884956
+            },
+            {
+              "temperature": -0.5,
+              "ratio": 0.8602875112309074
+            },
+            {
+              "temperature": -0.4,
+              "ratio": 0.8863013698630137
+            },
+            {
+              "temperature": -0.3,
+              "ratio": 0.9136490250696379
+            },
+            {
+              "temperature": -0.2,
+              "ratio": 0.9419263456090652
+            },
+            {
+              "temperature": -0.1,
+              "ratio": 0.9702495201535508
+            },
+            {
+              "temperature": 0,
+              "ratio": 1
+            },
+            {
+              "temperature": 0.1,
+              "ratio": 1.0303030303030303
+            },
+            {
+              "temperature": 0.2,
+              "ratio": 1.0616784630940344
+            },
+            {
+              "temperature": 0.3,
+              "ratio": 1.0936213991769548
+            },
+            {
+              "temperature": 0.4,
+              "ratio": 1.1272917757988477
+            },
+            {
+              "temperature": 0.5,
+              "ratio": 1.1616
+            },
+            {
+              "temperature": 0.6,
+              "ratio": 1.1978260869565218
+            },
+            {
+              "temperature": 0.7,
+              "ratio": 1.2347729789590254
+            },
+            {
+              "temperature": 0.8,
+              "ratio": 1.27313769751693
+            },
+            {
+              "temperature": 0.9,
+              "ratio": 1.3122484186313974
+            },
+            {
+              "temperature": 1,
+              "ratio": 1.352492668621701
+            }
+          ],
+          "clippingControl": {
+            "linear": [
+              -0.125,
+              0.25,
+              2,
+              1
+            ],
+            "output": [
+              0,
+              137,
+              255,
+              255
+            ]
+          },
+          "hashes": {
+            "linear": "1df9e51203351936a4dc529779f0b874f9fa2ef6ee2724eda66d61af4f45a611",
+            "off": "f88fcb9da46e806f50932b722e874f2e1cfef18ed2f4e0e25cb92900d54ecf1e",
+            "static": "80420fbbf0dc636ad8dd5924764c41e65f6a369b7814b5dc73ef6ce9f4900093",
+            "temporal": "dcb50ca565f2343c85b39dc1e4189c1212275dcdd0cb5237eccce69b23d711b3"
+          },
+          "highWaterBytes": 24889420
+        },
+        "offscreen": {
+          "width": 1080,
+          "height": 1920,
+          "checker": {
+            "linearMean": 0.5,
+            "linearEncoded": 188,
+            "srgbEncoded": 128
+          },
+          "additive": {
+            "linear": [
+              1.5,
+              1.5,
+              1.5,
+              1
+            ],
+            "toneMapped": [
+              203,
+              203,
+              203,
+              255
+            ]
+          },
+          "exposure": [
+            {
+              "ev": -2,
+              "maxHalfUlp": 0
+            },
+            {
+              "ev": 2,
+              "maxHalfUlp": 0
+            }
+          ],
+          "temperatures": [
+            {
+              "temperature": -1,
+              "ratio": 0.7389858686616791
+            },
+            {
+              "temperature": -0.9,
+              "ratio": 0.7620253164556962
+            },
+            {
+              "temperature": -0.8,
+              "ratio": 0.7853470437017995
+            },
+            {
+              "temperature": -0.7,
+              "ratio": 0.8101045296167247
+            },
+            {
+              "temperature": -0.6,
+              "ratio": 0.8353982300884956
+            },
+            {
+              "temperature": -0.5,
+              "ratio": 0.8602875112309074
+            },
+            {
+              "temperature": -0.4,
+              "ratio": 0.8863013698630137
+            },
+            {
+              "temperature": -0.3,
+              "ratio": 0.9136490250696379
+            },
+            {
+              "temperature": -0.2,
+              "ratio": 0.9419263456090652
+            },
+            {
+              "temperature": -0.1,
+              "ratio": 0.9702495201535508
+            },
+            {
+              "temperature": 0,
+              "ratio": 1
+            },
+            {
+              "temperature": 0.1,
+              "ratio": 1.0303030303030303
+            },
+            {
+              "temperature": 0.2,
+              "ratio": 1.0616784630940344
+            },
+            {
+              "temperature": 0.3,
+              "ratio": 1.0936213991769548
+            },
+            {
+              "temperature": 0.4,
+              "ratio": 1.1272917757988477
+            },
+            {
+              "temperature": 0.5,
+              "ratio": 1.1616
+            },
+            {
+              "temperature": 0.6,
+              "ratio": 1.1978260869565218
+            },
+            {
+              "temperature": 0.7,
+              "ratio": 1.2347729789590254
+            },
+            {
+              "temperature": 0.8,
+              "ratio": 1.27313769751693
+            },
+            {
+              "temperature": 0.9,
+              "ratio": 1.3122484186313974
+            },
+            {
+              "temperature": 1,
+              "ratio": 1.352492668621701
+            }
+          ],
+          "clippingControl": {
+            "linear": [
+              -0.125,
+              0.25,
+              2,
+              1
+            ],
+            "output": [
+              0,
+              137,
+              255,
+              255
+            ]
+          },
+          "hashes": {
+            "linear": "1df9e51203351936a4dc529779f0b874f9fa2ef6ee2724eda66d61af4f45a611",
+            "off": "f88fcb9da46e806f50932b722e874f2e1cfef18ed2f4e0e25cb92900d54ecf1e",
+            "static": "80420fbbf0dc636ad8dd5924764c41e65f6a369b7814b5dc73ef6ce9f4900093",
+            "temporal": "dcb50ca565f2343c85b39dc1e4189c1212275dcdd0cb5237eccce69b23d711b3"
+          },
+          "highWaterBytes": 24889420
+        },
+        "worker": {
+          "width": 1080,
+          "height": 1920,
+          "checker": {
+            "linearMean": 0.5,
+            "linearEncoded": 188,
+            "srgbEncoded": 128
+          },
+          "additive": {
+            "linear": [
+              1.5,
+              1.5,
+              1.5,
+              1
+            ],
+            "toneMapped": [
+              203,
+              203,
+              203,
+              255
+            ]
+          },
+          "exposure": [
+            {
+              "ev": -2,
+              "maxHalfUlp": 0
+            },
+            {
+              "ev": 2,
+              "maxHalfUlp": 0
+            }
+          ],
+          "temperatures": [
+            {
+              "temperature": -1,
+              "ratio": 0.7389858686616791
+            },
+            {
+              "temperature": -0.9,
+              "ratio": 0.7620253164556962
+            },
+            {
+              "temperature": -0.8,
+              "ratio": 0.7853470437017995
+            },
+            {
+              "temperature": -0.7,
+              "ratio": 0.8101045296167247
+            },
+            {
+              "temperature": -0.6,
+              "ratio": 0.8353982300884956
+            },
+            {
+              "temperature": -0.5,
+              "ratio": 0.8602875112309074
+            },
+            {
+              "temperature": -0.4,
+              "ratio": 0.8863013698630137
+            },
+            {
+              "temperature": -0.3,
+              "ratio": 0.9136490250696379
+            },
+            {
+              "temperature": -0.2,
+              "ratio": 0.9419263456090652
+            },
+            {
+              "temperature": -0.1,
+              "ratio": 0.9702495201535508
+            },
+            {
+              "temperature": 0,
+              "ratio": 1
+            },
+            {
+              "temperature": 0.1,
+              "ratio": 1.0303030303030303
+            },
+            {
+              "temperature": 0.2,
+              "ratio": 1.0616784630940344
+            },
+            {
+              "temperature": 0.3,
+              "ratio": 1.0936213991769548
+            },
+            {
+              "temperature": 0.4,
+              "ratio": 1.1272917757988477
+            },
+            {
+              "temperature": 0.5,
+              "ratio": 1.1616
+            },
+            {
+              "temperature": 0.6,
+              "ratio": 1.1978260869565218
+            },
+            {
+              "temperature": 0.7,
+              "ratio": 1.2347729789590254
+            },
+            {
+              "temperature": 0.8,
+              "ratio": 1.27313769751693
+            },
+            {
+              "temperature": 0.9,
+              "ratio": 1.3122484186313974
+            },
+            {
+              "temperature": 1,
+              "ratio": 1.352492668621701
+            }
+          ],
+          "clippingControl": {
+            "linear": [
+              -0.125,
+              0.25,
+              2,
+              1
+            ],
+            "output": [
+              0,
+              137,
+              255,
+              255
+            ]
+          },
+          "hashes": {
+            "linear": "1df9e51203351936a4dc529779f0b874f9fa2ef6ee2724eda66d61af4f45a611",
+            "off": "f88fcb9da46e806f50932b722e874f2e1cfef18ed2f4e0e25cb92900d54ecf1e",
+            "static": "80420fbbf0dc636ad8dd5924764c41e65f6a369b7814b5dc73ef6ce9f4900093",
+            "temporal": "dcb50ca565f2343c85b39dc1e4189c1212275dcdd0cb5237eccce69b23d711b3"
+          },
+          "highWaterBytes": 24889420
+        }
+      }
+    },
+    {
+      "repeat": 2,
+      "version": "153.0.8010.12",
+      "hosts": {
+        "html": {
+          "width": 1080,
+          "height": 1920,
+          "checker": {
+            "linearMean": 0.5,
+            "linearEncoded": 188,
+            "srgbEncoded": 128
+          },
+          "additive": {
+            "linear": [
+              1.5,
+              1.5,
+              1.5,
+              1
+            ],
+            "toneMapped": [
+              203,
+              203,
+              203,
+              255
+            ]
+          },
+          "exposure": [
+            {
+              "ev": -2,
+              "maxHalfUlp": 0
+            },
+            {
+              "ev": 2,
+              "maxHalfUlp": 0
+            }
+          ],
+          "temperatures": [
+            {
+              "temperature": -1,
+              "ratio": 0.7389858686616791
+            },
+            {
+              "temperature": -0.9,
+              "ratio": 0.7620253164556962
+            },
+            {
+              "temperature": -0.8,
+              "ratio": 0.7853470437017995
+            },
+            {
+              "temperature": -0.7,
+              "ratio": 0.8101045296167247
+            },
+            {
+              "temperature": -0.6,
+              "ratio": 0.8353982300884956
+            },
+            {
+              "temperature": -0.5,
+              "ratio": 0.8602875112309074
+            },
+            {
+              "temperature": -0.4,
+              "ratio": 0.8863013698630137
+            },
+            {
+              "temperature": -0.3,
+              "ratio": 0.9136490250696379
+            },
+            {
+              "temperature": -0.2,
+              "ratio": 0.9419263456090652
+            },
+            {
+              "temperature": -0.1,
+              "ratio": 0.9702495201535508
+            },
+            {
+              "temperature": 0,
+              "ratio": 1
+            },
+            {
+              "temperature": 0.1,
+              "ratio": 1.0303030303030303
+            },
+            {
+              "temperature": 0.2,
+              "ratio": 1.0616784630940344
+            },
+            {
+              "temperature": 0.3,
+              "ratio": 1.0936213991769548
+            },
+            {
+              "temperature": 0.4,
+              "ratio": 1.1272917757988477
+            },
+            {
+              "temperature": 0.5,
+              "ratio": 1.1616
+            },
+            {
+              "temperature": 0.6,
+              "ratio": 1.1978260869565218
+            },
+            {
+              "temperature": 0.7,
+              "ratio": 1.2347729789590254
+            },
+            {
+              "temperature": 0.8,
+              "ratio": 1.27313769751693
+            },
+            {
+              "temperature": 0.9,
+              "ratio": 1.3122484186313974
+            },
+            {
+              "temperature": 1,
+              "ratio": 1.352492668621701
+            }
+          ],
+          "clippingControl": {
+            "linear": [
+              -0.125,
+              0.25,
+              2,
+              1
+            ],
+            "output": [
+              0,
+              137,
+              255,
+              255
+            ]
+          },
+          "hashes": {
+            "linear": "1df9e51203351936a4dc529779f0b874f9fa2ef6ee2724eda66d61af4f45a611",
+            "off": "f88fcb9da46e806f50932b722e874f2e1cfef18ed2f4e0e25cb92900d54ecf1e",
+            "static": "80420fbbf0dc636ad8dd5924764c41e65f6a369b7814b5dc73ef6ce9f4900093",
+            "temporal": "dcb50ca565f2343c85b39dc1e4189c1212275dcdd0cb5237eccce69b23d711b3"
+          },
+          "highWaterBytes": 24889420
+        },
+        "offscreen": {
+          "width": 1080,
+          "height": 1920,
+          "checker": {
+            "linearMean": 0.5,
+            "linearEncoded": 188,
+            "srgbEncoded": 128
+          },
+          "additive": {
+            "linear": [
+              1.5,
+              1.5,
+              1.5,
+              1
+            ],
+            "toneMapped": [
+              203,
+              203,
+              203,
+              255
+            ]
+          },
+          "exposure": [
+            {
+              "ev": -2,
+              "maxHalfUlp": 0
+            },
+            {
+              "ev": 2,
+              "maxHalfUlp": 0
+            }
+          ],
+          "temperatures": [
+            {
+              "temperature": -1,
+              "ratio": 0.7389858686616791
+            },
+            {
+              "temperature": -0.9,
+              "ratio": 0.7620253164556962
+            },
+            {
+              "temperature": -0.8,
+              "ratio": 0.7853470437017995
+            },
+            {
+              "temperature": -0.7,
+              "ratio": 0.8101045296167247
+            },
+            {
+              "temperature": -0.6,
+              "ratio": 0.8353982300884956
+            },
+            {
+              "temperature": -0.5,
+              "ratio": 0.8602875112309074
+            },
+            {
+              "temperature": -0.4,
+              "ratio": 0.8863013698630137
+            },
+            {
+              "temperature": -0.3,
+              "ratio": 0.9136490250696379
+            },
+            {
+              "temperature": -0.2,
+              "ratio": 0.9419263456090652
+            },
+            {
+              "temperature": -0.1,
+              "ratio": 0.9702495201535508
+            },
+            {
+              "temperature": 0,
+              "ratio": 1
+            },
+            {
+              "temperature": 0.1,
+              "ratio": 1.0303030303030303
+            },
+            {
+              "temperature": 0.2,
+              "ratio": 1.0616784630940344
+            },
+            {
+              "temperature": 0.3,
+              "ratio": 1.0936213991769548
+            },
+            {
+              "temperature": 0.4,
+              "ratio": 1.1272917757988477
+            },
+            {
+              "temperature": 0.5,
+              "ratio": 1.1616
+            },
+            {
+              "temperature": 0.6,
+              "ratio": 1.1978260869565218
+            },
+            {
+              "temperature": 0.7,
+              "ratio": 1.2347729789590254
+            },
+            {
+              "temperature": 0.8,
+              "ratio": 1.27313769751693
+            },
+            {
+              "temperature": 0.9,
+              "ratio": 1.3122484186313974
+            },
+            {
+              "temperature": 1,
+              "ratio": 1.352492668621701
+            }
+          ],
+          "clippingControl": {
+            "linear": [
+              -0.125,
+              0.25,
+              2,
+              1
+            ],
+            "output": [
+              0,
+              137,
+              255,
+              255
+            ]
+          },
+          "hashes": {
+            "linear": "1df9e51203351936a4dc529779f0b874f9fa2ef6ee2724eda66d61af4f45a611",
+            "off": "f88fcb9da46e806f50932b722e874f2e1cfef18ed2f4e0e25cb92900d54ecf1e",
+            "static": "80420fbbf0dc636ad8dd5924764c41e65f6a369b7814b5dc73ef6ce9f4900093",
+            "temporal": "dcb50ca565f2343c85b39dc1e4189c1212275dcdd0cb5237eccce69b23d711b3"
+          },
+          "highWaterBytes": 24889420
+        },
+        "worker": {
+          "width": 1080,
+          "height": 1920,
+          "checker": {
+            "linearMean": 0.5,
+            "linearEncoded": 188,
+            "srgbEncoded": 128
+          },
+          "additive": {
+            "linear": [
+              1.5,
+              1.5,
+              1.5,
+              1
+            ],
+            "toneMapped": [
+              203,
+              203,
+              203,
+              255
+            ]
+          },
+          "exposure": [
+            {
+              "ev": -2,
+              "maxHalfUlp": 0
+            },
+            {
+              "ev": 2,
+              "maxHalfUlp": 0
+            }
+          ],
+          "temperatures": [
+            {
+              "temperature": -1,
+              "ratio": 0.7389858686616791
+            },
+            {
+              "temperature": -0.9,
+              "ratio": 0.7620253164556962
+            },
+            {
+              "temperature": -0.8,
+              "ratio": 0.7853470437017995
+            },
+            {
+              "temperature": -0.7,
+              "ratio": 0.8101045296167247
+            },
+            {
+              "temperature": -0.6,
+              "ratio": 0.8353982300884956
+            },
+            {
+              "temperature": -0.5,
+              "ratio": 0.8602875112309074
+            },
+            {
+              "temperature": -0.4,
+              "ratio": 0.8863013698630137
+            },
+            {
+              "temperature": -0.3,
+              "ratio": 0.9136490250696379
+            },
+            {
+              "temperature": -0.2,
+              "ratio": 0.9419263456090652
+            },
+            {
+              "temperature": -0.1,
+              "ratio": 0.9702495201535508
+            },
+            {
+              "temperature": 0,
+              "ratio": 1
+            },
+            {
+              "temperature": 0.1,
+              "ratio": 1.0303030303030303
+            },
+            {
+              "temperature": 0.2,
+              "ratio": 1.0616784630940344
+            },
+            {
+              "temperature": 0.3,
+              "ratio": 1.0936213991769548
+            },
+            {
+              "temperature": 0.4,
+              "ratio": 1.1272917757988477
+            },
+            {
+              "temperature": 0.5,
+              "ratio": 1.1616
+            },
+            {
+              "temperature": 0.6,
+              "ratio": 1.1978260869565218
+            },
+            {
+              "temperature": 0.7,
+              "ratio": 1.2347729789590254
+            },
+            {
+              "temperature": 0.8,
+              "ratio": 1.27313769751693
+            },
+            {
+              "temperature": 0.9,
+              "ratio": 1.3122484186313974
+            },
+            {
+              "temperature": 1,
+              "ratio": 1.352492668621701
+            }
+          ],
+          "clippingControl": {
+            "linear": [
+              -0.125,
+              0.25,
+              2,
+              1
+            ],
+            "output": [
+              0,
+              137,
+              255,
+              255
+            ]
+          },
+          "hashes": {
+            "linear": "1df9e51203351936a4dc529779f0b874f9fa2ef6ee2724eda66d61af4f45a611",
+            "off": "f88fcb9da46e806f50932b722e874f2e1cfef18ed2f4e0e25cb92900d54ecf1e",
+            "static": "80420fbbf0dc636ad8dd5924764c41e65f6a369b7814b5dc73ef6ce9f4900093",
+            "temporal": "dcb50ca565f2343c85b39dc1e4189c1212275dcdd0cb5237eccce69b23d711b3"
+          },
+          "highWaterBytes": 24889420
+        }
+      }
+    },
+    {
+      "repeat": 3,
+      "version": "153.0.8010.12",
+      "hosts": {
+        "html": {
+          "width": 1080,
+          "height": 1920,
+          "checker": {
+            "linearMean": 0.5,
+            "linearEncoded": 188,
+            "srgbEncoded": 128
+          },
+          "additive": {
+            "linear": [
+              1.5,
+              1.5,
+              1.5,
+              1
+            ],
+            "toneMapped": [
+              203,
+              203,
+              203,
+              255
+            ]
+          },
+          "exposure": [
+            {
+              "ev": -2,
+              "maxHalfUlp": 0
+            },
+            {
+              "ev": 2,
+              "maxHalfUlp": 0
+            }
+          ],
+          "temperatures": [
+            {
+              "temperature": -1,
+              "ratio": 0.7389858686616791
+            },
+            {
+              "temperature": -0.9,
+              "ratio": 0.7620253164556962
+            },
+            {
+              "temperature": -0.8,
+              "ratio": 0.7853470437017995
+            },
+            {
+              "temperature": -0.7,
+              "ratio": 0.8101045296167247
+            },
+            {
+              "temperature": -0.6,
+              "ratio": 0.8353982300884956
+            },
+            {
+              "temperature": -0.5,
+              "ratio": 0.8602875112309074
+            },
+            {
+              "temperature": -0.4,
+              "ratio": 0.8863013698630137
+            },
+            {
+              "temperature": -0.3,
+              "ratio": 0.9136490250696379
+            },
+            {
+              "temperature": -0.2,
+              "ratio": 0.9419263456090652
+            },
+            {
+              "temperature": -0.1,
+              "ratio": 0.9702495201535508
+            },
+            {
+              "temperature": 0,
+              "ratio": 1
+            },
+            {
+              "temperature": 0.1,
+              "ratio": 1.0303030303030303
+            },
+            {
+              "temperature": 0.2,
+              "ratio": 1.0616784630940344
+            },
+            {
+              "temperature": 0.3,
+              "ratio": 1.0936213991769548
+            },
+            {
+              "temperature": 0.4,
+              "ratio": 1.1272917757988477
+            },
+            {
+              "temperature": 0.5,
+              "ratio": 1.1616
+            },
+            {
+              "temperature": 0.6,
+              "ratio": 1.1978260869565218
+            },
+            {
+              "temperature": 0.7,
+              "ratio": 1.2347729789590254
+            },
+            {
+              "temperature": 0.8,
+              "ratio": 1.27313769751693
+            },
+            {
+              "temperature": 0.9,
+              "ratio": 1.3122484186313974
+            },
+            {
+              "temperature": 1,
+              "ratio": 1.352492668621701
+            }
+          ],
+          "clippingControl": {
+            "linear": [
+              -0.125,
+              0.25,
+              2,
+              1
+            ],
+            "output": [
+              0,
+              137,
+              255,
+              255
+            ]
+          },
+          "hashes": {
+            "linear": "1df9e51203351936a4dc529779f0b874f9fa2ef6ee2724eda66d61af4f45a611",
+            "off": "f88fcb9da46e806f50932b722e874f2e1cfef18ed2f4e0e25cb92900d54ecf1e",
+            "static": "80420fbbf0dc636ad8dd5924764c41e65f6a369b7814b5dc73ef6ce9f4900093",
+            "temporal": "dcb50ca565f2343c85b39dc1e4189c1212275dcdd0cb5237eccce69b23d711b3"
+          },
+          "highWaterBytes": 24889420
+        },
+        "offscreen": {
+          "width": 1080,
+          "height": 1920,
+          "checker": {
+            "linearMean": 0.5,
+            "linearEncoded": 188,
+            "srgbEncoded": 128
+          },
+          "additive": {
+            "linear": [
+              1.5,
+              1.5,
+              1.5,
+              1
+            ],
+            "toneMapped": [
+              203,
+              203,
+              203,
+              255
+            ]
+          },
+          "exposure": [
+            {
+              "ev": -2,
+              "maxHalfUlp": 0
+            },
+            {
+              "ev": 2,
+              "maxHalfUlp": 0
+            }
+          ],
+          "temperatures": [
+            {
+              "temperature": -1,
+              "ratio": 0.7389858686616791
+            },
+            {
+              "temperature": -0.9,
+              "ratio": 0.7620253164556962
+            },
+            {
+              "temperature": -0.8,
+              "ratio": 0.7853470437017995
+            },
+            {
+              "temperature": -0.7,
+              "ratio": 0.8101045296167247
+            },
+            {
+              "temperature": -0.6,
+              "ratio": 0.8353982300884956
+            },
+            {
+              "temperature": -0.5,
+              "ratio": 0.8602875112309074
+            },
+            {
+              "temperature": -0.4,
+              "ratio": 0.8863013698630137
+            },
+            {
+              "temperature": -0.3,
+              "ratio": 0.9136490250696379
+            },
+            {
+              "temperature": -0.2,
+              "ratio": 0.9419263456090652
+            },
+            {
+              "temperature": -0.1,
+              "ratio": 0.9702495201535508
+            },
+            {
+              "temperature": 0,
+              "ratio": 1
+            },
+            {
+              "temperature": 0.1,
+              "ratio": 1.0303030303030303
+            },
+            {
+              "temperature": 0.2,
+              "ratio": 1.0616784630940344
+            },
+            {
+              "temperature": 0.3,
+              "ratio": 1.0936213991769548
+            },
+            {
+              "temperature": 0.4,
+              "ratio": 1.1272917757988477
+            },
+            {
+              "temperature": 0.5,
+              "ratio": 1.1616
+            },
+            {
+              "temperature": 0.6,
+              "ratio": 1.1978260869565218
+            },
+            {
+              "temperature": 0.7,
+              "ratio": 1.2347729789590254
+            },
+            {
+              "temperature": 0.8,
+              "ratio": 1.27313769751693
+            },
+            {
+              "temperature": 0.9,
+              "ratio": 1.3122484186313974
+            },
+            {
+              "temperature": 1,
+              "ratio": 1.352492668621701
+            }
+          ],
+          "clippingControl": {
+            "linear": [
+              -0.125,
+              0.25,
+              2,
+              1
+            ],
+            "output": [
+              0,
+              137,
+              255,
+              255
+            ]
+          },
+          "hashes": {
+            "linear": "1df9e51203351936a4dc529779f0b874f9fa2ef6ee2724eda66d61af4f45a611",
+            "off": "f88fcb9da46e806f50932b722e874f2e1cfef18ed2f4e0e25cb92900d54ecf1e",
+            "static": "80420fbbf0dc636ad8dd5924764c41e65f6a369b7814b5dc73ef6ce9f4900093",
+            "temporal": "dcb50ca565f2343c85b39dc1e4189c1212275dcdd0cb5237eccce69b23d711b3"
+          },
+          "highWaterBytes": 24889420
+        },
+        "worker": {
+          "width": 1080,
+          "height": 1920,
+          "checker": {
+            "linearMean": 0.5,
+            "linearEncoded": 188,
+            "srgbEncoded": 128
+          },
+          "additive": {
+            "linear": [
+              1.5,
+              1.5,
+              1.5,
+              1
+            ],
+            "toneMapped": [
+              203,
+              203,
+              203,
+              255
+            ]
+          },
+          "exposure": [
+            {
+              "ev": -2,
+              "maxHalfUlp": 0
+            },
+            {
+              "ev": 2,
+              "maxHalfUlp": 0
+            }
+          ],
+          "temperatures": [
+            {
+              "temperature": -1,
+              "ratio": 0.7389858686616791
+            },
+            {
+              "temperature": -0.9,
+              "ratio": 0.7620253164556962
+            },
+            {
+              "temperature": -0.8,
+              "ratio": 0.7853470437017995
+            },
+            {
+              "temperature": -0.7,
+              "ratio": 0.8101045296167247
+            },
+            {
+              "temperature": -0.6,
+              "ratio": 0.8353982300884956
+            },
+            {
+              "temperature": -0.5,
+              "ratio": 0.8602875112309074
+            },
+            {
+              "temperature": -0.4,
+              "ratio": 0.8863013698630137
+            },
+            {
+              "temperature": -0.3,
+              "ratio": 0.9136490250696379
+            },
+            {
+              "temperature": -0.2,
+              "ratio": 0.9419263456090652
+            },
+            {
+              "temperature": -0.1,
+              "ratio": 0.9702495201535508
+            },
+            {
+              "temperature": 0,
+              "ratio": 1
+            },
+            {
+              "temperature": 0.1,
+              "ratio": 1.0303030303030303
+            },
+            {
+              "temperature": 0.2,
+              "ratio": 1.0616784630940344
+            },
+            {
+              "temperature": 0.3,
+              "ratio": 1.0936213991769548
+            },
+            {
+              "temperature": 0.4,
+              "ratio": 1.1272917757988477
+            },
+            {
+              "temperature": 0.5,
+              "ratio": 1.1616
+            },
+            {
+              "temperature": 0.6,
+              "ratio": 1.1978260869565218
+            },
+            {
+              "temperature": 0.7,
+              "ratio": 1.2347729789590254
+            },
+            {
+              "temperature": 0.8,
+              "ratio": 1.27313769751693
+            },
+            {
+              "temperature": 0.9,
+              "ratio": 1.3122484186313974
+            },
+            {
+              "temperature": 1,
+              "ratio": 1.352492668621701
+            }
+          ],
+          "clippingControl": {
+            "linear": [
+              -0.125,
+              0.25,
+              2,
+              1
+            ],
+            "output": [
+              0,
+              137,
+              255,
+              255
+            ]
+          },
+          "hashes": {
+            "linear": "1df9e51203351936a4dc529779f0b874f9fa2ef6ee2724eda66d61af4f45a611",
+            "off": "f88fcb9da46e806f50932b722e874f2e1cfef18ed2f4e0e25cb92900d54ecf1e",
+            "static": "80420fbbf0dc636ad8dd5924764c41e65f6a369b7814b5dc73ef6ce9f4900093",
+            "temporal": "dcb50ca565f2343c85b39dc1e4189c1212275dcdd0cb5237eccce69b23d711b3"
+          },
+          "highWaterBytes": 24889420
+        }
+      }
+    },
+    {
+      "repeat": 4,
+      "version": "153.0.8010.12",
+      "hosts": {
+        "html": {
+          "width": 1080,
+          "height": 1920,
+          "checker": {
+            "linearMean": 0.5,
+            "linearEncoded": 188,
+            "srgbEncoded": 128
+          },
+          "additive": {
+            "linear": [
+              1.5,
+              1.5,
+              1.5,
+              1
+            ],
+            "toneMapped": [
+              203,
+              203,
+              203,
+              255
+            ]
+          },
+          "exposure": [
+            {
+              "ev": -2,
+              "maxHalfUlp": 0
+            },
+            {
+              "ev": 2,
+              "maxHalfUlp": 0
+            }
+          ],
+          "temperatures": [
+            {
+              "temperature": -1,
+              "ratio": 0.7389858686616791
+            },
+            {
+              "temperature": -0.9,
+              "ratio": 0.7620253164556962
+            },
+            {
+              "temperature": -0.8,
+              "ratio": 0.7853470437017995
+            },
+            {
+              "temperature": -0.7,
+              "ratio": 0.8101045296167247
+            },
+            {
+              "temperature": -0.6,
+              "ratio": 0.8353982300884956
+            },
+            {
+              "temperature": -0.5,
+              "ratio": 0.8602875112309074
+            },
+            {
+              "temperature": -0.4,
+              "ratio": 0.8863013698630137
+            },
+            {
+              "temperature": -0.3,
+              "ratio": 0.9136490250696379
+            },
+            {
+              "temperature": -0.2,
+              "ratio": 0.9419263456090652
+            },
+            {
+              "temperature": -0.1,
+              "ratio": 0.9702495201535508
+            },
+            {
+              "temperature": 0,
+              "ratio": 1
+            },
+            {
+              "temperature": 0.1,
+              "ratio": 1.0303030303030303
+            },
+            {
+              "temperature": 0.2,
+              "ratio": 1.0616784630940344
+            },
+            {
+              "temperature": 0.3,
+              "ratio": 1.0936213991769548
+            },
+            {
+              "temperature": 0.4,
+              "ratio": 1.1272917757988477
+            },
+            {
+              "temperature": 0.5,
+              "ratio": 1.1616
+            },
+            {
+              "temperature": 0.6,
+              "ratio": 1.1978260869565218
+            },
+            {
+              "temperature": 0.7,
+              "ratio": 1.2347729789590254
+            },
+            {
+              "temperature": 0.8,
+              "ratio": 1.27313769751693
+            },
+            {
+              "temperature": 0.9,
+              "ratio": 1.3122484186313974
+            },
+            {
+              "temperature": 1,
+              "ratio": 1.352492668621701
+            }
+          ],
+          "clippingControl": {
+            "linear": [
+              -0.125,
+              0.25,
+              2,
+              1
+            ],
+            "output": [
+              0,
+              137,
+              255,
+              255
+            ]
+          },
+          "hashes": {
+            "linear": "1df9e51203351936a4dc529779f0b874f9fa2ef6ee2724eda66d61af4f45a611",
+            "off": "f88fcb9da46e806f50932b722e874f2e1cfef18ed2f4e0e25cb92900d54ecf1e",
+            "static": "80420fbbf0dc636ad8dd5924764c41e65f6a369b7814b5dc73ef6ce9f4900093",
+            "temporal": "dcb50ca565f2343c85b39dc1e4189c1212275dcdd0cb5237eccce69b23d711b3"
+          },
+          "highWaterBytes": 24889420
+        },
+        "offscreen": {
+          "width": 1080,
+          "height": 1920,
+          "checker": {
+            "linearMean": 0.5,
+            "linearEncoded": 188,
+            "srgbEncoded": 128
+          },
+          "additive": {
+            "linear": [
+              1.5,
+              1.5,
+              1.5,
+              1
+            ],
+            "toneMapped": [
+              203,
+              203,
+              203,
+              255
+            ]
+          },
+          "exposure": [
+            {
+              "ev": -2,
+              "maxHalfUlp": 0
+            },
+            {
+              "ev": 2,
+              "maxHalfUlp": 0
+            }
+          ],
+          "temperatures": [
+            {
+              "temperature": -1,
+              "ratio": 0.7389858686616791
+            },
+            {
+              "temperature": -0.9,
+              "ratio": 0.7620253164556962
+            },
+            {
+              "temperature": -0.8,
+              "ratio": 0.7853470437017995
+            },
+            {
+              "temperature": -0.7,
+              "ratio": 0.8101045296167247
+            },
+            {
+              "temperature": -0.6,
+              "ratio": 0.8353982300884956
+            },
+            {
+              "temperature": -0.5,
+              "ratio": 0.8602875112309074
+            },
+            {
+              "temperature": -0.4,
+              "ratio": 0.8863013698630137
+            },
+            {
+              "temperature": -0.3,
+              "ratio": 0.9136490250696379
+            },
+            {
+              "temperature": -0.2,
+              "ratio": 0.9419263456090652
+            },
+            {
+              "temperature": -0.1,
+              "ratio": 0.9702495201535508
+            },
+            {
+              "temperature": 0,
+              "ratio": 1
+            },
+            {
+              "temperature": 0.1,
+              "ratio": 1.0303030303030303
+            },
+            {
+              "temperature": 0.2,
+              "ratio": 1.0616784630940344
+            },
+            {
+              "temperature": 0.3,
+              "ratio": 1.0936213991769548
+            },
+            {
+              "temperature": 0.4,
+              "ratio": 1.1272917757988477
+            },
+            {
+              "temperature": 0.5,
+              "ratio": 1.1616
+            },
+            {
+              "temperature": 0.6,
+              "ratio": 1.1978260869565218
+            },
+            {
+              "temperature": 0.7,
+              "ratio": 1.2347729789590254
+            },
+            {
+              "temperature": 0.8,
+              "ratio": 1.27313769751693
+            },
+            {
+              "temperature": 0.9,
+              "ratio": 1.3122484186313974
+            },
+            {
+              "temperature": 1,
+              "ratio": 1.352492668621701
+            }
+          ],
+          "clippingControl": {
+            "linear": [
+              -0.125,
+              0.25,
+              2,
+              1
+            ],
+            "output": [
+              0,
+              137,
+              255,
+              255
+            ]
+          },
+          "hashes": {
+            "linear": "1df9e51203351936a4dc529779f0b874f9fa2ef6ee2724eda66d61af4f45a611",
+            "off": "f88fcb9da46e806f50932b722e874f2e1cfef18ed2f4e0e25cb92900d54ecf1e",
+            "static": "80420fbbf0dc636ad8dd5924764c41e65f6a369b7814b5dc73ef6ce9f4900093",
+            "temporal": "dcb50ca565f2343c85b39dc1e4189c1212275dcdd0cb5237eccce69b23d711b3"
+          },
+          "highWaterBytes": 24889420
+        },
+        "worker": {
+          "width": 1080,
+          "height": 1920,
+          "checker": {
+            "linearMean": 0.5,
+            "linearEncoded": 188,
+            "srgbEncoded": 128
+          },
+          "additive": {
+            "linear": [
+              1.5,
+              1.5,
+              1.5,
+              1
+            ],
+            "toneMapped": [
+              203,
+              203,
+              203,
+              255
+            ]
+          },
+          "exposure": [
+            {
+              "ev": -2,
+              "maxHalfUlp": 0
+            },
+            {
+              "ev": 2,
+              "maxHalfUlp": 0
+            }
+          ],
+          "temperatures": [
+            {
+              "temperature": -1,
+              "ratio": 0.7389858686616791
+            },
+            {
+              "temperature": -0.9,
+              "ratio": 0.7620253164556962
+            },
+            {
+              "temperature": -0.8,
+              "ratio": 0.7853470437017995
+            },
+            {
+              "temperature": -0.7,
+              "ratio": 0.8101045296167247
+            },
+            {
+              "temperature": -0.6,
+              "ratio": 0.8353982300884956
+            },
+            {
+              "temperature": -0.5,
+              "ratio": 0.8602875112309074
+            },
+            {
+              "temperature": -0.4,
+              "ratio": 0.8863013698630137
+            },
+            {
+              "temperature": -0.3,
+              "ratio": 0.9136490250696379
+            },
+            {
+              "temperature": -0.2,
+              "ratio": 0.9419263456090652
+            },
+            {
+              "temperature": -0.1,
+              "ratio": 0.9702495201535508
+            },
+            {
+              "temperature": 0,
+              "ratio": 1
+            },
+            {
+              "temperature": 0.1,
+              "ratio": 1.0303030303030303
+            },
+            {
+              "temperature": 0.2,
+              "ratio": 1.0616784630940344
+            },
+            {
+              "temperature": 0.3,
+              "ratio": 1.0936213991769548
+            },
+            {
+              "temperature": 0.4,
+              "ratio": 1.1272917757988477
+            },
+            {
+              "temperature": 0.5,
+              "ratio": 1.1616
+            },
+            {
+              "temperature": 0.6,
+              "ratio": 1.1978260869565218
+            },
+            {
+              "temperature": 0.7,
+              "ratio": 1.2347729789590254
+            },
+            {
+              "temperature": 0.8,
+              "ratio": 1.27313769751693
+            },
+            {
+              "temperature": 0.9,
+              "ratio": 1.3122484186313974
+            },
+            {
+              "temperature": 1,
+              "ratio": 1.352492668621701
+            }
+          ],
+          "clippingControl": {
+            "linear": [
+              -0.125,
+              0.25,
+              2,
+              1
+            ],
+            "output": [
+              0,
+              137,
+              255,
+              255
+            ]
+          },
+          "hashes": {
+            "linear": "1df9e51203351936a4dc529779f0b874f9fa2ef6ee2724eda66d61af4f45a611",
+            "off": "f88fcb9da46e806f50932b722e874f2e1cfef18ed2f4e0e25cb92900d54ecf1e",
+            "static": "80420fbbf0dc636ad8dd5924764c41e65f6a369b7814b5dc73ef6ce9f4900093",
+            "temporal": "dcb50ca565f2343c85b39dc1e4189c1212275dcdd0cb5237eccce69b23d711b3"
+          },
+          "highWaterBytes": 24889420
+        }
+      }
+    }
+  ]
+}

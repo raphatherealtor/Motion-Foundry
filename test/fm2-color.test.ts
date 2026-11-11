@@ -1,0 +1,21 @@
+import test from 'node:test';import assert from 'node:assert/strict';
+import {colorPerception} from '../src/fm2/color/perception.js';
+import {banding,negativeControl} from '../src/fm2/color/banding.js';
+test('FM2 color perception reports negative/HDR and output endpoint controls',()=>{
+ const p=colorPerception(new Float32Array([-.125,.25,2,1]),new Uint8Array([0,137,255,255]),1,1);
+ assert.equal(p.counts.negativePixels,1);assert.equal(p.counts.negativeComponents,1);assert.equal(p.counts.aboveOnePixels,1);assert.equal(p.mask[0],15);assert.equal(p.histograms.linear.reduce((a,b)=>a+b,0),1);assert.equal(p.histograms.output.reduce((a,b)=>a+b,0),1);
+});
+test('FM2 color perception skips fully transparent pixels',()=>{const p=colorPerception(new Float32Array(4),new Uint8Array(4),1,1);assert.equal(p.counts.coveredPixels,0);assert.equal(p.mask[0],0);});
+test('FM2 color perception rejects invalid dimensions',()=>assert.throws(()=>colorPerception(new Float32Array(4),new Uint8Array(4),2,1)));
+const frame=(step:boolean)=>{const pixels=new Uint8Array(64*64*4),expected=new Float64Array(pixels.length);for(let y=0;y<64;y++)for(let x=0;x<64;x++){const i=4*(y*64+x);for(let c=0;c<3;c++){pixels[i+c]=step?Math.floor(x/16)*16:32;expected[i+c]=step?x:32;}pixels[i+3]=255;expected[i+3]=255;}return {pixels,expected};};
+const region=[{id:'synthetic',x:0,y:0,width:64,height:64,channel:0 as const}],params={lines:64,runFactor:1.5,maxStepLsb:1,peakDb:6,window:32};
+test('FM2 banding accepts an exactly flat control',()=>{const f=frame(false);assert.equal(banding(f.pixels,f.expected,64,64,region,'flat',true,params).status,'PASS');});
+test('FM2 banding rejects coarse steps on a contract card',()=>{const f=frame(true);const v=banding(f.pixels,f.expected,64,64,region,'steps',true,params);assert.equal(v.status,'FAIL');assert.ok(v.violations.length);});
+test('FM2 production banding remains a warning',()=>{const f=frame(true);assert.equal(banding(f.pixels,f.expected,64,64,region,'scene',false,params).status,'WARN');});
+test('FM2 negative control must actually fail',()=>{const f=frame(false),v=banding(f.pixels,f.expected,64,64,region,'flat',true,params);assert.equal(negativeControl(v,v).status,'ERROR');});
+test('FM2 a failing positive card cannot close the banding gate',()=>{const f=frame(true),v=banding(f.pixels,f.expected,64,64,region,'steps',true,params);assert.equal(negativeControl(v,v).status,'BLOCKED');});
+test('FM2 banding rejects an out-of-frame region',()=>{const f=frame(false);assert.throws(()=>banding(f.pixels,f.expected,64,64,[{...region[0],x:1}],'bad',true,params));});
+import {profileCapabilities} from '../src/fm2/color/profile.js';
+test('FM2 profile metadata warns on wide gamut and unverified assets',()=>{const p=profileCapabilities([{id:'a',profile:'srgb'},{id:'b',profile:'display-p3'},{id:'c',profile:'unknown'}]);assert.equal(p.status,'WARN');assert.equal(p.warnings.length,2);assert.equal(p.wide_gamut,false);});
+test('FM2 sRGB asset metadata does not claim a new ICC transform',()=>{const p=profileCapabilities([{id:'a',profile:'untagged'}]);assert.equal(p.status,'PASS');assert.match(p.icc_decode,/browser-managed/);});
+test('FM2 literal banding rule rejects a two-LSB dither-like jump',()=>{const f=frame(false);for(let i=0;i<f.pixels.length;i+=4)if((i/4)%2)f.pixels[i]=34;const v=banding(f.pixels,f.expected,64,64,region,'two-lsb',true,params);assert.equal(v.status,'FAIL');assert.ok(v.violations.some(x=>x.detail==='ADJACENT_RUN_STEP_EXCEEDS_ONE_LSB'));});

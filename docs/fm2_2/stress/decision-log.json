@@ -1,0 +1,22 @@
+{
+  "milestone": "FM2.2",
+  "base_failure": {
+    "banding": "Positive static and temporal cards FAIL raw steps/run bounds; off control FAILS correctly",
+    "capture": "Frozen M0 uncached attempts differ at frames95 and121"
+  },
+  "reviewer_proposal": null,
+  "engineering_proposal": "Review banding metric on oracle residuals/aggregated profiles; retain negative control. No correction applied. Investigate M0 capture separately with zero tolerance.",
+  "gate_decision": "BLOCKED",
+  "candidate_revision": {
+    "product": "90c6924",
+    "foundry_foundation": "a88c6d0"
+  },
+  "new_validation_result": {
+    "color_stress": "PASS:5 launches x3 hosts",
+    "product_tests": "729/729",
+    "goldens": "52/52",
+    "foundry_final": "97/98; frozen repeat-render FAIL",
+    "banding": "BLOCKED",
+    "compat": "PASS:5/5; exact suites exact, 570/7/0 and signed/position hashes unchanged"
+  }
+}

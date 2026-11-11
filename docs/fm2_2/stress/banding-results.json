@@ -1,0 +1,1013 @@
+{
+  "width": 1080,
+  "height": 1920,
+  "validations": {
+    "off": {
+      "schema": "foundry.validation/0.1",
+      "render_id": "gradient:off",
+      "validator": "banding.v1",
+      "kind": "hard_contract",
+      "status": "FAIL",
+      "params": {
+        "lines": 64,
+        "runFactor": 1.5,
+        "maxStepLsb": 1,
+        "peakDb": 6,
+        "window": 256,
+        "metric": "raw scanline run steps; averaged quantization-error spectrum",
+        "metrics": [
+          {
+            "region": "horizontal_linear",
+            "channel": 0,
+            "maxStep": 3,
+            "stepCount": 768,
+            "meanMaxRun": 10,
+            "maxRunRatio": 1.7036648503427756,
+            "longRuns": 128,
+            "maxPeakDb": 20.06200309490966,
+            "expectedMaxStep": 3.0540000915527505,
+            "maxMeanResidualStep": 0.9448333951131644,
+            "spectra": [
+              {
+                "frequency": 0.47661474401983395,
+                "bin": 122,
+                "peakPower": 0.000335737553858825,
+                "noisePower": 0.00022155403122895562,
+                "peakDb": 1.8052026535769348
+              },
+              {
+                "frequency": 0.15702702073380626,
+                "bin": 40,
+                "peakPower": 0.0031511550094512277,
+                "noisePower": 0.00012834226906110693,
+                "peakDb": 13.901000539678412
+              },
+              {
+                "frequency": 0.11210436593184331,
+                "bin": 29,
+                "peakPower": 0.007104318355375173,
+                "noisePower": 0.00007003612434539149,
+                "peakDb": 20.06200309490966
+              }
+            ]
+          },
+          {
+            "region": "radial_vignette",
+            "channel": 0,
+            "maxStep": 1,
+            "stepCount": 0,
+            "meanMaxRun": 75.4375,
+            "maxRunRatio": 1.3230577692303978,
+            "longRuns": 0,
+            "maxPeakDb": 13.183620379377475,
+            "expectedMaxStep": 0.3438046256520906,
+            "maxMeanResidualStep": 0.2089333961861115,
+            "spectra": [
+              {
+                "frequency": 0.26633380011208835,
+                "bin": 68,
+                "peakPower": 0.0007268790521280557,
+                "noisePower": 0.00021873464748377674,
+                "peakDb": 5.215445725730534
+              },
+              {
+                "frequency": 0,
+                "bin": 1,
+                "peakPower": 0.0016980539346929423,
+                "noisePower": 0.00008158107852831534,
+                "peakDb": 13.183620379377475
+              },
+              {
+                "frequency": 0.26633380011208835,
+                "bin": 68,
+                "peakPower": 0.0007268790521280559,
+                "noisePower": 0.00021873464748377715,
+                "peakDb": 5.215445725730527
+              }
+            ]
+          },
+          {
+            "region": "navy_black",
+            "channel": 2,
+            "maxStep": 1,
+            "stepCount": 0,
+            "meanMaxRun": 34,
+            "maxRunRatio": 1.0987936837332588,
+            "longRuns": 0,
+            "maxPeakDb": 26.92054451321054,
+            "expectedMaxStep": 0.1382469177246266,
+            "maxMeanResidualStep": 0.9785617513499645,
+            "spectra": [
+              {
+                "frequency": 0.10387887137830319,
+                "bin": 27,
+                "peakPower": 0.001541525708292593,
+                "noisePower": 0.00013801708950874467,
+                "peakDb": 10.480179071217815
+              },
+              {
+                "frequency": 0.04313690052363988,
+                "bin": 11,
+                "peakPower": 0.015118176316181814,
+                "noisePower": 0.00005934946901550849,
+                "peakDb": 24.06082568220777
+              },
+              {
+                "frequency": 0.030837337501982687,
+                "bin": 8,
+                "peakPower": 0.02275651076185838,
+                "noisePower": 0.00004624355586627321,
+                "peakDb": 26.92054451321054
+              }
+            ]
+          },
+          {
+            "region": "skin_tone",
+            "channel": 0,
+            "maxStep": 1,
+            "stepCount": 0,
+            "meanMaxRun": 15,
+            "maxRunRatio": 1.1433461874546325,
+            "longRuns": 0,
+            "maxPeakDb": 21.160952364385995,
+            "expectedMaxStep": 0.18552245557545177,
+            "maxMeanResidualStep": 0.9367085003019042,
+            "spectra": [
+              {
+                "frequency": 0.1413393380482274,
+                "bin": 36,
+                "peakPower": 0.0024964509209498466,
+                "noisePower": 0.00011018633045599581,
+                "peakDb": 13.551953124873414
+              },
+              {
+                "frequency": 0.09583610951545929,
+                "bin": 25,
+                "peakPower": 0.0069983601082357315,
+                "noisePower": 0.00010170913949264698,
+                "peakDb": 18.376363058256608
+              },
+              {
+                "frequency": 0.07619160950298631,
+                "bin": 20,
+                "peakPower": 0.00998222406867821,
+                "noisePower": 0.00007640681167679026,
+                "peakDb": 21.160952364385995
+              }
+            ]
+          }
+        ]
+      },
+      "violations": [
+        {
+          "region": "horizontal_linear",
+          "detail": "ADJACENT_RUN_STEP_EXCEEDS_ONE_LSB",
+          "count": 768,
+          "maxStep": 3
+        },
+        {
+          "region": "horizontal_linear",
+          "detail": "CONSTANT_RUN_TOO_LONG",
+          "count": 128,
+          "maxRunRatio": 1.7036648503427756
+        },
+        {
+          "region": "horizontal_linear",
+          "detail": "STEP_FREQUENCY_PEAK",
+          "peakDb": 20.06200309490966
+        },
+        {
+          "region": "radial_vignette",
+          "detail": "STEP_FREQUENCY_PEAK",
+          "peakDb": 13.183620379377475
+        },
+        {
+          "region": "navy_black",
+          "detail": "STEP_FREQUENCY_PEAK",
+          "peakDb": 26.92054451321054
+        },
+        {
+          "region": "skin_tone",
+          "detail": "STEP_FREQUENCY_PEAK",
+          "peakDb": 21.160952364385995
+        }
+      ]
+    },
+    "static": {
+      "schema": "foundry.validation/0.1",
+      "render_id": "gradient:static",
+      "validator": "banding.v1",
+      "kind": "hard_contract",
+      "status": "FAIL",
+      "params": {
+        "lines": 64,
+        "runFactor": 1.5,
+        "maxStepLsb": 1,
+        "peakDb": 6,
+        "window": 256,
+        "metric": "raw scanline run steps; averaged quantization-error spectrum",
+        "metrics": [
+          {
+            "region": "horizontal_linear",
+            "channel": 0,
+            "maxStep": 5,
+            "stepCount": 2749,
+            "meanMaxRun": 10.296875,
+            "maxRunRatio": 3,
+            "longRuns": 856,
+            "maxPeakDb": 0.3254470883570332,
+            "expectedMaxStep": 3.0540000915527505,
+            "maxMeanResidualStep": 0.32084086971224224,
+            "spectra": [
+              {
+                "frequency": 0.47661474401983395,
+                "bin": 122,
+                "peakPower": 0.0010566506782177677,
+                "noisePower": 0.0009803625827575079,
+                "peakDb": 0.3254470883570332
+              },
+              {
+                "frequency": 0.15702702073380626,
+                "bin": 40,
+                "peakPower": 0.0008917346651941805,
+                "noisePower": 0.0009746718951336282,
+                "peakDb": -0.3862279358827734
+              },
+              {
+                "frequency": 0.11210436593184331,
+                "bin": 29,
+                "peakPower": 0.000997590349951537,
+                "noisePower": 0.000965056422019069,
+                "peakDb": 0.1439953429400182
+              }
+            ]
+          },
+          {
+            "region": "radial_vignette",
+            "channel": 0,
+            "maxStep": 2,
+            "stepCount": 1652,
+            "meanMaxRun": 12.359375,
+            "maxRunRatio": 2.371830981333099,
+            "longRuns": 336,
+            "maxPeakDb": 1.0916825149520228,
+            "expectedMaxStep": 0.3438046256520906,
+            "maxMeanResidualStep": 0.32378446038703146,
+            "spectra": [
+              {
+                "frequency": 0.26633380011208835,
+                "bin": 68,
+                "peakPower": 0.0010466559338609552,
+                "noisePower": 0.0009698565761711023,
+                "peakDb": 0.3309642505409071
+              },
+              {
+                "frequency": 0,
+                "bin": 1,
+                "peakPower": 0.0011174690086919088,
+                "noisePower": 0.0009655657680244606,
+                "peakDb": 0.6345362704989028
+              },
+              {
+                "frequency": 0.26633380011208835,
+                "bin": 68,
+                "peakPower": 0.0012589895716131946,
+                "noisePower": 0.000979160490722945,
+                "peakDb": 1.0916825149520228
+              }
+            ]
+          },
+          {
+            "region": "navy_black",
+            "channel": 2,
+            "maxStep": 2,
+            "stepCount": 1202,
+            "meanMaxRun": 15,
+            "maxRunRatio": 1.6486801841042262,
+            "longRuns": 5,
+            "maxPeakDb": 1.113131529122087,
+            "expectedMaxStep": 0.1382469177246266,
+            "maxMeanResidualStep": 0.3649782347223578,
+            "spectra": [
+              {
+                "frequency": 0.10387887137830319,
+                "bin": 27,
+                "peakPower": 0.0010370723494834918,
+                "noisePower": 0.0009732455932021871,
+                "peakDb": 0.2758660928256387
+              },
+              {
+                "frequency": 0.04313690052363988,
+                "bin": 11,
+                "peakPower": 0.0012467958686150672,
+                "noisePower": 0.000964899767189725,
+                "peakDb": 1.113131529122087
+              },
+              {
+                "frequency": 0.030837337501982687,
+                "bin": 8,
+                "peakPower": 0.0010661047842639557,
+                "noisePower": 0.000988822689958273,
+                "peakDb": 0.3268146892916841
+              }
+            ]
+          },
+          {
+            "region": "skin_tone",
+            "channel": 0,
+            "maxStep": 2,
+            "stepCount": 1340,
+            "meanMaxRun": 11.75,
+            "maxRunRatio": 1.7417976050993191,
+            "longRuns": 4,
+            "maxPeakDb": 1.1046215849091983,
+            "expectedMaxStep": 0.18552245557545177,
+            "maxMeanResidualStep": 0.3030108473468829,
+            "spectra": [
+              {
+                "frequency": 0.1413393380482274,
+                "bin": 36,
+                "peakPower": 0.0012567337529959394,
+                "noisePower": 0.0009744983786937365,
+                "peakDb": 1.1046215849091983
+              },
+              {
+                "frequency": 0.09583610951545929,
+                "bin": 25,
+                "peakPower": 0.001084215752592305,
+                "noisePower": 0.0009814175495587592,
+                "peakDb": 0.4326189316166657
+              },
+              {
+                "frequency": 0.07619160950298631,
+                "bin": 20,
+                "peakPower": 0.0010492547156839185,
+                "noisePower": 0.0009782919426100422,
+                "peakDb": 0.3041245313304985
+              }
+            ]
+          }
+        ]
+      },
+      "violations": [
+        {
+          "region": "horizontal_linear",
+          "detail": "ADJACENT_RUN_STEP_EXCEEDS_ONE_LSB",
+          "count": 2749,
+          "maxStep": 5
+        },
+        {
+          "region": "horizontal_linear",
+          "detail": "CONSTANT_RUN_TOO_LONG",
+          "count": 856,
+          "maxRunRatio": 3
+        },
+        {
+          "region": "radial_vignette",
+          "detail": "ADJACENT_RUN_STEP_EXCEEDS_ONE_LSB",
+          "count": 1652,
+          "maxStep": 2
+        },
+        {
+          "region": "radial_vignette",
+          "detail": "CONSTANT_RUN_TOO_LONG",
+          "count": 336,
+          "maxRunRatio": 2.371830981333099
+        },
+        {
+          "region": "navy_black",
+          "detail": "ADJACENT_RUN_STEP_EXCEEDS_ONE_LSB",
+          "count": 1202,
+          "maxStep": 2
+        },
+        {
+          "region": "navy_black",
+          "detail": "CONSTANT_RUN_TOO_LONG",
+          "count": 5,
+          "maxRunRatio": 1.6486801841042262
+        },
+        {
+          "region": "skin_tone",
+          "detail": "ADJACENT_RUN_STEP_EXCEEDS_ONE_LSB",
+          "count": 1340,
+          "maxStep": 2
+        },
+        {
+          "region": "skin_tone",
+          "detail": "CONSTANT_RUN_TOO_LONG",
+          "count": 4,
+          "maxRunRatio": 1.7417976050993191
+        }
+      ]
+    },
+    "temporal": {
+      "schema": "foundry.validation/0.1",
+      "render_id": "gradient:temporal",
+      "validator": "banding.v1",
+      "kind": "hard_contract",
+      "status": "FAIL",
+      "params": {
+        "lines": 64,
+        "runFactor": 1.5,
+        "maxStepLsb": 1,
+        "peakDb": 6,
+        "window": 256,
+        "metric": "raw scanline run steps; averaged quantization-error spectrum",
+        "metrics": [
+          {
+            "region": "horizontal_linear",
+            "channel": 0,
+            "maxStep": 5,
+            "stepCount": 2731,
+            "meanMaxRun": 10.171875,
+            "maxRunRatio": 3,
+            "longRuns": 782,
+            "maxPeakDb": 0.9821536694570664,
+            "expectedMaxStep": 3.0540000915527505,
+            "maxMeanResidualStep": 0.2996273487211454,
+            "spectra": [
+              {
+                "frequency": 0.47661474401983395,
+                "bin": 122,
+                "peakPower": 0.001220689012072071,
+                "noisePower": 0.000973620407645057,
+                "peakDb": 0.9821536694570664
+              },
+              {
+                "frequency": 0.15702702073380626,
+                "bin": 40,
+                "peakPower": 0.0009415298582575014,
+                "noisePower": 0.0009734308039154494,
+                "peakDb": -0.14470988107854335
+              },
+              {
+                "frequency": 0.11210436593184331,
+                "bin": 29,
+                "peakPower": 0.0010219812048199036,
+                "noisePower": 0.0009504812520575885,
+                "peakDb": 0.31499353830224397
+              }
+            ]
+          },
+          {
+            "region": "radial_vignette",
+            "channel": 0,
+            "maxStep": 2,
+            "stepCount": 1629,
+            "meanMaxRun": 12.578125,
+            "maxRunRatio": 2.290115520809848,
+            "longRuns": 309,
+            "maxPeakDb": 0.6802610864307361,
+            "expectedMaxStep": 0.3438046256520906,
+            "maxMeanResidualStep": 0.3183572256708942,
+            "spectra": [
+              {
+                "frequency": 0.26633380011208835,
+                "bin": 68,
+                "peakPower": 0.0011452830136885557,
+                "noisePower": 0.0009792345110620673,
+                "peakDb": 0.6802610864307361
+              },
+              {
+                "frequency": 0,
+                "bin": 1,
+                "peakPower": 0.001001213827302746,
+                "noisePower": 0.0009703300398291499,
+                "peakDb": 0.13607362183681138
+              },
+              {
+                "frequency": 0.26633380011208835,
+                "bin": 68,
+                "peakPower": 0.0009467532781390049,
+                "noisePower": 0.000967177679889,
+                "peakDb": -0.09269447964116913
+              }
+            ]
+          },
+          {
+            "region": "navy_black",
+            "channel": 2,
+            "maxStep": 2,
+            "stepCount": 1222,
+            "meanMaxRun": 15.765625,
+            "maxRunRatio": 1.5138037490844742,
+            "longRuns": 1,
+            "maxPeakDb": 1.1792484773324392,
+            "expectedMaxStep": 0.1382469177246266,
+            "maxMeanResidualStep": 0.3030513154530965,
+            "spectra": [
+              {
+                "frequency": 0.10387887137830319,
+                "bin": 27,
+                "peakPower": 0.001255617313482916,
+                "noisePower": 0.0009570451962986595,
+                "peakDb": 1.1792484773324392
+              },
+              {
+                "frequency": 0.04313690052363988,
+                "bin": 11,
+                "peakPower": 0.0010194188351103062,
+                "noisePower": 0.0009694569124674968,
+                "peakDb": 0.21824141874927605
+              },
+              {
+                "frequency": 0.030837337501982687,
+                "bin": 8,
+                "peakPower": 0.0011591267174644701,
+                "noisePower": 0.0009839551623049597,
+                "peakDb": 0.7115560769392377
+              }
+            ]
+          },
+          {
+            "region": "skin_tone",
+            "channel": 0,
+            "maxStep": 2,
+            "stepCount": 1322,
+            "meanMaxRun": 12.203125,
+            "maxRunRatio": 2.0780891878686476,
+            "longRuns": 5,
+            "maxPeakDb": 0.8137815206189054,
+            "expectedMaxStep": 0.18552245557545177,
+            "maxMeanResidualStep": 0.3072179116804534,
+            "spectra": [
+              {
+                "frequency": 0.1413393380482274,
+                "bin": 36,
+                "peakPower": 0.0011154132639239706,
+                "noisePower": 0.0009649309104355889,
+                "peakDb": 0.6293958585209496
+              },
+              {
+                "frequency": 0.09583610951545929,
+                "bin": 25,
+                "peakPower": 0.0011785687771213953,
+                "noisePower": 0.0009771849720880312,
+                "peakDb": 0.8137815206189054
+              },
+              {
+                "frequency": 0.07619160950298631,
+                "bin": 20,
+                "peakPower": 0.0011440077195043227,
+                "noisePower": 0.0009875161360004543,
+                "peakDb": 0.6388475426494044
+              }
+            ]
+          }
+        ]
+      },
+      "violations": [
+        {
+          "region": "horizontal_linear",
+          "detail": "ADJACENT_RUN_STEP_EXCEEDS_ONE_LSB",
+          "count": 2731,
+          "maxStep": 5
+        },
+        {
+          "region": "horizontal_linear",
+          "detail": "CONSTANT_RUN_TOO_LONG",
+          "count": 782,
+          "maxRunRatio": 3
+        },
+        {
+          "region": "radial_vignette",
+          "detail": "ADJACENT_RUN_STEP_EXCEEDS_ONE_LSB",
+          "count": 1629,
+          "maxStep": 2
+        },
+        {
+          "region": "radial_vignette",
+          "detail": "CONSTANT_RUN_TOO_LONG",
+          "count": 309,
+          "maxRunRatio": 2.290115520809848
+        },
+        {
+          "region": "navy_black",
+          "detail": "ADJACENT_RUN_STEP_EXCEEDS_ONE_LSB",
+          "count": 1222,
+          "maxStep": 2
+        },
+        {
+          "region": "navy_black",
+          "detail": "CONSTANT_RUN_TOO_LONG",
+          "count": 1,
+          "maxRunRatio": 1.5138037490844742
+        },
+        {
+          "region": "skin_tone",
+          "detail": "ADJACENT_RUN_STEP_EXCEEDS_ONE_LSB",
+          "count": 1322,
+          "maxStep": 2
+        },
+        {
+          "region": "skin_tone",
+          "detail": "CONSTANT_RUN_TOO_LONG",
+          "count": 5,
+          "maxRunRatio": 2.0780891878686476
+        }
+      ]
+    }
+  },
+  "gate": {
+    "status": "BLOCKED",
+    "detail": "POSITIVE_CARD_FAILS_LITERAL_BANDING_GATE",
+    "positive": {
+      "schema": "foundry.validation/0.1",
+      "render_id": "gradient:temporal",
+      "validator": "banding.v1",
+      "kind": "hard_contract",
+      "status": "FAIL",
+      "params": {
+        "lines": 64,
+        "runFactor": 1.5,
+        "maxStepLsb": 1,
+        "peakDb": 6,
+        "window": 256,
+        "metric": "raw scanline run steps; averaged quantization-error spectrum",
+        "metrics": [
+          {
+            "region": "horizontal_linear",
+            "channel": 0,
+            "maxStep": 5,
+            "stepCount": 2731,
+            "meanMaxRun": 10.171875,
+            "maxRunRatio": 3,
+            "longRuns": 782,
+            "maxPeakDb": 0.9821536694570664,
+            "expectedMaxStep": 3.0540000915527505,
+            "maxMeanResidualStep": 0.2996273487211454,
+            "spectra": [
+              {
+                "frequency": 0.47661474401983395,
+                "bin": 122,
+                "peakPower": 0.001220689012072071,
+                "noisePower": 0.000973620407645057,
+                "peakDb": 0.9821536694570664
+              },
+              {
+                "frequency": 0.15702702073380626,
+                "bin": 40,
+                "peakPower": 0.0009415298582575014,
+                "noisePower": 0.0009734308039154494,
+                "peakDb": -0.14470988107854335
+              },
+              {
+                "frequency": 0.11210436593184331,
+                "bin": 29,
+                "peakPower": 0.0010219812048199036,
+                "noisePower": 0.0009504812520575885,
+                "peakDb": 0.31499353830224397
+              }
+            ]
+          },
+          {
+            "region": "radial_vignette",
+            "channel": 0,
+            "maxStep": 2,
+            "stepCount": 1629,
+            "meanMaxRun": 12.578125,
+            "maxRunRatio": 2.290115520809848,
+            "longRuns": 309,
+            "maxPeakDb": 0.6802610864307361,
+            "expectedMaxStep": 0.3438046256520906,
+            "maxMeanResidualStep": 0.3183572256708942,
+            "spectra": [
+              {
+                "frequency": 0.26633380011208835,
+                "bin": 68,
+                "peakPower": 0.0011452830136885557,
+                "noisePower": 0.0009792345110620673,
+                "peakDb": 0.6802610864307361
+              },
+              {
+                "frequency": 0,
+                "bin": 1,
+                "peakPower": 0.001001213827302746,
+                "noisePower": 0.0009703300398291499,
+                "peakDb": 0.13607362183681138
+              },
+              {
+                "frequency": 0.26633380011208835,
+                "bin": 68,
+                "peakPower": 0.0009467532781390049,
+                "noisePower": 0.000967177679889,
+                "peakDb": -0.09269447964116913
+              }
+            ]
+          },
+          {
+            "region": "navy_black",
+            "channel": 2,
+            "maxStep": 2,
+            "stepCount": 1222,
+            "meanMaxRun": 15.765625,
+            "maxRunRatio": 1.5138037490844742,
+            "longRuns": 1,
+            "maxPeakDb": 1.1792484773324392,
+            "expectedMaxStep": 0.1382469177246266,
+            "maxMeanResidualStep": 0.3030513154530965,
+            "spectra": [
+              {
+                "frequency": 0.10387887137830319,
+                "bin": 27,
+                "peakPower": 0.001255617313482916,
+                "noisePower": 0.0009570451962986595,
+                "peakDb": 1.1792484773324392
+              },
+              {
+                "frequency": 0.04313690052363988,
+                "bin": 11,
+                "peakPower": 0.0010194188351103062,
+                "noisePower": 0.0009694569124674968,
+                "peakDb": 0.21824141874927605
+              },
+              {
+                "frequency": 0.030837337501982687,
+                "bin": 8,
+                "peakPower": 0.0011591267174644701,
+                "noisePower": 0.0009839551623049597,
+                "peakDb": 0.7115560769392377
+              }
+            ]
+          },
+          {
+            "region": "skin_tone",
+            "channel": 0,
+            "maxStep": 2,
+            "stepCount": 1322,
+            "meanMaxRun": 12.203125,
+            "maxRunRatio": 2.0780891878686476,
+            "longRuns": 5,
+            "maxPeakDb": 0.8137815206189054,
+            "expectedMaxStep": 0.18552245557545177,
+            "maxMeanResidualStep": 0.3072179116804534,
+            "spectra": [
+              {
+                "frequency": 0.1413393380482274,
+                "bin": 36,
+                "peakPower": 0.0011154132639239706,
+                "noisePower": 0.0009649309104355889,
+                "peakDb": 0.6293958585209496
+              },
+              {
+                "frequency": 0.09583610951545929,
+                "bin": 25,
+                "peakPower": 0.0011785687771213953,
+                "noisePower": 0.0009771849720880312,
+                "peakDb": 0.8137815206189054
+              },
+              {
+                "frequency": 0.07619160950298631,
+                "bin": 20,
+                "peakPower": 0.0011440077195043227,
+                "noisePower": 0.0009875161360004543,
+                "peakDb": 0.6388475426494044
+              }
+            ]
+          }
+        ]
+      },
+      "violations": [
+        {
+          "region": "horizontal_linear",
+          "detail": "ADJACENT_RUN_STEP_EXCEEDS_ONE_LSB",
+          "count": 2731,
+          "maxStep": 5
+        },
+        {
+          "region": "horizontal_linear",
+          "detail": "CONSTANT_RUN_TOO_LONG",
+          "count": 782,
+          "maxRunRatio": 3
+        },
+        {
+          "region": "radial_vignette",
+          "detail": "ADJACENT_RUN_STEP_EXCEEDS_ONE_LSB",
+          "count": 1629,
+          "maxStep": 2
+        },
+        {
+          "region": "radial_vignette",
+          "detail": "CONSTANT_RUN_TOO_LONG",
+          "count": 309,
+          "maxRunRatio": 2.290115520809848
+        },
+        {
+          "region": "navy_black",
+          "detail": "ADJACENT_RUN_STEP_EXCEEDS_ONE_LSB",
+          "count": 1222,
+          "maxStep": 2
+        },
+        {
+          "region": "navy_black",
+          "detail": "CONSTANT_RUN_TOO_LONG",
+          "count": 1,
+          "maxRunRatio": 1.5138037490844742
+        },
+        {
+          "region": "skin_tone",
+          "detail": "ADJACENT_RUN_STEP_EXCEEDS_ONE_LSB",
+          "count": 1322,
+          "maxStep": 2
+        },
+        {
+          "region": "skin_tone",
+          "detail": "CONSTANT_RUN_TOO_LONG",
+          "count": 5,
+          "maxRunRatio": 2.0780891878686476
+        }
+      ]
+    },
+    "negative": {
+      "schema": "foundry.validation/0.1",
+      "render_id": "gradient:off",
+      "validator": "banding.v1",
+      "kind": "hard_contract",
+      "status": "FAIL",
+      "params": {
+        "lines": 64,
+        "runFactor": 1.5,
+        "maxStepLsb": 1,
+        "peakDb": 6,
+        "window": 256,
+        "metric": "raw scanline run steps; averaged quantization-error spectrum",
+        "metrics": [
+          {
+            "region": "horizontal_linear",
+            "channel": 0,
+            "maxStep": 3,
+            "stepCount": 768,
+            "meanMaxRun": 10,
+            "maxRunRatio": 1.7036648503427756,
+            "longRuns": 128,
+            "maxPeakDb": 20.06200309490966,
+            "expectedMaxStep": 3.0540000915527505,
+            "maxMeanResidualStep": 0.9448333951131644,
+            "spectra": [
+              {
+                "frequency": 0.47661474401983395,
+                "bin": 122,
+                "peakPower": 0.000335737553858825,
+                "noisePower": 0.00022155403122895562,
+                "peakDb": 1.8052026535769348
+              },
+              {
+                "frequency": 0.15702702073380626,
+                "bin": 40,
+                "peakPower": 0.0031511550094512277,
+                "noisePower": 0.00012834226906110693,
+                "peakDb": 13.901000539678412
+              },
+              {
+                "frequency": 0.11210436593184331,
+                "bin": 29,
+                "peakPower": 0.007104318355375173,
+                "noisePower": 0.00007003612434539149,
+                "peakDb": 20.06200309490966
+              }
+            ]
+          },
+          {
+            "region": "radial_vignette",
+            "channel": 0,
+            "maxStep": 1,
+            "stepCount": 0,
+            "meanMaxRun": 75.4375,
+            "maxRunRatio": 1.3230577692303978,
+            "longRuns": 0,
+            "maxPeakDb": 13.183620379377475,
+            "expectedMaxStep": 0.3438046256520906,
+            "maxMeanResidualStep": 0.2089333961861115,
+            "spectra": [
+              {
+                "frequency": 0.26633380011208835,
+                "bin": 68,
+                "peakPower": 0.0007268790521280557,
+                "noisePower": 0.00021873464748377674,
+                "peakDb": 5.215445725730534
+              },
+              {
+                "frequency": 0,
+                "bin": 1,
+                "peakPower": 0.0016980539346929423,
+                "noisePower": 0.00008158107852831534,
+                "peakDb": 13.183620379377475
+              },
+              {
+                "frequency": 0.26633380011208835,
+                "bin": 68,
+                "peakPower": 0.0007268790521280559,
+                "noisePower": 0.00021873464748377715,
+                "peakDb": 5.215445725730527
+              }
+            ]
+          },
+          {
+            "region": "navy_black",
+            "channel": 2,
+            "maxStep": 1,
+            "stepCount": 0,
+            "meanMaxRun": 34,
+            "maxRunRatio": 1.0987936837332588,
+            "longRuns": 0,
+            "maxPeakDb": 26.92054451321054,
+            "expectedMaxStep": 0.1382469177246266,
+            "maxMeanResidualStep": 0.9785617513499645,
+            "spectra": [
+              {
+                "frequency": 0.10387887137830319,
+                "bin": 27,
+                "peakPower": 0.001541525708292593,
+                "noisePower": 0.00013801708950874467,
+                "peakDb": 10.480179071217815
+              },
+              {
+                "frequency": 0.04313690052363988,
+                "bin": 11,
+                "peakPower": 0.015118176316181814,
+                "noisePower": 0.00005934946901550849,
+                "peakDb": 24.06082568220777
+              },
+              {
+                "frequency": 0.030837337501982687,
+                "bin": 8,
+                "peakPower": 0.02275651076185838,
+                "noisePower": 0.00004624355586627321,
+                "peakDb": 26.92054451321054
+              }
+            ]
+          },
+          {
+            "region": "skin_tone",
+            "channel": 0,
+            "maxStep": 1,
+            "stepCount": 0,
+            "meanMaxRun": 15,
+            "maxRunRatio": 1.1433461874546325,
+            "longRuns": 0,
+            "maxPeakDb": 21.160952364385995,
+            "expectedMaxStep": 0.18552245557545177,
+            "maxMeanResidualStep": 0.9367085003019042,
+            "spectra": [
+              {
+                "frequency": 0.1413393380482274,
+                "bin": 36,
+                "peakPower": 0.0024964509209498466,
+                "noisePower": 0.00011018633045599581,
+                "peakDb": 13.551953124873414
+              },
+              {
+                "frequency": 0.09583610951545929,
+                "bin": 25,
+                "peakPower": 0.0069983601082357315,
+                "noisePower": 0.00010170913949264698,
+                "peakDb": 18.376363058256608
+              },
+              {
+                "frequency": 0.07619160950298631,
+                "bin": 20,
+                "peakPower": 0.00998222406867821,
+                "noisePower": 0.00007640681167679026,
+                "peakDb": 21.160952364385995
+              }
+            ]
+          }
+        ]
+      },
+      "violations": [
+        {
+          "region": "horizontal_linear",
+          "detail": "ADJACENT_RUN_STEP_EXCEEDS_ONE_LSB",
+          "count": 768,
+          "maxStep": 3
+        },
+        {
+          "region": "horizontal_linear",
+          "detail": "CONSTANT_RUN_TOO_LONG",
+          "count": 128,
+          "maxRunRatio": 1.7036648503427756
+        },
+        {
+          "region": "horizontal_linear",
+          "detail": "STEP_FREQUENCY_PEAK",
+          "peakDb": 20.06200309490966
+        },
+        {
+          "region": "radial_vignette",
+          "detail": "STEP_FREQUENCY_PEAK",
+          "peakDb": 13.183620379377475
+        },
+        {
+          "region": "navy_black",
+          "detail": "STEP_FREQUENCY_PEAK",
+          "peakDb": 26.92054451321054
+        },
+        {
+          "region": "skin_tone",
+          "detail": "STEP_FREQUENCY_PEAK",
+          "peakDb": 21.160952364385995
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,3 @@
+
+> cutlab-motion-lovable@0.1.0 type-check
+> tsc --noEmit && tsc --noEmit -p tsconfig.tools.json

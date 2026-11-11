@@ -1,0 +1,15 @@
+{
+  "a": "/tmp/foundry-n4nk3J/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/c9dafbd3-877c-48ee-bd40-737504d3f7e5",
+  "b": "/tmp/foundry-n4nk3J/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/d4dc2b7f-1241-44b4-a056-3f676d03cbef",
+  "c": "/tmp/foundry-n4nk3J/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/09591d8b-3be0-4c24-a40e-a16485f8859b",
+  "frames": 270,
+  "reason_code": "NONDETERMINISTIC",
+  "render_id": "bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee",
+  "seek_order": [
+    200,
+    10,
+    200,
+    135
+  ],
+  "status": "BLOCKED"
+}
