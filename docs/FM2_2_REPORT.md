@@ -56,7 +56,7 @@ Resource audit finds fresh browsers/profiles, unique artifact directories and po
 
 This is not proof of a pixel-race recurrence, but it fails the user's ANY-full-suite-failure acceptance rule. The cohort is preserved as FAILED and is **not restarted**. The final five repeats and final98/98 were not run. Serial isolation cannot yet be accepted as a sufficient reliability fix. Existing exception truncation discarded the screenshot's full error, so timeout versus crash versus another capture exception is not established.
 
-One focused, instrumented mock-loop diagnostic passed; it does not clear the cohort. A bounded series of at most20 further focused diagnostics now records full screenshot errors, stacks, paths, durations, crash events and error-time cgroup metrics, stopping on the first failure. This is root-cause investigation, not acceptance or retry-until-PASS. Production renderer, tests, schemas, timeouts and tolerances remain unchanged.
+One instrumented mock-loop diagnostic passed without clearing acceptance. A separate bounded≤20-case diagnostic series logs full screenshot exceptions and stops on its first failure. This is investigation, not acceptance. No production source, test, timeout or tolerance changes.
 
 Evidence: docs/fm2_2/capture-matrix/{m1-isolated,fm21-isolated,fm22-isolated,full-suite,readiness}-results.json, suite-failure-05/, resource-audit.md. Serial results accumulate at runs/fm2-2/serial-validation/.
 
