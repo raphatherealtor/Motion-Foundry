@@ -1,4 +1,4 @@
-# FM2.2 color — IN PROGRESS, not cleared to land
+# FM2.2 color — BLOCKED: serial acceptance failed, not cleared to land
 
 Raphael approved a replacement banding contract and a zero-tolerance capture investigation on2026-11-11. Both banding and capture gates must pass before landing/pushing. No merge, default switch or FM2.3 work is authorized by this report.
 
@@ -48,11 +48,15 @@ Baseline matrix COMPLETE, same compiled render/scene/test code, Chromium153, dep
 | FM2.2baseline42c476c, isolated |20/20 PASS|
 | Same FM2.2baseline, full suite |19/20 PASS;1 capture failure: **5% observed failure rate**|
 
-Run6 failed at frame81:3 changed channels,maxΔ5; all object-box/source/config hashes match. Original frames95/121 failures remain preserved too. Passing isolated runs do not rule out an intermittent race. Setup-invalid worktree attempts were excluded and retained separately. CPU-only oracle/unit analysis overlapped part of the suite phase; its precise overlap with frame81 is unknown. No competing GPU/browser probe was launched.
+Run6 failed at frame81:3 changed channels,maxΔ5; all object-box/source/config hashes match. Original95/121 failure evidence is retained. Passing isolated runs do not rule out an intermittent race. Setup-invalid worktree attempts were excluded and retained separately. CPU-only oracle/unit analysis overlapped part of the suite phase; its precise overlap with frame81 is unknown. No competing GPU/browser probe was launched.
 
 Readiness diagnostic: three standalone launches, triple captures at81/95/121. All fonts loaded, no image assets, frame/time and GSAP ticker stable; pixels match within each triple and across launches. Layout-reading instrumentation may flush work, so this does not replace the uninstrumented matrix or prove a Chromium-internal cause.
 
-Resource audit finds fresh browsers/profiles, unique artifact directories and port0 M1 servers. The isolated shared resource is host CPU scheduling/software-rasterization capacity accessed by concurrent browser-test workers. After freezing all80 baseline results, the sole candidate change is npm test's **--test-concurrency=1**. Renderer, browser flags, schemas, test bodies and tolerances are unchanged. Preliminary five uncached repeat tests and98/98 passed, but do not meet the new acceptance rule. A fresh60-full-suite cohort must have0 failures, then five new uncached repeat tests with cross-test fingerprints and another98/98 suite. That cohort is running with source/config identities frozen. No fix is claimed before it passes.
+Resource audit finds fresh browsers/profiles, unique artifact directories and port0 M1 servers. The isolated shared resource is host CPU scheduling/software-rasterization capacity accessed by concurrent browser-test workers. After freezing all80 baseline results, the sole candidate change is npm test's **--test-concurrency=1**. Renderer, browser flags, schemas, test bodies and tolerances are unchanged. Preliminary five uncached repeat tests and98/98 passed but were not counted toward acceptance. The fresh60-suite campaign **stopped at run14**:13 suites passed; run14 had71/98 passing and27 failures from one shared negative-test setup hook. The mock repair loop returned ERROR, reason_code `page.screenshot`, after24 saved frames (last complete:23), before any manifest. The separate M0 repeat test still passed and its cross-cohort pixel/box/sheet fingerprints match. All frozen source/config identities match.
+
+This is not proof of a pixel-race recurrence, but it fails the user's ANY-full-suite-failure acceptance rule. The cohort is preserved as FAILED and is **not restarted**. The final five repeats and final98/98 were not run. Serial isolation cannot yet be accepted as a sufficient reliability fix. Existing exception truncation discarded the screenshot's full error, so timeout versus crash versus another capture exception is not established.
+
+One focused, instrumented mock-loop diagnostic passed; it does not clear the cohort. A bounded series of at most20 further focused diagnostics now records full screenshot errors, stacks, paths, durations, crash events and error-time cgroup metrics, stopping on the first failure. This is root-cause investigation, not acceptance or retry-until-PASS. Production renderer, tests, schemas, timeouts and tolerances remain unchanged.
 
 Evidence: docs/fm2_2/capture-matrix/{m1-isolated,fm21-isolated,fm22-isolated,full-suite,readiness}-results.json, suite-failure-05/, resource-audit.md. Serial results accumulate at runs/fm2-2/serial-validation/.
 
@@ -60,27 +64,19 @@ Evidence: docs/fm2_2/capture-matrix/{m1-isolated,fm21-isolated,fm22-isolated,ful
 
 Existing five-launch ×three-host evidence remains exact under Chromium153.0.8010.12 SwiftShader: all256 opaque/partial-alpha code round trips in16F/32F, grade witness[156,156,156,255], checker linear0.5→188 versus sRGB128, additive linear1.5 before tone mapping, ±2EV round trips0 half-float ULP, and monotonic temperature R/B sweep. Previous product checks:729/729, type-check PASS,52/52 legacy goldens unchanged. Revised Foundry color unit checks:12/12 PASS. Final full suite remains pending.
 
-A new five-launch ×three-host browser rerun follows the revised oracle checks after isolated capture comparisons finish; it is not claimed complete. No product shader changed for this contract correction.
+Revised15-host browser rerun is pending capture acceptance; no product shader changed.
 
 ## Compat invariants — renderer checklist
 
 This is distinct from Raphael's preserve list. Reference: COMPAT_INVARIANTS.md.
 
-| Item | Evidence scope |
+| Invariant group | Current evidence scope |
 |---|---|
-| Draw order | Existing ordered per-draw capture unchanged. |
-| Opacity | Prior five-launch exact overlap suite retained. |
-| Blend | Compat shader hash unchanged. |
-| Isolation | Existing boundaries unchanged. |
-| Groups | Unisolated, inherited opacity; group blend ignored. |
-| Clipping | Existing capture and classification unchanged. |
-| Grade order | Exposure→temperature→vignette→tone retained. |
-| Frozen contracts | M0/M1 schemas and tests unchanged. Root fix not yet applied. |
-| Default/fallback | Legacy remains default; GPU explicit opt-in. |
-| Timing/identity | Rational FPS unchanged; final settings identity integration still deferred. |
-| Host parity | Prior15-host foundation/stress results retained, revised rerun pending. |
-| Goldens | Previous52/52, no baseline edits. |
-| Capture fidelity | FM2.1 five-launch570/7/0 maps and signed deltas retained; M0 repeat capture separately unresolved. |
+| Draw order, opacity, blend | Ordered capture unchanged; prior exact overlap gate and compat shader hash retained. |
+| Isolation, groups, clipping | Legacy boundaries/clip replay unchanged; groups unisolated with inherited opacity and ignored group blend. |
+| Grade, timing, identity | Exposure→temperature→vignette→tone and rational FPS retained; color identity integration deferred. |
+| Frozen contracts, default/fallback | M0/M1 schemas/test bodies unchanged. Legacy default; GPU opt-in. |
+| Hosts, goldens, capture | Prior15-host parity,52 goldens and FM2.1 570/7/0 diff pins retained. New GPU rerun pending; serial capture acceptance FAILED. |
 
 ## Raphael's real preserve A–M check
 

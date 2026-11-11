@@ -13,3 +13,9 @@ After60, serial-validation.mjs runs five new repeat tests (two uncached renders 
 If0/60 is observed, the exact one-sided95% binomial upper bound is1−0.05^(1/60), approximately4.8703%, under the repeated-trial model. This is evidence for the tested serial configuration, not proof that every concurrent rendering environment is deterministic.
 
 Live results: runs/fm2-2/serial-acceptance/results.json; preliminary archive: runs/fm2-2/serial-preliminary/. Mark complete/land/push only after the required capture and banding gates both pass.
+
+## Cohort outcome — FAILED, retained
+
+The fresh cohort stopped at run14:13 full suites passed, run14 had71/98 passing. One negative.test.ts shared before-hook failed because the mock loop returned ERROR/page.screenshot; its partial render has24 frames, last23, no manifest. The27 dependent failures are not27 independent bugs. The standalone M0 repeat test passed and fingerprints remain identical across all14 attempts. All source/config hashes still match. Nevertheless the full-suite zero-failure requirement failed: no acceptance, no push, no restart of this cohort.
+
+The full screenshot exception was discarded by pre-existing reason-code truncation; its type is unverified. One instrumented focused diagnostic passed, and a separate bounded diagnostic series captures full exceptions if reproduced. Those runs never count as acceptance and cannot erase the failed cohort.

@@ -1,0 +1,35 @@
+{
+  "index": 13,
+  "elapsedMs": 424985,
+  "exitCode": 1,
+  "error": null,
+  "totals": {
+    "tests": 98,
+    "pass": 71,
+    "fail": 27,
+    "cancelled": 0,
+    "skipped": 0
+  },
+  "events": [
+    {
+      "a": "/tmp/foundry-WeI3KT/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/b8a263f4-7032-4006-996c-604c0a6e409d",
+      "b": "/tmp/foundry-WeI3KT/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/edba476c-4451-454a-b93a-546da13c3750",
+      "c": "/tmp/foundry-WeI3KT/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/7576fde3-dcc8-4030-bc68-518627bcdfe1",
+      "frames": 270,
+      "reason_code": null,
+      "render_id": "bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee",
+      "seek_order": [
+        200,
+        10,
+        200,
+        135
+      ],
+      "status": "PASS"
+    }
+  ],
+  "fingerprints": [
+    "c5d497d5c396cb1f08028a8a7c6271ce9daad8be2928ddcc77f0a2d8654f9bc3",
+    "c5d497d5c396cb1f08028a8a7c6271ce9daad8be2928ddcc77f0a2d8654f9bc3"
+  ],
+  "pass": false
+}

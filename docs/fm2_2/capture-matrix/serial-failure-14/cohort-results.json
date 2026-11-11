@@ -1,0 +1,586 @@
+{
+  "phase": "SIXTY_FULL_SUITES",
+  "requestedSuites": 60,
+  "suites": [
+    {
+      "index": 0,
+      "elapsedMs": 212270,
+      "exitCode": 0,
+      "error": null,
+      "totals": {
+        "tests": 98,
+        "pass": 98,
+        "fail": 0,
+        "cancelled": 0,
+        "skipped": 0
+      },
+      "events": [
+        {
+          "a": "/tmp/foundry-MIc4hN/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/32f761d6-7feb-4821-930b-3167c5ec5fb5",
+          "b": "/tmp/foundry-MIc4hN/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/d2335f96-ecdf-4125-8217-db031e326a46",
+          "c": "/tmp/foundry-MIc4hN/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/75b1cb76-2db2-4efe-a8bf-666f2e6ffd7c",
+          "frames": 270,
+          "reason_code": null,
+          "render_id": "bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee",
+          "seek_order": [
+            200,
+            10,
+            200,
+            135
+          ],
+          "status": "PASS"
+        }
+      ],
+      "fingerprints": [
+        "c5d497d5c396cb1f08028a8a7c6271ce9daad8be2928ddcc77f0a2d8654f9bc3",
+        "c5d497d5c396cb1f08028a8a7c6271ce9daad8be2928ddcc77f0a2d8654f9bc3"
+      ],
+      "pass": true
+    },
+    {
+      "index": 1,
+      "elapsedMs": 229401,
+      "exitCode": 0,
+      "error": null,
+      "totals": {
+        "tests": 98,
+        "pass": 98,
+        "fail": 0,
+        "cancelled": 0,
+        "skipped": 0
+      },
+      "events": [
+        {
+          "a": "/tmp/foundry-lo4Njw/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/f713ad70-7ced-405b-bcd8-170c5f87d82c",
+          "b": "/tmp/foundry-lo4Njw/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/f52b9572-7817-4b03-9548-b716929f4107",
+          "c": "/tmp/foundry-lo4Njw/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/19483693-36a5-42e6-9d99-75461fc25108",
+          "frames": 270,
+          "reason_code": null,
+          "render_id": "bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee",
+          "seek_order": [
+            200,
+            10,
+            200,
+            135
+          ],
+          "status": "PASS"
+        }
+      ],
+      "fingerprints": [
+        "c5d497d5c396cb1f08028a8a7c6271ce9daad8be2928ddcc77f0a2d8654f9bc3",
+        "c5d497d5c396cb1f08028a8a7c6271ce9daad8be2928ddcc77f0a2d8654f9bc3"
+      ],
+      "pass": true
+    },
+    {
+      "index": 2,
+      "elapsedMs": 324082,
+      "exitCode": 0,
+      "error": null,
+      "totals": {
+        "tests": 98,
+        "pass": 98,
+        "fail": 0,
+        "cancelled": 0,
+        "skipped": 0
+      },
+      "events": [
+        {
+          "a": "/tmp/foundry-6uxAGM/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/1546e147-1429-4840-8ef2-3d6df810f536",
+          "b": "/tmp/foundry-6uxAGM/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/f29391a8-4618-483f-959a-efe02697ca4c",
+          "c": "/tmp/foundry-6uxAGM/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/5ae6d939-1335-4e74-bd7b-d5743c5925f3",
+          "frames": 270,
+          "reason_code": null,
+          "render_id": "bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee",
+          "seek_order": [
+            200,
+            10,
+            200,
+            135
+          ],
+          "status": "PASS"
+        }
+      ],
+      "fingerprints": [
+        "c5d497d5c396cb1f08028a8a7c6271ce9daad8be2928ddcc77f0a2d8654f9bc3",
+        "c5d497d5c396cb1f08028a8a7c6271ce9daad8be2928ddcc77f0a2d8654f9bc3"
+      ],
+      "pass": true
+    },
+    {
+      "index": 3,
+      "elapsedMs": 215027,
+      "exitCode": 0,
+      "error": null,
+      "totals": {
+        "tests": 98,
+        "pass": 98,
+        "fail": 0,
+        "cancelled": 0,
+        "skipped": 0
+      },
+      "events": [
+        {
+          "a": "/tmp/foundry-xSitFj/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/62af0ebe-8e32-459d-92c1-a68a0b2447d4",
+          "b": "/tmp/foundry-xSitFj/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/f98d2413-0b37-435a-b46d-20f7ba169e00",
+          "c": "/tmp/foundry-xSitFj/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/2ebe30c9-65a8-4a81-a7df-af03dfe9f788",
+          "frames": 270,
+          "reason_code": null,
+          "render_id": "bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee",
+          "seek_order": [
+            200,
+            10,
+            200,
+            135
+          ],
+          "status": "PASS"
+        }
+      ],
+      "fingerprints": [
+        "c5d497d5c396cb1f08028a8a7c6271ce9daad8be2928ddcc77f0a2d8654f9bc3",
+        "c5d497d5c396cb1f08028a8a7c6271ce9daad8be2928ddcc77f0a2d8654f9bc3"
+      ],
+      "pass": true
+    },
+    {
+      "index": 4,
+      "elapsedMs": 208839,
+      "exitCode": 0,
+      "error": null,
+      "totals": {
+        "tests": 98,
+        "pass": 98,
+        "fail": 0,
+        "cancelled": 0,
+        "skipped": 0
+      },
+      "events": [
+        {
+          "a": "/tmp/foundry-2qqyRq/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/54ffff33-875b-4ce8-b4bb-ccb0546e3600",
+          "b": "/tmp/foundry-2qqyRq/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/e90c826d-8a75-4567-ae28-dbd571a95eb6",
+          "c": "/tmp/foundry-2qqyRq/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/10d9679d-0f41-4038-82ec-23f3ea8efbf8",
+          "frames": 270,
+          "reason_code": null,
+          "render_id": "bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee",
+          "seek_order": [
+            200,
+            10,
+            200,
+            135
+          ],
+          "status": "PASS"
+        }
+      ],
+      "fingerprints": [
+        "c5d497d5c396cb1f08028a8a7c6271ce9daad8be2928ddcc77f0a2d8654f9bc3",
+        "c5d497d5c396cb1f08028a8a7c6271ce9daad8be2928ddcc77f0a2d8654f9bc3"
+      ],
+      "pass": true
+    },
+    {
+      "index": 5,
+      "elapsedMs": 216835,
+      "exitCode": 0,
+      "error": null,
+      "totals": {
+        "tests": 98,
+        "pass": 98,
+        "fail": 0,
+        "cancelled": 0,
+        "skipped": 0
+      },
+      "events": [
+        {
+          "a": "/tmp/foundry-Q6t9sh/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/f0020a93-9f19-4fe3-b73e-268676068c10",
+          "b": "/tmp/foundry-Q6t9sh/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/21598e00-72c9-4f19-87a5-084293d98e8a",
+          "c": "/tmp/foundry-Q6t9sh/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/f6b08885-060a-452e-8ba6-5a0d543ca965",
+          "frames": 270,
+          "reason_code": null,
+          "render_id": "bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee",
+          "seek_order": [
+            200,
+            10,
+            200,
+            135
+          ],
+          "status": "PASS"
+        }
+      ],
+      "fingerprints": [
+        "c5d497d5c396cb1f08028a8a7c6271ce9daad8be2928ddcc77f0a2d8654f9bc3",
+        "c5d497d5c396cb1f08028a8a7c6271ce9daad8be2928ddcc77f0a2d8654f9bc3"
+      ],
+      "pass": true
+    },
+    {
+      "index": 6,
+      "elapsedMs": 226487,
+      "exitCode": 0,
+      "error": null,
+      "totals": {
+        "tests": 98,
+        "pass": 98,
+        "fail": 0,
+        "cancelled": 0,
+        "skipped": 0
+      },
+      "events": [
+        {
+          "a": "/tmp/foundry-RGKrE4/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/5f6882fc-7b90-43aa-b65e-dd41c10a731b",
+          "b": "/tmp/foundry-RGKrE4/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/f21d1f89-79ce-4b61-ad6f-0d1a4da45466",
+          "c": "/tmp/foundry-RGKrE4/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/a2d0e47d-1e1a-4669-bb3e-1750b612ad2b",
+          "frames": 270,
+          "reason_code": null,
+          "render_id": "bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee",
+          "seek_order": [
+            200,
+            10,
+            200,
+            135
+          ],
+          "status": "PASS"
+        }
+      ],
+      "fingerprints": [
+        "c5d497d5c396cb1f08028a8a7c6271ce9daad8be2928ddcc77f0a2d8654f9bc3",
+        "c5d497d5c396cb1f08028a8a7c6271ce9daad8be2928ddcc77f0a2d8654f9bc3"
+      ],
+      "pass": true
+    },
+    {
+      "index": 7,
+      "elapsedMs": 219881,
+      "exitCode": 0,
+      "error": null,
+      "totals": {
+        "tests": 98,
+        "pass": 98,
+        "fail": 0,
+        "cancelled": 0,
+        "skipped": 0
+      },
+      "events": [
+        {
+          "a": "/tmp/foundry-b6mDaX/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/0d6af550-9a0b-481f-8ef2-030f3f84ec1b",
+          "b": "/tmp/foundry-b6mDaX/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/fb85c22f-2ea7-48f3-bb20-bdcc8427bf5e",
+          "c": "/tmp/foundry-b6mDaX/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/db12f94e-1675-42d3-a0d9-ec5c1110040e",
+          "frames": 270,
+          "reason_code": null,
+          "render_id": "bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee",
+          "seek_order": [
+            200,
+            10,
+            200,
+            135
+          ],
+          "status": "PASS"
+        }
+      ],
+      "fingerprints": [
+        "c5d497d5c396cb1f08028a8a7c6271ce9daad8be2928ddcc77f0a2d8654f9bc3",
+        "c5d497d5c396cb1f08028a8a7c6271ce9daad8be2928ddcc77f0a2d8654f9bc3"
+      ],
+      "pass": true
+    },
+    {
+      "index": 8,
+      "elapsedMs": 224765,
+      "exitCode": 0,
+      "error": null,
+      "totals": {
+        "tests": 98,
+        "pass": 98,
+        "fail": 0,
+        "cancelled": 0,
+        "skipped": 0
+      },
+      "events": [
+        {
+          "a": "/tmp/foundry-NFXY83/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/25d0d8ef-ab04-4bff-a374-e35df6f47955",
+          "b": "/tmp/foundry-NFXY83/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/57ab3f30-84d0-4b7c-9507-e1631286ec62",
+          "c": "/tmp/foundry-NFXY83/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/840a786e-8b87-4fb8-9ded-778aec58fbe5",
+          "frames": 270,
+          "reason_code": null,
+          "render_id": "bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee",
+          "seek_order": [
+            200,
+            10,
+            200,
+            135
+          ],
+          "status": "PASS"
+        }
+      ],
+      "fingerprints": [
+        "c5d497d5c396cb1f08028a8a7c6271ce9daad8be2928ddcc77f0a2d8654f9bc3",
+        "c5d497d5c396cb1f08028a8a7c6271ce9daad8be2928ddcc77f0a2d8654f9bc3"
+      ],
+      "pass": true
+    },
+    {
+      "index": 9,
+      "elapsedMs": 217461,
+      "exitCode": 0,
+      "error": null,
+      "totals": {
+        "tests": 98,
+        "pass": 98,
+        "fail": 0,
+        "cancelled": 0,
+        "skipped": 0
+      },
+      "events": [
+        {
+          "a": "/tmp/foundry-sn1Kk2/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/af1c4357-6d37-45d5-90db-9c812c050908",
+          "b": "/tmp/foundry-sn1Kk2/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/0c867c92-c8c8-4e9e-8170-11d810de6048",
+          "c": "/tmp/foundry-sn1Kk2/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/4dc9bec4-3da3-4b48-a942-0bb922664fe8",
+          "frames": 270,
+          "reason_code": null,
+          "render_id": "bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee",
+          "seek_order": [
+            200,
+            10,
+            200,
+            135
+          ],
+          "status": "PASS"
+        }
+      ],
+      "fingerprints": [
+        "c5d497d5c396cb1f08028a8a7c6271ce9daad8be2928ddcc77f0a2d8654f9bc3",
+        "c5d497d5c396cb1f08028a8a7c6271ce9daad8be2928ddcc77f0a2d8654f9bc3"
+      ],
+      "pass": true
+    },
+    {
+      "index": 10,
+      "elapsedMs": 220288,
+      "exitCode": 0,
+      "error": null,
+      "totals": {
+        "tests": 98,
+        "pass": 98,
+        "fail": 0,
+        "cancelled": 0,
+        "skipped": 0
+      },
+      "events": [
+        {
+          "a": "/tmp/foundry-5S4atd/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/b43c1b81-9c67-4c66-8772-d481c72e8188",
+          "b": "/tmp/foundry-5S4atd/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/1b7a9d8f-e6df-48d9-82ca-676cbce2c4bf",
+          "c": "/tmp/foundry-5S4atd/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/5782b531-cbc8-48f2-9456-36fd64c205b4",
+          "frames": 270,
+          "reason_code": null,
+          "render_id": "bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee",
+          "seek_order": [
+            200,
+            10,
+            200,
+            135
+          ],
+          "status": "PASS"
+        }
+      ],
+      "fingerprints": [
+        "c5d497d5c396cb1f08028a8a7c6271ce9daad8be2928ddcc77f0a2d8654f9bc3",
+        "c5d497d5c396cb1f08028a8a7c6271ce9daad8be2928ddcc77f0a2d8654f9bc3"
+      ],
+      "pass": true
+    },
+    {
+      "index": 11,
+      "elapsedMs": 216082,
+      "exitCode": 0,
+      "error": null,
+      "totals": {
+        "tests": 98,
+        "pass": 98,
+        "fail": 0,
+        "cancelled": 0,
+        "skipped": 0
+      },
+      "events": [
+        {
+          "a": "/tmp/foundry-wIt6gW/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/2e9efe4d-ba96-49b5-97dc-c6838858341c",
+          "b": "/tmp/foundry-wIt6gW/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/e48275a2-ea01-42ae-bda7-b5963c356f3f",
+          "c": "/tmp/foundry-wIt6gW/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/e1833766-06b6-445c-a1b6-d1d861aecb76",
+          "frames": 270,
+          "reason_code": null,
+          "render_id": "bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee",
+          "seek_order": [
+            200,
+            10,
+            200,
+            135
+          ],
+          "status": "PASS"
+        }
+      ],
+      "fingerprints": [
+        "c5d497d5c396cb1f08028a8a7c6271ce9daad8be2928ddcc77f0a2d8654f9bc3",
+        "c5d497d5c396cb1f08028a8a7c6271ce9daad8be2928ddcc77f0a2d8654f9bc3"
+      ],
+      "pass": true
+    },
+    {
+      "index": 12,
+      "elapsedMs": 226575,
+      "exitCode": 0,
+      "error": null,
+      "totals": {
+        "tests": 98,
+        "pass": 98,
+        "fail": 0,
+        "cancelled": 0,
+        "skipped": 0
+      },
+      "events": [
+        {
+          "a": "/tmp/foundry-LcCgof/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/1176ab1c-2732-47e9-b8ce-5be6b8d5e3be",
+          "b": "/tmp/foundry-LcCgof/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/8d613855-9ec4-49e2-adce-cb5a8ecddcc8",
+          "c": "/tmp/foundry-LcCgof/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/ac6c7307-ca91-4e15-b788-b537fbe1ae3f",
+          "frames": 270,
+          "reason_code": null,
+          "render_id": "bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee",
+          "seek_order": [
+            200,
+            10,
+            200,
+            135
+          ],
+          "status": "PASS"
+        }
+      ],
+      "fingerprints": [
+        "c5d497d5c396cb1f08028a8a7c6271ce9daad8be2928ddcc77f0a2d8654f9bc3",
+        "c5d497d5c396cb1f08028a8a7c6271ce9daad8be2928ddcc77f0a2d8654f9bc3"
+      ],
+      "pass": true
+    },
+    {
+      "index": 13,
+      "elapsedMs": 424985,
+      "exitCode": 1,
+      "error": null,
+      "totals": {
+        "tests": 98,
+        "pass": 71,
+        "fail": 27,
+        "cancelled": 0,
+        "skipped": 0
+      },
+      "events": [
+        {
+          "a": "/tmp/foundry-WeI3KT/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/b8a263f4-7032-4006-996c-604c0a6e409d",
+          "b": "/tmp/foundry-WeI3KT/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/edba476c-4451-454a-b93a-546da13c3750",
+          "c": "/tmp/foundry-WeI3KT/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/7576fde3-dcc8-4030-bc68-518627bcdfe1",
+          "frames": 270,
+          "reason_code": null,
+          "render_id": "bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee",
+          "seek_order": [
+            200,
+            10,
+            200,
+            135
+          ],
+          "status": "PASS"
+        }
+      ],
+      "fingerprints": [
+        "c5d497d5c396cb1f08028a8a7c6271ce9daad8be2928ddcc77f0a2d8654f9bc3",
+        "c5d497d5c396cb1f08028a8a7c6271ce9daad8be2928ddcc77f0a2d8654f9bc3"
+      ],
+      "pass": false
+    }
+  ],
+  "status": "FAIL",
+  "sourceIdentity": {
+    "config/foundry.config.json": "df402722f2abdda17769861829c8d50584ac1d6dd784b8cc3544d1f3469652cc",
+    "docs/fm2_2/capture-matrix/serial-acceptance.mjs": "7cad0de89201ba6756dcefbefded1e3c6ee639d35d3867ccb891f12dbc7fc064",
+    "docs/fm2_2/capture-matrix/serial-validation.mjs": "18d09539772f0a751b659ef7c838842b26dcae5be2c12812eb188c4226252269",
+    "fixtures/m0-overflow/scene.json": "ffd4d3f6870726dddcadb32f8f01dfb79bd345a316b8e375662c9328e7fbd732",
+    "package.json": "6e5e971410c3e55405b12a750234314b7c37c469e89eec8309e063bb3d4b5a26",
+    "src/adapters.ts": "7572777ceedc18bc0c74ca00ddd09be6736d53673dc5e42ca33978d266ad84da",
+    "src/adapters/motion-suite/assets-source.ts": "4dfdc4326dde3024311c9ef59ed14a5613ea6691cca9c056fdd79440debeca03",
+    "src/adapters/motion-suite/boxes-source.ts": "f8ccd4d215640d05dfb35ba0f09b02c09c4b42ff24e45bc4aba8e2251dcd9e88",
+    "src/adapters/motion-suite/boxes-types.ts": "013d98b9346a51e252256526173845af935c76ead409709d096f95186c12212e",
+    "src/adapters/motion-suite/browser.ts": "a61da9cfd11e22965ad80ebc295372ab74ae6c5142ad70fbd5bed38c0f360fbc",
+    "src/adapters/motion-suite/budget.ts": "f584871d5c00c232e126553cfe8740ffe5f116cbcd7262d459f2aeb3794c6aaa",
+    "src/adapters/motion-suite/compile-source.ts": "0329e60f5ec05ed1b78a862abdd9784be4c18586e4510aa4c9e6188ccd7c91b5",
+    "src/adapters/motion-suite/compile.ts": "dd72e1227017c242731b01399d6acad90dd204911ce5e41d709febdbd0ecc5b3",
+    "src/adapters/motion-suite/contact-sheet.ts": "3bba40443af0959b61c11c220e89e8c4be17eacb5ec9eca4b450878a1726a3d5",
+    "src/adapters/motion-suite/contract-checks.ts": "88308d6d2d212f50e67d2951f37ac0384fffc1b402f5d12a95467d67b513e336",
+    "src/adapters/motion-suite/defaults.ts": "26a5fef3c1fc7793024b20f06396feff5e6aae40e07ac7d9bc94675a1b3102f6",
+    "src/adapters/motion-suite/environment.ts": "afde8611f09c2a16b37246b5953169dfbfbb4048aa5c38e8fd30c8fb583a4198",
+    "src/adapters/motion-suite/evidence.ts": "089fe735da35a55cf7f5b104fa5fa97876ce2c4db78a6a5e73dc9eace106cdb5",
+    "src/adapters/motion-suite/gate.ts": "703537237525819362788939046006028c3107cafed527cfb765530fc8f0a497",
+    "src/adapters/motion-suite/harness.ts": "9ebf57055a82d819a9358b56add72840ebfe1069a551bc48b9a8f5544240475c",
+    "src/adapters/motion-suite/history.ts": "c36eec8764953af3831850c32f630a0c812d488b6f13c83ff1b4414c7941c313",
+    "src/adapters/motion-suite/identity.ts": "b6bdf83faae4a71f55f3db3aa925f4f04b7a2cf19be0e2f36040cf1ecbd3a1cc",
+    "src/adapters/motion-suite/loop.ts": "37461373307e4cd3022e547b99741d2821d4e61064600b526f9ee74be606ba51",
+    "src/adapters/motion-suite/lower.ts": "92b13bdaf565c642b95a7efb073c6a3044b7a8c67072429abe49ced7e5f7d2f6",
+    "src/adapters/motion-suite/luma.ts": "e150894f4d5dfd57b2fb61d83548eeeb59a05db546d7fc66118056f77ad187fe",
+    "src/adapters/motion-suite/materialize.ts": "100334caebf3e7bedc882c0236ac4abae1a78ba31edefb2d12d89d7642190e24",
+    "src/adapters/motion-suite/metrics.ts": "0a6412bfc58cc7150d6af8c451effe58912a8c16b80941b496ec1f544e6334bc",
+    "src/adapters/motion-suite/page-source.ts": "537c8c25e8be20073b9b72d930aec992f992a7cf4c2cdd757a8538421f09d6b6",
+    "src/adapters/motion-suite/parity.ts": "c86651cfb5231b269cfd91c7b2024e8f2161c426d014ba110d780a6898d592fa",
+    "src/adapters/motion-suite/renderer.ts": "af143aa4d8bc95e2b24f8886e3021630ef0bbb7043e3c28b70d4c6b1134a5787",
+    "src/adapters/motion-suite/review.ts": "59b071ea84dd44200bf88f432e4e3c90a66851704e4e46f696d8efae8b92568f",
+    "src/adapters/motion-suite/session.ts": "c8903c3f237128a167068c162b0b10d3f549aafac2931f4f4af86747400de8f4",
+    "src/adapters/motion-suite/timing.ts": "af89ba1575f91ab212fd006b87054ae65aab0a511fc72520de37030d7b2ea24e",
+    "src/adapters/motion-suite/v2.ts": "1a14942837e5a1e0418ea865cd010073d687385b92a4668be53276d9f9bc5dbe",
+    "src/adapters/motion-suite/validate.ts": "b7f8f5d40499a93e17f9384b0b72db0ac5d82490915d6bd1c467383053aa18fc",
+    "src/adapters/motion-suite/verify.ts": "1c3211da80836a4d9f8e1af46e8d4b56c6e2cb13233ca474283fe37fb9d008af",
+    "src/adapters/motion-suite/word-check.ts": "df02a41f8dc4d9ed995b7342f3c040bc3e89623d6dd647555106c3c360ead56d",
+    "src/cli.ts": "2fd7cc722b970ef8b7567965aef26a70d9afe57c0837af757be8089d21acbd3a",
+    "src/contracts.ts": "c7e377dca95ef02bbccc1702532c0c04b50ae6c6d791514a156b665d812cb578",
+    "src/fm2/color/banding.ts": "faeff80b99fef98728f35ececd15df1c380bb385eef28e9e39db88a92c7c081d",
+    "src/fm2/color/column-statistics.ts": "d5327c0727c0238307d224ad1a9766b9e5c4601e42b919e10cb2d5159770e92c",
+    "src/fm2/color/normal-quantile.ts": "58d22c2a7c4ea3fe109c1519b50f92cda82d0a9bc20fdec6bba12d763e9f2069",
+    "src/fm2/color/oracle.ts": "40783de088fc3662dab5e3be6d53895cba1efb3d598c96f2b8aa9a0bd6e005f1",
+    "src/fm2/color/perception.ts": "0ab6c38a5a6d36e5995176db95f16fdb5d795111f7a919661e8477af4d770e89",
+    "src/fm2/color/profile.ts": "04e607829247a1c032672ef8157679d6d6022594a81ba120d62517a00a9cde75",
+    "src/fm2/color/spectrum.ts": "0cdeb0adbd7406c24b3f580162ba11b52c6a4341b89fba5215810a21bcb16172",
+    "src/gate.ts": "49a5849eadbf9905a46bf3814e338d250b00504ae7e172bcc776432f806cb4a7",
+    "src/hash.ts": "78b4e1fcdf3cba9bde626ebf7b968b7a6a48d15621ff05be64d01442f208da4e",
+    "src/io.ts": "0d926f1874f0ed883cdb20acc6576a8c7d452a7ce5da0e53a1e69d256a6fb156",
+    "src/kimi-acp.ts": "df616e321d2fecf7556a0c488d50d19a909f61749681a6958d978469dfb5b1b1",
+    "src/kimi-auth.ts": "477c582d8fb43121d3ca6a4e6c8beb52aa7b792697d36d18fcb8d3949e7d1f42",
+    "src/kimi-canary.ts": "5f9aadf065db19f47608ed04859953835d5c41a82387ead7fe93d50cb36af4e0",
+    "src/kimi-policy.ts": "c0cf7b4d5759fea584bde40c7fa68bebe277977f6a256d6e3356a0b71bf8f2dd",
+    "src/kimi-proof.ts": "78aeb7fc1c7eb7346e901ebfaa7d719f3da68773c2d957a8cca0be569c705ae2",
+    "src/kimi-review.ts": "3a47ad4197a9de7dca081f789cb22b5877a2d5506c872852da384fa742dbe630",
+    "src/kimi-verify.ts": "e868b17e12223ec3e0cf4166fb4ffff48667cab23b174056e19372df44d64769",
+    "src/recipes/compiler.ts": "1304a461b46ee7874ede611cdec34de92a8b7fb403ec7e1208a918d957c8b44d",
+    "src/recipes/primitives.ts": "44399fa39f9412e1f561b8a34af89fd41c2df01030149c00ad621476433b24e9",
+    "src/recipes/registry.ts": "4f6cc75dd25e6a884c1c663e8bcf2fcb343269d7117bb690657936a4e3e8c8dc",
+    "src/recipes/types.ts": "7c9e015652823fe84d81caf9c6040caadb8386fcec0a0b2612e1137ee1b6658a",
+    "src/render.ts": "5bca2a6d9589b8ed9323debfd4c73108f1f14609231266c9dcc93746abe91d04",
+    "src/repair.ts": "66162cf9b24196dd406e705d8c2bc0b28a7af18c07b9f93d6533bb428a3a91bc",
+    "src/review.ts": "e02c8c4f166c59bc0f6e6c3de3f130db2e5d45bcfadcc7216d69c1c5dc1c20b1",
+    "src/scene.ts": "a56d0db325023aca04703265d394429f3c58f58ed09c6888ef7e4e93321d067f",
+    "src/schemas.ts": "a6ea945507dbd1f43584c3cc9e0b27d75328ab2d8805ff6dc3aa1a9125a9c282",
+    "src/validate.ts": "672f991aa252c8244934406f01f3cb34b3afd9df5f8974c5dd7276d641d437b3",
+    "src/verify.ts": "8d60e8f0634a743dda2c46807646027a8a802d1d77b885e8819872afcdc7e667",
+    "test/contracts.test.ts": "5eead370c31ac5f22a1a1b9b34cdb976ffa41818379464d1258d5532008da3f2",
+    "test/fixture.test.ts": "698f6c5dddbbb9a02fbd97984db6cdc5eb817fab8b3bb2ff2b9bd4b8c92cb53f",
+    "test/fm2-color.test.ts": "0bcc23d1342ea06656846412fb1525fe4ea48f9a8455819ea7fcb47d7c4b9da6",
+    "test/kimi.test.ts": "2e23a36d4b09dcbd0cd1f5f606fd41ad566c7ed87e1d12489714724311b15e01",
+    "test/m1-candidate-evidence.test.ts": "2debfaf864b4e77ee813333bfee5dcdad18ad6e377b755d01d4abdfc6f3b5d73",
+    "test/m1-evidence.test.ts": "305ba28d6413a7e819763d6be3f186712d879097e20c4771980001f81620a3cf",
+    "test/m1-gate.test.ts": "bb543b48eb522ae3459d74232af265cefb60f47e3b57926516748b385a151cdf",
+    "test/m1-loop-safety.test.ts": "2003f9b354e898334520348dd004ec9fac7e47829bbee3aa85e3bad0c10b4571",
+    "test/m1-lowering.test.ts": "b0db70ca4fc13c2e06847cbca2b5f993ce12bd0704310d0b20b459caa97e9ad9",
+    "test/m1-recipes.test.ts": "2de1ddca934359733ebdf90d6bfeb13a9cf6e440a5046182a304d3528849aa9b",
+    "test/m1-renderer.test.ts": "2134356a8e998cdd91c505d18a21807074eab8f4f4ad256a573e5b2a4aec9f92",
+    "test/m1-timing.test.ts": "a1750a5f51d0aacb90ff20e7da4002150b3db5e89db156ba000cfb934370e9de",
+    "test/m1-validators.test.ts": "6512d7bef2fbb162b483958805a2b8b43b06151426c5b4d8d6e8ed2bd0087d74",
+    "test/negative.test.ts": "4b575d22c6400e2f0955da2a1ec3107d6e1d8269310bc30f2d270fe276c85c95",
+    "test/render.test.ts": "12e0852fc05db9ba3ed4b3646104d039eab56deda7b9b17166c9c8a28f78613f",
+    "test/review.test.ts": "e6d0615c987929aef9db02fc429a25f2739f079828761e61927dd2e090da5a5d",
+    "test/validate.test.ts": "792b6db7268449e9e81cc4d78bb0e6e906c74da35ec8a0ee73dc3e0a959893aa",
+    "tsconfig.json": "f27b29e1f4a18affa7882b05943896f55455d583f2e475955f3d0bf6bf4478d7"
+  },
+  "fingerprint": "c5d497d5c396cb1f08028a8a7c6271ce9daad8be2928ddcc77f0a2d8654f9bc3",
+  "detail": "FULL_SUITE_FAILURE_RETAINED"
+}

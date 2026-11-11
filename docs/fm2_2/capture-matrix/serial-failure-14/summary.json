@@ -1,0 +1,14 @@
+{
+  "cohort": "FAILED, not restarted",
+  "fullSuitesCompleted": 14,
+  "fullSuitesPassed": 13,
+  "suiteFailures": 1,
+  "failedSuitePassCount": 71,
+  "failedSuiteFailureCount": 27,
+  "causeObserved": "Shared before-hook in negative.test.ts received mock repairLoop ERROR; reason_code page.screenshot",
+  "partialFrames": 24,
+  "lastCompletedFrame": 23,
+  "manifestWritten": false,
+  "repeatCaptureTest": "PASS; cross-cohort fingerprints unchanged",
+  "unknown": "Full screenshot exception discarded by existing reason-code truncation; timeout/crash not established."
+}
