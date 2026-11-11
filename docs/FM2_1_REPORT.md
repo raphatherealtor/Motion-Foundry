@@ -39,7 +39,7 @@ Live-backdrop feedback was rejected because it moves compositing back into Canva
 
 ## Preserve A–M and boundaries
 
-[PRESERVE_A_M.md](PRESERVE_A_M.md) remains the reference. Ordered destination draws, per-draw opacity/blend, existing isolation boundaries, unisolated legacy groups, inherited group opacity and ignored group blend are retained. Future nests remain isolated precomps.
+[COMPAT_INVARIANTS.md](COMPAT_INVARIANTS.md) is the renderer checklist (previously mislabeled A–M). Raphael's distinct principles are in [PRESERVE_A_M.md](PRESERVE_A_M.md). Ordered destination draws, per-draw opacity/blend, existing isolation boundaries, unisolated legacy groups, inherited group opacity and ignored group blend are retained. Future nests remain isolated precomps.
 
 Legacy stays the default; GPU stays explicit harness opt-in. The existing preview/export/draw entry points are untouched. `layerMask.ts` is restored to the pinned base; coverage controls live in new test files. Frozen M0/M1 code, schemas, validators and tests are unchanged. No merge, PR, deployment or spend.
 

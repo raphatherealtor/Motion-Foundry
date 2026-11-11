@@ -1,99 +1,95 @@
-# FM2.2 color — review report: BLOCKED
+# FM2.2 color — IN PROGRESS, not cleared to land
 
-FM2.1 remains COMPLETE. FM2.2 color foundations and stress measurements pass, but the positive gradient card fails the literal banding contract and the final frozen M0 repeat-render check finds nondeterminism. No tolerance or dither algorithm was silently changed. No FM2.3 work has started.
+Raphael approved a replacement banding contract and a zero-tolerance capture investigation on2026-11-11. Both banding and capture gates must pass before landing/pushing. No merge, default switch or FM2.3 work is authorized by this report.
 
-## Scope and implementation
+## Old banding contract and why it was wrong
 
-The new GPU path remains opt-in. Legacy rendering is the default; none of drawDocument.ts, export/pipeline.ts or CanvasPreview.tsx was edited for this phase. M0/M1 source, schemas and tests remain frozen.
+The old contract capped raw adjacent-run steps at1 LSB and each constant run at1.5× a theoretical slope-derived length. It rejected both the prescribed ±1-LSB triangular PCG dither and the intended sRGB OETF slope itself: the horizontal ramp has an intended3.054-LSB step near black at1080px. Historical measurements remain in docs/fm2_2/stress/banding-results.json and the prior report at Foundry42c476c. The old limits are removed, not widened silently.
 
-Implemented: exact piecewise sRGB EOTF/OETF; linear-premultiplied RGBA16F/32F decode; exposure → temperature → vignette → existing tone operator → OETF → output-only triangular dither → explicit RGBA8 quantization. Solid-color CPU reference uses float64. No hardware sRGB encode or transfer LUT. Actual bounds: exposure ±16 EV, temperature ±1, vignette/feather 0–1. Existing lit-layer exposure is untouched; product integration remains later work.
+## Approved replacement contract
 
-Dither is deterministic PCG3d triangular noise, ±1 output LSB. Temporal is default; static is available; off is diagnostic only. Alpha, true black and true white are not dithered; float intermediates are not dithered.
+- Float64 CPU oracle applies the same wrapping-integer PCG3d dither, seed/frame and output quantization. GPU error≤1 LSB per channel, zero channels≥2: hard gate.
+- Per-pixel quantization residual magnitude≤1.5 LSB; each64-line column mean residual magnitude≤0.05 LSB.
+- Averaged64-line profiles: step≤oracle step+0.25 LSB and monotonic wherever the oracle is monotonic.
+- GPU run histograms compared with the oracle-with-dither histograms; no fixed per-run cap.
+- Dither-on spectral peaks<+6dB; dither-off negative control must FAIL. Accepting the negative control is ERROR.
 
-## Environment and determinism
+Implementation: src/fm2/color/oracle.ts and banding.ts; exact PCG uint wrapping is independent of the GLSL shader. AllRGB channels in all four regions are measured. The continuous quantization reference is the dithered float64 code immediately before rounding; undithered-signal residuals are retained separately. Profile comparisons use the quantized dithered oracle. Histogram equality is currently strict; a near-match tolerance was not invented.
 
-Chromium 153.0.8010.12, pinned SwiftShader and single-thread raster flags. Five fresh launches × HTMLCanvas, main-thread OffscreenCanvas and dedicated-worker OffscreenCanvas: all 15 stress results, float buffers and final-byte hashes identical. Foundation probes independently passed the same five-launch/three-host matrix. App preview/export wiring is not claimed.
+## Replacement-contract measurements so far
 
-## Color measurements
+Analysis of the saved, deterministic card outputs (a fresh15-host rerun is still required):
 
-| Check | Result |
+| Measurement | Static | Temporal |
+|---|---:|---:|
+| Max GPU/oracle byte error |1|1|
+| Channels with error≥2 |0|0|
+| Max per-pixel quantization residual LSB |0.500041|0.500033|
+| Max64-line column mean residual LSB |0.155061|0.140169|
+| CPU oracle's own max column mean |0.155061|0.140169|
+| Max profile step excess LSB |0.015625|0.015625|
+| Monotonicity violations |0|0|
+| Max measured spectral peak dB |1.597|1.356|
+
+The oracle hard match, per-pixel residual, profile and spectral conditions pass on the saved card. The literal0.05 column-mean limit FAILS even for the CPU oracle itself. The GPU is not responsible for that residual. Clarification has been requested: retain the per-pixel quantization bound but measure the column mean as GPU-minus-dithered-oracle error, or revise the quantizer while keeping the literal mean bound. No correction to the approved threshold has been applied.
+
+Strict histogram equality also detects a few changed bins at permitted1-LSB rounding boundaries (L1 deltas3–8). Histograms are retained for review; no unapproved near-match tolerance is claimed. Off still FAILS the spectral negative control. Details: FM2_2_CONTRACT_REVISION.md and runs/fm2-2/stress/banding-revised-results.json. Current gate: BLOCKED, not PASS.
+
+## M0 capture investigation — zero tolerance
+
+The previous full suite had97/98 passing tests; frozen M0 uncached frame95 and121 hashes differed. Each frame had9 differing channels, max deltas5 and8. Both configs used Chromium153, single-thread raster and disabled PaintHolding. The earlier95/95 pass did not clear this intermittent failure.
+
+The requested matrix is sequential, using detached source snapshots and the same compiled render/scene/test harness, browser153, dependencies, fonts and fixture:
+
+1. M1b52aebd:20 isolated M0 repeat tests.
+2. FM2.1 8f64cb1:20 isolated M0 repeat tests.
+3. FM2.2 baseline42c476c:20 isolated M0 repeat tests.
+4. The same FM2.2 baseline:20 full-suite runs, recording M0 separately from unrelated failures.
+
+Results are accumulated under runs/fm2-2/capture-matrix/. Initial missing-browser worktree setup failures were excluded and retained under capture-matrix-setup-invalid/. No capture or source change is part of these baseline comparisons. New Foundry color unit tests are CPU-only; standalone GPU stress probes are not implicitly part of npm test. Other GPU probes remain idle during isolated comparisons.
+
+Readiness inspection is queued after the matrix: replay every frame, triple-capture95/121, record font/image readiness, GSAP frame/state and computed transforms. Existing seek waits for two rAF callbacks; the affected differences lie on circle edges, not an image asset. A cause is not yet established. No frozen tolerance or baseline has changed. Root-cause fix, five uncached repeat tests and98/98 final suite remain mandatory.
+
+## Color foundation retained
+
+Existing five-launch ×three-host evidence remains exact under Chromium153.0.8010.12 SwiftShader: all256 opaque/partial-alpha code round trips in16F/32F, grade witness[156,156,156,255], checker linear0.5→188 versus sRGB128, additive linear1.5 before tone mapping, ±2EV round trips0 half-float ULP, and monotonic temperature R/B sweep. Previous product checks:729/729, type-check PASS,52/52 legacy goldens unchanged. Revised Foundry color unit checks:12/12 PASS. Final full suite remains pending.
+
+A new five-launch ×three-host browser rerun follows the revised oracle checks after isolated capture comparisons finish; it is not claimed complete. No product shader changed for this contract correction.
+
+## Compat invariants — renderer checklist
+
+This is distinct from Raphael's preserve list. Reference: COMPAT_INVARIANTS.md.
+
+| Item | Evidence scope |
 |---|---|
-| All 256 opaque and partial-alpha codes through 16F and 32F | Exact byte round trips; zero changed channels |
-| Maximum EOTF linear error | 16F: 0.00023492088426790847; 32F: 4.977549565854389e-7 |
-| Approved grade-order corner witness | [156,156,156,255] exactly |
-| Checker downsample | Linear mean 0.5 → 188; sRGB compatibility control 128 |
-| Additive HDR | [1.5,1.5,1.5,1] before tone map; Reinhard output [203,203,203,255] |
-| Exposure ±2 EV round trip | 0 half-float ULP in both directions |
-| Temperature sweep | R/B strictly monotonic over 21 samples |
-| Negative/HDR control | [-0.125,0.25,2,1] → [0,137,255,255] |
+| Draw order | Existing ordered per-draw capture unchanged. |
+| Opacity | Prior five-launch exact overlap suite retained. |
+| Blend | Compat shader hash unchanged. |
+| Isolation | Existing boundaries unchanged. |
+| Groups | Unisolated, inherited opacity; group blend ignored. |
+| Clipping | Existing capture and classification unchanged. |
+| Grade order | Exposure→temperature→vignette→tone retained. |
+| Frozen contracts | M0/M1 schemas and tests unchanged. Root fix not yet applied. |
+| Default/fallback | Legacy remains default; GPU explicit opt-in. |
+| Timing/identity | Rational FPS unchanged; final settings identity integration still deferred. |
+| Host parity | Prior15-host foundation/stress results retained, revised rerun pending. |
+| Goldens | Previous52/52, no baseline edits. |
+| Capture fidelity | FM2.1 five-launch570/7/0 maps and signed deltas retained; M0 repeat capture separately unresolved. |
 
-## Banding gate — FAIL on the positive card
+## Raphael's real preserve A–M check
 
-1080×1920 synthetic four-region card; 64 scanlines per region, R channel except navy B. Thresholds kept at 1-LSB adjacent-run steps, 1.5× local theoretical run length, and +6 dB spectral peak. Local spectra average 64 quantization-error periodograms over 256-pixel windows. Run maxima and violation counts are retained alongside the 64-line averages.
-
-| Mode / region | Max step LSB | Steps >1 | Long runs | Peak dB |
-|---|---:|---:|---:|---:|
-| off / horizontal_linear | 3 | 768 | 128 | 20.06 |
-| off / radial_vignette | 1 | 0 | 0 | 13.18 |
-| off / navy_black | 1 | 0 | 0 | 26.92 |
-| off / skin_tone | 1 | 0 | 0 | 21.16 |
-| static / horizontal_linear | 5 | 2749 | 856 | 0.33 |
-| static / radial_vignette | 2 | 1652 | 336 | 1.09 |
-| static / navy_black | 2 | 1202 | 5 | 1.11 |
-| static / skin_tone | 2 | 1340 | 4 | 1.10 |
-| temporal / horizontal_linear | 5 | 2731 | 782 | 0.98 |
-| temporal / radial_vignette | 2 | 1629 | 309 | 0.68 |
-| temporal / navy_black | 2 | 1222 | 1 | 1.18 |
-| temporal / skin_tone | 2 | 1322 | 5 | 0.81 |
-
-All dither-on spectral peaks are below +6 dB; all dither-off peaks exceed it. The negative control correctly FAILS, so this is not an ERROR from accepting the negative control. The combined gate is BLOCKED because the positive card also FAILS.
-
-The blocker is the measurement contract: independent ±1-LSB triangular noise can make adjacent quantized pixels differ by 2 LSB even in a smooth region. The full linear-light ramp itself has an intended OETF step of 3.054 LSB near black at this resolution; its off control already has 3-LSB steps. The hard raw-neighbor limit therefore rejects intended signal as well as prescribed noise. Static/temporal dither also produces rare constant runs exceeding the per-run bound. These failures were retained, not averaged away or reclassified as WARN.
-
-Suggested review direction: define the hard criterion on quantization residuals or spatially aggregated profiles, with an explicit statistical run bound, while retaining the dither-off spectral negative control. This is a proposed contract correction, not an applied change. The production-region path remains heuristic WARN and currently requires caller-supplied regions; automatic smooth-region detection is not implemented. No production-band validation claim is made.
-
-## Perception and profile evidence
-
-Each card mode has 256-bin pre-tone linear/output luminance histograms, a binary clipping map, negative-component counts and the full banding report. The independent float64 oracle retains continuous expected output codes. Output endpoint masks denote channels at 0/255, including intentional endpoints; they do not by themselves establish accidental clipping. The negative/HDR control verifies mask bits independently.
-
-Profile metadata reports browser-managed sRGB decode. Declared non-sRGB or unverified profiles produce WARN; wide gamut is deferred. Metadata policy is implemented and tested; ICC blob parsing and a real wide-gamut asset decode test are not implemented or claimed. Synthetic sRGB assets are the only inputs in this run.
-
-## A–M preserve check
-
-| Item | Preservation check |
+| Item | FM2.2 preservation and evidence scope |
 |---|---|
-| A: draw order | Compat capture/compositor untouched; new color passes do not reorder scene draws. |
-| B: per-draw opacity | Five-launch exact opacity gate PASS; color alpha is carried separately from output dither. |
-| C: blend semantics | Accepted compat shader source hash pinned at `1480642771f054cc33b0d27d310f78666701c118491a2fc4e5a451f7d434e3f1`. No compat blend edits. |
-| D: isolation | No isolation/flattening boundary changes. |
-| E: groups | Legacy inherited opacity and ignored group blend stay unchanged; no new group/precomp behavior. |
-| F: clipping | Existing clip/capture code unchanged by color work. |
-| G: grade order | CPU/GPU witness must stay156: temperature → vignette → tone map, with exposure first for the new unlit input stage. Existing lit per-layer exposure is untouched; integration remains FM2.5 work. |
-| H: frozen contracts | No changes to M0/M1 schemas, validators, allowlists or tests. |
-| I: default/fallback | No edits to drawDocument/export/CanvasPreview entry points; legacy remains default, GPU explicit opt-in. |
-| J: timing/identity | FPS/rational timing unchanged; color frame/seed inputs require uint32 integers. New color settings identity must be bound at later evidence integration. |
-| K: host parity | Foundation and stress:5 launches ×3 hosts each, exact hashes. Product GPU preview/export/worker integration remains outside this foundation claim. |
-| L: legacy goldens | No golden or baseline files edited; All52 legacy goldens pass; committed baselines are identical. |
-| M: capture fidelity | Approved570/7/0 bounds and fixed maps remain active. Fresh compat rerun:5/5 PASS, fixed position/signed-delta pins unchanged. Frozen M0 repeat capture separately FAILS, below. |
-
-## Reproduction and evidence
-
-From Foundry: `npm test`; `node docs/fm2_2/color-foundation.mjs`; `node docs/fm2_2/color-stress.mjs 5`; `node docs/fm2_2/analyze-color.mjs`; `node docs/fm2_2/export-card.mjs`; `node docs/fm2_1/parity-gate.mjs 5`. Product: `npm run type-check`, `npm test`, and `PLAYWRIGHT_BROWSERS_PATH=/root/projects/motion-foundry/tooling/m1-browser/browsers npm run golden`.
-
-`docs/fm2_2/stress/` contains host results, banding results, histograms and render_caps.json. Runtime raw frames and maps are under runs/fm2-2/stress; rendered PNGs are included in the downloadable review evidence.
-
-Foundation: product `5e8337f`, Foundry `a88c6d0`. FM2.1: product `a8073b8`, Foundry `8f64cb1`. Stress checkpoint: product `90c6924`. Per the request to push when FM2.2 lands, this blocked milestone is not pushed as a completed delivery. No merge, default switch or FM2.3 work was performed.
-
-## Current regression checks
-
-- Product type-check: PASS. Product Vitest: 729/729 PASS across47 files.
-- Legacy golden renderer:52 frames,0 failures;47 explicit-OFF frames identical and committed baselines identical.
-- Foundry preliminary suite:95/95 PASS. Final suite with all12 new tests:97/98 PASS; all12 color tests pass, but the unchanged M0 repeat-render test FAILS. Neither the earlier pass nor a future isolated pass clears this intermittent failure.
-- No existing product base file is modified. No frozen M0/M1 source, test or schema is modified. The compat and copy shader SHA256s still match the FM2.1 pins.
-- Full app e2e suites are not run for this blocked checkpoint; no product entry-point integration or push is claimed.
-
-## Additional strict blocker: frozen M0 repeat capture
-
-The final suite found different hashes for frames95 and121 between uncached attempts with identical Chromium153 configuration. Each frame differs in9 channels; max deltas are5 and8 respectively. The existing single-raster-thread and disabled PaintHolding flags are present in both configs. Cause is unverified; no load-flake or settings-gap diagnosis is claimed. No frozen code or tolerance was changed. Before calling it fixed, the capture-race protocol still requires a justified one-change-at-a-time investigation and five uncached repeats. Failure configs, frames and pixel statistics are retained in stress/capture-race/.
-
-The banding analysis command exits1 because its positive-card gate is BLOCKED; the off negative control correctly FAILS. Compat independently passes5/5: chart_explainer f90, M1 proof and opacity are exact; both torn-paper recipes retain570/7/0 and all diff pins. Both blockers must be resolved before FM2.2 can land.
+| A — Directed temporal anchors | Existing integer-frame and rational-time semantics remain unchanged. Color frame indices do not retime scene anchors. |
+| B — Editable causality | Color settings remain explicit parameters; evidence images do not replace editable source projects. |
+| C — Gradient of agency | User-approved scope and review remain authoritative. A failed gate is reported, not silently weakened. |
+| D — Perceptual-evidence loop (advisory) | Histograms, clipping maps and banding evidence support review. Production visual analysis stays advisory; explicit lab contracts may hard-fail. |
+| E — Scoped AI authority | Frozen allowlists and edit boundaries remain enforced. No reviewer-generated project edits occur in this phase. |
+| F — Procedural deterministic motion | THREATENED: M0 uncached captures differ. Zero tolerance remains; isolated/history/load comparisons and a root-cause fix are required. |
+| G — Advanced temporal geometry | Existing temporal geometry is untouched; color tests do not establish new geometry capability. |
+| H — One lighting model | Existing product lighting/grade semantics remain authoritative; no replacement lighting model or lit-path integration is introduced here. |
+| I — Recipes as editable executable knowledge | Existing recipe manifests remain editable source, not flattened image substitutes. No frozen M1 recipe changes. |
+| J — Model neutrality | Color/capture validation is provider-independent. No new vendor-specific scene contract. |
+| K — External-agent operation | Existing CLI/API workflows remain available; no new integration or external messaging is introduced. |
+| L — One canonical scene/render state | Projects remain canonical input. The color backend consumes explicit textures/settings; later app integration must bind those settings into render identity. No second editable scene state is introduced. |
+| M — Preserved roadmap | FM2.3–FM2.6 scope remains deferred. FM2.2 cannot land until banding and capture determinism pass. |

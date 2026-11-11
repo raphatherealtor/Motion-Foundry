@@ -1,0 +1,70 @@
+TAP version 13
+# Subtest: FM2 color perception reports negative/HDR and output endpoint controls
+ok 1 - FM2 color perception reports negative/HDR and output endpoint controls
+  ---
+  duration_ms: 2.223016
+  ...
+# Subtest: FM2 color perception skips fully transparent pixels
+ok 2 - FM2 color perception skips fully transparent pixels
+  ---
+  duration_ms: 0.280134
+  ...
+# Subtest: FM2 color perception rejects invalid dimensions
+ok 3 - FM2 color perception rejects invalid dimensions
+  ---
+  duration_ms: 0.30503
+  ...
+# Subtest: FM2 banding accepts an exactly flat control
+ok 4 - FM2 banding accepts an exactly flat control
+  ---
+  duration_ms: 55.373296
+  ...
+# Subtest: FM2 banding rejects coarse steps on a contract card
+ok 5 - FM2 banding rejects coarse steps on a contract card
+  ---
+  duration_ms: 29.947398
+  ...
+# Subtest: FM2 production banding remains a warning
+ok 6 - FM2 production banding remains a warning
+  ---
+  duration_ms: 42.88142
+  ...
+# Subtest: FM2 negative control must actually fail
+ok 7 - FM2 negative control must actually fail
+  ---
+  duration_ms: 23.102018
+  ...
+# Subtest: FM2 a failing positive card cannot close the banding gate
+ok 8 - FM2 a failing positive card cannot close the banding gate
+  ---
+  duration_ms: 9.895691
+  ...
+# Subtest: FM2 banding rejects an out-of-frame region
+ok 9 - FM2 banding rejects an out-of-frame region
+  ---
+  duration_ms: 5.437236
+  ...
+# Subtest: FM2 profile metadata warns on wide gamut and unverified assets
+ok 10 - FM2 profile metadata warns on wide gamut and unverified assets
+  ---
+  duration_ms: 0.831329
+  ...
+# Subtest: FM2 sRGB asset metadata does not claim a new ICC transform
+ok 11 - FM2 sRGB asset metadata does not claim a new ICC transform
+  ---
+  duration_ms: 0.345131
+  ...
+# Subtest: FM2 literal banding rule rejects a two-LSB error against the oracle
+ok 12 - FM2 literal banding rule rejects a two-LSB error against the oracle
+  ---
+  duration_ms: 16.857262
+  ...
+1..12
+# tests 12
+# suites 0
+# pass 12
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 331.821095
