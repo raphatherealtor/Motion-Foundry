@@ -1,0 +1,1431 @@
+{
+  "groups": 9,
+  "launches": 3,
+  "frames": [
+    81,
+    95,
+    121
+  ],
+  "sameFrameTriplePixels": true,
+  "samePixelsAcrossLaunches": true,
+  "allFontsLoaded": true,
+  "noImages": true,
+  "clockStable": true,
+  "tickerStable": true,
+  "records": [
+    {
+      "launch": 0,
+      "frame": 81,
+      "network": 0,
+      "samples": [
+        {
+          "repeat": 0,
+          "before": {
+            "ready": true,
+            "fontStatus": "loaded",
+            "fonts": [
+              {
+                "family": "Fixture",
+                "status": "loaded"
+              }
+            ],
+            "images": [],
+            "clock": {
+              "frame": 81,
+              "time": 2.7
+            },
+            "gsapFrame": 86,
+            "objects": [
+              {
+                "id": "shape1",
+                "transform": "matrix(1, 0, 0, 1, 12, 28)",
+                "opacity": "1",
+                "bbox": [
+                  152,
+                  358,
+                  320,
+                  320
+                ]
+              },
+              {
+                "id": "shape2",
+                "transform": "matrix(1, 0, 0, 1, -9, -7)",
+                "opacity": "1",
+                "bbox": [
+                  641,
+                  1293,
+                  320,
+                  320
+                ]
+              }
+            ]
+          },
+          "after": {
+            "frame": 81,
+            "time": 2.7,
+            "fontStatus": "loaded",
+            "gsapFrame": 86
+          },
+          "sha256": "6fdc837e5dac12fd06de5768c2cc03e9ab2aaa740197873e254e8fa3af549af4"
+        },
+        {
+          "repeat": 1,
+          "before": {
+            "ready": true,
+            "fontStatus": "loaded",
+            "fonts": [
+              {
+                "family": "Fixture",
+                "status": "loaded"
+              }
+            ],
+            "images": [],
+            "clock": {
+              "frame": 81,
+              "time": 2.7
+            },
+            "gsapFrame": 86,
+            "objects": [
+              {
+                "id": "shape1",
+                "transform": "matrix(1, 0, 0, 1, 12, 28)",
+                "opacity": "1",
+                "bbox": [
+                  152,
+                  358,
+                  320,
+                  320
+                ]
+              },
+              {
+                "id": "shape2",
+                "transform": "matrix(1, 0, 0, 1, -9, -7)",
+                "opacity": "1",
+                "bbox": [
+                  641,
+                  1293,
+                  320,
+                  320
+                ]
+              }
+            ]
+          },
+          "after": {
+            "frame": 81,
+            "time": 2.7,
+            "fontStatus": "loaded",
+            "gsapFrame": 86
+          },
+          "sha256": "6fdc837e5dac12fd06de5768c2cc03e9ab2aaa740197873e254e8fa3af549af4"
+        },
+        {
+          "repeat": 2,
+          "before": {
+            "ready": true,
+            "fontStatus": "loaded",
+            "fonts": [
+              {
+                "family": "Fixture",
+                "status": "loaded"
+              }
+            ],
+            "images": [],
+            "clock": {
+              "frame": 81,
+              "time": 2.7
+            },
+            "gsapFrame": 86,
+            "objects": [
+              {
+                "id": "shape1",
+                "transform": "matrix(1, 0, 0, 1, 12, 28)",
+                "opacity": "1",
+                "bbox": [
+                  152,
+                  358,
+                  320,
+                  320
+                ]
+              },
+              {
+                "id": "shape2",
+                "transform": "matrix(1, 0, 0, 1, -9, -7)",
+                "opacity": "1",
+                "bbox": [
+                  641,
+                  1293,
+                  320,
+                  320
+                ]
+              }
+            ]
+          },
+          "after": {
+            "frame": 81,
+            "time": 2.7,
+            "fontStatus": "loaded",
+            "gsapFrame": 86
+          },
+          "sha256": "6fdc837e5dac12fd06de5768c2cc03e9ab2aaa740197873e254e8fa3af549af4"
+        }
+      ]
+    },
+    {
+      "launch": 0,
+      "frame": 95,
+      "network": 0,
+      "samples": [
+        {
+          "repeat": 0,
+          "before": {
+            "ready": true,
+            "fontStatus": "loaded",
+            "fonts": [
+              {
+                "family": "Fixture",
+                "status": "loaded"
+              }
+            ],
+            "images": [],
+            "clock": {
+              "frame": 95,
+              "time": 3.1666666666666665
+            },
+            "gsapFrame": 100,
+            "objects": [
+              {
+                "id": "shape1",
+                "transform": "matrix(1, 0, 0, 1, 14.0741, 28)",
+                "opacity": "1",
+                "bbox": [
+                  154.0740966796875,
+                  358,
+                  320,
+                  320
+                ]
+              },
+              {
+                "id": "shape2",
+                "transform": "matrix(1, 0, 0, 1, -10.5556, -7)",
+                "opacity": "1",
+                "bbox": [
+                  639.4443969726562,
+                  1293,
+                  320,
+                  320
+                ]
+              }
+            ]
+          },
+          "after": {
+            "frame": 95,
+            "time": 3.1666666666666665,
+            "fontStatus": "loaded",
+            "gsapFrame": 100
+          },
+          "sha256": "73f47ae60c219e8ae1b4bc11ac301a7b980f9ed8fbefa034c39179395766f0e2"
+        },
+        {
+          "repeat": 1,
+          "before": {
+            "ready": true,
+            "fontStatus": "loaded",
+            "fonts": [
+              {
+                "family": "Fixture",
+                "status": "loaded"
+              }
+            ],
+            "images": [],
+            "clock": {
+              "frame": 95,
+              "time": 3.1666666666666665
+            },
+            "gsapFrame": 100,
+            "objects": [
+              {
+                "id": "shape1",
+                "transform": "matrix(1, 0, 0, 1, 14.0741, 28)",
+                "opacity": "1",
+                "bbox": [
+                  154.0740966796875,
+                  358,
+                  320,
+                  320
+                ]
+              },
+              {
+                "id": "shape2",
+                "transform": "matrix(1, 0, 0, 1, -10.5556, -7)",
+                "opacity": "1",
+                "bbox": [
+                  639.4443969726562,
+                  1293,
+                  320,
+                  320
+                ]
+              }
+            ]
+          },
+          "after": {
+            "frame": 95,
+            "time": 3.1666666666666665,
+            "fontStatus": "loaded",
+            "gsapFrame": 100
+          },
+          "sha256": "73f47ae60c219e8ae1b4bc11ac301a7b980f9ed8fbefa034c39179395766f0e2"
+        },
+        {
+          "repeat": 2,
+          "before": {
+            "ready": true,
+            "fontStatus": "loaded",
+            "fonts": [
+              {
+                "family": "Fixture",
+                "status": "loaded"
+              }
+            ],
+            "images": [],
+            "clock": {
+              "frame": 95,
+              "time": 3.1666666666666665
+            },
+            "gsapFrame": 100,
+            "objects": [
+              {
+                "id": "shape1",
+                "transform": "matrix(1, 0, 0, 1, 14.0741, 28)",
+                "opacity": "1",
+                "bbox": [
+                  154.0740966796875,
+                  358,
+                  320,
+                  320
+                ]
+              },
+              {
+                "id": "shape2",
+                "transform": "matrix(1, 0, 0, 1, -10.5556, -7)",
+                "opacity": "1",
+                "bbox": [
+                  639.4443969726562,
+                  1293,
+                  320,
+                  320
+                ]
+              }
+            ]
+          },
+          "after": {
+            "frame": 95,
+            "time": 3.1666666666666665,
+            "fontStatus": "loaded",
+            "gsapFrame": 100
+          },
+          "sha256": "73f47ae60c219e8ae1b4bc11ac301a7b980f9ed8fbefa034c39179395766f0e2"
+        }
+      ]
+    },
+    {
+      "launch": 0,
+      "frame": 121,
+      "network": 0,
+      "samples": [
+        {
+          "repeat": 0,
+          "before": {
+            "ready": true,
+            "fontStatus": "loaded",
+            "fonts": [
+              {
+                "family": "Fixture",
+                "status": "loaded"
+              }
+            ],
+            "images": [],
+            "clock": {
+              "frame": 121,
+              "time": 4.033333333333333
+            },
+            "gsapFrame": 126,
+            "objects": [
+              {
+                "id": "shape1",
+                "transform": "matrix(1, 0, 0, 1, 17.9259, 28)",
+                "opacity": "1",
+                "bbox": [
+                  157.9259033203125,
+                  358,
+                  320,
+                  320
+                ]
+              },
+              {
+                "id": "shape2",
+                "transform": "matrix(1, 0, 0, 1, -13.4444, -7)",
+                "opacity": "1",
+                "bbox": [
+                  636.5556030273438,
+                  1293,
+                  320,
+                  320
+                ]
+              }
+            ]
+          },
+          "after": {
+            "frame": 121,
+            "time": 4.033333333333333,
+            "fontStatus": "loaded",
+            "gsapFrame": 126
+          },
+          "sha256": "fd489a3671e29bf194fe940bf3b28cb91e5a6b896862108c5625fe1a9bf998e8"
+        },
+        {
+          "repeat": 1,
+          "before": {
+            "ready": true,
+            "fontStatus": "loaded",
+            "fonts": [
+              {
+                "family": "Fixture",
+                "status": "loaded"
+              }
+            ],
+            "images": [],
+            "clock": {
+              "frame": 121,
+              "time": 4.033333333333333
+            },
+            "gsapFrame": 126,
+            "objects": [
+              {
+                "id": "shape1",
+                "transform": "matrix(1, 0, 0, 1, 17.9259, 28)",
+                "opacity": "1",
+                "bbox": [
+                  157.9259033203125,
+                  358,
+                  320,
+                  320
+                ]
+              },
+              {
+                "id": "shape2",
+                "transform": "matrix(1, 0, 0, 1, -13.4444, -7)",
+                "opacity": "1",
+                "bbox": [
+                  636.5556030273438,
+                  1293,
+                  320,
+                  320
+                ]
+              }
+            ]
+          },
+          "after": {
+            "frame": 121,
+            "time": 4.033333333333333,
+            "fontStatus": "loaded",
+            "gsapFrame": 126
+          },
+          "sha256": "fd489a3671e29bf194fe940bf3b28cb91e5a6b896862108c5625fe1a9bf998e8"
+        },
+        {
+          "repeat": 2,
+          "before": {
+            "ready": true,
+            "fontStatus": "loaded",
+            "fonts": [
+              {
+                "family": "Fixture",
+                "status": "loaded"
+              }
+            ],
+            "images": [],
+            "clock": {
+              "frame": 121,
+              "time": 4.033333333333333
+            },
+            "gsapFrame": 126,
+            "objects": [
+              {
+                "id": "shape1",
+                "transform": "matrix(1, 0, 0, 1, 17.9259, 28)",
+                "opacity": "1",
+                "bbox": [
+                  157.9259033203125,
+                  358,
+                  320,
+                  320
+                ]
+              },
+              {
+                "id": "shape2",
+                "transform": "matrix(1, 0, 0, 1, -13.4444, -7)",
+                "opacity": "1",
+                "bbox": [
+                  636.5556030273438,
+                  1293,
+                  320,
+                  320
+                ]
+              }
+            ]
+          },
+          "after": {
+            "frame": 121,
+            "time": 4.033333333333333,
+            "fontStatus": "loaded",
+            "gsapFrame": 126
+          },
+          "sha256": "fd489a3671e29bf194fe940bf3b28cb91e5a6b896862108c5625fe1a9bf998e8"
+        }
+      ]
+    },
+    {
+      "launch": 1,
+      "frame": 81,
+      "network": 0,
+      "samples": [
+        {
+          "repeat": 0,
+          "before": {
+            "ready": true,
+            "fontStatus": "loaded",
+            "fonts": [
+              {
+                "family": "Fixture",
+                "status": "loaded"
+              }
+            ],
+            "images": [],
+            "clock": {
+              "frame": 81,
+              "time": 2.7
+            },
+            "gsapFrame": 84,
+            "objects": [
+              {
+                "id": "shape1",
+                "transform": "matrix(1, 0, 0, 1, 12, 28)",
+                "opacity": "1",
+                "bbox": [
+                  152,
+                  358,
+                  320,
+                  320
+                ]
+              },
+              {
+                "id": "shape2",
+                "transform": "matrix(1, 0, 0, 1, -9, -7)",
+                "opacity": "1",
+                "bbox": [
+                  641,
+                  1293,
+                  320,
+                  320
+                ]
+              }
+            ]
+          },
+          "after": {
+            "frame": 81,
+            "time": 2.7,
+            "fontStatus": "loaded",
+            "gsapFrame": 84
+          },
+          "sha256": "6fdc837e5dac12fd06de5768c2cc03e9ab2aaa740197873e254e8fa3af549af4"
+        },
+        {
+          "repeat": 1,
+          "before": {
+            "ready": true,
+            "fontStatus": "loaded",
+            "fonts": [
+              {
+                "family": "Fixture",
+                "status": "loaded"
+              }
+            ],
+            "images": [],
+            "clock": {
+              "frame": 81,
+              "time": 2.7
+            },
+            "gsapFrame": 84,
+            "objects": [
+              {
+                "id": "shape1",
+                "transform": "matrix(1, 0, 0, 1, 12, 28)",
+                "opacity": "1",
+                "bbox": [
+                  152,
+                  358,
+                  320,
+                  320
+                ]
+              },
+              {
+                "id": "shape2",
+                "transform": "matrix(1, 0, 0, 1, -9, -7)",
+                "opacity": "1",
+                "bbox": [
+                  641,
+                  1293,
+                  320,
+                  320
+                ]
+              }
+            ]
+          },
+          "after": {
+            "frame": 81,
+            "time": 2.7,
+            "fontStatus": "loaded",
+            "gsapFrame": 84
+          },
+          "sha256": "6fdc837e5dac12fd06de5768c2cc03e9ab2aaa740197873e254e8fa3af549af4"
+        },
+        {
+          "repeat": 2,
+          "before": {
+            "ready": true,
+            "fontStatus": "loaded",
+            "fonts": [
+              {
+                "family": "Fixture",
+                "status": "loaded"
+              }
+            ],
+            "images": [],
+            "clock": {
+              "frame": 81,
+              "time": 2.7
+            },
+            "gsapFrame": 84,
+            "objects": [
+              {
+                "id": "shape1",
+                "transform": "matrix(1, 0, 0, 1, 12, 28)",
+                "opacity": "1",
+                "bbox": [
+                  152,
+                  358,
+                  320,
+                  320
+                ]
+              },
+              {
+                "id": "shape2",
+                "transform": "matrix(1, 0, 0, 1, -9, -7)",
+                "opacity": "1",
+                "bbox": [
+                  641,
+                  1293,
+                  320,
+                  320
+                ]
+              }
+            ]
+          },
+          "after": {
+            "frame": 81,
+            "time": 2.7,
+            "fontStatus": "loaded",
+            "gsapFrame": 84
+          },
+          "sha256": "6fdc837e5dac12fd06de5768c2cc03e9ab2aaa740197873e254e8fa3af549af4"
+        }
+      ]
+    },
+    {
+      "launch": 1,
+      "frame": 95,
+      "network": 0,
+      "samples": [
+        {
+          "repeat": 0,
+          "before": {
+            "ready": true,
+            "fontStatus": "loaded",
+            "fonts": [
+              {
+                "family": "Fixture",
+                "status": "loaded"
+              }
+            ],
+            "images": [],
+            "clock": {
+              "frame": 95,
+              "time": 3.1666666666666665
+            },
+            "gsapFrame": 98,
+            "objects": [
+              {
+                "id": "shape1",
+                "transform": "matrix(1, 0, 0, 1, 14.0741, 28)",
+                "opacity": "1",
+                "bbox": [
+                  154.0740966796875,
+                  358,
+                  320,
+                  320
+                ]
+              },
+              {
+                "id": "shape2",
+                "transform": "matrix(1, 0, 0, 1, -10.5556, -7)",
+                "opacity": "1",
+                "bbox": [
+                  639.4443969726562,
+                  1293,
+                  320,
+                  320
+                ]
+              }
+            ]
+          },
+          "after": {
+            "frame": 95,
+            "time": 3.1666666666666665,
+            "fontStatus": "loaded",
+            "gsapFrame": 98
+          },
+          "sha256": "73f47ae60c219e8ae1b4bc11ac301a7b980f9ed8fbefa034c39179395766f0e2"
+        },
+        {
+          "repeat": 1,
+          "before": {
+            "ready": true,
+            "fontStatus": "loaded",
+            "fonts": [
+              {
+                "family": "Fixture",
+                "status": "loaded"
+              }
+            ],
+            "images": [],
+            "clock": {
+              "frame": 95,
+              "time": 3.1666666666666665
+            },
+            "gsapFrame": 98,
+            "objects": [
+              {
+                "id": "shape1",
+                "transform": "matrix(1, 0, 0, 1, 14.0741, 28)",
+                "opacity": "1",
+                "bbox": [
+                  154.0740966796875,
+                  358,
+                  320,
+                  320
+                ]
+              },
+              {
+                "id": "shape2",
+                "transform": "matrix(1, 0, 0, 1, -10.5556, -7)",
+                "opacity": "1",
+                "bbox": [
+                  639.4443969726562,
+                  1293,
+                  320,
+                  320
+                ]
+              }
+            ]
+          },
+          "after": {
+            "frame": 95,
+            "time": 3.1666666666666665,
+            "fontStatus": "loaded",
+            "gsapFrame": 98
+          },
+          "sha256": "73f47ae60c219e8ae1b4bc11ac301a7b980f9ed8fbefa034c39179395766f0e2"
+        },
+        {
+          "repeat": 2,
+          "before": {
+            "ready": true,
+            "fontStatus": "loaded",
+            "fonts": [
+              {
+                "family": "Fixture",
+                "status": "loaded"
+              }
+            ],
+            "images": [],
+            "clock": {
+              "frame": 95,
+              "time": 3.1666666666666665
+            },
+            "gsapFrame": 98,
+            "objects": [
+              {
+                "id": "shape1",
+                "transform": "matrix(1, 0, 0, 1, 14.0741, 28)",
+                "opacity": "1",
+                "bbox": [
+                  154.0740966796875,
+                  358,
+                  320,
+                  320
+                ]
+              },
+              {
+                "id": "shape2",
+                "transform": "matrix(1, 0, 0, 1, -10.5556, -7)",
+                "opacity": "1",
+                "bbox": [
+                  639.4443969726562,
+                  1293,
+                  320,
+                  320
+                ]
+              }
+            ]
+          },
+          "after": {
+            "frame": 95,
+            "time": 3.1666666666666665,
+            "fontStatus": "loaded",
+            "gsapFrame": 98
+          },
+          "sha256": "73f47ae60c219e8ae1b4bc11ac301a7b980f9ed8fbefa034c39179395766f0e2"
+        }
+      ]
+    },
+    {
+      "launch": 1,
+      "frame": 121,
+      "network": 0,
+      "samples": [
+        {
+          "repeat": 0,
+          "before": {
+            "ready": true,
+            "fontStatus": "loaded",
+            "fonts": [
+              {
+                "family": "Fixture",
+                "status": "loaded"
+              }
+            ],
+            "images": [],
+            "clock": {
+              "frame": 121,
+              "time": 4.033333333333333
+            },
+            "gsapFrame": 124,
+            "objects": [
+              {
+                "id": "shape1",
+                "transform": "matrix(1, 0, 0, 1, 17.9259, 28)",
+                "opacity": "1",
+                "bbox": [
+                  157.9259033203125,
+                  358,
+                  320,
+                  320
+                ]
+              },
+              {
+                "id": "shape2",
+                "transform": "matrix(1, 0, 0, 1, -13.4444, -7)",
+                "opacity": "1",
+                "bbox": [
+                  636.5556030273438,
+                  1293,
+                  320,
+                  320
+                ]
+              }
+            ]
+          },
+          "after": {
+            "frame": 121,
+            "time": 4.033333333333333,
+            "fontStatus": "loaded",
+            "gsapFrame": 124
+          },
+          "sha256": "fd489a3671e29bf194fe940bf3b28cb91e5a6b896862108c5625fe1a9bf998e8"
+        },
+        {
+          "repeat": 1,
+          "before": {
+            "ready": true,
+            "fontStatus": "loaded",
+            "fonts": [
+              {
+                "family": "Fixture",
+                "status": "loaded"
+              }
+            ],
+            "images": [],
+            "clock": {
+              "frame": 121,
+              "time": 4.033333333333333
+            },
+            "gsapFrame": 124,
+            "objects": [
+              {
+                "id": "shape1",
+                "transform": "matrix(1, 0, 0, 1, 17.9259, 28)",
+                "opacity": "1",
+                "bbox": [
+                  157.9259033203125,
+                  358,
+                  320,
+                  320
+                ]
+              },
+              {
+                "id": "shape2",
+                "transform": "matrix(1, 0, 0, 1, -13.4444, -7)",
+                "opacity": "1",
+                "bbox": [
+                  636.5556030273438,
+                  1293,
+                  320,
+                  320
+                ]
+              }
+            ]
+          },
+          "after": {
+            "frame": 121,
+            "time": 4.033333333333333,
+            "fontStatus": "loaded",
+            "gsapFrame": 124
+          },
+          "sha256": "fd489a3671e29bf194fe940bf3b28cb91e5a6b896862108c5625fe1a9bf998e8"
+        },
+        {
+          "repeat": 2,
+          "before": {
+            "ready": true,
+            "fontStatus": "loaded",
+            "fonts": [
+              {
+                "family": "Fixture",
+                "status": "loaded"
+              }
+            ],
+            "images": [],
+            "clock": {
+              "frame": 121,
+              "time": 4.033333333333333
+            },
+            "gsapFrame": 124,
+            "objects": [
+              {
+                "id": "shape1",
+                "transform": "matrix(1, 0, 0, 1, 17.9259, 28)",
+                "opacity": "1",
+                "bbox": [
+                  157.9259033203125,
+                  358,
+                  320,
+                  320
+                ]
+              },
+              {
+                "id": "shape2",
+                "transform": "matrix(1, 0, 0, 1, -13.4444, -7)",
+                "opacity": "1",
+                "bbox": [
+                  636.5556030273438,
+                  1293,
+                  320,
+                  320
+                ]
+              }
+            ]
+          },
+          "after": {
+            "frame": 121,
+            "time": 4.033333333333333,
+            "fontStatus": "loaded",
+            "gsapFrame": 124
+          },
+          "sha256": "fd489a3671e29bf194fe940bf3b28cb91e5a6b896862108c5625fe1a9bf998e8"
+        }
+      ]
+    },
+    {
+      "launch": 2,
+      "frame": 81,
+      "network": 0,
+      "samples": [
+        {
+          "repeat": 0,
+          "before": {
+            "ready": true,
+            "fontStatus": "loaded",
+            "fonts": [
+              {
+                "family": "Fixture",
+                "status": "loaded"
+              }
+            ],
+            "images": [],
+            "clock": {
+              "frame": 81,
+              "time": 2.7
+            },
+            "gsapFrame": 85,
+            "objects": [
+              {
+                "id": "shape1",
+                "transform": "matrix(1, 0, 0, 1, 12, 28)",
+                "opacity": "1",
+                "bbox": [
+                  152,
+                  358,
+                  320,
+                  320
+                ]
+              },
+              {
+                "id": "shape2",
+                "transform": "matrix(1, 0, 0, 1, -9, -7)",
+                "opacity": "1",
+                "bbox": [
+                  641,
+                  1293,
+                  320,
+                  320
+                ]
+              }
+            ]
+          },
+          "after": {
+            "frame": 81,
+            "time": 2.7,
+            "fontStatus": "loaded",
+            "gsapFrame": 85
+          },
+          "sha256": "6fdc837e5dac12fd06de5768c2cc03e9ab2aaa740197873e254e8fa3af549af4"
+        },
+        {
+          "repeat": 1,
+          "before": {
+            "ready": true,
+            "fontStatus": "loaded",
+            "fonts": [
+              {
+                "family": "Fixture",
+                "status": "loaded"
+              }
+            ],
+            "images": [],
+            "clock": {
+              "frame": 81,
+              "time": 2.7
+            },
+            "gsapFrame": 85,
+            "objects": [
+              {
+                "id": "shape1",
+                "transform": "matrix(1, 0, 0, 1, 12, 28)",
+                "opacity": "1",
+                "bbox": [
+                  152,
+                  358,
+                  320,
+                  320
+                ]
+              },
+              {
+                "id": "shape2",
+                "transform": "matrix(1, 0, 0, 1, -9, -7)",
+                "opacity": "1",
+                "bbox": [
+                  641,
+                  1293,
+                  320,
+                  320
+                ]
+              }
+            ]
+          },
+          "after": {
+            "frame": 81,
+            "time": 2.7,
+            "fontStatus": "loaded",
+            "gsapFrame": 85
+          },
+          "sha256": "6fdc837e5dac12fd06de5768c2cc03e9ab2aaa740197873e254e8fa3af549af4"
+        },
+        {
+          "repeat": 2,
+          "before": {
+            "ready": true,
+            "fontStatus": "loaded",
+            "fonts": [
+              {
+                "family": "Fixture",
+                "status": "loaded"
+              }
+            ],
+            "images": [],
+            "clock": {
+              "frame": 81,
+              "time": 2.7
+            },
+            "gsapFrame": 85,
+            "objects": [
+              {
+                "id": "shape1",
+                "transform": "matrix(1, 0, 0, 1, 12, 28)",
+                "opacity": "1",
+                "bbox": [
+                  152,
+                  358,
+                  320,
+                  320
+                ]
+              },
+              {
+                "id": "shape2",
+                "transform": "matrix(1, 0, 0, 1, -9, -7)",
+                "opacity": "1",
+                "bbox": [
+                  641,
+                  1293,
+                  320,
+                  320
+                ]
+              }
+            ]
+          },
+          "after": {
+            "frame": 81,
+            "time": 2.7,
+            "fontStatus": "loaded",
+            "gsapFrame": 85
+          },
+          "sha256": "6fdc837e5dac12fd06de5768c2cc03e9ab2aaa740197873e254e8fa3af549af4"
+        }
+      ]
+    },
+    {
+      "launch": 2,
+      "frame": 95,
+      "network": 0,
+      "samples": [
+        {
+          "repeat": 0,
+          "before": {
+            "ready": true,
+            "fontStatus": "loaded",
+            "fonts": [
+              {
+                "family": "Fixture",
+                "status": "loaded"
+              }
+            ],
+            "images": [],
+            "clock": {
+              "frame": 95,
+              "time": 3.1666666666666665
+            },
+            "gsapFrame": 99,
+            "objects": [
+              {
+                "id": "shape1",
+                "transform": "matrix(1, 0, 0, 1, 14.0741, 28)",
+                "opacity": "1",
+                "bbox": [
+                  154.0740966796875,
+                  358,
+                  320,
+                  320
+                ]
+              },
+              {
+                "id": "shape2",
+                "transform": "matrix(1, 0, 0, 1, -10.5556, -7)",
+                "opacity": "1",
+                "bbox": [
+                  639.4443969726562,
+                  1293,
+                  320,
+                  320
+                ]
+              }
+            ]
+          },
+          "after": {
+            "frame": 95,
+            "time": 3.1666666666666665,
+            "fontStatus": "loaded",
+            "gsapFrame": 99
+          },
+          "sha256": "73f47ae60c219e8ae1b4bc11ac301a7b980f9ed8fbefa034c39179395766f0e2"
+        },
+        {
+          "repeat": 1,
+          "before": {
+            "ready": true,
+            "fontStatus": "loaded",
+            "fonts": [
+              {
+                "family": "Fixture",
+                "status": "loaded"
+              }
+            ],
+            "images": [],
+            "clock": {
+              "frame": 95,
+              "time": 3.1666666666666665
+            },
+            "gsapFrame": 99,
+            "objects": [
+              {
+                "id": "shape1",
+                "transform": "matrix(1, 0, 0, 1, 14.0741, 28)",
+                "opacity": "1",
+                "bbox": [
+                  154.0740966796875,
+                  358,
+                  320,
+                  320
+                ]
+              },
+              {
+                "id": "shape2",
+                "transform": "matrix(1, 0, 0, 1, -10.5556, -7)",
+                "opacity": "1",
+                "bbox": [
+                  639.4443969726562,
+                  1293,
+                  320,
+                  320
+                ]
+              }
+            ]
+          },
+          "after": {
+            "frame": 95,
+            "time": 3.1666666666666665,
+            "fontStatus": "loaded",
+            "gsapFrame": 99
+          },
+          "sha256": "73f47ae60c219e8ae1b4bc11ac301a7b980f9ed8fbefa034c39179395766f0e2"
+        },
+        {
+          "repeat": 2,
+          "before": {
+            "ready": true,
+            "fontStatus": "loaded",
+            "fonts": [
+              {
+                "family": "Fixture",
+                "status": "loaded"
+              }
+            ],
+            "images": [],
+            "clock": {
+              "frame": 95,
+              "time": 3.1666666666666665
+            },
+            "gsapFrame": 99,
+            "objects": [
+              {
+                "id": "shape1",
+                "transform": "matrix(1, 0, 0, 1, 14.0741, 28)",
+                "opacity": "1",
+                "bbox": [
+                  154.0740966796875,
+                  358,
+                  320,
+                  320
+                ]
+              },
+              {
+                "id": "shape2",
+                "transform": "matrix(1, 0, 0, 1, -10.5556, -7)",
+                "opacity": "1",
+                "bbox": [
+                  639.4443969726562,
+                  1293,
+                  320,
+                  320
+                ]
+              }
+            ]
+          },
+          "after": {
+            "frame": 95,
+            "time": 3.1666666666666665,
+            "fontStatus": "loaded",
+            "gsapFrame": 99
+          },
+          "sha256": "73f47ae60c219e8ae1b4bc11ac301a7b980f9ed8fbefa034c39179395766f0e2"
+        }
+      ]
+    },
+    {
+      "launch": 2,
+      "frame": 121,
+      "network": 0,
+      "samples": [
+        {
+          "repeat": 0,
+          "before": {
+            "ready": true,
+            "fontStatus": "loaded",
+            "fonts": [
+              {
+                "family": "Fixture",
+                "status": "loaded"
+              }
+            ],
+            "images": [],
+            "clock": {
+              "frame": 121,
+              "time": 4.033333333333333
+            },
+            "gsapFrame": 125,
+            "objects": [
+              {
+                "id": "shape1",
+                "transform": "matrix(1, 0, 0, 1, 17.9259, 28)",
+                "opacity": "1",
+                "bbox": [
+                  157.9259033203125,
+                  358,
+                  320,
+                  320
+                ]
+              },
+              {
+                "id": "shape2",
+                "transform": "matrix(1, 0, 0, 1, -13.4444, -7)",
+                "opacity": "1",
+                "bbox": [
+                  636.5556030273438,
+                  1293,
+                  320,
+                  320
+                ]
+              }
+            ]
+          },
+          "after": {
+            "frame": 121,
+            "time": 4.033333333333333,
+            "fontStatus": "loaded",
+            "gsapFrame": 125
+          },
+          "sha256": "fd489a3671e29bf194fe940bf3b28cb91e5a6b896862108c5625fe1a9bf998e8"
+        },
+        {
+          "repeat": 1,
+          "before": {
+            "ready": true,
+            "fontStatus": "loaded",
+            "fonts": [
+              {
+                "family": "Fixture",
+                "status": "loaded"
+              }
+            ],
+            "images": [],
+            "clock": {
+              "frame": 121,
+              "time": 4.033333333333333
+            },
+            "gsapFrame": 125,
+            "objects": [
+              {
+                "id": "shape1",
+                "transform": "matrix(1, 0, 0, 1, 17.9259, 28)",
+                "opacity": "1",
+                "bbox": [
+                  157.9259033203125,
+                  358,
+                  320,
+                  320
+                ]
+              },
+              {
+                "id": "shape2",
+                "transform": "matrix(1, 0, 0, 1, -13.4444, -7)",
+                "opacity": "1",
+                "bbox": [
+                  636.5556030273438,
+                  1293,
+                  320,
+                  320
+                ]
+              }
+            ]
+          },
+          "after": {
+            "frame": 121,
+            "time": 4.033333333333333,
+            "fontStatus": "loaded",
+            "gsapFrame": 125
+          },
+          "sha256": "fd489a3671e29bf194fe940bf3b28cb91e5a6b896862108c5625fe1a9bf998e8"
+        },
+        {
+          "repeat": 2,
+          "before": {
+            "ready": true,
+            "fontStatus": "loaded",
+            "fonts": [
+              {
+                "family": "Fixture",
+                "status": "loaded"
+              }
+            ],
+            "images": [],
+            "clock": {
+              "frame": 121,
+              "time": 4.033333333333333
+            },
+            "gsapFrame": 125,
+            "objects": [
+              {
+                "id": "shape1",
+                "transform": "matrix(1, 0, 0, 1, 17.9259, 28)",
+                "opacity": "1",
+                "bbox": [
+                  157.9259033203125,
+                  358,
+                  320,
+                  320
+                ]
+              },
+              {
+                "id": "shape2",
+                "transform": "matrix(1, 0, 0, 1, -13.4444, -7)",
+                "opacity": "1",
+                "bbox": [
+                  636.5556030273438,
+                  1293,
+                  320,
+                  320
+                ]
+              }
+            ]
+          },
+          "after": {
+            "frame": 121,
+            "time": 4.033333333333333,
+            "fontStatus": "loaded",
+            "gsapFrame": 125
+          },
+          "sha256": "fd489a3671e29bf194fe940bf3b28cb91e5a6b896862108c5625fe1a9bf998e8"
+        }
+      ]
+    }
+  ],
+  "scope": "Instrumented standalone diagnostic; reading layout may flush work. Does not substitute for unmodified baseline or establish a Chromium-internal cause."
+}

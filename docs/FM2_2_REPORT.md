@@ -39,20 +39,22 @@ The oracle byte match, per-pixel residual, profile and spectral checks pass on s
 
 ## M0 capture investigation — zero tolerance
 
-The previous full suite had97/98 passing tests; frozen M0 uncached frame95 and121 hashes differed. Each frame had9 differing channels, max deltas5 and8. Both configs used Chromium153, single-thread raster and disabled PaintHolding. The earlier95/95 pass did not clear this intermittent failure.
+Baseline matrix COMPLETE, same compiled render/scene/test code, Chromium153, dependencies, fonts and fixture:
 
-The requested matrix is sequential, using detached source snapshots and the same compiled render/scene/test harness, browser153, dependencies, fonts and fixture:
+| Revision/condition | Results |
+|---|---|
+| M1b52aebd, isolated |20/20 PASS|
+| FM2.1 8f64cb1, isolated |20/20 PASS|
+| FM2.2baseline42c476c, isolated |20/20 PASS|
+| Same FM2.2baseline, full suite |19/20 PASS;1 capture failure: **5% observed failure rate**|
 
-1. M1b52aebd:20 isolated M0 repeat tests.
-2. FM2.1 8f64cb1:20 isolated M0 repeat tests.
-3. FM2.2 baseline42c476c:20 isolated M0 repeat tests.
-4. The same FM2.2 baseline:20 full-suite runs, recording M0 separately from unrelated failures.
+Run6 failed at frame81:3 changed channels,maxΔ5; all object-box/source/config hashes match. Original frames95/121 failures remain preserved too. Passing isolated runs do not rule out an intermittent race. Setup-invalid worktree attempts were excluded and retained separately. CPU-only oracle/unit analysis overlapped part of the suite phase; its precise overlap with frame81 is unknown. No competing GPU/browser probe was launched.
 
-Completed comparison: M1b52aebd isolated **20/20 PASS**, no failures observed. This does not rule out a pre-existing intermittent race or identify FM2.2 as the cause. FM2.1 8f64cb1 also completed **20/20 isolated PASS**, with no failures observed. FM2.2 isolated also passed20/20. Full-suite baseline completed: **19/20 PASS;1/20 capture failure (5%)** at frame81 in run6, versus0/60 isolated failures. That frame differs in3 channels with maxΔ5; object-box hashes and source/config hashes match. The baseline is frozen; readiness inspection and serial-isolation validation follow. Evidence: docs/fm2_2/capture-matrix/{m1,fm21}-isolated-results.json.
+Readiness diagnostic: three standalone launches, triple captures at81/95/121. All fonts loaded, no image assets, frame/time and GSAP ticker stable; pixels match within each triple and across launches. Layout-reading instrumentation may flush work, so this does not replace the uninstrumented matrix or prove a Chromium-internal cause.
 
-Results are accumulated under runs/fm2-2/capture-matrix/. Initial missing-browser worktree setup failures were excluded and retained under capture-matrix-setup-invalid/. No capture or source change is part of these baseline comparisons. New Foundry color unit tests are CPU-only; standalone GPU stress probes are not implicitly part of npm test. Other GPU probes remain idle during isolated comparisons.
+Resource audit finds fresh browsers/profiles, unique artifact directories and port0 M1 servers. The isolated shared resource is host CPU scheduling/software-rasterization capacity accessed by concurrent browser-test workers. After freezing all80 baseline results, the sole candidate change is npm test's **--test-concurrency=1**. Renderer, browser flags, schemas, test bodies and tolerances are unchanged. Preliminary five uncached repeat tests and98/98 passed, but do not meet the new acceptance rule. A fresh60-full-suite cohort must have0 failures, then five new uncached repeat tests with cross-test fingerprints and another98/98 suite. That cohort is running with source/config identities frozen. No fix is claimed before it passes.
 
-Readiness inspection is queued after the matrix: replay every frame, triple-capture95/121, record font/image readiness, GSAP frame/state and computed transforms. Existing seek waits for two rAF callbacks; the affected differences lie on circle edges, not an image asset. A cause is not yet established. No frozen tolerance or baseline has changed. Root-cause fix, five uncached repeat tests and98/98 final suite remain mandatory.
+Evidence: docs/fm2_2/capture-matrix/{m1-isolated,fm21-isolated,fm22-isolated,full-suite,readiness}-results.json, suite-failure-05/, resource-audit.md. Serial results accumulate at runs/fm2-2/serial-validation/.
 
 ## Color foundation retained
 
@@ -99,3 +101,5 @@ This is distinct from Raphael's preserve list. Reference: COMPAT_INVARIANTS.md.
 | M — Preserved roadmap | FM2.3–FM2.6 deferred; FM2.2 lands only after both gates pass. |
 
 Full scope and limitations: docs/PRESERVE_A_M.md. This is separate from the renderer checklist above.
+
+Acceptance protocol and cause scope: docs/fm2_2/capture-matrix/serial-acceptance-protocol.md. Both capture and banding gates remain required for push.

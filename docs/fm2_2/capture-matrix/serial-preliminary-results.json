@@ -1,0 +1,146 @@
+{
+  "policy": "test-file concurrency=1; renderer/schema/test bodies unchanged",
+  "runs": [
+    {
+      "index": 0,
+      "exitCode": 0,
+      "error": null,
+      "events": [
+        {
+          "a": "/tmp/foundry-ekNDws/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/ad032a90-5471-46bf-ba13-1bee3b7c3261",
+          "b": "/tmp/foundry-ekNDws/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/20de06c7-9ef6-470f-97fc-0514a0e9c6da",
+          "c": "/tmp/foundry-ekNDws/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/1f9ba82c-df20-48d7-ac0c-d49dafeff0c3",
+          "frames": 270,
+          "reason_code": null,
+          "render_id": "bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee",
+          "seek_order": [
+            200,
+            10,
+            200,
+            135
+          ],
+          "status": "PASS"
+        }
+      ],
+      "fingerprints": [
+        "c5d497d5c396cb1f08028a8a7c6271ce9daad8be2928ddcc77f0a2d8654f9bc3",
+        "c5d497d5c396cb1f08028a8a7c6271ce9daad8be2928ddcc77f0a2d8654f9bc3"
+      ],
+      "pass": true
+    },
+    {
+      "index": 1,
+      "exitCode": 0,
+      "error": null,
+      "events": [
+        {
+          "a": "/tmp/foundry-FQA3MF/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/3a0c7b10-2cc5-45cb-a8c9-c5b8373fc5da",
+          "b": "/tmp/foundry-FQA3MF/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/a5bbee66-b57d-417a-9227-bacb592c39cb",
+          "c": "/tmp/foundry-FQA3MF/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/7ef1eb44-0217-4b96-8006-e8b5756807a7",
+          "frames": 270,
+          "reason_code": null,
+          "render_id": "bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee",
+          "seek_order": [
+            200,
+            10,
+            200,
+            135
+          ],
+          "status": "PASS"
+        }
+      ],
+      "fingerprints": [
+        "c5d497d5c396cb1f08028a8a7c6271ce9daad8be2928ddcc77f0a2d8654f9bc3",
+        "c5d497d5c396cb1f08028a8a7c6271ce9daad8be2928ddcc77f0a2d8654f9bc3"
+      ],
+      "pass": true
+    },
+    {
+      "index": 2,
+      "exitCode": 0,
+      "error": null,
+      "events": [
+        {
+          "a": "/tmp/foundry-reqvhP/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/59ab1f47-a62a-4584-ad52-922a1aa017ea",
+          "b": "/tmp/foundry-reqvhP/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/5f8ade72-4aac-4a4a-a045-ed4492c57bbb",
+          "c": "/tmp/foundry-reqvhP/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/0721cc83-7042-4b5e-a2d5-73995659ab89",
+          "frames": 270,
+          "reason_code": null,
+          "render_id": "bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee",
+          "seek_order": [
+            200,
+            10,
+            200,
+            135
+          ],
+          "status": "PASS"
+        }
+      ],
+      "fingerprints": [
+        "c5d497d5c396cb1f08028a8a7c6271ce9daad8be2928ddcc77f0a2d8654f9bc3",
+        "c5d497d5c396cb1f08028a8a7c6271ce9daad8be2928ddcc77f0a2d8654f9bc3"
+      ],
+      "pass": true
+    },
+    {
+      "index": 3,
+      "exitCode": 0,
+      "error": null,
+      "events": [
+        {
+          "a": "/tmp/foundry-VkGXWP/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/7632e002-14fd-4e8d-b4fe-d0f25797a93b",
+          "b": "/tmp/foundry-VkGXWP/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/4da9fa60-b2bb-4293-8b6e-ab9cfe0f6451",
+          "c": "/tmp/foundry-VkGXWP/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/ed8a1bb9-2e14-493f-b121-5f195ba8c3a6",
+          "frames": 270,
+          "reason_code": null,
+          "render_id": "bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee",
+          "seek_order": [
+            200,
+            10,
+            200,
+            135
+          ],
+          "status": "PASS"
+        }
+      ],
+      "fingerprints": [
+        "c5d497d5c396cb1f08028a8a7c6271ce9daad8be2928ddcc77f0a2d8654f9bc3",
+        "c5d497d5c396cb1f08028a8a7c6271ce9daad8be2928ddcc77f0a2d8654f9bc3"
+      ],
+      "pass": true
+    },
+    {
+      "index": 4,
+      "exitCode": 0,
+      "error": null,
+      "events": [
+        {
+          "a": "/tmp/foundry-PSh7MU/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/4a302099-3103-4cb6-b31d-02c63cd02266",
+          "b": "/tmp/foundry-PSh7MU/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/95d7d29a-8617-48b2-abf4-744dc34f5b6a",
+          "c": "/tmp/foundry-PSh7MU/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/c2078097-73a7-47f1-9ed9-8d6b0185e511",
+          "frames": 270,
+          "reason_code": null,
+          "render_id": "bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee",
+          "seek_order": [
+            200,
+            10,
+            200,
+            135
+          ],
+          "status": "PASS"
+        }
+      ],
+      "fingerprints": [
+        "c5d497d5c396cb1f08028a8a7c6271ce9daad8be2928ddcc77f0a2d8654f9bc3",
+        "c5d497d5c396cb1f08028a8a7c6271ce9daad8be2928ddcc77f0a2d8654f9bc3"
+      ],
+      "pass": true
+    }
+  ],
+  "status": "PASS",
+  "suite": {
+    "exitCode": 0,
+    "error": null,
+    "pass": true
+  }
+}
