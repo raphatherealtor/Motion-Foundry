@@ -15,3 +15,11 @@ The implementation records residuals against dithered continuous codes before ro
 Saved card results: oracle hard gate PASS (max1 LSB, zero channels≥2), max quantization residual ~0.50004 LSB. Profile step excess≤0.015625 LSB; zero monotonic violations. Spectra remain below+6 dB with dither and above it without.
 
 However the literal per-column mean bound rejects the CPU oracle itself: max0.1550608563 static and0.1401686376 temporal. GPU and CPU maxima coincide. Exact run histograms also differ in a few bins at allowed1-LSB rounding boundaries (histogram L1 deltas3–8). These observations do not authorize relaxing a bound or claiming PASS. Clarification of the column-mean reference has been requested while capture comparisons continue independently.
+
+## Approved column-mean clarification
+
+Raphael subsequently required checking residual signs first. Consistently signed residuals indicate a possible systematic quantizer/dither bias to fix in both implementations. If centered, use |column mean|≤4σ/√N with measured per-pixel residual standard deviation and N=64. GPU column means must match the CPU oracle's within0.02 LSB.
+
+Observed case: centered sampling noise. Every dither-on region/channel has both signs; grand-mean Z magnitudes<2.44. Population σ over the measured64 scanlines is0.287146–0.289266 LSB (static) and0.287525–0.289226 (temporal). Four-sigma bounds are0.143573–0.144633 and0.143762–0.144613 respectively. GPU-oracle column error≤0.015625 in both modes. Temporal has no statistical exceedance; static has one horizontal-blue column above its four-sigma bound, retained as FAIL. No shader/quantizer change was justified by this sign check.
+
+The old0.05 bound and clarification request above are historical, superseded by this explicit statistical rule. Strict histogram comparisons remain recorded separately.

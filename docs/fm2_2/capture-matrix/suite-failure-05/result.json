@@ -1,0 +1,33 @@
+{
+  "revision": "fm22",
+  "sha": "42c476cd9d934e30d47393dcb3b2c9c6cb65c6d4",
+  "mode": "suite",
+  "index": 5,
+  "elapsedMs": 99239,
+  "harness": {
+    "dist/src/render.js": "9cac34ebcb14226e2da113369877e18be2a59bdb41bbb8f0ed284785ffdc3513",
+    "dist/src/scene.js": "d21048516f0b400e2a13d70624e640ddc036d61bbb567986e0b46b46bee90fe6",
+    "dist/test/render.test.js": "5147f46afd042ef50a4af6ae2b62626c965dfdc750abbafec0502240a6c6c018"
+  },
+  "exitCode": 1,
+  "signal": null,
+  "error": null,
+  "renderFailed": true,
+  "events": [
+    {
+      "a": "/tmp/foundry-m7u5qB/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/9ff7feb7-2344-471c-a434-f60f29fc439c",
+      "b": "/tmp/foundry-m7u5qB/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/79b80fe3-4cca-49c1-8309-ce022ba4b3c0",
+      "c": "/tmp/foundry-m7u5qB/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/397f8fe7-3139-4521-a7e2-4d75fd9b4933",
+      "frames": 270,
+      "reason_code": "NONDETERMINISTIC",
+      "render_id": "bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee",
+      "seek_order": [
+        200,
+        10,
+        200,
+        135
+      ],
+      "status": "BLOCKED"
+    }
+  ]
+}

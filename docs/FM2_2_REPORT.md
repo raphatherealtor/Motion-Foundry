@@ -9,7 +9,7 @@ The old contract capped raw adjacent-run steps at1 LSB and each constant run at1
 ## Approved replacement contract
 
 - Float64 CPU oracle applies the same wrapping-integer PCG3d dither, seed/frame and output quantization. GPU error≤1 LSB per channel, zero channels≥2: hard gate.
-- Per-pixel quantization residual magnitude≤1.5 LSB; each64-line column mean residual magnitude≤0.05 LSB.
+- Per-pixel quantization residual magnitude≤1.5 LSB. After the column-mean clarification, centered sampling noise uses |mean|≤4σ/√64, with measured per-pixel residual σ; GPU column means must match the oracle within0.02 LSB.
 - Averaged64-line profiles: step≤oracle step+0.25 LSB and monotonic wherever the oracle is monotonic.
 - GPU run histograms compared with the oracle-with-dither histograms; no fixed per-run cap.
 - Dither-on spectral peaks<+6dB; dither-off negative control must FAIL. Accepting the negative control is ERROR.
@@ -31,9 +31,11 @@ Analysis of the saved, deterministic card outputs (a fresh15-host rerun is still
 | Monotonicity violations |0|0|
 | Max measured spectral peak dB |1.597|1.356|
 
-The oracle hard match, per-pixel residual, profile and spectral conditions pass on the saved card. The literal0.05 column-mean limit FAILS even for the CPU oracle itself. The GPU is not responsible for that residual. Clarification has been requested: retain the per-pixel quantization bound but measure the column mean as GPU-minus-dithered-oracle error, or revise the quantizer while keeping the literal mean bound. No correction to the approved threshold has been applied.
+The signed column residuals have both signs in every dither-on region/channel, with aggregate means near0 (largest absolute region mean0.002674 LSB). Global-mean Z magnitudes stay below2.44. This is centered sampling noise, not a consistently signed floor/rounding or noise-centering defect; neither GPU nor oracle quantizer was changed.
 
-Strict histogram equality also detects a few changed bins at permitted1-LSB rounding boundaries (L1 deltas3–8). Histograms are retained for review; no unapproved near-match tolerance is claimed. Off still FAILS the spectral negative control. Details: FM2_2_CONTRACT_REVISION.md and runs/fm2-2/stress/banding-revised-results.json. Current gate: BLOCKED, not PASS.
+Measured σ: static0.287146–0.289266 LSB, temporal0.287525–0.289226. With N=64,4σ/√N=σ/2: static bounds0.143573–0.144633; temporal0.143762–0.144613. Temporal has zero exceeding columns. Static has one four-sigma tail (horizontal ramp blue); it remains a FAIL, with no threshold relaxation. GPU/oracle column differences are at most0.015625 LSB in either mode, passing the new0.02 gate.
+
+The oracle byte match, per-pixel residual, profile and spectral checks pass on saved outputs. Strict run-histogram equality still detects a few changed bins at permitted1-LSB boundaries (L1 deltas3–8); no unapproved near-match tolerance is applied. Off still FAILS. Fresh15-host rerun remains pending. Full σ/sign/bound details: docs/fm2_2/statistical/banding-results.json.
 
 ## M0 capture investigation — zero tolerance
 
@@ -46,7 +48,7 @@ The requested matrix is sequential, using detached source snapshots and the same
 3. FM2.2 baseline42c476c:20 isolated M0 repeat tests.
 4. The same FM2.2 baseline:20 full-suite runs, recording M0 separately from unrelated failures.
 
-Completed comparison: M1b52aebd isolated **20/20 PASS**, no failures observed. This does not rule out a pre-existing intermittent race or identify FM2.2 as the cause. FM2.1 8f64cb1 also completed **20/20 isolated PASS**, with no failures observed. FM2.2 isolated/full-suite comparisons remain pending. Evidence: docs/fm2_2/capture-matrix/{m1,fm21}-isolated-results.json.
+Completed comparison: M1b52aebd isolated **20/20 PASS**, no failures observed. This does not rule out a pre-existing intermittent race or identify FM2.2 as the cause. FM2.1 8f64cb1 also completed **20/20 isolated PASS**, with no failures observed. FM2.2 isolated also passed20/20. Full-suite comparisons are underway; run6 reproduced a frame81 capture mismatch with the same harness. That frame differs in3 channels with maxΔ5; object-box hashes and source/config hashes match. Finish all20 before changing isolation. Evidence: docs/fm2_2/capture-matrix/{m1,fm21}-isolated-results.json.
 
 Results are accumulated under runs/fm2-2/capture-matrix/. Initial missing-browser worktree setup failures were excluded and retained under capture-matrix-setup-invalid/. No capture or source change is part of these baseline comparisons. New Foundry color unit tests are CPU-only; standalone GPU stress probes are not implicitly part of npm test. Other GPU probes remain idle during isolated comparisons.
 

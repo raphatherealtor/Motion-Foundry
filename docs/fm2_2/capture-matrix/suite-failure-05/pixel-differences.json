@@ -1,0 +1,29 @@
+{
+  "changedChannels": 3,
+  "maxDelta": 5,
+  "points": [
+    {
+      "x": 471,
+      "y": 763,
+      "channel": 0,
+      "a": 52,
+      "b": 55
+    },
+    {
+      "x": 471,
+      "y": 763,
+      "channel": 1,
+      "a": 82,
+      "b": 87
+    },
+    {
+      "x": 471,
+      "y": 763,
+      "channel": 2,
+      "a": 82,
+      "b": 86
+    }
+  ],
+  "objectBoxesIdentical": true,
+  "sourceHashesIdentical": true
+}
