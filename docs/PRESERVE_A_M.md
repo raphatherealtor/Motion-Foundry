@@ -54,11 +54,11 @@ difference from a committed baseline is a recorded finding, never a silent updat
 **M. Capture-side fidelity.** Each paint is rasterized with its original transform, clip, opacity,
 shadows and filter on an 8-bit scratch — the same quantization domain as legacy — and the deviation from
 legacy is confined to the AA/clip-mask quantization artifacts documented in `FM2_1_REPORT.md`
-(max Δ≤1, ≤0.02% of channels; per torn-paper recipe ≤568 reviewed capture-edge px and ≤9 interior-under-clip px; no interior diff outside a clip; fixed position and signed-delta hashes across five launches). — `FM2_1_REPORT.md` known deviation; parity gate.
+(max Δ≤1, ≤0.02% of channels; per torn-paper recipe ≤570 geometry AA-edge px and ≤7 interior-under-clip px; no interior diff outside a clip; fixed position and signed-delta hashes across five launches). — `FM2_1_REPORT.md` known deviation; parity gate.
 
 **Future nests.** New nested compositions will be isolated precomps (their own offscreen surface with a
 single destination draw). That is a forward policy for new documents; it changes nothing above.
 
-## Current closeout gate
+## Approved closeout gate
 
-The 2026-11-11 independent geometry audit corrects the previous 568/9 labels to **570 AA-edge / 7 interior-under-clip**, with the same 577 pixels and identical position/delta maps. The approved 568-edge maximum is still enforced, so item M currently fails that bound. No unreviewed exception is accepted; FM2.1 is blocked and FM2.2 has not started. See FM2_1_REPORT.md.
+Raphael approved570 AA-edge /7 interior-under-clip /0 interior-outside-clip pixels per deviation recipe on2026-11-11. These bounds, max delta1, ≤0.02% changed channels, and unchanged position/signed-delta pins pass the five-launch gate. Exact suites retain zero tolerance. FM2.1 is complete; FM2.2 must carry its own preserve check.

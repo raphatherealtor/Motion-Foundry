@@ -9,3 +9,7 @@ Raphael approved option (a) in this topic, with these binding bounds:
 - Five fresh browser launches must reproduce the same positions and deltas. Do not relax these bounds or regenerate pins automatically.
 
 This closes the prior scope question only after the gate passes. Commit the completed FM2.1 checkpoint before starting FM2.2 color. Legacy remains default; GPU remains opt-in.
+
+## Superseding count approval — 2026-11-11
+
+Raphael approved570 edge /7 interior-under-clip /0 interior-outside-clip per recipe after reviewing the reclassification. The count-only patch was applied with both position and signed-delta pins unchanged. The earlier568/9 limit is historical and superseded. All other constraints remain binding. The gate passes; FM2.1 is complete.
