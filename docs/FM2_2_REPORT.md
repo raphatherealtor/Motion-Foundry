@@ -46,7 +46,7 @@ The requested matrix is sequential, using detached source snapshots and the same
 3. FM2.2 baseline42c476c:20 isolated M0 repeat tests.
 4. The same FM2.2 baseline:20 full-suite runs, recording M0 separately from unrelated failures.
 
-Completed comparison: M1b52aebd isolated **20/20 PASS**, no failures observed. This does not rule out a pre-existing intermittent race or identify FM2.2 as the cause. FM2.1 comparisons are running; later phases remain pending. Evidence: docs/fm2_2/capture-matrix/m1-isolated-results.json.
+Completed comparison: M1b52aebd isolated **20/20 PASS**, no failures observed. This does not rule out a pre-existing intermittent race or identify FM2.2 as the cause. FM2.1 8f64cb1 also completed **20/20 isolated PASS**, with no failures observed. FM2.2 isolated/full-suite comparisons remain pending. Evidence: docs/fm2_2/capture-matrix/{m1,fm21}-isolated-results.json.
 
 Results are accumulated under runs/fm2-2/capture-matrix/. Initial missing-browser worktree setup failures were excluded and retained under capture-matrix-setup-invalid/. No capture or source change is part of these baseline comparisons. New Foundry color unit tests are CPU-only; standalone GPU stress probes are not implicitly part of npm test. Other GPU probes remain idle during isolated comparisons.
 
