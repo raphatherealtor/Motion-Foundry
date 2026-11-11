@@ -5,7 +5,7 @@ import{describe}from'../../dist/src/recipes/compiler.js';
 import{shell,legacy}from'../m2_step0/probe-config.mjs';
 import fs from'node:fs';
 import{serveBundle}from'../../dist/src/adapters/motion-suite/harness.js';
-const root='/root/projects/motion-suite-m2',pageDir='/root/projects/motion-foundry/runs/m2-1/page',outDir='/root/projects/motion-foundry/runs/m2-1/bundle';
+const root='/root/projects/motion-suite-m2',pageDir='/root/projects/motion-foundry/runs/fm2-1/page',outDir='/root/projects/motion-foundry/runs/fm2-1/bundle';
 fs.mkdirSync(pageDir,{recursive:true});fs.writeFileSync(pageDir+'/index.html','<html><script type="module" src="./main.ts"></script></html>');
 fs.writeFileSync(pageDir+'/main.ts',pageSource(root)+`\nimport{WebGL2Backend}from'${root}/src/motion/render/gpu/webgl2';import{renderCompat}from'${root}/src/motion/render/gpu/compat';window.foundryGPU={WebGL2Backend,renderCompat};`);
 await build({root:pageDir,configFile:false,plugins:[{name:'retain-golden',enforce:'pre',transform(code,id){if(id===root+'/tests/golden/page/main.ts')return{code,map:null,moduleSideEffects:true};}}],resolve:{alias:{'@':root+'/src'}},css:{postcss:{plugins:[]}},build:{outDir,emptyOutDir:true,minify:false,target:'es2022',assetsInlineLimit:0}});
@@ -29,5 +29,5 @@ for(const recipe of ['vox-doc.chart_explainer','paper-collage.build_tear','edito
  },descriptor);rows.push({recipe,frames:result});console.log(JSON.stringify(rows.at(-1)));
 }
 }finally{await browser.close();}}finally{await server.close();}
-fs.writeFileSync('/root/projects/motion-foundry/runs/m2-1/recipe-compat.json',JSON.stringify(rows,null,2));
+fs.writeFileSync('/root/projects/motion-foundry/runs/fm2-1/recipe-compat.json',JSON.stringify(rows,null,2));
 if(rows.some(r=>r.frames.some(f=>f.changedChannels)))process.exitCode=1;

@@ -13,7 +13,7 @@ Existing boundaries:
 - Holo: `drawDocument.ts:285–287` opts into existing plane isolation because internal effects erase or override alpha. Those scratch passes stay inside that isolation.
 - HTML slices: existing preview/export slice boundaries belong to their respective caller. Compat integration must preserve them; the core standalone regression currently covers Canvas-only fixtures.
 - Ordinary document groups do not imply isolation: evaluated parent opacity is inherited by children in `motion-document-utils.ts:60–78`. No new group flattening is permitted.
-- Cast-shadow byte merges and lit frame-grade paths are not part of unlit M2.1. GPU entry rejects enabled lights/grade rather than silently using a Canvas output as GPU evidence.
+- Cast-shadow byte merges and lit frame-grade paths are not part of unlit FM2.1. GPU entry rejects enabled lights/grade rather than silently using a Canvas output as GPU evidence.
 
 The compat compositor retains RGBA16F linear-premultiplied storage, with legacy sRGB byte quantization at each destination operation. This is necessary to reproduce the legacy 8-bit accumulation. It is not the future linear-mode accumulation policy. No existing golden baseline or tolerance is changed.
 

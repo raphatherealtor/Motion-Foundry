@@ -20,8 +20,8 @@ try{for(let repeat=0;repeat<5;repeat++){
  const hash=async bytes=>Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256',bytes))).map(x=>x.toString(16).padStart(2,'0')).join('');
  const sample=4*(64*128+18);rows.push({opacity,stroke,changedPixels:changed,totalPixels:128*128,maxDelta,psnr:squared?10*Math.log10(255**2/(squared/a.length)):null,sample:{x:18,y:64,direct:Array.from(a.slice(sample,sample+4)),isolated:Array.from(b.slice(sample,sample+4))},directHash:await hash(a),isolatedHash:await hash(b),directPng:direct.toDataURL(),isolatedPng:isolated.toDataURL()});
  }return rows;
- });for(const c of cases){if(repeat===0&&c.opacity===.5&&c.stroke===16){for(const key of ['direct','isolated'])fs.writeFileSync(`docs/m2_1/opacity-${key}.png`,Buffer.from(c[key+'Png'].split(',')[1],'base64'));}delete c.directPng;delete c.isolatedPng;}
+ });for(const c of cases){if(repeat===0&&c.opacity===.5&&c.stroke===16){for(const key of ['direct','isolated'])fs.writeFileSync(`docs/fm2_1/opacity-${key}.png`,Buffer.from(c[key+'Png'].split(',')[1],'base64'));}delete c.directPng;delete c.isolatedPng;}
  runs.push({repeat,browser:browser.version(),cases});
  }finally{await browser.close();}
 }}finally{await server.close();}
-fs.writeFileSync('docs/m2_1/opacity-semantics.json',JSON.stringify({productSha:'db36db39821f46ec4b7057bb431ffb9e82473c33',kind:'source-path discriminator; not a GPU parity test',runs},null,2));console.log(JSON.stringify(runs[0]));
+fs.writeFileSync('docs/fm2_1/opacity-semantics.json',JSON.stringify({productSha:'db36db39821f46ec4b7057bb431ffb9e82473c33',kind:'source-path discriminator; not a GPU parity test',runs},null,2));console.log(JSON.stringify(runs[0]));

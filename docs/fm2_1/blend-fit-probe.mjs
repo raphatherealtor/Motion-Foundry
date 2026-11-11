@@ -2,7 +2,7 @@ import{build}from'/root/projects/motion-suite-m2/node_modules/vite/dist/node/ind
 import{chromium}from'../../tooling/m1-browser/node_modules/playwright/index.mjs';
 import{serveBundle}from'../../dist/src/adapters/motion-suite/harness.js';
 import fs from'node:fs';
-const root='/root/projects/motion-suite-m2',pageDir='/root/projects/motion-foundry/runs/m2-1/page',outDir='/root/projects/motion-foundry/runs/m2-1/bundle-probe';
+const root='/root/projects/motion-suite-m2',pageDir='/root/projects/motion-foundry/runs/fm2-1/page',outDir='/root/projects/motion-foundry/runs/fm2-1/bundle-probe';
 fs.mkdirSync(pageDir,{recursive:true});fs.writeFileSync(pageDir+'/index.html','<html><script type="module" src="./main.ts"></script></html>');
 fs.writeFileSync(pageDir+'/main.ts',`
 window.probe=(async()=>{
@@ -69,9 +69,9 @@ const page=await (await browser.newContext()).newPage();
 page.on('pageerror',e=>console.log('PAGEERROR',String(e)));
 await page.goto(server.url);
 const probe=await page.evaluate(()=>window.probe);
-fs.mkdirSync('/root/projects/motion-foundry/runs/m2-1',{recursive:true});
-fs.writeFileSync('/root/projects/motion-foundry/runs/m2-1/blend-fit-raw.json',JSON.stringify(probe));
+fs.mkdirSync('/root/projects/motion-foundry/runs/fm2-1',{recursive:true});
+fs.writeFileSync('/root/projects/motion-foundry/runs/fm2-1/blend-fit-raw.json',JSON.stringify(probe));
 console.log('repro',JSON.stringify(probe.repro));
 console.log('partD sample',JSON.stringify(probe.partD.slice(0,6)));
-console.log('bytes',fs.statSync('/root/projects/motion-foundry/runs/m2-1/blend-fit-raw.json').size);
+console.log('bytes',fs.statSync('/root/projects/motion-foundry/runs/fm2-1/blend-fit-raw.json').size);
 await browser.close();await server.close();

@@ -1,8 +1,8 @@
-# M2.1 — BLOCKED, incomplete
+# FM2.1 — BLOCKED, incomplete
 
 Detail: `LAYER_ISOLATION_CHANGES_OPACITY`. This is a source-path discriminator, not a completed GPU renderer or GPU parity result.
 
-Product authorization is recorded in [M2_PRODUCT_AUTHORIZATION.md](M2_PRODUCT_AUTHORIZATION.md). Branch `foundry/m2-renderer` exists at db36db39821f46ec4b7057bb431ffb9e82473c33. Its tracked files and working tree are unchanged/clean. Foundry is on `m2-gpu-renderer`.
+Product authorization is recorded in [FM2_PRODUCT_AUTHORIZATION.md](FM2_PRODUCT_AUTHORIZATION.md). Branch `foundry/m2-renderer` exists at db36db39821f46ec4b7057bb431ffb9e82473c33. Its tracked files and working tree are unchanged/clean. Foundry is on `m2-gpu-renderer`.
 
 ## Observed semantic mismatch
 
@@ -25,6 +25,6 @@ On a 128×128 fixture with a 16-pixel stroke:
 
 Recommended architecture correction: retain a logical layer, but let its compat render graph carry the ordered paint operations and the product's existing isolation boundaries. Apply opacity/blend at the same boundaries as legacy. Do not flatten overlapping fill/stroke into one opaque raster and then apply opacity once. Add this fixture as a compat regression before continuing. This does not require new product-edit paths or a document schema change. Linear mode's grouping policy must be explicit rather than accidentally inherited from raster flattening.
 
-Implementation stopped before integration. The incomplete backend prototype was moved out of the product checkout to ignored `runs/m2-1/draft-product/gpu/` on the Foundry side so the clean product remains buildable. It is untested and not a delivered backend. M2.1 acceptance criteria are NOT_RUN. The last full suites remain M2.0's 86 Foundry tests, 709 product tests, and 52 goldens; they were not rerun or relabeled as M2.1 results. No push, merge, PR, generation or spend occurred.
+Implementation stopped before integration. The incomplete backend prototype was moved out of the product checkout to ignored `runs/fm2-1/draft-product/gpu/` on the Foundry side so the clean product remains buildable. It is untested and not a delivered backend. FM2.1 acceptance criteria are NOT_RUN. The last full suites remain FM2.0's 86 Foundry tests, 709 product tests, and 52 goldens; they were not rerun or relabeled as FM2.1 results. No push, merge, PR, generation or spend occurred.
 
-This commit is a blocked evidence record, not a completed M2.1 milestone. Next step: resolve the compat paint-operation ordering correction, then resume M2.1 within the already authorized product paths.
+This commit is a blocked evidence record, not a completed FM2.1 milestone. Next step: resolve the compat paint-operation ordering correction, then resume FM2.1 within the already authorized product paths.

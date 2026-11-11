@@ -2,7 +2,7 @@ import{build}from'/root/projects/motion-suite-m2/node_modules/vite/dist/node/ind
 import{chromium}from'../../tooling/m1-browser/node_modules/playwright/index.mjs';
 import{serveBundle}from'../../dist/src/adapters/motion-suite/harness.js';
 import fs from'node:fs';
-const root='/root/projects/motion-suite-m2',pageDir='/root/projects/motion-foundry/runs/m2-1/page',outDir='/root/projects/motion-foundry/runs/m2-1/bundle-probe';
+const root='/root/projects/motion-suite-m2',pageDir='/root/projects/motion-foundry/runs/fm2-1/page',outDir='/root/projects/motion-foundry/runs/fm2-1/bundle-probe';
 fs.mkdirSync(pageDir,{recursive:true});fs.writeFileSync(pageDir+'/index.html','<html><script type="module" src="./main.ts"></script></html>');
 fs.writeFileSync(pageDir+'/main.ts',`
 const out={};
