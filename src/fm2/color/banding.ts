@@ -26,7 +26,7 @@ export function banding(bytes:Uint8Array,expected:Float64Array,width:number,heig
  for(const [data,hist]of [[bytes,histogram],[reference.bytes,oracleHistogram]]as const){let start=0;for(let x=1;x<=r.width;x++)if(x===r.width||data[4*(y*width+r.x+x)+r.channel]!==data[4*(y*width+r.x+x-1)+r.channel]){const length=x-start;hist[length]=(hist[length]??0)+1;start=x;}}
  for(let x=0;x<r.width;x++){const i=4*(y*width+r.x+x)+r.channel;moments.add(reference.bytes[i]-reference.dithered[i]);oracleResidual[x]+=(reference.bytes[i]-reference.dithered[i])/params.lines;profile[x]+=bytes[i]/params.lines;oracleProfile[x]+=reference.bytes[i]/params.lines;signal[x]+=expected[i]/params.lines;residual[x]+=(bytes[i]-reference.dithered[i])/params.lines;signalResidual[x]+=(bytes[i]-expected[i])/params.lines;}
  }
- const statistics=columnStatistics(moments,oracleResidual,params.lines);
+ const statistics=columnStatistics(moments,oracleResidual,params.lines,regions.reduce((sum,r)=>sum+r.width,0));
  let maxColumnOracleDelta=0,maxOracleMeanResidual=0,maxMeanResidual=0,maxSignalMeanResidual=0,maxStepExcess=0,monotonicViolations=0;
  for(let x=0;x<r.width;x++){
  maxColumnOracleDelta=Math.max(maxColumnOracleDelta,Math.abs(residual[x]-oracleResidual[x]));maxOracleMeanResidual=Math.max(maxOracleMeanResidual,Math.abs(oracleResidual[x]));maxMeanResidual=Math.max(maxMeanResidual,Math.abs(residual[x]));maxSignalMeanResidual=Math.max(maxSignalMeanResidual,Math.abs(signalResidual[x]));

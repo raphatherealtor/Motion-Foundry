@@ -4,12 +4,12 @@ Raphael approved a replacement banding contract and a zero-tolerance capture inv
 
 ## Old banding contract and why it was wrong
 
-The old contract capped raw adjacent-run steps at1 LSB and each constant run at1.5× a theoretical slope-derived length. It rejected both the prescribed ±1-LSB triangular PCG dither and the intended sRGB OETF slope itself: the horizontal ramp has an intended3.054-LSB step near black at1080px. Historical measurements remain in docs/fm2_2/stress/banding-results.json and the prior report at Foundry42c476c. The old limits are removed, not widened silently.
+The old contract capped raw adjacent-run steps at1 LSB and each constant run at1.5× a theoretical slope-derived length. It rejected both the prescribed ±1-LSB triangular PCG dither and the intended sRGB OETF slope itself: the horizontal ramp has an intended3.054-LSB step near black at1080px. Historical measurements: docs/fm2_2/stress/banding-results.json. The old limits are removed, not widened silently.
 
 ## Approved replacement contract
 
 - Float64 CPU oracle applies the same wrapping-integer PCG3d dither, seed/frame and output quantization. GPU error≤1 LSB per channel, zero channels≥2: hard gate.
-- Per-pixel quantization residual magnitude≤1.5 LSB. After the column-mean clarification, centered sampling noise uses |mean|≤4σ/√64, with measured per-pixel residual σ; GPU column means must match the oracle within0.02 LSB.
+- Per-pixel quantization residual magnitude≤1.5 LSB. Centered sampling noise uses |mean|≤kσ/√64, k=Φ⁻¹(1−0.001/(2C)), measured per-pixel σ and tested-column count C. GPU column means must match the oracle within0.02 LSB.
 - Averaged64-line profiles: step≤oracle step+0.25 LSB and monotonic wherever the oracle is monotonic.
 - GPU run histograms compared with the oracle-with-dither histograms; no fixed per-run cap.
 - Dither-on spectral peaks<+6dB; dither-off negative control must FAIL. Accepting the negative control is ERROR.
@@ -33,9 +33,9 @@ Analysis of the saved, deterministic card outputs (a fresh15-host rerun is still
 
 The signed column residuals have both signs in every dither-on region/channel, with aggregate means near0 (largest absolute region mean0.002674 LSB). Global-mean Z magnitudes stay below2.44. This is centered sampling noise, not a consistently signed floor/rounding or noise-centering defect; neither GPU nor oracle quantizer was changed.
 
-Measured σ: static0.287146–0.289266 LSB, temporal0.287525–0.289226. With N=64,4σ/√N=σ/2: static bounds0.143573–0.144633; temporal0.143762–0.144613. Temporal has zero exceeding columns. Static has one four-sigma tail (horizontal ramp blue); it remains a FAIL, with no threshold relaxation. GPU/oracle column differences are at most0.015625 LSB in either mode, passing the new0.02 gate.
+Measured σ remains static0.287146–0.289266 and temporal0.287525–0.289226 LSB. The family includes all4 regions ×3 channels ×1080 columns per mode: C=12,960, k=5.3736454844. Static's formerly failing horizontal-blue column570 has z=4.3072735413; temporal's worst z=3.8874949062. Both are below either family threshold: **static and temporal column-statistics PASS**, with zero exceedances. No noise pattern or quantizer change is justified. GPU/oracle column differences≤0.015625 LSB also pass0.02. Details: docs/fm2_2/familywise/banding-results.json.
 
-The oracle byte match, per-pixel residual, profile and spectral checks pass on saved outputs. Strict run-histogram equality still detects a few changed bins at permitted1-LSB boundaries (L1 deltas3–8); no unapproved near-match tolerance is applied. Off still FAILS. Fresh15-host rerun remains pending. Full σ/sign/bound details: docs/fm2_2/statistical/banding-results.json.
+The oracle byte match, per-pixel residual, profile and spectral checks pass on saved outputs. Strict run-histogram equality still detects a few changed bins at permitted1-LSB boundaries (L1 deltas3–8); no near-match tolerance has been applied. A concrete0.03% normalized histogram L1 proposal is awaiting review. Off still FAILS. Fresh15-host rerun remains pending. Full σ/sign/bound details: docs/fm2_2/statistical/banding-results.json.
 
 ## M0 capture investigation — zero tolerance
 
