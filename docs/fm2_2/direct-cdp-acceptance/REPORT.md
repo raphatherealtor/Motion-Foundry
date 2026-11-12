@@ -1,6 +1,6 @@
 # FM2.2 direct-CDP capture acceptance report
 
-Status: NOT_STARTED. No push authorized or performed.
+Status: IN_PROGRESS. No push authorized or performed.
 
 Adopted harness-only Page.captureScreenshot, PNG/fromSurface true/captureBeyondViewport false, without per-capture clip/scale. View/window/DSF configured once per page. Scene/seek/assertion/schema files and renderer flags are unchanged. Capture helper hash is included in cache identity. Existing screenshot-failure instrumentation now also observes direct CDP captures.
 
@@ -12,10 +12,13 @@ Four parallel CPU workers per run; no retries, sleeps, extra flags or timeouts b
 
 | Run | Pairs | Mismatches | Result |
 |---|---:|---:|---|
+| 1 | 215 | 0 | PASS |
+| 2 | 215 | 0 | PASS |
+| 3 | 215 | 0 | PASS |
 
 ## Acceptance
 
-Not started.
+0/10 suites recorded; 0 failures; status IN_PROGRESS; phase TEN_FULL_SUITES.
 
 Five NEW uncached repeats and final98/98: PENDING. Any failure stops; prior cohorts never count. Run14 remains UNVERIFIED. Color histogram approval remains separate and pending; capture acceptance does not silently waive the banding gate.
 

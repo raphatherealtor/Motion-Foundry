@@ -1,0 +1,55 @@
+{
+  "status": "IN_PROGRESS",
+  "phase": "TEN_SUITES_THEN_FIVE_AND_98",
+  "runs": [
+    {
+      "index": 0,
+      "start": "2026-11-12T18:59:42.867Z",
+      "end": "2026-11-12T19:00:42.521Z",
+      "exit": 0,
+      "error": null,
+      "stressWorkers": 4,
+      "pairs": 215,
+      "mismatches": [],
+      "pass": true,
+      "load": [
+        69.5,
+        60.39,
+        64.19
+      ]
+    },
+    {
+      "index": 1,
+      "start": "2026-11-12T19:00:42.531Z",
+      "end": "2026-11-12T19:01:41.690Z",
+      "exit": 0,
+      "error": null,
+      "stressWorkers": 4,
+      "pairs": 215,
+      "mismatches": [],
+      "pass": true,
+      "load": [
+        60.21,
+        59.26,
+        63.58
+      ]
+    },
+    {
+      "index": 2,
+      "start": "2026-11-12T19:01:41.698Z",
+      "end": "2026-11-12T19:02:40.673Z",
+      "exit": 0,
+      "error": null,
+      "stressWorkers": 4,
+      "pairs": 215,
+      "mismatches": [],
+      "pass": true,
+      "load": [
+        47.9,
+        55.65,
+        62.05
+      ]
+    }
+  ],
+  "started": "2026-11-12T18:59:42.856Z"
+}
