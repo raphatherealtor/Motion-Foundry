@@ -1,0 +1,50 @@
+{
+  "results.json:baseline": {
+    "completedRuns": 2,
+    "failedSuites": 0,
+    "pairs": 8,
+    "withinPairMismatch": 1,
+    "firstHashes": {
+      "042a37ad916bf10d3b54de7b7271c8fd8b6e6b7018a385c6613f20a6d8e79eac": 6,
+      "c700ca6bcdd8df5da2714d9917ec741f25f2343e5490eb0d6e9c818f6c5695e1": 2
+    }
+  },
+  "adaptive-results.json:full-continuation": {
+    "completedRuns": 2,
+    "failedSuites": 0,
+    "pairs": 8,
+    "withinPairMismatch": 0,
+    "firstHashes": {
+      "042a37ad916bf10d3b54de7b7271c8fd8b6e6b7018a385c6613f20a6d8e79eac": 6,
+      "c700ca6bcdd8df5da2714d9917ec741f25f2343e5490eb0d6e9c818f6c5695e1": 2
+    }
+  },
+  "adaptive-results.json:pilot": {
+    "completedRuns": 20,
+    "failedSuites": 0,
+    "pairs": 20,
+    "withinPairMismatch": 0,
+    "firstHashes": {
+      "042a37ad916bf10d3b54de7b7271c8fd8b6e6b7018a385c6613f20a6d8e79eac": 20
+    }
+  },
+  "scale-results.json:full-scale": {
+    "completedRuns": 23,
+    "failedSuites": 3,
+    "pairs": 92,
+    "withinPairMismatch": 0,
+    "firstHashes": {
+      "042a37ad916bf10d3b54de7b7271c8fd8b6e6b7018a385c6613f20a6d8e79eac": 69,
+      "c700ca6bcdd8df5da2714d9917ec741f25f2343e5490eb0d6e9c818f6c5695e1": 23
+    }
+  },
+  "scale-results.json:stripped-scale": {
+    "completedRuns": 3,
+    "failedSuites": 0,
+    "pairs": 3,
+    "withinPairMismatch": 0,
+    "firstHashes": {
+      "042a37ad916bf10d3b54de7b7271c8fd8b6e6b7018a385c6613f20a6d8e79eac": 3
+    }
+  }
+}
