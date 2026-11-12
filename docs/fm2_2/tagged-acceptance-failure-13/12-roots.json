@@ -1,0 +1,42 @@
+{
+  "artifacts": [
+    {
+      "file": "/root/projects/motion-foundry/runs/fm2-2/serial-acceptance-tagged/12-capture-failures/failure-247481-1794468314624.json",
+      "tag": "expected"
+    }
+  ],
+  "rootFailureCount": 1,
+  "upstreamRootFailureCount": 0,
+  "dependentFailureCount": 0,
+  "roots": [
+    {
+      "kind": "independent_test",
+      "file": "/root/projects/motion-foundry/dist/test/render.test.js",
+      "message": "Expected values to be strictly deep-equal:\n+ actual - expected\n... Skipped lines\n\n  [\n    {\n      i: 0,\n      label: 'f0000',\n      path: 'frames/f0000.png',\n...\n      path: 'frames/f0210.png',\n+     sha256: 'c65682cd0bead5089f35fbf5bd319360d5b9592a649df8f8947667403eb3709f'\n-     sha256: '042a37ad916bf10d3b54de7b7271c8fd8b6e6b7018a385c6613f20a6d8e79eac'\n    },\n    {\n      i: 211,\n      label: 'f0211',\n      path: 'frames/f0211.png',\n",
+      "stack": "AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:\n+ actual - expected\n... Skipped lines\n\n  [\n    {\n      i: 0,\n      label: 'f0000',\n      path: 'frames/f0000.png',\n...\n      path: 'frames/f0210.png',\n+     sha256: 'c65682cd0bead5089f35fbf5bd319360d5b9592a649df8f8947667403eb3709f'\n-     sha256: '042a37ad916bf10d3b54de7b7271c8fd8b6e6b7018a385c6613f20a6d8e79eac'\n    },\n    {\n      i: 211,\n      label: 'f0211',\n      path: 'frames/f0211.png',\n\n    at TestContext.<anonymous> (file:///root/projects/motion-foundry/dist/test/render.test.js:24:12)\n    at async Test.run (node:internal/test_runner/test:980:9)\n    at async startSubtestAfterBootstrap (node:internal/test_runner/harness:296:3)",
+      "errorChain": [
+        {
+          "name": "Error",
+          "message": "Expected values to be strictly deep-equal:\n+ actual - expected\n... Skipped lines\n\n  [\n    {\n      i: 0,\n      label: 'f0000',\n      path: 'frames/f0000.png',\n...\n      path: 'frames/f0210.png',\n+     sha256: 'c65682cd0bead5089f35fbf5bd319360d5b9592a649df8f8947667403eb3709f'\n-     sha256: '042a37ad916bf10d3b54de7b7271c8fd8b6e6b7018a385c6613f20a6d8e79eac'\n    },\n    {\n      i: 211,\n      label: 'f0211',\n      path: 'frames/f0211.png',\n",
+          "stack": "Error [ERR_TEST_FAILURE]: Expected values to be strictly deep-equal:\n+ actual - expected\n... Skipped lines\n\n  [\n    {\n      i: 0,\n      label: 'f0000',\n      path: 'frames/f0000.png',\n...\n      path: 'frames/f0210.png',\n+     sha256: 'c65682cd0bead5089f35fbf5bd319360d5b9592a649df8f8947667403eb3709f'\n-     sha256: '042a37ad916bf10d3b54de7b7271c8fd8b6e6b7018a385c6613f20a6d8e79eac'\n    },\n    {\n      i: 211,\n      label: 'f0211',\n      path: 'frames/f0211.png',\n",
+          "code": "ERR_TEST_FAILURE",
+          "failureType": "testCodeFailure"
+        },
+        {
+          "name": "AssertionError",
+          "message": "Expected values to be strictly deep-equal:\n+ actual - expected\n... Skipped lines\n\n  [\n    {\n      i: 0,\n      label: 'f0000',\n      path: 'frames/f0000.png',\n...\n      path: 'frames/f0210.png',\n+     sha256: 'c65682cd0bead5089f35fbf5bd319360d5b9592a649df8f8947667403eb3709f'\n-     sha256: '042a37ad916bf10d3b54de7b7271c8fd8b6e6b7018a385c6613f20a6d8e79eac'\n    },\n    {\n      i: 211,\n      label: 'f0211',\n      path: 'frames/f0211.png',\n",
+          "stack": "AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:\n+ actual - expected\n... Skipped lines\n\n  [\n    {\n      i: 0,\n      label: 'f0000',\n      path: 'frames/f0000.png',\n...\n      path: 'frames/f0210.png',\n+     sha256: 'c65682cd0bead5089f35fbf5bd319360d5b9592a649df8f8947667403eb3709f'\n-     sha256: '042a37ad916bf10d3b54de7b7271c8fd8b6e6b7018a385c6613f20a6d8e79eac'\n    },\n    {\n      i: 211,\n      label: 'f0211',\n      path: 'frames/f0211.png',\n\n    at TestContext.<anonymous> (file:///root/projects/motion-foundry/dist/test/render.test.js:24:12)\n    at async Test.run (node:internal/test_runner/test:980:9)\n    at async startSubtestAfterBootstrap (node:internal/test_runner/harness:296:3)",
+          "code": "ERR_ASSERTION",
+          "failureType": null
+        }
+      ],
+      "dependentTests": [
+        {
+          "name": "repeat no-cache rendering, immutable attempts, cache and seek determinism",
+          "status": "FAIL",
+          "detail": "TEST_FAILED"
+        }
+      ]
+    }
+  ]
+}

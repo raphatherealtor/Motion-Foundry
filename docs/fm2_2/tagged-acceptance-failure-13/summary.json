@@ -1,0 +1,23 @@
+{
+  "classification": "capture determinism failure; causal mechanism UNVERIFIED",
+  "suite": 13,
+  "totals": {
+    "tests": 98,
+    "pass": 97,
+    "fail": 1,
+    "cancelled": 0,
+    "skipped": 0
+  },
+  "frames": [
+    {
+      "frame": 210,
+      "a": "c65682cd0bead5089f35fbf5bd319360d5b9592a649df8f8947667403eb3709f",
+      "b": "042a37ad916bf10d3b54de7b7271c8fd8b6e6b7018a385c6613f20a6d8e79eac"
+    }
+  ],
+  "hashesEqual": true,
+  "boxesEqual": true,
+  "screenshotException": false,
+  "run14Reproduced": false,
+  "action": "STOP; no fix/restart/push"
+}

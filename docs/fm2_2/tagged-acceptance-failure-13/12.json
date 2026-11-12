@@ -1,0 +1,41 @@
+{
+  "artifacts": [
+    {
+      "file": "failure-247481-1794468314624.json",
+      "tag": "expected"
+    }
+  ],
+  "index": 12,
+  "elapsedMs": 249773,
+  "exitCode": 1,
+  "error": null,
+  "totals": {
+    "tests": 98,
+    "pass": 97,
+    "fail": 1,
+    "cancelled": 0,
+    "skipped": 0
+  },
+  "events": [
+    {
+      "a": "/tmp/foundry-aNXw81/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/85217097-cca9-429e-bb57-02fb63922be8",
+      "b": "/tmp/foundry-aNXw81/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/b42dfb7b-7f10-4ba3-a4d7-68fc7e2bb1e0",
+      "c": "/tmp/foundry-aNXw81/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/19abb4e4-02f6-40b9-a79b-9736563ec99f",
+      "frames": 270,
+      "reason_code": "NONDETERMINISTIC",
+      "render_id": "bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee",
+      "seek_order": [
+        200,
+        10,
+        200,
+        135
+      ],
+      "status": "BLOCKED"
+    }
+  ],
+  "fingerprints": [
+    "bc85e33b3b2a6e5364e56f9e7f07b5b734f8a1c1948a6f4b4f7562d31b75656b",
+    "c5d497d5c396cb1f08028a8a7c6271ce9daad8be2928ddcc77f0a2d8654f9bc3"
+  ],
+  "pass": false
+}
