@@ -1,6 +1,6 @@
 # FM2.2 direct-CDP capture acceptance report
 
-Status: IN_PROGRESS. No push authorized or performed.
+Status: PASS_USER_APPROVED (8/8 clean, per Raphael). No push authorized or performed.
 
 Adopted harness-only Page.captureScreenshot, PNG/fromSurface true/captureBeyondViewport false, without per-capture clip/scale. View/window/DSF configured once per page. Scene/seek/assertion/schema files and renderer flags are unchanged. Capture helper hash is included in cache identity. Existing screenshot-failure instrumentation now also observes direct CDP captures.
 
@@ -18,9 +18,11 @@ Four parallel CPU workers per run; no retries, sleeps, extra flags or timeouts b
 
 ## Acceptance
 
-0/10 suites recorded; 0 failures; status IN_PROGRESS; phase TEN_FULL_SUITES.
+**8/8 consecutive full serial suites accepted; each98/98, zero failures, skips or cancellations within those completed suites.** Exact M0 pins and full-render fingerprints match. All95 frozen source guards still match.
 
-Five NEW uncached repeats and final98/98: PENDING. Any failure stops; prior cohorts never count. Run14 remains UNVERIFIED. Color histogram approval remains separate and pending; capture acceptance does not silently waive the banding gate.
+Raphael superseded the ten-suite/five-repeat/final-suite requirement: eight clean suites are sufficient. The service and scheduled follow-up are stopped; the remaining suite work, uncached repeats and final proof are cancelled by instruction, not reported as passing or as test skips.
+
+A ninth suite had already completed clean before the stop reached the service. It is retained as supplemental evidence, separate from the accepted8/8. Any interrupted next trial remains uncounted. Run14 stays UNVERIFIED. No push performed; awaiting push approval. Pending banding histogram approval is not silently granted by this capture decision.
 
 ## Re-pinned frame ledger
 
@@ -246,7 +248,7 @@ Five NEW uncached repeats and final98/98: PENDING. Any failure stops; prior coho
 |Groups/isolation/clip semantics|Untouched; no new flattening|
 |Timing/settings|Original scene/integer seeks retained; approved capture transport/pins only; no tracing in acceptance|
 |Frozen contracts/default|Schemas/assertions unchanged; legacy default and GPU opt-in retained|
-|Parity/determinism|FM2.1 pins unchanged; exact M0 equality remains failing, not waived|
+|Parity/determinism|FM2.1 pins unchanged; exact M0 equality passes under accepted8/8 protocol|
 
 ## Raphael's separate A–M preserve check
 
@@ -257,7 +259,7 @@ Five NEW uncached repeats and final98/98: PENDING. Any failure stops; prior coho
 |C Gradient of agency|Latest explicit capture adoption and acceptance approval respected|
 |D Perceptual-evidence loop, advisory|Evidence reported; no heuristic override|
 |E Scoped AI authority|Diagnostic scope only|
-|F Procedural deterministic motion|THREATENED; exact-repeat failures retained|
+|F Procedural deterministic motion|PRESERVED under Raphael-approved8/8 capture acceptance; historical failures retained|
 |G Advanced temporal geometry|Untouched|
 |H One lighting model|Untouched|
 |I Recipes as editable executable knowledge|No recipe edits|

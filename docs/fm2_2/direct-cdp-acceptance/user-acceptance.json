@@ -1,0 +1,12 @@
+{
+  "status": "PASS_USER_APPROVED",
+  "acceptedSuites": 8,
+  "acceptedFailures": 0,
+  "actualCompletedSuites": 9,
+  "actualFailures": 0,
+  "userDecision": "8/8 sufficient; cancel remaining suites and uncached repeats; mark F PRESERVED; wait for push approval",
+  "cancelledRemainingProof": true,
+  "sourceGuardsMatch": true,
+  "implementationCommit": "9f18f81",
+  "time": "2026-11-12T19:41:59.113754+00:00"
+}

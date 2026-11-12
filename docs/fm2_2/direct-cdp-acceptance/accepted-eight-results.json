@@ -1,0 +1,338 @@
+[
+  {
+    "pinsMatch": true,
+    "artifacts": [
+      {
+        "file": "failure-325436-1794510216117.json",
+        "tag": "expected"
+      }
+    ],
+    "index": 0,
+    "elapsedMs": 250739,
+    "exitCode": 0,
+    "error": null,
+    "totals": {
+      "tests": 98,
+      "pass": 98,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0
+    },
+    "events": [
+      {
+        "a": "/tmp/foundry-Sa3Kja/renders/5240e7ce9723966201aa15e1003e1c26f78a591636578b5603d9a6629ae1170b/9f7d9633-cd6b-4085-9d3d-595b4064aa4e",
+        "b": "/tmp/foundry-Sa3Kja/renders/5240e7ce9723966201aa15e1003e1c26f78a591636578b5603d9a6629ae1170b/14b912ae-5f4e-4dcb-ba81-388419147117",
+        "c": "/tmp/foundry-Sa3Kja/renders/5240e7ce9723966201aa15e1003e1c26f78a591636578b5603d9a6629ae1170b/0784ea09-8d44-4007-96d4-e814b242b355",
+        "frames": 270,
+        "reason_code": null,
+        "render_id": "5240e7ce9723966201aa15e1003e1c26f78a591636578b5603d9a6629ae1170b",
+        "seek_order": [
+          200,
+          10,
+          200,
+          135
+        ],
+        "status": "PASS"
+      }
+    ],
+    "fingerprints": [
+      "c8843df1976d6cd1280494050374c67e9ec632e2f59f3bf329d1294859de818d",
+      "c8843df1976d6cd1280494050374c67e9ec632e2f59f3bf329d1294859de818d"
+    ],
+    "pass": true
+  },
+  {
+    "pinsMatch": true,
+    "artifacts": [
+      {
+        "file": "failure-327374-1794510455834.json",
+        "tag": "expected"
+      }
+    ],
+    "index": 1,
+    "elapsedMs": 238600,
+    "exitCode": 0,
+    "error": null,
+    "totals": {
+      "tests": 98,
+      "pass": 98,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0
+    },
+    "events": [
+      {
+        "a": "/tmp/foundry-x4Jv9b/renders/5240e7ce9723966201aa15e1003e1c26f78a591636578b5603d9a6629ae1170b/4dad68a1-8c1a-4afd-8c1d-29b1b03c5fba",
+        "b": "/tmp/foundry-x4Jv9b/renders/5240e7ce9723966201aa15e1003e1c26f78a591636578b5603d9a6629ae1170b/74fef239-75b9-423c-bc26-a2265a2b1929",
+        "c": "/tmp/foundry-x4Jv9b/renders/5240e7ce9723966201aa15e1003e1c26f78a591636578b5603d9a6629ae1170b/4218e163-80c0-4e0d-910f-64dcf7fda212",
+        "frames": 270,
+        "reason_code": null,
+        "render_id": "5240e7ce9723966201aa15e1003e1c26f78a591636578b5603d9a6629ae1170b",
+        "seek_order": [
+          200,
+          10,
+          200,
+          135
+        ],
+        "status": "PASS"
+      }
+    ],
+    "fingerprints": [
+      "c8843df1976d6cd1280494050374c67e9ec632e2f59f3bf329d1294859de818d",
+      "c8843df1976d6cd1280494050374c67e9ec632e2f59f3bf329d1294859de818d"
+    ],
+    "pass": true
+  },
+  {
+    "pinsMatch": true,
+    "artifacts": [
+      {
+        "file": "failure-329292-1794510700332.json",
+        "tag": "expected"
+      }
+    ],
+    "index": 2,
+    "elapsedMs": 252877,
+    "exitCode": 0,
+    "error": null,
+    "totals": {
+      "tests": 98,
+      "pass": 98,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0
+    },
+    "events": [
+      {
+        "a": "/tmp/foundry-deIA8J/renders/5240e7ce9723966201aa15e1003e1c26f78a591636578b5603d9a6629ae1170b/8657f6e4-0f2f-40ec-8115-99726bd4234e",
+        "b": "/tmp/foundry-deIA8J/renders/5240e7ce9723966201aa15e1003e1c26f78a591636578b5603d9a6629ae1170b/96e4d87e-2405-4d2a-bf1b-0377ff5ee7b3",
+        "c": "/tmp/foundry-deIA8J/renders/5240e7ce9723966201aa15e1003e1c26f78a591636578b5603d9a6629ae1170b/af6b7fd8-a4db-480d-b80a-6f1fb804cf8c",
+        "frames": 270,
+        "reason_code": null,
+        "render_id": "5240e7ce9723966201aa15e1003e1c26f78a591636578b5603d9a6629ae1170b",
+        "seek_order": [
+          200,
+          10,
+          200,
+          135
+        ],
+        "status": "PASS"
+      }
+    ],
+    "fingerprints": [
+      "c8843df1976d6cd1280494050374c67e9ec632e2f59f3bf329d1294859de818d",
+      "c8843df1976d6cd1280494050374c67e9ec632e2f59f3bf329d1294859de818d"
+    ],
+    "pass": true
+  },
+  {
+    "pinsMatch": true,
+    "artifacts": [
+      {
+        "file": "failure-331224-1794510966015.json",
+        "tag": "expected"
+      }
+    ],
+    "index": 3,
+    "elapsedMs": 265440,
+    "exitCode": 0,
+    "error": null,
+    "totals": {
+      "tests": 98,
+      "pass": 98,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0
+    },
+    "events": [
+      {
+        "a": "/tmp/foundry-gjixiQ/renders/5240e7ce9723966201aa15e1003e1c26f78a591636578b5603d9a6629ae1170b/3c60ba81-2918-4363-8f27-973adf5d3501",
+        "b": "/tmp/foundry-gjixiQ/renders/5240e7ce9723966201aa15e1003e1c26f78a591636578b5603d9a6629ae1170b/9f38ebc6-9b1d-4f2a-9f61-f3bbaf594e31",
+        "c": "/tmp/foundry-gjixiQ/renders/5240e7ce9723966201aa15e1003e1c26f78a591636578b5603d9a6629ae1170b/1c58e35d-11e6-42d6-8557-41de2fcbf7cc",
+        "frames": 270,
+        "reason_code": null,
+        "render_id": "5240e7ce9723966201aa15e1003e1c26f78a591636578b5603d9a6629ae1170b",
+        "seek_order": [
+          200,
+          10,
+          200,
+          135
+        ],
+        "status": "PASS"
+      }
+    ],
+    "fingerprints": [
+      "c8843df1976d6cd1280494050374c67e9ec632e2f59f3bf329d1294859de818d",
+      "c8843df1976d6cd1280494050374c67e9ec632e2f59f3bf329d1294859de818d"
+    ],
+    "pass": true
+  },
+  {
+    "pinsMatch": true,
+    "artifacts": [
+      {
+        "file": "failure-333162-1794511222787.json",
+        "tag": "expected"
+      }
+    ],
+    "index": 4,
+    "elapsedMs": 264135,
+    "exitCode": 0,
+    "error": null,
+    "totals": {
+      "tests": 98,
+      "pass": 98,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0
+    },
+    "events": [
+      {
+        "a": "/tmp/foundry-ScZj0g/renders/5240e7ce9723966201aa15e1003e1c26f78a591636578b5603d9a6629ae1170b/b2d2bd95-3ba5-463a-b5df-f58a950797d5",
+        "b": "/tmp/foundry-ScZj0g/renders/5240e7ce9723966201aa15e1003e1c26f78a591636578b5603d9a6629ae1170b/51b9f5f1-95b0-4292-8960-6b8610c66e0a",
+        "c": "/tmp/foundry-ScZj0g/renders/5240e7ce9723966201aa15e1003e1c26f78a591636578b5603d9a6629ae1170b/c7f88f41-c657-4f9e-ad82-81991ad01797",
+        "frames": 270,
+        "reason_code": null,
+        "render_id": "5240e7ce9723966201aa15e1003e1c26f78a591636578b5603d9a6629ae1170b",
+        "seek_order": [
+          200,
+          10,
+          200,
+          135
+        ],
+        "status": "PASS"
+      }
+    ],
+    "fingerprints": [
+      "c8843df1976d6cd1280494050374c67e9ec632e2f59f3bf329d1294859de818d",
+      "c8843df1976d6cd1280494050374c67e9ec632e2f59f3bf329d1294859de818d"
+    ],
+    "pass": true
+  },
+  {
+    "pinsMatch": true,
+    "artifacts": [
+      {
+        "file": "failure-335102-1794511482876.json",
+        "tag": "expected"
+      }
+    ],
+    "index": 5,
+    "elapsedMs": 252762,
+    "exitCode": 0,
+    "error": null,
+    "totals": {
+      "tests": 98,
+      "pass": 98,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0
+    },
+    "events": [
+      {
+        "a": "/tmp/foundry-DkRjS4/renders/5240e7ce9723966201aa15e1003e1c26f78a591636578b5603d9a6629ae1170b/6201087b-2fac-41e5-87c6-1afd3627786d",
+        "b": "/tmp/foundry-DkRjS4/renders/5240e7ce9723966201aa15e1003e1c26f78a591636578b5603d9a6629ae1170b/a1f87b14-db8c-47fd-9e53-933c735cc7c0",
+        "c": "/tmp/foundry-DkRjS4/renders/5240e7ce9723966201aa15e1003e1c26f78a591636578b5603d9a6629ae1170b/0de382d3-a9e3-4bc1-85f9-fba3c5e9c819",
+        "frames": 270,
+        "reason_code": null,
+        "render_id": "5240e7ce9723966201aa15e1003e1c26f78a591636578b5603d9a6629ae1170b",
+        "seek_order": [
+          200,
+          10,
+          200,
+          135
+        ],
+        "status": "PASS"
+      }
+    ],
+    "fingerprints": [
+      "c8843df1976d6cd1280494050374c67e9ec632e2f59f3bf329d1294859de818d",
+      "c8843df1976d6cd1280494050374c67e9ec632e2f59f3bf329d1294859de818d"
+    ],
+    "pass": true
+  },
+  {
+    "pinsMatch": true,
+    "artifacts": [
+      {
+        "file": "failure-337060-1794511729316.json",
+        "tag": "expected"
+      }
+    ],
+    "index": 6,
+    "elapsedMs": 245400,
+    "exitCode": 0,
+    "error": null,
+    "totals": {
+      "tests": 98,
+      "pass": 98,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0
+    },
+    "events": [
+      {
+        "a": "/tmp/foundry-cTtm01/renders/5240e7ce9723966201aa15e1003e1c26f78a591636578b5603d9a6629ae1170b/ede77c1e-1a79-4c54-9521-70deff84ae8e",
+        "b": "/tmp/foundry-cTtm01/renders/5240e7ce9723966201aa15e1003e1c26f78a591636578b5603d9a6629ae1170b/165231bb-bb7d-409f-b6c3-f96ad0e860b3",
+        "c": "/tmp/foundry-cTtm01/renders/5240e7ce9723966201aa15e1003e1c26f78a591636578b5603d9a6629ae1170b/8b2afde6-f2a8-4371-924e-25b1a22261e4",
+        "frames": 270,
+        "reason_code": null,
+        "render_id": "5240e7ce9723966201aa15e1003e1c26f78a591636578b5603d9a6629ae1170b",
+        "seek_order": [
+          200,
+          10,
+          200,
+          135
+        ],
+        "status": "PASS"
+      }
+    ],
+    "fingerprints": [
+      "c8843df1976d6cd1280494050374c67e9ec632e2f59f3bf329d1294859de818d",
+      "c8843df1976d6cd1280494050374c67e9ec632e2f59f3bf329d1294859de818d"
+    ],
+    "pass": true
+  },
+  {
+    "pinsMatch": true,
+    "artifacts": [
+      {
+        "file": "failure-338997-1794511977196.json",
+        "tag": "expected"
+      }
+    ],
+    "index": 7,
+    "elapsedMs": 276961,
+    "exitCode": 0,
+    "error": null,
+    "totals": {
+      "tests": 98,
+      "pass": 98,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0
+    },
+    "events": [
+      {
+        "a": "/tmp/foundry-A9lhhl/renders/5240e7ce9723966201aa15e1003e1c26f78a591636578b5603d9a6629ae1170b/6afe5410-c348-4be2-8339-6bed8f920a64",
+        "b": "/tmp/foundry-A9lhhl/renders/5240e7ce9723966201aa15e1003e1c26f78a591636578b5603d9a6629ae1170b/b4b434a6-91a7-4bfc-a345-e000d0646d2f",
+        "c": "/tmp/foundry-A9lhhl/renders/5240e7ce9723966201aa15e1003e1c26f78a591636578b5603d9a6629ae1170b/0f8501fc-b802-438c-9010-9f1ca5f3392a",
+        "frames": 270,
+        "reason_code": null,
+        "render_id": "5240e7ce9723966201aa15e1003e1c26f78a591636578b5603d9a6629ae1170b",
+        "seek_order": [
+          200,
+          10,
+          200,
+          135
+        ],
+        "status": "PASS"
+      }
+    ],
+    "fingerprints": [
+      "c8843df1976d6cd1280494050374c67e9ec632e2f59f3bf329d1294859de818d",
+      "c8843df1976d6cd1280494050374c67e9ec632e2f59f3bf329d1294859de818d"
+    ],
+    "pass": true
+  }
+]
