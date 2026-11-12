@@ -1,0 +1,5 @@
+# Failure-only capture observer
+
+Preloaded by npm test, retained after acceptance. Wraps both installed Playwright transports and page/context-created pages. Screenshot, readiness wait, content setup and evaluate exceptions produce untruncated artifacts; the original exception is rethrown with no retry or changed arguments/timeouts. Successful screenshots only retain an in-memory SHA256; successful explicit readiness waits retain measured monotonic duration. No DOM readiness reads or new waits are introduced. Browser connected/page closed plus /proc Chromium process snapshots and CPU load are collected at failure. OS snapshots are observational, not proof of cause. A missing prior frame or readiness wait is recorded explicitly, never fabricated. Run IDs come from the acceptance runner; test identity is the Node test-file argv, with the failing target path included when available.
+
+Self-test: node tooling/capture-observer/selftest.mjs. This forces an exception and verifies the written artifact, exact error propagation, unchanged options and single invocation. It tests instrumentation, not a run14 root-cause fix.

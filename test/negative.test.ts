@@ -35,7 +35,7 @@ test('attempt and render budgets stop the state machine',async()=>{
  try{const r=await repairLoop(s,mkdtempSync(tmpdir()+'/foundry-budget-'),true);assert.equal(r.reason_code,'BUDGET_EXHAUSTED')}finally{budgets.max_renders_per_run=prior}
 });
 const acceptance=mkdtempSync(tmpdir()+'/foundry-acceptance-');
-before(async()=>{const r=await repairLoop(s,acceptance,true);assert.equal(r.status,'PASS','UPSTREAM_FAILED: mock repair-loop setup returned '+r.status+(r.reason_code?' ('+r.reason_code+')':'')+'. Dependent test bodies did not run; inspect untruncated capture traces.');},{timeout:240000});
+before(async()=>{const r=await repairLoop(s,acceptance,true);assert.equal(r.status,'PASS','upstream failed: mock repair-loop setup returned '+r.status+(r.reason_code?' ('+r.reason_code+')':'')+'. Dependent test bodies did not run; inspect untruncated capture traces.');},{timeout:240000});
 for(const file of ['frames/f0007.png','boxes.jsonl','contact_sheet.png'])test('independent verifier rejects tampering: '+file,()=>{
  const r=read(acceptance+'/run-result.json'),out=mkdtempSync(tmpdir()+'/foundry-tamper-');cpSync(r.final_dir,out,{recursive:true});appendFileSync(resolve(out,file),'tamper');assert.throws(()=>verifyHashes(out),/EVIDENCE_HASH_MISMATCH/);
 });
