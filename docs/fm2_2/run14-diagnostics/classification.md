@@ -9,3 +9,7 @@ Acceptance stays HOLD. No new60-run acceptance campaign until a verified cause a
 ## Isolated condition complete
 
 All20 fully instrumented isolated negative-test-file runs completed without reproducing a failure; each ran27 tests with no skips. Full-suite condition is still running. This does not establish(a), (b) or(c), and does not clear HOLD. Trace hashes and full trial/load metadata: isolated-results.json.
+
+## Full serial condition complete
+
+All20 full serial diagnostic suites completed with98/98 passes and zero skips each. Together with20 isolated runs, the40-trial campaign did not reproduce run14; no full screenshot exception was observed. Raw capture timestamps/load logs remain retained, with trace hashes in full-suite-results.json. Outcome: NOT REPRODUCED, classification UNVERIFIED. Observability can perturb timing; these passes establish neither a cause nor a fix. Acceptance remains HOLD; the failed14-run cohort is retained and no acceptance restart is authorized.

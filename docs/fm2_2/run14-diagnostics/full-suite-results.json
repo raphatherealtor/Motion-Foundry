@@ -1,0 +1,1716 @@
+{
+  "phase": "full serial diagnostics",
+  "runs": 20,
+  "testFailures": 0,
+  "classification": "UNVERIFIED / NOT REPRODUCED",
+  "acceptance": "HOLD; no restart",
+  "sourceIdentity": {
+    "package.json": "6e5e971410c3e55405b12a750234314b7c37c469e89eec8309e063bb3d4b5a26",
+    "config/foundry.config.json": "df402722f2abdda17769861829c8d50584ac1d6dd784b8cc3544d1f3469652cc",
+    "/root/projects/motion-foundry/docs/fm2_2/run14-diagnostics/observer.mjs": "fba69589564828d6b40a5bca1361068033e17d6cfd1d259a5984c11e6420aca9",
+    "/root/projects/motion-foundry/docs/fm2_2/run14-diagnostics/root-reporter.mjs": "995d3a3f554a1d761fa44ccef14c09e2b3df2b6c34b931e6c7434d8315544c8b",
+    "src/adapters.ts": "7572777ceedc18bc0c74ca00ddd09be6736d53673dc5e42ca33978d266ad84da",
+    "src/cli.ts": "2fd7cc722b970ef8b7567965aef26a70d9afe57c0837af757be8089d21acbd3a",
+    "src/contracts.ts": "c7e377dca95ef02bbccc1702532c0c04b50ae6c6d791514a156b665d812cb578",
+    "src/gate.ts": "49a5849eadbf9905a46bf3814e338d250b00504ae7e172bcc776432f806cb4a7",
+    "src/hash.ts": "78b4e1fcdf3cba9bde626ebf7b968b7a6a48d15621ff05be64d01442f208da4e",
+    "src/io.ts": "0d926f1874f0ed883cdb20acc6576a8c7d452a7ce5da0e53a1e69d256a6fb156",
+    "src/kimi-acp.ts": "df616e321d2fecf7556a0c488d50d19a909f61749681a6958d978469dfb5b1b1",
+    "src/kimi-auth.ts": "477c582d8fb43121d3ca6a4e6c8beb52aa7b792697d36d18fcb8d3949e7d1f42",
+    "src/kimi-canary.ts": "5f9aadf065db19f47608ed04859953835d5c41a82387ead7fe93d50cb36af4e0",
+    "src/kimi-policy.ts": "c0cf7b4d5759fea584bde40c7fa68bebe277977f6a256d6e3356a0b71bf8f2dd",
+    "src/kimi-proof.ts": "78aeb7fc1c7eb7346e901ebfaa7d719f3da68773c2d957a8cca0be569c705ae2",
+    "src/kimi-review.ts": "3a47ad4197a9de7dca081f789cb22b5877a2d5506c872852da384fa742dbe630",
+    "src/kimi-verify.ts": "e868b17e12223ec3e0cf4166fb4ffff48667cab23b174056e19372df44d64769",
+    "src/render.ts": "5bca2a6d9589b8ed9323debfd4c73108f1f14609231266c9dcc93746abe91d04",
+    "src/repair.ts": "66162cf9b24196dd406e705d8c2bc0b28a7af18c07b9f93d6533bb428a3a91bc",
+    "src/review.ts": "e02c8c4f166c59bc0f6e6c3de3f130db2e5d45bcfadcc7216d69c1c5dc1c20b1",
+    "src/scene.ts": "a56d0db325023aca04703265d394429f3c58f58ed09c6888ef7e4e93321d067f",
+    "src/schemas.ts": "a6ea945507dbd1f43584c3cc9e0b27d75328ab2d8805ff6dc3aa1a9125a9c282",
+    "src/validate.ts": "672f991aa252c8244934406f01f3cb34b3afd9df5f8974c5dd7276d641d437b3",
+    "src/verify.ts": "8d60e8f0634a743dda2c46807646027a8a802d1d77b885e8819872afcdc7e667",
+    "src/recipes/compiler.ts": "1304a461b46ee7874ede611cdec34de92a8b7fb403ec7e1208a918d957c8b44d",
+    "src/recipes/primitives.ts": "44399fa39f9412e1f561b8a34af89fd41c2df01030149c00ad621476433b24e9",
+    "src/recipes/registry.ts": "4f6cc75dd25e6a884c1c663e8bcf2fcb343269d7117bb690657936a4e3e8c8dc",
+    "src/recipes/types.ts": "7c9e015652823fe84d81caf9c6040caadb8386fcec0a0b2612e1137ee1b6658a",
+    "src/adapters/motion-suite/assets-source.ts": "4dfdc4326dde3024311c9ef59ed14a5613ea6691cca9c056fdd79440debeca03",
+    "src/adapters/motion-suite/boxes-source.ts": "f8ccd4d215640d05dfb35ba0f09b02c09c4b42ff24e45bc4aba8e2251dcd9e88",
+    "src/adapters/motion-suite/boxes-types.ts": "013d98b9346a51e252256526173845af935c76ead409709d096f95186c12212e",
+    "src/adapters/motion-suite/browser.ts": "a61da9cfd11e22965ad80ebc295372ab74ae6c5142ad70fbd5bed38c0f360fbc",
+    "src/adapters/motion-suite/budget.ts": "f584871d5c00c232e126553cfe8740ffe5f116cbcd7262d459f2aeb3794c6aaa",
+    "src/adapters/motion-suite/compile-source.ts": "0329e60f5ec05ed1b78a862abdd9784be4c18586e4510aa4c9e6188ccd7c91b5",
+    "src/adapters/motion-suite/compile.ts": "dd72e1227017c242731b01399d6acad90dd204911ce5e41d709febdbd0ecc5b3",
+    "src/adapters/motion-suite/contact-sheet.ts": "3bba40443af0959b61c11c220e89e8c4be17eacb5ec9eca4b450878a1726a3d5",
+    "src/adapters/motion-suite/contract-checks.ts": "88308d6d2d212f50e67d2951f37ac0384fffc1b402f5d12a95467d67b513e336",
+    "src/adapters/motion-suite/defaults.ts": "26a5fef3c1fc7793024b20f06396feff5e6aae40e07ac7d9bc94675a1b3102f6",
+    "src/adapters/motion-suite/environment.ts": "afde8611f09c2a16b37246b5953169dfbfbb4048aa5c38e8fd30c8fb583a4198",
+    "src/adapters/motion-suite/evidence.ts": "089fe735da35a55cf7f5b104fa5fa97876ce2c4db78a6a5e73dc9eace106cdb5",
+    "src/adapters/motion-suite/gate.ts": "703537237525819362788939046006028c3107cafed527cfb765530fc8f0a497",
+    "src/adapters/motion-suite/harness.ts": "9ebf57055a82d819a9358b56add72840ebfe1069a551bc48b9a8f5544240475c",
+    "src/adapters/motion-suite/history.ts": "c36eec8764953af3831850c32f630a0c812d488b6f13c83ff1b4414c7941c313",
+    "src/adapters/motion-suite/identity.ts": "b6bdf83faae4a71f55f3db3aa925f4f04b7a2cf19be0e2f36040cf1ecbd3a1cc",
+    "src/adapters/motion-suite/loop.ts": "37461373307e4cd3022e547b99741d2821d4e61064600b526f9ee74be606ba51",
+    "src/adapters/motion-suite/lower.ts": "92b13bdaf565c642b95a7efb073c6a3044b7a8c67072429abe49ced7e5f7d2f6",
+    "src/adapters/motion-suite/luma.ts": "e150894f4d5dfd57b2fb61d83548eeeb59a05db546d7fc66118056f77ad187fe",
+    "src/adapters/motion-suite/materialize.ts": "100334caebf3e7bedc882c0236ac4abae1a78ba31edefb2d12d89d7642190e24",
+    "src/adapters/motion-suite/metrics.ts": "0a6412bfc58cc7150d6af8c451effe58912a8c16b80941b496ec1f544e6334bc",
+    "src/adapters/motion-suite/page-source.ts": "537c8c25e8be20073b9b72d930aec992f992a7cf4c2cdd757a8538421f09d6b6",
+    "src/adapters/motion-suite/parity.ts": "c86651cfb5231b269cfd91c7b2024e8f2161c426d014ba110d780a6898d592fa",
+    "src/adapters/motion-suite/renderer.ts": "af143aa4d8bc95e2b24f8886e3021630ef0bbb7043e3c28b70d4c6b1134a5787",
+    "src/adapters/motion-suite/review.ts": "59b071ea84dd44200bf88f432e4e3c90a66851704e4e46f696d8efae8b92568f",
+    "src/adapters/motion-suite/session.ts": "c8903c3f237128a167068c162b0b10d3f549aafac2931f4f4af86747400de8f4",
+    "src/adapters/motion-suite/timing.ts": "af89ba1575f91ab212fd006b87054ae65aab0a511fc72520de37030d7b2ea24e",
+    "src/adapters/motion-suite/v2.ts": "1a14942837e5a1e0418ea865cd010073d687385b92a4668be53276d9f9bc5dbe",
+    "src/adapters/motion-suite/validate.ts": "b7f8f5d40499a93e17f9384b0b72db0ac5d82490915d6bd1c467383053aa18fc",
+    "src/adapters/motion-suite/verify.ts": "1c3211da80836a4d9f8e1af46e8d4b56c6e2cb13233ca474283fe37fb9d008af",
+    "src/adapters/motion-suite/word-check.ts": "df02a41f8dc4d9ed995b7342f3c040bc3e89623d6dd647555106c3c360ead56d",
+    "src/fm2/color/banding.ts": "faeff80b99fef98728f35ececd15df1c380bb385eef28e9e39db88a92c7c081d",
+    "src/fm2/color/column-statistics.ts": "d5327c0727c0238307d224ad1a9766b9e5c4601e42b919e10cb2d5159770e92c",
+    "src/fm2/color/normal-quantile.ts": "58d22c2a7c4ea3fe109c1519b50f92cda82d0a9bc20fdec6bba12d763e9f2069",
+    "src/fm2/color/oracle.ts": "40783de088fc3662dab5e3be6d53895cba1efb3d598c96f2b8aa9a0bd6e005f1",
+    "src/fm2/color/perception.ts": "0ab6c38a5a6d36e5995176db95f16fdb5d795111f7a919661e8477af4d770e89",
+    "src/fm2/color/profile.ts": "04e607829247a1c032672ef8157679d6d6022594a81ba120d62517a00a9cde75",
+    "src/fm2/color/spectrum.ts": "0cdeb0adbd7406c24b3f580162ba11b52c6a4341b89fba5215810a21bcb16172",
+    "test/contracts.test.ts": "5eead370c31ac5f22a1a1b9b34cdb976ffa41818379464d1258d5532008da3f2",
+    "test/fixture.test.ts": "698f6c5dddbbb9a02fbd97984db6cdc5eb817fab8b3bb2ff2b9bd4b8c92cb53f",
+    "test/fm2-color.test.ts": "0bcc23d1342ea06656846412fb1525fe4ea48f9a8455819ea7fcb47d7c4b9da6",
+    "test/kimi.test.ts": "2e23a36d4b09dcbd0cd1f5f606fd41ad566c7ed87e1d12489714724311b15e01",
+    "test/m1-candidate-evidence.test.ts": "2debfaf864b4e77ee813333bfee5dcdad18ad6e377b755d01d4abdfc6f3b5d73",
+    "test/m1-evidence.test.ts": "305ba28d6413a7e819763d6be3f186712d879097e20c4771980001f81620a3cf",
+    "test/m1-gate.test.ts": "bb543b48eb522ae3459d74232af265cefb60f47e3b57926516748b385a151cdf",
+    "test/m1-loop-safety.test.ts": "2003f9b354e898334520348dd004ec9fac7e47829bbee3aa85e3bad0c10b4571",
+    "test/m1-lowering.test.ts": "b0db70ca4fc13c2e06847cbca2b5f993ce12bd0704310d0b20b459caa97e9ad9",
+    "test/m1-recipes.test.ts": "2de1ddca934359733ebdf90d6bfeb13a9cf6e440a5046182a304d3528849aa9b",
+    "test/m1-renderer.test.ts": "2134356a8e998cdd91c505d18a21807074eab8f4f4ad256a573e5b2a4aec9f92",
+    "test/m1-timing.test.ts": "a1750a5f51d0aacb90ff20e7da4002150b3db5e89db156ba000cfb934370e9de",
+    "test/m1-validators.test.ts": "6512d7bef2fbb162b483958805a2b8b43b06151426c5b4d8d6e8ed2bd0087d74",
+    "test/negative.test.ts": "c8776d13aa25745dbb6923f94e40abee8d8efff3b663cdb58fe2a519d1b38051",
+    "test/render.test.ts": "12e0852fc05db9ba3ed4b3646104d039eab56deda7b9b17166c9c8a28f78613f",
+    "test/review.test.ts": "e6d0615c987929aef9db02fc429a25f2739f079828761e61927dd2e090da5a5d",
+    "test/validate.test.ts": "792b6db7268449e9e81cc4d78bb0e6e906c74da35ec8a0ee73dc3e0a959893aa"
+  },
+  "trials": [
+    {
+      "mode": "suite",
+      "index": 0,
+      "start": "2026-11-11T23:10:40.021Z",
+      "end": "2026-11-11T23:14:35.330Z",
+      "loadStart": {
+        "loadavg": [
+          60.7,
+          51.79,
+          97.19
+        ],
+        "freeMemoryBytes": 8424979456,
+        "processCpu": {
+          "user": 422909,
+          "system": 148968
+        },
+        "cgroup": {
+          "cpu.pressure": "some avg10=2.14 avg60=2.33 avg300=2.62 total=4792849800\nfull avg10=0.00 avg60=0.01 avg300=0.00 total=2684852628\n",
+          "cpu.stat": "usage_usec 47167637820\nuser_usec 38969677656\nsystem_usec 8197960164\nnice_usec 2680000\ncore_sched.force_idle_usec 0\nnr_periods 0\nnr_throttled 0\nthrottled_usec 0\nnr_bursts 0\nburst_usec 0\n",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\n",
+          "memory.current": "2333061120\n",
+          "pids.current": "57\n",
+          "io.pressure": "some avg10=0.01 avg60=0.43 avg300=0.39 total=502727432\nfull avg10=0.00 avg60=0.33 avg300=0.30 total=409617359\n"
+        }
+      },
+      "loadEnd": {
+        "loadavg": [
+          54.49,
+          53.89,
+          87.99
+        ],
+        "freeMemoryBytes": 8424975360,
+        "processCpu": {
+          "user": 423397,
+          "system": 153955
+        },
+        "cgroup": {
+          "cpu.pressure": "some avg10=2.69 avg60=2.43 avg300=2.63 total=4800469161\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=2685666707\n",
+          "cpu.stat": "usage_usec 47393174583\nuser_usec 39143908631\nsystem_usec 8249265951\nnice_usec 2680000\ncore_sched.force_idle_usec 0\nnr_periods 0\nnr_throttled 0\nthrottled_usec 0\nnr_bursts 0\nburst_usec 0\n",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\n",
+          "memory.current": "2525446144\n",
+          "pids.current": "57\n",
+          "io.pressure": "some avg10=0.01 avg60=0.36 avg300=0.97 total=507859225\nfull avg10=0.01 avg60=0.32 avg300=0.87 total=414340134\n"
+        }
+      },
+      "exitCode": 0,
+      "error": null,
+      "totals": {
+        "tests": 98,
+        "pass": 98,
+        "fail": 0,
+        "cancelled": 0,
+        "skipped": 0
+      },
+      "roots": {
+        "rootFailureCount": 0,
+        "upstreamRootFailureCount": 0,
+        "dependentFailureCount": 0,
+        "roots": []
+      },
+      "captureLogs": [
+        "captures/182195/events.jsonl",
+        "captures/183647/events.jsonl",
+        "captures/183852/events.jsonl"
+      ]
+    },
+    {
+      "mode": "suite",
+      "index": 1,
+      "start": "2026-11-11T23:14:35.336Z",
+      "end": "2026-11-11T23:18:29.655Z",
+      "loadStart": {
+        "loadavg": [
+          54.49,
+          53.89,
+          87.99
+        ],
+        "freeMemoryBytes": 8425032704,
+        "processCpu": {
+          "user": 425299,
+          "system": 156109
+        },
+        "cgroup": {
+          "cpu.pressure": "some avg10=2.69 avg60=2.43 avg300=2.63 total=4800469170\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=2685666717\n",
+          "cpu.stat": "usage_usec 47393178111\nuser_usec 39143910238\nsystem_usec 8249267873\nnice_usec 2680000\ncore_sched.force_idle_usec 0\nnr_periods 0\nnr_throttled 0\nthrottled_usec 0\nnr_bursts 0\nburst_usec 0\n",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\n",
+          "memory.current": "2525388800\n",
+          "pids.current": "57\n",
+          "io.pressure": "some avg10=0.01 avg60=0.36 avg300=0.97 total=507859230\nfull avg10=0.01 avg60=0.32 avg300=0.87 total=414340138\n"
+        }
+      },
+      "loadEnd": {
+        "loadavg": [
+          52.77,
+          57.43,
+          82.29
+        ],
+        "freeMemoryBytes": 8425302016,
+        "processCpu": {
+          "user": 427384,
+          "system": 160144
+        },
+        "cgroup": {
+          "cpu.pressure": "some avg10=2.27 avg60=2.21 avg300=2.42 total=4807355390\nfull avg10=0.00 avg60=0.01 avg300=0.00 total=2686486144\n",
+          "cpu.stat": "usage_usec 47611570314\nuser_usec 39315867899\nsystem_usec 8295702414\nnice_usec 2680000\ncore_sched.force_idle_usec 0\nnr_periods 0\nnr_throttled 0\nthrottled_usec 0\nnr_bursts 0\nburst_usec 0\n",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\n",
+          "memory.current": "2591047680\n",
+          "pids.current": "57\n",
+          "io.pressure": "some avg10=0.18 avg60=0.71 avg300=1.63 total=514775495\nfull avg10=0.18 avg60=0.62 avg300=1.45 total=420564825\n"
+        }
+      },
+      "exitCode": 0,
+      "error": null,
+      "totals": {
+        "tests": 98,
+        "pass": 98,
+        "fail": 0,
+        "cancelled": 0,
+        "skipped": 0
+      },
+      "roots": {
+        "rootFailureCount": 0,
+        "upstreamRootFailureCount": 0,
+        "dependentFailureCount": 0,
+        "roots": []
+      },
+      "captureLogs": [
+        "captures/184108/events.jsonl",
+        "captures/185552/events.jsonl",
+        "captures/185752/events.jsonl"
+      ]
+    },
+    {
+      "mode": "suite",
+      "index": 2,
+      "start": "2026-11-11T23:18:29.664Z",
+      "end": "2026-11-11T23:22:14.069Z",
+      "loadStart": {
+        "loadavg": [
+          52.77,
+          57.43,
+          82.29
+        ],
+        "freeMemoryBytes": 8426260480,
+        "processCpu": {
+          "user": 432249,
+          "system": 162093
+        },
+        "cgroup": {
+          "cpu.pressure": "some avg10=2.27 avg60=2.21 avg300=2.42 total=4807355450\nfull avg10=0.00 avg60=0.01 avg300=0.00 total=2686486204\n",
+          "cpu.stat": "usage_usec 47611577365\nuser_usec 39315872939\nsystem_usec 8295704425\nnice_usec 2680000\ncore_sched.force_idle_usec 0\nnr_periods 0\nnr_throttled 0\nthrottled_usec 0\nnr_bursts 0\nburst_usec 0\n",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\n",
+          "memory.current": "2590687232\n",
+          "pids.current": "57\n",
+          "io.pressure": "some avg10=0.18 avg60=0.71 avg300=1.63 total=514775495\nfull avg10=0.18 avg60=0.62 avg300=1.45 total=420564825\n"
+        }
+      },
+      "loadEnd": {
+        "loadavg": [
+          51.72,
+          55.15,
+          76.02
+        ],
+        "freeMemoryBytes": 8425749504,
+        "processCpu": {
+          "user": 433512,
+          "system": 166196
+        },
+        "cgroup": {
+          "cpu.pressure": "some avg10=2.06 avg60=2.15 avg300=2.48 total=4814574392\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=2687321033\n",
+          "cpu.stat": "usage_usec 47832567796\nuser_usec 39488232167\nsystem_usec 8344335629\nnice_usec 2680000\ncore_sched.force_idle_usec 0\nnr_periods 0\nnr_throttled 0\nthrottled_usec 0\nnr_bursts 0\nburst_usec 0\n",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\n",
+          "memory.current": "2678493184\n",
+          "pids.current": "57\n",
+          "io.pressure": "some avg10=2.61 avg60=0.66 avg300=1.20 total=517364913\nfull avg10=2.47 avg60=0.59 avg300=1.03 total=422646298\n"
+        }
+      },
+      "exitCode": 0,
+      "error": null,
+      "totals": {
+        "tests": 98,
+        "pass": 98,
+        "fail": 0,
+        "cancelled": 0,
+        "skipped": 0
+      },
+      "roots": {
+        "rootFailureCount": 0,
+        "upstreamRootFailureCount": 0,
+        "dependentFailureCount": 0,
+        "roots": []
+      },
+      "captureLogs": [
+        "captures/186010/events.jsonl",
+        "captures/187460/events.jsonl",
+        "captures/187668/events.jsonl"
+      ]
+    },
+    {
+      "mode": "suite",
+      "index": 3,
+      "start": "2026-11-11T23:22:14.094Z",
+      "end": "2026-11-11T23:26:10.070Z",
+      "loadStart": {
+        "loadavg": [
+          51.72,
+          55.15,
+          76.02
+        ],
+        "freeMemoryBytes": 8426646528,
+        "processCpu": {
+          "user": 438265,
+          "system": 168101
+        },
+        "cgroup": {
+          "cpu.pressure": "some avg10=2.06 avg60=2.15 avg300=2.48 total=4814574516\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=2687321156\n",
+          "cpu.stat": "usage_usec 47832575249\nuser_usec 39488236711\nsystem_usec 8344338538\nnice_usec 2680000\ncore_sched.force_idle_usec 0\nnr_periods 0\nnr_throttled 0\nthrottled_usec 0\nnr_bursts 0\nburst_usec 0\n",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\n",
+          "memory.current": "2677596160\n",
+          "pids.current": "57\n",
+          "io.pressure": "some avg10=2.61 avg60=0.66 avg300=1.20 total=517379887\nfull avg10=2.47 avg60=0.59 avg300=1.03 total=422661272\n"
+        }
+      },
+      "loadEnd": {
+        "loadavg": [
+          61.4,
+          56.43,
+          71.67
+        ],
+        "freeMemoryBytes": 8424795136,
+        "processCpu": {
+          "user": 439176,
+          "system": 172867
+        },
+        "cgroup": {
+          "cpu.pressure": "some avg10=2.57 avg60=2.22 avg300=2.70 total=4823656045\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=2688281743\n",
+          "cpu.stat": "usage_usec 48079336883\nuser_usec 39661410762\nsystem_usec 8417926121\nnice_usec 2680000\ncore_sched.force_idle_usec 0\nnr_periods 0\nnr_throttled 0\nthrottled_usec 0\nnr_bursts 0\nburst_usec 0\n",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\n",
+          "memory.current": "2753482752\n",
+          "pids.current": "57\n",
+          "io.pressure": "some avg10=0.00 avg60=0.52 avg300=1.02 total=520074677\nfull avg10=0.00 avg60=0.43 avg300=0.86 total=424960287\n"
+        }
+      },
+      "exitCode": 0,
+      "error": null,
+      "totals": {
+        "tests": 98,
+        "pass": 98,
+        "fail": 0,
+        "cancelled": 0,
+        "skipped": 0
+      },
+      "roots": {
+        "rootFailureCount": 0,
+        "upstreamRootFailureCount": 0,
+        "dependentFailureCount": 0,
+        "roots": []
+      },
+      "captureLogs": [
+        "captures/187940/events.jsonl",
+        "captures/189394/events.jsonl",
+        "captures/189615/events.jsonl"
+      ]
+    },
+    {
+      "mode": "suite",
+      "index": 4,
+      "start": "2026-11-11T23:26:10.076Z",
+      "end": "2026-11-11T23:29:49.096Z",
+      "loadStart": {
+        "loadavg": [
+          61.4,
+          56.43,
+          71.67
+        ],
+        "freeMemoryBytes": 8425282560,
+        "processCpu": {
+          "user": 441922,
+          "system": 175969
+        },
+        "cgroup": {
+          "cpu.pressure": "some avg10=2.57 avg60=2.22 avg300=2.70 total=4823656051\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=2688281749\n",
+          "cpu.stat": "usage_usec 48079340494\nuser_usec 39661412437\nsystem_usec 8417928056\nnice_usec 2680000\ncore_sched.force_idle_usec 0\nnr_periods 0\nnr_throttled 0\nthrottled_usec 0\nnr_bursts 0\nburst_usec 0\n",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\n",
+          "memory.current": "2752995328\n",
+          "pids.current": "57\n",
+          "io.pressure": "some avg10=0.00 avg60=0.52 avg300=1.02 total=520074677\nfull avg10=0.00 avg60=0.43 avg300=0.86 total=424960287\n"
+        }
+      },
+      "loadEnd": {
+        "loadavg": [
+          42.58,
+          47.92,
+          64.95
+        ],
+        "freeMemoryBytes": 8424981504,
+        "processCpu": {
+          "user": 448537,
+          "system": 179814
+        },
+        "cgroup": {
+          "cpu.pressure": "some avg10=1.61 avg60=2.16 avg300=2.75 total=4831554091\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=2689131592\n",
+          "cpu.stat": "usage_usec 48304271511\nuser_usec 39832565543\nsystem_usec 8471705967\nnice_usec 2680000\ncore_sched.force_idle_usec 0\nnr_periods 0\nnr_throttled 0\nthrottled_usec 0\nnr_bursts 0\nburst_usec 0\n",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\n",
+          "memory.current": "2833530880\n",
+          "pids.current": "57\n",
+          "io.pressure": "some avg10=0.16 avg60=0.42 avg300=0.66 total=520997067\nfull avg10=0.12 avg60=0.30 avg300=0.52 total=425627922\n"
+        }
+      },
+      "exitCode": 0,
+      "error": null,
+      "totals": {
+        "tests": 98,
+        "pass": 98,
+        "fail": 0,
+        "cancelled": 0,
+        "skipped": 0
+      },
+      "roots": {
+        "rootFailureCount": 0,
+        "upstreamRootFailureCount": 0,
+        "dependentFailureCount": 0,
+        "roots": []
+      },
+      "captureLogs": [
+        "captures/189876/events.jsonl",
+        "captures/191302/events.jsonl",
+        "captures/191503/events.jsonl"
+      ]
+    },
+    {
+      "mode": "suite",
+      "index": 5,
+      "start": "2026-11-11T23:29:49.106Z",
+      "end": "2026-11-11T23:33:24.640Z",
+      "loadStart": {
+        "loadavg": [
+          42.58,
+          47.92,
+          64.95
+        ],
+        "freeMemoryBytes": 8425346048,
+        "processCpu": {
+          "user": 452944,
+          "system": 183977
+        },
+        "cgroup": {
+          "cpu.pressure": "some avg10=1.61 avg60=2.16 avg300=2.75 total=4831554119\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=2689131619\n",
+          "cpu.stat": "usage_usec 48304280995\nuser_usec 39832570936\nsystem_usec 8471710059\nnice_usec 2680000\ncore_sched.force_idle_usec 0\nnr_periods 0\nnr_throttled 0\nthrottled_usec 0\nnr_bursts 0\nburst_usec 0\n",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\n",
+          "memory.current": "2833166336\n",
+          "pids.current": "57\n",
+          "io.pressure": "some avg10=0.16 avg60=0.42 avg300=0.66 total=520997067\nfull avg10=0.12 avg60=0.30 avg300=0.52 total=425627922\n"
+        }
+      },
+      "loadEnd": {
+        "loadavg": [
+          39.57,
+          44.82,
+          60.33
+        ],
+        "freeMemoryBytes": 8425192448,
+        "processCpu": {
+          "user": 454631,
+          "system": 187847
+        },
+        "cgroup": {
+          "cpu.pressure": "some avg10=4.79 avg60=3.55 avg300=3.04 total=4839737439\nfull avg10=0.20 avg60=0.05 avg300=0.01 total=2690008837\n",
+          "cpu.stat": "usage_usec 48518774272\nuser_usec 40004558071\nsystem_usec 8514216201\nnice_usec 2680000\ncore_sched.force_idle_usec 0\nnr_periods 0\nnr_throttled 0\nthrottled_usec 0\nnr_bursts 0\nburst_usec 0\n",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\n",
+          "memory.current": "2915913728\n",
+          "pids.current": "57\n",
+          "io.pressure": "some avg10=0.00 avg60=0.00 avg300=0.30 total=521199286\nfull avg10=0.00 avg60=0.00 avg300=0.23 total=425747150\n"
+        }
+      },
+      "exitCode": 0,
+      "error": null,
+      "totals": {
+        "tests": 98,
+        "pass": 98,
+        "fail": 0,
+        "cancelled": 0,
+        "skipped": 0
+      },
+      "roots": {
+        "rootFailureCount": 0,
+        "upstreamRootFailureCount": 0,
+        "dependentFailureCount": 0,
+        "roots": []
+      },
+      "captureLogs": [
+        "captures/191759/events.jsonl",
+        "captures/193209/events.jsonl",
+        "captures/193410/events.jsonl"
+      ]
+    },
+    {
+      "mode": "suite",
+      "index": 6,
+      "start": "2026-11-11T23:33:24.647Z",
+      "end": "2026-11-11T23:37:05.927Z",
+      "loadStart": {
+        "loadavg": [
+          39.57,
+          44.82,
+          60.33
+        ],
+        "freeMemoryBytes": 8425602048,
+        "processCpu": {
+          "user": 457003,
+          "system": 190584
+        },
+        "cgroup": {
+          "cpu.pressure": "some avg10=4.79 avg60=3.55 avg300=3.04 total=4839737445\nfull avg10=0.20 avg60=0.05 avg300=0.01 total=2690008844\n",
+          "cpu.stat": "usage_usec 48518778540\nuser_usec 40004560463\nsystem_usec 8514218076\nnice_usec 2680000\ncore_sched.force_idle_usec 0\nnr_periods 0\nnr_throttled 0\nthrottled_usec 0\nnr_bursts 0\nburst_usec 0\n",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\n",
+          "memory.current": "2915504128\n",
+          "pids.current": "57\n",
+          "io.pressure": "some avg10=0.00 avg60=0.00 avg300=0.30 total=521199286\nfull avg10=0.00 avg60=0.00 avg300=0.23 total=425747150\n"
+        }
+      },
+      "loadEnd": {
+        "loadavg": [
+          53.76,
+          51.59,
+          59.85
+        ],
+        "freeMemoryBytes": 8424518656,
+        "processCpu": {
+          "user": 459124,
+          "system": 193630
+        },
+        "cgroup": {
+          "cpu.pressure": "some avg10=2.26 avg60=2.22 avg300=2.83 total=4847241365\nfull avg10=0.00 avg60=0.01 avg300=0.00 total=2690859498\n",
+          "cpu.stat": "usage_usec 48741323484\nuser_usec 40178174138\nsystem_usec 8563149345\nnice_usec 2680000\ncore_sched.force_idle_usec 0\nnr_periods 0\nnr_throttled 0\nthrottled_usec 0\nnr_bursts 0\nburst_usec 0\n",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\n",
+          "memory.current": "2997010432\n",
+          "pids.current": "57\n",
+          "io.pressure": "some avg10=0.84 avg60=0.57 avg300=0.41 total=522538821\nfull avg10=0.63 avg60=0.46 avg300=0.32 total=426805376\n"
+        }
+      },
+      "exitCode": 0,
+      "error": null,
+      "totals": {
+        "tests": 98,
+        "pass": 98,
+        "fail": 0,
+        "cancelled": 0,
+        "skipped": 0
+      },
+      "roots": {
+        "rootFailureCount": 0,
+        "upstreamRootFailureCount": 0,
+        "dependentFailureCount": 0,
+        "roots": []
+      },
+      "captureLogs": [
+        "captures/193663/events.jsonl",
+        "captures/195092/events.jsonl",
+        "captures/195311/events.jsonl"
+      ]
+    },
+    {
+      "mode": "suite",
+      "index": 7,
+      "start": "2026-11-11T23:37:05.934Z",
+      "end": "2026-11-11T23:40:53.877Z",
+      "loadStart": {
+        "loadavg": [
+          53.76,
+          51.59,
+          59.85
+        ],
+        "freeMemoryBytes": 8424330240,
+        "processCpu": {
+          "user": 462585,
+          "system": 194825
+        },
+        "cgroup": {
+          "cpu.pressure": "some avg10=2.26 avg60=2.22 avg300=2.83 total=4847241377\nfull avg10=0.00 avg60=0.01 avg300=0.00 total=2690859509\n",
+          "cpu.stat": "usage_usec 48741328040\nuser_usec 40178176769\nsystem_usec 8563151270\nnice_usec 2680000\ncore_sched.force_idle_usec 0\nnr_periods 0\nnr_throttled 0\nthrottled_usec 0\nnr_bursts 0\nburst_usec 0\n",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\n",
+          "memory.current": "2997198848\n",
+          "pids.current": "57\n",
+          "io.pressure": "some avg10=0.84 avg60=0.57 avg300=0.41 total=522538821\nfull avg10=0.63 avg60=0.46 avg300=0.32 total=426805376\n"
+        }
+      },
+      "loadEnd": {
+        "loadavg": [
+          61.28,
+          57.67,
+          60.52
+        ],
+        "freeMemoryBytes": 8424960000,
+        "processCpu": {
+          "user": 467482,
+          "system": 198780
+        },
+        "cgroup": {
+          "cpu.pressure": "some avg10=2.62 avg60=2.77 avg300=3.40 total=4858420405\nfull avg10=0.00 avg60=0.01 avg300=0.00 total=2691777135\n",
+          "cpu.stat": "usage_usec 48985797801\nuser_usec 40350565919\nsystem_usec 8635231881\nnice_usec 2680000\ncore_sched.force_idle_usec 0\nnr_periods 0\nnr_throttled 0\nthrottled_usec 0\nnr_bursts 0\nburst_usec 0\n",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\n",
+          "memory.current": "3066273792\n",
+          "pids.current": "57\n",
+          "io.pressure": "some avg10=0.05 avg60=1.01 avg300=0.80 total=525420670\nfull avg10=0.03 avg60=0.75 avg300=0.55 total=428781382\n"
+        }
+      },
+      "exitCode": 0,
+      "error": null,
+      "totals": {
+        "tests": 98,
+        "pass": 98,
+        "fail": 0,
+        "cancelled": 0,
+        "skipped": 0
+      },
+      "roots": {
+        "rootFailureCount": 0,
+        "upstreamRootFailureCount": 0,
+        "dependentFailureCount": 0,
+        "roots": []
+      },
+      "captureLogs": [
+        "captures/195564/events.jsonl",
+        "captures/197008/events.jsonl",
+        "captures/197209/events.jsonl"
+      ]
+    },
+    {
+      "mode": "suite",
+      "index": 8,
+      "start": "2026-11-11T23:40:53.884Z",
+      "end": "2026-11-11T23:44:33.943Z",
+      "loadStart": {
+        "loadavg": [
+          61.28,
+          57.67,
+          60.52
+        ],
+        "freeMemoryBytes": 8424886272,
+        "processCpu": {
+          "user": 474437,
+          "system": 199763
+        },
+        "cgroup": {
+          "cpu.pressure": "some avg10=2.62 avg60=2.77 avg300=3.40 total=4858420422\nfull avg10=0.00 avg60=0.01 avg300=0.00 total=2691777152\n",
+          "cpu.stat": "usage_usec 48985808731\nuser_usec 40350575864\nsystem_usec 8635232867\nnice_usec 2680000\ncore_sched.force_idle_usec 0\nnr_periods 0\nnr_throttled 0\nthrottled_usec 0\nnr_bursts 0\nburst_usec 0\n",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\n",
+          "memory.current": "3066314752\n",
+          "pids.current": "57\n",
+          "io.pressure": "some avg10=0.05 avg60=1.01 avg300=0.80 total=525420670\nfull avg10=0.03 avg60=0.75 avg300=0.55 total=428781382\n"
+        }
+      },
+      "loadEnd": {
+        "loadavg": [
+          46.62,
+          52.66,
+          57.92
+        ],
+        "freeMemoryBytes": 8423695360,
+        "processCpu": {
+          "user": 475406,
+          "system": 203642
+        },
+        "cgroup": {
+          "cpu.pressure": "some avg10=3.04 avg60=2.66 avg300=3.02 total=4865701877\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=2692595529\n",
+          "cpu.stat": "usage_usec 49206145880\nuser_usec 40521070633\nsystem_usec 8685075246\nnice_usec 2680000\ncore_sched.force_idle_usec 0\nnr_periods 0\nnr_throttled 0\nthrottled_usec 0\nnr_bursts 0\nburst_usec 0\n",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\n",
+          "memory.current": "3149484032\n",
+          "pids.current": "57\n",
+          "io.pressure": "some avg10=0.03 avg60=0.21 avg300=0.59 total=526874937\nfull avg10=0.02 avg60=0.16 avg300=0.43 total=429931812\n"
+        }
+      },
+      "exitCode": 0,
+      "error": null,
+      "totals": {
+        "tests": 98,
+        "pass": 98,
+        "fail": 0,
+        "cancelled": 0,
+        "skipped": 0
+      },
+      "roots": {
+        "rootFailureCount": 0,
+        "upstreamRootFailureCount": 0,
+        "dependentFailureCount": 0,
+        "roots": []
+      },
+      "captureLogs": [
+        "captures/197475/events.jsonl",
+        "captures/198906/events.jsonl",
+        "captures/199125/events.jsonl"
+      ]
+    },
+    {
+      "mode": "suite",
+      "index": 9,
+      "start": "2026-11-11T23:44:33.950Z",
+      "end": "2026-11-11T23:48:17.580Z",
+      "loadStart": {
+        "loadavg": [
+          46.62,
+          52.66,
+          57.92
+        ],
+        "freeMemoryBytes": 8423773184,
+        "processCpu": {
+          "user": 476651,
+          "system": 208410
+        },
+        "cgroup": {
+          "cpu.pressure": "some avg10=3.04 avg60=2.66 avg300=3.02 total=4865701919\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=2692595572\n",
+          "cpu.stat": "usage_usec 49206151526\nuser_usec 40521072333\nsystem_usec 8685079192\nnice_usec 2680000\ncore_sched.force_idle_usec 0\nnr_periods 0\nnr_throttled 0\nthrottled_usec 0\nnr_bursts 0\nburst_usec 0\n",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\n",
+          "memory.current": "3149406208\n",
+          "pids.current": "57\n",
+          "io.pressure": "some avg10=0.03 avg60=0.21 avg300=0.59 total=526874937\nfull avg10=0.02 avg60=0.16 avg300=0.43 total=429931812\n"
+        }
+      },
+      "loadEnd": {
+        "loadavg": [
+          41.2,
+          48.79,
+          55.4
+        ],
+        "freeMemoryBytes": 8423977984,
+        "processCpu": {
+          "user": 479508,
+          "system": 211342
+        },
+        "cgroup": {
+          "cpu.pressure": "some avg10=3.35 avg60=2.49 avg300=2.83 total=4873296936\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=2693455417\n",
+          "cpu.stat": "usage_usec 49429657717\nuser_usec 40694700957\nsystem_usec 8734956759\nnice_usec 2680000\ncore_sched.force_idle_usec 0\nnr_periods 0\nnr_throttled 0\nthrottled_usec 0\nnr_bursts 0\nburst_usec 0\n",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\n",
+          "memory.current": "3217924096\n",
+          "pids.current": "57\n",
+          "io.pressure": "some avg10=0.00 avg60=0.34 avg300=0.52 total=528301552\nfull avg10=0.00 avg60=0.26 avg300=0.37 total=430981789\n"
+        }
+      },
+      "exitCode": 0,
+      "error": null,
+      "totals": {
+        "tests": 98,
+        "pass": 98,
+        "fail": 0,
+        "cancelled": 0,
+        "skipped": 0
+      },
+      "roots": {
+        "rootFailureCount": 0,
+        "upstreamRootFailureCount": 0,
+        "dependentFailureCount": 0,
+        "roots": []
+      },
+      "captureLogs": [
+        "captures/199384/events.jsonl",
+        "captures/200831/events.jsonl",
+        "captures/201036/events.jsonl"
+      ]
+    },
+    {
+      "mode": "suite",
+      "index": 10,
+      "start": "2026-11-11T23:48:17.590Z",
+      "end": "2026-11-11T23:51:59.440Z",
+      "loadStart": {
+        "loadavg": [
+          41.2,
+          48.79,
+          55.4
+        ],
+        "freeMemoryBytes": 8424662016,
+        "processCpu": {
+          "user": 484848,
+          "system": 213492
+        },
+        "cgroup": {
+          "cpu.pressure": "some avg10=3.35 avg60=2.49 avg300=2.83 total=4873296985\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=2693455467\n",
+          "cpu.stat": "usage_usec 49429666052\nuser_usec 40694706228\nsystem_usec 8734959823\nnice_usec 2680000\ncore_sched.force_idle_usec 0\nnr_periods 0\nnr_throttled 0\nthrottled_usec 0\nnr_bursts 0\nburst_usec 0\n",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\n",
+          "memory.current": "3217240064\n",
+          "pids.current": "57\n",
+          "io.pressure": "some avg10=0.00 avg60=0.34 avg300=0.52 total=528301552\nfull avg10=0.00 avg60=0.26 avg300=0.37 total=430981789\n"
+        }
+      },
+      "loadEnd": {
+        "loadavg": [
+          40.31,
+          46.39,
+          52.98
+        ],
+        "freeMemoryBytes": 8425101312,
+        "processCpu": {
+          "user": 486759,
+          "system": 218443
+        },
+        "cgroup": {
+          "cpu.pressure": "some avg10=2.53 avg60=2.28 avg300=2.73 total=4880727789\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=2694299159\n",
+          "cpu.stat": "usage_usec 49653216185\nuser_usec 40868756459\nsystem_usec 8784459726\nnice_usec 2680000\ncore_sched.force_idle_usec 0\nnr_periods 0\nnr_throttled 0\nthrottled_usec 0\nnr_bursts 0\nburst_usec 0\n",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\n",
+          "memory.current": "2788786176\n",
+          "pids.current": "57\n",
+          "io.pressure": "some avg10=0.54 avg60=0.16 avg300=0.32 total=528930409\nfull avg10=0.36 avg60=0.10 avg300=0.21 total=431462409\n"
+        }
+      },
+      "exitCode": 0,
+      "error": null,
+      "totals": {
+        "tests": 98,
+        "pass": 98,
+        "fail": 0,
+        "cancelled": 0,
+        "skipped": 0
+      },
+      "roots": {
+        "rootFailureCount": 0,
+        "upstreamRootFailureCount": 0,
+        "dependentFailureCount": 0,
+        "roots": []
+      },
+      "captureLogs": [
+        "captures/201290/events.jsonl",
+        "captures/202728/events.jsonl",
+        "captures/202945/events.jsonl"
+      ]
+    },
+    {
+      "mode": "suite",
+      "index": 11,
+      "start": "2026-11-11T23:51:59.449Z",
+      "end": "2026-11-11T23:55:41.823Z",
+      "loadStart": {
+        "loadavg": [
+          40.31,
+          46.39,
+          52.98
+        ],
+        "freeMemoryBytes": 8425482240,
+        "processCpu": {
+          "user": 490052,
+          "system": 222569
+        },
+        "cgroup": {
+          "cpu.pressure": "some avg10=2.53 avg60=2.28 avg300=2.73 total=4880727810\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=2694299180\n",
+          "cpu.stat": "usage_usec 49653223240\nuser_usec 40868760322\nsystem_usec 8784462918\nnice_usec 2680000\ncore_sched.force_idle_usec 0\nnr_periods 0\nnr_throttled 0\nthrottled_usec 0\nnr_bursts 0\nburst_usec 0\n",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\n",
+          "memory.current": "2788937728\n",
+          "pids.current": "57\n",
+          "io.pressure": "some avg10=0.54 avg60=0.16 avg300=0.32 total=528930409\nfull avg10=0.36 avg60=0.10 avg300=0.21 total=431462409\n"
+        }
+      },
+      "loadEnd": {
+        "loadavg": [
+          34.7,
+          40.53,
+          49.3
+        ],
+        "freeMemoryBytes": 8425349120,
+        "processCpu": {
+          "user": 491890,
+          "system": 225608
+        },
+        "cgroup": {
+          "cpu.pressure": "some avg10=2.35 avg60=2.27 avg300=2.61 total=4887845344\nfull avg10=0.03 avg60=0.04 avg300=0.00 total=2695075161\n",
+          "cpu.stat": "usage_usec 49873220269\nuser_usec 41042821894\nsystem_usec 8830398375\nnice_usec 2680000\ncore_sched.force_idle_usec 0\nnr_periods 0\nnr_throttled 0\nthrottled_usec 0\nnr_bursts 0\nburst_usec 0\n",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\n",
+          "memory.current": "2348318720\n",
+          "pids.current": "57\n",
+          "io.pressure": "some avg10=0.72 avg60=0.40 avg300=0.47 total=530835775\nfull avg10=0.54 avg60=0.28 avg300=0.33 total=432935571\n"
+        }
+      },
+      "exitCode": 0,
+      "error": null,
+      "totals": {
+        "tests": 98,
+        "pass": 98,
+        "fail": 0,
+        "cancelled": 0,
+        "skipped": 0
+      },
+      "roots": {
+        "rootFailureCount": 0,
+        "upstreamRootFailureCount": 0,
+        "dependentFailureCount": 0,
+        "roots": []
+      },
+      "captureLogs": [
+        "captures/203208/events.jsonl",
+        "captures/204656/events.jsonl",
+        "captures/204868/events.jsonl"
+      ]
+    },
+    {
+      "mode": "suite",
+      "index": 12,
+      "start": "2026-11-11T23:55:41.830Z",
+      "end": "2026-11-11T23:59:23.595Z",
+      "loadStart": {
+        "loadavg": [
+          34.7,
+          40.53,
+          49.3
+        ],
+        "freeMemoryBytes": 8424539136,
+        "processCpu": {
+          "user": 495605,
+          "system": 225820
+        },
+        "cgroup": {
+          "cpu.pressure": "some avg10=2.35 avg60=2.27 avg300=2.61 total=4887845384\nfull avg10=0.03 avg60=0.04 avg300=0.00 total=2695075201\n",
+          "cpu.stat": "usage_usec 49873223576\nuser_usec 41042825201\nsystem_usec 8830398375\nnice_usec 2680000\ncore_sched.force_idle_usec 0\nnr_periods 0\nnr_throttled 0\nthrottled_usec 0\nnr_bursts 0\nburst_usec 0\n",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\n",
+          "memory.current": "2347704320\n",
+          "pids.current": "57\n",
+          "io.pressure": "some avg10=0.72 avg60=0.40 avg300=0.47 total=530835775\nfull avg10=0.54 avg60=0.28 avg300=0.33 total=432935571\n"
+        }
+      },
+      "loadEnd": {
+        "loadavg": [
+          36.34,
+          39.42,
+          47.02
+        ],
+        "freeMemoryBytes": 8424231936,
+        "processCpu": {
+          "user": 498776,
+          "system": 229437
+        },
+        "cgroup": {
+          "cpu.pressure": "some avg10=1.45 avg60=1.83 avg300=2.49 total=4894991563\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=2695774689\n",
+          "cpu.stat": "usage_usec 50099984439\nuser_usec 41211936746\nsystem_usec 8888047692\nnice_usec 2680000\ncore_sched.force_idle_usec 0\nnr_periods 0\nnr_throttled 0\nthrottled_usec 0\nnr_bursts 0\nburst_usec 0\n",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\n",
+          "memory.current": "2375839744\n",
+          "pids.current": "57\n",
+          "io.pressure": "some avg10=0.01 avg60=0.34 avg300=0.41 total=531931955\nfull avg10=0.01 avg60=0.28 avg300=0.31 total=433812501\n"
+        }
+      },
+      "exitCode": 0,
+      "error": null,
+      "totals": {
+        "tests": 98,
+        "pass": 98,
+        "fail": 0,
+        "cancelled": 0,
+        "skipped": 0
+      },
+      "roots": {
+        "rootFailureCount": 0,
+        "upstreamRootFailureCount": 0,
+        "dependentFailureCount": 0,
+        "roots": []
+      },
+      "captureLogs": [
+        "captures/205134/events.jsonl",
+        "captures/206565/events.jsonl",
+        "captures/206766/events.jsonl"
+      ]
+    },
+    {
+      "mode": "suite",
+      "index": 13,
+      "start": "2026-11-11T23:59:23.603Z",
+      "end": "2026-11-12T00:03:31.213Z",
+      "loadStart": {
+        "loadavg": [
+          36.34,
+          39.42,
+          47.02
+        ],
+        "freeMemoryBytes": 8425264128,
+        "processCpu": {
+          "user": 512048,
+          "system": 230571
+        },
+        "cgroup": {
+          "cpu.pressure": "some avg10=1.45 avg60=1.83 avg300=2.49 total=4894991882\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=2695774694\n",
+          "cpu.stat": "usage_usec 50099990941\nuser_usec 41211943248\nsystem_usec 8888047692\nnice_usec 2680000\ncore_sched.force_idle_usec 0\nnr_periods 0\nnr_throttled 0\nthrottled_usec 0\nnr_bursts 0\nburst_usec 0\n",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\n",
+          "memory.current": "2375118848\n",
+          "pids.current": "57\n",
+          "io.pressure": "some avg10=0.01 avg60=0.34 avg300=0.41 total=531931955\nfull avg10=0.01 avg60=0.28 avg300=0.31 total=433812501\n"
+        }
+      },
+      "loadEnd": {
+        "loadavg": [
+          46.63,
+          70.47,
+          61.03
+        ],
+        "freeMemoryBytes": 8423049216,
+        "processCpu": {
+          "user": 522066,
+          "system": 235578
+        },
+        "cgroup": {
+          "cpu.pressure": "some avg10=2.22 avg60=3.16 avg300=3.90 total=4910434059\nfull avg10=0.00 avg60=0.01 avg300=0.04 total=2697109237\n",
+          "cpu.stat": "usage_usec 50374748519\nuser_usec 41385322031\nsystem_usec 8989426488\nnice_usec 2772000\ncore_sched.force_idle_usec 0\nnr_periods 0\nnr_throttled 0\nthrottled_usec 0\nnr_bursts 0\nburst_usec 0\n",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\n",
+          "memory.current": "2425434112\n",
+          "pids.current": "57\n",
+          "io.pressure": "some avg10=0.00 avg60=0.34 avg300=0.89 total=536213161\nfull avg10=0.00 avg60=0.28 avg300=0.77 total=437631906\n"
+        }
+      },
+      "exitCode": 0,
+      "error": null,
+      "totals": {
+        "tests": 98,
+        "pass": 98,
+        "fail": 0,
+        "cancelled": 0,
+        "skipped": 0
+      },
+      "roots": {
+        "rootFailureCount": 0,
+        "upstreamRootFailureCount": 0,
+        "dependentFailureCount": 0,
+        "roots": []
+      },
+      "captureLogs": [
+        "captures/207027/events.jsonl",
+        "captures/208496/events.jsonl",
+        "captures/208708/events.jsonl"
+      ]
+    },
+    {
+      "mode": "suite",
+      "index": 14,
+      "start": "2026-11-12T00:03:31.222Z",
+      "end": "2026-11-12T00:07:09.888Z",
+      "loadStart": {
+        "loadavg": [
+          46.63,
+          70.47,
+          61.03
+        ],
+        "freeMemoryBytes": 8424511488,
+        "processCpu": {
+          "user": 530961,
+          "system": 238982
+        },
+        "cgroup": {
+          "cpu.pressure": "some avg10=2.22 avg60=3.16 avg300=3.90 total=4910434848\nfull avg10=0.00 avg60=0.01 avg300=0.04 total=2697109360\n",
+          "cpu.stat": "usage_usec 50374760971\nuser_usec 41385331221\nsystem_usec 8989429750\nnice_usec 2772000\ncore_sched.force_idle_usec 0\nnr_periods 0\nnr_throttled 0\nthrottled_usec 0\nnr_bursts 0\nburst_usec 0\n",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\n",
+          "memory.current": "2423980032\n",
+          "pids.current": "57\n",
+          "io.pressure": "some avg10=0.00 avg60=0.34 avg300=0.89 total=536213161\nfull avg10=0.00 avg60=0.28 avg300=0.77 total=437631906\n"
+        }
+      },
+      "loadEnd": {
+        "loadavg": [
+          36.91,
+          52.79,
+          55.84
+        ],
+        "freeMemoryBytes": 8424953856,
+        "processCpu": {
+          "user": 533734,
+          "system": 243335
+        },
+        "cgroup": {
+          "cpu.pressure": "some avg10=4.58 avg60=3.89 avg300=3.60 total=4918683238\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=2697940070\n",
+          "cpu.stat": "usage_usec 50592215279\nuser_usec 41557474545\nsystem_usec 9034740734\nnice_usec 2772000\ncore_sched.force_idle_usec 0\nnr_periods 0\nnr_throttled 0\nthrottled_usec 0\nnr_bursts 0\nburst_usec 0\n",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\n",
+          "memory.current": "2504441856\n",
+          "pids.current": "57\n",
+          "io.pressure": "some avg10=0.11 avg60=0.34 avg300=0.61 total=537313992\nfull avg10=0.09 avg60=0.25 avg300=0.50 total=438430563\n"
+        }
+      },
+      "exitCode": 0,
+      "error": null,
+      "totals": {
+        "tests": 98,
+        "pass": 98,
+        "fail": 0,
+        "cancelled": 0,
+        "skipped": 0
+      },
+      "roots": {
+        "rootFailureCount": 0,
+        "upstreamRootFailureCount": 0,
+        "dependentFailureCount": 0,
+        "roots": []
+      },
+      "captureLogs": [
+        "captures/208967/events.jsonl",
+        "captures/210421/events.jsonl",
+        "captures/210633/events.jsonl"
+      ]
+    },
+    {
+      "mode": "suite",
+      "index": 15,
+      "start": "2026-11-12T00:07:09.895Z",
+      "end": "2026-11-12T00:10:47.281Z",
+      "loadStart": {
+        "loadavg": [
+          36.91,
+          52.79,
+          55.84
+        ],
+        "freeMemoryBytes": 8424523776,
+        "processCpu": {
+          "user": 551675,
+          "system": 247854
+        },
+        "cgroup": {
+          "cpu.pressure": "some avg10=4.58 avg60=3.89 avg300=3.60 total=4918684095\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=2697940092\n",
+          "cpu.stat": "usage_usec 50592230316\nuser_usec 41557485106\nsystem_usec 9034745210\nnice_usec 2772000\ncore_sched.force_idle_usec 0\nnr_periods 0\nnr_throttled 0\nthrottled_usec 0\nnr_bursts 0\nburst_usec 0\n",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\n",
+          "memory.current": "2504871936\n",
+          "pids.current": "57\n",
+          "io.pressure": "some avg10=0.11 avg60=0.34 avg300=0.61 total=537313992\nfull avg10=0.09 avg60=0.25 avg300=0.50 total=438430563\n"
+        }
+      },
+      "loadEnd": {
+        "loadavg": [
+          103.04,
+          58.21,
+          56.16
+        ],
+        "freeMemoryBytes": 8423824384,
+        "processCpu": {
+          "user": 556751,
+          "system": 252340
+        },
+        "cgroup": {
+          "cpu.pressure": "some avg10=2.20 avg60=2.83 avg300=3.50 total=4927730698\nfull avg10=0.00 avg60=0.02 avg300=0.00 total=2698848927\n",
+          "cpu.stat": "usage_usec 50809367374\nuser_usec 41726388746\nsystem_usec 9082978628\nnice_usec 2772000\ncore_sched.force_idle_usec 0\nnr_periods 0\nnr_throttled 0\nthrottled_usec 0\nnr_bursts 0\nburst_usec 0\n",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\n",
+          "memory.current": "2587164672\n",
+          "pids.current": "57\n",
+          "io.pressure": "some avg10=0.11 avg60=0.29 avg300=0.42 total=538153558\nfull avg10=0.08 avg60=0.22 avg300=0.33 total=439043314\n"
+        }
+      },
+      "exitCode": 0,
+      "error": null,
+      "totals": {
+        "tests": 98,
+        "pass": 98,
+        "fail": 0,
+        "cancelled": 0,
+        "skipped": 0
+      },
+      "roots": {
+        "rootFailureCount": 0,
+        "upstreamRootFailureCount": 0,
+        "dependentFailureCount": 0,
+        "roots": []
+      },
+      "captureLogs": [
+        "captures/210892/events.jsonl",
+        "captures/212321/events.jsonl",
+        "captures/212525/events.jsonl"
+      ]
+    },
+    {
+      "mode": "suite",
+      "index": 16,
+      "start": "2026-11-12T00:10:47.287Z",
+      "end": "2026-11-12T00:14:31.484Z",
+      "loadStart": {
+        "loadavg": [
+          103.04,
+          58.21,
+          56.16
+        ],
+        "freeMemoryBytes": 8423988224,
+        "processCpu": {
+          "user": 558812,
+          "system": 254369
+        },
+        "cgroup": {
+          "cpu.pressure": "some avg10=2.20 avg60=2.83 avg300=3.50 total=4927730723\nfull avg10=0.00 avg60=0.02 avg300=0.00 total=2698848951\n",
+          "cpu.stat": "usage_usec 50809371691\nuser_usec 41726391002\nsystem_usec 9082980688\nnice_usec 2772000\ncore_sched.force_idle_usec 0\nnr_periods 0\nnr_throttled 0\nthrottled_usec 0\nnr_bursts 0\nburst_usec 0\n",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\n",
+          "memory.current": "2587033600\n",
+          "pids.current": "57\n",
+          "io.pressure": "some avg10=0.11 avg60=0.29 avg300=0.42 total=538153558\nfull avg10=0.08 avg60=0.22 avg300=0.33 total=439043314\n"
+        }
+      },
+      "loadEnd": {
+        "loadavg": [
+          52.24,
+          51.21,
+          53.48
+        ],
+        "freeMemoryBytes": 8425022464,
+        "processCpu": {
+          "user": 560604,
+          "system": 259743
+        },
+        "cgroup": {
+          "cpu.pressure": "some avg10=3.96 avg60=2.97 avg300=3.04 total=4934778654\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=2699611530\n",
+          "cpu.stat": "usage_usec 51033341629\nuser_usec 41899993238\nsystem_usec 9133348391\nnice_usec 2772000\ncore_sched.force_idle_usec 0\nnr_periods 0\nnr_throttled 0\nthrottled_usec 0\nnr_bursts 0\nburst_usec 0\n",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\n",
+          "memory.current": "2645544960\n",
+          "pids.current": "57\n",
+          "io.pressure": "some avg10=3.76 avg60=0.89 avg300=0.49 total=539507023\nfull avg10=3.43 avg60=0.80 avg300=0.41 total=440228311\n"
+        }
+      },
+      "exitCode": 0,
+      "error": null,
+      "totals": {
+        "tests": 98,
+        "pass": 98,
+        "fail": 0,
+        "cancelled": 0,
+        "skipped": 0
+      },
+      "roots": {
+        "rootFailureCount": 0,
+        "upstreamRootFailureCount": 0,
+        "dependentFailureCount": 0,
+        "roots": []
+      },
+      "captureLogs": [
+        "captures/212804/events.jsonl",
+        "captures/214232/events.jsonl",
+        "captures/214443/events.jsonl"
+      ]
+    },
+    {
+      "mode": "suite",
+      "index": 17,
+      "start": "2026-11-12T00:14:31.490Z",
+      "end": "2026-11-12T00:18:36.039Z",
+      "loadStart": {
+        "loadavg": [
+          52.24,
+          51.21,
+          53.48
+        ],
+        "freeMemoryBytes": 8425120768,
+        "processCpu": {
+          "user": 562741,
+          "system": 261810
+        },
+        "cgroup": {
+          "cpu.pressure": "some avg10=3.96 avg60=2.97 avg300=3.04 total=4934778673\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=2699611550\n",
+          "cpu.stat": "usage_usec 51033345681\nuser_usec 41899995276\nsystem_usec 9133350404\nnice_usec 2772000\ncore_sched.force_idle_usec 0\nnr_periods 0\nnr_throttled 0\nthrottled_usec 0\nnr_bursts 0\nburst_usec 0\n",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\n",
+          "memory.current": "2645446656\n",
+          "pids.current": "57\n",
+          "io.pressure": "some avg10=3.76 avg60=0.89 avg300=0.49 total=539507023\nfull avg10=3.43 avg60=0.80 avg300=0.41 total=440228311\n"
+        }
+      },
+      "loadEnd": {
+        "loadavg": [
+          59.01,
+          59.3,
+          56.75
+        ],
+        "freeMemoryBytes": 8425202688,
+        "processCpu": {
+          "user": 564299,
+          "system": 265140
+        },
+        "cgroup": {
+          "cpu.pressure": "some avg10=3.24 avg60=4.23 avg300=4.22 total=4949767051\nfull avg10=0.06 avg60=0.09 avg300=0.06 total=2701193580\n",
+          "cpu.stat": "usage_usec 51281169464\nuser_usec 42074588878\nsystem_usec 9206580586\nnice_usec 2772000\ncore_sched.force_idle_usec 0\nnr_periods 0\nnr_throttled 0\nthrottled_usec 0\nnr_bursts 0\nburst_usec 0\n",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\n",
+          "memory.current": "2726322176\n",
+          "pids.current": "57\n",
+          "io.pressure": "some avg10=6.20 avg60=2.35 avg300=1.26 total=544201457\nfull avg10=6.01 avg60=2.09 avg300=1.05 total=444182572\n"
+        }
+      },
+      "exitCode": 0,
+      "error": null,
+      "totals": {
+        "tests": 98,
+        "pass": 98,
+        "fail": 0,
+        "cancelled": 0,
+        "skipped": 0
+      },
+      "roots": {
+        "rootFailureCount": 0,
+        "upstreamRootFailureCount": 0,
+        "dependentFailureCount": 0,
+        "roots": []
+      },
+      "captureLogs": [
+        "captures/214706/events.jsonl",
+        "captures/216149/events.jsonl",
+        "captures/216356/events.jsonl"
+      ]
+    },
+    {
+      "mode": "suite",
+      "index": 18,
+      "start": "2026-11-12T00:18:36.047Z",
+      "end": "2026-11-12T00:22:30.550Z",
+      "loadStart": {
+        "loadavg": [
+          59.01,
+          59.3,
+          56.75
+        ],
+        "freeMemoryBytes": 8425116672,
+        "processCpu": {
+          "user": 569399,
+          "system": 269189
+        },
+        "cgroup": {
+          "cpu.pressure": "some avg10=3.24 avg60=4.23 avg300=4.22 total=4949767163\nfull avg10=0.06 avg60=0.09 avg300=0.06 total=2701193693\n",
+          "cpu.stat": "usage_usec 51281177019\nuser_usec 42074593328\nsystem_usec 9206583690\nnice_usec 2772000\ncore_sched.force_idle_usec 0\nnr_periods 0\nnr_throttled 0\nthrottled_usec 0\nnr_bursts 0\nburst_usec 0\n",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\n",
+          "memory.current": "2726178816\n",
+          "pids.current": "57\n",
+          "io.pressure": "some avg10=6.20 avg60=2.35 avg300=1.26 total=544201457\nfull avg10=6.01 avg60=2.09 avg300=1.05 total=444182572\n"
+        }
+      },
+      "loadEnd": {
+        "loadavg": [
+          56.29,
+          62.23,
+          58.82
+        ],
+        "freeMemoryBytes": 8421837824,
+        "processCpu": {
+          "user": 572020,
+          "system": 275009
+        },
+        "cgroup": {
+          "cpu.pressure": "some avg10=1.35 avg60=2.43 avg300=3.60 total=4958849820\nfull avg10=0.00 avg60=0.00 avg300=0.03 total=2702314399\n",
+          "cpu.stat": "usage_usec 51513002719\nuser_usec 42251911993\nsystem_usec 9261090725\nnice_usec 2772000\ncore_sched.force_idle_usec 0\nnr_periods 0\nnr_throttled 0\nthrottled_usec 0\nnr_bursts 0\nburst_usec 0\n",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\n",
+          "memory.current": "2799951872\n",
+          "pids.current": "58\n",
+          "io.pressure": "some avg10=5.64 avg60=1.66 avg300=1.26 total=547512237\nfull avg10=5.60 avg60=1.53 avg300=1.10 total=447052802\n"
+        }
+      },
+      "exitCode": 0,
+      "error": null,
+      "totals": {
+        "tests": 98,
+        "pass": 98,
+        "fail": 0,
+        "cancelled": 0,
+        "skipped": 0
+      },
+      "roots": {
+        "rootFailureCount": 0,
+        "upstreamRootFailureCount": 0,
+        "dependentFailureCount": 0,
+        "roots": []
+      },
+      "captureLogs": [
+        "captures/216623/events.jsonl",
+        "captures/218069/events.jsonl",
+        "captures/218301/events.jsonl"
+      ]
+    },
+    {
+      "mode": "suite",
+      "index": 19,
+      "start": "2026-11-12T00:22:30.563Z",
+      "end": "2026-11-12T00:26:19.304Z",
+      "loadStart": {
+        "loadavg": [
+          56.29,
+          62.23,
+          58.82
+        ],
+        "freeMemoryBytes": 8422870016,
+        "processCpu": {
+          "user": 575752,
+          "system": 275881
+        },
+        "cgroup": {
+          "cpu.pressure": "some avg10=1.35 avg60=2.43 avg300=3.60 total=4958849860\nfull avg10=0.00 avg60=0.00 avg300=0.03 total=2702314439\n",
+          "cpu.stat": "usage_usec 51513006845\nuser_usec 42251915276\nsystem_usec 9261091568\nnice_usec 2772000\ncore_sched.force_idle_usec 0\nnr_periods 0\nnr_throttled 0\nthrottled_usec 0\nnr_bursts 0\nburst_usec 0\n",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\n",
+          "memory.current": "2798919680\n",
+          "pids.current": "58\n",
+          "io.pressure": "some avg10=5.64 avg60=1.66 avg300=1.26 total=547516603\nfull avg10=5.60 avg60=1.53 avg300=1.10 total=447057168\n"
+        }
+      },
+      "loadEnd": {
+        "loadavg": [
+          62.28,
+          59.52,
+          58.3
+        ],
+        "freeMemoryBytes": 8421706752,
+        "processCpu": {
+          "user": 579614,
+          "system": 278334
+        },
+        "cgroup": {
+          "cpu.pressure": "some avg10=3.94 avg60=2.95 avg300=3.40 total=4967965152\nfull avg10=0.12 avg60=0.02 avg300=0.00 total=2703312194\n",
+          "cpu.stat": "usage_usec 51749120372\nuser_usec 42429985873\nsystem_usec 9319134498\nnice_usec 2772000\ncore_sched.force_idle_usec 0\nnr_periods 0\nnr_throttled 0\nthrottled_usec 0\nnr_bursts 0\nburst_usec 0\n",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\n",
+          "memory.current": "2783559680\n",
+          "pids.current": "58\n",
+          "io.pressure": "some avg10=1.29 avg60=1.06 avg300=1.04 total=549847944\nfull avg10=1.08 avg60=0.92 avg300=0.86 total=448814494\n"
+        }
+      },
+      "exitCode": 0,
+      "error": null,
+      "totals": {
+        "tests": 98,
+        "pass": 98,
+        "fail": 0,
+        "cancelled": 0,
+        "skipped": 0
+      },
+      "roots": {
+        "rootFailureCount": 0,
+        "upstreamRootFailureCount": 0,
+        "dependentFailureCount": 0,
+        "roots": []
+      },
+      "captureLogs": [
+        "captures/218562/events.jsonl",
+        "captures/219989/events.jsonl",
+        "captures/220203/events.jsonl"
+      ]
+    }
+  ],
+  "captureTraces": [
+    {
+      "path": "runs/fm2-2/run14-diagnostics/suite/00/captures/182195/events.jsonl",
+      "bytes": 1865,
+      "sha256": "cc6252bd719c76c6c6b00070bf7150e1abd1a46506f69d83b4277bf99df65a8d"
+    },
+    {
+      "path": "runs/fm2-2/run14-diagnostics/suite/00/captures/183647/events.jsonl",
+      "bytes": 1278444,
+      "sha256": "b43031f50694f9d2332c295ca8db6cdc0a86c64a3991cb903090fca9cc94d3c9"
+    },
+    {
+      "path": "runs/fm2-2/run14-diagnostics/suite/00/captures/183852/events.jsonl",
+      "bytes": 1262458,
+      "sha256": "f975fe2c9aee7053a3651fb358d407a1132cc5eadbdfbb66a77736a1ce4146ca"
+    },
+    {
+      "path": "runs/fm2-2/run14-diagnostics/suite/01/captures/184108/events.jsonl",
+      "bytes": 1864,
+      "sha256": "f6b9b0d61eb79c5c8ef9e956d72b6106fd83c53a125a72b418fcb4177423204f"
+    },
+    {
+      "path": "runs/fm2-2/run14-diagnostics/suite/01/captures/185552/events.jsonl",
+      "bytes": 1278563,
+      "sha256": "ff55b21be6ba3d5edd3b502eb8ec0306dfc2b7beb76307177a334137ad9bfb18"
+    },
+    {
+      "path": "runs/fm2-2/run14-diagnostics/suite/01/captures/185752/events.jsonl",
+      "bytes": 1261885,
+      "sha256": "95edbc4a9afeef781854e6850b2349fea887d34156d59b5381a3904f9f889b5d"
+    },
+    {
+      "path": "runs/fm2-2/run14-diagnostics/suite/02/captures/186010/events.jsonl",
+      "bytes": 1865,
+      "sha256": "0ef253712517bdbf2b6901e758b409e323cfceab1244b41f4d6b33dc4b03d5c1"
+    },
+    {
+      "path": "runs/fm2-2/run14-diagnostics/suite/02/captures/187460/events.jsonl",
+      "bytes": 1278514,
+      "sha256": "001e1e522773f1a371c97fa44a840dee999b288117b0310b341e2621ba3392a1"
+    },
+    {
+      "path": "runs/fm2-2/run14-diagnostics/suite/02/captures/187668/events.jsonl",
+      "bytes": 1262326,
+      "sha256": "fde88097246afedd8827a587f6f103957f6c7fb6bec5f9355390e2f69b486891"
+    },
+    {
+      "path": "runs/fm2-2/run14-diagnostics/suite/03/captures/187940/events.jsonl",
+      "bytes": 1863,
+      "sha256": "cd26cd04211497397c24571125801866991131adf62f95a6703b40fe0b33b0ad"
+    },
+    {
+      "path": "runs/fm2-2/run14-diagnostics/suite/03/captures/189394/events.jsonl",
+      "bytes": 1278211,
+      "sha256": "c9b826a51cf8c19cefd7c2963ffadbce362688c60ae0588dd0a6ef94b0112586"
+    },
+    {
+      "path": "runs/fm2-2/run14-diagnostics/suite/03/captures/189615/events.jsonl",
+      "bytes": 1262347,
+      "sha256": "21bd52c8d74a3476304e07f6e647a2b061ca49e475c1d4d9f6dc0f3ec14e77b2"
+    },
+    {
+      "path": "runs/fm2-2/run14-diagnostics/suite/04/captures/189876/events.jsonl",
+      "bytes": 1863,
+      "sha256": "20dcb1959633746958aa066dbeef99d7e53f14e688bac04ce49f8f59e75b5bc7"
+    },
+    {
+      "path": "runs/fm2-2/run14-diagnostics/suite/04/captures/191302/events.jsonl",
+      "bytes": 1278587,
+      "sha256": "6ef3c79f552711a18577e108a356f50f2bf2d9fc9668afc690b1662dcf4838d0"
+    },
+    {
+      "path": "runs/fm2-2/run14-diagnostics/suite/04/captures/191503/events.jsonl",
+      "bytes": 1262601,
+      "sha256": "dfd5d9dc5ec612b69a51ab73261ca429f7da5cb017ebc3198a2be63e55a18b8c"
+    },
+    {
+      "path": "runs/fm2-2/run14-diagnostics/suite/05/captures/191759/events.jsonl",
+      "bytes": 1865,
+      "sha256": "dc2945cbd401887877d75767d02cd28abf561dc83b65ded3c4dd52d02f222dba"
+    },
+    {
+      "path": "runs/fm2-2/run14-diagnostics/suite/05/captures/193209/events.jsonl",
+      "bytes": 1278798,
+      "sha256": "46dea589d68d48ccdbc08a4749a4e1b5fe186ba1002bb6aa3d83047acb08c5a3"
+    },
+    {
+      "path": "runs/fm2-2/run14-diagnostics/suite/05/captures/193410/events.jsonl",
+      "bytes": 1262285,
+      "sha256": "cf4a65ed27e32865c06cc4ffca25ed6cac33b08846a3838fe0745ebf3c9072c6"
+    },
+    {
+      "path": "runs/fm2-2/run14-diagnostics/suite/06/captures/193663/events.jsonl",
+      "bytes": 1864,
+      "sha256": "2e895c750517640e9e6bccd59b76dd635e2ac7a929ea9e2ef5149be7c27a2e99"
+    },
+    {
+      "path": "runs/fm2-2/run14-diagnostics/suite/06/captures/195092/events.jsonl",
+      "bytes": 1278654,
+      "sha256": "5867717ab0928dca836c926aba6bc3536e882f594fc9a7123488ce20ff9d93db"
+    },
+    {
+      "path": "runs/fm2-2/run14-diagnostics/suite/06/captures/195311/events.jsonl",
+      "bytes": 1261818,
+      "sha256": "36215389c8d103a10898aaf453979f22413bd84d46771d3bbf180dffea9b12ca"
+    },
+    {
+      "path": "runs/fm2-2/run14-diagnostics/suite/07/captures/195564/events.jsonl",
+      "bytes": 1865,
+      "sha256": "57bf9e9c7c8911643c931f4e0346650ca6927f0e0ab5474c24a60c59187f2e01"
+    },
+    {
+      "path": "runs/fm2-2/run14-diagnostics/suite/07/captures/197008/events.jsonl",
+      "bytes": 1278736,
+      "sha256": "f783a517eb87efd36133945004454b9f570ea022c327eeea6352cf954b7da333"
+    },
+    {
+      "path": "runs/fm2-2/run14-diagnostics/suite/07/captures/197209/events.jsonl",
+      "bytes": 1262092,
+      "sha256": "e26d2b9e1d4af2568da53a965bdd3052ce803ad957580df2e74b16d94aa8818e"
+    },
+    {
+      "path": "runs/fm2-2/run14-diagnostics/suite/08/captures/197475/events.jsonl",
+      "bytes": 1865,
+      "sha256": "84e8bd073ce0d8ccd9fbc1614780682704c8e7c5e86a254413770afc227702dd"
+    },
+    {
+      "path": "runs/fm2-2/run14-diagnostics/suite/08/captures/198906/events.jsonl",
+      "bytes": 1278770,
+      "sha256": "d3183b19e918a1227494f713ef948a26b923bfa62b134f59cc4b72bdaeca8be5"
+    },
+    {
+      "path": "runs/fm2-2/run14-diagnostics/suite/08/captures/199125/events.jsonl",
+      "bytes": 1262371,
+      "sha256": "5e60a0f2755212ba7f9c280e42e61d53ec65111bed50ef079948b7f267e7ca9d"
+    },
+    {
+      "path": "runs/fm2-2/run14-diagnostics/suite/09/captures/199384/events.jsonl",
+      "bytes": 1861,
+      "sha256": "60937cad65df28a59d615c0bd082893e1fc87503fbacdd4c04e888590dd1a2e4"
+    },
+    {
+      "path": "runs/fm2-2/run14-diagnostics/suite/09/captures/200831/events.jsonl",
+      "bytes": 1278743,
+      "sha256": "156a2538202a00b8dd2db6fea960ef17b9074ad3867ed07dff8f4dd28da497aa"
+    },
+    {
+      "path": "runs/fm2-2/run14-diagnostics/suite/09/captures/201036/events.jsonl",
+      "bytes": 1262214,
+      "sha256": "8604fba8138b6bec14fe20ace12de0d8e945104a076acf46ff3c9237b3c141a2"
+    },
+    {
+      "path": "runs/fm2-2/run14-diagnostics/suite/10/captures/201290/events.jsonl",
+      "bytes": 1864,
+      "sha256": "dc5ea5a101a8b28b1f6f2d45a66b4b4647661a835e3cf96f99f59ba03d1da9b7"
+    },
+    {
+      "path": "runs/fm2-2/run14-diagnostics/suite/10/captures/202728/events.jsonl",
+      "bytes": 1278265,
+      "sha256": "06874d9b5062d945b54ef1b848f1dc64d169ee7427fe81e31abcc58d5de08d2d"
+    },
+    {
+      "path": "runs/fm2-2/run14-diagnostics/suite/10/captures/202945/events.jsonl",
+      "bytes": 1262344,
+      "sha256": "c5b561e7992cbbd8899eb6a62ca70371a3f81ce18b857f634a9aadf7bf2d5a99"
+    },
+    {
+      "path": "runs/fm2-2/run14-diagnostics/suite/11/captures/203208/events.jsonl",
+      "bytes": 1859,
+      "sha256": "24fb7a84adff7314d5f63891ab2078701a5b511818b2a24de2c8b4cf120af09a"
+    },
+    {
+      "path": "runs/fm2-2/run14-diagnostics/suite/11/captures/204656/events.jsonl",
+      "bytes": 1278680,
+      "sha256": "37ac9f6a32d51a7b3b514526d0e51da32acb6f40464be29072e5e2e922414887"
+    },
+    {
+      "path": "runs/fm2-2/run14-diagnostics/suite/11/captures/204868/events.jsonl",
+      "bytes": 1261926,
+      "sha256": "da2b1f171560e670dfeb8b84c0e53c32a068636ce0c6d45b8c380bfafff45858"
+    },
+    {
+      "path": "runs/fm2-2/run14-diagnostics/suite/12/captures/205134/events.jsonl",
+      "bytes": 1863,
+      "sha256": "43cc20586ff348f5a1517faa1ce5ea3c74969b63b44123c082e854449f8f08a3"
+    },
+    {
+      "path": "runs/fm2-2/run14-diagnostics/suite/12/captures/206565/events.jsonl",
+      "bytes": 1278579,
+      "sha256": "8860f029173b15415f5e2241411752870a7b0ca8f4c262789cd1dd5dd1f6e55e"
+    },
+    {
+      "path": "runs/fm2-2/run14-diagnostics/suite/12/captures/206766/events.jsonl",
+      "bytes": 1262138,
+      "sha256": "7709f728cc56a00d651cbe609ff61e7ce066a53725a434360a0a9b403f32fa2b"
+    },
+    {
+      "path": "runs/fm2-2/run14-diagnostics/suite/13/captures/207027/events.jsonl",
+      "bytes": 1865,
+      "sha256": "a2596b5b09030579b2e4021be2d16533a78a1257457778f7da1fc27fa1532b24"
+    },
+    {
+      "path": "runs/fm2-2/run14-diagnostics/suite/13/captures/208496/events.jsonl",
+      "bytes": 1279397,
+      "sha256": "14dae471eacce06740235a31cc8fd1e85add899b22231a2e05b3904587ee92f6"
+    },
+    {
+      "path": "runs/fm2-2/run14-diagnostics/suite/13/captures/208708/events.jsonl",
+      "bytes": 1262163,
+      "sha256": "7e8b9a41a5f1e0608345f5ce9e55b76b395ac86a389463296d689fe31e222a4b"
+    },
+    {
+      "path": "runs/fm2-2/run14-diagnostics/suite/14/captures/208967/events.jsonl",
+      "bytes": 1865,
+      "sha256": "fdbb31879ee5451db6c078d22922afc3cbf62102f816e104fe4d9bbdf4e22199"
+    },
+    {
+      "path": "runs/fm2-2/run14-diagnostics/suite/14/captures/210421/events.jsonl",
+      "bytes": 1278615,
+      "sha256": "b9af6b78b74b570617537382d9f49873c0cdf714f2b9f9e3278be2c3a55c9e64"
+    },
+    {
+      "path": "runs/fm2-2/run14-diagnostics/suite/14/captures/210633/events.jsonl",
+      "bytes": 1261839,
+      "sha256": "fcdc9ab67de43ccd3c5e072e9164e9714389ca5422a0cd9ede0383b1fca728d2"
+    },
+    {
+      "path": "runs/fm2-2/run14-diagnostics/suite/15/captures/210892/events.jsonl",
+      "bytes": 1867,
+      "sha256": "76469dda90efd4534fd42aede9e13782fd79684232ea149b0a88e20263eaf357"
+    },
+    {
+      "path": "runs/fm2-2/run14-diagnostics/suite/15/captures/212321/events.jsonl",
+      "bytes": 1278533,
+      "sha256": "bf80386d13d58810fb36654964238ab10ad70bfcedb2cef86b46d69b74e60cdf"
+    },
+    {
+      "path": "runs/fm2-2/run14-diagnostics/suite/15/captures/212525/events.jsonl",
+      "bytes": 1262030,
+      "sha256": "c5c98ac04bd217eb19b98f3c90256672666e96420fa53c6f6703140990002698"
+    },
+    {
+      "path": "runs/fm2-2/run14-diagnostics/suite/16/captures/212804/events.jsonl",
+      "bytes": 1863,
+      "sha256": "b05b334bb347b9cf1ff3e169e729df810ab1d84852c280d899c3d2ebb7cd03d8"
+    },
+    {
+      "path": "runs/fm2-2/run14-diagnostics/suite/16/captures/214232/events.jsonl",
+      "bytes": 1278431,
+      "sha256": "db3ed211299f3818789a706eb4985d113985f2e3bd2432f5ff76c7f024f5c4f9"
+    },
+    {
+      "path": "runs/fm2-2/run14-diagnostics/suite/16/captures/214443/events.jsonl",
+      "bytes": 1262018,
+      "sha256": "0334bacf7918d186abca9c9a3d189a527c81b9251927b4094f296f0b8a5e0b7b"
+    },
+    {
+      "path": "runs/fm2-2/run14-diagnostics/suite/17/captures/214706/events.jsonl",
+      "bytes": 1867,
+      "sha256": "a50f5f9f63581200f25b40494de2d0eedd7008adeadf7dad65c6064e5d6fa1da"
+    },
+    {
+      "path": "runs/fm2-2/run14-diagnostics/suite/17/captures/216149/events.jsonl",
+      "bytes": 1278608,
+      "sha256": "902a8bc295b5d1765ff87391ac1b4b73e3df4cc06996330c6eeba819c99ca5c3"
+    },
+    {
+      "path": "runs/fm2-2/run14-diagnostics/suite/17/captures/216356/events.jsonl",
+      "bytes": 1262077,
+      "sha256": "9f6b7f189588551737b0f2c81d095409de38b691bb8a2555850d3b9e20d31517"
+    },
+    {
+      "path": "runs/fm2-2/run14-diagnostics/suite/18/captures/216623/events.jsonl",
+      "bytes": 1865,
+      "sha256": "84ad88c4572df763a6adbdd5fa938d429fde938f519b29e7b1f6c4d91ebc8bfd"
+    },
+    {
+      "path": "runs/fm2-2/run14-diagnostics/suite/18/captures/218069/events.jsonl",
+      "bytes": 1278648,
+      "sha256": "e24e3d8fa5290f731b390f6562d9da69e1d204ec9c1f887b8f96a172ae104509"
+    },
+    {
+      "path": "runs/fm2-2/run14-diagnostics/suite/18/captures/218301/events.jsonl",
+      "bytes": 1262320,
+      "sha256": "28dda2f6eb80a0d227e50ebb56217458dd88c285382eb6c325d2b331bb1af39e"
+    },
+    {
+      "path": "runs/fm2-2/run14-diagnostics/suite/19/captures/218562/events.jsonl",
+      "bytes": 1865,
+      "sha256": "2da0455d1ceae47a7b35d0eb79ded47323dd513f6f72b49e0fc565fb2fbfd75b"
+    },
+    {
+      "path": "runs/fm2-2/run14-diagnostics/suite/19/captures/219989/events.jsonl",
+      "bytes": 1278338,
+      "sha256": "84a8480ea31127e79758940fe05245094ce27e6756bfd02a52f620b8305ce6f6"
+    },
+    {
+      "path": "runs/fm2-2/run14-diagnostics/suite/19/captures/220203/events.jsonl",
+      "bytes": 1262427,
+      "sha256": "e174d34cb375c0a4887e17d9f873dd5f61218a0c7733499b57ba29bef3db07e5"
+    }
+  ]
+}
