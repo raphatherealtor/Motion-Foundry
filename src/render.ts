@@ -1,3 +1,4 @@
+import {prepareCapture,capturePng} from './capture.js';
 import {browserExecutable} from './adapters/motion-suite/browser.js';
 import {chromium,Page} from 'playwright';
 import {mkdirSync,readFileSync,writeFileSync,readdirSync,existsSync} from 'node:fs';
@@ -22,7 +23,7 @@ export const renderIdentity=(scene:Scene,renderer_config:unknown)=>hash({schema:
 export async function render(scene:Scene,out:string,noCache=false,candidate_id:string|null=null){
  const revision_id=hash(scene),browser=await chromium.launch({executablePath:browserExecutable(),args:config.args});
  try{
- const renderer_config={...config,browser:browser.version(),node:process.version,adapter_hash:hash({render:fileHash(resolve(root,'dist/src/render.js')),scene:fileHash(resolve(root,'dist/src/scene.js'))}),ffmpeg:spawnSync('ffmpeg',['-version'],{encoding:'utf8'}).stdout?.split('\n')[0]||'NOT_INSTALLED',audio:'NOT_RUN'};
+ const renderer_config={...config,browser:browser.version(),node:process.version,adapter_hash:hash({render:fileHash(resolve(root,'dist/src/render.js')),scene:fileHash(resolve(root,'dist/src/scene.js')),capture:fileHash(resolve(root,'dist/src/capture.js'))}),ffmpeg:spawnSync('ffmpeg',['-version'],{encoding:'utf8'}).stdout?.split('\n')[0]||'NOT_INSTALLED',audio:'NOT_RUN'};
  const render_id=renderIdentity(scene,renderer_config);
  const parent=resolve(out,'renders',render_id),attempt_id=randomUUID(),dir=resolve(parent,attempt_id);
  let cached:string|undefined;
@@ -30,6 +31,7 @@ export async function render(scene:Scene,out:string,noCache=false,candidate_id:s
  mkdirSync(resolve(dir,'frames'),{recursive:true});
  if(cached){const {copyFileSync}=await import('node:fs');const m=verifyHashes(cached);for(const f of [...m.frames,m.contact_sheet,m.object_boxes])copyFileSync(resolve(cached,f.path),resolve(dir,f.path));write(resolve(dir,'scene.json'),scene);write(resolve(dir,'renderer-config.json'),renderer_config);write(resolve(dir,'manifest.json'),{...m,attempt_id,candidate_id,created_at:new Date().toISOString()});return dir}
  const page=await browser.newPage({viewport:config.viewport,deviceScaleFactor:config.deviceScaleFactor});
+ await prepareCapture(page,config.viewport,config.deviceScaleFactor);
  let network=false;const errors:string[]=[];page.on('pageerror',e=>errors.push(e.message));
  await page.route('**/*',r=>{network=true;return r.abort()});
  await page.setContent(html(scene),{waitUntil:'load',timeout:config.asset_ready_timeout_s*1000});
@@ -39,23 +41,24 @@ export async function render(scene:Scene,out:string,noCache=false,candidate_id:s
  if(Date.now()-start>config.render_timeout_s*1000)fail('BUDGET_EXHAUSTED');
  await page.evaluate(i=>(window as any).seekFrame(i),i);
  const label='f'+String(i).padStart(4,'0'),path=`frames/${label}.png`;
- const png=await page.screenshot({path:resolve(dir,path),type:'png'});size+=png.length;
+ const png=await capturePng(page,resolve(dir,path));size+=png.length;
  if(size>config.max_output_mb*1024*1024)fail('BUDGET_EXHAUSTED');
  frames.push({i,label,path,sha256:sha256(png)});rows.push(await boxes(page,i));
  }
  // Repeated, out-of-order seeks must match both pixels and transformed bounds.
  for(const i of [200,10,200,135]){
  await page.evaluate(i=>(window as any).seekFrame(i),i);
- if(sha256(await page.screenshot())!==frames[i].sha256||canonical(await boxes(page,i))!==canonical(rows[i]))fail('NONDETERMINISTIC');
+ if(sha256(await capturePng(page))!==frames[i].sha256||canonical(await boxes(page,i))!==canonical(rows[i]))fail('NONDETERMINISTIC');
  }
  if(network||errors.length)fail('FORBIDDEN_OP: '+errors.join(';'));
  writeFileSync(resolve(dir,'boxes.jsonl'),rows.map(canonical).join('\n')+'\n',{flag:'wx'});
  const cells=frames.filter(f=>f.i%config.stride===0).map((f,cell)=>({cell,frame:f.i}));
  const sheet=await browser.newPage({viewport:{width:600,height:Math.ceil(cells.length/6)*200},deviceScaleFactor:1});
+ await prepareCapture(sheet,{width:600,height:Math.ceil(cells.length/6)*200},1);
  await sheet.route('**/*',r=>r.abort());
  await sheet.setContent('<style>@font-face{font-family:Fixture;src:url(data:font/woff2;base64,'+assets().font+')}*{box-sizing:border-box}body{margin:0;display:grid;grid-template-columns:repeat(6,100px);background:#fff}div{height:200px;font:12px Fixture}img{width:100px;height:178px}</style>'+cells.map(c=>`<div>cell ${c.cell}: f${c.frame}<img src="data:image/png;base64,${readFileSync(resolve(dir,frames[c.frame].path)).toString('base64')}"></div>`).join(''));
  await sheet.waitForFunction('document.fonts.status==="loaded" && [...document.images].every(i=>i.complete)');
- await sheet.screenshot({path:resolve(dir,'contact_sheet.png')});
+ await capturePng(sheet,resolve(dir,'contact_sheet.png'));
  const manifest:EvidenceManifest={schema:'foundry.evidence/0.1',render_id,attempt_id,revision_id,candidate_id,hashes:{schema:hash(schemas),source:revision_id,assets:hash(assets()),renderer_config:hash(renderer_config)},logical:{w:1080,h:1920},output:{w:1080*config.deviceScaleFactor,h:1920*config.deviceScaleFactor},transform:{scale_x:config.deviceScaleFactor,scale_y:config.deviceScaleFactor,offset_x:0,offset_y:0},fps:scene.fps,range:{start:0,end:270},timebase:'frame',frames,contact_sheet:{path:'contact_sheet.png',sha256:fileHash(resolve(dir,'contact_sheet.png')),cells,stride:config.stride},object_boxes:{path:'boxes.jsonl',sha256:fileHash(resolve(dir,'boxes.jsonl'))},audio:null,created_at:new Date().toISOString()};
  write(resolve(dir,'scene.json'),scene);write(resolve(dir,'renderer-config.json'),renderer_config);write(resolve(dir,'manifest.json'),manifest);return dir;
  }finally{await browser.close()}

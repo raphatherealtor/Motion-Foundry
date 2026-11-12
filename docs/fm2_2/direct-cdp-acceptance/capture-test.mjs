@@ -1,0 +1,13 @@
+import assert from 'node:assert/strict';
+import {prepareCapture,capturePng} from '../../../dist/src/capture.js';
+const calls=[],png=Buffer.from('png witness');let fail=false;
+const cdp={send:async(name,args)=>{calls.push({name,args});if(name==='Browser.getWindowForTarget')return {windowId:7};if(name==='Page.captureScreenshot'){if(fail)throw Error('forced CDP screenshot exception');return {data:png.toString('base64')};}return {};}};
+const page={context:()=>({newCDPSession:async()=>cdp})};
+await prepareCapture(page,{width:1080,height:1920},.5);
+assert.deepEqual(calls.map(c=>c.name),['Browser.getWindowForTarget','Browser.setWindowBounds','Emulation.setDeviceMetricsOverride']);
+assert.deepEqual(calls[1].args,{windowId:7,bounds:{width:540,height:960}});
+assert.equal(calls[2].args.scale,.5);
+for(let i=0;i<2;i++)assert.deepEqual(await capturePng(page),png);
+assert.deepEqual(calls.slice(3),Array.from({length:2},()=>({name:'Page.captureScreenshot',args:{format:'png',fromSurface:true,captureBeyondViewport:false}})));
+fail=true;await assert.rejects(()=>capturePng(page),/forced CDP screenshot exception/);
+assert.equal(calls.length,6);console.log('PASS: once-only mapping; no clip/scale per capture; one call per capture; exception propagates without retry.');
