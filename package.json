@@ -8,7 +8,7 @@
   },
   "scripts": {
     "build": "tsc",
-    "test": "npm run build && node --import=./tooling/capture-observer/observer.mjs --test --test-concurrency=1 dist/test/*.test.js",
+    "test": "npm run build && node --import=./tooling/capture-observer/observer.mjs --test --test-concurrency=1 --test-reporter=tap --test-reporter=./docs/fm2_2/run14-diagnostics/root-reporter.mjs --test-reporter-destination=stdout --test-reporter-destination=runs/capture-outcomes.json dist/test/*.test.js",
     "foundry": "node dist/src/cli.js"
   },
   "dependencies": {

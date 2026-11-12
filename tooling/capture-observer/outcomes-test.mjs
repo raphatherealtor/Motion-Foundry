@@ -1,0 +1,8 @@
+import fs from 'node:fs';import os from 'node:os';import path from 'node:path';import assert from 'node:assert/strict';import {spawnSync} from 'node:child_process';
+const root=process.cwd(),base=fs.mkdtempSync(path.join(os.tmpdir(),'artifact-outcomes-'));
+for(const [name,body,exit,tag] of [
+ ['asset',`await assert.rejects(()=>observe(async()=>{throw Error('TYPE_INVALID: ASSET_DECODE bad');},[],{},'evaluate',dir),/ASSET_DECODE bad/);`,0,'expected'],
+ ['screenshot',`await observe(async()=>{throw Error('page.screenshot: forced exception');},[],{},'screenshot',dir);`,1,'failure'],
+ ['missing',`await assert.rejects(()=>observe(async()=>true,[],{},'evaluate',dir),/ASSET_DECODE bad/);`,1,null]
+]){const dir=path.join(base,name);fs.mkdirSync(dir);const fixture=path.join(dir,'fixture.test.mjs');fs.writeFileSync(fixture,`import {test} from 'node:test';import assert from 'node:assert/strict';import {observe} from '${root}/tooling/capture-observer/observer.mjs';const dir=${JSON.stringify(dir)};test('${name}',async()=>{${body}});`);
+ const result=spawnSync(process.execPath,['--test','--test-concurrency=1','--test-reporter='+root+'/docs/fm2_2/run14-diagnostics/root-reporter.mjs',fixture],{encoding:'utf8',env:{...process.env,FOUNDRY_CAPTURE_FAILURE_DIR:dir}});assert.equal(result.status,exit,result.stderr);const report=JSON.parse(result.stdout);assert.equal(report.rootFailureCount,exit);assert.equal(report.artifacts.length,tag?1:0);if(tag){assert.equal(report.artifacts[0].tag,tag);const a=JSON.parse(fs.readFileSync(report.artifacts[0].file));assert.equal(a.testOwner.name,name);assert.ok(a.exception.stack);assert.equal(a.tag,tag);}console.log('PASS',name,'exit',exit,'artifact',tag??'none; missing rejection fails');}

@@ -1,0 +1,12 @@
+{
+  "artifacts": [
+    {
+      "file": "/tmp/foundry-actual-asset-regression/failure-223454-1794465295209.json",
+      "tag": "expected"
+    }
+  ],
+  "rootFailureCount": 0,
+  "upstreamRootFailureCount": 0,
+  "dependentFailureCount": 0,
+  "roots": []
+}

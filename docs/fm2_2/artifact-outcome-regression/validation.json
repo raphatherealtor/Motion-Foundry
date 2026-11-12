@@ -1,0 +1,17 @@
+{
+  "build": "PASS",
+  "artifact_selftest": "PASS",
+  "asserted_decode_rejection": {
+    "test": "PASS",
+    "tag": "expected"
+  },
+  "forced_screenshot_exception": {
+    "test": "FAIL as required",
+    "tag": "failure"
+  },
+  "missing_rejection": {
+    "test": "FAIL as required",
+    "artifact": null
+  },
+  "actual_m1_evidence_file": "PASS; expected artifact retained"
+}

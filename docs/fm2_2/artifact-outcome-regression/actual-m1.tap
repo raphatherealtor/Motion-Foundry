@@ -1,0 +1,27 @@
+TAP version 13
+# [33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugins. Here is a breakdown:
+#   - retain-product-golden-entry (49%)
+#   - vite:css (29%)
+#   - vite:asset (12%)
+#   - vite:worker-import-meta-url (8%)
+# See https://rolldown.rs/reference/InputOptions.checks\#plugintimings for more details.
+# Subtest: M1 projected word evidence follows camera, distinguishes unsplit text, and rejects failed asset decode
+ok 1 - M1 projected word evidence follows camera, distinguishes unsplit text, and rejects failed asset decode
+  ---
+  duration_ms: 38480.510591
+  ...
+# [33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugin `vite:asset`. See https://rolldown.rs/reference/InputOptions.checks\#plugintimings for more details.
+# Subtest: M1 word geometry uses parent opacity and labels unavailable camera projection
+ok 2 - M1 word geometry uses parent opacity and labels unavailable camera projection
+  ---
+  duration_ms: 7518.404562
+  ...
+1..2
+# tests 2
+# suites 0
+# pass 2
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 47438.82396

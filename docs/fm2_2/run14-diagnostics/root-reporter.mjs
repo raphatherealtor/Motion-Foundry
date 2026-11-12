@@ -1,3 +1,4 @@
+import {tagArtifacts} from '../../../tooling/capture-observer/outcomes.mjs';
 export function collectFailure(groups,data){
  const chain=[],seen=new Set();let error=data.details?.error;
  while(error&&!seen.has(error)){seen.add(error);chain.push({name:error.name??null,message:String(error.message??error),stack:error.stack??null,code:error.code??null,failureType:error.failureType??null});error=error.cause;}
@@ -8,6 +9,7 @@ export function collectFailure(groups,data){
  group.dependentTests.push({name:data.name,status:'FAIL',detail:upstream?'upstream failed: '+data.file+' shared setup; dependent body did not run':'TEST_FAILED'});
 }
 export default async function* reporter(source){
- const groups=new Map();for await(const event of source)if(event.type==='test:fail')collectFailure(groups,event.data);
- const roots=[...groups.values()];yield JSON.stringify({rootFailureCount:roots.length,upstreamRootFailureCount:roots.filter(g=>g.kind==='upstream_setup').length,dependentFailureCount:roots.filter(g=>g.kind==='upstream_setup').reduce((n,g)=>n+g.dependentTests.length,0),roots},null,2)+'\n';
+ const groups=new Map(),outcomes=[];for await(const event of source){if(event.type==='test:fail')collectFailure(groups,event.data);if(['test:fail','test:pass'].includes(event.type))outcomes.push({file:event.data.file,name:event.data.name,status:event.type==='test:pass'?'expected':'failure'});}
+ const artifacts=tagArtifacts(process.env.FOUNDRY_CAPTURE_FAILURE_DIR,outcomes);
+ const roots=[...groups.values()];yield JSON.stringify({artifacts,rootFailureCount:roots.length,upstreamRootFailureCount:roots.filter(g=>g.kind==='upstream_setup').length,dependentFailureCount:roots.filter(g=>g.kind==='upstream_setup').reduce((n,g)=>n+g.dependentTests.length,0),roots},null,2)+'\n';
 }
