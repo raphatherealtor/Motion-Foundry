@@ -1,0 +1,38 @@
+{
+  "failureArtifacts": [
+    "failure-221599-1794462366382.json"
+  ],
+  "index": 0,
+  "elapsedMs": 230472,
+  "exitCode": 0,
+  "error": null,
+  "totals": {
+    "tests": 98,
+    "pass": 98,
+    "fail": 0,
+    "cancelled": 0,
+    "skipped": 0
+  },
+  "events": [
+    {
+      "a": "/tmp/foundry-6PlLcd/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/66d136fd-4e13-4d27-a53b-620a5b136095",
+      "b": "/tmp/foundry-6PlLcd/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/e891fb3b-3de7-4841-9588-74ad0a91cd21",
+      "c": "/tmp/foundry-6PlLcd/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/26da7597-f1cb-4f91-bc1f-1b698b8f92a6",
+      "frames": 270,
+      "reason_code": null,
+      "render_id": "bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee",
+      "seek_order": [
+        200,
+        10,
+        200,
+        135
+      ],
+      "status": "PASS"
+    }
+  ],
+  "fingerprints": [
+    "c5d497d5c396cb1f08028a8a7c6271ce9daad8be2928ddcc77f0a2d8654f9bc3",
+    "c5d497d5c396cb1f08028a8a7c6271ce9daad8be2928ddcc77f0a2d8654f9bc3"
+  ],
+  "pass": false
+}

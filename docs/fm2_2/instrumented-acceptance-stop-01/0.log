@@ -1,0 +1,504 @@
+
+> motion-foundry-core@0.1.0 build
+> tsc
+
+TAP version 13
+# Subtest: all versioned schemas compile and survive JSON roundtrip
+ok 1 - all versioned schemas compile and survive JSON roundtrip
+  ---
+  duration_ms: 42.430909
+  ...
+# Subtest: canonical hashes are key-order independent and content sensitive
+ok 2 - canonical hashes are key-order independent and content sensitive
+  ---
+  duration_ms: 0.870164
+  ...
+# Subtest: proposal roundtrip rejects malformed data
+ok 3 - proposal roundtrip rejects malformed data
+  ---
+  duration_ms: 0.83094
+  ...
+# Subtest: fixture loads offline with seeded clock and visible overflow
+ok 4 - fixture loads offline with seeded clock and visible overflow
+  ---
+  duration_ms: 1950.781559
+  ...
+# Subtest: scene rejects remote assets and wall clock
+ok 5 - scene rejects remote assets and wall clock
+  ---
+  duration_ms: 0.848846
+  ...
+# Subtest: FM2 color perception reports negative/HDR and output endpoint controls
+ok 6 - FM2 color perception reports negative/HDR and output endpoint controls
+  ---
+  duration_ms: 2.105794
+  ...
+# Subtest: FM2 color perception skips fully transparent pixels
+ok 7 - FM2 color perception skips fully transparent pixels
+  ---
+  duration_ms: 0.283161
+  ...
+# Subtest: FM2 color perception rejects invalid dimensions
+ok 8 - FM2 color perception rejects invalid dimensions
+  ---
+  duration_ms: 0.39845
+  ...
+# Subtest: FM2 banding accepts an exactly flat control
+ok 9 - FM2 banding accepts an exactly flat control
+  ---
+  duration_ms: 96.267428
+  ...
+# Subtest: FM2 banding rejects coarse steps on a contract card
+ok 10 - FM2 banding rejects coarse steps on a contract card
+  ---
+  duration_ms: 33.217367
+  ...
+# Subtest: FM2 production banding remains a warning
+ok 11 - FM2 production banding remains a warning
+  ---
+  duration_ms: 25.832229
+  ...
+# Subtest: FM2 negative control must actually fail
+ok 12 - FM2 negative control must actually fail
+  ---
+  duration_ms: 18.230283
+  ...
+# Subtest: FM2 a failing positive card cannot close the banding gate
+ok 13 - FM2 a failing positive card cannot close the banding gate
+  ---
+  duration_ms: 18.034842
+  ...
+# Subtest: FM2 banding rejects an out-of-frame region
+ok 14 - FM2 banding rejects an out-of-frame region
+  ---
+  duration_ms: 8.799891
+  ...
+# Subtest: FM2 profile metadata warns on wide gamut and unverified assets
+ok 15 - FM2 profile metadata warns on wide gamut and unverified assets
+  ---
+  duration_ms: 1.454458
+  ...
+# Subtest: FM2 residual statistics distinguish centered noise from systematic bias
+ok 16 - FM2 residual statistics distinguish centered noise from systematic bias
+  ---
+  duration_ms: 35.114587
+  ...
+# Subtest: FM2 literal banding rule rejects a two-LSB error against the oracle
+ok 17 - FM2 literal banding rule rejects a two-LSB error against the oracle
+  ---
+  duration_ms: 18.107687
+  ...
+# Subtest: subscription guard rejects API keys, PAYG endpoints and model provider swaps
+ok 18 - subscription guard rejects API keys, PAYG endpoints and model provider swaps
+  ---
+  duration_ms: 345.853212
+  ...
+# Subtest: CLI subprocess environment excludes API key and endpoint overrides
+ok 19 - CLI subprocess environment excludes API key and endpoint overrides
+  ---
+  duration_ms: 0.773724
+  ...
+# Subtest: canary proof rejects changed pixels, guessed/changed answers, tool use and model swaps
+ok 20 - canary proof rejects changed pixels, guessed/changed answers, tool use and model swaps
+  ---
+  duration_ms: 14.578137
+  ...
+# Subtest: disabled vision blocks even a previously correct canary
+ok 21 - disabled vision blocks even a previously correct canary
+  ---
+  duration_ms: 1.268763
+  ...
+# Subtest: native audit uses actual request settings and rejects an enabled toolset
+ok 22 - native audit uses actual request settings and rejects an enabled toolset
+  ---
+  duration_ms: 26.735374
+  ...
+# Subtest: candidate evidence binds scene intent, ordered repairs, adapter and policy snapshots
+ok 23 - candidate evidence binds scene intent, ordered repairs, adapter and policy snapshots
+  ---
+  duration_ms: 14977.619159
+  ...
+# Subtest: M1 projected word evidence follows camera, distinguishes unsplit text, and rejects failed asset decode
+ok 24 - M1 projected word evidence follows camera, distinguishes unsplit text, and rejects failed asset decode
+  ---
+  duration_ms: 24044.494996
+  ...
+# Subtest: M1 word geometry uses parent opacity and labels unavailable camera projection
+ok 25 - M1 word geometry uses parent opacity and labels unavailable camera projection
+  ---
+  duration_ms: 1723.732419
+  ...
+# Subtest: M1 bounds and types: objects.*.transform.x
+ok 26 - M1 bounds and types: objects.*.transform.x
+  ---
+  duration_ms: 3.095441
+  ...
+# Subtest: M1 bounds and types: objects.*.transform.y
+ok 27 - M1 bounds and types: objects.*.transform.y
+  ---
+  duration_ms: 0.419383
+  ...
+# Subtest: M1 bounds and types: objects.*.transform.scale
+ok 28 - M1 bounds and types: objects.*.transform.scale
+  ---
+  duration_ms: 0.435067
+  ...
+# Subtest: M1 bounds and types: objects.*.transform.rotation
+ok 29 - M1 bounds and types: objects.*.transform.rotation
+  ---
+  duration_ms: 0.408076
+  ...
+# Subtest: M1 bounds and types: objects.*.transform.z
+ok 30 - M1 bounds and types: objects.*.transform.z
+  ---
+  duration_ms: 0.594504
+  ...
+# Subtest: M1 bounds and types: objects.*.text.fontSize
+ok 31 - M1 bounds and types: objects.*.text.fontSize
+  ---
+  duration_ms: 0.412929
+  ...
+# Subtest: M1 bounds and types: objects.*.text.lineHeight
+ok 32 - M1 bounds and types: objects.*.text.lineHeight
+  ---
+  duration_ms: 0.521544
+  ...
+# Subtest: M1 bounds and types: objects.*.surface.shadowOpacity
+ok 33 - M1 bounds and types: objects.*.surface.shadowOpacity
+  ---
+  duration_ms: 0.73394
+  ...
+# Subtest: M1 bounds and types: objects.*.surface.shadowSoftness
+ok 34 - M1 bounds and types: objects.*.surface.shadowSoftness
+  ---
+  duration_ms: 0.804991
+  ...
+# Subtest: M1 bounds and types: objects.*.layout.align
+ok 35 - M1 bounds and types: objects.*.layout.align
+  ---
+  duration_ms: 0.655691
+  ...
+# Subtest: M1 bounds and types: lighting.exposureEV
+ok 36 - M1 bounds and types: lighting.exposureEV
+  ---
+  duration_ms: 0.69963
+  ...
+# Subtest: M1 bounds and types: lighting.vignette
+ok 37 - M1 bounds and types: lighting.vignette
+  ---
+  duration_ms: 0.512617
+  ...
+# Subtest: M1 forbids content edits, opacity, raw fields, FPS and unmapped targets
+ok 38 - M1 forbids content edits, opacity, raw fields, FPS and unmapped targets
+  ---
+  duration_ms: 1.335753
+  ...
+# Subtest: M1 protects covered content and rejects unregistered recipes or generated assets
+ok 39 - M1 protects covered content and rejects unregistered recipes or generated assets
+  ---
+  duration_ms: 0.565394
+  ...
+# Subtest: M1 stagger and frame shifts are exact and bounded
+ok 40 - M1 stagger and frame shifts are exact and bounded
+  ---
+  duration_ms: 0.571564
+  ...
+# Subtest: disabled vision and mock/live confusion stop before rendering
+ok 41 - disabled vision and mock/live confusion stop before rendering
+  ---
+  duration_ms: 5.728426
+  ...
+# Subtest: budgets cap attempts, renders, time and spend
+ok 42 - budgets cap attempts, renders, time and spend
+  ---
+  duration_ms: 0.688369
+  ...
+# Subtest: history rejects no-op projects and per-property reversals
+ok 43 - history rejects no-op projects and per-property reversals
+  ---
+  duration_ms: 0.953524
+  ...
+# Subtest: M1 typed repairs lower through real product transactions and recipe rebuilds preserve previous ops
+ok 44 - M1 typed repairs lower through real product transactions and recipe rebuilds preserve previous ops
+  ---
+  duration_ms: 4161.076833
+  ...
+# Subtest: all registered recipes declare whole words, hard checks and bounded repair intersection
+ok 45 - all registered recipes declare whole words, hard checks and bounded repair intersection
+  ---
+  duration_ms: 4.517683
+  ...
+# Subtest: recipe descriptions are deterministic with per-instance seeded edge geometry
+ok 46 - recipe descriptions are deterministic with per-instance seeded edge geometry
+  ---
+  duration_ms: 3.366038
+  ...
+# Subtest: recipes reject arbitrary code, raw ops, wipes, masks and unregistered IDs
+ok 47 - recipes reject arbitrary code, raw ops, wipes, masks and unregistered IDs
+  ---
+  duration_ms: 0.832915
+  ...
+# Subtest: M1 identity excludes volatile timestamps and binds renderer inputs
+ok 48 - M1 identity excludes volatile timestamps and binds renderer inputs
+  ---
+  duration_ms: 2.987749
+  ...
+# Subtest: M1 parity metrics keep zero tolerance including alpha
+ok 49 - M1 parity metrics keep zero tolerance including alpha
+  ---
+  duration_ms: 1.306538
+  ...
+# Subtest: M1 product preview, export, worker and golden environment match at five motion stages
+ok 50 - M1 product preview, export, worker and golden environment match at five motion stages
+  ---
+  duration_ms: 30377.320962
+  ...
+# Subtest: M1 parity distinguishes a stable mode mismatch from changing captures
+ok 51 - M1 parity distinguishes a stable mode mismatch from changing captures
+  ---
+  duration_ms: 3.489756
+  ...
+# Subtest: M1 rational conversion uses exact integer arithmetic without rounding
+ok 52 - M1 rational conversion uses exact integer arithmetic without rounding
+  ---
+  duration_ms: 3.76259
+  ...
+# Subtest: M1 rational conversion rejects unsafe, negative, fractional and invalid-scale times
+ok 53 - M1 rational conversion rejects unsafe, negative, fractional and invalid-scale times
+  ---
+  duration_ms: 0.615821
+  ...
+# Subtest: M1 normalizes every nested clock on a candidate copy
+ok 54 - M1 normalizes every nested clock on a candidate copy
+  ---
+  duration_ms: 1.280171
+  ...
+# Subtest: M1 rejects off-grid nested camera, light, behavior and text-segment clocks with paths
+ok 55 - M1 rejects off-grid nested camera, light, behavior and text-segment clocks with paths
+  ---
+  duration_ms: 5.659417
+  ...
+# Subtest: M1 pins all document FPS and forbids FPS writes
+ok 56 - M1 pins all document FPS and forbids FPS writes
+  ---
+  duration_ms: 0.756756
+  ...
+# Subtest: M1 frame ranges are half-open and cannot silently round
+ok 57 - M1 frame ranges are half-open and cannot silently round
+  ---
+  duration_ms: 0.318392
+  ...
+# Subtest: M1 renderer validates timing before loading the product or launching a browser
+ok 58 - M1 renderer validates timing before loading the product or launching a browser
+  ---
+  duration_ms: 0.991941
+  ...
+# Subtest: whole-word reveal rejects half opacity, unsplit evidence, masks, presets, and excessive rise
+ok 59 - whole-word reveal rejects half opacity, unsplit evidence, masks, presets, and excessive rise
+  ---
+  duration_ms: 3.274383
+  ...
+# Subtest: covered objects cannot change, even if their masks retain an ID
+ok 60 - covered objects cannot change, even if their masks retain an ID
+  ---
+  duration_ms: 1.346339
+  ...
+# Subtest: tear seeds and geometry cannot repeat consecutively
+ok 61 - tear seeds and geometry cannot repeat consecutively
+  ---
+  duration_ms: 0.485997
+  ...
+# Subtest: anchors inspect actual product keyframes and accept0.1s early, reject0.6s early or late
+ok 62 - anchors inspect actual product keyframes and accept0.1s early, reject0.6s early or late
+  ---
+  duration_ms: 0.431224
+  ...
+# Subtest: stale revision and render bases are rejected
+ok 63 - stale revision and render bases are rejected
+  ---
+  duration_ms: 63505.443291
+  ...
+# Subtest: forbidden edit: validators.safe
+ok 64 - forbidden edit: validators.safe
+  ---
+  duration_ms: 0.446957
+  ...
+# Subtest: forbidden edit: budgets.max
+ok 65 - forbidden edit: budgets.max
+  ---
+  duration_ms: 0.379293
+  ...
+# Subtest: forbidden edit: objects.title_text.text
+ok 66 - forbidden edit: objects.title_text.text
+  ---
+  duration_ms: 0.432973
+  ...
+# Subtest: forbidden edit: objects.title_text.style.opacity
+ok 67 - forbidden edit: objects.title_text.style.opacity
+  ---
+  duration_ms: 0.382738
+  ...
+# Subtest: forbidden edit: objects.title_text.style.visibility
+ok 68 - forbidden edit: objects.title_text.style.visibility
+  ---
+  duration_ms: 0.24724
+  ...
+# Subtest: forbidden edit: objects.title_text.style.display
+ok 69 - forbidden edit: objects.title_text.style.display
+  ---
+  duration_ms: 0.318224
+  ...
+# Subtest: forbidden edit: ../scene.json
+ok 70 - forbidden edit: ../scene.json
+  ---
+  duration_ms: 0.492237
+  ...
+# Subtest: forbidden edit: objects.__proto__.layout.x
+ok 71 - forbidden edit: objects.__proto__.layout.x
+  ---
+  duration_ms: 0.531116
+  ...
+# Subtest: wrong type: style.fontSize
+ok 72 - wrong type: style.fontSize
+  ---
+  duration_ms: 0.487865
+  ...
+# Subtest: wrong type: layout.wrap
+ok 73 - wrong type: layout.wrap
+  ---
+  duration_ms: 0.28983
+  ...
+# Subtest: wrong type: layout.align
+ok 74 - wrong type: layout.align
+  ---
+  duration_ms: 0.181346
+  ...
+# Subtest: wrong type: layout.x
+ok 75 - wrong type: layout.x
+  ---
+  duration_ms: 0.164271
+  ...
+# Subtest: out of bounds: style.fontSize
+ok 76 - out of bounds: style.fontSize
+  ---
+  duration_ms: 0.223661
+  ...
+# Subtest: out of bounds: style.letterSpacing
+ok 77 - out of bounds: style.letterSpacing
+  ---
+  duration_ms: 0.32706
+  ...
+# Subtest: out of bounds: layout.x
+ok 78 - out of bounds: layout.x
+  ---
+  duration_ms: 0.241979
+  ...
+# Subtest: out of bounds: layout.maxWidth
+ok 79 - out of bounds: layout.maxWidth
+  ---
+  duration_ms: 0.223084
+  ...
+# Subtest: invalid and shortened timing cannot cheat
+ok 80 - invalid and shortened timing cannot cheat
+  ---
+  duration_ms: 0.431537
+  ...
+# Subtest: candidate copies preserve original; repeat and property reversal stop oscillation
+ok 81 - candidate copies preserve original; repeat and property reversal stop oscillation
+  ---
+  duration_ms: 0.623543
+  ...
+# Subtest: attempt and render budgets stop the state machine
+ok 82 - attempt and render budgets stop the state machine
+  ---
+  duration_ms: 1.408727
+  ...
+# Subtest: independent verifier rejects tampering: frames/f0007.png
+ok 83 - independent verifier rejects tampering: frames/f0007.png
+  ---
+  duration_ms: 58.505508
+  ...
+# Subtest: independent verifier rejects tampering: boxes.jsonl
+ok 84 - independent verifier rejects tampering: boxes.jsonl
+  ---
+  duration_ms: 89.926535
+  ...
+# Subtest: independent verifier rejects tampering: contact_sheet.png
+ok 85 - independent verifier rejects tampering: contact_sheet.png
+  ---
+  duration_ms: 151.339221
+  ...
+# Subtest: mock PASS is independently verifiable and cannot be LIVE
+ok 86 - mock PASS is independently verifiable and cannot be LIVE
+  ---
+  duration_ms: 156.851122
+  ...
+# Subtest: run decision log records the complete review and repair chain
+ok 87 - run decision log records the complete review and repair chain
+  ---
+  duration_ms: 3.299367
+  ...
+# Subtest: forged LIVE label on a mock is rejected by independent verification
+ok 88 - forged LIVE label on a mock is rejected by independent verification
+  ---
+  duration_ms: 273.874332
+  ...
+# Subtest: actual evidence, review and run documents validate against published schemas
+ok 89 - actual evidence, review and run documents validate against published schemas
+  ---
+  duration_ms: 133.493587
+  ...
+# Subtest: repeat no-cache rendering, immutable attempts, cache and seek determinism
+ok 90 - repeat no-cache rendering, immutable attempts, cache and seek determinism
+  ---
+  duration_ms: 62509.051613
+  ...
+# Subtest: missing CLI and disabled vision fail closed without calls
+ok 91 - missing CLI and disabled vision fail closed without calls
+  ---
+  duration_ms: 9.575823
+  ...
+# Subtest: safe area uses visible transformed words, not container bounds
+ok 92 - safe area uses visible transformed words, not container bounds
+  ---
+  duration_ms: 1.925258
+  ...
+# Subtest: full-frame scan catches an event outside contact-sheet stride
+ok 93 - full-frame scan catches an event outside contact-sheet stride
+  ---
+  duration_ms: 1.080744
+  ...
+# Subtest: blank heuristics WARN; explicit region and discontinuity contracts FAIL
+ok 94 - blank heuristics WARN; explicit region and discontinuity contracts FAIL
+  ---
+  duration_ms: 0.588312
+  ...
+# Subtest: fixture-only required content preserves words and fully visible duration
+ok 95 - fixture-only required content preserves words and fully visible duration
+  ---
+  duration_ms: 0.271685
+  ...
+# Subtest: half-open quantization and coordinate roundtrip
+ok 96 - half-open quantization and coordinate roundtrip
+  ---
+  duration_ms: 0.268415
+  ...
+# Subtest: offscreen words cannot satisfy required content; ordinary flashes only WARN
+ok 97 - offscreen words cannot satisfy required content; ordinary flashes only WARN
+  ---
+  duration_ms: 0.238651
+  ...
+# Subtest: absent or incomplete validation never counts as PASS
+ok 98 - absent or incomplete validation never counts as PASS
+  ---
+  duration_ms: 0.372276
+  ...
+1..98
+# tests 98
+# suites 0
+# pass 98
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 224025.137946
