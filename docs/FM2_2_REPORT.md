@@ -97,3 +97,7 @@ This is distinct from Raphael's preserve list. Reference: COMPAT_INVARIANTS.md.
 Full scope and limitations: docs/PRESERVE_A_M.md. This is separate from the renderer checklist above.
 
 Acceptance protocol and cause scope: docs/fm2_2/capture-matrix/serial-acceptance-protocol.md. Both capture and banding gates remain required for push.
+
+## Instrumented acceptance restart approved
+
+Raphael lifted HOLD on2026-11-12 and authorized a new zero-based60-suite cohort with failure capture always on, followed by five fresh uncached repeats and98/98. Root cause stays UNVERIFIED. Run14 remains a known unreproduced failure:1 in14 prior acceptance suites,0 in40 diagnostic trials; these are separate conditions, not a pooled failure-rate estimate. Instrumentation commit8227513 records full exceptions, UTC/monotonic duration, observed readiness-wait duration, last good screenshot hash, run/test identity and failure-time CPU/browser process state without new waits/retries/timeouts. Forced-exception artifact self-test and build pass. The failed cohort is retained. Any recurrence stops the new cohort for classification/report before any fix. Load-independent readiness remains FM2.3. Histogram approval remains outstanding; both color and capture gates are required before landing/push.

@@ -13,3 +13,7 @@ All20 fully instrumented isolated negative-test-file runs completed without repr
 ## Full serial condition complete
 
 All20 full serial diagnostic suites completed with98/98 passes and zero skips each. Together with20 isolated runs, the40-trial campaign did not reproduce run14; no full screenshot exception was observed. Raw capture timestamps/load logs remain retained, with trace hashes in full-suite-results.json. Outcome: NOT REPRODUCED, classification UNVERIFIED. Observability can perturb timing; these passes establish neither a cause nor a fix. Acceptance remains HOLD; the failed14-run cohort is retained and no acceptance restart is authorized.
+
+## User supersedes acceptance HOLD
+
+On2026-11-12 Raphael authorized instrumented acceptance from zero despite the unreproduced cause. Classification remains UNVERIFIED. Any recurrence stops for artifact-based classification/report before fixes. Old13 suites do not carry. Readiness remains FM2.3.
