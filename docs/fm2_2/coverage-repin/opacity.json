@@ -1,0 +1,490 @@
+{
+  "suite": "opacity",
+  "rows": [
+    [
+      {
+        "opacity": 1,
+        "stroke": 16,
+        "expected": [
+          0,
+          0,
+          255,
+          255
+        ],
+        "legacyPixel": [
+          0,
+          0,
+          255,
+          255
+        ],
+        "gpuPixel": [
+          0,
+          0,
+          255,
+          255
+        ],
+        "changedChannels": 0,
+        "maxDelta": 0,
+        "hash": "d16be546eecf134075be43466faf1b0f76d86bf19d9f66ac1b4ca1bd716dcdc4",
+        "graph": [
+          {
+            "index": 0,
+            "call": "clearRect",
+            "opacity": 1,
+            "blend": "source-over",
+            "clear": true,
+            "shader": "compat.composite.v1"
+          },
+          {
+            "index": 1,
+            "call": "fillRect",
+            "opacity": 1,
+            "blend": "source-over",
+            "clear": false,
+            "shader": "compat.composite.v1"
+          },
+          {
+            "index": 2,
+            "call": "fill",
+            "opacity": 1,
+            "blend": "source-over",
+            "clear": false,
+            "shader": "compat.composite.v1"
+          },
+          {
+            "index": 3,
+            "call": "stroke",
+            "opacity": 1,
+            "blend": "source-over",
+            "clear": false,
+            "shader": "compat.composite.v1"
+          }
+        ],
+        "highWaterBytes": 262144
+      },
+      {
+        "opacity": 0.5,
+        "stroke": 0,
+        "expected": [
+          128,
+          0,
+          0,
+          255
+        ],
+        "legacyPixel": [
+          128,
+          0,
+          0,
+          255
+        ],
+        "gpuPixel": [
+          128,
+          0,
+          0,
+          255
+        ],
+        "changedChannels": 0,
+        "maxDelta": 0,
+        "hash": "4d1234bf5b5b3ee81cefb46091d38b374be1107b94e661c72a1a69b118d1cf3c",
+        "graph": [
+          {
+            "index": 0,
+            "call": "clearRect",
+            "opacity": 1,
+            "blend": "source-over",
+            "clear": true,
+            "shader": "compat.composite.v1"
+          },
+          {
+            "index": 1,
+            "call": "fillRect",
+            "opacity": 1,
+            "blend": "source-over",
+            "clear": false,
+            "shader": "compat.composite.v1"
+          },
+          {
+            "index": 2,
+            "call": "fill",
+            "opacity": 0.5,
+            "blend": "source-over",
+            "clear": false,
+            "shader": "compat.composite.v1"
+          },
+          {
+            "index": 3,
+            "call": "stroke",
+            "opacity": 0.5,
+            "blend": "source-over",
+            "clear": false,
+            "shader": "compat.composite.v1"
+          }
+        ],
+        "highWaterBytes": 262144
+      },
+      {
+        "opacity": 0.5,
+        "stroke": 16,
+        "expected": [
+          64,
+          0,
+          128,
+          255
+        ],
+        "legacyPixel": [
+          64,
+          0,
+          128,
+          255
+        ],
+        "gpuPixel": [
+          64,
+          0,
+          128,
+          255
+        ],
+        "changedChannels": 0,
+        "maxDelta": 0,
+        "hash": "31ec2258b3505535a23b79cb76adb8182d4d818dc245e60d39afd00b6ab72ce1",
+        "graph": [
+          {
+            "index": 0,
+            "call": "clearRect",
+            "opacity": 1,
+            "blend": "source-over",
+            "clear": true,
+            "shader": "compat.composite.v1"
+          },
+          {
+            "index": 1,
+            "call": "fillRect",
+            "opacity": 1,
+            "blend": "source-over",
+            "clear": false,
+            "shader": "compat.composite.v1"
+          },
+          {
+            "index": 2,
+            "call": "fill",
+            "opacity": 0.5,
+            "blend": "source-over",
+            "clear": false,
+            "shader": "compat.composite.v1"
+          },
+          {
+            "index": 3,
+            "call": "stroke",
+            "opacity": 0.5,
+            "blend": "source-over",
+            "clear": false,
+            "shader": "compat.composite.v1"
+          }
+        ],
+        "highWaterBytes": 262144
+      },
+      {
+        "opacity": 0.25,
+        "stroke": 16,
+        "expected": [
+          48,
+          0,
+          64,
+          255
+        ],
+        "legacyPixel": [
+          48,
+          0,
+          64,
+          255
+        ],
+        "gpuPixel": [
+          48,
+          0,
+          64,
+          255
+        ],
+        "changedChannels": 0,
+        "maxDelta": 0,
+        "hash": "7b0925b7c963e2719186ce654db258d9a20c5c453ac18ce4cd73686785036530",
+        "graph": [
+          {
+            "index": 0,
+            "call": "clearRect",
+            "opacity": 1,
+            "blend": "source-over",
+            "clear": true,
+            "shader": "compat.composite.v1"
+          },
+          {
+            "index": 1,
+            "call": "fillRect",
+            "opacity": 1,
+            "blend": "source-over",
+            "clear": false,
+            "shader": "compat.composite.v1"
+          },
+          {
+            "index": 2,
+            "call": "fill",
+            "opacity": 0.25,
+            "blend": "source-over",
+            "clear": false,
+            "shader": "compat.composite.v1"
+          },
+          {
+            "index": 3,
+            "call": "stroke",
+            "opacity": 0.25,
+            "blend": "source-over",
+            "clear": false,
+            "shader": "compat.composite.v1"
+          }
+        ],
+        "highWaterBytes": 262144
+      }
+    ],
+    [
+      {
+        "opacity": 1,
+        "stroke": 16,
+        "expected": [
+          0,
+          0,
+          255,
+          255
+        ],
+        "legacyPixel": [
+          0,
+          0,
+          255,
+          255
+        ],
+        "gpuPixel": [
+          0,
+          0,
+          255,
+          255
+        ],
+        "changedChannels": 0,
+        "maxDelta": 0,
+        "hash": "d16be546eecf134075be43466faf1b0f76d86bf19d9f66ac1b4ca1bd716dcdc4",
+        "graph": [
+          {
+            "index": 0,
+            "call": "clearRect",
+            "opacity": 1,
+            "blend": "source-over",
+            "clear": true,
+            "shader": "compat.composite.v1"
+          },
+          {
+            "index": 1,
+            "call": "fillRect",
+            "opacity": 1,
+            "blend": "source-over",
+            "clear": false,
+            "shader": "compat.composite.v1"
+          },
+          {
+            "index": 2,
+            "call": "fill",
+            "opacity": 1,
+            "blend": "source-over",
+            "clear": false,
+            "shader": "compat.composite.v1"
+          },
+          {
+            "index": 3,
+            "call": "stroke",
+            "opacity": 1,
+            "blend": "source-over",
+            "clear": false,
+            "shader": "compat.composite.v1"
+          }
+        ],
+        "highWaterBytes": 262144
+      },
+      {
+        "opacity": 0.5,
+        "stroke": 0,
+        "expected": [
+          128,
+          0,
+          0,
+          255
+        ],
+        "legacyPixel": [
+          128,
+          0,
+          0,
+          255
+        ],
+        "gpuPixel": [
+          128,
+          0,
+          0,
+          255
+        ],
+        "changedChannels": 0,
+        "maxDelta": 0,
+        "hash": "4d1234bf5b5b3ee81cefb46091d38b374be1107b94e661c72a1a69b118d1cf3c",
+        "graph": [
+          {
+            "index": 0,
+            "call": "clearRect",
+            "opacity": 1,
+            "blend": "source-over",
+            "clear": true,
+            "shader": "compat.composite.v1"
+          },
+          {
+            "index": 1,
+            "call": "fillRect",
+            "opacity": 1,
+            "blend": "source-over",
+            "clear": false,
+            "shader": "compat.composite.v1"
+          },
+          {
+            "index": 2,
+            "call": "fill",
+            "opacity": 0.5,
+            "blend": "source-over",
+            "clear": false,
+            "shader": "compat.composite.v1"
+          },
+          {
+            "index": 3,
+            "call": "stroke",
+            "opacity": 0.5,
+            "blend": "source-over",
+            "clear": false,
+            "shader": "compat.composite.v1"
+          }
+        ],
+        "highWaterBytes": 262144
+      },
+      {
+        "opacity": 0.5,
+        "stroke": 16,
+        "expected": [
+          64,
+          0,
+          128,
+          255
+        ],
+        "legacyPixel": [
+          64,
+          0,
+          128,
+          255
+        ],
+        "gpuPixel": [
+          64,
+          0,
+          128,
+          255
+        ],
+        "changedChannels": 0,
+        "maxDelta": 0,
+        "hash": "31ec2258b3505535a23b79cb76adb8182d4d818dc245e60d39afd00b6ab72ce1",
+        "graph": [
+          {
+            "index": 0,
+            "call": "clearRect",
+            "opacity": 1,
+            "blend": "source-over",
+            "clear": true,
+            "shader": "compat.composite.v1"
+          },
+          {
+            "index": 1,
+            "call": "fillRect",
+            "opacity": 1,
+            "blend": "source-over",
+            "clear": false,
+            "shader": "compat.composite.v1"
+          },
+          {
+            "index": 2,
+            "call": "fill",
+            "opacity": 0.5,
+            "blend": "source-over",
+            "clear": false,
+            "shader": "compat.composite.v1"
+          },
+          {
+            "index": 3,
+            "call": "stroke",
+            "opacity": 0.5,
+            "blend": "source-over",
+            "clear": false,
+            "shader": "compat.composite.v1"
+          }
+        ],
+        "highWaterBytes": 262144
+      },
+      {
+        "opacity": 0.25,
+        "stroke": 16,
+        "expected": [
+          48,
+          0,
+          64,
+          255
+        ],
+        "legacyPixel": [
+          48,
+          0,
+          64,
+          255
+        ],
+        "gpuPixel": [
+          48,
+          0,
+          64,
+          255
+        ],
+        "changedChannels": 0,
+        "maxDelta": 0,
+        "hash": "7b0925b7c963e2719186ce654db258d9a20c5c453ac18ce4cd73686785036530",
+        "graph": [
+          {
+            "index": 0,
+            "call": "clearRect",
+            "opacity": 1,
+            "blend": "source-over",
+            "clear": true,
+            "shader": "compat.composite.v1"
+          },
+          {
+            "index": 1,
+            "call": "fillRect",
+            "opacity": 1,
+            "blend": "source-over",
+            "clear": false,
+            "shader": "compat.composite.v1"
+          },
+          {
+            "index": 2,
+            "call": "fill",
+            "opacity": 0.25,
+            "blend": "source-over",
+            "clear": false,
+            "shader": "compat.composite.v1"
+          },
+          {
+            "index": 3,
+            "call": "stroke",
+            "opacity": 0.25,
+            "blend": "source-over",
+            "clear": false,
+            "shader": "compat.composite.v1"
+          }
+        ],
+        "highWaterBytes": 262144
+      }
+    ]
+  ],
+  "status": "COMPLETE"
+}

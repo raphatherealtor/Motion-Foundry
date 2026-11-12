@@ -1,0 +1,7 @@
+paper-collage.build_tear 0 browser opened
+page loaded
+golden ready
+paper-collage.build_tear 1 browser opened
+page loaded
+golden ready
+PASS two fresh browser outputs identical paper-collage.build_tear

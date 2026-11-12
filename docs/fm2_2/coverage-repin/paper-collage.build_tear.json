@@ -1,0 +1,124 @@
+{
+  "suite": "paper-collage.build_tear",
+  "rows": [
+    {
+      "legacy": "3f0631cc012480189a8e9e5cce8923bb8b5318aae0a0bae07363a26b8d77abac",
+      "gpu": "bc7b84e337095b259369c3a78cbbd681b046e9685fcd45151c1a8a4cf74c1ebe",
+      "parity": {
+        "paper-collage.build_tear": {
+          "recipe": "paper-collage.build_tear",
+          "frame": 90,
+          "changedChannels": 946,
+          "changedPixels": 577,
+          "fraction": 0.00011405285493827161,
+          "maxDelta": 1,
+          "deltaGte2": 0,
+          "onAaEdge": 570,
+          "interiorUnderClip": 7,
+          "interiorOutsideClip": 0,
+          "interiorSamples": [
+            {
+              "x": 585,
+              "y": 884,
+              "insideClip": true
+            },
+            {
+              "x": 511,
+              "y": 944,
+              "insideClip": true
+            },
+            {
+              "x": 505,
+              "y": 973,
+              "insideClip": true
+            },
+            {
+              "x": 574,
+              "y": 973,
+              "insideClip": true
+            },
+            {
+              "x": 580,
+              "y": 990,
+              "insideClip": true
+            },
+            {
+              "x": 488,
+              "y": 1021,
+              "insideClip": true
+            },
+            {
+              "x": 591,
+              "y": 1021,
+              "insideClip": true
+            }
+          ],
+          "diff_sha256": "5a2713e6accda1b560bf1195442eaf3f29b578c8f33d3a28710b98dca8be4f79",
+          "delta_sha256": "94d911f599f31136dc8fe8f86e9a81de0eb412de6a9f5737f07b768ae6012c91",
+          "drawCalls": 72,
+          "highWaterBytes": 33177600
+        }
+      }
+    },
+    {
+      "legacy": "3f0631cc012480189a8e9e5cce8923bb8b5318aae0a0bae07363a26b8d77abac",
+      "gpu": "bc7b84e337095b259369c3a78cbbd681b046e9685fcd45151c1a8a4cf74c1ebe",
+      "parity": {
+        "paper-collage.build_tear": {
+          "recipe": "paper-collage.build_tear",
+          "frame": 90,
+          "changedChannels": 946,
+          "changedPixels": 577,
+          "fraction": 0.00011405285493827161,
+          "maxDelta": 1,
+          "deltaGte2": 0,
+          "onAaEdge": 570,
+          "interiorUnderClip": 7,
+          "interiorOutsideClip": 0,
+          "interiorSamples": [
+            {
+              "x": 585,
+              "y": 884,
+              "insideClip": true
+            },
+            {
+              "x": 511,
+              "y": 944,
+              "insideClip": true
+            },
+            {
+              "x": 505,
+              "y": 973,
+              "insideClip": true
+            },
+            {
+              "x": 574,
+              "y": 973,
+              "insideClip": true
+            },
+            {
+              "x": 580,
+              "y": 990,
+              "insideClip": true
+            },
+            {
+              "x": 488,
+              "y": 1021,
+              "insideClip": true
+            },
+            {
+              "x": 591,
+              "y": 1021,
+              "insideClip": true
+            }
+          ],
+          "diff_sha256": "5a2713e6accda1b560bf1195442eaf3f29b578c8f33d3a28710b98dca8be4f79",
+          "delta_sha256": "94d911f599f31136dc8fe8f86e9a81de0eb412de6a9f5737f07b768ae6012c91",
+          "drawCalls": 72,
+          "highWaterBytes": 33177600
+        }
+      }
+    }
+  ],
+  "status": "COMPLETE"
+}

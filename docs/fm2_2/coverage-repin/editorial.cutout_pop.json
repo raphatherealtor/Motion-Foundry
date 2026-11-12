@@ -1,0 +1,65 @@
+{
+  "suite": "editorial.cutout_pop",
+  "rows": [
+    {
+      "legacy": "a6f9f4f274cf2c08a40339ef3e8b4060441daaa05c329969dd2805b683c17727",
+      "gpu": "edda95660718717efa98cfc38004e62ff2548a99fb936ec589da0a4556a2ece0",
+      "parity": {
+        "editorial.cutout_pop": {
+          "recipe": "editorial.cutout_pop",
+          "frame": 90,
+          "changedChannels": 955,
+          "changedPixels": 577,
+          "fraction": 0.00011513792438271605,
+          "maxDelta": 1,
+          "deltaGte2": 0,
+          "onAaEdge": 570,
+          "interiorUnderClip": 7,
+          "interiorOutsideClip": 0,
+          "interiorSamples": [
+            {
+              "x": 585,
+              "y": 884,
+              "insideClip": true
+            },
+            {
+              "x": 511,
+              "y": 944,
+              "insideClip": true
+            },
+            {
+              "x": 505,
+              "y": 973,
+              "insideClip": true
+            },
+            {
+              "x": 574,
+              "y": 973,
+              "insideClip": true
+            },
+            {
+              "x": 580,
+              "y": 990,
+              "insideClip": true
+            },
+            {
+              "x": 488,
+              "y": 1021,
+              "insideClip": true
+            },
+            {
+              "x": 591,
+              "y": 1021,
+              "insideClip": true
+            }
+          ],
+          "diff_sha256": "e21c50775ca586164e0242d26b9650487159aa25173af58b3d821b48d8e7a95f",
+          "delta_sha256": "01fab7ca8c91082b39855016aa9cb08d38212a6de3e25098e62967bd8e7ba901",
+          "drawCalls": 96,
+          "highWaterBytes": 33177600
+        }
+      }
+    }
+  ],
+  "status": "IN_PROGRESS"
+}

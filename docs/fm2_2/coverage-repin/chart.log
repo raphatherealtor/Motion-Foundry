@@ -1,0 +1,7 @@
+chart 0 browser opened
+page loaded
+golden ready
+chart 1 browser opened
+page loaded
+golden ready
+PASS two fresh browser outputs identical chart

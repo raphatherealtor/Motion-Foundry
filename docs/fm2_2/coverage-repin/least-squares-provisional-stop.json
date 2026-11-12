@@ -1,0 +1,231 @@
+{
+  "frame": 25,
+  "pixels": [
+    {
+      "x": 71,
+      "y": 255,
+      "reference": [
+        30,
+        24,
+        36
+      ],
+      "candidate": [
+        37,
+        28,
+        37
+      ],
+      "maxDelta": 7,
+      "boundary": true,
+      "aaEdgeCertified": true,
+      "flanks": {
+        "F": [
+          237,
+          105,
+          91
+        ],
+        "B": [
+          16,
+          20,
+          33
+        ],
+        "fillNeighbor": [
+          72,
+          255
+        ],
+        "backgroundNeighbor": [
+          70,
+          255
+        ]
+      },
+      "referenceFit": {
+        "t": 0.06071007908463739,
+        "residual": [
+          0.5830725222951365,
+          -1.1603567221941766,
+          -0.5211845869089657
+        ],
+        "onSegment": true
+      },
+      "candidateFit": {
+        "t": 0.09343765774861182,
+        "residual": [
+          0.3502776375567862,
+          0.05779909136799688,
+          -1.4193841494194857
+        ],
+        "onSegment": true
+      },
+      "coverageShift": 0.03272757866397443
+    },
+    {
+      "x": 231,
+      "y": 255,
+      "reference": [
+        175,
+        80,
+        74
+      ],
+      "candidate": [
+        189,
+        86,
+        78
+      ],
+      "maxDelta": 14,
+      "boundary": true,
+      "aaEdgeCertified": true,
+      "flanks": {
+        "F": [
+          237,
+          105,
+          91
+        ],
+        "B": [
+          16,
+          20,
+          33
+        ],
+        "fillNeighbor": [
+          230,
+          255
+        ],
+        "backgroundNeighbor": [
+          232,
+          255
+        ]
+      },
+      "referenceFit": {
+        "t": 0.7170957428907959,
+        "residual": [
+          0.5218408211341057,
+          -0.9531381457176451,
+          -0.5915530876661705
+        ],
+        "onSegment": true
+      },
+      "candidateFit": {
+        "t": 0.7816422682147064,
+        "residual": [
+          0.25705872454989276,
+          -0.4395927982500467,
+          -0.3352515564529739
+        ],
+        "onSegment": true
+      },
+      "coverageShift": 0.06454652532391048
+    },
+    {
+      "x": 332,
+      "y": 763,
+      "reference": [
+        46,
+        72,
+        73
+      ],
+      "candidate": [
+        43,
+        67,
+        69
+      ],
+      "maxDelta": 5,
+      "boundary": true,
+      "aaEdgeCertified": true,
+      "flanks": {
+        "F": [
+          113,
+          187,
+          164
+        ],
+        "B": [
+          16,
+          20,
+          33
+        ],
+        "fillNeighbor": [
+          333,
+          763
+        ],
+        "backgroundNeighbor": [
+          331,
+          763
+        ]
+      },
+      "referenceFit": {
+        "t": 0.3091132778787712,
+        "residual": [
+          0.016012045759197235,
+          0.37808259424521395,
+          -0.493839402119022
+        ],
+        "onSegment": true
+      },
+      "candidateFit": {
+        "t": 0.2788152555133219,
+        "residual": [
+          -0.045079784792221744,
+          0.43785232927524476,
+          -0.5247984722451804
+        ],
+        "onSegment": true
+      },
+      "coverageShift": 0.030298022365449262
+    }
+  ],
+  "violations": [
+    {
+      "x": 231,
+      "y": 255,
+      "reference": [
+        175,
+        80,
+        74
+      ],
+      "candidate": [
+        189,
+        86,
+        78
+      ],
+      "maxDelta": 14,
+      "boundary": true,
+      "aaEdgeCertified": true,
+      "flanks": {
+        "F": [
+          237,
+          105,
+          91
+        ],
+        "B": [
+          16,
+          20,
+          33
+        ],
+        "fillNeighbor": [
+          230,
+          255
+        ],
+        "backgroundNeighbor": [
+          232,
+          255
+        ]
+      },
+      "referenceFit": {
+        "t": 0.7170957428907959,
+        "residual": [
+          0.5218408211341057,
+          -0.9531381457176451,
+          -0.5915530876661705
+        ],
+        "onSegment": true
+      },
+      "candidateFit": {
+        "t": 0.7816422682147064,
+        "residual": [
+          0.25705872454989276,
+          -0.4395927982500467,
+          -0.3352515564529739
+        ],
+        "onSegment": true
+      },
+      "coverageShift": 0.06454652532391048
+    }
+  ]
+}

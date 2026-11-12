@@ -1,0 +1,52 @@
+{
+  "suite": "m1",
+  "rows": [
+    {
+      "legacy": "3bc25fcc2335939c5920d300106a8cd2e6c2a0a04b07acef55ddbce2fb05a4e8",
+      "gpu": "3bc25fcc2335939c5920d300106a8cd2e6c2a0a04b07acef55ddbce2fb05a4e8",
+      "parity": {
+        "m1": {
+          "recipe": "m1",
+          "frame": 90,
+          "changedChannels": 0,
+          "changedPixels": 0,
+          "fraction": 0,
+          "maxDelta": 0,
+          "deltaGte2": 0,
+          "onAaEdge": 0,
+          "interiorUnderClip": 0,
+          "interiorOutsideClip": 0,
+          "interiorSamples": [],
+          "diff_sha256": "11283ef755895422e6f28b93f3d78cad7539891cf2893c9fdccefb923c5bf70b",
+          "delta_sha256": "0c3b31bf3c9f4adec11e2b736e84b254cf3c5b4a89b9bc96f72987c48d27c7fa",
+          "drawCalls": 78,
+          "highWaterBytes": 33177600
+        }
+      }
+    },
+    {
+      "legacy": "3bc25fcc2335939c5920d300106a8cd2e6c2a0a04b07acef55ddbce2fb05a4e8",
+      "gpu": "3bc25fcc2335939c5920d300106a8cd2e6c2a0a04b07acef55ddbce2fb05a4e8",
+      "parity": {
+        "m1": {
+          "recipe": "m1",
+          "frame": 90,
+          "changedChannels": 0,
+          "changedPixels": 0,
+          "fraction": 0,
+          "maxDelta": 0,
+          "deltaGte2": 0,
+          "onAaEdge": 0,
+          "interiorUnderClip": 0,
+          "interiorOutsideClip": 0,
+          "interiorSamples": [],
+          "diff_sha256": "11283ef755895422e6f28b93f3d78cad7539891cf2893c9fdccefb923c5bf70b",
+          "delta_sha256": "0c3b31bf3c9f4adec11e2b736e84b254cf3c5b4a89b9bc96f72987c48d27c7fa",
+          "drawCalls": 78,
+          "highWaterBytes": 33177600
+        }
+      }
+    }
+  ],
+  "status": "COMPLETE"
+}

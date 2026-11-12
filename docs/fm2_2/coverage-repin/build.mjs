@@ -1,0 +1,13 @@
+import {build} from '/root/projects/motion-suite-m2/node_modules/vite/dist/node/index.js';
+import {chromium} from '../../../tooling/m1-browser/node_modules/playwright/index.mjs';
+import {pageSource} from '../../../dist/src/adapters/motion-suite/page-source.js';
+import {describe} from '../../../dist/src/recipes/compiler.js';
+import {shell,legacy} from '../../fm2_step0/probe-config.mjs';
+import {serveBundle} from '../../../dist/src/adapters/motion-suite/harness.js';
+import fs from 'node:fs';import path from 'node:path';import {fileURLToPath} from 'node:url';import {spawnSync} from 'node:child_process';import {createHash} from 'node:crypto';
+const foundry=fileURLToPath(new URL('../../../',import.meta.url)),root='/root/projects/motion-suite-m2';
+const work=path.join(foundry,'runs/fm2-2/coverage-repin/exact'),pageDir=path.join(work,'page'),outDir=path.join(work,'bundle');
+fs.mkdirSync(pageDir,{recursive:true});fs.writeFileSync(path.join(pageDir,'index.html'),'<html><script type="module" src="./main.ts"></script></html>');
+fs.writeFileSync(path.join(pageDir,'main.ts'),pageSource(root)+`\nimport{compatParity}from'${root}/tests/golden-gpu/parity';import{opacityRegression}from'${root}/tests/golden-gpu/opacity';import{WebGL2Backend}from'${root}/src/motion/render/gpu/webgl2';import{renderCompat}from'${root}/src/motion/render/gpu/compat';window.rawCompat=(project,frame)=>{const doc=project.motionDocuments[project.activeDocumentId],b=new WebGL2Backend(document.createElement('canvas'),1024**3,true);try{return renderCompat(b,project,doc,frame/30).pixels;}finally{b.dispose();}};window.foundryGPU={compatParity,opacityRegression};`);
+await build({root:pageDir,configFile:false,logLevel:'warn',plugins:[{name:'retain-golden',enforce:'pre',transform(code,id){if(id===root+'/tests/golden/page/main.ts')return{code,map:null,moduleSideEffects:true};}}],resolve:{alias:{'@':root+'/src'}},css:{postcss:{plugins:[]}},build:{outDir,emptyOutDir:true,minify:false,target:'es2022',assetsInlineLimit:0}});
+console.log('BUILD_COMPLETE: prebuilt exact suite bundle');

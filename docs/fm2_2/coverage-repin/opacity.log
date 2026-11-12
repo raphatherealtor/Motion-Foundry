@@ -1,0 +1,7 @@
+opacity 0 browser opened
+page loaded
+golden ready
+opacity 1 browser opened
+page loaded
+golden ready
+PASS two fresh browser outputs identical opacity

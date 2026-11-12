@@ -1,0 +1,31 @@
+{
+  "m1": {
+    "completedBrowsers": 2,
+    "status": "COMPLETE",
+    "identity": true,
+    "diffPinMatches": true,
+    "signedDeltaPinMatches": true
+  },
+  "chart": {
+    "completedBrowsers": 2,
+    "status": "COMPLETE",
+    "identity": true,
+    "diffPinMatches": true,
+    "signedDeltaPinMatches": true
+  },
+  "paper-collage.build_tear": {
+    "completedBrowsers": 2,
+    "status": "COMPLETE",
+    "identity": true,
+    "diffPinMatches": true,
+    "signedDeltaPinMatches": true
+  },
+  "editorial.cutout_pop": {
+    "completedBrowsers": 1,
+    "status": "IN_PROGRESS",
+    "identity": false,
+    "diffPinMatches": true,
+    "signedDeltaPinMatches": true,
+    "secondBrowserCommandExit": 124
+  }
+}

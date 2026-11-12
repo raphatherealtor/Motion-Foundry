@@ -1,0 +1,8 @@
+[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugins. Here is a breakdown:
+  - vite:css (39%)
+  - vite:asset (22%)
+  - retain-golden (21%)
+  - vite:worker-import-meta-url (13%)
+See https://rolldown.rs/reference/InputOptions.checks#plugintimings for more details.
+
+BUILD_COMPLETE: prebuilt exact suite bundle

@@ -1,0 +1,16 @@
+editorial.cutout_pop 0 browser opened
+page loaded
+golden ready
+editorial.cutout_pop 1 browser opened
+page loaded
+golden ready
+node:internal/modules/run_main:122
+    triggerUncaughtException(
+    ^
+
+page.evaluate: Target page, context or browser has been closed
+    at /root/projects/motion-foundry/docs/fm2_2/coverage-repin/suite.mjs:5:25 {
+  log: []
+}
+
+Node.js v22.14.0

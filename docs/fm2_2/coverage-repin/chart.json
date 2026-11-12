@@ -1,0 +1,52 @@
+{
+  "suite": "chart",
+  "rows": [
+    {
+      "legacy": "33ca05524c97b713bb402cbf9244fbb860639cb2f0bf0289a034e7dd85a80b27",
+      "gpu": "33ca05524c97b713bb402cbf9244fbb860639cb2f0bf0289a034e7dd85a80b27",
+      "parity": {
+        "chart": {
+          "recipe": "chart",
+          "frame": 90,
+          "changedChannels": 0,
+          "changedPixels": 0,
+          "fraction": 0,
+          "maxDelta": 0,
+          "deltaGte2": 0,
+          "onAaEdge": 0,
+          "interiorUnderClip": 0,
+          "interiorOutsideClip": 0,
+          "interiorSamples": [],
+          "diff_sha256": "11283ef755895422e6f28b93f3d78cad7539891cf2893c9fdccefb923c5bf70b",
+          "delta_sha256": "0c3b31bf3c9f4adec11e2b736e84b254cf3c5b4a89b9bc96f72987c48d27c7fa",
+          "drawCalls": 78,
+          "highWaterBytes": 33177600
+        }
+      }
+    },
+    {
+      "legacy": "33ca05524c97b713bb402cbf9244fbb860639cb2f0bf0289a034e7dd85a80b27",
+      "gpu": "33ca05524c97b713bb402cbf9244fbb860639cb2f0bf0289a034e7dd85a80b27",
+      "parity": {
+        "chart": {
+          "recipe": "chart",
+          "frame": 90,
+          "changedChannels": 0,
+          "changedPixels": 0,
+          "fraction": 0,
+          "maxDelta": 0,
+          "deltaGte2": 0,
+          "onAaEdge": 0,
+          "interiorUnderClip": 0,
+          "interiorOutsideClip": 0,
+          "interiorSamples": [],
+          "diff_sha256": "11283ef755895422e6f28b93f3d78cad7539891cf2893c9fdccefb923c5bf70b",
+          "delta_sha256": "0c3b31bf3c9f4adec11e2b736e84b254cf3c5b4a89b9bc96f72987c48d27c7fa",
+          "drawCalls": 78,
+          "highWaterBytes": 33177600
+        }
+      }
+    }
+  ],
+  "status": "COMPLETE"
+}

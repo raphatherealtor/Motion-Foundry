@@ -141,3 +141,7 @@ Harness-only30-minute investigation: directPage.captureScreenshot(no clip/scale)
 ## Narrow direct-CDP re-pin gate stopped
 
 Raphael authorized direct capture/re-pin only AA tile-boundary pixels withmaxDelta6. Two fresh-browser M0runs0–210 have identical211framehashes. Old/newclassification stops atframe2:(230,255) RGB[23,22,34]→[30,24,36],delta7,despiteAA/tileedgeclassification. Frames0/1eligiblebutNONEre-pinned. M1proof/chart/opacitytwo-browserrunnerincomplete atcommandbudget,notretried;GPU-pinsnotverified/re-pinned. No stress/acceptance/push. Full report fm2_2/repin-check/REPORT.md; FTHREATENED,Run14open.
+
+## Coverage-rule re-pin diagnostic: bounded stop
+
+User replaced delta6 with tile/geometry/coverage criteria. All211 M0 frames qualify (597 changed pixels, maximum channel delta14, maximum feasible coverage shift0.0625), and two fresh-browser M0 renders match. No frame re-pinned. Bundle built separately; M1 proof/chart/opacity each pass two-browser identity within their own120s budgets and preserve exact parity/pins. Paper GPU two measurements and editorial first measurement preserve accepted diff/signed-delta pins and570/7/0 counts. An extra second editorial measurement exceeded120s (exit124, page.evaluate target closed); no retry, timeout extension or pass claim. Stopped with production/observer unchanged and unadopted proposals stored only in docs. No stress/acceptance/push. Full report: fm2_2/coverage-repin/REPORT.md; separate Compat/A-M retained; F THREATENED, Run14 UNVERIFIED.

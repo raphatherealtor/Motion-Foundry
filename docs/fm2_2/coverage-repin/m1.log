@@ -1,0 +1,7 @@
+m1 0 browser opened
+page loaded
+golden ready
+m1 1 browser opened
+page loaded
+golden ready
+PASS two fresh browser outputs identical m1
