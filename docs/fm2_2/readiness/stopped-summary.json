@@ -1,0 +1,165 @@
+{
+  "status": "STOPPED_USER_DIRECTIVE",
+  "stopped": "2026-11-12T15:14:55Z",
+  "completed": [
+    {
+      "phase": "baseline",
+      "index": 0,
+      "start": "2026-11-12T14:24:21.541Z",
+      "end": "2026-11-12T14:29:26.875Z",
+      "exitCode": 0,
+      "error": null,
+      "totals": {
+        "tests": 98,
+        "pass": 98,
+        "fail": 0,
+        "cancelled": 0,
+        "skipped": 0
+      },
+      "pairs": 860,
+      "mismatchCount": 23
+    },
+    {
+      "phase": "candidate1-existing-flag",
+      "index": 0,
+      "start": "2026-11-12T14:29:26.884Z",
+      "end": "2026-11-12T14:34:34.850Z",
+      "exitCode": 0,
+      "error": null,
+      "totals": {
+        "tests": 98,
+        "pass": 98,
+        "fail": 0,
+        "cancelled": 0,
+        "skipped": 0
+      },
+      "pairs": 860,
+      "mismatchCount": 13
+    },
+    {
+      "phase": "baseline-continuation",
+      "index": 0,
+      "start": "2026-11-12T14:41:08.269Z",
+      "end": "2026-11-12T14:46:15.461Z",
+      "exitCode": 0,
+      "error": null,
+      "totals": {
+        "tests": 98,
+        "pass": 98,
+        "fail": 0,
+        "cancelled": 0,
+        "skipped": 0
+      },
+      "pairs": 860,
+      "mismatchCount": 11
+    },
+    {
+      "phase": "baseline-continuation",
+      "index": 1,
+      "start": "2026-11-12T14:46:15.475Z",
+      "end": "2026-11-12T14:51:24.256Z",
+      "exitCode": 0,
+      "error": null,
+      "totals": {
+        "tests": 98,
+        "pass": 98,
+        "fail": 0,
+        "cancelled": 0,
+        "skipped": 0
+      },
+      "pairs": 860,
+      "mismatchCount": 9
+    },
+    {
+      "phase": "baseline-continuation",
+      "index": 2,
+      "start": "2026-11-12T14:51:24.257Z",
+      "end": "2026-11-12T14:56:21.138Z",
+      "exitCode": 0,
+      "error": null,
+      "totals": {
+        "tests": 98,
+        "pass": 98,
+        "fail": 0,
+        "cancelled": 0,
+        "skipped": 0
+      },
+      "pairs": 860,
+      "mismatchCount": 13
+    },
+    {
+      "phase": "baseline-continuation",
+      "index": 3,
+      "start": "2026-11-12T14:56:21.139Z",
+      "end": "2026-11-12T15:01:21.826Z",
+      "exitCode": 0,
+      "error": null,
+      "totals": {
+        "tests": 98,
+        "pass": 98,
+        "fail": 0,
+        "cancelled": 0,
+        "skipped": 0
+      },
+      "pairs": 860,
+      "mismatchCount": 17
+    },
+    {
+      "phase": "baseline-continuation",
+      "index": 4,
+      "start": "2026-11-12T15:01:21.827Z",
+      "end": "2026-11-12T15:06:30.242Z",
+      "exitCode": 0,
+      "error": null,
+      "totals": {
+        "tests": 98,
+        "pass": 98,
+        "fail": 0,
+        "cancelled": 0,
+        "skipped": 0
+      },
+      "pairs": 860,
+      "mismatchCount": 11
+    },
+    {
+      "phase": "baseline-continuation",
+      "index": 5,
+      "start": "2026-11-12T15:06:30.243Z",
+      "end": "2026-11-12T15:11:35.468Z",
+      "exitCode": 0,
+      "error": null,
+      "totals": {
+        "tests": 98,
+        "pass": 98,
+        "fail": 0,
+        "cancelled": 0,
+        "skipped": 0
+      },
+      "pairs": 860,
+      "mismatchCount": 13
+    }
+  ],
+  "partialUncounted": [
+    {
+      "phase": "candidate1-existing-flag",
+      "index": 1,
+      "pairs": 0,
+      "mismatches": 0,
+      "completed": false
+    },
+    {
+      "phase": "baseline-continuation",
+      "index": 6,
+      "pairs": 426,
+      "mismatches": 8,
+      "completed": false
+    }
+  ],
+  "completedTotals": {
+    "suites": 8,
+    "pairs": 6880,
+    "mismatches": 110
+  },
+  "beginFrame": "STOPPED_DECODED_PIXELS_DIFFER",
+  "newAcceptance": "10 consecutive full clean suites then5 fresh uncached repeats plus98/98; conditional gate not reached; no push without approval"
+}

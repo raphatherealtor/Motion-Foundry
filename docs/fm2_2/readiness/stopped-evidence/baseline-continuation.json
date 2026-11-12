@@ -1,0 +1,1746 @@
+{
+  "status": "IN_PROGRESS",
+  "started": "2026-11-12T14:21:22.000430+00:00",
+  "cutoff": "2026-11-12T16:21:22.000430+00:00",
+  "trials": [
+    {
+      "phase": "baseline-continuation",
+      "index": 0,
+      "start": "2026-11-12T14:41:08.269Z",
+      "end": "2026-11-12T14:46:15.461Z",
+      "exitCode": 0,
+      "error": null,
+      "totals": {
+        "tests": 98,
+        "pass": 98,
+        "fail": 0,
+        "cancelled": 0,
+        "skipped": 0
+      },
+      "pairs": 860,
+      "mismatches": [
+        {
+          "utc": "2026-11-12T14:43:23.271Z",
+          "mono": "2392881131789504",
+          "load": [
+            37.36,
+            38.64,
+            37.92
+          ],
+          "test": [
+            "/opt/node-v22.14.0-linux-x64/bin/node",
+            "/root/projects/motion-foundry/dist/test/negative.test.js"
+          ],
+          "event": "pair",
+          "page": 0,
+          "frame": 131,
+          "sequence": 131,
+          "file": "/tmp/foundry-acceptance-gYL3zE/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/9bc9ee3a-6d19-4b6b-942f-eeaa0911c6fc/frames/f0131.png",
+          "first": "91c76ce793a57af7a0916d0d229ab74cbe4749f4ae86a0e08ee2aaa9f06f6d64",
+          "second": "0fe3dd1491b2de8bf87e58c42474db8145c3a3837b76f5b318ebeb5383ffbb9d",
+          "equal": false,
+          "secondMs": 66
+        },
+        {
+          "utc": "2026-11-12T14:43:50.904Z",
+          "mono": "2392908765147279",
+          "load": [
+            41.61,
+            39.48,
+            38.21
+          ],
+          "test": [
+            "/opt/node-v22.14.0-linux-x64/bin/node",
+            "/root/projects/motion-foundry/dist/test/negative.test.js"
+          ],
+          "event": "pair",
+          "page": 3,
+          "frame": 22,
+          "sequence": 22,
+          "file": "/tmp/foundry-acceptance-gYL3zE/renders/e3b3616b4c4c5686b570f851f4c2f9b5a187b9eba339fa5b1688110495e31e16/806fbc05-00e3-47ab-a48b-38f6a29faaf8/frames/f0022.png",
+          "first": "655213ca4615f781e33cb3abf3486c2c7880734491970ff9f06887be662c6a10",
+          "second": "20b4b622bcd73989d939cea05fab1d66829c8f5b5e77bb8487ce2442f88af1bf",
+          "equal": false,
+          "secondMs": 72
+        },
+        {
+          "utc": "2026-11-12T14:44:04.347Z",
+          "mono": "2392922207319547",
+          "load": [
+            40.56,
+            39.37,
+            38.2
+          ],
+          "test": [
+            "/opt/node-v22.14.0-linux-x64/bin/node",
+            "/root/projects/motion-foundry/dist/test/negative.test.js"
+          ],
+          "event": "pair",
+          "page": 3,
+          "frame": 96,
+          "sequence": 96,
+          "file": "/tmp/foundry-acceptance-gYL3zE/renders/e3b3616b4c4c5686b570f851f4c2f9b5a187b9eba339fa5b1688110495e31e16/806fbc05-00e3-47ab-a48b-38f6a29faaf8/frames/f0096.png",
+          "first": "f34659739c489e5435cfe2f92bd51771665ee288ed17aebed44e5eb51ef72ff7",
+          "second": "bce1ab6b507ba70729a1199449363d5920cf459f1d948981a5a1b29bc1b50a65",
+          "equal": false,
+          "secondMs": 60
+        },
+        {
+          "utc": "2026-11-12T14:44:07.935Z",
+          "mono": "2392925795840599",
+          "load": [
+            40.56,
+            39.37,
+            38.2
+          ],
+          "test": [
+            "/opt/node-v22.14.0-linux-x64/bin/node",
+            "/root/projects/motion-foundry/dist/test/negative.test.js"
+          ],
+          "event": "pair",
+          "page": 3,
+          "frame": 115,
+          "sequence": 115,
+          "file": "/tmp/foundry-acceptance-gYL3zE/renders/e3b3616b4c4c5686b570f851f4c2f9b5a187b9eba339fa5b1688110495e31e16/806fbc05-00e3-47ab-a48b-38f6a29faaf8/frames/f0115.png",
+          "first": "36d426ca18ab7153415854267a79e6a293b9fe6d2f925b1f3c5cc4c832f5a914",
+          "second": "74321cb6f818398cd23eede5b2d57c947f226c9c7b493fe259dc795c295fbd70",
+          "equal": false,
+          "secondMs": 82
+        },
+        {
+          "utc": "2026-11-12T14:44:21.855Z",
+          "mono": "2392939715497938",
+          "load": [
+            40.29,
+            39.39,
+            38.23
+          ],
+          "test": [
+            "/opt/node-v22.14.0-linux-x64/bin/node",
+            "/root/projects/motion-foundry/dist/test/negative.test.js"
+          ],
+          "event": "pair",
+          "page": 3,
+          "frame": 190,
+          "sequence": 190,
+          "file": "/tmp/foundry-acceptance-gYL3zE/renders/e3b3616b4c4c5686b570f851f4c2f9b5a187b9eba339fa5b1688110495e31e16/806fbc05-00e3-47ab-a48b-38f6a29faaf8/frames/f0190.png",
+          "first": "eca79c486893ab629f07be5b484c440c33b4a94729b3d1bda624fa05c004f963",
+          "second": "bf533ffea53781bc9c6e6871afd94588b96533eb3818308e728c13a62dd2b6df",
+          "equal": false,
+          "secondMs": 70
+        },
+        {
+          "utc": "2026-11-12T14:44:48.367Z",
+          "mono": "2392966228043340",
+          "load": [
+            40.37,
+            39.54,
+            38.31
+          ],
+          "test": [
+            "/opt/node-v22.14.0-linux-x64/bin/node",
+            "/root/projects/motion-foundry/dist/test/render.test.js"
+          ],
+          "event": "pair",
+          "page": 0,
+          "frame": 68,
+          "sequence": 68,
+          "file": "/tmp/foundry-1nSN8b/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/b0072fb3-4945-4589-a334-cabbac2c1f18/frames/f0068.png",
+          "first": "364a67d84fa944e9fa593e45b55a456d2cfbe13b673dc22627df6df9e951cfab",
+          "second": "80081ff22b1e14700d08062be78af0b99fcef84d3144cb0754c03217d95d67a2",
+          "equal": false,
+          "secondMs": 65
+        },
+        {
+          "utc": "2026-11-12T14:45:04.397Z",
+          "mono": "2392982257211294",
+          "load": [
+            38.13,
+            39.1,
+            38.19
+          ],
+          "test": [
+            "/opt/node-v22.14.0-linux-x64/bin/node",
+            "/root/projects/motion-foundry/dist/test/render.test.js"
+          ],
+          "event": "pair",
+          "page": 0,
+          "frame": 155,
+          "sequence": 155,
+          "file": "/tmp/foundry-1nSN8b/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/b0072fb3-4945-4589-a334-cabbac2c1f18/frames/f0155.png",
+          "first": "eb3b12ad890922db92281b95c52759b3d211500297af43ea48534700bab03ddf",
+          "second": "85ad59a302002c430dddbaf2721142c592a2d94bd10ba5f7d4489e050c6ffb10",
+          "equal": false,
+          "secondMs": 63
+        },
+        {
+          "utc": "2026-11-12T14:45:13.415Z",
+          "mono": "2392991275320086",
+          "load": [
+            38.04,
+            39.06,
+            38.18
+          ],
+          "test": [
+            "/opt/node-v22.14.0-linux-x64/bin/node",
+            "/root/projects/motion-foundry/dist/test/render.test.js"
+          ],
+          "event": "pair",
+          "page": 0,
+          "frame": 204,
+          "sequence": 204,
+          "file": "/tmp/foundry-1nSN8b/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/b0072fb3-4945-4589-a334-cabbac2c1f18/frames/f0204.png",
+          "first": "debb28214383161bcb467b921d8d321186c76c88711f8e41815af22263c3e53d",
+          "second": "6eb162afc69f3202f1aaafa508f2c9baa4f52997af7400a7d444deb59508da47",
+          "equal": false,
+          "secondMs": 66
+        },
+        {
+          "utc": "2026-11-12T14:45:22.737Z",
+          "mono": "2393000597548078",
+          "load": [
+            38.27,
+            39.08,
+            38.2
+          ],
+          "test": [
+            "/opt/node-v22.14.0-linux-x64/bin/node",
+            "/root/projects/motion-foundry/dist/test/render.test.js"
+          ],
+          "event": "pair",
+          "page": 2,
+          "frame": 2,
+          "sequence": 2,
+          "file": "/tmp/foundry-1nSN8b/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/23382385-8c30-4279-bc9e-c137eb7656a6/frames/f0002.png",
+          "first": "26d08ace73bc43d4bca1858c606fd35ff9581e457f71528b74325255ffe987e9",
+          "second": "0694ff6d5fec85986279dd3c5fc945d70c2feb340ff1b6ff630c1a5e85f040fa",
+          "equal": false,
+          "secondMs": 72
+        },
+        {
+          "utc": "2026-11-12T14:45:35.653Z",
+          "mono": "2393013513776444",
+          "load": [
+            40.25,
+            39.44,
+            38.33
+          ],
+          "test": [
+            "/opt/node-v22.14.0-linux-x64/bin/node",
+            "/root/projects/motion-foundry/dist/test/render.test.js"
+          ],
+          "event": "pair",
+          "page": 2,
+          "frame": 71,
+          "sequence": 71,
+          "file": "/tmp/foundry-1nSN8b/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/23382385-8c30-4279-bc9e-c137eb7656a6/frames/f0071.png",
+          "first": "fa6810d0e4daef638219d473c2ef51b5c96676c3e85f40e1020645a3a29d5a75",
+          "second": "ecf613454a08c3787525211b7a5bb477d26082e8b63aa5fb83f3d8e7cd0d6675",
+          "equal": false,
+          "secondMs": 55
+        },
+        {
+          "utc": "2026-11-12T14:45:49.430Z",
+          "mono": "2393027290807823",
+          "load": [
+            40.67,
+            39.58,
+            38.39
+          ],
+          "test": [
+            "/opt/node-v22.14.0-linux-x64/bin/node",
+            "/root/projects/motion-foundry/dist/test/render.test.js"
+          ],
+          "event": "pair",
+          "page": 2,
+          "frame": 145,
+          "sequence": 145,
+          "file": "/tmp/foundry-1nSN8b/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/23382385-8c30-4279-bc9e-c137eb7656a6/frames/f0145.png",
+          "first": "5070763234df3d93b4ee417cf3ebe43d492d126c149770cb875f0690020e1c8d",
+          "second": "c2490a0970844323e17d7151d810e5868a3ebab4ca139f050ee8a32e45b2bf0f",
+          "equal": false,
+          "secondMs": 66
+        }
+      ]
+    },
+    {
+      "phase": "baseline-continuation",
+      "index": 1,
+      "start": "2026-11-12T14:46:15.475Z",
+      "end": "2026-11-12T14:51:24.256Z",
+      "exitCode": 0,
+      "error": null,
+      "totals": {
+        "tests": 98,
+        "pass": 98,
+        "fail": 0,
+        "cancelled": 0,
+        "skipped": 0
+      },
+      "pairs": 860,
+      "mismatches": [
+        {
+          "utc": "2026-11-12T14:48:12.573Z",
+          "mono": "2393170433540034",
+          "load": [
+            39.84,
+            40.6,
+            38.99
+          ],
+          "test": [
+            "/opt/node-v22.14.0-linux-x64/bin/node",
+            "/root/projects/motion-foundry/dist/test/negative.test.js"
+          ],
+          "event": "pair",
+          "page": 0,
+          "frame": 4,
+          "sequence": 4,
+          "file": "/tmp/foundry-acceptance-fkV9uA/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/545701ed-d91f-45c8-916c-c0a6d9d62bc9/frames/f0004.png",
+          "first": "3961b953147519bbc01f905bccf9c0b1fd55c20be26bcbedd521585bb0602349",
+          "second": "8385f1215554629b07945af785459a3b89c75a1965ea2847a6af4da42ff7848a",
+          "equal": false,
+          "secondMs": 83
+        },
+        {
+          "utc": "2026-11-12T14:48:15.691Z",
+          "mono": "2393173551551387",
+          "load": [
+            39.77,
+            40.57,
+            38.99
+          ],
+          "test": [
+            "/opt/node-v22.14.0-linux-x64/bin/node",
+            "/root/projects/motion-foundry/dist/test/negative.test.js"
+          ],
+          "event": "pair",
+          "page": 0,
+          "frame": 21,
+          "sequence": 21,
+          "file": "/tmp/foundry-acceptance-fkV9uA/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/545701ed-d91f-45c8-916c-c0a6d9d62bc9/frames/f0021.png",
+          "first": "7eda4b934b4189b04aea0ec612f99de06c1fa250103748c192b27ebf9245deec",
+          "second": "f63d92bf4874452ea981d691ed409a1a0b3e980cecc514a07e072ebaad02d86a",
+          "equal": false,
+          "secondMs": 66
+        },
+        {
+          "utc": "2026-11-12T14:48:19.440Z",
+          "mono": "2393177300891754",
+          "load": [
+            38.99,
+            40.39,
+            38.94
+          ],
+          "test": [
+            "/opt/node-v22.14.0-linux-x64/bin/node",
+            "/root/projects/motion-foundry/dist/test/negative.test.js"
+          ],
+          "event": "pair",
+          "page": 0,
+          "frame": 42,
+          "sequence": 42,
+          "file": "/tmp/foundry-acceptance-fkV9uA/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/545701ed-d91f-45c8-916c-c0a6d9d62bc9/frames/f0042.png",
+          "first": "bcb35be4f59b5005389ed996bd19fa34c0ad1a83c14342a04b37433c2b9edcfb",
+          "second": "dc20f65bf034f255ea81b6c6607f0119ae2cf4b1d0147dd4f1974d817751ac20",
+          "equal": false,
+          "secondMs": 64
+        },
+        {
+          "utc": "2026-11-12T14:48:48.421Z",
+          "mono": "2393206281750139",
+          "load": [
+            40.19,
+            40.61,
+            39.05
+          ],
+          "test": [
+            "/opt/node-v22.14.0-linux-x64/bin/node",
+            "/root/projects/motion-foundry/dist/test/negative.test.js"
+          ],
+          "event": "pair",
+          "page": 0,
+          "frame": 199,
+          "sequence": 199,
+          "file": "/tmp/foundry-acceptance-fkV9uA/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/545701ed-d91f-45c8-916c-c0a6d9d62bc9/frames/f0199.png",
+          "first": "bd79fc0ecc4598fd12ad0db2b170c27660086dafb0b0a249f9621ba08fc979a4",
+          "second": "4600520b416ae18c480e0328371cde5dbfcc0c8eb6639e703747d90a54002561",
+          "equal": false,
+          "secondMs": 63
+        },
+        {
+          "utc": "2026-11-12T14:48:50.301Z",
+          "mono": "2393208161960874",
+          "load": [
+            39.45,
+            40.45,
+            39.01
+          ],
+          "test": [
+            "/opt/node-v22.14.0-linux-x64/bin/node",
+            "/root/projects/motion-foundry/dist/test/negative.test.js"
+          ],
+          "event": "pair",
+          "page": 0,
+          "frame": 209,
+          "sequence": 209,
+          "file": "/tmp/foundry-acceptance-fkV9uA/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/545701ed-d91f-45c8-916c-c0a6d9d62bc9/frames/f0209.png",
+          "first": "59a9662e522bcdc41c5bdff14ae96efd086787e14ed6f5c4f98d610714a47a94",
+          "second": "7ffddde6cfda0801ab49ba5a265fd0fa1c11aa55032dc9456791d762f8a45a12",
+          "equal": false,
+          "secondMs": 60
+        },
+        {
+          "utc": "2026-11-12T14:50:06.916Z",
+          "mono": "2393284776882643",
+          "load": [
+            35.78,
+            39.11,
+            38.66
+          ],
+          "test": [
+            "/opt/node-v22.14.0-linux-x64/bin/node",
+            "/root/projects/motion-foundry/dist/test/render.test.js"
+          ],
+          "event": "pair",
+          "page": 0,
+          "frame": 98,
+          "sequence": 98,
+          "file": "/tmp/foundry-5oNKq9/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/97b2d0b9-4d57-42bf-a9bd-336530deaa45/frames/f0098.png",
+          "first": "7cd2a83eea496b0af880cf8029ba3fca1f954efffc43ef01d886ce57264ffea6",
+          "second": "ae56585de7ba5eb95a16fe594d6cbb381f352c047cb0fa123e1a2d3b0a5f1106",
+          "equal": false,
+          "secondMs": 62
+        },
+        {
+          "utc": "2026-11-12T14:51:04.346Z",
+          "mono": "2393342207131873",
+          "load": [
+            33.99,
+            38.22,
+            38.39
+          ],
+          "test": [
+            "/opt/node-v22.14.0-linux-x64/bin/node",
+            "/root/projects/motion-foundry/dist/test/render.test.js"
+          ],
+          "event": "pair",
+          "page": 2,
+          "frame": 156,
+          "sequence": 156,
+          "file": "/tmp/foundry-5oNKq9/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/bebf3432-37d3-43b4-a1a3-5ddd8a962320/frames/f0156.png",
+          "first": "62704e0de9c51b8f0475fde63e00419b736752bc6efe109c3fb00471cba75d1e",
+          "second": "0d2be77e15aa53342a7c65abc472dab266f5627a4d4646bb82fe6542b1eaa94d",
+          "equal": false,
+          "secondMs": 60
+        },
+        {
+          "utc": "2026-11-12T14:51:08.084Z",
+          "mono": "2393345944955153",
+          "load": [
+            33.99,
+            38.22,
+            38.39
+          ],
+          "test": [
+            "/opt/node-v22.14.0-linux-x64/bin/node",
+            "/root/projects/motion-foundry/dist/test/render.test.js"
+          ],
+          "event": "pair",
+          "page": 2,
+          "frame": 176,
+          "sequence": 176,
+          "file": "/tmp/foundry-5oNKq9/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/bebf3432-37d3-43b4-a1a3-5ddd8a962320/frames/f0176.png",
+          "first": "cc4704174c42e1fc07ee5c2941bc772168217b34b597a5c363e76c43bb8becd8",
+          "second": "4325bd23d745a792647baf5c26c29e604d31c8b281187a65ab947b9062fd911c",
+          "equal": false,
+          "secondMs": 67
+        },
+        {
+          "utc": "2026-11-12T14:51:11.185Z",
+          "mono": "2393349045621433",
+          "load": [
+            33.83,
+            38.11,
+            38.35
+          ],
+          "test": [
+            "/opt/node-v22.14.0-linux-x64/bin/node",
+            "/root/projects/motion-foundry/dist/test/render.test.js"
+          ],
+          "event": "pair",
+          "page": 2,
+          "frame": 193,
+          "sequence": 193,
+          "file": "/tmp/foundry-5oNKq9/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/bebf3432-37d3-43b4-a1a3-5ddd8a962320/frames/f0193.png",
+          "first": "5ec082f4c2212fdcba0292726eae1fec223005541fe86dd9647bf91fdcc9540f",
+          "second": "6792e04cbad570808f90cad38a2800abd101ddbf2fd9008fa0453219536e3ea0",
+          "equal": false,
+          "secondMs": 66
+        }
+      ]
+    },
+    {
+      "phase": "baseline-continuation",
+      "index": 2,
+      "start": "2026-11-12T14:51:24.257Z",
+      "end": "2026-11-12T14:56:21.138Z",
+      "exitCode": 0,
+      "error": null,
+      "totals": {
+        "tests": 98,
+        "pass": 98,
+        "fail": 0,
+        "cancelled": 0,
+        "skipped": 0
+      },
+      "pairs": 860,
+      "mismatches": [
+        {
+          "utc": "2026-11-12T14:53:31.045Z",
+          "mono": "2393488906132467",
+          "load": [
+            29.89,
+            36.21,
+            37.7
+          ],
+          "test": [
+            "/opt/node-v22.14.0-linux-x64/bin/node",
+            "/root/projects/motion-foundry/dist/test/negative.test.js"
+          ],
+          "event": "pair",
+          "page": 0,
+          "frame": 114,
+          "sequence": 114,
+          "file": "/tmp/foundry-acceptance-nCvc66/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/5c6cbed5-cac5-4631-bac7-706a261f93d1/frames/f0114.png",
+          "first": "3dfd0060fbdf6a0eac2ddf3b382ce016625b8752f0b48057f5ccc5c5973db848",
+          "second": "08006983f8fdde5207e8d4e6b3855869845896a416a506f4016018f94399ebc6",
+          "equal": false,
+          "secondMs": 65
+        },
+        {
+          "utc": "2026-11-12T14:53:31.561Z",
+          "mono": "2393489421725248",
+          "load": [
+            29.89,
+            36.21,
+            37.7
+          ],
+          "test": [
+            "/opt/node-v22.14.0-linux-x64/bin/node",
+            "/root/projects/motion-foundry/dist/test/negative.test.js"
+          ],
+          "event": "pair",
+          "page": 0,
+          "frame": 117,
+          "sequence": 117,
+          "file": "/tmp/foundry-acceptance-nCvc66/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/5c6cbed5-cac5-4631-bac7-706a261f93d1/frames/f0117.png",
+          "first": "2b3a522907ea94422b672a5702bc91f94703c7d8817e7a57e3e4a0a7e02ba6f5",
+          "second": "d822ebff65a0e44d7c2bf48e4d098af9ed591fb6762a83e4f0ef3e7132858d53",
+          "equal": false,
+          "secondMs": 64
+        },
+        {
+          "utc": "2026-11-12T14:53:38.458Z",
+          "mono": "2393496319180039",
+          "load": [
+            29.34,
+            35.99,
+            37.63
+          ],
+          "test": [
+            "/opt/node-v22.14.0-linux-x64/bin/node",
+            "/root/projects/motion-foundry/dist/test/negative.test.js"
+          ],
+          "event": "pair",
+          "page": 0,
+          "frame": 155,
+          "sequence": 155,
+          "file": "/tmp/foundry-acceptance-nCvc66/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/5c6cbed5-cac5-4631-bac7-706a261f93d1/frames/f0155.png",
+          "first": "eb3b12ad890922db92281b95c52759b3d211500297af43ea48534700bab03ddf",
+          "second": "85ad59a302002c430dddbaf2721142c592a2d94bd10ba5f7d4489e050c6ffb10",
+          "equal": false,
+          "secondMs": 61
+        },
+        {
+          "utc": "2026-11-12T14:54:22.424Z",
+          "mono": "2393540284893117",
+          "load": [
+            28.58,
+            35,
+            37.22
+          ],
+          "test": [
+            "/opt/node-v22.14.0-linux-x64/bin/node",
+            "/root/projects/motion-foundry/dist/test/negative.test.js"
+          ],
+          "event": "pair",
+          "page": 3,
+          "frame": 136,
+          "sequence": 136,
+          "file": "/tmp/foundry-acceptance-nCvc66/renders/e3b3616b4c4c5686b570f851f4c2f9b5a187b9eba339fa5b1688110495e31e16/551b2eb5-439b-404d-be9e-dc1bb0aff659/frames/f0136.png",
+          "first": "43defee9f39f8ab0705c2a4da0a4b17a000e289fb6e0d7447eca43ca44d949a1",
+          "second": "3580e508a1544d0fa3955815e43fba0f98585b29cdc809e12cbcaa45830ea527",
+          "equal": false,
+          "secondMs": 65
+        },
+        {
+          "utc": "2026-11-12T14:54:23.396Z",
+          "mono": "2393541256583226",
+          "load": [
+            28.58,
+            35,
+            37.22
+          ],
+          "test": [
+            "/opt/node-v22.14.0-linux-x64/bin/node",
+            "/root/projects/motion-foundry/dist/test/negative.test.js"
+          ],
+          "event": "pair",
+          "page": 3,
+          "frame": 141,
+          "sequence": 141,
+          "file": "/tmp/foundry-acceptance-nCvc66/renders/e3b3616b4c4c5686b570f851f4c2f9b5a187b9eba339fa5b1688110495e31e16/551b2eb5-439b-404d-be9e-dc1bb0aff659/frames/f0141.png",
+          "first": "eacd4ba6c36a0834805e1ace53df755778ceb58c4136aba2a4970715bc4b77da",
+          "second": "71cfa43cf35260538a62e706cdbb1a7503b88f776226d47535756abe6921ba99",
+          "equal": false,
+          "secondMs": 84
+        },
+        {
+          "utc": "2026-11-12T14:54:46.622Z",
+          "mono": "2393564482536609",
+          "load": [
+            28.92,
+            34.57,
+            37.02
+          ],
+          "test": [
+            "/opt/node-v22.14.0-linux-x64/bin/node",
+            "/root/projects/motion-foundry/dist/test/render.test.js"
+          ],
+          "event": "pair",
+          "page": 0,
+          "frame": 2,
+          "sequence": 2,
+          "file": "/tmp/foundry-nZ0Egc/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/ca36e031-4766-433f-9014-16bb9a6ad01b/frames/f0002.png",
+          "first": "26d08ace73bc43d4bca1858c606fd35ff9581e457f71528b74325255ffe987e9",
+          "second": "0694ff6d5fec85986279dd3c5fc945d70c2feb340ff1b6ff630c1a5e85f040fa",
+          "equal": false,
+          "secondMs": 62
+        },
+        {
+          "utc": "2026-11-12T14:54:50.501Z",
+          "mono": "2393568361299071",
+          "load": [
+            30.53,
+            34.81,
+            37.08
+          ],
+          "test": [
+            "/opt/node-v22.14.0-linux-x64/bin/node",
+            "/root/projects/motion-foundry/dist/test/render.test.js"
+          ],
+          "event": "pair",
+          "page": 0,
+          "frame": 23,
+          "sequence": 23,
+          "file": "/tmp/foundry-nZ0Egc/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/ca36e031-4766-433f-9014-16bb9a6ad01b/frames/f0023.png",
+          "first": "32d07614c40c4340d252e4fd73be9e5b6dc702023ca0c9f17650ccfc234852a8",
+          "second": "73bc51da3983a69b97a2183fbad2f10fbd764554955f109a5696276040ec7eb5",
+          "equal": false,
+          "secondMs": 95
+        },
+        {
+          "utc": "2026-11-12T14:55:10.754Z",
+          "mono": "2393588614353301",
+          "load": [
+            30.91,
+            34.61,
+            36.97
+          ],
+          "test": [
+            "/opt/node-v22.14.0-linux-x64/bin/node",
+            "/root/projects/motion-foundry/dist/test/render.test.js"
+          ],
+          "event": "pair",
+          "page": 0,
+          "frame": 134,
+          "sequence": 134,
+          "file": "/tmp/foundry-nZ0Egc/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/ca36e031-4766-433f-9014-16bb9a6ad01b/frames/f0134.png",
+          "first": "fcb99a56f8c8a629f3afff206cfd15030f3589f694379cf827c9d3b7905fca78",
+          "second": "73177bcd8a412f6466013ef6bdd8a6eca96d3ca95340a18d410fbb3479c5b750",
+          "equal": false,
+          "secondMs": 61
+        },
+        {
+          "utc": "2026-11-12T14:55:18.937Z",
+          "mono": "2393596797205764",
+          "load": [
+            30.53,
+            34.41,
+            36.88
+          ],
+          "test": [
+            "/opt/node-v22.14.0-linux-x64/bin/node",
+            "/root/projects/motion-foundry/dist/test/render.test.js"
+          ],
+          "event": "pair",
+          "page": 0,
+          "frame": 180,
+          "sequence": 180,
+          "file": "/tmp/foundry-nZ0Egc/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/ca36e031-4766-433f-9014-16bb9a6ad01b/frames/f0180.png",
+          "first": "725edb3184c9983f4fd608e33b400fbadbf7ed1af4faa3b1c67eeaa69e14022a",
+          "second": "b2a01e7549fc132dd8e9dec8547c553d8f2f0e3afc713f10a27ee945ed18170d",
+          "equal": false,
+          "secondMs": 62
+        },
+        {
+          "utc": "2026-11-12T14:55:35.951Z",
+          "mono": "2393613811804814",
+          "load": [
+            31.61,
+            34.44,
+            36.85
+          ],
+          "test": [
+            "/opt/node-v22.14.0-linux-x64/bin/node",
+            "/root/projects/motion-foundry/dist/test/render.test.js"
+          ],
+          "event": "pair",
+          "page": 2,
+          "frame": 20,
+          "sequence": 20,
+          "file": "/tmp/foundry-nZ0Egc/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/6e1ad0f5-e501-43ac-863a-4cd85e5ea5aa/frames/f0020.png",
+          "first": "4a48379847a0db735cba4693826956c58550c182007605f17b825e936a1d718e",
+          "second": "f4b71ccc91cce058880b44df28849ee235d4f4e6b17b012bdf0dfdcef46d3e6f",
+          "equal": false,
+          "secondMs": 60
+        },
+        {
+          "utc": "2026-11-12T14:55:42.053Z",
+          "mono": "2393619913903390",
+          "load": [
+            32.6,
+            34.6,
+            36.89
+          ],
+          "test": [
+            "/opt/node-v22.14.0-linux-x64/bin/node",
+            "/root/projects/motion-foundry/dist/test/render.test.js"
+          ],
+          "event": "pair",
+          "page": 2,
+          "frame": 54,
+          "sequence": 54,
+          "file": "/tmp/foundry-nZ0Egc/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/6e1ad0f5-e501-43ac-863a-4cd85e5ea5aa/frames/f0054.png",
+          "first": "b19399c8ee4e02a0a1b735479196967c044c9c66994c85b1144ad68f5388dffb",
+          "second": "afca26271a2330179c7d641d54b72fe681270f05be67e4a19011822eb093fa83",
+          "equal": false,
+          "secondMs": 44
+        },
+        {
+          "utc": "2026-11-12T14:55:52.888Z",
+          "mono": "2393630748258799",
+          "load": [
+            32.42,
+            34.5,
+            36.83
+          ],
+          "test": [
+            "/opt/node-v22.14.0-linux-x64/bin/node",
+            "/root/projects/motion-foundry/dist/test/render.test.js"
+          ],
+          "event": "pair",
+          "page": 2,
+          "frame": 112,
+          "sequence": 112,
+          "file": "/tmp/foundry-nZ0Egc/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/6e1ad0f5-e501-43ac-863a-4cd85e5ea5aa/frames/f0112.png",
+          "first": "4b83fd4c8c4d1e2c07be47f44b578b19a0589d816e0e9607a04a3bb7b67f88df",
+          "second": "5aa822ca904589aef24f8db09755dd937cbbda63d25727235d25d21fbdf2fa17",
+          "equal": false,
+          "secondMs": 82
+        },
+        {
+          "utc": "2026-11-12T14:55:56.426Z",
+          "mono": "2393634286994632",
+          "load": [
+            31.91,
+            34.36,
+            36.77
+          ],
+          "test": [
+            "/opt/node-v22.14.0-linux-x64/bin/node",
+            "/root/projects/motion-foundry/dist/test/render.test.js"
+          ],
+          "event": "pair",
+          "page": 2,
+          "frame": 131,
+          "sequence": 131,
+          "file": "/tmp/foundry-nZ0Egc/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/6e1ad0f5-e501-43ac-863a-4cd85e5ea5aa/frames/f0131.png",
+          "first": "91c76ce793a57af7a0916d0d229ab74cbe4749f4ae86a0e08ee2aaa9f06f6d64",
+          "second": "0fe3dd1491b2de8bf87e58c42474db8145c3a3837b76f5b318ebeb5383ffbb9d",
+          "equal": false,
+          "secondMs": 84
+        }
+      ]
+    },
+    {
+      "phase": "baseline-continuation",
+      "index": 3,
+      "start": "2026-11-12T14:56:21.139Z",
+      "end": "2026-11-12T15:01:21.826Z",
+      "exitCode": 0,
+      "error": null,
+      "totals": {
+        "tests": 98,
+        "pass": 98,
+        "fail": 0,
+        "cancelled": 0,
+        "skipped": 0
+      },
+      "pairs": 860,
+      "mismatches": [
+        {
+          "utc": "2026-11-12T14:58:11.700Z",
+          "mono": "2393769561138113",
+          "load": [
+            31.54,
+            33.11,
+            35.96
+          ],
+          "test": [
+            "/opt/node-v22.14.0-linux-x64/bin/node",
+            "/root/projects/motion-foundry/dist/test/negative.test.js"
+          ],
+          "event": "pair",
+          "page": 0,
+          "frame": 13,
+          "sequence": 13,
+          "file": "/tmp/foundry-acceptance-xMmitA/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/063a9671-5ae7-44dc-b30c-ecaab235fd2a/frames/f0013.png",
+          "first": "e261fd1610abd636adc5f57909f50de4916a2352c7e2676e21dce296e0c4b10d",
+          "second": "2dfd3b96705d965faa46aa6d90d3fcfbea6402d2cc338c998b49d9717ae53b4c",
+          "equal": false,
+          "secondMs": 64
+        },
+        {
+          "utc": "2026-11-12T14:59:23.944Z",
+          "mono": "2393841804464288",
+          "load": [
+            29.4,
+            32.3,
+            35.47
+          ],
+          "test": [
+            "/opt/node-v22.14.0-linux-x64/bin/node",
+            "/root/projects/motion-foundry/dist/test/negative.test.js"
+          ],
+          "event": "pair",
+          "page": 3,
+          "frame": 152,
+          "sequence": 152,
+          "file": "/tmp/foundry-acceptance-xMmitA/renders/e3b3616b4c4c5686b570f851f4c2f9b5a187b9eba339fa5b1688110495e31e16/2bb48d89-6b13-48db-9e49-75287789746f/frames/f0152.png",
+          "first": "85d180081bc925500f6b16d609f087e40e297f9cfa7ce9269a5c4f51932098e8",
+          "second": "4f9a12e2abee99a64df6b5b4d9fa9de104760a1e8efe00bd8488731cb502aace",
+          "equal": false,
+          "secondMs": 61
+        },
+        {
+          "utc": "2026-11-12T14:59:46.982Z",
+          "mono": "2393864842919304",
+          "load": [
+            32.19,
+            32.77,
+            35.56
+          ],
+          "test": [
+            "/opt/node-v22.14.0-linux-x64/bin/node",
+            "/root/projects/motion-foundry/dist/test/render.test.js"
+          ],
+          "event": "pair",
+          "page": 0,
+          "frame": 4,
+          "sequence": 4,
+          "file": "/tmp/foundry-TZ5lW0/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/30b2112d-4223-49d3-b689-bd11aabddbd7/frames/f0004.png",
+          "first": "3961b953147519bbc01f905bccf9c0b1fd55c20be26bcbedd521585bb0602349",
+          "second": "8385f1215554629b07945af785459a3b89c75a1965ea2847a6af4da42ff7848a",
+          "equal": false,
+          "secondMs": 66
+        },
+        {
+          "utc": "2026-11-12T14:59:48.241Z",
+          "mono": "2393866101960300",
+          "load": [
+            32.19,
+            32.77,
+            35.56
+          ],
+          "test": [
+            "/opt/node-v22.14.0-linux-x64/bin/node",
+            "/root/projects/motion-foundry/dist/test/render.test.js"
+          ],
+          "event": "pair",
+          "page": 0,
+          "frame": 11,
+          "sequence": 11,
+          "file": "/tmp/foundry-TZ5lW0/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/30b2112d-4223-49d3-b689-bd11aabddbd7/frames/f0011.png",
+          "first": "3b4048b95c197db6e67f9442d5a0ab117677b09202e8b5570eddad77e2bd704d",
+          "second": "eee8eda4f72cfc101877b306ff684c1ab51b6026f4a720f55ed01b51bf7d6776",
+          "equal": false,
+          "secondMs": 60
+        },
+        {
+          "utc": "2026-11-12T14:59:53.160Z",
+          "mono": "2393871020803342",
+          "load": [
+            32.26,
+            32.77,
+            35.54
+          ],
+          "test": [
+            "/opt/node-v22.14.0-linux-x64/bin/node",
+            "/root/projects/motion-foundry/dist/test/render.test.js"
+          ],
+          "event": "pair",
+          "page": 0,
+          "frame": 38,
+          "sequence": 38,
+          "file": "/tmp/foundry-TZ5lW0/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/30b2112d-4223-49d3-b689-bd11aabddbd7/frames/f0038.png",
+          "first": "3b258dcd727a814e03233163353d75ce64d04bf4312dc1a24afbd8b63675dfbd",
+          "second": "d240a6be0aa737826bcb7a0aa03d6fa32db58182ae8fe9106d9f98217adef917",
+          "equal": false,
+          "secondMs": 62
+        },
+        {
+          "utc": "2026-11-12T14:59:55.947Z",
+          "mono": "2393873807723145",
+          "load": [
+            34.32,
+            33.19,
+            35.66
+          ],
+          "test": [
+            "/opt/node-v22.14.0-linux-x64/bin/node",
+            "/root/projects/motion-foundry/dist/test/render.test.js"
+          ],
+          "event": "pair",
+          "page": 0,
+          "frame": 53,
+          "sequence": 53,
+          "file": "/tmp/foundry-TZ5lW0/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/30b2112d-4223-49d3-b689-bd11aabddbd7/frames/f0053.png",
+          "first": "b8fae12e2fed3ca96fe0ffd4a2b625b83dbe031addd564ab7dadad77fef8a890",
+          "second": "da8b5a209eaf17d275448b0a2f48dbc6209e5c347dc30797884f10ad3f6860b0",
+          "equal": false,
+          "secondMs": 49
+        },
+        {
+          "utc": "2026-11-12T15:00:00.326Z",
+          "mono": "2393878186919754",
+          "load": [
+            33.73,
+            33.08,
+            35.62
+          ],
+          "test": [
+            "/opt/node-v22.14.0-linux-x64/bin/node",
+            "/root/projects/motion-foundry/dist/test/render.test.js"
+          ],
+          "event": "pair",
+          "page": 0,
+          "frame": 77,
+          "sequence": 77,
+          "file": "/tmp/foundry-TZ5lW0/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/30b2112d-4223-49d3-b689-bd11aabddbd7/frames/f0077.png",
+          "first": "6d5a3e79c3fbd94aaf6cb445552456f04f7354c9372ff5bf2c60b4c978239fa0",
+          "second": "9cbf5885bac717e64e944d14105e67ad5afb567ab955da9cedba876e309f2f3f",
+          "equal": false,
+          "secondMs": 61
+        },
+        {
+          "utc": "2026-11-12T15:00:06.410Z",
+          "mono": "2393884270190090",
+          "load": [
+            33.99,
+            33.15,
+            35.62
+          ],
+          "test": [
+            "/opt/node-v22.14.0-linux-x64/bin/node",
+            "/root/projects/motion-foundry/dist/test/render.test.js"
+          ],
+          "event": "pair",
+          "page": 0,
+          "frame": 110,
+          "sequence": 110,
+          "file": "/tmp/foundry-TZ5lW0/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/30b2112d-4223-49d3-b689-bd11aabddbd7/frames/f0110.png",
+          "first": "15ef91a7cff3b441b55651c159ea8e6832183baab016c95f0f80f1c7acd312d3",
+          "second": "52f6db5522f3267a23fa2719c3942a4a977aad3bce85d521a7c5d253fe26b315",
+          "equal": false,
+          "secondMs": 75
+        },
+        {
+          "utc": "2026-11-12T15:00:17.096Z",
+          "mono": "2393894956796031",
+          "load": [
+            34.12,
+            33.21,
+            35.62
+          ],
+          "test": [
+            "/opt/node-v22.14.0-linux-x64/bin/node",
+            "/root/projects/motion-foundry/dist/test/render.test.js"
+          ],
+          "event": "pair",
+          "page": 0,
+          "frame": 168,
+          "sequence": 168,
+          "file": "/tmp/foundry-TZ5lW0/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/30b2112d-4223-49d3-b689-bd11aabddbd7/frames/f0168.png",
+          "first": "5be95e6275c0a190798fda19fb2de019564fcaad4e17a3dba9908be7b760493f",
+          "second": "0c43c786e68ce59b431b188d7c5dd57e13c78384ea2d018c8cb9dd57828605fe",
+          "equal": false,
+          "secondMs": 89
+        },
+        {
+          "utc": "2026-11-12T15:00:20.209Z",
+          "mono": "2393898070044901",
+          "load": [
+            34.51,
+            33.31,
+            35.64
+          ],
+          "test": [
+            "/opt/node-v22.14.0-linux-x64/bin/node",
+            "/root/projects/motion-foundry/dist/test/render.test.js"
+          ],
+          "event": "pair",
+          "page": 0,
+          "frame": 185,
+          "sequence": 185,
+          "file": "/tmp/foundry-TZ5lW0/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/30b2112d-4223-49d3-b689-bd11aabddbd7/frames/f0185.png",
+          "first": "a6461f4959a39ba44946512e40c8c81de952c04a3fbb6e6bd1fba65b9f4030d9",
+          "second": "733b6c8aab0a77818c11beea917a794190cdb4cf568edf327929f90522c3e35d",
+          "equal": false,
+          "secondMs": 61
+        },
+        {
+          "utc": "2026-11-12T15:00:22.579Z",
+          "mono": "2393900440114344",
+          "load": [
+            34.51,
+            33.31,
+            35.64
+          ],
+          "test": [
+            "/opt/node-v22.14.0-linux-x64/bin/node",
+            "/root/projects/motion-foundry/dist/test/render.test.js"
+          ],
+          "event": "pair",
+          "page": 0,
+          "frame": 198,
+          "sequence": 198,
+          "file": "/tmp/foundry-TZ5lW0/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/30b2112d-4223-49d3-b689-bd11aabddbd7/frames/f0198.png",
+          "first": "46f0f3982d7862b32b34ac459b0a198b1971ef7fb64ac77b09c50742b73a3cb6",
+          "second": "a24acbe4676cad81f04285bcf3b7600768785264837510354e6ecde11f2f713e",
+          "equal": false,
+          "secondMs": 65
+        },
+        {
+          "utc": "2026-11-12T15:00:35.627Z",
+          "mono": "2393913487793030",
+          "load": [
+            34.55,
+            33.36,
+            35.62
+          ],
+          "test": [
+            "/opt/node-v22.14.0-linux-x64/bin/node",
+            "/root/projects/motion-foundry/dist/test/render.test.js"
+          ],
+          "event": "pair",
+          "page": 2,
+          "frame": 15,
+          "sequence": 15,
+          "file": "/tmp/foundry-TZ5lW0/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/09be661e-bd6c-44e5-984a-c4cbd91467c9/frames/f0015.png",
+          "first": "2619748ddfcde75bd0b48a0e354d62f5811bbf8422f1d3ff11d904f05a487283",
+          "second": "d35c33e157e9e8685be9050488099c6fed818189046d3f71456fcc663e2b5a3a",
+          "equal": false,
+          "secondMs": 64
+        },
+        {
+          "utc": "2026-11-12T15:00:48.331Z",
+          "mono": "2393926191447743",
+          "load": [
+            34.17,
+            33.32,
+            35.58
+          ],
+          "test": [
+            "/opt/node-v22.14.0-linux-x64/bin/node",
+            "/root/projects/motion-foundry/dist/test/render.test.js"
+          ],
+          "event": "pair",
+          "page": 2,
+          "frame": 84,
+          "sequence": 84,
+          "file": "/tmp/foundry-TZ5lW0/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/09be661e-bd6c-44e5-984a-c4cbd91467c9/frames/f0084.png",
+          "first": "324329aa9dd39058a880ac198f5349aaa750ba1fd53301984c086c4e1e1feebf",
+          "second": "ce0cc16ab5f52c8b91480131522ebfea4ee2241146e6bbd2734e52f5484d99f5",
+          "equal": false,
+          "secondMs": 52
+        },
+        {
+          "utc": "2026-11-12T15:00:55.644Z",
+          "mono": "2393933504263924",
+          "load": [
+            34.36,
+            33.39,
+            35.58
+          ],
+          "test": [
+            "/opt/node-v22.14.0-linux-x64/bin/node",
+            "/root/projects/motion-foundry/dist/test/render.test.js"
+          ],
+          "event": "pair",
+          "page": 2,
+          "frame": 123,
+          "sequence": 123,
+          "file": "/tmp/foundry-TZ5lW0/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/09be661e-bd6c-44e5-984a-c4cbd91467c9/frames/f0123.png",
+          "first": "fa360227e55231d137064aeb87a25ebbc93e2c10fa00c3bdc4e8c2fc3df7ff6b",
+          "second": "115fb176b594a7cfef4db23cff62c246626c90015ac452a7f4ec105a1270d0c1",
+          "equal": false,
+          "secondMs": 65
+        },
+        {
+          "utc": "2026-11-12T15:01:02.868Z",
+          "mono": "2393940729182215",
+          "load": [
+            33.77,
+            33.28,
+            35.53
+          ],
+          "test": [
+            "/opt/node-v22.14.0-linux-x64/bin/node",
+            "/root/projects/motion-foundry/dist/test/render.test.js"
+          ],
+          "event": "pair",
+          "page": 2,
+          "frame": 162,
+          "sequence": 162,
+          "file": "/tmp/foundry-TZ5lW0/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/09be661e-bd6c-44e5-984a-c4cbd91467c9/frames/f0162.png",
+          "first": "826e84b69e41653d471fdc44104adf5f28041809135c7ab5db81311a67c25ac8",
+          "second": "35b5202617b3df7fea04ffefaf185d262c936bc1fb5efe0d4a0790b6e383c521",
+          "equal": false,
+          "secondMs": 89
+        },
+        {
+          "utc": "2026-11-12T15:01:05.306Z",
+          "mono": "2393943166804467",
+          "load": [
+            38.75,
+            34.32,
+            35.85
+          ],
+          "test": [
+            "/opt/node-v22.14.0-linux-x64/bin/node",
+            "/root/projects/motion-foundry/dist/test/render.test.js"
+          ],
+          "event": "pair",
+          "page": 2,
+          "frame": 175,
+          "sequence": 175,
+          "file": "/tmp/foundry-TZ5lW0/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/09be661e-bd6c-44e5-984a-c4cbd91467c9/frames/f0175.png",
+          "first": "7f6f712ed3d9b49764063f84b06742d673d7ea3940c9dbc9657d21d9e730d3d4",
+          "second": "82e44e616017b8579c090ac51266f984ff8c288d0e1c282f1b29b7a5a6f91fdd",
+          "equal": false,
+          "secondMs": 45
+        },
+        {
+          "utc": "2026-11-12T15:01:09.741Z",
+          "mono": "2393947601334277",
+          "load": [
+            39.81,
+            34.62,
+            35.94
+          ],
+          "test": [
+            "/opt/node-v22.14.0-linux-x64/bin/node",
+            "/root/projects/motion-foundry/dist/test/render.test.js"
+          ],
+          "event": "pair",
+          "page": 2,
+          "frame": 199,
+          "sequence": 199,
+          "file": "/tmp/foundry-TZ5lW0/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/09be661e-bd6c-44e5-984a-c4cbd91467c9/frames/f0199.png",
+          "first": "bd79fc0ecc4598fd12ad0db2b170c27660086dafb0b0a249f9621ba08fc979a4",
+          "second": "4600520b416ae18c480e0328371cde5dbfcc0c8eb6639e703747d90a54002561",
+          "equal": false,
+          "secondMs": 62
+        }
+      ]
+    },
+    {
+      "phase": "baseline-continuation",
+      "index": 4,
+      "start": "2026-11-12T15:01:21.827Z",
+      "end": "2026-11-12T15:06:30.242Z",
+      "exitCode": 0,
+      "error": null,
+      "totals": {
+        "tests": 98,
+        "pass": 98,
+        "fail": 0,
+        "cancelled": 0,
+        "skipped": 0
+      },
+      "pairs": 860,
+      "mismatches": [
+        {
+          "utc": "2026-11-12T15:03:46.585Z",
+          "mono": "2394104445804820",
+          "load": [
+            32.19,
+            33.88,
+            35.48
+          ],
+          "test": [
+            "/opt/node-v22.14.0-linux-x64/bin/node",
+            "/root/projects/motion-foundry/dist/test/negative.test.js"
+          ],
+          "event": "pair",
+          "page": 0,
+          "frame": 175,
+          "sequence": 175,
+          "file": "/tmp/foundry-acceptance-BDKMps/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/763b78c1-a738-43d1-836f-87b6e84e650f/frames/f0175.png",
+          "first": "7f6f712ed3d9b49764063f84b06742d673d7ea3940c9dbc9657d21d9e730d3d4",
+          "second": "82e44e616017b8579c090ac51266f984ff8c288d0e1c282f1b29b7a5a6f91fdd",
+          "equal": false,
+          "secondMs": 47
+        },
+        {
+          "utc": "2026-11-12T15:04:06.568Z",
+          "mono": "2394124428370906",
+          "load": [
+            34.37,
+            34.2,
+            35.55
+          ],
+          "test": [
+            "/opt/node-v22.14.0-linux-x64/bin/node",
+            "/root/projects/motion-foundry/dist/test/negative.test.js"
+          ],
+          "event": "pair",
+          "page": 3,
+          "frame": 11,
+          "sequence": 11,
+          "file": "/tmp/foundry-acceptance-BDKMps/renders/e3b3616b4c4c5686b570f851f4c2f9b5a187b9eba339fa5b1688110495e31e16/b788951b-3cac-42a3-92c9-c49a4d1f402e/frames/f0011.png",
+          "first": "3b4048b95c197db6e67f9442d5a0ab117677b09202e8b5570eddad77e2bd704d",
+          "second": "eee8eda4f72cfc101877b306ff684c1ab51b6026f4a720f55ed01b51bf7d6776",
+          "equal": false,
+          "secondMs": 65
+        },
+        {
+          "utc": "2026-11-12T15:04:22.805Z",
+          "mono": "2394140665325405",
+          "load": [
+            35.44,
+            34.45,
+            35.61
+          ],
+          "test": [
+            "/opt/node-v22.14.0-linux-x64/bin/node",
+            "/root/projects/motion-foundry/dist/test/negative.test.js"
+          ],
+          "event": "pair",
+          "page": 3,
+          "frame": 98,
+          "sequence": 98,
+          "file": "/tmp/foundry-acceptance-BDKMps/renders/e3b3616b4c4c5686b570f851f4c2f9b5a187b9eba339fa5b1688110495e31e16/b788951b-3cac-42a3-92c9-c49a4d1f402e/frames/f0098.png",
+          "first": "0443a27d7262ed0a33b6146b486e40bef347561f694defc211bf091607f20d20",
+          "second": "14aae85cd02d19b30eea039ba5eeb4c2b2d2c9d29a585b21b748735e542cb8be",
+          "equal": false,
+          "secondMs": 70
+        },
+        {
+          "utc": "2026-11-12T15:04:31.483Z",
+          "mono": "2394149343353412",
+          "load": [
+            37.56,
+            34.94,
+            35.76
+          ],
+          "test": [
+            "/opt/node-v22.14.0-linux-x64/bin/node",
+            "/root/projects/motion-foundry/dist/test/negative.test.js"
+          ],
+          "event": "pair",
+          "page": 3,
+          "frame": 145,
+          "sequence": 145,
+          "file": "/tmp/foundry-acceptance-BDKMps/renders/e3b3616b4c4c5686b570f851f4c2f9b5a187b9eba339fa5b1688110495e31e16/b788951b-3cac-42a3-92c9-c49a4d1f402e/frames/f0145.png",
+          "first": "9cd276b1fd4435d43fbf7fcfbaed5fe2377d00516e11f3d03c8e96ca4dad0c63",
+          "second": "fb85cde157c1893308525679b08148fe203cad07a335521ea60667495eefb1b9",
+          "equal": false,
+          "secondMs": 63
+        },
+        {
+          "utc": "2026-11-12T15:04:50.246Z",
+          "mono": "2394168106543959",
+          "load": [
+            34.6,
+            34.43,
+            35.57
+          ],
+          "test": [
+            "/opt/node-v22.14.0-linux-x64/bin/node",
+            "/root/projects/motion-foundry/dist/test/negative.test.js"
+          ],
+          "event": "pair",
+          "page": 3,
+          "frame": 200,
+          "sequence": 211,
+          "file": null,
+          "first": "c7455306a17d8383307d398c5089d66a9e425ad3121221a9483cdc666f59cc03",
+          "second": "f02856af0eccd2d1b6f8bfe20ed7daf854bcb8caa7ab89636c06074f84c10ea1",
+          "equal": false,
+          "secondMs": 60
+        },
+        {
+          "utc": "2026-11-12T15:05:04.199Z",
+          "mono": "2394182060184800",
+          "load": [
+            33.4,
+            34.16,
+            35.46
+          ],
+          "test": [
+            "/opt/node-v22.14.0-linux-x64/bin/node",
+            "/root/projects/motion-foundry/dist/test/render.test.js"
+          ],
+          "event": "pair",
+          "page": 0,
+          "frame": 55,
+          "sequence": 55,
+          "file": "/tmp/foundry-g07vj5/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/20b2f5fc-de9f-44e5-9143-e800f0b5fa76/frames/f0055.png",
+          "first": "7000dee74e5490bc2086c4b40586dfa95c6e5cb0153afd6c9105ffcfb85956c5",
+          "second": "89f87b9da8e45107ba3c3ffe9fa76f360daaf5a10c31d30c40786e3520e935fc",
+          "equal": false,
+          "secondMs": 77
+        },
+        {
+          "utc": "2026-11-12T15:05:10.481Z",
+          "mono": "2394188341579012",
+          "load": [
+            34.17,
+            34.31,
+            35.5
+          ],
+          "test": [
+            "/opt/node-v22.14.0-linux-x64/bin/node",
+            "/root/projects/motion-foundry/dist/test/render.test.js"
+          ],
+          "event": "pair",
+          "page": 0,
+          "frame": 89,
+          "sequence": 89,
+          "file": "/tmp/foundry-g07vj5/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/20b2f5fc-de9f-44e5-9143-e800f0b5fa76/frames/f0089.png",
+          "first": "a5dadecf50572e6edd3d9be458de2b7b177eb508af635c7859c32c031c39b654",
+          "second": "5e8cf6ea60d2ca1e75d4155bae0188b087349b797b32543c63ba938b01fd7a8f",
+          "equal": false,
+          "secondMs": 62
+        },
+        {
+          "utc": "2026-11-12T15:05:13.221Z",
+          "mono": "2394191081604225",
+          "load": [
+            34.17,
+            34.31,
+            35.5
+          ],
+          "test": [
+            "/opt/node-v22.14.0-linux-x64/bin/node",
+            "/root/projects/motion-foundry/dist/test/render.test.js"
+          ],
+          "event": "pair",
+          "page": 0,
+          "frame": 104,
+          "sequence": 104,
+          "file": "/tmp/foundry-g07vj5/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/20b2f5fc-de9f-44e5-9143-e800f0b5fa76/frames/f0104.png",
+          "first": "df8e8a1d3de2a7d07597ecb7c12b4c309bc4065cfb1564f1eac501f48f1c21a9",
+          "second": "93ef3c2d7d41b6f581c23bb98913a2887c3e988e5ff04fbafbe5b4c945cd5a5e",
+          "equal": false,
+          "secondMs": 70
+        },
+        {
+          "utc": "2026-11-12T15:05:22.579Z",
+          "mono": "2394200440167072",
+          "load": [
+            35.14,
+            34.52,
+            35.56
+          ],
+          "test": [
+            "/opt/node-v22.14.0-linux-x64/bin/node",
+            "/root/projects/motion-foundry/dist/test/render.test.js"
+          ],
+          "event": "pair",
+          "page": 0,
+          "frame": 155,
+          "sequence": 155,
+          "file": "/tmp/foundry-g07vj5/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/20b2f5fc-de9f-44e5-9143-e800f0b5fa76/frames/f0155.png",
+          "first": "eb3b12ad890922db92281b95c52759b3d211500297af43ea48534700bab03ddf",
+          "second": "85ad59a302002c430dddbaf2721142c592a2d94bd10ba5f7d4489e050c6ffb10",
+          "equal": false,
+          "secondMs": 61
+        },
+        {
+          "utc": "2026-11-12T15:05:24.201Z",
+          "mono": "2394202061756618",
+          "load": [
+            35.13,
+            34.52,
+            35.55
+          ],
+          "test": [
+            "/opt/node-v22.14.0-linux-x64/bin/node",
+            "/root/projects/motion-foundry/dist/test/render.test.js"
+          ],
+          "event": "pair",
+          "page": 0,
+          "frame": 164,
+          "sequence": 164,
+          "file": "/tmp/foundry-g07vj5/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/20b2f5fc-de9f-44e5-9143-e800f0b5fa76/frames/f0164.png",
+          "first": "ba569089cf22a90857f07eaed443051b3b88b91017d39fa437802ea0f04f58f4",
+          "second": "facf3edd208527c147338fd0f57379407fff027f174dbee1b1e72b76759dea00",
+          "equal": false,
+          "secondMs": 66
+        },
+        {
+          "utc": "2026-11-12T15:05:43.318Z",
+          "mono": "2394221178755885",
+          "load": [
+            32.81,
+            34.04,
+            35.38
+          ],
+          "test": [
+            "/opt/node-v22.14.0-linux-x64/bin/node",
+            "/root/projects/motion-foundry/dist/test/render.test.js"
+          ],
+          "event": "pair",
+          "page": 2,
+          "frame": 13,
+          "sequence": 13,
+          "file": "/tmp/foundry-g07vj5/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/42288bab-c73d-45fb-bcec-b29b82d0eac9/frames/f0013.png",
+          "first": "e261fd1610abd636adc5f57909f50de4916a2352c7e2676e21dce296e0c4b10d",
+          "second": "2dfd3b96705d965faa46aa6d90d3fcfbea6402d2cc338c998b49d9717ae53b4c",
+          "equal": false,
+          "secondMs": 69
+        }
+      ]
+    },
+    {
+      "phase": "baseline-continuation",
+      "index": 5,
+      "start": "2026-11-12T15:06:30.243Z",
+      "end": "2026-11-12T15:11:35.468Z",
+      "exitCode": 0,
+      "error": null,
+      "totals": {
+        "tests": 98,
+        "pass": 98,
+        "fail": 0,
+        "cancelled": 0,
+        "skipped": 0
+      },
+      "pairs": 860,
+      "mismatches": [
+        {
+          "utc": "2026-11-12T15:08:29.522Z",
+          "mono": "2394387383159831",
+          "load": [
+            35.84,
+            34.64,
+            35.34
+          ],
+          "test": [
+            "/opt/node-v22.14.0-linux-x64/bin/node",
+            "/root/projects/motion-foundry/dist/test/negative.test.js"
+          ],
+          "event": "pair",
+          "page": 0,
+          "frame": 38,
+          "sequence": 38,
+          "file": "/tmp/foundry-acceptance-WT1cKy/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/be243b62-3a11-46a5-8e78-28fcec1dc996/frames/f0038.png",
+          "first": "3b258dcd727a814e03233163353d75ce64d04bf4312dc1a24afbd8b63675dfbd",
+          "second": "d240a6be0aa737826bcb7a0aa03d6fa32db58182ae8fe9106d9f98217adef917",
+          "equal": false,
+          "secondMs": 61
+        },
+        {
+          "utc": "2026-11-12T15:08:36.805Z",
+          "mono": "2394394665707645",
+          "load": [
+            34.89,
+            34.46,
+            35.28
+          ],
+          "test": [
+            "/opt/node-v22.14.0-linux-x64/bin/node",
+            "/root/projects/motion-foundry/dist/test/negative.test.js"
+          ],
+          "event": "pair",
+          "page": 0,
+          "frame": 78,
+          "sequence": 78,
+          "file": "/tmp/foundry-acceptance-WT1cKy/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/be243b62-3a11-46a5-8e78-28fcec1dc996/frames/f0078.png",
+          "first": "0bbdf84925e9ffdd36f401a93a7e222eed769af5fc080d7a7eacd250d175afe6",
+          "second": "458a0927ab7338f91e84b15bc745ae9c86a5f0a10cfcdd71cf44b90f03190d77",
+          "equal": false,
+          "secondMs": 80
+        },
+        {
+          "utc": "2026-11-12T15:08:46.088Z",
+          "mono": "2394403948813186",
+          "load": [
+            35.4,
+            34.58,
+            35.31
+          ],
+          "test": [
+            "/opt/node-v22.14.0-linux-x64/bin/node",
+            "/root/projects/motion-foundry/dist/test/negative.test.js"
+          ],
+          "event": "pair",
+          "page": 0,
+          "frame": 128,
+          "sequence": 128,
+          "file": "/tmp/foundry-acceptance-WT1cKy/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/be243b62-3a11-46a5-8e78-28fcec1dc996/frames/f0128.png",
+          "first": "8b09aea9ed8b332bc8cb3f320dd29118bc01a76eb1a9e67d252849197778a898",
+          "second": "5ff38fd963dd07849c2fbdc63fbefc80141e2ab798079d17faa6db97cd7761f4",
+          "equal": false,
+          "secondMs": 62
+        },
+        {
+          "utc": "2026-11-12T15:09:21.548Z",
+          "mono": "2394439408495403",
+          "load": [
+            39.22,
+            35.49,
+            35.58
+          ],
+          "test": [
+            "/opt/node-v22.14.0-linux-x64/bin/node",
+            "/root/projects/motion-foundry/dist/test/negative.test.js"
+          ],
+          "event": "pair",
+          "page": 3,
+          "frame": 60,
+          "sequence": 60,
+          "file": "/tmp/foundry-acceptance-WT1cKy/renders/e3b3616b4c4c5686b570f851f4c2f9b5a187b9eba339fa5b1688110495e31e16/19e052fd-30fa-475e-8ad2-70bab481379d/frames/f0060.png",
+          "first": "72e72efc17091611856f71b16104276c74f8f6cc1b84b4af714886db5b724df0",
+          "second": "9596060ed56bf46dc51260c2308a399d901751fb2586c9e3a2d38a979c8ccf07",
+          "equal": false,
+          "secondMs": 71
+        },
+        {
+          "utc": "2026-11-12T15:10:02.470Z",
+          "mono": "2394480330949271",
+          "load": [
+            36.02,
+            35.16,
+            35.47
+          ],
+          "test": [
+            "/opt/node-v22.14.0-linux-x64/bin/node",
+            "/root/projects/motion-foundry/dist/test/render.test.js"
+          ],
+          "event": "pair",
+          "page": 0,
+          "frame": 16,
+          "sequence": 16,
+          "file": "/tmp/foundry-RG5lRX/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/ff48f524-d8e2-4e5e-b4cf-c67e4b07297a/frames/f0016.png",
+          "first": "9dc759f8c3a020c82d71a8c222607b9cfda2cbbfcc0a69c292fd187f304efb81",
+          "second": "f8a27874f3a4ea88db17eecf18e3b36434acac6cb5f2a2f84ec88db8b5cacdde",
+          "equal": false,
+          "secondMs": 82
+        },
+        {
+          "utc": "2026-11-12T15:10:05.121Z",
+          "mono": "2394482981236236",
+          "load": [
+            35.54,
+            35.07,
+            35.44
+          ],
+          "test": [
+            "/opt/node-v22.14.0-linux-x64/bin/node",
+            "/root/projects/motion-foundry/dist/test/render.test.js"
+          ],
+          "event": "pair",
+          "page": 0,
+          "frame": 31,
+          "sequence": 31,
+          "file": "/tmp/foundry-RG5lRX/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/ff48f524-d8e2-4e5e-b4cf-c67e4b07297a/frames/f0031.png",
+          "first": "c29676908f004013d73de710cac999ee9bcbd2617ce372bf00c0e3a339489bbc",
+          "second": "321cb07e062213695a64008d4fec4956b2cd656bf363ee6059a3b2c22ccc5cd7",
+          "equal": false,
+          "secondMs": 64
+        },
+        {
+          "utc": "2026-11-12T15:10:06.205Z",
+          "mono": "2394484066073811",
+          "load": [
+            35.54,
+            35.07,
+            35.44
+          ],
+          "test": [
+            "/opt/node-v22.14.0-linux-x64/bin/node",
+            "/root/projects/motion-foundry/dist/test/render.test.js"
+          ],
+          "event": "pair",
+          "page": 0,
+          "frame": 37,
+          "sequence": 37,
+          "file": "/tmp/foundry-RG5lRX/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/ff48f524-d8e2-4e5e-b4cf-c67e4b07297a/frames/f0037.png",
+          "first": "51432fbb891ee0f43b945e60f4403b7faa256594ef4086711bf8163efd2e06c9",
+          "second": "68ca653e22a3d415eba01d324c5e7da3703f99a350f2d771903d13c44e563721",
+          "equal": false,
+          "secondMs": 63
+        },
+        {
+          "utc": "2026-11-12T15:10:10.938Z",
+          "mono": "2394488798614632",
+          "load": [
+            34.86,
+            34.94,
+            35.39
+          ],
+          "test": [
+            "/opt/node-v22.14.0-linux-x64/bin/node",
+            "/root/projects/motion-foundry/dist/test/render.test.js"
+          ],
+          "event": "pair",
+          "page": 0,
+          "frame": 63,
+          "sequence": 63,
+          "file": "/tmp/foundry-RG5lRX/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/ff48f524-d8e2-4e5e-b4cf-c67e4b07297a/frames/f0063.png",
+          "first": "d4860ce75fd893afcd18fe737a165457fcbdeb850ca51216b53bcd301225b057",
+          "second": "2a86a912e930cc0d0c8c46a8e2f57808b9ca7f5b120a47e26560488987df59cc",
+          "equal": false,
+          "secondMs": 64
+        },
+        {
+          "utc": "2026-11-12T15:10:15.452Z",
+          "mono": "2394493312594249",
+          "load": [
+            37.27,
+            35.44,
+            35.55
+          ],
+          "test": [
+            "/opt/node-v22.14.0-linux-x64/bin/node",
+            "/root/projects/motion-foundry/dist/test/render.test.js"
+          ],
+          "event": "pair",
+          "page": 0,
+          "frame": 88,
+          "sequence": 88,
+          "file": "/tmp/foundry-RG5lRX/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/ff48f524-d8e2-4e5e-b4cf-c67e4b07297a/frames/f0088.png",
+          "first": "a2f7470a11dcce962a874bfa3ad6e2344391435d94ab22b3b77baf3220c0f2a1",
+          "second": "2015298a7fe074b18047bb4756878cd8c8a8d3d16d11b3edeeca4a94cbdc745a",
+          "equal": false,
+          "secondMs": 63
+        },
+        {
+          "utc": "2026-11-12T15:10:16.788Z",
+          "mono": "2394494648675210",
+          "load": [
+            37.27,
+            35.44,
+            35.55
+          ],
+          "test": [
+            "/opt/node-v22.14.0-linux-x64/bin/node",
+            "/root/projects/motion-foundry/dist/test/render.test.js"
+          ],
+          "event": "pair",
+          "page": 0,
+          "frame": 95,
+          "sequence": 95,
+          "file": "/tmp/foundry-RG5lRX/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/ff48f524-d8e2-4e5e-b4cf-c67e4b07297a/frames/f0095.png",
+          "first": "73f47ae60c219e8ae1b4bc11ac301a7b980f9ed8fbefa034c39179395766f0e2",
+          "second": "4a78a1ab01ef207295b911ef4f621f98bdf3b47a95c96015db3ed330eddb210d",
+          "equal": false,
+          "secondMs": 65
+        },
+        {
+          "utc": "2026-11-12T15:10:27.839Z",
+          "mono": "2394505699936826",
+          "load": [
+            37.01,
+            35.44,
+            35.55
+          ],
+          "test": [
+            "/opt/node-v22.14.0-linux-x64/bin/node",
+            "/root/projects/motion-foundry/dist/test/render.test.js"
+          ],
+          "event": "pair",
+          "page": 0,
+          "frame": 156,
+          "sequence": 156,
+          "file": "/tmp/foundry-RG5lRX/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/ff48f524-d8e2-4e5e-b4cf-c67e4b07297a/frames/f0156.png",
+          "first": "62704e0de9c51b8f0475fde63e00419b736752bc6efe109c3fb00471cba75d1e",
+          "second": "0d2be77e15aa53342a7c65abc472dab266f5627a4d4646bb82fe6542b1eaa94d",
+          "equal": false,
+          "secondMs": 65
+        },
+        {
+          "utc": "2026-11-12T15:10:30.703Z",
+          "mono": "2394508563691040",
+          "load": [
+            36.77,
+            35.42,
+            35.54
+          ],
+          "test": [
+            "/opt/node-v22.14.0-linux-x64/bin/node",
+            "/root/projects/motion-foundry/dist/test/render.test.js"
+          ],
+          "event": "pair",
+          "page": 0,
+          "frame": 172,
+          "sequence": 172,
+          "file": "/tmp/foundry-RG5lRX/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/ff48f524-d8e2-4e5e-b4cf-c67e4b07297a/frames/f0172.png",
+          "first": "effee3718e0ef5844247601f932c1d5438405013e120315ef786234ecb476c7c",
+          "second": "2cd8f3c3d20196ff8c8edf97c67d4604f36c56bd648df58acd5c86a146f68b57",
+          "equal": false,
+          "secondMs": 63
+        },
+        {
+          "utc": "2026-11-12T15:10:55.820Z",
+          "mono": "2394533680869317",
+          "load": [
+            39.86,
+            36.17,
+            35.79
+          ],
+          "test": [
+            "/opt/node-v22.14.0-linux-x64/bin/node",
+            "/root/projects/motion-foundry/dist/test/render.test.js"
+          ],
+          "event": "pair",
+          "page": 2,
+          "frame": 53,
+          "sequence": 53,
+          "file": "/tmp/foundry-RG5lRX/renders/bfc0cfe083b0ad5d0e2b0cc867e3228bd7c54dc99ad9d156fe558d9ea01d4dee/4349ea86-43e0-4549-bbca-85797b0bbf2c/frames/f0053.png",
+          "first": "b8fae12e2fed3ca96fe0ffd4a2b625b83dbe031addd564ab7dadad77fef8a890",
+          "second": "da8b5a209eaf17d275448b0a2f48dbc6209e5c347dc30797884f10ad3f6860b0",
+          "equal": false,
+          "secondMs": 64
+        }
+      ]
+    }
+  ],
+  "candidate1": "already enabled in baseline; not a distinct intervention",
+  "candidate2": "capability supported; sizing/identity probe hash differs, not approved for counted test",
+  "candidate3": "viewport/deviceScaleFactor already fixed; no verified raster-scale lock"
+}

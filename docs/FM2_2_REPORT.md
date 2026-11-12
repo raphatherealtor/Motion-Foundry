@@ -129,3 +129,7 @@ Accepted classification: capture/compositor completion races screenshot; frame21
 ## Begin-frame compatibility probe stopped
 
 Decoded frame0 differs:121325pixels/363817channels,maxDelta222. The540×960 BeginFrame surface crops1:1 CSS raster rather than legacy0.5 mapping; whole red/mint regions differ. This is not encoding-only. See fm2_2/readiness/FRAME0_DIFF_REPORT.md. Zero begin-frame suites counted, no repin/adoption. Baseline-only continuation remains authorized to16:21:22UTC; Run14open/FTHREATENED.
+
+## Raphael changed approach: baseline stopped; new acceptance conditional
+
+Baseline service stopped15:14:55UTC and follow-up disabled.8completed suites/6880pairs/110within-pair mismatches;426partial pairs/8mismatches retained separately. New45-minute protocol stops at step1 because decoded BeginFrame pixels differ121325/max222. No capture switch, load test, or acceptance. New conditional acceptance is10clean full suites then5freshuncached+98/98, replacing60; anyfailurestops. No push without approval. Full report: FM2_2_READINESS_STOP_REPORT.md, separate Compat/A–M tables retained.
