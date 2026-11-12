@@ -133,3 +133,7 @@ Decoded frame0 differs:121325pixels/363817channels,maxDelta222. The540×960 Begi
 ## Raphael changed approach: baseline stopped; new acceptance conditional
 
 Baseline service stopped15:14:55UTC and follow-up disabled.8completed suites/6880pairs/110within-pair mismatches;426partial pairs/8mismatches retained separately. New45-minute protocol stops at step1 because decoded BeginFrame pixels differ121325/max222. No capture switch, load test, or acceptance. New conditional acceptance is10clean full suites then5freshuncached+98/98, replacing60; anyfailurestops. No push without approval. Full report: FM2_2_READINESS_STOP_REPORT.md, separate Compat/A–M tables retained.
+
+## Stable-scale direct CDP capture stopped at identity gate
+
+Harness-only30-minute investigation: directPage.captureScreenshot(no clip/scale), one-time540×960window and CSS1080×1920/DSF.5/Emulationscale.5. One traced0–210session:633root snapshots ideal/geometry/raster.5 and only.5tilings. Untracedframe0bytes equal tracedframe0 but differ retainedgolden at4AApixels/11channels,max5,row763. No load runs, furtherexact-suitechecks, acceptance or push. Report: fm2_2/stable-cdp/REPORT.md. Existinghashesunchanged; FTHREATENED,Run14open.

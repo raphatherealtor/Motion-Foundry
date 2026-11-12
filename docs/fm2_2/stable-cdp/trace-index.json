@@ -1,0 +1,17 @@
+[
+  {
+    "path": "runs/fm2-2/stable-cdp/traced/trace.json",
+    "bytes": 101199903,
+    "sha256": "909e44b7d4897fedc80a3298fc68715532c2e6662da48c1a2f957772a7e38e8d"
+  },
+  {
+    "path": "runs/fm2-2/stable-cdp/traced/root-snapshots.json",
+    "bytes": 2088269,
+    "sha256": "493179c04a04190cd945a3ca39665d1050295e542abf896f240e17207314424d"
+  },
+  {
+    "path": "runs/fm2-2/stable-cdp/traced/captures.json",
+    "bytes": 464680,
+    "sha256": "fe850f6e9b54d8623cf64f76f6f00c810f7b5bad513914cacfb68ff1e0db1394"
+  }
+]

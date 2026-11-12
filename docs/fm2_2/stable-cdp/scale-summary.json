@@ -1,0 +1,12 @@
+{
+  "snapshots": 633,
+  "idealValues": {
+    "0.5": 633
+  },
+  "geometryValues": {
+    "0.5": 633
+  },
+  "rasterValues": {
+    "[0.5, 0.5]": 633
+  }
+}
