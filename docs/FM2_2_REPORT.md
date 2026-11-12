@@ -121,3 +121,11 @@ Saved PNG diff:2 pixels/6 channels, maxDelta6, at output(322,763) and(464,763), 
 ## Bounded frame210 diagnostic stopped at cutoff
 
 See FM2_2_FRAME210_BOUNDED_REPORT.md for the complete report.27 full suites and23 stripped samples completed; one unchanged-state frame210 screenshot pair reproduced the original two hashes, establishing capture/compositor timing at that boundary. Exact mechanism/load cause remains unverified.23 scale-instrumented full suites also include three exact-repeat failures at209/198/0; none waived. Both raster scales occur in clean stripped/full pairs. Tileedge alignment supports but does not prove a mechanism. No flag condition completed; partial-raster alreadybaseline. All diagnostic services inactive. No fix/adoption/acceptance restart/push. Both preserve tables are in the bounded report; F remains threatened.
+
+## Bounded readiness investigation approved
+
+Accepted classification: capture/compositor completion races screenshot; frame210 is one manifestation, not renderer nondeterminism. New diagnostic cutoff2026-11-12T16:21:22UTC. All M0 seeks0–210 get one additional capture in normal serial full suites; first evidence/assertions remain unchanged. See fm2_2/readiness/protocol.md. Candidate1 is already baseline; explicit BeginFrame is available but sizing/identity probe differs from retained frame0 hash; candidate3 has no verified lock beyond already-fixed viewport/DPR. No candidate adoption or acceptance restart. F remains THREATENED and Run14 remains unverified.
+
+## Begin-frame compatibility probe stopped
+
+Decoded frame0 differs:121325pixels/363817channels,maxDelta222. The540×960 BeginFrame surface crops1:1 CSS raster rather than legacy0.5 mapping; whole red/mint regions differ. This is not encoding-only. See fm2_2/readiness/FRAME0_DIFF_REPORT.md. Zero begin-frame suites counted, no repin/adoption. Baseline-only continuation remains authorized to16:21:22UTC; Run14open/FTHREATENED.

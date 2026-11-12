@@ -1,0 +1,13 @@
+# Bounded readiness investigation — diagnostic only
+
+User-approved two-hour box started2026-11-12T14:21:22UTC, cutoff16:21:22UTC. Acceptance HOLD; no push. Accepted classification is capture/compositor completion racing screenshot, not renderer nondeterminism. Run14 remains open/unverified.
+
+Normal serial full suites retain their test order, scene, seeks, assertions, goldens and production files. An external preload records the current M0 seek index, and adds exactly one second screenshot at every seek index0–210, with no mutation or intervening seek. Out-of-order verification seeks in this range also get a pair. It never captures until stable or replaces first evidence. No tracing in counted runs; no retries, sleeps, timeout increases, skips or tolerance. Matched duplicate PNGs are hashed/logged then removed; mismatching pairs are both retained.
+
+Baseline stops after first suite with a within-pair mismatch, or six completed suites. Candidate1 requests eight suites. Its flag is already in the baseline args, alongside num-raster-threads1 and disable-partial-raster; these eight runs are a separately labeled repeat condition, not evidence of a new intervention. A candidate requires zero pair differences AND zero exact-repeat failures across all eight full suites; incomplete counts never pass.
+
+Live exact-binary probes: Chromium153.0.8010.12 supports HeadlessExperimental.beginFrame screenshot with enable-begin-frame-control. An undriven two-rAF seek did not complete within the bounded60-second capability command, which was terminated. A separate probe completes the unchanged seek with exactly two explicit BeginFrame deliveries. Default screenshot is1080×1920; setting compositor visible size540×960 yields the required output dimensions but frame0 PNG hash0e70e180… differs from retained274c8fad…. Candidate2 is not entered into counted runs while transport sizing/identity compatibility remains unresolved; no re-pin. Probe records are separate from untraced pass/fail counts. No claimed pixel-delta result from PNG hash alone.
+
+Candidate3: the actual baseline viewport1080×1920 and deviceScaleFactor0.5 are already fixed, yet raster scales switch. Merely restating these fixed values is not a verified raster-scale lock. No alternate DPR/viewport is adopted, since that may change evidence dimensions/pins. Report the gap rather than claim candidate tested.
+
+After baseline and existing-flag repeats, stop for compatibility review; no automatic acceptance restart. If time expires first, stop and retain partial evidence. Compat invariants and separate A–M remain required; F THREATENED. Existing probes/goldens/pins are not rewritten.

@@ -1,0 +1,38 @@
+{
+  "executable": "/root/projects/motion-foundry/tooling/m1-browser/browsers/chromium_headless_shell-1243/chrome-headless-shell-linux64/chrome-headless-shell",
+  "existingConfig": {
+    "viewport": {
+      "width": 1080,
+      "height": 1920
+    },
+    "deviceScaleFactor": 0.5,
+    "args": [
+      "--num-raster-threads=1",
+      "--disable-features=ImprovedCookieControls,LazyFrameLoading,GlobalMediaControls,DestroyProfileOnBrowserClose,MediaRouter,DialMediaRouteProvider,AcceptCHFrame,AutoExpandDetailsElement,CertificateTransparencyComponentUpdater,AvoidUnnecessaryBeforeUnloadCheckSync,Translate,HttpsUpgrades,PaintHolding,ThirdPartyStoragePartitioning,LensOverlay,PlzDedicatedWorker",
+      "--no-sandbox",
+      "--disable-gpu",
+      "--font-render-hinting=none",
+      "--run-all-compositor-stages-before-draw",
+      "--disable-new-content-rendering-timeout",
+      "--disable-threaded-animation",
+      "--disable-threaded-scrolling",
+      "--disable-checker-imaging",
+      "--disable-image-animation-resync",
+      "--disable-partial-raster",
+      "--disable-skia-runtime-opts",
+      "--force-color-profile=srgb"
+    ],
+    "stride": 15,
+    "render_timeout_s": 120,
+    "asset_ready_timeout_s": 20,
+    "max_output_mb": 500,
+    "visibility_opacity_threshold": 0.02
+  },
+  "candidate1AlreadyEnabled": true,
+  "beginFrame": {
+    "supported": true,
+    "hasDamage": true,
+    "pngBytes": 10946
+  },
+  "version": "153.0.8010.12"
+}
