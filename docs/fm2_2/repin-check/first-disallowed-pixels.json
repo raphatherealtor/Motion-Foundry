@@ -1,0 +1,92 @@
+{
+  "frame": 2,
+  "allChangedPixels": [
+    {
+      "x": 230,
+      "y": 255,
+      "reference": [
+        23,
+        22,
+        34
+      ],
+      "candidate": [
+        30,
+        24,
+        36
+      ],
+      "maxDelta": 7,
+      "aaEdgeCertified": true,
+      "tileBoundary": true
+    },
+    {
+      "x": 333,
+      "y": 763,
+      "reference": [
+        22,
+        31,
+        41
+      ],
+      "candidate": [
+        21,
+        29,
+        40
+      ],
+      "maxDelta": 2,
+      "aaEdgeCertified": true,
+      "tileBoundary": true
+    },
+    {
+      "x": 334,
+      "y": 763,
+      "reference": [
+        109,
+        181,
+        159
+      ],
+      "candidate": [
+        107,
+        177,
+        156
+      ],
+      "maxDelta": 4,
+      "aaEdgeCertified": true,
+      "tileBoundary": true
+    },
+    {
+      "x": 475,
+      "y": 763,
+      "reference": [
+        91,
+        150,
+        135
+      ],
+      "candidate": [
+        91,
+        149,
+        134
+      ],
+      "maxDelta": 1,
+      "aaEdgeCertified": true,
+      "tileBoundary": true
+    }
+  ],
+  "violations": [
+    {
+      "x": 230,
+      "y": 255,
+      "reference": [
+        23,
+        22,
+        34
+      ],
+      "candidate": [
+        30,
+        24,
+        36
+      ],
+      "maxDelta": 7,
+      "aaEdgeCertified": true,
+      "tileBoundary": true
+    }
+  ]
+}

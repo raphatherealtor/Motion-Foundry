@@ -1,0 +1,48 @@
+{
+  "framesChecked": 3,
+  "rows": [
+    {
+      "frame": 0,
+      "changedPixels": 4,
+      "changedChannels": 11,
+      "maxDelta": 5,
+      "eligible": true,
+      "violations": []
+    },
+    {
+      "frame": 1,
+      "changedPixels": 3,
+      "changedChannels": 9,
+      "maxDelta": 4,
+      "eligible": true,
+      "violations": []
+    },
+    {
+      "frame": 2,
+      "changedPixels": 4,
+      "changedChannels": 11,
+      "maxDelta": 7,
+      "eligible": false,
+      "violations": [
+        {
+          "x": 230,
+          "y": 255,
+          "reference": [
+            23,
+            22,
+            34
+          ],
+          "candidate": [
+            30,
+            24,
+            36
+          ],
+          "maxDelta": 7,
+          "aaEdgeCertified": true,
+          "tileBoundary": true
+        }
+      ]
+    }
+  ],
+  "repinned": []
+}

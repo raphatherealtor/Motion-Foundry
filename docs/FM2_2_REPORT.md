@@ -137,3 +137,7 @@ Baseline service stopped15:14:55UTC and follow-up disabled.8completed suites/688
 ## Stable-scale direct CDP capture stopped at identity gate
 
 Harness-only30-minute investigation: directPage.captureScreenshot(no clip/scale), one-time540×960window and CSS1080×1920/DSF.5/Emulationscale.5. One traced0–210session:633root snapshots ideal/geometry/raster.5 and only.5tilings. Untracedframe0bytes equal tracedframe0 but differ retainedgolden at4AApixels/11channels,max5,row763. No load runs, furtherexact-suitechecks, acceptance or push. Report: fm2_2/stable-cdp/REPORT.md. Existinghashesunchanged; FTHREATENED,Run14open.
+
+## Narrow direct-CDP re-pin gate stopped
+
+Raphael authorized direct capture/re-pin only AA tile-boundary pixels withmaxDelta6. Two fresh-browser M0runs0–210 have identical211framehashes. Old/newclassification stops atframe2:(230,255) RGB[23,22,34]→[30,24,36],delta7,despiteAA/tileedgeclassification. Frames0/1eligiblebutNONEre-pinned. M1proof/chart/opacitytwo-browserrunnerincomplete atcommandbudget,notretried;GPU-pinsnotverified/re-pinned. No stress/acceptance/push. Full report fm2_2/repin-check/REPORT.md; FTHREATENED,Run14open.
